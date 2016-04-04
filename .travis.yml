@@ -1,3 +1,5 @@
+osx_image: xcode7.3
 language: objective-c
 xcode_workspace: Gridicons.xcworkspace
 xcode_scheme: Gridicons
+xcode_sdk: iphonesimulator
