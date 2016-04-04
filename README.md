@@ -10,6 +10,22 @@ or Carthage:
 
 `github 'Automattic/Gridicons-iOS'`
 
+## Usage
+
+First, import the framework:
+
+`import Gridicons`
+
+Getting a `UIImage` of a Gridicon is as simple as:
+
+`let icon = Gridicon.iconOfType(.Pages)`
+
+You can optionally specify a size (default is 24 x 24):
+
+`let icon = Gridicon.iconOfType(.Pages, withSize: CGSize(width: 100, height: 100))`
+
+The images that the framework produces use the `AlwaysTemplate` rendering mode, so you can tint them however you like.
+
 ## License
 
 Gridicons-iOS is licensed under [GNU General Public License v2 (or later)](./LICENSE.md).
