@@ -20,6 +20,20 @@
                ReferencedContainer = "container:Gridicons.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "17A824B51CB27802004771DB"
+               BuildableName = "GridiconsTests.xctest"
+               BlueprintName = "GridiconsTests"
+               ReferencedContainer = "container:Gridicons.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -28,7 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "17A824B51CB27802004771DB"
+               BuildableName = "GridiconsTests.xctest"
+               BlueprintName = "GridiconsTests"
+               ReferencedContainer = "container:Gridicons.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1704C1F71CAF08EF00F991DE"
+            BuildableName = "Gridicons.framework"
+            BlueprintName = "Gridicons"
+            ReferencedContainer = "container:Gridicons.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
