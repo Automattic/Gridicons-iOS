@@ -289,6 +289,7 @@
 				1704C2021CAF08EF00F991DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
