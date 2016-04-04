@@ -45,10 +45,10 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func sliderValueChanged(sender: AnyObject) {
-        guard let slider = sender as? UISlider else { return }
+    @IBAction func stepperValueChanged(sender: AnyObject) {
+        guard let stepper = sender as? UIStepper else { return }
         
-        let value = Int(slider.value)
+        let value = Int(stepper.value)
         
         sizeLabel.text = "\(value)px"
         iconSize = CGSize(width: CGFloat(value), height: CGFloat(value))

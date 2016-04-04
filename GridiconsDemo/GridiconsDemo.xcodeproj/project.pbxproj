@@ -12,8 +12,23 @@
 		1704C2191CAF0D7E00F991DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C2171CAF0D7E00F991DE /* Main.storyboard */; };
 		1704C21B1CAF0D7E00F991DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21A1CAF0D7E00F991DE /* Assets.xcassets */; };
 		1704C21E1CAF0D7E00F991DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21C1CAF0D7E00F991DE /* LaunchScreen.storyboard */; };
-		1704C22C1CAF0DDD00F991DE /* Gridicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1704C22B1CAF0DDD00F991DE /* Gridicons.framework */; };
+		17A824C41CB2865E004771DB /* Gridicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A824C31CB2865E004771DB /* Gridicons.framework */; };
+		17A824C51CB2865E004771DB /* Gridicons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 17A824C31CB2865E004771DB /* Gridicons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17A824C61CB2865E004771DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				17A824C51CB2865E004771DB /* Gridicons.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1704C2101CAF0D7E00F991DE /* GridiconsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridiconsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +39,7 @@
 		1704C21D1CAF0D7E00F991DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1704C21F1CAF0D7E00F991DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1704C22B1CAF0DDD00F991DE /* Gridicons.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Gridicons.framework; path = "../../Gridicons/build/Debug-iphoneos/Gridicons.framework"; sourceTree = "<group>"; };
+		17A824C31CB2865E004771DB /* Gridicons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Gridicons.framework; path = "/Users/frosty/Library/Developer/Xcode/DerivedData/Gridicons-fzvgcrnrncvgkocqcafkchbkschk/Build/Products/Debug-iphoneos/Gridicons.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1704C22C1CAF0DDD00F991DE /* Gridicons.framework in Frameworks */,
+				17A824C41CB2865E004771DB /* Gridicons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +57,7 @@
 		1704C2071CAF0D7E00F991DE = {
 			isa = PBXGroup;
 			children = (
+				17A824C31CB2865E004771DB /* Gridicons.framework */,
 				1704C2121CAF0D7E00F991DE /* GridiconsDemo */,
 				1704C2111CAF0D7E00F991DE /* Products */,
 			);
@@ -78,6 +95,7 @@
 				1704C20C1CAF0D7E00F991DE /* Sources */,
 				1704C20D1CAF0D7E00F991DE /* Frameworks */,
 				1704C20E1CAF0D7E00F991DE /* Resources */,
+				17A824C61CB2865E004771DB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

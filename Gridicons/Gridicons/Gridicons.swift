@@ -150,22 +150,25 @@ public enum GridiconType: Int {
     case AddImage
 }
 
-@objc
-public class Gridicon: NSObject {
+public final class Gridicon: NSObject {
     public static let defaultSize = CGSize(width: 24.0, height: 24.0)
     
     private static let resizingBehavior = GridiconsGenerated.ResizingBehavior.AspectFit
 
-    static let cache = NSCache()
+    private static let cache = NSCache()
+    static func clearCache() {
+        cache.removeAllObjects()
+    }
     
-    // For Objective-C
     /// - returns: A template image of the specified Gridicon type, at the default size.
-    public class func iconOfType(type: GridiconType) -> UIImage {
+    public static func iconOfType(type: GridiconType) -> UIImage {
         return iconOfType(type, withSize: defaultSize)
     }
     
+    // These are two separate methods (rather than one method with a default argument) because Obj-C
+    
     /// - returns: A template image of the specified Gridicon type, at the specified size.
-    public class func iconOfType(type: GridiconType, withSize size: CGSize = defaultSize) -> UIImage {
+    public static func iconOfType(type: GridiconType, withSize size: CGSize) -> UIImage {
         if let icon = cachedIconOfType(type, withSize: size) {
             return icon
         }
@@ -176,11 +179,11 @@ public class Gridicon: NSObject {
         return icon
     }
     
-    private class func cachedIconOfType(type: GridiconType, withSize size: CGSize) -> UIImage? {
+    private static func cachedIconOfType(type: GridiconType, withSize size: CGSize) -> UIImage? {
         return cache.objectForKey("\(type.rawValue)-\(size.width)-\(size.height)") as? UIImage
     }
     
-    private class func generateIconOfType(type: GridiconType, withSize size: CGSize) -> UIImage {
+    private static func generateIconOfType(type: GridiconType, withSize size: CGSize) -> UIImage {
         switch type {
         case .Visible:
             return GridiconsGenerated.imageOfGridiconsvisible(size: size, resizing: resizingBehavior)

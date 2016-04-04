@@ -10,7 +10,19 @@
 		1704C1FC1CAF08EF00F991DE /* Gridicons.h in Headers */ = {isa = PBXBuildFile; fileRef = 1704C1FB1CAF08EF00F991DE /* Gridicons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1704C2041CAF090400F991DE /* GridiconsGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C2031CAF090400F991DE /* GridiconsGenerated.swift */; };
 		1704C2061CAF0ABF00F991DE /* Gridicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C2051CAF0ABF00F991DE /* Gridicons.swift */; };
+		17A824B91CB27802004771DB /* GridiconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A824B81CB27802004771DB /* GridiconsTests.swift */; };
+		17A824BB1CB27802004771DB /* Gridicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1704C1F81CAF08EF00F991DE /* Gridicons.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17A824BC1CB27802004771DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1704C1EF1CAF08EF00F991DE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1704C1F71CAF08EF00F991DE;
+			remoteInfo = Gridicons;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1704C1F81CAF08EF00F991DE /* Gridicons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Gridicons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +30,9 @@
 		1704C1FD1CAF08EF00F991DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1704C2031CAF090400F991DE /* GridiconsGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridiconsGenerated.swift; sourceTree = "<group>"; };
 		1704C2051CAF0ABF00F991DE /* Gridicons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gridicons.swift; sourceTree = "<group>"; };
+		17A824B61CB27802004771DB /* GridiconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridiconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A824B81CB27802004771DB /* GridiconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridiconsTests.swift; sourceTree = "<group>"; };
+		17A824BA1CB27802004771DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +43,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17A824B31CB27802004771DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A824BB1CB27802004771DB /* Gridicons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				1704C1FA1CAF08EF00F991DE /* Gridicons */,
+				17A824B71CB27802004771DB /* GridiconsTests */,
 				1704C1F91CAF08EF00F991DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				1704C1F81CAF08EF00F991DE /* Gridicons.framework */,
+				17A824B61CB27802004771DB /* GridiconsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +81,15 @@
 				1704C1FD1CAF08EF00F991DE /* Info.plist */,
 			);
 			path = Gridicons;
+			sourceTree = "<group>";
+		};
+		17A824B71CB27802004771DB /* GridiconsTests */ = {
+			isa = PBXGroup;
+			children = (
+				17A824B81CB27802004771DB /* GridiconsTests.swift */,
+				17A824BA1CB27802004771DB /* Info.plist */,
+			);
+			path = GridiconsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,16 +124,38 @@
 			productReference = 1704C1F81CAF08EF00F991DE /* Gridicons.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		17A824B51CB27802004771DB /* GridiconsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17A824C01CB27802004771DB /* Build configuration list for PBXNativeTarget "GridiconsTests" */;
+			buildPhases = (
+				17A824B21CB27802004771DB /* Sources */,
+				17A824B31CB27802004771DB /* Frameworks */,
+				17A824B41CB27802004771DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17A824BD1CB27802004771DB /* PBXTargetDependency */,
+			);
+			name = GridiconsTests;
+			productName = GridiconsTests;
+			productReference = 17A824B61CB27802004771DB /* GridiconsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1704C1EF1CAF08EF00F991DE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Automattic;
 				TargetAttributes = {
 					1704C1F71CAF08EF00F991DE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					17A824B51CB27802004771DB = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -117,12 +173,20 @@
 			projectRoot = "";
 			targets = (
 				1704C1F71CAF08EF00F991DE /* Gridicons */,
+				17A824B51CB27802004771DB /* GridiconsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1704C1F61CAF08EF00F991DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17A824B41CB27802004771DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,7 +205,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		17A824B21CB27802004771DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A824B91CB27802004771DB /* GridiconsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17A824BD1CB27802004771DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1704C1F71CAF08EF00F991DE /* Gridicons */;
+			targetProxy = 17A824BC1CB27802004771DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1704C1FE1CAF08EF00F991DE /* Debug */ = {
@@ -270,6 +350,26 @@
 			};
 			name = Release;
 		};
+		17A824BE1CB27802004771DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GridiconsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		17A824BF1CB27802004771DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GridiconsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -290,6 +390,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		17A824C01CB27802004771DB /* Build configuration list for PBXNativeTarget "GridiconsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A824BE1CB27802004771DB /* Debug */,
+				17A824BF1CB27802004771DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
