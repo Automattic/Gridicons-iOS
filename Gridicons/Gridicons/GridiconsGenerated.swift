@@ -3,7 +3,10 @@
 
 import UIKit
 
+
+
 class GridiconsGenerated: NSObject {
+    
     
     //MARK: - Canvas Drawings
     
@@ -19,9 +22,9 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 12)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -442)
+        CGContextTranslateCTM(context, -942, -630)
         
-        /// gridicons-visible copy
+        /// gridicons-visible
         let gridiconsvisible = UIBezierPath()
         gridiconsvisible.moveToPoint(CGPoint(x: 11, y: 12))
         gridiconsvisible.addCurveToPoint(CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 4.19, y: 12), controlPoint2: CGPoint(x: 0, y: 18))
@@ -43,7 +46,7 @@ class GridiconsGenerated: NSObject {
         gridiconsvisible.closePath()
         gridiconsvisible.moveToPoint(CGPoint(x: 11, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 430)
+        CGContextTranslateCTM(context, 942, 618)
         gridiconsvisible.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsvisible.fill()
@@ -62,7 +65,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -438)
+        CGContextTranslateCTM(context, -908, -626)
         
         /// gridicons-video
         let gridiconsvideo = UIBezierPath()
@@ -120,7 +123,7 @@ class GridiconsGenerated: NSObject {
         gridiconsvideo.closePath()
         gridiconsvideo.moveToPoint(CGPoint(x: 18, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 430)
+        CGContextTranslateCTM(context, 908, 618)
         gridiconsvideo.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsvideo.fill()
@@ -139,7 +142,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -440)
+        CGContextTranslateCTM(context, -874, -628)
         
         /// gridicons-video-camera
         let gridiconsvideocamera = UIBezierPath()
@@ -159,7 +162,7 @@ class GridiconsGenerated: NSObject {
         gridiconsvideocamera.closePath()
         gridiconsvideocamera.moveToPoint(CGPoint(x: 15, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 430)
+        CGContextTranslateCTM(context, 874, 618)
         gridiconsvideocamera.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsvideocamera.fill()
@@ -178,7 +181,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -384)
+        CGContextTranslateCTM(context, -840, -626)
         
         /// gridicons-user
         let gridiconsuser = UIBezierPath()
@@ -198,7 +201,7 @@ class GridiconsGenerated: NSObject {
         gridiconsuser.closePath()
         gridiconsuser.moveToPoint(CGPoint(x: 8, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 376)
+        CGContextTranslateCTM(context, 840, 618)
         gridiconsuser.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsuser.fill()
@@ -217,7 +220,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -380)
+        CGContextTranslateCTM(context, -806, -622)
         
         /// gridicons-user-circle
         let gridiconsusercircle = UIBezierPath()
@@ -251,7 +254,7 @@ class GridiconsGenerated: NSObject {
         gridiconsusercircle.closePath()
         gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 376)
+        CGContextTranslateCTM(context, 806, 618)
         gridiconsusercircle.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsusercircle.fill()
@@ -270,7 +273,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -384)
+        CGContextTranslateCTM(context, -772, -626)
         
         /// gridicons-undo
         let gridiconsundo = UIBezierPath()
@@ -296,7 +299,7 @@ class GridiconsGenerated: NSObject {
         gridiconsundo.closePath()
         gridiconsundo.moveToPoint(CGPoint(x: 14.14, y: 10.15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 376)
+        CGContextTranslateCTM(context, 772, 618)
         gridiconsundo.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsundo.fill()
@@ -315,7 +318,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -382)
+        CGContextTranslateCTM(context, -1180, -590)
         
         /// gridicons-underline
         let gridiconsunderline = UIBezierPath()
@@ -339,7 +342,7 @@ class GridiconsGenerated: NSObject {
         gridiconsunderline.closePath()
         gridiconsunderline.moveToPoint(CGPoint(x: 14, y: 6))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 376)
+        CGContextTranslateCTM(context, 1180, 584)
         gridiconsunderline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsunderline.fill()
@@ -358,7 +361,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 21)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -379)
+        CGContextTranslateCTM(context, -1146, -587)
         
         /// gridicons-types
         let gridiconstypes = UIBezierPath()
@@ -386,7 +389,7 @@ class GridiconsGenerated: NSObject {
         gridiconstypes.closePath()
         gridiconstypes.moveToPoint(CGPoint(x: 15, y: 12.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 376)
+        CGContextTranslateCTM(context, 1146, 584)
         gridiconstypes.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstypes.fill()
@@ -405,7 +408,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -381)
+        CGContextTranslateCTM(context, -1112, -589)
         
         /// gridicons-trophy
         let gridiconstrophy = UIBezierPath()
@@ -446,7 +449,7 @@ class GridiconsGenerated: NSObject {
         gridiconstrophy.closePath()
         gridiconstrophy.moveToPoint(CGPoint(x: 18, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 376)
+        CGContextTranslateCTM(context, 1112, 584)
         gridiconstrophy.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstrophy.fill()
@@ -465,7 +468,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -381)
+        CGContextTranslateCTM(context, -1078, -589)
         
         /// gridicons-trash
         let gridiconstrash = UIBezierPath()
@@ -497,7 +500,7 @@ class GridiconsGenerated: NSObject {
         gridiconstrash.closePath()
         gridiconstrash.moveToPoint(CGPoint(x: 5, y: 8))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 376)
+        CGContextTranslateCTM(context, 1078, 584)
         gridiconstrash.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstrash.fill()
@@ -516,7 +519,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -380)
+        CGContextTranslateCTM(context, -1044, -588)
         
         /// gridicons-time
         let gridiconstime = UIBezierPath()
@@ -544,7 +547,7 @@ class GridiconsGenerated: NSObject {
         gridiconstime.closePath()
         gridiconstime.moveToPoint(CGPoint(x: 13.8, y: 17.4))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 376)
+        CGContextTranslateCTM(context, 1044, 584)
         gridiconstime.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstime.fill()
@@ -563,7 +566,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -380)
+        CGContextTranslateCTM(context, -1010, -588)
         
         /// gridicons-thumbs-up
         let gridiconsthumbsup = UIBezierPath()
@@ -591,7 +594,7 @@ class GridiconsGenerated: NSObject {
         gridiconsthumbsup.closePath()
         gridiconsthumbsup.moveToPoint(CGPoint(x: 18, y: 11))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 376)
+        CGContextTranslateCTM(context, 1010, 584)
         gridiconsthumbsup.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsthumbsup.fill()
@@ -610,7 +613,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -380)
+        CGContextTranslateCTM(context, -976, -588)
         
         /// gridicons-themes
         let gridiconsthemes = UIBezierPath()
@@ -654,7 +657,7 @@ class GridiconsGenerated: NSObject {
         gridiconsthemes.closePath()
         gridiconsthemes.moveToPoint(CGPoint(x: 18, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 376)
+        CGContextTranslateCTM(context, 976, 584)
         gridiconsthemes.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsthemes.fill()
@@ -673,7 +676,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -381)
+        CGContextTranslateCTM(context, -942, -589)
         
         /// gridicons-text-color
         let gridiconstextcolor = UIBezierPath()
@@ -700,7 +703,7 @@ class GridiconsGenerated: NSObject {
         gridiconstextcolor.closePath()
         gridiconstextcolor.moveToPoint(CGPoint(x: 10.87, y: 13))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 376)
+        CGContextTranslateCTM(context, 942, 584)
         gridiconstextcolor.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstextcolor.fill()
@@ -719,7 +722,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -380)
+        CGContextTranslateCTM(context, -908, -588)
         
         /// gridicons-tag
         let gridiconstag = UIBezierPath()
@@ -745,7 +748,7 @@ class GridiconsGenerated: NSObject {
         gridiconstag.closePath()
         gridiconstag.moveToPoint(CGPoint(x: 15, y: 11))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 376)
+        CGContextTranslateCTM(context, 908, 584)
         gridiconstag.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstag.fill()
@@ -764,7 +767,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -380)
+        CGContextTranslateCTM(context, -874, -588)
         
         /// gridicons-tablet
         let gridiconstablet = UIBezierPath()
@@ -793,7 +796,7 @@ class GridiconsGenerated: NSObject {
         gridiconstablet.closePath()
         gridiconstablet.moveToPoint(CGPoint(x: 14, y: 21))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 376)
+        CGContextTranslateCTM(context, 874, 584)
         gridiconstablet.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconstablet.fill()
@@ -812,7 +815,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 23, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -330)
+        CGContextTranslateCTM(context, -840, -592)
         
         /// gridicons-sync
         let gridiconssync = UIBezierPath()
@@ -845,7 +848,7 @@ class GridiconsGenerated: NSObject {
         gridiconssync.closePath()
         gridiconssync.moveToPoint(CGPoint(x: 5.5, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 322)
+        CGContextTranslateCTM(context, 840, 584)
         gridiconssync.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconssync.fill()
@@ -864,7 +867,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -331)
+        CGContextTranslateCTM(context, -806, -593)
         
         /// gridicons-strikethrough
         let gridiconsstrikethrough = UIBezierPath()
@@ -905,7 +908,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstrikethrough.closePath()
         gridiconsstrikethrough.moveToPoint(CGPoint(x: 7.82, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 322)
+        CGContextTranslateCTM(context, 806, 584)
         gridiconsstrikethrough.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstrikethrough.fill()
@@ -924,7 +927,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -326)
+        CGContextTranslateCTM(context, -772, -588)
         
         /// gridicons-status
         let gridiconsstatus = UIBezierPath()
@@ -969,7 +972,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstatus.closePath()
         gridiconsstatus.moveToPoint(CGPoint(x: 14, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 322)
+        CGContextTranslateCTM(context, 772, 584)
         gridiconsstatus.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstatus.fill()
@@ -988,7 +991,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -328)
+        CGContextTranslateCTM(context, -1180, -556)
         
         /// gridicons-stats
         let gridiconsstats = UIBezierPath()
@@ -1029,7 +1032,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstats.closePath()
         gridiconsstats.moveToPoint(CGPoint(x: 14, y: 20))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 322)
+        CGContextTranslateCTM(context, 1180, 550)
         gridiconsstats.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstats.fill()
@@ -1048,7 +1051,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -328)
+        CGContextTranslateCTM(context, -1146, -556)
         
         /// gridicons-stats-alt
         let gridiconsstatsalt = UIBezierPath()
@@ -1078,7 +1081,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstatsalt.closePath()
         gridiconsstatsalt.moveToPoint(CGPoint(x: 17, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 322)
+        CGContextTranslateCTM(context, 1146, 550)
         gridiconsstatsalt.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstatsalt.fill()
@@ -1097,7 +1100,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -327)
+        CGContextTranslateCTM(context, -1112, -555)
         
         /// gridicons-star
         let gridiconsstar = UIBezierPath()
@@ -1112,7 +1115,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstar.addLineToPoint(CGPoint(x: 0, y: 12.26))
         gridiconsstar.addLineToPoint(CGPoint(x: 7.42, y: 11.95))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 322)
+        CGContextTranslateCTM(context, 1112, 550)
         gridiconsstar.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstar.fill()
@@ -1131,7 +1134,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -327)
+        CGContextTranslateCTM(context, -1078, -555)
         
         /// gridicons-star-outline
         let gridiconsstaroutline = UIBezierPath()
@@ -1172,7 +1175,7 @@ class GridiconsGenerated: NSObject {
         gridiconsstaroutline.closePath()
         gridiconsstaroutline.moveToPoint(CGPoint(x: 10, y: 5))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 322)
+        CGContextTranslateCTM(context, 1078, 550)
         gridiconsstaroutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsstaroutline.fill()
@@ -1191,7 +1194,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -330)
+        CGContextTranslateCTM(context, -1044, -558)
         
         /// gridicons-special-character
         let gridiconsspecialcharacter = UIBezierPath()
@@ -1225,7 +1228,7 @@ class GridiconsGenerated: NSObject {
         gridiconsspecialcharacter.closePath()
         gridiconsspecialcharacter.moveToPoint(CGPoint(x: 7.14, y: 11.42))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 322)
+        CGContextTranslateCTM(context, 1044, 550)
         gridiconsspecialcharacter.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsspecialcharacter.fill()
@@ -1244,7 +1247,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 17)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -329)
+        CGContextTranslateCTM(context, -1010, -557)
         
         /// gridicons-speaker
         let gridiconsspeaker = UIBezierPath()
@@ -1273,7 +1276,7 @@ class GridiconsGenerated: NSObject {
         gridiconsspeaker.closePath()
         gridiconsspeaker.moveToPoint(CGPoint(x: 9, y: 11))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 322)
+        CGContextTranslateCTM(context, 1010, 550)
         gridiconsspeaker.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsspeaker.fill()
@@ -1292,7 +1295,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -326)
+        CGContextTranslateCTM(context, -976, -554)
         
         /// gridicons-spam
         let gridiconsspam = UIBezierPath()
@@ -1320,7 +1323,7 @@ class GridiconsGenerated: NSObject {
         gridiconsspam.closePath()
         gridiconsspam.moveToPoint(CGPoint(x: 11, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 322)
+        CGContextTranslateCTM(context, 976, 550)
         gridiconsspam.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsspam.fill()
@@ -1339,7 +1342,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -328)
+        CGContextTranslateCTM(context, -942, -556)
         
         /// gridicons-sign-out
         let gridiconssignout = UIBezierPath()
@@ -1374,7 +1377,7 @@ class GridiconsGenerated: NSObject {
         gridiconssignout.closePath()
         gridiconssignout.moveToPoint(CGPoint(x: 15.5, y: 9.5))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 322)
+        CGContextTranslateCTM(context, 942, 550)
         gridiconssignout.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconssignout.fill()
@@ -1393,7 +1396,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -326)
+        CGContextTranslateCTM(context, -908, -554)
         
         /// gridicons-share
         let gridiconsshare = UIBezierPath()
@@ -1422,7 +1425,7 @@ class GridiconsGenerated: NSObject {
         gridiconsshare.closePath()
         gridiconsshare.moveToPoint(CGPoint(x: 15, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 322)
+        CGContextTranslateCTM(context, 908, 550)
         gridiconsshare.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsshare.fill()
@@ -1441,7 +1444,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 21)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -325)
+        CGContextTranslateCTM(context, -874, -553)
         
         /// gridicons-share-ios
         let gridiconsshareios = UIBezierPath()
@@ -1476,7 +1479,7 @@ class GridiconsGenerated: NSObject {
         gridiconsshareios.closePath()
         gridiconsshareios.moveToPoint(CGPoint(x: 3.5, y: 8.5))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 322)
+        CGContextTranslateCTM(context, 874, 550)
         gridiconsshareios.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsshareios.fill()
@@ -1495,7 +1498,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -274)
+        CGContextTranslateCTM(context, -840, -556)
         
         /// gridicons-search
         let gridiconssearch = UIBezierPath()
@@ -1518,7 +1521,7 @@ class GridiconsGenerated: NSObject {
         gridiconssearch.closePath()
         gridiconssearch.moveToPoint(CGPoint(x: 2, y: 13))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 268)
+        CGContextTranslateCTM(context, 840, 550)
         gridiconssearch.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconssearch.fill()
@@ -1537,7 +1540,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -273)
+        CGContextTranslateCTM(context, -806, -555)
         
         /// gridicons-scheduled
         let gridiconsscheduled = UIBezierPath()
@@ -1576,7 +1579,7 @@ class GridiconsGenerated: NSObject {
         gridiconsscheduled.closePath()
         gridiconsscheduled.moveToPoint(CGPoint(x: 16, y: 11))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 268)
+        CGContextTranslateCTM(context, 806, 550)
         gridiconsscheduled.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsscheduled.fill()
@@ -1595,7 +1598,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 21)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -271)
+        CGContextTranslateCTM(context, -772, -553)
         
         /// gridicons-rotate
         let gridiconsrotate = UIBezierPath()
@@ -1625,7 +1628,7 @@ class GridiconsGenerated: NSObject {
         gridiconsrotate.closePath()
         gridiconsrotate.moveToPoint(CGPoint(x: 9.91, y: 4.91))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 268)
+        CGContextTranslateCTM(context, 772, 550)
         gridiconsrotate.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsrotate.fill()
@@ -1644,7 +1647,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 17, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -276)
+        CGContextTranslateCTM(context, -1180, -524)
         
         /// gridicons-reply
         let gridiconsreply = UIBezierPath()
@@ -1668,7 +1671,7 @@ class GridiconsGenerated: NSObject {
         gridiconsreply.closePath()
         gridiconsreply.moveToPoint(CGPoint(x: 11, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 268)
+        CGContextTranslateCTM(context, 1180, 516)
         gridiconsreply.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsreply.fill()
@@ -1687,7 +1690,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -272)
+        CGContextTranslateCTM(context, -1146, -520)
         
         /// gridicons-refresh
         let gridiconsrefresh = UIBezierPath()
@@ -1710,7 +1713,7 @@ class GridiconsGenerated: NSObject {
         gridiconsrefresh.closePath()
         gridiconsrefresh.moveToPoint(CGPoint(x: 13.91, y: 17))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 268)
+        CGContextTranslateCTM(context, 1146, 516)
         gridiconsrefresh.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsrefresh.fill()
@@ -1729,7 +1732,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -276)
+        CGContextTranslateCTM(context, -1112, -524)
         
         /// gridicons-redo
         let gridiconsredo = UIBezierPath()
@@ -1754,7 +1757,7 @@ class GridiconsGenerated: NSObject {
         gridiconsredo.closePath()
         gridiconsredo.moveToPoint(CGPoint(x: 13.9, y: 10.22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 268)
+        CGContextTranslateCTM(context, 1112, 516)
         gridiconsredo.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsredo.fill()
@@ -1773,7 +1776,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 23, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -276)
+        CGContextTranslateCTM(context, -1078, -524)
         
         /// gridicons-reblog
         let gridiconsreblog = UIBezierPath()
@@ -1807,7 +1810,7 @@ class GridiconsGenerated: NSObject {
         gridiconsreblog.closePath()
         gridiconsreblog.moveToPoint(CGPoint(x: 5.5, y: 20.17))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 268)
+        CGContextTranslateCTM(context, 1078, 516)
         gridiconsreblog.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsreblog.fill()
@@ -1826,7 +1829,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -276)
+        CGContextTranslateCTM(context, -1044, -524)
         
         /// gridicons-reader
         let gridiconsreader = UIBezierPath()
@@ -1870,10 +1873,151 @@ class GridiconsGenerated: NSObject {
         gridiconsreader.closePath()
         gridiconsreader.moveToPoint(CGPoint(x: 16, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 268)
+        CGContextTranslateCTM(context, 1044, 516)
         gridiconsreader.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsreader.fill()
+        CGContextRestoreGState(context)
+        
+        CGContextRestoreGState(context)
+    }
+    
+    class func drawGridiconsreaderfollowing(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        /// Resize To Frame
+        CGContextSaveGState(context)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 19), target: frame)
+        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 19)
+        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
+        CGContextTranslateCTM(context, -1010, -521)
+        
+        /// gridicons-reader-following
+        let gridiconsreaderfollowing = UIBezierPath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 21, y: 16.48))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.51, y: 24))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 10, y: 20.4))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 11.41, y: 19.01))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.52, y: 21.2))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 19.61, y: 15.11))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 21, y: 16.48))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 13.55, y: 18.34))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 18, y: 13.89))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 18, y: 5))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 0, y: 5))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 0, y: 19))
+        gridiconsreaderfollowing.addCurveToPoint(CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 0, y: 20.1), controlPoint2: CGPoint(x: 0.9, y: 21))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6.54, y: 21))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 11.45, y: 16.17))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.55, y: 18.34))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 6, y: 16))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 16))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 15))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6, y: 15))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6, y: 16))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 9, y: 14))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 14))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 13))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 13))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 14))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 9, y: 12))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 12))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 11))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 11))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 12))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 16, y: 9))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 9))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 7))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 16, y: 7))
+        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 16, y: 9))
+        gridiconsreaderfollowing.closePath()
+        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 16, y: 9))
+        CGContextSaveGState(context)
+        CGContextTranslateCTM(context, 1010, 516)
+        gridiconsreaderfollowing.usesEvenOddFillRule = true
+        UIColor.blackColor().setFill()
+        gridiconsreaderfollowing.fill()
+        CGContextRestoreGState(context)
+        
+        CGContextRestoreGState(context)
+    }
+    
+    class func drawGridiconsreaderfollow(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        /// Resize To Frame
+        CGContextSaveGState(context)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 19), target: frame)
+        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 19)
+        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
+        CGContextTranslateCTM(context, -976, -521)
+        
+        /// gridicons-reader-follow
+        let gridiconsreaderfollow = UIBezierPath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 21, y: 19))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 21, y: 21))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 21))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 24))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 24))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 21))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 13, y: 21))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 13, y: 19))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 19))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 16))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 16))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 19))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 21, y: 19))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 18, y: 5))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 14))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 14, y: 14))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 14, y: 17))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 11, y: 17))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 11, y: 21))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 21))
+        gridiconsreaderfollow.addCurveToPoint(CGPoint(x: 0, y: 19), controlPoint1: CGPoint(x: 0.9, y: 21), controlPoint2: CGPoint(x: 0, y: 20.1))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 0, y: 5))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 5))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 6, y: 16))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 6, y: 15))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 15))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 16))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 6, y: 16))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 9, y: 13))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 13))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 14))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 14))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 13))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 9, y: 11))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 11))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 12))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 12))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 11))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 16, y: 7))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 7))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 9))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 9))
+        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 7))
+        gridiconsreaderfollow.closePath()
+        gridiconsreaderfollow.moveToPoint(CGPoint(x: 16, y: 7))
+        CGContextSaveGState(context)
+        CGContextTranslateCTM(context, 976, 516)
+        gridiconsreaderfollow.usesEvenOddFillRule = true
+        UIColor.blackColor().setFill()
+        gridiconsreaderfollow.fill()
         CGContextRestoreGState(context)
         
         CGContextRestoreGState(context)
@@ -1889,7 +2033,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 17, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -278)
+        CGContextTranslateCTM(context, -942, -526)
         
         /// gridicons-quote
         let gridiconsquote = UIBezierPath()
@@ -1931,7 +2075,7 @@ class GridiconsGenerated: NSObject {
         gridiconsquote.closePath()
         gridiconsquote.moveToPoint(CGPoint(x: 16.63, y: 20.75))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 268)
+        CGContextTranslateCTM(context, 942, 516)
         gridiconsquote.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsquote.fill()
@@ -1950,7 +2094,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -273)
+        CGContextTranslateCTM(context, -908, -521)
         
         /// gridicons-print
         let gridiconsprint = UIBezierPath()
@@ -2001,7 +2145,7 @@ class GridiconsGenerated: NSObject {
         gridiconsprint.closePath()
         gridiconsprint.moveToPoint(CGPoint(x: 18, y: 12.5))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 268)
+        CGContextTranslateCTM(context, 908, 516)
         gridiconsprint.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsprint.fill()
@@ -2020,7 +2164,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -278)
+        CGContextTranslateCTM(context, -874, -526)
         
         /// gridicons-posts
         let gridiconsposts = UIBezierPath()
@@ -2062,7 +2206,7 @@ class GridiconsGenerated: NSObject {
         gridiconsposts.closePath()
         gridiconsposts.moveToPoint(CGPoint(x: 0, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 268)
+        CGContextTranslateCTM(context, 874, 516)
         gridiconsposts.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsposts.fill()
@@ -2081,7 +2225,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -274)
+        CGContextTranslateCTM(context, -840, -522)
         
         /// gridicons-popout
         let gridiconspopout = UIBezierPath()
@@ -2116,7 +2260,7 @@ class GridiconsGenerated: NSObject {
         gridiconspopout.closePath()
         gridiconspopout.moveToPoint(CGPoint(x: 8.5, y: 9.5))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 268)
+        CGContextTranslateCTM(context, 840, 516)
         gridiconspopout.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconspopout.fill()
@@ -2135,7 +2279,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -274)
+        CGContextTranslateCTM(context, -806, -522)
         
         /// gridicons-plus
         let gridiconsplus = UIBezierPath()
@@ -2155,7 +2299,7 @@ class GridiconsGenerated: NSObject {
         gridiconsplus.closePath()
         gridiconsplus.moveToPoint(CGPoint(x: 18, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 268)
+        CGContextTranslateCTM(context, 806, 516)
         gridiconsplus.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsplus.fill()
@@ -2174,7 +2318,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 12)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -226)
+        CGContextTranslateCTM(context, -772, -528)
         
         /// gridicons-plus-small
         let gridiconsplussmall = UIBezierPath()
@@ -2191,7 +2335,7 @@ class GridiconsGenerated: NSObject {
         gridiconsplussmall.addLineToPoint(CGPoint(x: 7, y: 19))
         gridiconsplussmall.addLineToPoint(CGPoint(x: 12, y: 19))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 214)
+        CGContextTranslateCTM(context, 772, 516)
         gridiconsplussmall.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsplussmall.fill()
@@ -2210,7 +2354,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -218)
+        CGContextTranslateCTM(context, -1180, -486)
         
         /// gridicons-plugins
         let gridiconsplugins = UIBezierPath()
@@ -2236,7 +2380,7 @@ class GridiconsGenerated: NSObject {
         gridiconsplugins.closePath()
         gridiconsplugins.moveToPoint(CGPoint(x: 11, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 214)
+        CGContextTranslateCTM(context, 1180, 482)
         gridiconsplugins.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsplugins.fill()
@@ -2255,7 +2399,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -218)
+        CGContextTranslateCTM(context, -1146, -486)
         
         /// gridicons-phone
         let gridiconsphone = UIBezierPath()
@@ -2284,7 +2428,7 @@ class GridiconsGenerated: NSObject {
         gridiconsphone.closePath()
         gridiconsphone.moveToPoint(CGPoint(x: 10, y: 21))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 214)
+        CGContextTranslateCTM(context, 1146, 482)
         gridiconsphone.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsphone.fill()
@@ -2303,7 +2447,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -219)
+        CGContextTranslateCTM(context, -1112, -487)
         
         /// gridicons-pencil
         let gridiconspencil = UIBezierPath()
@@ -2335,7 +2479,7 @@ class GridiconsGenerated: NSObject {
         gridiconspencil.closePath()
         gridiconspencil.moveToPoint(CGPoint(x: 0, y: 21))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 214)
+        CGContextTranslateCTM(context, 1112, 482)
         gridiconspencil.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconspencil.fill()
@@ -2354,7 +2498,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -218)
+        CGContextTranslateCTM(context, -1078, -486)
         
         /// gridicons-pages
         let gridiconspages = UIBezierPath()
@@ -2392,7 +2536,7 @@ class GridiconsGenerated: NSObject {
         gridiconspages.closePath()
         gridiconspages.moveToPoint(CGPoint(x: 14, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 214)
+        CGContextTranslateCTM(context, 1078, 482)
         gridiconspages.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconspages.fill()
@@ -2411,7 +2555,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -218)
+        CGContextTranslateCTM(context, -1044, -486)
         
         /// gridicons-notice
         let gridiconsnotice = UIBezierPath()
@@ -2436,7 +2580,7 @@ class GridiconsGenerated: NSObject {
         gridiconsnotice.closePath()
         gridiconsnotice.moveToPoint(CGPoint(x: 11, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 214)
+        CGContextTranslateCTM(context, 1044, 482)
         gridiconsnotice.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsnotice.fill()
@@ -2455,7 +2599,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -218)
+        CGContextTranslateCTM(context, -1010, -486)
         
         /// gridicons-notice-outline
         let gridiconsnoticeoutline = UIBezierPath()
@@ -2487,7 +2631,7 @@ class GridiconsGenerated: NSObject {
         gridiconsnoticeoutline.closePath()
         gridiconsnoticeoutline.moveToPoint(CGPoint(x: 9, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 214)
+        CGContextTranslateCTM(context, 1010, 482)
         gridiconsnoticeoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsnoticeoutline.fill()
@@ -2506,7 +2650,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -219)
+        CGContextTranslateCTM(context, -976, -487)
         
         /// gridicons-not-visible
         let gridiconsnotvisible = UIBezierPath()
@@ -2544,7 +2688,7 @@ class GridiconsGenerated: NSObject {
         gridiconsnotvisible.closePath()
         gridiconsnotvisible.moveToPoint(CGPoint(x: 19.39, y: 14.01))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 214)
+        CGContextTranslateCTM(context, 976, 482)
         gridiconsnotvisible.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsnotvisible.fill()
@@ -2563,7 +2707,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -218)
+        CGContextTranslateCTM(context, -942, -486)
         
         /// gridicons-my-sites
         let gridiconsmysites = UIBezierPath()
@@ -2623,7 +2767,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmysites.closePath()
         gridiconsmysites.moveToPoint(CGPoint(x: 14.27, y: 21.35))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 214)
+        CGContextTranslateCTM(context, 942, 482)
         gridiconsmysites.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmysites.fill()
@@ -2642,7 +2786,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -218)
+        CGContextTranslateCTM(context, -908, -486)
         
         /// gridicons-my-sites-horizon
         let gridiconsmysiteshorizon = UIBezierPath()
@@ -2713,7 +2857,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmysiteshorizon.closePath()
         gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 10.96, y: 17.01))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 214)
+        CGContextTranslateCTM(context, 908, 482)
         gridiconsmysiteshorizon.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmysiteshorizon.fill()
@@ -2732,7 +2876,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 2)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -236)
+        CGContextTranslateCTM(context, -874, -504)
         
         /// gridicons-minus
         let gridiconsminus = UIBezierPath()
@@ -2744,7 +2888,7 @@ class GridiconsGenerated: NSObject {
         gridiconsminus.closePath()
         gridiconsminus.moveToPoint(CGPoint(x: 0, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 214)
+        CGContextTranslateCTM(context, 874, 482)
         gridiconsminus.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsminus.fill()
@@ -2763,7 +2907,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 2)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -236)
+        CGContextTranslateCTM(context, -840, -504)
         
         /// gridicons-minus-small
         let gridiconsminussmall = UIBezierPath()
@@ -2775,7 +2919,7 @@ class GridiconsGenerated: NSObject {
         gridiconsminussmall.closePath()
         gridiconsminussmall.moveToPoint(CGPoint(x: 0, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 214)
+        CGContextTranslateCTM(context, 840, 482)
         gridiconsminussmall.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsminussmall.fill()
@@ -2794,7 +2938,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -222)
+        CGContextTranslateCTM(context, -806, -490)
         
         /// gridicons-microphone
         let gridiconsmicrophone = UIBezierPath()
@@ -2820,7 +2964,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmicrophone.closePath()
         gridiconsmicrophone.moveToPoint(CGPoint(x: 10, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 214)
+        CGContextTranslateCTM(context, 806, 482)
         gridiconsmicrophone.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmicrophone.fill()
@@ -2839,7 +2983,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -169)
+        CGContextTranslateCTM(context, -772, -491)
         
         /// gridicons-menus
         let gridiconsmenus = UIBezierPath()
@@ -2884,7 +3028,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmenus.closePath()
         gridiconsmenus.moveToPoint(CGPoint(x: 1.5, y: 21))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 160)
+        CGContextTranslateCTM(context, 772, 482)
         gridiconsmenus.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmenus.fill()
@@ -2903,7 +3047,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 12)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -172)
+        CGContextTranslateCTM(context, -1180, -460)
         
         /// gridicons-menu
         let gridiconsmenu = UIBezierPath()
@@ -2927,7 +3071,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmenu.closePath()
         gridiconsmenu.moveToPoint(CGPoint(x: 0, y: 19))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 160)
+        CGContextTranslateCTM(context, 1180, 448)
         gridiconsmenu.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmenu.fill()
@@ -2946,7 +3090,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -164)
+        CGContextTranslateCTM(context, -1146, -452)
         
         /// gridicons-mention
         let gridiconsmention = UIBezierPath()
@@ -2980,7 +3124,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmention.closePath()
         gridiconsmention.moveToPoint(CGPoint(x: 10, y: 17))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 160)
+        CGContextTranslateCTM(context, 1146, 448)
         gridiconsmention.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmention.fill()
@@ -2999,7 +3143,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -168)
+        CGContextTranslateCTM(context, -1112, -456)
         
         /// gridicons-mail
         let gridiconsmail = UIBezierPath()
@@ -3023,7 +3167,7 @@ class GridiconsGenerated: NSObject {
         gridiconsmail.closePath()
         gridiconsmail.moveToPoint(CGPoint(x: 18, y: 12.23))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 160)
+        CGContextTranslateCTM(context, 1112, 448)
         gridiconsmail.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsmail.fill()
@@ -3042,7 +3186,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -164)
+        CGContextTranslateCTM(context, -1078, -452)
         
         /// gridicons-lock
         let gridiconslock = UIBezierPath()
@@ -3081,7 +3225,7 @@ class GridiconsGenerated: NSObject {
         gridiconslock.closePath()
         gridiconslock.moveToPoint(CGPoint(x: 9, y: 17.72))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 160)
+        CGContextTranslateCTM(context, 1078, 448)
         gridiconslock.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslock.fill()
@@ -3100,7 +3244,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -164)
+        CGContextTranslateCTM(context, -1044, -452)
         
         /// gridicons-location
         let gridiconslocation = UIBezierPath()
@@ -3124,7 +3268,7 @@ class GridiconsGenerated: NSObject {
         gridiconslocation.closePath()
         gridiconslocation.moveToPoint(CGPoint(x: 7, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 160)
+        CGContextTranslateCTM(context, 1044, 448)
         gridiconslocation.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslocation.fill()
@@ -3143,7 +3287,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -169)
+        CGContextTranslateCTM(context, -1010, -457)
         
         /// gridicons-list-unordered
         let gridiconslistunordered = UIBezierPath()
@@ -3188,7 +3332,7 @@ class GridiconsGenerated: NSObject {
         gridiconslistunordered.closePath()
         gridiconslistunordered.moveToPoint(CGPoint(x: 1.5, y: 21))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 160)
+        CGContextTranslateCTM(context, 1010, 448)
         gridiconslistunordered.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslistunordered.fill()
@@ -3207,7 +3351,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 17)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -167)
+        CGContextTranslateCTM(context, -976, -455)
         
         /// gridicons-list-ordered
         let gridiconslistordered = UIBezierPath()
@@ -3301,7 +3445,7 @@ class GridiconsGenerated: NSObject {
         gridiconslistordered.closePath()
         gridiconslistordered.moveToPoint(CGPoint(x: 2.07, y: 21.7))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 160)
+        CGContextTranslateCTM(context, 976, 448)
         gridiconslistordered.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslistordered.fill()
@@ -3320,7 +3464,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -166)
+        CGContextTranslateCTM(context, -942, -454)
         
         /// gridicons-list-checkmark
         let gridiconslistcheckmark = UIBezierPath()
@@ -3368,7 +3512,7 @@ class GridiconsGenerated: NSObject {
         gridiconslistcheckmark.closePath()
         gridiconslistcheckmark.moveToPoint(CGPoint(x: 5.94, y: 6.44))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 160)
+        CGContextTranslateCTM(context, 942, 448)
         gridiconslistcheckmark.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslistcheckmark.fill()
@@ -3387,7 +3531,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 10)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -174)
+        CGContextTranslateCTM(context, -908, -462)
         
         /// gridicons-link
         let gridiconslink = UIBezierPath()
@@ -3429,7 +3573,7 @@ class GridiconsGenerated: NSObject {
         gridiconslink.closePath()
         gridiconslink.moveToPoint(CGPoint(x: 0, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 160)
+        CGContextTranslateCTM(context, 908, 448)
         gridiconslink.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslink.fill()
@@ -3448,7 +3592,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -165)
+        CGContextTranslateCTM(context, -874, -453)
         
         /// gridicons-link-break
         let gridiconslinkbreak = UIBezierPath()
@@ -3494,7 +3638,7 @@ class GridiconsGenerated: NSObject {
         gridiconslinkbreak.closePath()
         gridiconslinkbreak.moveToPoint(CGPoint(x: 2.36, y: 18.64))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 160)
+        CGContextTranslateCTM(context, 874, 448)
         gridiconslinkbreak.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslinkbreak.fill()
@@ -3513,7 +3657,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -165)
+        CGContextTranslateCTM(context, -840, -453)
         
         /// gridicons-layout
         let gridiconslayout = UIBezierPath()
@@ -3552,7 +3696,7 @@ class GridiconsGenerated: NSObject {
         gridiconslayout.closePath()
         gridiconslayout.moveToPoint(CGPoint(x: 18, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 160)
+        CGContextTranslateCTM(context, 840, 448)
         gridiconslayout.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslayout.fill()
@@ -3571,7 +3715,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 22)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -162)
+        CGContextTranslateCTM(context, -806, -450)
         
         /// gridicons-layout-blocks
         let gridiconslayoutblocks = UIBezierPath()
@@ -3624,7 +3768,7 @@ class GridiconsGenerated: NSObject {
         gridiconslayoutblocks.closePath()
         gridiconslayoutblocks.moveToPoint(CGPoint(x: 20, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 160)
+        CGContextTranslateCTM(context, 806, 448)
         gridiconslayoutblocks.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconslayoutblocks.fill()
@@ -3643,7 +3787,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -115)
+        CGContextTranslateCTM(context, -772, -457)
         
         /// gridicons-italic
         let gridiconsitalic = UIBezierPath()
@@ -3660,7 +3804,7 @@ class GridiconsGenerated: NSObject {
         gridiconsitalic.addLineToPoint(CGPoint(x: 8.9, y: 11))
         gridiconsitalic.addLineToPoint(CGPoint(x: 9.33, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 106)
+        CGContextTranslateCTM(context, 772, 448)
         gridiconsitalic.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsitalic.fill()
@@ -3679,7 +3823,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -110)
+        CGContextTranslateCTM(context, -1176, -418)
         
         /// gridicons-institution
         let gridiconsinstitution = UIBezierPath()
@@ -3716,7 +3860,7 @@ class GridiconsGenerated: NSObject {
         gridiconsinstitution.closePath()
         gridiconsinstitution.moveToPoint(CGPoint(x: 2, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 106)
+        CGContextTranslateCTM(context, 1176, 414)
         gridiconsinstitution.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsinstitution.fill()
@@ -3735,7 +3879,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -110)
+        CGContextTranslateCTM(context, -1142, -418)
         
         /// gridicons-ink
         let gridiconsink = UIBezierPath()
@@ -3752,7 +3896,7 @@ class GridiconsGenerated: NSObject {
         gridiconsink.closePath()
         gridiconsink.moveToPoint(CGPoint(x: 0, y: 17))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 106)
+        CGContextTranslateCTM(context, 1142, 414)
         gridiconsink.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsink.fill()
@@ -3771,7 +3915,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -110)
+        CGContextTranslateCTM(context, -1108, -418)
         
         /// gridicons-info
         let gridiconsinfo = UIBezierPath()
@@ -3796,7 +3940,7 @@ class GridiconsGenerated: NSObject {
         gridiconsinfo.closePath()
         gridiconsinfo.moveToPoint(CGPoint(x: 11, y: 11))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 106)
+        CGContextTranslateCTM(context, 1108, 414)
         gridiconsinfo.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsinfo.fill()
@@ -3815,7 +3959,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -110)
+        CGContextTranslateCTM(context, -1074, -418)
         
         /// gridicons-info-outline
         let gridiconsinfooutline = UIBezierPath()
@@ -3847,7 +3991,7 @@ class GridiconsGenerated: NSObject {
         gridiconsinfooutline.closePath()
         gridiconsinfooutline.moveToPoint(CGPoint(x: 10, y: 4))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 106)
+        CGContextTranslateCTM(context, 1074, 414)
         gridiconsinfooutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsinfooutline.fill()
@@ -3866,7 +4010,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -114)
+        CGContextTranslateCTM(context, -1040, -422)
         
         /// gridicons-indent-right
         let gridiconsindentright = UIBezierPath()
@@ -3889,7 +4033,7 @@ class GridiconsGenerated: NSObject {
         gridiconsindentright.closePath()
         gridiconsindentright.moveToPoint(CGPoint(x: 18, y: 17))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 106)
+        CGContextTranslateCTM(context, 1040, 414)
         gridiconsindentright.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsindentright.fill()
@@ -3908,7 +4052,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -114)
+        CGContextTranslateCTM(context, -1006, -422)
         
         /// gridicons-indent-left
         let gridiconsindentleft = UIBezierPath()
@@ -3931,7 +4075,7 @@ class GridiconsGenerated: NSObject {
         gridiconsindentleft.closePath()
         gridiconsindentleft.moveToPoint(CGPoint(x: 0, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 106)
+        CGContextTranslateCTM(context, 1006, 414)
         gridiconsindentleft.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsindentleft.fill()
@@ -3950,7 +4094,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -114)
+        CGContextTranslateCTM(context, -972, -422)
         
         /// gridicons-image
         let gridiconsimage = UIBezierPath()
@@ -3984,7 +4128,7 @@ class GridiconsGenerated: NSObject {
         gridiconsimage.closePath()
         gridiconsimage.moveToPoint(CGPoint(x: 18, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 106)
+        CGContextTranslateCTM(context, 972, 414)
         gridiconsimage.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsimage.fill()
@@ -4003,7 +4147,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -110)
+        CGContextTranslateCTM(context, -938, -418)
         
         /// gridicons-image-multiple
         let gridiconsimagemultiple = UIBezierPath()
@@ -4046,7 +4190,7 @@ class GridiconsGenerated: NSObject {
         gridiconsimagemultiple.closePath()
         gridiconsimagemultiple.moveToPoint(CGPoint(x: 6, y: 6))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 106)
+        CGContextTranslateCTM(context, 938, 414)
         gridiconsimagemultiple.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsimagemultiple.fill()
@@ -4065,7 +4209,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -110)
+        CGContextTranslateCTM(context, -904, -418)
         
         /// gridicons-house
         let gridiconshouse = UIBezierPath()
@@ -4087,7 +4231,7 @@ class GridiconsGenerated: NSObject {
         gridiconshouse.closePath()
         gridiconshouse.moveToPoint(CGPoint(x: 20, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 106)
+        CGContextTranslateCTM(context, 904, 414)
         gridiconshouse.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconshouse.fill()
@@ -4106,12 +4250,12 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -369, -108)
+        CGContextTranslateCTM(context, -874, -414)
         
         /// gridicons-history
         do {
             CGContextSaveGState(context)
-            CGContextTranslateCTM(context, 369, 108)
+            CGContextTranslateCTM(context, 874, 414)
             
             /// Fill 1
             let fill1 = UIBezierPath()
@@ -4171,7 +4315,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -110)
+        CGContextTranslateCTM(context, -840, -418)
         
         /// gridicons-help
         let gridiconshelp = UIBezierPath()
@@ -4211,7 +4355,7 @@ class GridiconsGenerated: NSObject {
         gridiconshelp.closePath()
         gridiconshelp.moveToPoint(CGPoint(x: 13, y: 12.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 106)
+        CGContextTranslateCTM(context, 840, 414)
         gridiconshelp.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconshelp.fill()
@@ -4230,7 +4374,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -110)
+        CGContextTranslateCTM(context, -806, -418)
         
         /// gridicons-help-outline
         let gridiconshelpoutline = UIBezierPath()
@@ -4277,7 +4421,7 @@ class GridiconsGenerated: NSObject {
         gridiconshelpoutline.closePath()
         gridiconshelpoutline.moveToPoint(CGPoint(x: 9.04, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 106)
+        CGContextTranslateCTM(context, 806, 414)
         gridiconshelpoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconshelpoutline.fill()
@@ -4296,7 +4440,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -57)
+        CGContextTranslateCTM(context, -772, -419)
         
         /// gridicons-heart
         let gridiconsheart = UIBezierPath()
@@ -4311,7 +4455,7 @@ class GridiconsGenerated: NSObject {
         gridiconsheart.closePath()
         gridiconsheart.moveToPoint(CGPoint(x: 14.5, y: 5.65))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, 52)
+        CGContextTranslateCTM(context, 772, 414)
         gridiconsheart.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsheart.fill()
@@ -4330,7 +4474,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -57)
+        CGContextTranslateCTM(context, -1180, -385)
         
         /// gridicons-heart-outline
         let gridiconsheartoutline = UIBezierPath()
@@ -4356,7 +4500,7 @@ class GridiconsGenerated: NSObject {
         gridiconsheartoutline.closePath()
         gridiconsheartoutline.moveToPoint(CGPoint(x: 14.5, y: 5.65))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, 52)
+        CGContextTranslateCTM(context, 1180, 380)
         gridiconsheartoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsheartoutline.fill()
@@ -4375,7 +4519,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -61)
+        CGContextTranslateCTM(context, -1146, -389)
         
         /// gridicons-heading
         let gridiconsheading = UIBezierPath()
@@ -4395,7 +4539,7 @@ class GridiconsGenerated: NSObject {
         gridiconsheading.closePath()
         gridiconsheading.moveToPoint(CGPoint(x: 12, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, 52)
+        CGContextTranslateCTM(context, 1146, 380)
         gridiconsheading.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsheading.fill()
@@ -4414,7 +4558,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -60)
+        CGContextTranslateCTM(context, -1112, -388)
         
         /// gridicons-grid
         let gridiconsgrid = UIBezierPath()
@@ -4474,7 +4618,7 @@ class GridiconsGenerated: NSObject {
         gridiconsgrid.closePath()
         gridiconsgrid.moveToPoint(CGPoint(x: 16, y: 20))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, 52)
+        CGContextTranslateCTM(context, 1112, 380)
         gridiconsgrid.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsgrid.fill()
@@ -4493,7 +4637,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -56)
+        CGContextTranslateCTM(context, -1078, -384)
         
         /// gridicons-globe
         let gridiconsglobe = UIBezierPath()
@@ -4543,7 +4687,7 @@ class GridiconsGenerated: NSObject {
         gridiconsglobe.closePath()
         gridiconsglobe.moveToPoint(CGPoint(x: 10, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, 52)
+        CGContextTranslateCTM(context, 1078, 380)
         gridiconsglobe.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsglobe.fill()
@@ -4562,7 +4706,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -62)
+        CGContextTranslateCTM(context, -1044, -390)
         
         /// gridicons-folder
         let gridiconsfolder = UIBezierPath()
@@ -4581,7 +4725,7 @@ class GridiconsGenerated: NSObject {
         gridiconsfolder.closePath()
         gridiconsfolder.moveToPoint(CGPoint(x: 14, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, 52)
+        CGContextTranslateCTM(context, 1044, 380)
         gridiconsfolder.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsfolder.fill()
@@ -4600,7 +4744,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -58)
+        CGContextTranslateCTM(context, -1010, -386)
         
         /// gridicons-folder-multiple
         let gridiconsfoldermultiple = UIBezierPath()
@@ -4628,7 +4772,7 @@ class GridiconsGenerated: NSObject {
         gridiconsfoldermultiple.closePath()
         gridiconsfoldermultiple.moveToPoint(CGPoint(x: 18, y: 20))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, 52)
+        CGContextTranslateCTM(context, 1010, 380)
         gridiconsfoldermultiple.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsfoldermultiple.fill()
@@ -4647,7 +4791,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 22)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -54)
+        CGContextTranslateCTM(context, -976, -382)
         
         /// gridicons-flip-vertical
         let gridiconsflipvertical = UIBezierPath()
@@ -4678,7 +4822,7 @@ class GridiconsGenerated: NSObject {
         gridiconsflipvertical.closePath()
         gridiconsflipvertical.moveToPoint(CGPoint(x: 2, y: 19))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, 52)
+        CGContextTranslateCTM(context, 976, 380)
         gridiconsflipvertical.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsflipvertical.fill()
@@ -4697,7 +4841,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -60)
+        CGContextTranslateCTM(context, -942, -388)
         
         /// gridicons-flip-horizontal
         let gridiconsfliphorizontal = UIBezierPath()
@@ -4728,7 +4872,7 @@ class GridiconsGenerated: NSObject {
         gridiconsfliphorizontal.closePath()
         gridiconsfliphorizontal.moveToPoint(CGPoint(x: 5, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, 52)
+        CGContextTranslateCTM(context, 942, 380)
         gridiconsfliphorizontal.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsfliphorizontal.fill()
@@ -4747,7 +4891,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 17)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -59)
+        CGContextTranslateCTM(context, -908, -387)
         
         /// gridicons-flag
         let gridiconsflag = UIBezierPath()
@@ -4765,7 +4909,7 @@ class GridiconsGenerated: NSObject {
         gridiconsflag.closePath()
         gridiconsflag.moveToPoint(CGPoint(x: 10, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, 52)
+        CGContextTranslateCTM(context, 908, 380)
         gridiconsflag.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsflag.fill()
@@ -4784,7 +4928,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -58)
+        CGContextTranslateCTM(context, -874, -386)
         
         /// gridicons-external
         let gridiconsexternal = UIBezierPath()
@@ -4816,7 +4960,7 @@ class GridiconsGenerated: NSObject {
         gridiconsexternal.closePath()
         gridiconsexternal.moveToPoint(CGPoint(x: 10, y: 6))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, 52)
+        CGContextTranslateCTM(context, 874, 380)
         gridiconsexternal.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsexternal.fill()
@@ -4835,7 +4979,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 4)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -72)
+        CGContextTranslateCTM(context, -840, -400)
         
         /// gridicons-ellipsis
         let gridiconsellipsis = UIBezierPath()
@@ -4862,7 +5006,7 @@ class GridiconsGenerated: NSObject {
         gridiconsellipsis.closePath()
         gridiconsellipsis.moveToPoint(CGPoint(x: 9, y: 20))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, 52)
+        CGContextTranslateCTM(context, 840, 380)
         gridiconsellipsis.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsellipsis.fill()
@@ -4881,7 +5025,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 5)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -71)
+        CGContextTranslateCTM(context, -806, -399)
         
         /// gridicons-dropdown
         let gridiconsdropdown = UIBezierPath()
@@ -4889,7 +5033,7 @@ class GridiconsGenerated: NSObject {
         gridiconsdropdown.addLineToPoint(CGPoint(x: 5, y: 24))
         gridiconsdropdown.addLineToPoint(CGPoint(x: 10, y: 19))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, 52)
+        CGContextTranslateCTM(context, 806, 380)
         gridiconsdropdown.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsdropdown.fill()
@@ -4908,7 +5052,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, -2)
+        CGContextTranslateCTM(context, -772, -384)
         
         /// gridicons-domains
         let gridiconsdomains = UIBezierPath()
@@ -4988,7 +5132,7 @@ class GridiconsGenerated: NSObject {
         gridiconsdomains.closePath()
         gridiconsdomains.moveToPoint(CGPoint(x: 17.74, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, -2)
+        CGContextTranslateCTM(context, 772, 380)
         gridiconsdomains.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsdomains.fill()
@@ -5007,7 +5151,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, -2)
+        CGContextTranslateCTM(context, -1180, -350)
         
         /// gridicons-customize
         let gridiconscustomize = UIBezierPath()
@@ -5046,7 +5190,7 @@ class GridiconsGenerated: NSObject {
         gridiconscustomize.closePath()
         gridiconscustomize.moveToPoint(CGPoint(x: 12.15, y: 14.85))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, -2)
+        CGContextTranslateCTM(context, 1180, 346)
         gridiconscustomize.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscustomize.fill()
@@ -5065,7 +5209,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, -4)
+        CGContextTranslateCTM(context, -1146, -352)
         
         /// gridicons-custom-post-type
         let gridiconscustomposttype = UIBezierPath()
@@ -5100,7 +5244,7 @@ class GridiconsGenerated: NSObject {
         gridiconscustomposttype.closePath()
         gridiconscustomposttype.moveToPoint(CGPoint(x: 10.5, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, -2)
+        CGContextTranslateCTM(context, 1146, 346)
         gridiconscustomposttype.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscustomposttype.fill()
@@ -5119,7 +5263,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, -6)
+        CGContextTranslateCTM(context, -1112, -354)
         
         /// gridicons-cross
         let gridiconscross = UIBezierPath()
@@ -5139,7 +5283,7 @@ class GridiconsGenerated: NSObject {
         gridiconscross.closePath()
         gridiconscross.moveToPoint(CGPoint(x: 14.14, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, -2)
+        CGContextTranslateCTM(context, 1112, 346)
         gridiconscross.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscross.fill()
@@ -5158,7 +5302,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 12)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, -10)
+        CGContextTranslateCTM(context, -1078, -358)
         
         /// gridicons-cross-small
         let gridiconscrosssmall = UIBezierPath()
@@ -5179,7 +5323,7 @@ class GridiconsGenerated: NSObject {
         gridiconscrosssmall.closePath()
         gridiconscrosssmall.moveToPoint(CGPoint(x: 11.41, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, -2)
+        CGContextTranslateCTM(context, 1078, 346)
         gridiconscrosssmall.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscrosssmall.fill()
@@ -5198,7 +5342,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, -2)
+        CGContextTranslateCTM(context, -1044, -350)
         
         /// gridicons-crop
         let gridiconscrop = UIBezierPath()
@@ -5230,7 +5374,7 @@ class GridiconsGenerated: NSObject {
         gridiconscrop.closePath()
         gridiconscrop.moveToPoint(CGPoint(x: 6, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, -2)
+        CGContextTranslateCTM(context, 1044, 346)
         gridiconscrop.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscrop.fill()
@@ -5249,7 +5393,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, -6)
+        CGContextTranslateCTM(context, -1010, -354)
         
         /// gridicons-credit-card
         let gridiconscreditcard = UIBezierPath()
@@ -5290,7 +5434,7 @@ class GridiconsGenerated: NSObject {
         gridiconscreditcard.closePath()
         gridiconscreditcard.moveToPoint(CGPoint(x: 13, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, -2)
+        CGContextTranslateCTM(context, 1010, 346)
         gridiconscreditcard.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscreditcard.fill()
@@ -5309,7 +5453,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, -4)
+        CGContextTranslateCTM(context, -976, -352)
         
         /// gridicons-create
         let gridiconscreate = UIBezierPath()
@@ -5346,7 +5490,7 @@ class GridiconsGenerated: NSObject {
         gridiconscreate.closePath()
         gridiconscreate.moveToPoint(CGPoint(x: 13.94, y: 7.06))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, -2)
+        CGContextTranslateCTM(context, 976, 346)
         gridiconscreate.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscreate.fill()
@@ -5365,7 +5509,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, -2)
+        CGContextTranslateCTM(context, -942, -350)
         
         /// gridicons-computer
         let gridiconscomputer = UIBezierPath()
@@ -5396,7 +5540,7 @@ class GridiconsGenerated: NSObject {
         gridiconscomputer.closePath()
         gridiconscomputer.moveToPoint(CGPoint(x: 18, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, -2)
+        CGContextTranslateCTM(context, 942, 346)
         gridiconscomputer.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscomputer.fill()
@@ -5415,7 +5559,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, -4)
+        CGContextTranslateCTM(context, -908, -352)
         
         /// gridicons-comment
         let gridiconscomment = UIBezierPath()
@@ -5434,7 +5578,7 @@ class GridiconsGenerated: NSObject {
         gridiconscomment.closePath()
         gridiconscomment.moveToPoint(CGPoint(x: 0, y: 8))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, -2)
+        CGContextTranslateCTM(context, 908, 346)
         gridiconscomment.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscomment.fill()
@@ -5453,7 +5597,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, -2)
+        CGContextTranslateCTM(context, -874, -350)
         
         /// gridicons-cog
         let gridiconscog = UIBezierPath()
@@ -5495,7 +5639,7 @@ class GridiconsGenerated: NSObject {
         gridiconscog.closePath()
         gridiconscog.moveToPoint(CGPoint(x: 9.66, y: 18))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, -2)
+        CGContextTranslateCTM(context, 874, 346)
         gridiconscog.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscog.fill()
@@ -5514,7 +5658,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 12)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, -10)
+        CGContextTranslateCTM(context, -840, -358)
         
         /// gridicons-code
         let gridiconscode = UIBezierPath()
@@ -5537,7 +5681,7 @@ class GridiconsGenerated: NSObject {
         gridiconscode.closePath()
         gridiconscode.moveToPoint(CGPoint(x: 12.59, y: 22.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, -2)
+        CGContextTranslateCTM(context, 840, 346)
         gridiconscode.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscode.fill()
@@ -5556,7 +5700,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, -7)
+        CGContextTranslateCTM(context, -806, -355)
         
         /// gridicons-cloud
         let gridiconscloud = UIBezierPath()
@@ -5575,7 +5719,7 @@ class GridiconsGenerated: NSObject {
         gridiconscloud.closePath()
         gridiconscloud.moveToPoint(CGPoint(x: 17, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, -2)
+        CGContextTranslateCTM(context, 806, 346)
         gridiconscloud.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscloud.fill()
@@ -5594,7 +5738,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, 47)
+        CGContextTranslateCTM(context, -772, -355)
         
         /// gridicons-cloud-upload
         let gridiconscloudupload = UIBezierPath()
@@ -5622,7 +5766,7 @@ class GridiconsGenerated: NSObject {
         gridiconscloudupload.closePath()
         gridiconscloudupload.moveToPoint(CGPoint(x: 12, y: 19))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, -56)
+        CGContextTranslateCTM(context, 772, 346)
         gridiconscloudupload.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscloudupload.fill()
@@ -5641,7 +5785,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, 47)
+        CGContextTranslateCTM(context, -1180, -321)
         
         /// gridicons-cloud-outline
         let gridiconscloudoutline = UIBezierPath()
@@ -5677,7 +5821,7 @@ class GridiconsGenerated: NSObject {
         gridiconscloudoutline.closePath()
         gridiconscloudoutline.moveToPoint(CGPoint(x: 10.5, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, -56)
+        CGContextTranslateCTM(context, 1180, 312)
         gridiconscloudoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscloudoutline.fill()
@@ -5696,7 +5840,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, 47)
+        CGContextTranslateCTM(context, -1146, -321)
         
         /// gridicons-cloud-download
         let gridiconsclouddownload = UIBezierPath()
@@ -5724,7 +5868,7 @@ class GridiconsGenerated: NSObject {
         gridiconsclouddownload.closePath()
         gridiconsclouddownload.moveToPoint(CGPoint(x: 11, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, -56)
+        CGContextTranslateCTM(context, 1146, 312)
         gridiconsclouddownload.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsclouddownload.fill()
@@ -5743,7 +5887,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, 52)
+        CGContextTranslateCTM(context, -1112, -316)
         
         /// gridicons-clipboard
         let gridiconsclipboard = UIBezierPath()
@@ -5792,7 +5936,7 @@ class GridiconsGenerated: NSObject {
         gridiconsclipboard.closePath()
         gridiconsclipboard.moveToPoint(CGPoint(x: 10, y: 7))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, -56)
+        CGContextTranslateCTM(context, 1112, 312)
         gridiconsclipboard.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsclipboard.fill()
@@ -5811,7 +5955,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, 51)
+        CGContextTranslateCTM(context, -1078, -317)
         
         /// gridicons-clear-formatting
         let gridiconsclearformatting = UIBezierPath()
@@ -5843,7 +5987,7 @@ class GridiconsGenerated: NSObject {
         gridiconsclearformatting.closePath()
         gridiconsclearformatting.moveToPoint(CGPoint(x: 10.52, y: 14.98))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, -56)
+        CGContextTranslateCTM(context, 1078, 312)
         gridiconsclearformatting.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsclearformatting.fill()
@@ -5862,7 +6006,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 10)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, 42)
+        CGContextTranslateCTM(context, -1044, -326)
         
         /// gridicons-chevron-up
         let gridiconschevronup = UIBezierPath()
@@ -5873,7 +6017,7 @@ class GridiconsGenerated: NSObject {
         gridiconschevronup.addLineToPoint(CGPoint(x: 8, y: 17.41))
         gridiconschevronup.addLineToPoint(CGPoint(x: 1.41, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, -56)
+        CGContextTranslateCTM(context, 1044, 312)
         gridiconschevronup.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconschevronup.fill()
@@ -5892,7 +6036,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, 48)
+        CGContextTranslateCTM(context, -1010, -320)
         
         /// gridicons-chevron-right
         let gridiconschevronright = UIBezierPath()
@@ -5903,7 +6047,7 @@ class GridiconsGenerated: NSObject {
         gridiconschevronright.addLineToPoint(CGPoint(x: 6.59, y: 16))
         gridiconschevronright.addLineToPoint(CGPoint(x: 0, y: 22.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, -56)
+        CGContextTranslateCTM(context, 1010, 312)
         gridiconschevronright.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconschevronright.fill()
@@ -5922,7 +6066,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, 48)
+        CGContextTranslateCTM(context, -976, -320)
         
         /// gridicons-chevron-left
         let gridiconschevronleft = UIBezierPath()
@@ -5933,7 +6077,7 @@ class GridiconsGenerated: NSObject {
         gridiconschevronleft.addLineToPoint(CGPoint(x: 2.83, y: 16))
         gridiconschevronleft.addLineToPoint(CGPoint(x: 9.41, y: 22.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, -56)
+        CGContextTranslateCTM(context, 976, 312)
         gridiconschevronleft.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconschevronleft.fill()
@@ -5952,7 +6096,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 10)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, 42)
+        CGContextTranslateCTM(context, -942, -326)
         
         /// gridicons-chevron-down
         let gridiconschevrondown = UIBezierPath()
@@ -5963,7 +6107,7 @@ class GridiconsGenerated: NSObject {
         gridiconschevrondown.addLineToPoint(CGPoint(x: 8, y: 21.17))
         gridiconschevrondown.addLineToPoint(CGPoint(x: 14.59, y: 14.59))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, -56)
+        CGContextTranslateCTM(context, 942, 312)
         gridiconschevrondown.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconschevrondown.fill()
@@ -5982,7 +6126,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, 47)
+        CGContextTranslateCTM(context, -908, -321)
         
         /// gridicons-checkmark
         let gridiconscheckmark = UIBezierPath()
@@ -5993,7 +6137,7 @@ class GridiconsGenerated: NSObject {
         gridiconscheckmark.addLineToPoint(CGPoint(x: 18, y: 9.88))
         gridiconscheckmark.addLineToPoint(CGPoint(x: 19.41, y: 11.29))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, -56)
+        CGContextTranslateCTM(context, 908, 312)
         gridiconscheckmark.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscheckmark.fill()
@@ -6012,7 +6156,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, 52)
+        CGContextTranslateCTM(context, -874, -316)
         
         /// gridicons-checkmark-circle
         let gridiconscheckmarkcircle = UIBezierPath()
@@ -6030,7 +6174,7 @@ class GridiconsGenerated: NSObject {
         gridiconscheckmarkcircle.closePath()
         gridiconscheckmarkcircle.moveToPoint(CGPoint(x: 9, y: 19.77))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, -56)
+        CGContextTranslateCTM(context, 874, 312)
         gridiconscheckmarkcircle.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscheckmarkcircle.fill()
@@ -6049,7 +6193,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, 52)
+        CGContextTranslateCTM(context, -840, -316)
         
         /// gridicons-cart
         let gridiconscart = UIBezierPath()
@@ -6086,10 +6230,63 @@ class GridiconsGenerated: NSObject {
         gridiconscart.closePath()
         gridiconscart.moveToPoint(CGPoint(x: 14.4, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, -56)
+        CGContextTranslateCTM(context, 840, 312)
         gridiconscart.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscart.fill()
+        CGContextRestoreGState(context)
+        
+        CGContextRestoreGState(context)
+    }
+    
+    class func drawGridiconscaption(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 16), resizing: ResizingBehavior = .AspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+        
+        /// Resize To Frame
+        CGContextSaveGState(context)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 16), target: frame)
+        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 16)
+        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
+        CGContextTranslateCTM(context, -806, -320)
+        
+        /// gridicons-caption
+        let gridiconscaption = UIBezierPath()
+        gridiconscaption.moveToPoint(CGPoint(x: 18, y: 19))
+        gridiconscaption.addLineToPoint(CGPoint(x: 20, y: 17))
+        gridiconscaption.addLineToPoint(CGPoint(x: 20, y: 22))
+        gridiconscaption.addCurveToPoint(CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.11), controlPoint2: CGPoint(x: 19.11, y: 24))
+        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 24))
+        gridiconscaption.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconscaption.addLineToPoint(CGPoint(x: 0, y: 10))
+        gridiconscaption.addCurveToPoint(CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
+        gridiconscaption.addLineToPoint(CGPoint(x: 15, y: 8))
+        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 10))
+        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 10))
+        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 22))
+        gridiconscaption.addLineToPoint(CGPoint(x: 18, y: 22))
+        gridiconscaption.addLineToPoint(CGPoint(x: 18, y: 19))
+        gridiconscaption.closePath()
+        gridiconscaption.moveToPoint(CGPoint(x: 20.44, y: 10.44))
+        gridiconscaption.addLineToPoint(CGPoint(x: 19.56, y: 9.56))
+        gridiconscaption.addCurveToPoint(CGPoint(x: 17.44, y: 9.56), controlPoint1: CGPoint(x: 18.98, y: 8.98), controlPoint2: CGPoint(x: 18.03, y: 8.98))
+        gridiconscaption.addLineToPoint(CGPoint(x: 10, y: 17))
+        gridiconscaption.addLineToPoint(CGPoint(x: 10, y: 19))
+        gridiconscaption.addLineToPoint(CGPoint(x: 4, y: 19))
+        gridiconscaption.addLineToPoint(CGPoint(x: 4, y: 21))
+        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 21))
+        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 20))
+        gridiconscaption.addLineToPoint(CGPoint(x: 20.44, y: 12.56))
+        gridiconscaption.addCurveToPoint(CGPoint(x: 20.44, y: 10.44), controlPoint1: CGPoint(x: 21.03, y: 11.97), controlPoint2: CGPoint(x: 21.03, y: 11.02))
+        gridiconscaption.addLineToPoint(CGPoint(x: 20.44, y: 10.44))
+        gridiconscaption.closePath()
+        gridiconscaption.moveToPoint(CGPoint(x: 20.44, y: 10.44))
+        CGContextSaveGState(context)
+        CGContextTranslateCTM(context, 806, 312)
+        gridiconscaption.usesEvenOddFillRule = true
+        UIColor.blackColor().setFill()
+        gridiconscaption.fill()
         CGContextRestoreGState(context)
         
         CGContextRestoreGState(context)
@@ -6105,7 +6302,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 17)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, 49)
+        CGContextTranslateCTM(context, -772, -319)
         
         /// gridicons-camera
         let gridiconscamera = UIBezierPath()
@@ -6150,7 +6347,7 @@ class GridiconsGenerated: NSObject {
         gridiconscamera.closePath()
         gridiconscamera.moveToPoint(CGPoint(x: 17, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, -56)
+        CGContextTranslateCTM(context, 772, 312)
         gridiconscamera.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscamera.fill()
@@ -6169,7 +6366,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, 105)
+        CGContextTranslateCTM(context, -1180, -283)
         
         /// gridicons-calendar
         let gridiconscalendar = UIBezierPath()
@@ -6200,7 +6397,7 @@ class GridiconsGenerated: NSObject {
         gridiconscalendar.closePath()
         gridiconscalendar.moveToPoint(CGPoint(x: 16, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, -110)
+        CGContextTranslateCTM(context, 1180, 278)
         gridiconscalendar.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconscalendar.fill()
@@ -6219,7 +6416,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, 105)
+        CGContextTranslateCTM(context, -1146, -283)
         
         /// gridicons-briefcase
         let gridiconsbriefcase = UIBezierPath()
@@ -6258,7 +6455,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbriefcase.closePath()
         gridiconsbriefcase.moveToPoint(CGPoint(x: 14, y: 9))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, -110)
+        CGContextTranslateCTM(context, 1146, 278)
         gridiconsbriefcase.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbriefcase.fill()
@@ -6277,7 +6474,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, 104)
+        CGContextTranslateCTM(context, -1112, -284)
         
         /// gridicons-bookmark
         let gridiconsbookmark = UIBezierPath()
@@ -6293,7 +6490,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbookmark.closePath()
         gridiconsbookmark.moveToPoint(CGPoint(x: 12, y: 6))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, -110)
+        CGContextTranslateCTM(context, 1112, 278)
         gridiconsbookmark.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbookmark.fill()
@@ -6312,7 +6509,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, 104)
+        CGContextTranslateCTM(context, -1078, -284)
         
         /// gridicons-bookmark-outline
         let gridiconsbookmarkoutline = UIBezierPath()
@@ -6336,7 +6533,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbookmarkoutline.closePath()
         gridiconsbookmarkoutline.moveToPoint(CGPoint(x: 12, y: 6))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, -110)
+        CGContextTranslateCTM(context, 1078, 278)
         gridiconsbookmarkoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbookmarkoutline.fill()
@@ -6355,7 +6552,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, 104)
+        CGContextTranslateCTM(context, -1044, -284)
         
         /// gridicons-book
         let gridiconsbook = UIBezierPath()
@@ -6388,7 +6585,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbook.closePath()
         gridiconsbook.moveToPoint(CGPoint(x: 12, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, -110)
+        CGContextTranslateCTM(context, 1044, 278)
         gridiconsbook.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbook.fill()
@@ -6407,7 +6604,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 11, height: resizedFrame.height / 15)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, 101)
+        CGContextTranslateCTM(context, -1010, -287)
         
         /// gridicons-bold
         let gridiconsbold = UIBezierPath()
@@ -6444,7 +6641,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbold.closePath()
         gridiconsbold.moveToPoint(CGPoint(x: 3, y: 17.47))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, -110)
+        CGContextTranslateCTM(context, 1010, 278)
         gridiconsbold.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbold.fill()
@@ -6463,7 +6660,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, 106)
+        CGContextTranslateCTM(context, -976, -282)
         
         /// gridicons-block
         let gridiconsblock = UIBezierPath()
@@ -6490,7 +6687,7 @@ class GridiconsGenerated: NSObject {
         gridiconsblock.closePath()
         gridiconsblock.moveToPoint(CGPoint(x: 10, y: 22))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, -110)
+        CGContextTranslateCTM(context, 976, 278)
         gridiconsblock.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsblock.fill()
@@ -6509,7 +6706,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, 104)
+        CGContextTranslateCTM(context, -942, -284)
         
         /// gridicons-bell
         let gridiconsbell = UIBezierPath()
@@ -6536,7 +6733,7 @@ class GridiconsGenerated: NSObject {
         gridiconsbell.closePath()
         gridiconsbell.moveToPoint(CGPoint(x: 12.01, y: 23.29))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, -110)
+        CGContextTranslateCTM(context, 942, 278)
         gridiconsbell.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsbell.fill()
@@ -6555,7 +6752,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, 102)
+        CGContextTranslateCTM(context, -908, -286)
         
         /// gridicons-audio
         let gridiconsaudio = UIBezierPath()
@@ -6577,7 +6774,7 @@ class GridiconsGenerated: NSObject {
         gridiconsaudio.closePath()
         gridiconsaudio.moveToPoint(CGPoint(x: 4, y: 8))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, -110)
+        CGContextTranslateCTM(context, 908, 278)
         gridiconsaudio.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsaudio.fill()
@@ -6596,7 +6793,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 22)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, 108)
+        CGContextTranslateCTM(context, -874, -280)
         
         /// gridicons-attachment
         let gridiconsattachment = UIBezierPath()
@@ -6627,7 +6824,7 @@ class GridiconsGenerated: NSObject {
         gridiconsattachment.closePath()
         gridiconsattachment.moveToPoint(CGPoint(x: 9, y: 2))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, -110)
+        CGContextTranslateCTM(context, 874, 278)
         gridiconsattachment.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsattachment.fill()
@@ -6646,7 +6843,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, 102)
+        CGContextTranslateCTM(context, -840, -286)
         
         /// gridicons-aside
         let gridiconsaside = UIBezierPath()
@@ -6677,7 +6874,7 @@ class GridiconsGenerated: NSObject {
         gridiconsaside.closePath()
         gridiconsaside.moveToPoint(CGPoint(x: 12, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, -110)
+        CGContextTranslateCTM(context, 840, 278)
         gridiconsaside.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsaside.fill()
@@ -6696,7 +6893,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, 102)
+        CGContextTranslateCTM(context, -806, -286)
         
         /// gridicons-arrow-up
         let gridiconsarrowup = UIBezierPath()
@@ -6713,7 +6910,7 @@ class GridiconsGenerated: NSObject {
         gridiconsarrowup.closePath()
         gridiconsarrowup.moveToPoint(CGPoint(x: 9, y: 24))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, -110)
+        CGContextTranslateCTM(context, 806, 278)
         gridiconsarrowup.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsarrowup.fill()
@@ -6732,7 +6929,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, 102)
+        CGContextTranslateCTM(context, -772, -286)
         
         /// gridicons-arrow-right
         let gridiconsarrowright = UIBezierPath()
@@ -6749,7 +6946,7 @@ class GridiconsGenerated: NSObject {
         gridiconsarrowright.closePath()
         gridiconsarrowright.moveToPoint(CGPoint(x: 8, y: 8))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, -110)
+        CGContextTranslateCTM(context, 772, 278)
         gridiconsarrowright.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsarrowright.fill()
@@ -6768,7 +6965,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -907, 156)
+        CGContextTranslateCTM(context, -1180, -252)
         
         /// gridicons-arrow-left
         let gridiconsarrowleft = UIBezierPath()
@@ -6785,7 +6982,7 @@ class GridiconsGenerated: NSObject {
         gridiconsarrowleft.closePath()
         gridiconsarrowleft.moveToPoint(CGPoint(x: 16, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 907, -164)
+        CGContextTranslateCTM(context, 1180, 244)
         gridiconsarrowleft.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsarrowleft.fill()
@@ -6804,7 +7001,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -853, 156)
+        CGContextTranslateCTM(context, -1146, -252)
         
         /// gridicons-arrow-down
         let gridiconsarrowdown = UIBezierPath()
@@ -6821,7 +7018,7 @@ class GridiconsGenerated: NSObject {
         gridiconsarrowdown.closePath()
         gridiconsarrowdown.moveToPoint(CGPoint(x: 7, y: 8))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 853, -164)
+        CGContextTranslateCTM(context, 1146, 244)
         gridiconsarrowdown.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsarrowdown.fill()
@@ -6840,7 +7037,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -799, 154)
+        CGContextTranslateCTM(context, -1112, -254)
         
         /// gridicons-align-right
         let gridiconsalignright = UIBezierPath()
@@ -6870,7 +7067,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignright.closePath()
         gridiconsalignright.moveToPoint(CGPoint(x: 6, y: 12))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 799, -164)
+        CGContextTranslateCTM(context, 1112, 244)
         gridiconsalignright.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignright.fill()
@@ -6889,7 +7086,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -745, 154)
+        CGContextTranslateCTM(context, -1078, -254)
         
         /// gridicons-align-left
         let gridiconsalignleft = UIBezierPath()
@@ -6919,7 +7116,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignleft.closePath()
         gridiconsalignleft.moveToPoint(CGPoint(x: 10, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 745, -164)
+        CGContextTranslateCTM(context, 1078, 244)
         gridiconsalignleft.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignleft.fill()
@@ -6938,7 +7135,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -691, 154)
+        CGContextTranslateCTM(context, -1044, -254)
         
         /// gridicons-align-justify
         let gridiconsalignjustify = UIBezierPath()
@@ -6968,7 +7165,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignjustify.closePath()
         gridiconsalignjustify.moveToPoint(CGPoint(x: 16, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 691, -164)
+        CGContextTranslateCTM(context, 1044, 244)
         gridiconsalignjustify.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignjustify.fill()
@@ -6987,7 +7184,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -637, 154)
+        CGContextTranslateCTM(context, -1010, -254)
         
         /// gridicons-align-image-right
         let gridiconsalignimageright = UIBezierPath()
@@ -7023,7 +7220,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignimageright.closePath()
         gridiconsalignimageright.moveToPoint(CGPoint(x: 8, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 637, -164)
+        CGContextTranslateCTM(context, 1010, 244)
         gridiconsalignimageright.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignimageright.fill()
@@ -7042,7 +7239,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -583, 154)
+        CGContextTranslateCTM(context, -976, -254)
         
         /// gridicons-align-image-none
         let gridiconsalignimagenone = UIBezierPath()
@@ -7066,7 +7263,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignimagenone.closePath()
         gridiconsalignimagenone.moveToPoint(CGPoint(x: 8, y: 14))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 583, -164)
+        CGContextTranslateCTM(context, 976, 244)
         gridiconsalignimagenone.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignimagenone.fill()
@@ -7085,7 +7282,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -529, 154)
+        CGContextTranslateCTM(context, -942, -254)
         
         /// gridicons-align-image-left
         let gridiconsalignimageleft = UIBezierPath()
@@ -7121,7 +7318,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignimageleft.closePath()
         gridiconsalignimageleft.moveToPoint(CGPoint(x: 10, y: 16))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 529, -164)
+        CGContextTranslateCTM(context, 942, 244)
         gridiconsalignimageleft.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignimageleft.fill()
@@ -7140,7 +7337,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -475, 154)
+        CGContextTranslateCTM(context, -908, -254)
         
         /// gridicons-align-image-center
         let gridiconsalignimagecenter = UIBezierPath()
@@ -7164,7 +7361,7 @@ class GridiconsGenerated: NSObject {
         gridiconsalignimagecenter.closePath()
         gridiconsalignimagecenter.moveToPoint(CGPoint(x: 5, y: 20))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 475, -164)
+        CGContextTranslateCTM(context, 908, 244)
         gridiconsalignimagecenter.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsalignimagecenter.fill()
@@ -7183,7 +7380,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -421, 154)
+        CGContextTranslateCTM(context, -874, -254)
         
         /// gridicons-align-center
         let gridiconsaligncenter = UIBezierPath()
@@ -7213,7 +7410,7 @@ class GridiconsGenerated: NSObject {
         gridiconsaligncenter.closePath()
         gridiconsaligncenter.moveToPoint(CGPoint(x: 13, y: 10))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 421, -164)
+        CGContextTranslateCTM(context, 874, 244)
         gridiconsaligncenter.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsaligncenter.fill()
@@ -7232,7 +7429,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -367, 160)
+        CGContextTranslateCTM(context, -840, -248)
         
         /// gridicons-add
         let gridiconsadd = UIBezierPath()
@@ -7259,7 +7456,7 @@ class GridiconsGenerated: NSObject {
         gridiconsadd.closePath()
         gridiconsadd.moveToPoint(CGPoint(x: 15, y: 15))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 367, -164)
+        CGContextTranslateCTM(context, 840, 244)
         gridiconsadd.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsadd.fill()
@@ -7278,7 +7475,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -313, 160)
+        CGContextTranslateCTM(context, -806, -248)
         
         /// gridicons-add-outline
         let gridiconsaddoutline = UIBezierPath()
@@ -7312,7 +7509,7 @@ class GridiconsGenerated: NSObject {
         gridiconsaddoutline.closePath()
         gridiconsaddoutline.moveToPoint(CGPoint(x: 15, y: 13))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 313, -164)
+        CGContextTranslateCTM(context, 806, 244)
         gridiconsaddoutline.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsaddoutline.fill()
@@ -7331,7 +7528,7 @@ class GridiconsGenerated: NSObject {
         CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
         CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -259, 159)
+        CGContextTranslateCTM(context, -772, -249)
         
         /// gridicons-add-image
         let gridiconsaddimage = UIBezierPath()
@@ -7377,7 +7574,7 @@ class GridiconsGenerated: NSObject {
         gridiconsaddimage.closePath()
         gridiconsaddimage.moveToPoint(CGPoint(x: 14, y: 18.23))
         CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 259, -164)
+        CGContextTranslateCTM(context, 772, 244)
         gridiconsaddimage.usesEvenOddFillRule = true
         UIColor.blackColor().setFill()
         gridiconsaddimage.fill()
@@ -7792,6 +7989,28 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreader(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    class func imageOfGridiconsreaderfollowing(size size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+        var image: UIImage
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsreaderfollowing(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    class func imageOfGridiconsreaderfollow(size size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+        var image: UIImage
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsreaderfollow(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
@@ -8694,6 +8913,17 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscart(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
+        image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    class func imageOfGridiconscaption(size size: CGSize = CGSize(width: 21, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+        var image: UIImage
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconscaption(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
         image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         

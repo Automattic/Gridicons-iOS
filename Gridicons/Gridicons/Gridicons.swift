@@ -38,6 +38,8 @@ public enum GridiconType: Int {
     case Refresh
     case Redo
     case Reblog
+    case ReaderFollowing
+    case ReaderFollow
     case Reader
     case Quote
     case Print
@@ -121,6 +123,7 @@ public enum GridiconType: Int {
     case Checkmark
     case CheckmarkCircle
     case Cart
+    case Caption
     case Camera
     case Calendar
     case Briefcase
@@ -257,6 +260,10 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsredo(size: size, resizing: resizingBehavior)
         case .Reblog:
             return GridiconsGenerated.imageOfGridiconsreblog(size: size, resizing: resizingBehavior)
+        case .ReaderFollowing:
+            return GridiconsGenerated.imageOfGridiconsreaderfollowing(size: size, resizing: resizingBehavior)
+        case .ReaderFollow:
+            return GridiconsGenerated.imageOfGridiconsreaderfollow(size: size, resizing: resizingBehavior)
         case .Reader:
             return GridiconsGenerated.imageOfGridiconsreader(size: size, resizing: resizingBehavior)
         case .Quote:
@@ -423,6 +430,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconscheckmarkcircle(size: size, resizing: resizingBehavior)
         case .Cart:
             return GridiconsGenerated.imageOfGridiconscart(size: size, resizing: resizingBehavior)
+        case .Caption:
+            return GridiconsGenerated.imageOfGridiconscaption(size: size, resizing: resizingBehavior)
         case .Camera:
             return GridiconsGenerated.imageOfGridiconscamera(size: size, resizing: resizingBehavior)
         case .Calendar:
