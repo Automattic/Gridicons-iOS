@@ -7593,7 +7593,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsvisible(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7604,7 +7604,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsvideo(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7615,7 +7615,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsvideocamera(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7626,7 +7626,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsuser(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7637,7 +7637,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsusercircle(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7648,7 +7648,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsundo(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7659,7 +7659,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsunderline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7670,7 +7670,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstypes(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7681,7 +7681,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstrophy(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7692,7 +7692,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstrash(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7703,7 +7703,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstime(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7714,7 +7714,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsthumbsup(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7725,7 +7725,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsthemes(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7736,7 +7736,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstextcolor(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7747,7 +7747,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstag(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7758,7 +7758,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconstablet(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7769,7 +7769,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconssync(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7780,7 +7780,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstrikethrough(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7791,7 +7791,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstatus(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7802,7 +7802,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstats(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7813,7 +7813,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstatsalt(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7824,7 +7824,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstar(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7835,7 +7835,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsstaroutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7846,7 +7846,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsspecialcharacter(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7857,7 +7857,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsspeaker(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7868,7 +7868,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsspam(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7879,7 +7879,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconssignout(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7890,7 +7890,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsshare(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7901,7 +7901,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsshareios(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7912,7 +7912,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconssearch(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7923,7 +7923,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsscheduled(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7934,7 +7934,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsrotate(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7945,7 +7945,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreply(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7956,7 +7956,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsrefresh(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7967,7 +7967,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsredo(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7978,7 +7978,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreblog(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -7989,7 +7989,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreader(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8000,7 +8000,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreaderfollowing(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8011,7 +8011,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsreaderfollow(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8022,7 +8022,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsquote(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8033,7 +8033,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsprint(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8044,7 +8044,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsposts(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8055,7 +8055,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconspopout(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8066,7 +8066,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsplus(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8077,7 +8077,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsplussmall(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8088,7 +8088,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsplugins(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8099,7 +8099,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsphone(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8110,7 +8110,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconspencil(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8121,7 +8121,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconspages(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8132,7 +8132,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsnotice(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8143,7 +8143,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsnoticeoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8154,7 +8154,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsnotvisible(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8165,7 +8165,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmysites(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8176,7 +8176,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmysiteshorizon(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8187,7 +8187,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsminus(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8198,7 +8198,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsminussmall(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8209,7 +8209,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmicrophone(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8220,7 +8220,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmenus(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8231,7 +8231,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmenu(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8242,7 +8242,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmention(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8253,7 +8253,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsmail(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8264,7 +8264,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslock(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8275,7 +8275,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslocation(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8286,7 +8286,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslistunordered(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8297,7 +8297,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslistordered(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8308,7 +8308,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslistcheckmark(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8319,7 +8319,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslink(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8330,7 +8330,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslinkbreak(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8341,7 +8341,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslayout(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8352,7 +8352,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconslayoutblocks(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8363,7 +8363,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsitalic(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8374,7 +8374,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsinstitution(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8385,7 +8385,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsink(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8396,7 +8396,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsinfo(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8407,7 +8407,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsinfooutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8418,7 +8418,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsindentright(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8429,7 +8429,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsindentleft(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8440,7 +8440,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsimage(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8451,7 +8451,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsimagemultiple(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8462,7 +8462,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconshouse(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8473,7 +8473,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconshistory(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8484,7 +8484,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconshelp(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8495,7 +8495,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconshelpoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8506,7 +8506,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsheart(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8517,7 +8517,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsheartoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8528,7 +8528,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsheading(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8539,7 +8539,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsgrid(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8550,7 +8550,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsglobe(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8561,7 +8561,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsfolder(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8572,7 +8572,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsfoldermultiple(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8583,7 +8583,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsflipvertical(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8594,7 +8594,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsfliphorizontal(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8605,7 +8605,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsflag(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8616,7 +8616,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsexternal(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8627,7 +8627,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsellipsis(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8638,7 +8638,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsdropdown(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8649,7 +8649,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsdomains(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8660,7 +8660,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscustomize(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8671,7 +8671,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscustomposttype(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8682,7 +8682,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscross(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8693,7 +8693,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscrosssmall(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8704,7 +8704,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscrop(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8715,7 +8715,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscreditcard(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8726,7 +8726,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscreate(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8737,7 +8737,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscomputer(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8748,7 +8748,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscomment(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8759,7 +8759,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscog(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8770,7 +8770,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscode(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8781,7 +8781,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscloud(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8792,7 +8792,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscloudupload(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8803,7 +8803,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscloudoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8814,7 +8814,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsclouddownload(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8825,7 +8825,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsclipboard(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8836,7 +8836,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsclearformatting(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8847,7 +8847,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconschevronup(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8858,7 +8858,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconschevronright(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8869,7 +8869,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconschevronleft(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8880,7 +8880,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconschevrondown(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8891,7 +8891,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscheckmark(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8902,7 +8902,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscheckmarkcircle(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8913,7 +8913,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscart(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8924,7 +8924,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscaption(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8935,7 +8935,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscamera(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8946,7 +8946,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconscalendar(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8957,7 +8957,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbriefcase(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8968,7 +8968,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbookmark(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8979,7 +8979,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbookmarkoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -8990,7 +8990,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbook(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9001,7 +9001,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbold(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9012,7 +9012,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsblock(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9023,7 +9023,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsbell(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9034,7 +9034,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsaudio(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9045,7 +9045,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsattachment(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9056,7 +9056,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsaside(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9067,7 +9067,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsarrowup(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9078,7 +9078,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsarrowright(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9089,7 +9089,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsarrowleft(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9100,7 +9100,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsarrowdown(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9111,7 +9111,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignright(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9122,7 +9122,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignleft(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9133,7 +9133,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignjustify(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9144,7 +9144,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignimageright(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9155,7 +9155,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignimagenone(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9166,7 +9166,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignimageleft(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9177,7 +9177,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsalignimagecenter(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9188,7 +9188,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsaligncenter(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9199,7 +9199,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsadd(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9210,7 +9210,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsaddoutline(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
@@ -9221,7 +9221,7 @@ class GridiconsGenerated: NSObject {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
         GridiconsGenerated.drawGridiconsaddimage(frame: CGRect(origin: CGPoint.zero, size: size), resizing: resizing)
-        image = UIGraphicsGetImageFromCurrentImageContext()
+        image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return image
