@@ -50,6 +50,12 @@ class ViewController: UIViewController {
         
         let value = Int(stepper.value)
         
+        if(value == 18) {
+            stepper.stepValue = 6
+        } else {
+            stepper.stepValue = 12
+        }
+        
         sizeLabel.text = "\(value)px"
         iconSize = CGSize(width: CGFloat(value), height: CGFloat(value))
         
