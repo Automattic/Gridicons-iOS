@@ -34,7 +34,7 @@ class GridiconsTests: XCTestCase {
         
         let size = CGSize(width: 250, height: 250)
         let icon2 = Gridicon.iconOfType(.UserCircle, withSize: size)
-        XCTAssertEqual(icon2.size, size)
+        XCTAssertEqual(icon2.size, Gridicon.defaultSize)
     }
     
     func testSingleIconGenerationPerformance() {
