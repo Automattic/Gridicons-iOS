@@ -179,8 +179,7 @@ public final class Gridicon: NSObject {
             return icon
         }
         
-        var icon = generateIconOfType(type, withSize: correctIconSize(size))
-        
+        let icon = generateIconOfType(type, withSize: correctIconSize(size))
         cache.setObject(icon, forKey: "\(type.rawValue)-\(icon.size.width)-\(icon.size.height)")
         
         return icon
