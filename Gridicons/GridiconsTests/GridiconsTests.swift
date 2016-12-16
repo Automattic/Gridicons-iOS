@@ -17,29 +17,29 @@ class GridiconsTests: XCTestCase {
     }
     
     func testIconsAreCached() {
-        let icon = Gridicon.iconOfType(.AddImage)
-        let icon2 = Gridicon.iconOfType(.AddImage)
+        let icon = Gridicon.iconOfType(.addImage)
+        let icon2 = Gridicon.iconOfType(.addImage)
         
         XCTAssertEqual(icon, icon2)
         
         Gridicon.clearCache()
-        let icon3 = Gridicon.iconOfType(.AddImage)
+        let icon3 = Gridicon.iconOfType(.addImage)
         
         XCTAssertNotEqual(icon2, icon3)
     }
     
     func testIconsAreTheCorrectSize() {
-        let icon = Gridicon.iconOfType(.Domains)
+        let icon = Gridicon.iconOfType(.domains)
         XCTAssertEqual(icon.size, Gridicon.defaultSize)
         
         let size = CGSize(width: 250, height: 250)
-        let icon2 = Gridicon.iconOfType(.UserCircle, withSize: size)
+        let icon2 = Gridicon.iconOfType(.userCircle, withSize: size)
         XCTAssertEqual(icon2.size, size)
     }
     
     func testSingleIconGenerationPerformance() {
-        self.measureBlock {
-            let _ = Gridicon.iconOfType(.Pages)
+        self.measure {
+            let _ = Gridicon.iconOfType(.pages)
         }
     }
     
@@ -53,7 +53,7 @@ class GridiconsTests: XCTestCase {
             return types
         }()
         
-        self.measureBlock {
+        self.measure {
             let _ = iconTypes.map { Gridicon.iconOfType($0) }
         }
     }

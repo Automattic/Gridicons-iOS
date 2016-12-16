@@ -12,7575 +12,7575 @@ class GridiconsGenerated: NSObject {
     
     /// Page 1
     
-    class func drawGridiconsvisible(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 12), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsvisible(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 12), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 12), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 12)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -630)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -630)
         
         /// gridicons-visible
         let gridiconsvisible = UIBezierPath()
-        gridiconsvisible.moveToPoint(CGPoint(x: 11, y: 12))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 4.19, y: 12), controlPoint2: CGPoint(x: 0, y: 18))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 0, y: 18), controlPoint2: CGPoint(x: 4.19, y: 24))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 22, y: 18), controlPoint1: CGPoint(x: 17.81, y: 24), controlPoint2: CGPoint(x: 22, y: 18))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 11, y: 12), controlPoint1: CGPoint(x: 22, y: 18), controlPoint2: CGPoint(x: 17.81, y: 12))
-        gridiconsvisible.addLineToPoint(CGPoint(x: 11, y: 12))
-        gridiconsvisible.closePath()
-        gridiconsvisible.moveToPoint(CGPoint(x: 11, y: 22))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 2.62, y: 18), controlPoint1: CGPoint(x: 7.06, y: 22), controlPoint2: CGPoint(x: 4.07, y: 19.52))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 7.88, y: 14.53), controlPoint1: CGPoint(x: 3.66, y: 16.91), controlPoint2: CGPoint(x: 5.48, y: 15.34))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 7, y: 17), controlPoint1: CGPoint(x: 7.34, y: 15.22), controlPoint2: CGPoint(x: 7, y: 16.06))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 11, y: 21), controlPoint1: CGPoint(x: 7, y: 19.21), controlPoint2: CGPoint(x: 8.79, y: 21))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 15, y: 17), controlPoint1: CGPoint(x: 13.21, y: 21), controlPoint2: CGPoint(x: 15, y: 19.21))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 14.13, y: 14.53), controlPoint1: CGPoint(x: 15, y: 16.06), controlPoint2: CGPoint(x: 14.66, y: 15.22))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 19.38, y: 18), controlPoint1: CGPoint(x: 16.52, y: 15.34), controlPoint2: CGPoint(x: 18.34, y: 16.92))
-        gridiconsvisible.addCurveToPoint(CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 17.92, y: 19.52), controlPoint2: CGPoint(x: 14.94, y: 22))
-        gridiconsvisible.addLineToPoint(CGPoint(x: 11, y: 22))
-        gridiconsvisible.closePath()
-        gridiconsvisible.moveToPoint(CGPoint(x: 11, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 618)
+        gridiconsvisible.move(to: CGPoint(x: 11, y: 12))
+        gridiconsvisible.addCurve(to: CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 4.19, y: 12), controlPoint2: CGPoint(x: 0, y: 18))
+        gridiconsvisible.addCurve(to: CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 0, y: 18), controlPoint2: CGPoint(x: 4.19, y: 24))
+        gridiconsvisible.addCurve(to: CGPoint(x: 22, y: 18), controlPoint1: CGPoint(x: 17.81, y: 24), controlPoint2: CGPoint(x: 22, y: 18))
+        gridiconsvisible.addCurve(to: CGPoint(x: 11, y: 12), controlPoint1: CGPoint(x: 22, y: 18), controlPoint2: CGPoint(x: 17.81, y: 12))
+        gridiconsvisible.addLine(to: CGPoint(x: 11, y: 12))
+        gridiconsvisible.close()
+        gridiconsvisible.move(to: CGPoint(x: 11, y: 22))
+        gridiconsvisible.addCurve(to: CGPoint(x: 2.62, y: 18), controlPoint1: CGPoint(x: 7.06, y: 22), controlPoint2: CGPoint(x: 4.07, y: 19.52))
+        gridiconsvisible.addCurve(to: CGPoint(x: 7.88, y: 14.53), controlPoint1: CGPoint(x: 3.66, y: 16.91), controlPoint2: CGPoint(x: 5.48, y: 15.34))
+        gridiconsvisible.addCurve(to: CGPoint(x: 7, y: 17), controlPoint1: CGPoint(x: 7.34, y: 15.22), controlPoint2: CGPoint(x: 7, y: 16.06))
+        gridiconsvisible.addCurve(to: CGPoint(x: 11, y: 21), controlPoint1: CGPoint(x: 7, y: 19.21), controlPoint2: CGPoint(x: 8.79, y: 21))
+        gridiconsvisible.addCurve(to: CGPoint(x: 15, y: 17), controlPoint1: CGPoint(x: 13.21, y: 21), controlPoint2: CGPoint(x: 15, y: 19.21))
+        gridiconsvisible.addCurve(to: CGPoint(x: 14.13, y: 14.53), controlPoint1: CGPoint(x: 15, y: 16.06), controlPoint2: CGPoint(x: 14.66, y: 15.22))
+        gridiconsvisible.addCurve(to: CGPoint(x: 19.38, y: 18), controlPoint1: CGPoint(x: 16.52, y: 15.34), controlPoint2: CGPoint(x: 18.34, y: 16.92))
+        gridiconsvisible.addCurve(to: CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 17.92, y: 19.52), controlPoint2: CGPoint(x: 14.94, y: 22))
+        gridiconsvisible.addLine(to: CGPoint(x: 11, y: 22))
+        gridiconsvisible.close()
+        gridiconsvisible.move(to: CGPoint(x: 11, y: 22))
+        context.saveGState()
+        context.translateBy(x: 942, y: 618)
         gridiconsvisible.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsvisible.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsvideo(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsvideo(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -626)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -626)
         
         /// gridicons-video
         let gridiconsvideo = UIBezierPath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 18, y: 8))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 10))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsvideo.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsvideo.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 22))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 24))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsvideo.addCurveToPoint(CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconsvideo.addCurveToPoint(CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 4, y: 20))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 20))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 17))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 17))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 4, y: 15))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 15))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 12))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 4, y: 15))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 8, y: 19))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 8, y: 13))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 12.5, y: 16))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 8, y: 19))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 18, y: 20))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 17))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 17))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 18, y: 15))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 15))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsvideo.addLineToPoint(CGPoint(x: 18, y: 15))
-        gridiconsvideo.closePath()
-        gridiconsvideo.moveToPoint(CGPoint(x: 18, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 618)
+        gridiconsvideo.move(to: CGPoint(x: 18, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsvideo.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconsvideo.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsvideo.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsvideo.addCurve(to: CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
+        gridiconsvideo.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconsvideo.addCurve(to: CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 15))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 8, y: 19))
+        gridiconsvideo.addLine(to: CGPoint(x: 8, y: 13))
+        gridiconsvideo.addLine(to: CGPoint(x: 12.5, y: 16))
+        gridiconsvideo.addLine(to: CGPoint(x: 8, y: 19))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 18, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 18, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 18, y: 15))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 18, y: 15))
+        context.saveGState()
+        context.translateBy(x: 908, y: 618)
         gridiconsvideo.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsvideo.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsvideocamera(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsvideocamera(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -628)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -628)
         
         /// gridicons-video-camera
         let gridiconsvideocamera = UIBezierPath()
-        gridiconsvideocamera.moveToPoint(CGPoint(x: 15, y: 14))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 15, y: 12))
-        gridiconsvideocamera.addCurveToPoint(CGPoint(x: 13, y: 10), controlPoint1: CGPoint(x: 15, y: 10.9), controlPoint2: CGPoint(x: 14.11, y: 10))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsvideocamera.addCurveToPoint(CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsvideocamera.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 13, y: 24))
-        gridiconsvideocamera.addCurveToPoint(CGPoint(x: 15, y: 22), controlPoint1: CGPoint(x: 14.11, y: 24), controlPoint2: CGPoint(x: 15, y: 23.11))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 15, y: 20))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 20, y: 24))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconsvideocamera.addLineToPoint(CGPoint(x: 15, y: 14))
-        gridiconsvideocamera.closePath()
-        gridiconsvideocamera.moveToPoint(CGPoint(x: 15, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 618)
+        gridiconsvideocamera.move(to: CGPoint(x: 15, y: 14))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 15, y: 12))
+        gridiconsvideocamera.addCurve(to: CGPoint(x: 13, y: 10), controlPoint1: CGPoint(x: 15, y: 10.9), controlPoint2: CGPoint(x: 14.11, y: 10))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsvideocamera.addCurve(to: CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsvideocamera.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 13, y: 24))
+        gridiconsvideocamera.addCurve(to: CGPoint(x: 15, y: 22), controlPoint1: CGPoint(x: 14.11, y: 24), controlPoint2: CGPoint(x: 15, y: 23.11))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 15, y: 20))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 20, y: 24))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconsvideocamera.addLine(to: CGPoint(x: 15, y: 14))
+        gridiconsvideocamera.close()
+        gridiconsvideocamera.move(to: CGPoint(x: 15, y: 14))
+        context.saveGState()
+        context.translateBy(x: 874, y: 618)
         gridiconsvideocamera.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsvideocamera.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsuser(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsuser(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -626)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -626)
         
         /// gridicons-user
         let gridiconsuser = UIBezierPath()
-        gridiconsuser.moveToPoint(CGPoint(x: 8, y: 8))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 12, y: 12), controlPoint1: CGPoint(x: 10.21, y: 8), controlPoint2: CGPoint(x: 12, y: 9.79))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 8, y: 16), controlPoint1: CGPoint(x: 12, y: 14.21), controlPoint2: CGPoint(x: 10.21, y: 16))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 4, y: 12), controlPoint1: CGPoint(x: 5.79, y: 16), controlPoint2: CGPoint(x: 4, y: 14.21))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 8, y: 8), controlPoint1: CGPoint(x: 4, y: 9.79), controlPoint2: CGPoint(x: 5.79, y: 8))
-        gridiconsuser.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsuser.closePath()
-        gridiconsuser.moveToPoint(CGPoint(x: 8, y: 24))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 8, y: 24), controlPoint2: CGPoint(x: 16, y: 24))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 8, y: 17), controlPoint1: CGPoint(x: 16, y: 19.6), controlPoint2: CGPoint(x: 12.1, y: 17))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 3.9, y: 17), controlPoint2: CGPoint(x: 0, y: 19.6))
-        gridiconsuser.addCurveToPoint(CGPoint(x: 8, y: 24), controlPoint1: CGPoint(x: 0, y: 24), controlPoint2: CGPoint(x: 8, y: 24))
-        gridiconsuser.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconsuser.closePath()
-        gridiconsuser.moveToPoint(CGPoint(x: 8, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 618)
+        gridiconsuser.move(to: CGPoint(x: 8, y: 8))
+        gridiconsuser.addCurve(to: CGPoint(x: 12, y: 12), controlPoint1: CGPoint(x: 10.21, y: 8), controlPoint2: CGPoint(x: 12, y: 9.79))
+        gridiconsuser.addCurve(to: CGPoint(x: 8, y: 16), controlPoint1: CGPoint(x: 12, y: 14.21), controlPoint2: CGPoint(x: 10.21, y: 16))
+        gridiconsuser.addCurve(to: CGPoint(x: 4, y: 12), controlPoint1: CGPoint(x: 5.79, y: 16), controlPoint2: CGPoint(x: 4, y: 14.21))
+        gridiconsuser.addCurve(to: CGPoint(x: 8, y: 8), controlPoint1: CGPoint(x: 4, y: 9.79), controlPoint2: CGPoint(x: 5.79, y: 8))
+        gridiconsuser.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsuser.close()
+        gridiconsuser.move(to: CGPoint(x: 8, y: 24))
+        gridiconsuser.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 8, y: 24), controlPoint2: CGPoint(x: 16, y: 24))
+        gridiconsuser.addCurve(to: CGPoint(x: 8, y: 17), controlPoint1: CGPoint(x: 16, y: 19.6), controlPoint2: CGPoint(x: 12.1, y: 17))
+        gridiconsuser.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 3.9, y: 17), controlPoint2: CGPoint(x: 0, y: 19.6))
+        gridiconsuser.addCurve(to: CGPoint(x: 8, y: 24), controlPoint1: CGPoint(x: 0, y: 24), controlPoint2: CGPoint(x: 8, y: 24))
+        gridiconsuser.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconsuser.close()
+        gridiconsuser.move(to: CGPoint(x: 8, y: 24))
+        context.saveGState()
+        context.translateBy(x: 840, y: 618)
         gridiconsuser.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsuser.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsusercircle(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsusercircle(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -622)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -622)
         
         /// gridicons-user-circle
         let gridiconsusercircle = UIBezierPath()
-        gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsusercircle.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsusercircle.closePath()
-        gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 22.5))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 1.5, y: 14), controlPoint1: CGPoint(x: 5.31, y: 22.5), controlPoint2: CGPoint(x: 1.5, y: 18.7))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 5.5), controlPoint1: CGPoint(x: 1.5, y: 9.31), controlPoint2: CGPoint(x: 5.31, y: 5.5))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 18.5, y: 14), controlPoint1: CGPoint(x: 14.7, y: 5.5), controlPoint2: CGPoint(x: 18.5, y: 9.31))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 22.5), controlPoint1: CGPoint(x: 18.5, y: 18.7), controlPoint2: CGPoint(x: 14.7, y: 22.5))
-        gridiconsusercircle.addLineToPoint(CGPoint(x: 10, y: 22.5))
-        gridiconsusercircle.closePath()
-        gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 14.5))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 4.5, y: 18), controlPoint1: CGPoint(x: 6.96, y: 14.5), controlPoint2: CGPoint(x: 4.5, y: 16.23))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 21.5), controlPoint1: CGPoint(x: 4.5, y: 19.77), controlPoint2: CGPoint(x: 6.96, y: 21.5))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 15.5, y: 18), controlPoint1: CGPoint(x: 13.04, y: 21.5), controlPoint2: CGPoint(x: 15.5, y: 19.77))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 14.5), controlPoint1: CGPoint(x: 15.5, y: 16.23), controlPoint2: CGPoint(x: 13.04, y: 14.5))
-        gridiconsusercircle.addLineToPoint(CGPoint(x: 10, y: 14.5))
-        gridiconsusercircle.closePath()
-        gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 14))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 13, y: 11), controlPoint1: CGPoint(x: 11.66, y: 14), controlPoint2: CGPoint(x: 13, y: 12.66))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 8), controlPoint1: CGPoint(x: 13, y: 9.34), controlPoint2: CGPoint(x: 11.66, y: 8))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 7, y: 11), controlPoint1: CGPoint(x: 8.34, y: 8), controlPoint2: CGPoint(x: 7, y: 9.34))
-        gridiconsusercircle.addCurveToPoint(CGPoint(x: 10, y: 14), controlPoint1: CGPoint(x: 7, y: 12.66), controlPoint2: CGPoint(x: 8.34, y: 14))
-        gridiconsusercircle.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsusercircle.closePath()
-        gridiconsusercircle.moveToPoint(CGPoint(x: 10, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 618)
+        gridiconsusercircle.move(to: CGPoint(x: 10, y: 4))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsusercircle.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsusercircle.close()
+        gridiconsusercircle.move(to: CGPoint(x: 10, y: 22.5))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 1.5, y: 14), controlPoint1: CGPoint(x: 5.31, y: 22.5), controlPoint2: CGPoint(x: 1.5, y: 18.7))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 5.5), controlPoint1: CGPoint(x: 1.5, y: 9.31), controlPoint2: CGPoint(x: 5.31, y: 5.5))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 18.5, y: 14), controlPoint1: CGPoint(x: 14.7, y: 5.5), controlPoint2: CGPoint(x: 18.5, y: 9.31))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 22.5), controlPoint1: CGPoint(x: 18.5, y: 18.7), controlPoint2: CGPoint(x: 14.7, y: 22.5))
+        gridiconsusercircle.addLine(to: CGPoint(x: 10, y: 22.5))
+        gridiconsusercircle.close()
+        gridiconsusercircle.move(to: CGPoint(x: 10, y: 14.5))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 4.5, y: 18), controlPoint1: CGPoint(x: 6.96, y: 14.5), controlPoint2: CGPoint(x: 4.5, y: 16.23))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 21.5), controlPoint1: CGPoint(x: 4.5, y: 19.77), controlPoint2: CGPoint(x: 6.96, y: 21.5))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 15.5, y: 18), controlPoint1: CGPoint(x: 13.04, y: 21.5), controlPoint2: CGPoint(x: 15.5, y: 19.77))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 14.5), controlPoint1: CGPoint(x: 15.5, y: 16.23), controlPoint2: CGPoint(x: 13.04, y: 14.5))
+        gridiconsusercircle.addLine(to: CGPoint(x: 10, y: 14.5))
+        gridiconsusercircle.close()
+        gridiconsusercircle.move(to: CGPoint(x: 10, y: 14))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 13, y: 11), controlPoint1: CGPoint(x: 11.66, y: 14), controlPoint2: CGPoint(x: 13, y: 12.66))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 8), controlPoint1: CGPoint(x: 13, y: 9.34), controlPoint2: CGPoint(x: 11.66, y: 8))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 7, y: 11), controlPoint1: CGPoint(x: 8.34, y: 8), controlPoint2: CGPoint(x: 7, y: 9.34))
+        gridiconsusercircle.addCurve(to: CGPoint(x: 10, y: 14), controlPoint1: CGPoint(x: 7, y: 12.66), controlPoint2: CGPoint(x: 8.34, y: 14))
+        gridiconsusercircle.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsusercircle.close()
+        gridiconsusercircle.move(to: CGPoint(x: 10, y: 14))
+        context.saveGState()
+        context.translateBy(x: 806, y: 618)
         gridiconsusercircle.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsusercircle.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsundo(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsundo(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -626)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -626)
         
         /// gridicons-undo
         let gridiconsundo = UIBezierPath()
-        gridiconsundo.moveToPoint(CGPoint(x: 14.14, y: 10.15))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 9.9, y: 8.39), controlPoint1: CGPoint(x: 12.97, y: 8.98), controlPoint2: CGPoint(x: 11.43, y: 8.39))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 5.66, y: 10.15), controlPoint1: CGPoint(x: 8.36, y: 8.39), controlPoint2: CGPoint(x: 6.83, y: 8.98))
-        gridiconsundo.addLineToPoint(CGPoint(x: 2, y: 13.81))
-        gridiconsundo.addLineToPoint(CGPoint(x: 2, y: 10.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 0, y: 10.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 0, y: 17.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 7, y: 17.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 7, y: 15.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 3.41, y: 15.22))
-        gridiconsundo.addLineToPoint(CGPoint(x: 7.07, y: 11.57))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 9.9, y: 10.4), controlPoint1: CGPoint(x: 7.83, y: 10.81), controlPoint2: CGPoint(x: 8.83, y: 10.4))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 12.73, y: 11.57), controlPoint1: CGPoint(x: 10.97, y: 10.4), controlPoint2: CGPoint(x: 11.97, y: 10.81))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 12.73, y: 17.22), controlPoint1: CGPoint(x: 14.29, y: 13.13), controlPoint2: CGPoint(x: 14.29, y: 15.66))
-        gridiconsundo.addLineToPoint(CGPoint(x: 7.36, y: 22.59))
-        gridiconsundo.addLineToPoint(CGPoint(x: 8.78, y: 24))
-        gridiconsundo.addLineToPoint(CGPoint(x: 14.14, y: 18.64))
-        gridiconsundo.addCurveToPoint(CGPoint(x: 14.15, y: 10.15), controlPoint1: CGPoint(x: 16.48, y: 16.29), controlPoint2: CGPoint(x: 16.48, y: 12.5))
-        gridiconsundo.addLineToPoint(CGPoint(x: 14.14, y: 10.15))
-        gridiconsundo.closePath()
-        gridiconsundo.moveToPoint(CGPoint(x: 14.14, y: 10.15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 618)
+        gridiconsundo.move(to: CGPoint(x: 14.14, y: 10.15))
+        gridiconsundo.addCurve(to: CGPoint(x: 9.9, y: 8.39), controlPoint1: CGPoint(x: 12.97, y: 8.98), controlPoint2: CGPoint(x: 11.43, y: 8.39))
+        gridiconsundo.addCurve(to: CGPoint(x: 5.66, y: 10.15), controlPoint1: CGPoint(x: 8.36, y: 8.39), controlPoint2: CGPoint(x: 6.83, y: 8.98))
+        gridiconsundo.addLine(to: CGPoint(x: 2, y: 13.81))
+        gridiconsundo.addLine(to: CGPoint(x: 2, y: 10.22))
+        gridiconsundo.addLine(to: CGPoint(x: 0, y: 10.22))
+        gridiconsundo.addLine(to: CGPoint(x: 0, y: 17.22))
+        gridiconsundo.addLine(to: CGPoint(x: 7, y: 17.22))
+        gridiconsundo.addLine(to: CGPoint(x: 7, y: 15.22))
+        gridiconsundo.addLine(to: CGPoint(x: 3.41, y: 15.22))
+        gridiconsundo.addLine(to: CGPoint(x: 7.07, y: 11.57))
+        gridiconsundo.addCurve(to: CGPoint(x: 9.9, y: 10.4), controlPoint1: CGPoint(x: 7.83, y: 10.81), controlPoint2: CGPoint(x: 8.83, y: 10.4))
+        gridiconsundo.addCurve(to: CGPoint(x: 12.73, y: 11.57), controlPoint1: CGPoint(x: 10.97, y: 10.4), controlPoint2: CGPoint(x: 11.97, y: 10.81))
+        gridiconsundo.addCurve(to: CGPoint(x: 12.73, y: 17.22), controlPoint1: CGPoint(x: 14.29, y: 13.13), controlPoint2: CGPoint(x: 14.29, y: 15.66))
+        gridiconsundo.addLine(to: CGPoint(x: 7.36, y: 22.59))
+        gridiconsundo.addLine(to: CGPoint(x: 8.78, y: 24))
+        gridiconsundo.addLine(to: CGPoint(x: 14.14, y: 18.64))
+        gridiconsundo.addCurve(to: CGPoint(x: 14.15, y: 10.15), controlPoint1: CGPoint(x: 16.48, y: 16.29), controlPoint2: CGPoint(x: 16.48, y: 12.5))
+        gridiconsundo.addLine(to: CGPoint(x: 14.14, y: 10.15))
+        gridiconsundo.close()
+        gridiconsundo.move(to: CGPoint(x: 14.14, y: 10.15))
+        context.saveGState()
+        context.translateBy(x: 772, y: 618)
         gridiconsundo.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsundo.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsunderline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsunderline(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -590)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -590)
         
         /// gridicons-underline
         let gridiconsunderline = UIBezierPath()
-        gridiconsunderline.moveToPoint(CGPoint(x: 0, y: 22))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsunderline.closePath()
-        gridiconsunderline.moveToPoint(CGPoint(x: 14, y: 6))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 14, y: 14))
-        gridiconsunderline.addCurveToPoint(CGPoint(x: 8, y: 20), controlPoint1: CGPoint(x: 14, y: 17.31), controlPoint2: CGPoint(x: 11.31, y: 20))
-        gridiconsunderline.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 4.69, y: 20), controlPoint2: CGPoint(x: 2, y: 17.31))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 5, y: 6))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 5, y: 14))
-        gridiconsunderline.addCurveToPoint(CGPoint(x: 8, y: 17), controlPoint1: CGPoint(x: 5, y: 15.65), controlPoint2: CGPoint(x: 6.35, y: 17))
-        gridiconsunderline.addCurveToPoint(CGPoint(x: 11, y: 14), controlPoint1: CGPoint(x: 9.65, y: 17), controlPoint2: CGPoint(x: 11, y: 15.65))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 11, y: 6))
-        gridiconsunderline.addLineToPoint(CGPoint(x: 14, y: 6))
-        gridiconsunderline.closePath()
-        gridiconsunderline.moveToPoint(CGPoint(x: 14, y: 6))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 584)
+        gridiconsunderline.move(to: CGPoint(x: 0, y: 22))
+        gridiconsunderline.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsunderline.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsunderline.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsunderline.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsunderline.close()
+        gridiconsunderline.move(to: CGPoint(x: 14, y: 6))
+        gridiconsunderline.addLine(to: CGPoint(x: 14, y: 14))
+        gridiconsunderline.addCurve(to: CGPoint(x: 8, y: 20), controlPoint1: CGPoint(x: 14, y: 17.31), controlPoint2: CGPoint(x: 11.31, y: 20))
+        gridiconsunderline.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 4.69, y: 20), controlPoint2: CGPoint(x: 2, y: 17.31))
+        gridiconsunderline.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconsunderline.addLine(to: CGPoint(x: 5, y: 6))
+        gridiconsunderline.addLine(to: CGPoint(x: 5, y: 14))
+        gridiconsunderline.addCurve(to: CGPoint(x: 8, y: 17), controlPoint1: CGPoint(x: 5, y: 15.65), controlPoint2: CGPoint(x: 6.35, y: 17))
+        gridiconsunderline.addCurve(to: CGPoint(x: 11, y: 14), controlPoint1: CGPoint(x: 9.65, y: 17), controlPoint2: CGPoint(x: 11, y: 15.65))
+        gridiconsunderline.addLine(to: CGPoint(x: 11, y: 6))
+        gridiconsunderline.addLine(to: CGPoint(x: 14, y: 6))
+        gridiconsunderline.close()
+        gridiconsunderline.move(to: CGPoint(x: 14, y: 6))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 584)
         gridiconsunderline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsunderline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstypes(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 21), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstypes(frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 21), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 21), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 21)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -587)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -587)
         
         /// gridicons-types
         let gridiconstypes = UIBezierPath()
-        gridiconstypes.moveToPoint(CGPoint(x: 21, y: 19))
-        gridiconstypes.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 21, y: 21.76), controlPoint2: CGPoint(x: 18.76, y: 24))
-        gridiconstypes.addCurveToPoint(CGPoint(x: 11, y: 19), controlPoint1: CGPoint(x: 13.24, y: 24), controlPoint2: CGPoint(x: 11, y: 21.76))
-        gridiconstypes.addCurveToPoint(CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 11, y: 16.24), controlPoint2: CGPoint(x: 13.24, y: 14))
-        gridiconstypes.addCurveToPoint(CGPoint(x: 21, y: 19), controlPoint1: CGPoint(x: 18.76, y: 14), controlPoint2: CGPoint(x: 21, y: 16.24))
-        gridiconstypes.addLineToPoint(CGPoint(x: 21, y: 19))
-        gridiconstypes.closePath()
-        gridiconstypes.moveToPoint(CGPoint(x: 5.5, y: 8.5))
-        gridiconstypes.addLineToPoint(CGPoint(x: 9.3, y: 8.5))
-        gridiconstypes.addLineToPoint(CGPoint(x: 6, y: 3))
-        gridiconstypes.addLineToPoint(CGPoint(x: 0, y: 13))
-        gridiconstypes.addLineToPoint(CGPoint(x: 5.5, y: 13))
-        gridiconstypes.addLineToPoint(CGPoint(x: 5.5, y: 8.5))
-        gridiconstypes.closePath()
-        gridiconstypes.moveToPoint(CGPoint(x: 15, y: 12.59))
-        gridiconstypes.addLineToPoint(CGPoint(x: 15, y: 10))
-        gridiconstypes.addLineToPoint(CGPoint(x: 7, y: 10))
-        gridiconstypes.addLineToPoint(CGPoint(x: 7, y: 18))
-        gridiconstypes.addLineToPoint(CGPoint(x: 9.59, y: 18))
-        gridiconstypes.addCurveToPoint(CGPoint(x: 15, y: 12.59), controlPoint1: CGPoint(x: 10.02, y: 15.22), controlPoint2: CGPoint(x: 12.22, y: 13.02))
-        gridiconstypes.addLineToPoint(CGPoint(x: 15, y: 12.59))
-        gridiconstypes.closePath()
-        gridiconstypes.moveToPoint(CGPoint(x: 15, y: 12.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 584)
+        gridiconstypes.move(to: CGPoint(x: 21, y: 19))
+        gridiconstypes.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 21, y: 21.76), controlPoint2: CGPoint(x: 18.76, y: 24))
+        gridiconstypes.addCurve(to: CGPoint(x: 11, y: 19), controlPoint1: CGPoint(x: 13.24, y: 24), controlPoint2: CGPoint(x: 11, y: 21.76))
+        gridiconstypes.addCurve(to: CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 11, y: 16.24), controlPoint2: CGPoint(x: 13.24, y: 14))
+        gridiconstypes.addCurve(to: CGPoint(x: 21, y: 19), controlPoint1: CGPoint(x: 18.76, y: 14), controlPoint2: CGPoint(x: 21, y: 16.24))
+        gridiconstypes.addLine(to: CGPoint(x: 21, y: 19))
+        gridiconstypes.close()
+        gridiconstypes.move(to: CGPoint(x: 5.5, y: 8.5))
+        gridiconstypes.addLine(to: CGPoint(x: 9.3, y: 8.5))
+        gridiconstypes.addLine(to: CGPoint(x: 6, y: 3))
+        gridiconstypes.addLine(to: CGPoint(x: 0, y: 13))
+        gridiconstypes.addLine(to: CGPoint(x: 5.5, y: 13))
+        gridiconstypes.addLine(to: CGPoint(x: 5.5, y: 8.5))
+        gridiconstypes.close()
+        gridiconstypes.move(to: CGPoint(x: 15, y: 12.59))
+        gridiconstypes.addLine(to: CGPoint(x: 15, y: 10))
+        gridiconstypes.addLine(to: CGPoint(x: 7, y: 10))
+        gridiconstypes.addLine(to: CGPoint(x: 7, y: 18))
+        gridiconstypes.addLine(to: CGPoint(x: 9.59, y: 18))
+        gridiconstypes.addCurve(to: CGPoint(x: 15, y: 12.59), controlPoint1: CGPoint(x: 10.02, y: 15.22), controlPoint2: CGPoint(x: 12.22, y: 13.02))
+        gridiconstypes.addLine(to: CGPoint(x: 15, y: 12.59))
+        gridiconstypes.close()
+        gridiconstypes.move(to: CGPoint(x: 15, y: 12.59))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 584)
         gridiconstypes.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstypes.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstrophy(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstrophy(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -589)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -589)
         
         /// gridicons-trophy
         let gridiconstrophy = UIBezierPath()
-        gridiconstrophy.moveToPoint(CGPoint(x: 16, y: 7.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 16, y: 5))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 4, y: 5))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 4, y: 7.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 0, y: 7.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 4.32, y: 14.93), controlPoint1: CGPoint(x: 0, y: 12.52), controlPoint2: CGPoint(x: 1.89, y: 14.6))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 9, y: 18.91), controlPoint1: CGPoint(x: 5.02, y: 16.99), controlPoint2: CGPoint(x: 6.81, y: 18.54))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 9, y: 20))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 9, y: 21.11), controlPoint2: CGPoint(x: 8.11, y: 22))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 6, y: 22))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 6, y: 24))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 14, y: 22))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 13, y: 22))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 11, y: 20), controlPoint1: CGPoint(x: 11.9, y: 22), controlPoint2: CGPoint(x: 11, y: 21.11))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 11, y: 18.91))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 15.68, y: 14.93), controlPoint1: CGPoint(x: 13.19, y: 18.54), controlPoint2: CGPoint(x: 14.98, y: 16.99))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 18.11, y: 14.6), controlPoint2: CGPoint(x: 20, y: 12.52))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 20, y: 7.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 16, y: 7.06))
-        gridiconstrophy.closePath()
-        gridiconstrophy.moveToPoint(CGPoint(x: 2, y: 10))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 2, y: 9.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 4, y: 9.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 4, y: 12.83))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 2, y: 10), controlPoint1: CGPoint(x: 2.84, y: 12.41), controlPoint2: CGPoint(x: 2, y: 11.31))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconstrophy.closePath()
-        gridiconstrophy.moveToPoint(CGPoint(x: 18, y: 10))
-        gridiconstrophy.addCurveToPoint(CGPoint(x: 16, y: 12.83), controlPoint1: CGPoint(x: 18, y: 11.31), controlPoint2: CGPoint(x: 17.16, y: 12.41))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 16, y: 9.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 18, y: 9.06))
-        gridiconstrophy.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconstrophy.closePath()
-        gridiconstrophy.moveToPoint(CGPoint(x: 18, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 584)
+        gridiconstrophy.move(to: CGPoint(x: 16, y: 7.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 16, y: 5))
+        gridiconstrophy.addLine(to: CGPoint(x: 4, y: 5))
+        gridiconstrophy.addLine(to: CGPoint(x: 4, y: 7.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 0, y: 7.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconstrophy.addCurve(to: CGPoint(x: 4.32, y: 14.93), controlPoint1: CGPoint(x: 0, y: 12.52), controlPoint2: CGPoint(x: 1.89, y: 14.6))
+        gridiconstrophy.addCurve(to: CGPoint(x: 9, y: 18.91), controlPoint1: CGPoint(x: 5.02, y: 16.99), controlPoint2: CGPoint(x: 6.81, y: 18.54))
+        gridiconstrophy.addLine(to: CGPoint(x: 9, y: 20))
+        gridiconstrophy.addCurve(to: CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 9, y: 21.11), controlPoint2: CGPoint(x: 8.11, y: 22))
+        gridiconstrophy.addLine(to: CGPoint(x: 6, y: 22))
+        gridiconstrophy.addLine(to: CGPoint(x: 6, y: 24))
+        gridiconstrophy.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconstrophy.addLine(to: CGPoint(x: 14, y: 22))
+        gridiconstrophy.addLine(to: CGPoint(x: 13, y: 22))
+        gridiconstrophy.addCurve(to: CGPoint(x: 11, y: 20), controlPoint1: CGPoint(x: 11.9, y: 22), controlPoint2: CGPoint(x: 11, y: 21.11))
+        gridiconstrophy.addLine(to: CGPoint(x: 11, y: 18.91))
+        gridiconstrophy.addCurve(to: CGPoint(x: 15.68, y: 14.93), controlPoint1: CGPoint(x: 13.19, y: 18.54), controlPoint2: CGPoint(x: 14.98, y: 16.99))
+        gridiconstrophy.addCurve(to: CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 18.11, y: 14.6), controlPoint2: CGPoint(x: 20, y: 12.52))
+        gridiconstrophy.addLine(to: CGPoint(x: 20, y: 7.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 16, y: 7.06))
+        gridiconstrophy.close()
+        gridiconstrophy.move(to: CGPoint(x: 2, y: 10))
+        gridiconstrophy.addLine(to: CGPoint(x: 2, y: 9.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 4, y: 9.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 4, y: 12.83))
+        gridiconstrophy.addCurve(to: CGPoint(x: 2, y: 10), controlPoint1: CGPoint(x: 2.84, y: 12.41), controlPoint2: CGPoint(x: 2, y: 11.31))
+        gridiconstrophy.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconstrophy.close()
+        gridiconstrophy.move(to: CGPoint(x: 18, y: 10))
+        gridiconstrophy.addCurve(to: CGPoint(x: 16, y: 12.83), controlPoint1: CGPoint(x: 18, y: 11.31), controlPoint2: CGPoint(x: 17.16, y: 12.41))
+        gridiconstrophy.addLine(to: CGPoint(x: 16, y: 9.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 18, y: 9.06))
+        gridiconstrophy.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconstrophy.close()
+        gridiconstrophy.move(to: CGPoint(x: 18, y: 10))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 584)
         gridiconstrophy.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstrophy.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstrash(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstrash(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -589)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -589)
         
         /// gridicons-trash
         let gridiconstrash = UIBezierPath()
-        gridiconstrash.moveToPoint(CGPoint(x: 1.19, y: 11))
-        gridiconstrash.addLineToPoint(CGPoint(x: 12.81, y: 11))
-        gridiconstrash.addLineToPoint(CGPoint(x: 12.12, y: 22.13))
-        gridiconstrash.addCurveToPoint(CGPoint(x: 10.12, y: 24), controlPoint1: CGPoint(x: 12.05, y: 23.18), controlPoint2: CGPoint(x: 11.18, y: 24))
-        gridiconstrash.addLineToPoint(CGPoint(x: 3.88, y: 24))
-        gridiconstrash.addCurveToPoint(CGPoint(x: 1.88, y: 22.13), controlPoint1: CGPoint(x: 2.82, y: 24), controlPoint2: CGPoint(x: 1.95, y: 23.18))
-        gridiconstrash.addLineToPoint(CGPoint(x: 1.19, y: 11))
-        gridiconstrash.closePath()
-        gridiconstrash.moveToPoint(CGPoint(x: 14, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconstrash.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconstrash.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 3, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 3, y: 7))
-        gridiconstrash.addCurveToPoint(CGPoint(x: 5, y: 5), controlPoint1: CGPoint(x: 3, y: 5.9), controlPoint2: CGPoint(x: 3.9, y: 5))
-        gridiconstrash.addLineToPoint(CGPoint(x: 9, y: 5))
-        gridiconstrash.addCurveToPoint(CGPoint(x: 11, y: 7), controlPoint1: CGPoint(x: 10.11, y: 5), controlPoint2: CGPoint(x: 11, y: 5.9))
-        gridiconstrash.addLineToPoint(CGPoint(x: 11, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 14, y: 8))
-        gridiconstrash.closePath()
-        gridiconstrash.moveToPoint(CGPoint(x: 5, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 9, y: 8))
-        gridiconstrash.addLineToPoint(CGPoint(x: 9, y: 7))
-        gridiconstrash.addLineToPoint(CGPoint(x: 5, y: 7))
-        gridiconstrash.addLineToPoint(CGPoint(x: 5, y: 8))
-        gridiconstrash.closePath()
-        gridiconstrash.moveToPoint(CGPoint(x: 5, y: 8))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 584)
+        gridiconstrash.move(to: CGPoint(x: 1.19, y: 11))
+        gridiconstrash.addLine(to: CGPoint(x: 12.81, y: 11))
+        gridiconstrash.addLine(to: CGPoint(x: 12.12, y: 22.13))
+        gridiconstrash.addCurve(to: CGPoint(x: 10.12, y: 24), controlPoint1: CGPoint(x: 12.05, y: 23.18), controlPoint2: CGPoint(x: 11.18, y: 24))
+        gridiconstrash.addLine(to: CGPoint(x: 3.88, y: 24))
+        gridiconstrash.addCurve(to: CGPoint(x: 1.88, y: 22.13), controlPoint1: CGPoint(x: 2.82, y: 24), controlPoint2: CGPoint(x: 1.95, y: 23.18))
+        gridiconstrash.addLine(to: CGPoint(x: 1.19, y: 11))
+        gridiconstrash.close()
+        gridiconstrash.move(to: CGPoint(x: 14, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconstrash.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconstrash.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 3, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 3, y: 7))
+        gridiconstrash.addCurve(to: CGPoint(x: 5, y: 5), controlPoint1: CGPoint(x: 3, y: 5.9), controlPoint2: CGPoint(x: 3.9, y: 5))
+        gridiconstrash.addLine(to: CGPoint(x: 9, y: 5))
+        gridiconstrash.addCurve(to: CGPoint(x: 11, y: 7), controlPoint1: CGPoint(x: 10.11, y: 5), controlPoint2: CGPoint(x: 11, y: 5.9))
+        gridiconstrash.addLine(to: CGPoint(x: 11, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconstrash.close()
+        gridiconstrash.move(to: CGPoint(x: 5, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 9, y: 8))
+        gridiconstrash.addLine(to: CGPoint(x: 9, y: 7))
+        gridiconstrash.addLine(to: CGPoint(x: 5, y: 7))
+        gridiconstrash.addLine(to: CGPoint(x: 5, y: 8))
+        gridiconstrash.close()
+        gridiconstrash.move(to: CGPoint(x: 5, y: 8))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 584)
         gridiconstrash.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstrash.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstime(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstime(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -588)
         
         /// gridicons-time
         let gridiconstime = UIBezierPath()
-        gridiconstime.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconstime.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconstime.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
-        gridiconstime.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconstime.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconstime.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconstime.closePath()
-        gridiconstime.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconstime.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconstime.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconstime.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconstime.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconstime.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconstime.closePath()
-        gridiconstime.moveToPoint(CGPoint(x: 13.8, y: 17.4))
-        gridiconstime.addLineToPoint(CGPoint(x: 11, y: 13.67))
-        gridiconstime.addLineToPoint(CGPoint(x: 11, y: 9))
-        gridiconstime.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconstime.addLineToPoint(CGPoint(x: 9, y: 14.33))
-        gridiconstime.addLineToPoint(CGPoint(x: 12.2, y: 18.6))
-        gridiconstime.addLineToPoint(CGPoint(x: 13.8, y: 17.4))
-        gridiconstime.closePath()
-        gridiconstime.moveToPoint(CGPoint(x: 13.8, y: 17.4))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 584)
+        gridiconstime.move(to: CGPoint(x: 10, y: 6))
+        gridiconstime.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconstime.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
+        gridiconstime.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconstime.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconstime.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconstime.close()
+        gridiconstime.move(to: CGPoint(x: 10, y: 4))
+        gridiconstime.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconstime.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconstime.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconstime.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconstime.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconstime.close()
+        gridiconstime.move(to: CGPoint(x: 13.8, y: 17.4))
+        gridiconstime.addLine(to: CGPoint(x: 11, y: 13.67))
+        gridiconstime.addLine(to: CGPoint(x: 11, y: 9))
+        gridiconstime.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconstime.addLine(to: CGPoint(x: 9, y: 14.33))
+        gridiconstime.addLine(to: CGPoint(x: 12.2, y: 18.6))
+        gridiconstime.addLine(to: CGPoint(x: 13.8, y: 17.4))
+        gridiconstime.close()
+        gridiconstime.move(to: CGPoint(x: 13.8, y: 17.4))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 584)
         gridiconstime.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstime.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsthumbsup(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsthumbsup(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -588)
         
         /// gridicons-thumbs-up
         let gridiconsthumbsup = UIBezierPath()
-        gridiconsthumbsup.moveToPoint(CGPoint(x: 4.7, y: 24))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 2, y: 15))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 4.7, y: 24))
-        gridiconsthumbsup.closePath()
-        gridiconsthumbsup.moveToPoint(CGPoint(x: 18, y: 11))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 12, y: 11))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 12, y: 7))
-        gridiconsthumbsup.addCurveToPoint(CGPoint(x: 9, y: 4), controlPoint1: CGPoint(x: 12, y: 5.34), controlPoint2: CGPoint(x: 10.66, y: 4))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 8, y: 4))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 5.1, y: 11.63))
-        gridiconsthumbsup.addCurveToPoint(CGPoint(x: 4, y: 14.76), controlPoint1: CGPoint(x: 4.39, y: 12.52), controlPoint2: CGPoint(x: 4, y: 13.62))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 4, y: 16))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 6.1, y: 23))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 14.44, y: 23))
-        gridiconsthumbsup.addCurveToPoint(CGPoint(x: 18.32, y: 19.97), controlPoint1: CGPoint(x: 16.27, y: 23), controlPoint2: CGPoint(x: 17.87, y: 21.75))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 19.94, y: 13.48))
-        gridiconsthumbsup.addCurveToPoint(CGPoint(x: 18, y: 11), controlPoint1: CGPoint(x: 20.25, y: 12.22), controlPoint2: CGPoint(x: 19.3, y: 11))
-        gridiconsthumbsup.addLineToPoint(CGPoint(x: 18, y: 11))
-        gridiconsthumbsup.closePath()
-        gridiconsthumbsup.moveToPoint(CGPoint(x: 18, y: 11))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 584)
+        gridiconsthumbsup.move(to: CGPoint(x: 4.7, y: 24))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 4.7, y: 24))
+        gridiconsthumbsup.close()
+        gridiconsthumbsup.move(to: CGPoint(x: 18, y: 11))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 12, y: 11))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 12, y: 7))
+        gridiconsthumbsup.addCurve(to: CGPoint(x: 9, y: 4), controlPoint1: CGPoint(x: 12, y: 5.34), controlPoint2: CGPoint(x: 10.66, y: 4))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 8, y: 4))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 5.1, y: 11.63))
+        gridiconsthumbsup.addCurve(to: CGPoint(x: 4, y: 14.76), controlPoint1: CGPoint(x: 4.39, y: 12.52), controlPoint2: CGPoint(x: 4, y: 13.62))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 4, y: 16))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 6.1, y: 23))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 14.44, y: 23))
+        gridiconsthumbsup.addCurve(to: CGPoint(x: 18.32, y: 19.97), controlPoint1: CGPoint(x: 16.27, y: 23), controlPoint2: CGPoint(x: 17.87, y: 21.75))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 19.94, y: 13.48))
+        gridiconsthumbsup.addCurve(to: CGPoint(x: 18, y: 11), controlPoint1: CGPoint(x: 20.25, y: 12.22), controlPoint2: CGPoint(x: 19.3, y: 11))
+        gridiconsthumbsup.addLine(to: CGPoint(x: 18, y: 11))
+        gridiconsthumbsup.close()
+        gridiconsthumbsup.move(to: CGPoint(x: 18, y: 11))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 584)
         gridiconsthumbsup.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsthumbsup.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsthemes(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsthemes(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -588)
         
         /// gridicons-themes
         let gridiconsthemes = UIBezierPath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 2, y: 8))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsthemes.closePath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 18, y: 4))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 6, y: 4))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 4, y: 6), controlPoint1: CGPoint(x: 4.89, y: 4), controlPoint2: CGPoint(x: 4, y: 4.89))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 4, y: 18))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 6, y: 20), controlPoint1: CGPoint(x: 4, y: 19.11), controlPoint2: CGPoint(x: 4.89, y: 20))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 20, y: 18), controlPoint1: CGPoint(x: 19.11, y: 20), controlPoint2: CGPoint(x: 20, y: 19.11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 20, y: 6))
-        gridiconsthemes.addCurveToPoint(CGPoint(x: 18, y: 4), controlPoint1: CGPoint(x: 20, y: 4.89), controlPoint2: CGPoint(x: 19.11, y: 4))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 4))
-        gridiconsthemes.closePath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 13, y: 18))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 6, y: 18))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 6, y: 11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 13, y: 11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 13, y: 18))
-        gridiconsthemes.closePath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 18, y: 18))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 15, y: 18))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 15, y: 11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 11))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 18))
-        gridiconsthemes.closePath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 18, y: 9))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 6, y: 9))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 6, y: 6))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 6))
-        gridiconsthemes.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconsthemes.closePath()
-        gridiconsthemes.moveToPoint(CGPoint(x: 18, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 584)
+        gridiconsthemes.move(to: CGPoint(x: 2, y: 8))
+        gridiconsthemes.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconsthemes.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsthemes.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsthemes.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsthemes.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
+        gridiconsthemes.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsthemes.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsthemes.close()
+        gridiconsthemes.move(to: CGPoint(x: 18, y: 4))
+        gridiconsthemes.addLine(to: CGPoint(x: 6, y: 4))
+        gridiconsthemes.addCurve(to: CGPoint(x: 4, y: 6), controlPoint1: CGPoint(x: 4.89, y: 4), controlPoint2: CGPoint(x: 4, y: 4.89))
+        gridiconsthemes.addLine(to: CGPoint(x: 4, y: 18))
+        gridiconsthemes.addCurve(to: CGPoint(x: 6, y: 20), controlPoint1: CGPoint(x: 4, y: 19.11), controlPoint2: CGPoint(x: 4.89, y: 20))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsthemes.addCurve(to: CGPoint(x: 20, y: 18), controlPoint1: CGPoint(x: 19.11, y: 20), controlPoint2: CGPoint(x: 20, y: 19.11))
+        gridiconsthemes.addLine(to: CGPoint(x: 20, y: 6))
+        gridiconsthemes.addCurve(to: CGPoint(x: 18, y: 4), controlPoint1: CGPoint(x: 20, y: 4.89), controlPoint2: CGPoint(x: 19.11, y: 4))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 4))
+        gridiconsthemes.close()
+        gridiconsthemes.move(to: CGPoint(x: 13, y: 18))
+        gridiconsthemes.addLine(to: CGPoint(x: 6, y: 18))
+        gridiconsthemes.addLine(to: CGPoint(x: 6, y: 11))
+        gridiconsthemes.addLine(to: CGPoint(x: 13, y: 11))
+        gridiconsthemes.addLine(to: CGPoint(x: 13, y: 18))
+        gridiconsthemes.close()
+        gridiconsthemes.move(to: CGPoint(x: 18, y: 18))
+        gridiconsthemes.addLine(to: CGPoint(x: 15, y: 18))
+        gridiconsthemes.addLine(to: CGPoint(x: 15, y: 11))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 11))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 18))
+        gridiconsthemes.close()
+        gridiconsthemes.move(to: CGPoint(x: 18, y: 9))
+        gridiconsthemes.addLine(to: CGPoint(x: 6, y: 9))
+        gridiconsthemes.addLine(to: CGPoint(x: 6, y: 6))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 6))
+        gridiconsthemes.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconsthemes.close()
+        gridiconsthemes.move(to: CGPoint(x: 18, y: 9))
+        context.saveGState()
+        context.translateBy(x: 976, y: 584)
         gridiconsthemes.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsthemes.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstextcolor(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstextcolor(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -589)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -589)
         
         /// gridicons-text-color
         let gridiconstextcolor = UIBezierPath()
-        gridiconstextcolor.moveToPoint(CGPoint(x: 0, y: 21))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 18, y: 21))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 0, y: 21))
-        gridiconstextcolor.closePath()
-        gridiconstextcolor.moveToPoint(CGPoint(x: 12.82, y: 19))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 16.25, y: 19))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 11, y: 5))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 7, y: 5))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 1.76, y: 19))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 5.18, y: 19))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 6.25, y: 15.5))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 11.75, y: 15.5))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 12.82, y: 19))
-        gridiconstextcolor.closePath()
-        gridiconstextcolor.moveToPoint(CGPoint(x: 10.87, y: 13))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 7.14, y: 13))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 9, y: 7.27))
-        gridiconstextcolor.addLineToPoint(CGPoint(x: 10.87, y: 13))
-        gridiconstextcolor.closePath()
-        gridiconstextcolor.moveToPoint(CGPoint(x: 10.87, y: 13))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 584)
+        gridiconstextcolor.move(to: CGPoint(x: 0, y: 21))
+        gridiconstextcolor.addLine(to: CGPoint(x: 18, y: 21))
+        gridiconstextcolor.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconstextcolor.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconstextcolor.addLine(to: CGPoint(x: 0, y: 21))
+        gridiconstextcolor.close()
+        gridiconstextcolor.move(to: CGPoint(x: 12.82, y: 19))
+        gridiconstextcolor.addLine(to: CGPoint(x: 16.25, y: 19))
+        gridiconstextcolor.addLine(to: CGPoint(x: 11, y: 5))
+        gridiconstextcolor.addLine(to: CGPoint(x: 7, y: 5))
+        gridiconstextcolor.addLine(to: CGPoint(x: 1.76, y: 19))
+        gridiconstextcolor.addLine(to: CGPoint(x: 5.18, y: 19))
+        gridiconstextcolor.addLine(to: CGPoint(x: 6.25, y: 15.5))
+        gridiconstextcolor.addLine(to: CGPoint(x: 11.75, y: 15.5))
+        gridiconstextcolor.addLine(to: CGPoint(x: 12.82, y: 19))
+        gridiconstextcolor.close()
+        gridiconstextcolor.move(to: CGPoint(x: 10.87, y: 13))
+        gridiconstextcolor.addLine(to: CGPoint(x: 7.14, y: 13))
+        gridiconstextcolor.addLine(to: CGPoint(x: 9, y: 7.27))
+        gridiconstextcolor.addLine(to: CGPoint(x: 10.87, y: 13))
+        gridiconstextcolor.close()
+        gridiconstextcolor.move(to: CGPoint(x: 10.87, y: 13))
+        context.saveGState()
+        context.translateBy(x: 942, y: 584)
         gridiconstextcolor.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstextcolor.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstag(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstag(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -588)
         
         /// gridicons-tag
         let gridiconstag = UIBezierPath()
-        gridiconstag.moveToPoint(CGPoint(x: 17.99, y: 4.01))
-        gridiconstag.addLineToPoint(CGPoint(x: 10.91, y: 4.01))
-        gridiconstag.addCurveToPoint(CGPoint(x: 9.49, y: 4.59), controlPoint1: CGPoint(x: 10.38, y: 4.01), controlPoint2: CGPoint(x: 9.87, y: 4.22))
-        gridiconstag.addLineToPoint(CGPoint(x: 0.59, y: 13.5))
-        gridiconstag.addCurveToPoint(CGPoint(x: 0.59, y: 16.33), controlPoint1: CGPoint(x: -0.2, y: 14.28), controlPoint2: CGPoint(x: -0.2, y: 15.55))
-        gridiconstag.addLineToPoint(CGPoint(x: 7.67, y: 23.41))
-        gridiconstag.addCurveToPoint(CGPoint(x: 10.5, y: 23.41), controlPoint1: CGPoint(x: 8.45, y: 24.2), controlPoint2: CGPoint(x: 9.72, y: 24.2))
-        gridiconstag.addLineToPoint(CGPoint(x: 19.41, y: 14.51))
-        gridiconstag.addCurveToPoint(CGPoint(x: 19.99, y: 13.09), controlPoint1: CGPoint(x: 19.78, y: 14.13), controlPoint2: CGPoint(x: 19.99, y: 13.63))
-        gridiconstag.addLineToPoint(CGPoint(x: 19.99, y: 6.01))
-        gridiconstag.addCurveToPoint(CGPoint(x: 17.99, y: 4.01), controlPoint1: CGPoint(x: 19.99, y: 4.9), controlPoint2: CGPoint(x: 19.1, y: 4.01))
-        gridiconstag.addLineToPoint(CGPoint(x: 17.99, y: 4.01))
-        gridiconstag.closePath()
-        gridiconstag.moveToPoint(CGPoint(x: 15, y: 11))
-        gridiconstag.addCurveToPoint(CGPoint(x: 13, y: 9), controlPoint1: CGPoint(x: 13.89, y: 11), controlPoint2: CGPoint(x: 13, y: 10.11))
-        gridiconstag.addCurveToPoint(CGPoint(x: 15, y: 7), controlPoint1: CGPoint(x: 13, y: 7.9), controlPoint2: CGPoint(x: 13.89, y: 7))
-        gridiconstag.addCurveToPoint(CGPoint(x: 17, y: 9), controlPoint1: CGPoint(x: 16.11, y: 7), controlPoint2: CGPoint(x: 17, y: 7.9))
-        gridiconstag.addCurveToPoint(CGPoint(x: 15, y: 11), controlPoint1: CGPoint(x: 17, y: 10.11), controlPoint2: CGPoint(x: 16.11, y: 11))
-        gridiconstag.addLineToPoint(CGPoint(x: 15, y: 11))
-        gridiconstag.closePath()
-        gridiconstag.moveToPoint(CGPoint(x: 15, y: 11))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 584)
+        gridiconstag.move(to: CGPoint(x: 17.99, y: 4.01))
+        gridiconstag.addLine(to: CGPoint(x: 10.91, y: 4.01))
+        gridiconstag.addCurve(to: CGPoint(x: 9.49, y: 4.59), controlPoint1: CGPoint(x: 10.38, y: 4.01), controlPoint2: CGPoint(x: 9.87, y: 4.22))
+        gridiconstag.addLine(to: CGPoint(x: 0.59, y: 13.5))
+        gridiconstag.addCurve(to: CGPoint(x: 0.59, y: 16.33), controlPoint1: CGPoint(x: -0.2, y: 14.28), controlPoint2: CGPoint(x: -0.2, y: 15.55))
+        gridiconstag.addLine(to: CGPoint(x: 7.67, y: 23.41))
+        gridiconstag.addCurve(to: CGPoint(x: 10.5, y: 23.41), controlPoint1: CGPoint(x: 8.45, y: 24.2), controlPoint2: CGPoint(x: 9.72, y: 24.2))
+        gridiconstag.addLine(to: CGPoint(x: 19.41, y: 14.51))
+        gridiconstag.addCurve(to: CGPoint(x: 19.99, y: 13.09), controlPoint1: CGPoint(x: 19.78, y: 14.13), controlPoint2: CGPoint(x: 19.99, y: 13.63))
+        gridiconstag.addLine(to: CGPoint(x: 19.99, y: 6.01))
+        gridiconstag.addCurve(to: CGPoint(x: 17.99, y: 4.01), controlPoint1: CGPoint(x: 19.99, y: 4.9), controlPoint2: CGPoint(x: 19.1, y: 4.01))
+        gridiconstag.addLine(to: CGPoint(x: 17.99, y: 4.01))
+        gridiconstag.close()
+        gridiconstag.move(to: CGPoint(x: 15, y: 11))
+        gridiconstag.addCurve(to: CGPoint(x: 13, y: 9), controlPoint1: CGPoint(x: 13.89, y: 11), controlPoint2: CGPoint(x: 13, y: 10.11))
+        gridiconstag.addCurve(to: CGPoint(x: 15, y: 7), controlPoint1: CGPoint(x: 13, y: 7.9), controlPoint2: CGPoint(x: 13.89, y: 7))
+        gridiconstag.addCurve(to: CGPoint(x: 17, y: 9), controlPoint1: CGPoint(x: 16.11, y: 7), controlPoint2: CGPoint(x: 17, y: 7.9))
+        gridiconstag.addCurve(to: CGPoint(x: 15, y: 11), controlPoint1: CGPoint(x: 17, y: 10.11), controlPoint2: CGPoint(x: 16.11, y: 11))
+        gridiconstag.addLine(to: CGPoint(x: 15, y: 11))
+        gridiconstag.close()
+        gridiconstag.move(to: CGPoint(x: 15, y: 11))
+        context.saveGState()
+        context.translateBy(x: 908, y: 584)
         gridiconstag.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstag.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconstablet(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconstablet(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -588)
         
         /// gridicons-tablet
         let gridiconstablet = UIBezierPath()
-        gridiconstablet.moveToPoint(CGPoint(x: 14, y: 4))
-        gridiconstablet.addLineToPoint(CGPoint(x: 2, y: 4))
-        gridiconstablet.addCurveToPoint(CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
-        gridiconstablet.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconstablet.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconstablet.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconstablet.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
-        gridiconstablet.addLineToPoint(CGPoint(x: 16, y: 6))
-        gridiconstablet.addCurveToPoint(CGPoint(x: 14, y: 4), controlPoint1: CGPoint(x: 16, y: 4.89), controlPoint2: CGPoint(x: 15.11, y: 4))
-        gridiconstablet.addLineToPoint(CGPoint(x: 14, y: 4))
-        gridiconstablet.closePath()
-        gridiconstablet.moveToPoint(CGPoint(x: 9, y: 23))
-        gridiconstablet.addLineToPoint(CGPoint(x: 7, y: 23))
-        gridiconstablet.addLineToPoint(CGPoint(x: 7, y: 22))
-        gridiconstablet.addLineToPoint(CGPoint(x: 9, y: 22))
-        gridiconstablet.addLineToPoint(CGPoint(x: 9, y: 23))
-        gridiconstablet.closePath()
-        gridiconstablet.moveToPoint(CGPoint(x: 14, y: 21))
-        gridiconstablet.addLineToPoint(CGPoint(x: 2, y: 21))
-        gridiconstablet.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconstablet.addLineToPoint(CGPoint(x: 14, y: 7))
-        gridiconstablet.addLineToPoint(CGPoint(x: 14, y: 21))
-        gridiconstablet.closePath()
-        gridiconstablet.moveToPoint(CGPoint(x: 14, y: 21))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 584)
+        gridiconstablet.move(to: CGPoint(x: 14, y: 4))
+        gridiconstablet.addLine(to: CGPoint(x: 2, y: 4))
+        gridiconstablet.addCurve(to: CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
+        gridiconstablet.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconstablet.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconstablet.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconstablet.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
+        gridiconstablet.addLine(to: CGPoint(x: 16, y: 6))
+        gridiconstablet.addCurve(to: CGPoint(x: 14, y: 4), controlPoint1: CGPoint(x: 16, y: 4.89), controlPoint2: CGPoint(x: 15.11, y: 4))
+        gridiconstablet.addLine(to: CGPoint(x: 14, y: 4))
+        gridiconstablet.close()
+        gridiconstablet.move(to: CGPoint(x: 9, y: 23))
+        gridiconstablet.addLine(to: CGPoint(x: 7, y: 23))
+        gridiconstablet.addLine(to: CGPoint(x: 7, y: 22))
+        gridiconstablet.addLine(to: CGPoint(x: 9, y: 22))
+        gridiconstablet.addLine(to: CGPoint(x: 9, y: 23))
+        gridiconstablet.close()
+        gridiconstablet.move(to: CGPoint(x: 14, y: 21))
+        gridiconstablet.addLine(to: CGPoint(x: 2, y: 21))
+        gridiconstablet.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconstablet.addLine(to: CGPoint(x: 14, y: 7))
+        gridiconstablet.addLine(to: CGPoint(x: 14, y: 21))
+        gridiconstablet.close()
+        gridiconstablet.move(to: CGPoint(x: 14, y: 21))
+        context.saveGState()
+        context.translateBy(x: 874, y: 584)
         gridiconstablet.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconstablet.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconssync(frame frame: CGRect = CGRect(x: 0, y: 0, width: 23, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconssync(frame: CGRect = CGRect(x: 0, y: 0, width: 23, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 23, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 23, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -592)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -592)
         
         /// gridicons-sync
         let gridiconssync = UIBezierPath()
-        gridiconssync.moveToPoint(CGPoint(x: 23, y: 17.5))
-        gridiconssync.addLineToPoint(CGPoint(x: 18.5, y: 22))
-        gridiconssync.addLineToPoint(CGPoint(x: 14, y: 17.5))
-        gridiconssync.addLineToPoint(CGPoint(x: 15.41, y: 16.09))
-        gridiconssync.addLineToPoint(CGPoint(x: 17.5, y: 18.17))
-        gridiconssync.addLineToPoint(CGPoint(x: 17.5, y: 16))
-        gridiconssync.addCurveToPoint(CGPoint(x: 11.5, y: 10), controlPoint1: CGPoint(x: 17.5, y: 12.69), controlPoint2: CGPoint(x: 14.81, y: 10))
-        gridiconssync.addLineToPoint(CGPoint(x: 11.5, y: 8))
-        gridiconssync.addCurveToPoint(CGPoint(x: 19.5, y: 16), controlPoint1: CGPoint(x: 15.92, y: 8), controlPoint2: CGPoint(x: 19.5, y: 11.58))
-        gridiconssync.addLineToPoint(CGPoint(x: 19.5, y: 18.17))
-        gridiconssync.addLineToPoint(CGPoint(x: 21.59, y: 16.09))
-        gridiconssync.addLineToPoint(CGPoint(x: 23, y: 17.5))
-        gridiconssync.closePath()
-        gridiconssync.moveToPoint(CGPoint(x: 5.5, y: 16))
-        gridiconssync.addLineToPoint(CGPoint(x: 5.5, y: 13.83))
-        gridiconssync.addLineToPoint(CGPoint(x: 7.59, y: 15.91))
-        gridiconssync.addLineToPoint(CGPoint(x: 9, y: 14.5))
-        gridiconssync.addLineToPoint(CGPoint(x: 4.5, y: 10))
-        gridiconssync.addLineToPoint(CGPoint(x: 0, y: 14.5))
-        gridiconssync.addLineToPoint(CGPoint(x: 1.41, y: 15.91))
-        gridiconssync.addLineToPoint(CGPoint(x: 3.5, y: 13.83))
-        gridiconssync.addLineToPoint(CGPoint(x: 3.5, y: 16))
-        gridiconssync.addCurveToPoint(CGPoint(x: 11.5, y: 24), controlPoint1: CGPoint(x: 3.5, y: 20.42), controlPoint2: CGPoint(x: 7.08, y: 24))
-        gridiconssync.addLineToPoint(CGPoint(x: 11.5, y: 22))
-        gridiconssync.addCurveToPoint(CGPoint(x: 5.5, y: 16), controlPoint1: CGPoint(x: 8.19, y: 22), controlPoint2: CGPoint(x: 5.5, y: 19.31))
-        gridiconssync.addLineToPoint(CGPoint(x: 5.5, y: 16))
-        gridiconssync.closePath()
-        gridiconssync.moveToPoint(CGPoint(x: 5.5, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 584)
+        gridiconssync.move(to: CGPoint(x: 23, y: 17.5))
+        gridiconssync.addLine(to: CGPoint(x: 18.5, y: 22))
+        gridiconssync.addLine(to: CGPoint(x: 14, y: 17.5))
+        gridiconssync.addLine(to: CGPoint(x: 15.41, y: 16.09))
+        gridiconssync.addLine(to: CGPoint(x: 17.5, y: 18.17))
+        gridiconssync.addLine(to: CGPoint(x: 17.5, y: 16))
+        gridiconssync.addCurve(to: CGPoint(x: 11.5, y: 10), controlPoint1: CGPoint(x: 17.5, y: 12.69), controlPoint2: CGPoint(x: 14.81, y: 10))
+        gridiconssync.addLine(to: CGPoint(x: 11.5, y: 8))
+        gridiconssync.addCurve(to: CGPoint(x: 19.5, y: 16), controlPoint1: CGPoint(x: 15.92, y: 8), controlPoint2: CGPoint(x: 19.5, y: 11.58))
+        gridiconssync.addLine(to: CGPoint(x: 19.5, y: 18.17))
+        gridiconssync.addLine(to: CGPoint(x: 21.59, y: 16.09))
+        gridiconssync.addLine(to: CGPoint(x: 23, y: 17.5))
+        gridiconssync.close()
+        gridiconssync.move(to: CGPoint(x: 5.5, y: 16))
+        gridiconssync.addLine(to: CGPoint(x: 5.5, y: 13.83))
+        gridiconssync.addLine(to: CGPoint(x: 7.59, y: 15.91))
+        gridiconssync.addLine(to: CGPoint(x: 9, y: 14.5))
+        gridiconssync.addLine(to: CGPoint(x: 4.5, y: 10))
+        gridiconssync.addLine(to: CGPoint(x: 0, y: 14.5))
+        gridiconssync.addLine(to: CGPoint(x: 1.41, y: 15.91))
+        gridiconssync.addLine(to: CGPoint(x: 3.5, y: 13.83))
+        gridiconssync.addLine(to: CGPoint(x: 3.5, y: 16))
+        gridiconssync.addCurve(to: CGPoint(x: 11.5, y: 24), controlPoint1: CGPoint(x: 3.5, y: 20.42), controlPoint2: CGPoint(x: 7.08, y: 24))
+        gridiconssync.addLine(to: CGPoint(x: 11.5, y: 22))
+        gridiconssync.addCurve(to: CGPoint(x: 5.5, y: 16), controlPoint1: CGPoint(x: 8.19, y: 22), controlPoint2: CGPoint(x: 5.5, y: 19.31))
+        gridiconssync.addLine(to: CGPoint(x: 5.5, y: 16))
+        gridiconssync.close()
+        gridiconssync.move(to: CGPoint(x: 5.5, y: 16))
+        context.saveGState()
+        context.translateBy(x: 840, y: 584)
         gridiconssync.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconssync.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstrikethrough(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstrikethrough(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -593)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -593)
         
         /// gridicons-strikethrough
         let gridiconsstrikethrough = UIBezierPath()
-        gridiconsstrikethrough.moveToPoint(CGPoint(x: 11.35, y: 16))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 18, y: 18))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 13.39, y: 18))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 13.75, y: 19.75), controlPoint1: CGPoint(x: 13.63, y: 18.52), controlPoint2: CGPoint(x: 13.75, y: 19.1))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 12.33, y: 22.86), controlPoint1: CGPoint(x: 13.75, y: 21.07), controlPoint2: CGPoint(x: 13.28, y: 22.11))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 8.38, y: 24), controlPoint1: CGPoint(x: 11.39, y: 23.63), controlPoint2: CGPoint(x: 10.07, y: 24))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 4.24, y: 23.12), controlPoint1: CGPoint(x: 6.82, y: 24), controlPoint2: CGPoint(x: 5.44, y: 23.71))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 4.24, y: 20.25))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 6.74, y: 21.18), controlPoint1: CGPoint(x: 5.23, y: 20.69), controlPoint2: CGPoint(x: 6.06, y: 21))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 8.61, y: 21.45), controlPoint1: CGPoint(x: 7.43, y: 21.36), controlPoint2: CGPoint(x: 8.05, y: 21.45))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 10.18, y: 21.06), controlPoint1: CGPoint(x: 9.29, y: 21.45), controlPoint2: CGPoint(x: 9.81, y: 21.32))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 10.72, y: 19.9), controlPoint1: CGPoint(x: 10.54, y: 20.79), controlPoint2: CGPoint(x: 10.72, y: 20.41))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 10.48, y: 19.14), controlPoint1: CGPoint(x: 10.72, y: 19.61), controlPoint2: CGPoint(x: 10.65, y: 19.36))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 9.78, y: 18.49), controlPoint1: CGPoint(x: 10.32, y: 18.91), controlPoint2: CGPoint(x: 10.09, y: 18.7))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 8.9, y: 18), controlPoint1: CGPoint(x: 9.6, y: 18.37), controlPoint2: CGPoint(x: 9.3, y: 18.21))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 11.35, y: 16))
-        gridiconsstrikethrough.closePath()
-        gridiconsstrikethrough.moveToPoint(CGPoint(x: 7.82, y: 14))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 7.63, y: 13.77), controlPoint1: CGPoint(x: 7.75, y: 13.93), controlPoint2: CGPoint(x: 7.68, y: 13.85))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 7.44, y: 13.06), controlPoint1: CGPoint(x: 7.5, y: 13.57), controlPoint2: CGPoint(x: 7.44, y: 13.33))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 7.91, y: 11.99), controlPoint1: CGPoint(x: 7.44, y: 12.61), controlPoint2: CGPoint(x: 7.59, y: 12.26))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 9.25, y: 11.58), controlPoint1: CGPoint(x: 8.22, y: 11.72), controlPoint2: CGPoint(x: 8.67, y: 11.58))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 10.76, y: 11.77), controlPoint1: CGPoint(x: 9.75, y: 11.58), controlPoint2: CGPoint(x: 10.25, y: 11.64))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 12.69, y: 12.44), controlPoint1: CGPoint(x: 11.27, y: 11.9), controlPoint2: CGPoint(x: 11.91, y: 12.12))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 13.69, y: 10.04))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 11.53, y: 9.27), controlPoint1: CGPoint(x: 12.93, y: 9.71), controlPoint2: CGPoint(x: 12.22, y: 9.46))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 9.36, y: 9), controlPoint1: CGPoint(x: 10.84, y: 9.09), controlPoint2: CGPoint(x: 10.11, y: 9))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 5.73, y: 10.11), controlPoint1: CGPoint(x: 7.81, y: 9), controlPoint2: CGPoint(x: 6.6, y: 9.38))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 4.41, y: 13.16), controlPoint1: CGPoint(x: 4.85, y: 10.85), controlPoint2: CGPoint(x: 4.41, y: 11.87))
-        gridiconsstrikethrough.addCurveToPoint(CGPoint(x: 4.5, y: 14), controlPoint1: CGPoint(x: 4.41, y: 13.46), controlPoint2: CGPoint(x: 4.45, y: 13.73))
-        gridiconsstrikethrough.addLineToPoint(CGPoint(x: 7.82, y: 14))
-        gridiconsstrikethrough.closePath()
-        gridiconsstrikethrough.moveToPoint(CGPoint(x: 7.82, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 584)
+        gridiconsstrikethrough.move(to: CGPoint(x: 11.35, y: 16))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 18, y: 18))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 13.39, y: 18))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 13.75, y: 19.75), controlPoint1: CGPoint(x: 13.63, y: 18.52), controlPoint2: CGPoint(x: 13.75, y: 19.1))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 12.33, y: 22.86), controlPoint1: CGPoint(x: 13.75, y: 21.07), controlPoint2: CGPoint(x: 13.28, y: 22.11))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 8.38, y: 24), controlPoint1: CGPoint(x: 11.39, y: 23.63), controlPoint2: CGPoint(x: 10.07, y: 24))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 4.24, y: 23.12), controlPoint1: CGPoint(x: 6.82, y: 24), controlPoint2: CGPoint(x: 5.44, y: 23.71))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 4.24, y: 20.25))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 6.74, y: 21.18), controlPoint1: CGPoint(x: 5.23, y: 20.69), controlPoint2: CGPoint(x: 6.06, y: 21))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 8.61, y: 21.45), controlPoint1: CGPoint(x: 7.43, y: 21.36), controlPoint2: CGPoint(x: 8.05, y: 21.45))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 10.18, y: 21.06), controlPoint1: CGPoint(x: 9.29, y: 21.45), controlPoint2: CGPoint(x: 9.81, y: 21.32))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 10.72, y: 19.9), controlPoint1: CGPoint(x: 10.54, y: 20.79), controlPoint2: CGPoint(x: 10.72, y: 20.41))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 10.48, y: 19.14), controlPoint1: CGPoint(x: 10.72, y: 19.61), controlPoint2: CGPoint(x: 10.65, y: 19.36))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 9.78, y: 18.49), controlPoint1: CGPoint(x: 10.32, y: 18.91), controlPoint2: CGPoint(x: 10.09, y: 18.7))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 8.9, y: 18), controlPoint1: CGPoint(x: 9.6, y: 18.37), controlPoint2: CGPoint(x: 9.3, y: 18.21))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 11.35, y: 16))
+        gridiconsstrikethrough.close()
+        gridiconsstrikethrough.move(to: CGPoint(x: 7.82, y: 14))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 7.63, y: 13.77), controlPoint1: CGPoint(x: 7.75, y: 13.93), controlPoint2: CGPoint(x: 7.68, y: 13.85))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 7.44, y: 13.06), controlPoint1: CGPoint(x: 7.5, y: 13.57), controlPoint2: CGPoint(x: 7.44, y: 13.33))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 7.91, y: 11.99), controlPoint1: CGPoint(x: 7.44, y: 12.61), controlPoint2: CGPoint(x: 7.59, y: 12.26))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 9.25, y: 11.58), controlPoint1: CGPoint(x: 8.22, y: 11.72), controlPoint2: CGPoint(x: 8.67, y: 11.58))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 10.76, y: 11.77), controlPoint1: CGPoint(x: 9.75, y: 11.58), controlPoint2: CGPoint(x: 10.25, y: 11.64))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 12.69, y: 12.44), controlPoint1: CGPoint(x: 11.27, y: 11.9), controlPoint2: CGPoint(x: 11.91, y: 12.12))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 13.69, y: 10.04))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 11.53, y: 9.27), controlPoint1: CGPoint(x: 12.93, y: 9.71), controlPoint2: CGPoint(x: 12.22, y: 9.46))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 9.36, y: 9), controlPoint1: CGPoint(x: 10.84, y: 9.09), controlPoint2: CGPoint(x: 10.11, y: 9))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 5.73, y: 10.11), controlPoint1: CGPoint(x: 7.81, y: 9), controlPoint2: CGPoint(x: 6.6, y: 9.38))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 4.41, y: 13.16), controlPoint1: CGPoint(x: 4.85, y: 10.85), controlPoint2: CGPoint(x: 4.41, y: 11.87))
+        gridiconsstrikethrough.addCurve(to: CGPoint(x: 4.5, y: 14), controlPoint1: CGPoint(x: 4.41, y: 13.46), controlPoint2: CGPoint(x: 4.45, y: 13.73))
+        gridiconsstrikethrough.addLine(to: CGPoint(x: 7.82, y: 14))
+        gridiconsstrikethrough.close()
+        gridiconsstrikethrough.move(to: CGPoint(x: 7.82, y: 14))
+        context.saveGState()
+        context.translateBy(x: 806, y: 584)
         gridiconsstrikethrough.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstrikethrough.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstatus(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstatus(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -588)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -588)
         
         /// gridicons-status
         let gridiconsstatus = UIBezierPath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsstatus.closePath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsstatus.closePath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 5.55, y: 15))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 5.5, y: 15.5), controlPoint1: CGPoint(x: 5.53, y: 15.16), controlPoint2: CGPoint(x: 5.5, y: 15.33))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 10, y: 20), controlPoint1: CGPoint(x: 5.5, y: 17.98), controlPoint2: CGPoint(x: 7.52, y: 20))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 14.5, y: 15.5), controlPoint1: CGPoint(x: 12.48, y: 20), controlPoint2: CGPoint(x: 14.5, y: 17.98))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 14.45, y: 15), controlPoint1: CGPoint(x: 14.5, y: 15.33), controlPoint2: CGPoint(x: 14.47, y: 15.16))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 5.55, y: 15))
-        gridiconsstatus.closePath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 8, y: 12))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 8, y: 10))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 7, y: 9), controlPoint1: CGPoint(x: 8, y: 9.45), controlPoint2: CGPoint(x: 7.55, y: 9))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 6, y: 10), controlPoint1: CGPoint(x: 6.45, y: 9), controlPoint2: CGPoint(x: 6, y: 9.45))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 6, y: 12))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 7, y: 13), controlPoint1: CGPoint(x: 6, y: 12.55), controlPoint2: CGPoint(x: 6.45, y: 13))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 8, y: 12), controlPoint1: CGPoint(x: 7.55, y: 13), controlPoint2: CGPoint(x: 8, y: 12.55))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 8, y: 12))
-        gridiconsstatus.closePath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 14, y: 12))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 13, y: 9), controlPoint1: CGPoint(x: 14, y: 9.45), controlPoint2: CGPoint(x: 13.55, y: 9))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 12, y: 10), controlPoint1: CGPoint(x: 12.45, y: 9), controlPoint2: CGPoint(x: 12, y: 9.45))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 12, y: 12))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 13, y: 13), controlPoint1: CGPoint(x: 12, y: 12.55), controlPoint2: CGPoint(x: 12.45, y: 13))
-        gridiconsstatus.addCurveToPoint(CGPoint(x: 14, y: 12), controlPoint1: CGPoint(x: 13.55, y: 13), controlPoint2: CGPoint(x: 14, y: 12.55))
-        gridiconsstatus.addLineToPoint(CGPoint(x: 14, y: 12))
-        gridiconsstatus.closePath()
-        gridiconsstatus.moveToPoint(CGPoint(x: 14, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 584)
+        gridiconsstatus.move(to: CGPoint(x: 10, y: 6))
+        gridiconsstatus.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconsstatus.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
+        gridiconsstatus.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconsstatus.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconsstatus.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsstatus.close()
+        gridiconsstatus.move(to: CGPoint(x: 10, y: 4))
+        gridiconsstatus.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsstatus.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsstatus.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsstatus.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsstatus.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsstatus.close()
+        gridiconsstatus.move(to: CGPoint(x: 5.55, y: 15))
+        gridiconsstatus.addCurve(to: CGPoint(x: 5.5, y: 15.5), controlPoint1: CGPoint(x: 5.53, y: 15.16), controlPoint2: CGPoint(x: 5.5, y: 15.33))
+        gridiconsstatus.addCurve(to: CGPoint(x: 10, y: 20), controlPoint1: CGPoint(x: 5.5, y: 17.98), controlPoint2: CGPoint(x: 7.52, y: 20))
+        gridiconsstatus.addCurve(to: CGPoint(x: 14.5, y: 15.5), controlPoint1: CGPoint(x: 12.48, y: 20), controlPoint2: CGPoint(x: 14.5, y: 17.98))
+        gridiconsstatus.addCurve(to: CGPoint(x: 14.45, y: 15), controlPoint1: CGPoint(x: 14.5, y: 15.33), controlPoint2: CGPoint(x: 14.47, y: 15.16))
+        gridiconsstatus.addLine(to: CGPoint(x: 5.55, y: 15))
+        gridiconsstatus.close()
+        gridiconsstatus.move(to: CGPoint(x: 8, y: 12))
+        gridiconsstatus.addLine(to: CGPoint(x: 8, y: 10))
+        gridiconsstatus.addCurve(to: CGPoint(x: 7, y: 9), controlPoint1: CGPoint(x: 8, y: 9.45), controlPoint2: CGPoint(x: 7.55, y: 9))
+        gridiconsstatus.addCurve(to: CGPoint(x: 6, y: 10), controlPoint1: CGPoint(x: 6.45, y: 9), controlPoint2: CGPoint(x: 6, y: 9.45))
+        gridiconsstatus.addLine(to: CGPoint(x: 6, y: 12))
+        gridiconsstatus.addCurve(to: CGPoint(x: 7, y: 13), controlPoint1: CGPoint(x: 6, y: 12.55), controlPoint2: CGPoint(x: 6.45, y: 13))
+        gridiconsstatus.addCurve(to: CGPoint(x: 8, y: 12), controlPoint1: CGPoint(x: 7.55, y: 13), controlPoint2: CGPoint(x: 8, y: 12.55))
+        gridiconsstatus.addLine(to: CGPoint(x: 8, y: 12))
+        gridiconsstatus.close()
+        gridiconsstatus.move(to: CGPoint(x: 14, y: 12))
+        gridiconsstatus.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsstatus.addCurve(to: CGPoint(x: 13, y: 9), controlPoint1: CGPoint(x: 14, y: 9.45), controlPoint2: CGPoint(x: 13.55, y: 9))
+        gridiconsstatus.addCurve(to: CGPoint(x: 12, y: 10), controlPoint1: CGPoint(x: 12.45, y: 9), controlPoint2: CGPoint(x: 12, y: 9.45))
+        gridiconsstatus.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconsstatus.addCurve(to: CGPoint(x: 13, y: 13), controlPoint1: CGPoint(x: 12, y: 12.55), controlPoint2: CGPoint(x: 12.45, y: 13))
+        gridiconsstatus.addCurve(to: CGPoint(x: 14, y: 12), controlPoint1: CGPoint(x: 13.55, y: 13), controlPoint2: CGPoint(x: 14, y: 12.55))
+        gridiconsstatus.addLine(to: CGPoint(x: 14, y: 12))
+        gridiconsstatus.close()
+        gridiconsstatus.move(to: CGPoint(x: 14, y: 12))
+        context.saveGState()
+        context.translateBy(x: 772, y: 584)
         gridiconsstatus.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstatus.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstats(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstats(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -556)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -556)
         
         /// gridicons-stats
         let gridiconsstats = UIBezierPath()
-        gridiconsstats.moveToPoint(CGPoint(x: 16, y: 6))
-        gridiconsstats.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconsstats.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconsstats.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsstats.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsstats.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsstats.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconsstats.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsstats.addCurveToPoint(CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
-        gridiconsstats.addLineToPoint(CGPoint(x: 16, y: 6))
-        gridiconsstats.closePath()
-        gridiconsstats.moveToPoint(CGPoint(x: 16, y: 22))
-        gridiconsstats.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsstats.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsstats.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsstats.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsstats.closePath()
-        gridiconsstats.moveToPoint(CGPoint(x: 6, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 4, y: 15))
-        gridiconsstats.addLineToPoint(CGPoint(x: 6, y: 15))
-        gridiconsstats.addLineToPoint(CGPoint(x: 6, y: 20))
-        gridiconsstats.closePath()
-        gridiconsstats.moveToPoint(CGPoint(x: 10, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 8, y: 10))
-        gridiconsstats.addLineToPoint(CGPoint(x: 10, y: 10))
-        gridiconsstats.addLineToPoint(CGPoint(x: 10, y: 20))
-        gridiconsstats.closePath()
-        gridiconsstats.moveToPoint(CGPoint(x: 14, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 12, y: 20))
-        gridiconsstats.addLineToPoint(CGPoint(x: 12, y: 13))
-        gridiconsstats.addLineToPoint(CGPoint(x: 14, y: 13))
-        gridiconsstats.addLineToPoint(CGPoint(x: 14, y: 20))
-        gridiconsstats.closePath()
-        gridiconsstats.moveToPoint(CGPoint(x: 14, y: 20))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 550)
+        gridiconsstats.move(to: CGPoint(x: 16, y: 6))
+        gridiconsstats.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconsstats.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconsstats.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsstats.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsstats.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsstats.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconsstats.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsstats.addCurve(to: CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
+        gridiconsstats.addLine(to: CGPoint(x: 16, y: 6))
+        gridiconsstats.close()
+        gridiconsstats.move(to: CGPoint(x: 16, y: 22))
+        gridiconsstats.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsstats.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsstats.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsstats.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsstats.close()
+        gridiconsstats.move(to: CGPoint(x: 6, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 4, y: 15))
+        gridiconsstats.addLine(to: CGPoint(x: 6, y: 15))
+        gridiconsstats.addLine(to: CGPoint(x: 6, y: 20))
+        gridiconsstats.close()
+        gridiconsstats.move(to: CGPoint(x: 10, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 8, y: 10))
+        gridiconsstats.addLine(to: CGPoint(x: 10, y: 10))
+        gridiconsstats.addLine(to: CGPoint(x: 10, y: 20))
+        gridiconsstats.close()
+        gridiconsstats.move(to: CGPoint(x: 14, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 12, y: 20))
+        gridiconsstats.addLine(to: CGPoint(x: 12, y: 13))
+        gridiconsstats.addLine(to: CGPoint(x: 14, y: 13))
+        gridiconsstats.addLine(to: CGPoint(x: 14, y: 20))
+        gridiconsstats.close()
+        gridiconsstats.move(to: CGPoint(x: 14, y: 20))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 550)
         gridiconsstats.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstats.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstatsalt(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstatsalt(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -556)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -556)
         
         /// gridicons-stats-alt
         let gridiconsstatsalt = UIBezierPath()
-        gridiconsstatsalt.moveToPoint(CGPoint(x: 18, y: 24))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsstatsalt.closePath()
-        gridiconsstatsalt.moveToPoint(CGPoint(x: 5, y: 13))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 1, y: 13))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 1, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 5, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconsstatsalt.closePath()
-        gridiconsstatsalt.moveToPoint(CGPoint(x: 11, y: 6))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 7, y: 6))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 11, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 11, y: 6))
-        gridiconsstatsalt.closePath()
-        gridiconsstatsalt.moveToPoint(CGPoint(x: 17, y: 9))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 13, y: 9))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 17, y: 20))
-        gridiconsstatsalt.addLineToPoint(CGPoint(x: 17, y: 9))
-        gridiconsstatsalt.closePath()
-        gridiconsstatsalt.moveToPoint(CGPoint(x: 17, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 550)
+        gridiconsstatsalt.move(to: CGPoint(x: 18, y: 24))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsstatsalt.close()
+        gridiconsstatsalt.move(to: CGPoint(x: 5, y: 13))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 1, y: 13))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 1, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 5, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconsstatsalt.close()
+        gridiconsstatsalt.move(to: CGPoint(x: 11, y: 6))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 7, y: 6))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 11, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 11, y: 6))
+        gridiconsstatsalt.close()
+        gridiconsstatsalt.move(to: CGPoint(x: 17, y: 9))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 13, y: 9))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 17, y: 20))
+        gridiconsstatsalt.addLine(to: CGPoint(x: 17, y: 9))
+        gridiconsstatsalt.close()
+        gridiconsstatsalt.move(to: CGPoint(x: 17, y: 9))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 550)
         gridiconsstatsalt.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstatsalt.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstar(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstar(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -555)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -555)
         
         /// gridicons-star
         let gridiconsstar = UIBezierPath()
-        gridiconsstar.moveToPoint(CGPoint(x: 10, y: 5))
-        gridiconsstar.addLineToPoint(CGPoint(x: 12.58, y: 11.95))
-        gridiconsstar.addLineToPoint(CGPoint(x: 20, y: 12.26))
-        gridiconsstar.addLineToPoint(CGPoint(x: 14.18, y: 16.86))
-        gridiconsstar.addLineToPoint(CGPoint(x: 16.18, y: 24))
-        gridiconsstar.addLineToPoint(CGPoint(x: 10, y: 19.89))
-        gridiconsstar.addLineToPoint(CGPoint(x: 3.82, y: 24))
-        gridiconsstar.addLineToPoint(CGPoint(x: 5.82, y: 16.86))
-        gridiconsstar.addLineToPoint(CGPoint(x: 0, y: 12.26))
-        gridiconsstar.addLineToPoint(CGPoint(x: 7.42, y: 11.95))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 550)
+        gridiconsstar.move(to: CGPoint(x: 10, y: 5))
+        gridiconsstar.addLine(to: CGPoint(x: 12.58, y: 11.95))
+        gridiconsstar.addLine(to: CGPoint(x: 20, y: 12.26))
+        gridiconsstar.addLine(to: CGPoint(x: 14.18, y: 16.86))
+        gridiconsstar.addLine(to: CGPoint(x: 16.18, y: 24))
+        gridiconsstar.addLine(to: CGPoint(x: 10, y: 19.89))
+        gridiconsstar.addLine(to: CGPoint(x: 3.82, y: 24))
+        gridiconsstar.addLine(to: CGPoint(x: 5.82, y: 16.86))
+        gridiconsstar.addLine(to: CGPoint(x: 0, y: 12.26))
+        gridiconsstar.addLine(to: CGPoint(x: 7.42, y: 11.95))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 550)
         gridiconsstar.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstar.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsstaroutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsstaroutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -555)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -555)
         
         /// gridicons-star-outline
         let gridiconsstaroutline = UIBezierPath()
-        gridiconsstaroutline.moveToPoint(CGPoint(x: 10, y: 9.31))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 11.18, y: 12.48))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 11.52, y: 13.41))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 12.52, y: 13.46))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 15.9, y: 13.6))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 13.25, y: 15.69))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 12.46, y: 16.31))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 12.73, y: 17.27))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 13.64, y: 20.52))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10.83, y: 18.65))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10, y: 18.1))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 9.17, y: 18.65))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 6.36, y: 20.52))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 7.27, y: 17.27))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 7.54, y: 16.31))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 6.76, y: 15.69))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 4.11, y: 13.6))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 7.48, y: 13.46))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 8.48, y: 13.42))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 8.83, y: 12.48))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10, y: 9.31))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10, y: 9.31))
-        gridiconsstaroutline.closePath()
-        gridiconsstaroutline.moveToPoint(CGPoint(x: 10, y: 5))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 7.42, y: 11.95))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 0, y: 12.26))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 5.82, y: 16.86))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 3.82, y: 24))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10, y: 19.89))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 16.18, y: 24))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 14.18, y: 16.86))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 20, y: 12.26))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 12.58, y: 11.95))
-        gridiconsstaroutline.addLineToPoint(CGPoint(x: 10, y: 5))
-        gridiconsstaroutline.closePath()
-        gridiconsstaroutline.moveToPoint(CGPoint(x: 10, y: 5))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 550)
+        gridiconsstaroutline.move(to: CGPoint(x: 10, y: 9.31))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 11.18, y: 12.48))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 11.52, y: 13.41))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 12.52, y: 13.46))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 15.9, y: 13.6))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 13.25, y: 15.69))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 12.46, y: 16.31))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 12.73, y: 17.27))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 13.64, y: 20.52))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10.83, y: 18.65))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10, y: 18.1))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 9.17, y: 18.65))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 6.36, y: 20.52))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 7.27, y: 17.27))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 7.54, y: 16.31))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 6.76, y: 15.69))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 4.11, y: 13.6))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 7.48, y: 13.46))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 8.48, y: 13.42))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 8.83, y: 12.48))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10, y: 9.31))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10, y: 9.31))
+        gridiconsstaroutline.close()
+        gridiconsstaroutline.move(to: CGPoint(x: 10, y: 5))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 7.42, y: 11.95))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 0, y: 12.26))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 5.82, y: 16.86))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 3.82, y: 24))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10, y: 19.89))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 16.18, y: 24))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 14.18, y: 16.86))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 20, y: 12.26))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 12.58, y: 11.95))
+        gridiconsstaroutline.addLine(to: CGPoint(x: 10, y: 5))
+        gridiconsstaroutline.close()
+        gridiconsstaroutline.move(to: CGPoint(x: 10, y: 5))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 550)
         gridiconsstaroutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsstaroutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsspecialcharacter(frame frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsspecialcharacter(frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 15, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -558)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -558)
         
         /// gridicons-special-character
         let gridiconsspecialcharacter = UIBezierPath()
-        gridiconsspecialcharacter.moveToPoint(CGPoint(x: 7.14, y: 11.42))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 4.28, y: 12.55), controlPoint1: CGPoint(x: 5.9, y: 11.42), controlPoint2: CGPoint(x: 4.95, y: 11.79))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 3.27, y: 15.73), controlPoint1: CGPoint(x: 3.61, y: 13.3), controlPoint2: CGPoint(x: 3.27, y: 14.36))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 3.95, y: 19.11), controlPoint1: CGPoint(x: 3.27, y: 17.11), controlPoint2: CGPoint(x: 3.5, y: 18.24))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 6, y: 21.14), controlPoint1: CGPoint(x: 4.4, y: 19.97), controlPoint2: CGPoint(x: 5.09, y: 20.65))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 6, y: 24))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 0.13, y: 24))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 0.13, y: 21.34))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 3.25, y: 21.34))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 0.85, y: 18.73), controlPoint1: CGPoint(x: 2.21, y: 20.7), controlPoint2: CGPoint(x: 1.41, y: 19.83))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 0, y: 15.06), controlPoint1: CGPoint(x: 0.28, y: 17.64), controlPoint2: CGPoint(x: 0, y: 16.41))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 0.88, y: 11.74), controlPoint1: CGPoint(x: 0, y: 13.8), controlPoint2: CGPoint(x: 0.29, y: 12.7))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 3.37, y: 9.54), controlPoint1: CGPoint(x: 1.46, y: 10.79), controlPoint2: CGPoint(x: 2.29, y: 10.06))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 7.13, y: 8.77), controlPoint1: CGPoint(x: 4.45, y: 9.03), controlPoint2: CGPoint(x: 5.71, y: 8.77))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 12.34, y: 10.49), controlPoint1: CGPoint(x: 9.31, y: 8.77), controlPoint2: CGPoint(x: 11.05, y: 9.34))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 14.27, y: 15.08), controlPoint1: CGPoint(x: 13.63, y: 11.63), controlPoint2: CGPoint(x: 14.27, y: 13.16))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 13.42, y: 18.73), controlPoint1: CGPoint(x: 14.27, y: 16.43), controlPoint2: CGPoint(x: 13.99, y: 17.65))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 10.98, y: 21.33), controlPoint1: CGPoint(x: 12.85, y: 19.81), controlPoint2: CGPoint(x: 12.04, y: 20.68))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 14.13, y: 21.33))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 14.13, y: 24))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 8.23, y: 24))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 8.23, y: 21.14))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 10.33, y: 19.08), controlPoint1: CGPoint(x: 9.18, y: 20.65), controlPoint2: CGPoint(x: 9.88, y: 19.96))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 11, y: 15.7), controlPoint1: CGPoint(x: 10.78, y: 18.2), controlPoint2: CGPoint(x: 11, y: 17.07))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 9.99, y: 12.54), controlPoint1: CGPoint(x: 11, y: 14.34), controlPoint2: CGPoint(x: 10.67, y: 13.29))
-        gridiconsspecialcharacter.addCurveToPoint(CGPoint(x: 7.14, y: 11.42), controlPoint1: CGPoint(x: 9.32, y: 11.79), controlPoint2: CGPoint(x: 8.37, y: 11.42))
-        gridiconsspecialcharacter.addLineToPoint(CGPoint(x: 7.14, y: 11.42))
-        gridiconsspecialcharacter.closePath()
-        gridiconsspecialcharacter.moveToPoint(CGPoint(x: 7.14, y: 11.42))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 550)
+        gridiconsspecialcharacter.move(to: CGPoint(x: 7.14, y: 11.42))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 4.28, y: 12.55), controlPoint1: CGPoint(x: 5.9, y: 11.42), controlPoint2: CGPoint(x: 4.95, y: 11.79))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 3.27, y: 15.73), controlPoint1: CGPoint(x: 3.61, y: 13.3), controlPoint2: CGPoint(x: 3.27, y: 14.36))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 3.95, y: 19.11), controlPoint1: CGPoint(x: 3.27, y: 17.11), controlPoint2: CGPoint(x: 3.5, y: 18.24))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 6, y: 21.14), controlPoint1: CGPoint(x: 4.4, y: 19.97), controlPoint2: CGPoint(x: 5.09, y: 20.65))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 6, y: 24))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 0.13, y: 24))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 0.13, y: 21.34))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 3.25, y: 21.34))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 0.85, y: 18.73), controlPoint1: CGPoint(x: 2.21, y: 20.7), controlPoint2: CGPoint(x: 1.41, y: 19.83))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 0, y: 15.06), controlPoint1: CGPoint(x: 0.28, y: 17.64), controlPoint2: CGPoint(x: 0, y: 16.41))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 0.88, y: 11.74), controlPoint1: CGPoint(x: 0, y: 13.8), controlPoint2: CGPoint(x: 0.29, y: 12.7))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 3.37, y: 9.54), controlPoint1: CGPoint(x: 1.46, y: 10.79), controlPoint2: CGPoint(x: 2.29, y: 10.06))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 7.13, y: 8.77), controlPoint1: CGPoint(x: 4.45, y: 9.03), controlPoint2: CGPoint(x: 5.71, y: 8.77))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 12.34, y: 10.49), controlPoint1: CGPoint(x: 9.31, y: 8.77), controlPoint2: CGPoint(x: 11.05, y: 9.34))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 14.27, y: 15.08), controlPoint1: CGPoint(x: 13.63, y: 11.63), controlPoint2: CGPoint(x: 14.27, y: 13.16))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 13.42, y: 18.73), controlPoint1: CGPoint(x: 14.27, y: 16.43), controlPoint2: CGPoint(x: 13.99, y: 17.65))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 10.98, y: 21.33), controlPoint1: CGPoint(x: 12.85, y: 19.81), controlPoint2: CGPoint(x: 12.04, y: 20.68))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 14.13, y: 21.33))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 14.13, y: 24))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 8.23, y: 24))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 8.23, y: 21.14))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 10.33, y: 19.08), controlPoint1: CGPoint(x: 9.18, y: 20.65), controlPoint2: CGPoint(x: 9.88, y: 19.96))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 11, y: 15.7), controlPoint1: CGPoint(x: 10.78, y: 18.2), controlPoint2: CGPoint(x: 11, y: 17.07))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 9.99, y: 12.54), controlPoint1: CGPoint(x: 11, y: 14.34), controlPoint2: CGPoint(x: 10.67, y: 13.29))
+        gridiconsspecialcharacter.addCurve(to: CGPoint(x: 7.14, y: 11.42), controlPoint1: CGPoint(x: 9.32, y: 11.79), controlPoint2: CGPoint(x: 8.37, y: 11.42))
+        gridiconsspecialcharacter.addLine(to: CGPoint(x: 7.14, y: 11.42))
+        gridiconsspecialcharacter.close()
+        gridiconsspecialcharacter.move(to: CGPoint(x: 7.14, y: 11.42))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 550)
         gridiconsspecialcharacter.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsspecialcharacter.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsspeaker(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 17), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsspeaker(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 17), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 17), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 17)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -557)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -557)
         
         /// gridicons-speaker
         let gridiconsspeaker = UIBezierPath()
-        gridiconsspeaker.moveToPoint(CGPoint(x: 17, y: 12))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 17, y: 18))
-        gridiconsspeaker.addCurveToPoint(CGPoint(x: 20, y: 15), controlPoint1: CGPoint(x: 18.7, y: 18), controlPoint2: CGPoint(x: 20, y: 16.7))
-        gridiconsspeaker.addCurveToPoint(CGPoint(x: 17, y: 12), controlPoint1: CGPoint(x: 20, y: 13.3), controlPoint2: CGPoint(x: 18.7, y: 12))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 17, y: 12))
-        gridiconsspeaker.closePath()
-        gridiconsspeaker.moveToPoint(CGPoint(x: 9, y: 11))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 2, y: 11))
-        gridiconsspeaker.addCurveToPoint(CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 0.9, y: 11), controlPoint2: CGPoint(x: 0, y: 11.9))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsspeaker.addCurveToPoint(CGPoint(x: 2, y: 19), controlPoint1: CGPoint(x: 0, y: 18.1), controlPoint2: CGPoint(x: 0.9, y: 19))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 3, y: 19))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 3, y: 22))
-        gridiconsspeaker.addCurveToPoint(CGPoint(x: 5, y: 24), controlPoint1: CGPoint(x: 3, y: 23.1), controlPoint2: CGPoint(x: 3.9, y: 24))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 7, y: 19))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 13, y: 23))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 15, y: 23))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 15, y: 7))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 13, y: 7))
-        gridiconsspeaker.addLineToPoint(CGPoint(x: 9, y: 11))
-        gridiconsspeaker.closePath()
-        gridiconsspeaker.moveToPoint(CGPoint(x: 9, y: 11))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 550)
+        gridiconsspeaker.move(to: CGPoint(x: 17, y: 12))
+        gridiconsspeaker.addLine(to: CGPoint(x: 17, y: 18))
+        gridiconsspeaker.addCurve(to: CGPoint(x: 20, y: 15), controlPoint1: CGPoint(x: 18.7, y: 18), controlPoint2: CGPoint(x: 20, y: 16.7))
+        gridiconsspeaker.addCurve(to: CGPoint(x: 17, y: 12), controlPoint1: CGPoint(x: 20, y: 13.3), controlPoint2: CGPoint(x: 18.7, y: 12))
+        gridiconsspeaker.addLine(to: CGPoint(x: 17, y: 12))
+        gridiconsspeaker.close()
+        gridiconsspeaker.move(to: CGPoint(x: 9, y: 11))
+        gridiconsspeaker.addLine(to: CGPoint(x: 2, y: 11))
+        gridiconsspeaker.addCurve(to: CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 0.9, y: 11), controlPoint2: CGPoint(x: 0, y: 11.9))
+        gridiconsspeaker.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsspeaker.addCurve(to: CGPoint(x: 2, y: 19), controlPoint1: CGPoint(x: 0, y: 18.1), controlPoint2: CGPoint(x: 0.9, y: 19))
+        gridiconsspeaker.addLine(to: CGPoint(x: 3, y: 19))
+        gridiconsspeaker.addLine(to: CGPoint(x: 3, y: 22))
+        gridiconsspeaker.addCurve(to: CGPoint(x: 5, y: 24), controlPoint1: CGPoint(x: 3, y: 23.1), controlPoint2: CGPoint(x: 3.9, y: 24))
+        gridiconsspeaker.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconsspeaker.addLine(to: CGPoint(x: 7, y: 19))
+        gridiconsspeaker.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsspeaker.addLine(to: CGPoint(x: 13, y: 23))
+        gridiconsspeaker.addLine(to: CGPoint(x: 15, y: 23))
+        gridiconsspeaker.addLine(to: CGPoint(x: 15, y: 7))
+        gridiconsspeaker.addLine(to: CGPoint(x: 13, y: 7))
+        gridiconsspeaker.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsspeaker.close()
+        gridiconsspeaker.move(to: CGPoint(x: 9, y: 11))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 550)
         gridiconsspeaker.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsspeaker.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsspam(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsspam(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -554)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -554)
         
         /// gridicons-spam
         let gridiconsspam = UIBezierPath()
-        gridiconsspam.moveToPoint(CGPoint(x: 15, y: 4))
-        gridiconsspam.addLineToPoint(CGPoint(x: 5, y: 4))
-        gridiconsspam.addLineToPoint(CGPoint(x: 0, y: 9))
-        gridiconsspam.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsspam.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconsspam.addLineToPoint(CGPoint(x: 15, y: 24))
-        gridiconsspam.addLineToPoint(CGPoint(x: 20, y: 19))
-        gridiconsspam.addLineToPoint(CGPoint(x: 20, y: 9))
-        gridiconsspam.addLineToPoint(CGPoint(x: 15, y: 4))
-        gridiconsspam.closePath()
-        gridiconsspam.moveToPoint(CGPoint(x: 11, y: 19))
-        gridiconsspam.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsspam.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconsspam.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconsspam.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsspam.closePath()
-        gridiconsspam.moveToPoint(CGPoint(x: 11, y: 15))
-        gridiconsspam.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsspam.addLineToPoint(CGPoint(x: 8.5, y: 9))
-        gridiconsspam.addLineToPoint(CGPoint(x: 11.5, y: 9))
-        gridiconsspam.addLineToPoint(CGPoint(x: 11, y: 15))
-        gridiconsspam.closePath()
-        gridiconsspam.moveToPoint(CGPoint(x: 11, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 550)
+        gridiconsspam.move(to: CGPoint(x: 15, y: 4))
+        gridiconsspam.addLine(to: CGPoint(x: 5, y: 4))
+        gridiconsspam.addLine(to: CGPoint(x: 0, y: 9))
+        gridiconsspam.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsspam.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconsspam.addLine(to: CGPoint(x: 15, y: 24))
+        gridiconsspam.addLine(to: CGPoint(x: 20, y: 19))
+        gridiconsspam.addLine(to: CGPoint(x: 20, y: 9))
+        gridiconsspam.addLine(to: CGPoint(x: 15, y: 4))
+        gridiconsspam.close()
+        gridiconsspam.move(to: CGPoint(x: 11, y: 19))
+        gridiconsspam.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsspam.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconsspam.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconsspam.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsspam.close()
+        gridiconsspam.move(to: CGPoint(x: 11, y: 15))
+        gridiconsspam.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsspam.addLine(to: CGPoint(x: 8.5, y: 9))
+        gridiconsspam.addLine(to: CGPoint(x: 11.5, y: 9))
+        gridiconsspam.addLine(to: CGPoint(x: 11, y: 15))
+        gridiconsspam.close()
+        gridiconsspam.move(to: CGPoint(x: 11, y: 15))
+        context.saveGState()
+        context.translateBy(x: 976, y: 550)
         gridiconsspam.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsspam.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconssignout(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconssignout(frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -556)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -556)
         
         /// gridicons-sign-out
         let gridiconssignout = UIBezierPath()
-        gridiconssignout.moveToPoint(CGPoint(x: 13, y: 20))
-        gridiconssignout.addLineToPoint(CGPoint(x: 13, y: 22))
-        gridiconssignout.addCurveToPoint(CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 13, y: 23.11), controlPoint2: CGPoint(x: 12.11, y: 24))
-        gridiconssignout.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconssignout.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconssignout.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconssignout.addCurveToPoint(CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
-        gridiconssignout.addLineToPoint(CGPoint(x: 11, y: 6))
-        gridiconssignout.addCurveToPoint(CGPoint(x: 13, y: 8), controlPoint1: CGPoint(x: 12.11, y: 6), controlPoint2: CGPoint(x: 13, y: 6.89))
-        gridiconssignout.addLineToPoint(CGPoint(x: 13, y: 10))
-        gridiconssignout.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconssignout.addLineToPoint(CGPoint(x: 11, y: 8))
-        gridiconssignout.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconssignout.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconssignout.addLineToPoint(CGPoint(x: 11, y: 22))
-        gridiconssignout.addLineToPoint(CGPoint(x: 11, y: 20))
-        gridiconssignout.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconssignout.closePath()
-        gridiconssignout.moveToPoint(CGPoint(x: 15.5, y: 9.5))
-        gridiconssignout.addLineToPoint(CGPoint(x: 14.09, y: 10.91))
-        gridiconssignout.addLineToPoint(CGPoint(x: 17.17, y: 14))
-        gridiconssignout.addLineToPoint(CGPoint(x: 7, y: 14))
-        gridiconssignout.addLineToPoint(CGPoint(x: 7, y: 16))
-        gridiconssignout.addLineToPoint(CGPoint(x: 17.17, y: 16))
-        gridiconssignout.addLineToPoint(CGPoint(x: 14.09, y: 19.09))
-        gridiconssignout.addLineToPoint(CGPoint(x: 15.5, y: 20.5))
-        gridiconssignout.addLineToPoint(CGPoint(x: 21, y: 15))
-        gridiconssignout.addLineToPoint(CGPoint(x: 15.5, y: 9.5))
-        gridiconssignout.closePath()
-        gridiconssignout.moveToPoint(CGPoint(x: 15.5, y: 9.5))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 550)
+        gridiconssignout.move(to: CGPoint(x: 13, y: 20))
+        gridiconssignout.addLine(to: CGPoint(x: 13, y: 22))
+        gridiconssignout.addCurve(to: CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 13, y: 23.11), controlPoint2: CGPoint(x: 12.11, y: 24))
+        gridiconssignout.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconssignout.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconssignout.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconssignout.addCurve(to: CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
+        gridiconssignout.addLine(to: CGPoint(x: 11, y: 6))
+        gridiconssignout.addCurve(to: CGPoint(x: 13, y: 8), controlPoint1: CGPoint(x: 12.11, y: 6), controlPoint2: CGPoint(x: 13, y: 6.89))
+        gridiconssignout.addLine(to: CGPoint(x: 13, y: 10))
+        gridiconssignout.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconssignout.addLine(to: CGPoint(x: 11, y: 8))
+        gridiconssignout.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconssignout.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconssignout.addLine(to: CGPoint(x: 11, y: 22))
+        gridiconssignout.addLine(to: CGPoint(x: 11, y: 20))
+        gridiconssignout.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconssignout.close()
+        gridiconssignout.move(to: CGPoint(x: 15.5, y: 9.5))
+        gridiconssignout.addLine(to: CGPoint(x: 14.09, y: 10.91))
+        gridiconssignout.addLine(to: CGPoint(x: 17.17, y: 14))
+        gridiconssignout.addLine(to: CGPoint(x: 7, y: 14))
+        gridiconssignout.addLine(to: CGPoint(x: 7, y: 16))
+        gridiconssignout.addLine(to: CGPoint(x: 17.17, y: 16))
+        gridiconssignout.addLine(to: CGPoint(x: 14.09, y: 19.09))
+        gridiconssignout.addLine(to: CGPoint(x: 15.5, y: 20.5))
+        gridiconssignout.addLine(to: CGPoint(x: 21, y: 15))
+        gridiconssignout.addLine(to: CGPoint(x: 15.5, y: 9.5))
+        gridiconssignout.close()
+        gridiconssignout.move(to: CGPoint(x: 15.5, y: 9.5))
+        context.saveGState()
+        context.translateBy(x: 942, y: 550)
         gridiconssignout.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconssignout.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsshare(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsshare(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -554)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -554)
         
         /// gridicons-share
         let gridiconsshare = UIBezierPath()
-        gridiconsshare.moveToPoint(CGPoint(x: 15, y: 18))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 12.97, y: 18.81), controlPoint1: CGPoint(x: 14.21, y: 18), controlPoint2: CGPoint(x: 13.5, y: 18.31))
-        gridiconsshare.addLineToPoint(CGPoint(x: 5.91, y: 14.7))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 6, y: 14), controlPoint1: CGPoint(x: 5.96, y: 14.47), controlPoint2: CGPoint(x: 6, y: 14.24))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 5.91, y: 13.3), controlPoint1: CGPoint(x: 6, y: 13.76), controlPoint2: CGPoint(x: 5.96, y: 13.53))
-        gridiconsshare.addLineToPoint(CGPoint(x: 12.96, y: 9.19))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 15, y: 10), controlPoint1: CGPoint(x: 13.5, y: 9.69), controlPoint2: CGPoint(x: 14.21, y: 10))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 18, y: 7), controlPoint1: CGPoint(x: 16.66, y: 10), controlPoint2: CGPoint(x: 18, y: 8.66))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 15, y: 4), controlPoint1: CGPoint(x: 18, y: 5.34), controlPoint2: CGPoint(x: 16.66, y: 4))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 12, y: 7), controlPoint1: CGPoint(x: 13.34, y: 4), controlPoint2: CGPoint(x: 12, y: 5.34))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 12.09, y: 7.7), controlPoint1: CGPoint(x: 12, y: 7.24), controlPoint2: CGPoint(x: 12.04, y: 7.47))
-        gridiconsshare.addLineToPoint(CGPoint(x: 5.04, y: 11.81))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 3, y: 11), controlPoint1: CGPoint(x: 4.5, y: 11.31), controlPoint2: CGPoint(x: 3.79, y: 11))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 1.34, y: 11), controlPoint2: CGPoint(x: 0, y: 12.34))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 3, y: 17), controlPoint1: CGPoint(x: 0, y: 15.66), controlPoint2: CGPoint(x: 1.34, y: 17))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 5.04, y: 16.19), controlPoint1: CGPoint(x: 3.79, y: 17), controlPoint2: CGPoint(x: 4.5, y: 16.69))
-        gridiconsshare.addLineToPoint(CGPoint(x: 12.09, y: 20.31))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 12.03, y: 20.53), controlPoint2: CGPoint(x: 12, y: 20.76))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 12, y: 22.66), controlPoint2: CGPoint(x: 13.34, y: 24))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 18, y: 21), controlPoint1: CGPoint(x: 16.65, y: 24), controlPoint2: CGPoint(x: 18, y: 22.66))
-        gridiconsshare.addCurveToPoint(CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 18, y: 19.34), controlPoint2: CGPoint(x: 16.65, y: 18))
-        gridiconsshare.addLineToPoint(CGPoint(x: 15, y: 18))
-        gridiconsshare.closePath()
-        gridiconsshare.moveToPoint(CGPoint(x: 15, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 550)
+        gridiconsshare.move(to: CGPoint(x: 15, y: 18))
+        gridiconsshare.addCurve(to: CGPoint(x: 12.97, y: 18.81), controlPoint1: CGPoint(x: 14.21, y: 18), controlPoint2: CGPoint(x: 13.5, y: 18.31))
+        gridiconsshare.addLine(to: CGPoint(x: 5.91, y: 14.7))
+        gridiconsshare.addCurve(to: CGPoint(x: 6, y: 14), controlPoint1: CGPoint(x: 5.96, y: 14.47), controlPoint2: CGPoint(x: 6, y: 14.24))
+        gridiconsshare.addCurve(to: CGPoint(x: 5.91, y: 13.3), controlPoint1: CGPoint(x: 6, y: 13.76), controlPoint2: CGPoint(x: 5.96, y: 13.53))
+        gridiconsshare.addLine(to: CGPoint(x: 12.96, y: 9.19))
+        gridiconsshare.addCurve(to: CGPoint(x: 15, y: 10), controlPoint1: CGPoint(x: 13.5, y: 9.69), controlPoint2: CGPoint(x: 14.21, y: 10))
+        gridiconsshare.addCurve(to: CGPoint(x: 18, y: 7), controlPoint1: CGPoint(x: 16.66, y: 10), controlPoint2: CGPoint(x: 18, y: 8.66))
+        gridiconsshare.addCurve(to: CGPoint(x: 15, y: 4), controlPoint1: CGPoint(x: 18, y: 5.34), controlPoint2: CGPoint(x: 16.66, y: 4))
+        gridiconsshare.addCurve(to: CGPoint(x: 12, y: 7), controlPoint1: CGPoint(x: 13.34, y: 4), controlPoint2: CGPoint(x: 12, y: 5.34))
+        gridiconsshare.addCurve(to: CGPoint(x: 12.09, y: 7.7), controlPoint1: CGPoint(x: 12, y: 7.24), controlPoint2: CGPoint(x: 12.04, y: 7.47))
+        gridiconsshare.addLine(to: CGPoint(x: 5.04, y: 11.81))
+        gridiconsshare.addCurve(to: CGPoint(x: 3, y: 11), controlPoint1: CGPoint(x: 4.5, y: 11.31), controlPoint2: CGPoint(x: 3.79, y: 11))
+        gridiconsshare.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 1.34, y: 11), controlPoint2: CGPoint(x: 0, y: 12.34))
+        gridiconsshare.addCurve(to: CGPoint(x: 3, y: 17), controlPoint1: CGPoint(x: 0, y: 15.66), controlPoint2: CGPoint(x: 1.34, y: 17))
+        gridiconsshare.addCurve(to: CGPoint(x: 5.04, y: 16.19), controlPoint1: CGPoint(x: 3.79, y: 17), controlPoint2: CGPoint(x: 4.5, y: 16.69))
+        gridiconsshare.addLine(to: CGPoint(x: 12.09, y: 20.31))
+        gridiconsshare.addCurve(to: CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 12.03, y: 20.53), controlPoint2: CGPoint(x: 12, y: 20.76))
+        gridiconsshare.addCurve(to: CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 12, y: 22.66), controlPoint2: CGPoint(x: 13.34, y: 24))
+        gridiconsshare.addCurve(to: CGPoint(x: 18, y: 21), controlPoint1: CGPoint(x: 16.65, y: 24), controlPoint2: CGPoint(x: 18, y: 22.66))
+        gridiconsshare.addCurve(to: CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 18, y: 19.34), controlPoint2: CGPoint(x: 16.65, y: 18))
+        gridiconsshare.addLine(to: CGPoint(x: 15, y: 18))
+        gridiconsshare.close()
+        gridiconsshare.move(to: CGPoint(x: 15, y: 18))
+        context.saveGState()
+        context.translateBy(x: 908, y: 550)
         gridiconsshare.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsshare.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsshareios(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 21), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsshareios(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 21), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 21), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 21)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -553)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -553)
         
         /// gridicons-share-ios
         let gridiconsshareios = UIBezierPath()
-        gridiconsshareios.moveToPoint(CGPoint(x: 14, y: 11))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 16, y: 11))
-        gridiconsshareios.addCurveToPoint(CGPoint(x: 18, y: 13), controlPoint1: CGPoint(x: 17.11, y: 11), controlPoint2: CGPoint(x: 18, y: 11.9))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsshareios.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsshareios.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 0, y: 13))
-        gridiconsshareios.addCurveToPoint(CGPoint(x: 2, y: 11), controlPoint1: CGPoint(x: 0, y: 11.9), controlPoint2: CGPoint(x: 0.9, y: 11))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 4, y: 11))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 4, y: 13))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 2, y: 13))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 16, y: 13))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 14, y: 13))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 14, y: 11))
-        gridiconsshareios.closePath()
-        gridiconsshareios.moveToPoint(CGPoint(x: 3.5, y: 8.5))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 4.91, y: 9.91))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 8, y: 6.83))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 8, y: 17))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 10, y: 17))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 10, y: 6.83))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 13.09, y: 9.91))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 14.5, y: 8.5))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 9, y: 3))
-        gridiconsshareios.addLineToPoint(CGPoint(x: 3.5, y: 8.5))
-        gridiconsshareios.closePath()
-        gridiconsshareios.moveToPoint(CGPoint(x: 3.5, y: 8.5))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 550)
+        gridiconsshareios.move(to: CGPoint(x: 14, y: 11))
+        gridiconsshareios.addLine(to: CGPoint(x: 16, y: 11))
+        gridiconsshareios.addCurve(to: CGPoint(x: 18, y: 13), controlPoint1: CGPoint(x: 17.11, y: 11), controlPoint2: CGPoint(x: 18, y: 11.9))
+        gridiconsshareios.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsshareios.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
+        gridiconsshareios.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsshareios.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsshareios.addLine(to: CGPoint(x: 0, y: 13))
+        gridiconsshareios.addCurve(to: CGPoint(x: 2, y: 11), controlPoint1: CGPoint(x: 0, y: 11.9), controlPoint2: CGPoint(x: 0.9, y: 11))
+        gridiconsshareios.addLine(to: CGPoint(x: 4, y: 11))
+        gridiconsshareios.addLine(to: CGPoint(x: 4, y: 13))
+        gridiconsshareios.addLine(to: CGPoint(x: 2, y: 13))
+        gridiconsshareios.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsshareios.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsshareios.addLine(to: CGPoint(x: 16, y: 13))
+        gridiconsshareios.addLine(to: CGPoint(x: 14, y: 13))
+        gridiconsshareios.addLine(to: CGPoint(x: 14, y: 11))
+        gridiconsshareios.close()
+        gridiconsshareios.move(to: CGPoint(x: 3.5, y: 8.5))
+        gridiconsshareios.addLine(to: CGPoint(x: 4.91, y: 9.91))
+        gridiconsshareios.addLine(to: CGPoint(x: 8, y: 6.83))
+        gridiconsshareios.addLine(to: CGPoint(x: 8, y: 17))
+        gridiconsshareios.addLine(to: CGPoint(x: 10, y: 17))
+        gridiconsshareios.addLine(to: CGPoint(x: 10, y: 6.83))
+        gridiconsshareios.addLine(to: CGPoint(x: 13.09, y: 9.91))
+        gridiconsshareios.addLine(to: CGPoint(x: 14.5, y: 8.5))
+        gridiconsshareios.addLine(to: CGPoint(x: 9, y: 3))
+        gridiconsshareios.addLine(to: CGPoint(x: 3.5, y: 8.5))
+        gridiconsshareios.close()
+        gridiconsshareios.move(to: CGPoint(x: 3.5, y: 8.5))
+        context.saveGState()
+        context.translateBy(x: 874, y: 550)
         gridiconsshareios.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsshareios.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconssearch(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconssearch(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -556)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -556)
         
         /// gridicons-search
         let gridiconssearch = UIBezierPath()
-        gridiconssearch.moveToPoint(CGPoint(x: 18, y: 22))
-        gridiconssearch.addLineToPoint(CGPoint(x: 12.85, y: 16.85))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 14, y: 13), controlPoint1: CGPoint(x: 13.57, y: 15.74), controlPoint2: CGPoint(x: 14, y: 14.42))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 7, y: 6), controlPoint1: CGPoint(x: 14, y: 9.13), controlPoint2: CGPoint(x: 10.87, y: 6))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 3.13, y: 6), controlPoint2: CGPoint(x: 0, y: 9.13))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 7, y: 20), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 3.13, y: 20))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 10.85, y: 18.85), controlPoint1: CGPoint(x: 8.42, y: 20), controlPoint2: CGPoint(x: 9.74, y: 19.57))
-        gridiconssearch.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconssearch.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconssearch.closePath()
-        gridiconssearch.moveToPoint(CGPoint(x: 2, y: 13))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 2, y: 10.24), controlPoint2: CGPoint(x: 4.24, y: 8))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 12, y: 13), controlPoint1: CGPoint(x: 9.76, y: 8), controlPoint2: CGPoint(x: 12, y: 10.24))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 7, y: 18), controlPoint1: CGPoint(x: 12, y: 15.76), controlPoint2: CGPoint(x: 9.76, y: 18))
-        gridiconssearch.addCurveToPoint(CGPoint(x: 2, y: 13), controlPoint1: CGPoint(x: 4.24, y: 18), controlPoint2: CGPoint(x: 2, y: 15.76))
-        gridiconssearch.addLineToPoint(CGPoint(x: 2, y: 13))
-        gridiconssearch.closePath()
-        gridiconssearch.moveToPoint(CGPoint(x: 2, y: 13))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 550)
+        gridiconssearch.move(to: CGPoint(x: 18, y: 22))
+        gridiconssearch.addLine(to: CGPoint(x: 12.85, y: 16.85))
+        gridiconssearch.addCurve(to: CGPoint(x: 14, y: 13), controlPoint1: CGPoint(x: 13.57, y: 15.74), controlPoint2: CGPoint(x: 14, y: 14.42))
+        gridiconssearch.addCurve(to: CGPoint(x: 7, y: 6), controlPoint1: CGPoint(x: 14, y: 9.13), controlPoint2: CGPoint(x: 10.87, y: 6))
+        gridiconssearch.addCurve(to: CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 3.13, y: 6), controlPoint2: CGPoint(x: 0, y: 9.13))
+        gridiconssearch.addCurve(to: CGPoint(x: 7, y: 20), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 3.13, y: 20))
+        gridiconssearch.addCurve(to: CGPoint(x: 10.85, y: 18.85), controlPoint1: CGPoint(x: 8.42, y: 20), controlPoint2: CGPoint(x: 9.74, y: 19.57))
+        gridiconssearch.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconssearch.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconssearch.close()
+        gridiconssearch.move(to: CGPoint(x: 2, y: 13))
+        gridiconssearch.addCurve(to: CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 2, y: 10.24), controlPoint2: CGPoint(x: 4.24, y: 8))
+        gridiconssearch.addCurve(to: CGPoint(x: 12, y: 13), controlPoint1: CGPoint(x: 9.76, y: 8), controlPoint2: CGPoint(x: 12, y: 10.24))
+        gridiconssearch.addCurve(to: CGPoint(x: 7, y: 18), controlPoint1: CGPoint(x: 12, y: 15.76), controlPoint2: CGPoint(x: 9.76, y: 18))
+        gridiconssearch.addCurve(to: CGPoint(x: 2, y: 13), controlPoint1: CGPoint(x: 4.24, y: 18), controlPoint2: CGPoint(x: 2, y: 15.76))
+        gridiconssearch.addLine(to: CGPoint(x: 2, y: 13))
+        gridiconssearch.close()
+        gridiconssearch.move(to: CGPoint(x: 2, y: 13))
+        context.saveGState()
+        context.translateBy(x: 840, y: 550)
         gridiconssearch.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconssearch.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsscheduled(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsscheduled(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -555)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -555)
         
         /// gridicons-scheduled
         let gridiconsscheduled = UIBezierPath()
-        gridiconsscheduled.moveToPoint(CGPoint(x: 7.5, y: 21))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 3.79, y: 17.3))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 5.21, y: 15.88))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 7.5, y: 18.18))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 12.79, y: 12.89))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 14.21, y: 14.3))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 7.5, y: 21))
-        gridiconsscheduled.closePath()
-        gridiconsscheduled.moveToPoint(CGPoint(x: 18, y: 9))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsscheduled.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsscheduled.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 0, y: 9))
-        gridiconsscheduled.addCurveToPoint(CGPoint(x: 2, y: 7), controlPoint1: CGPoint(x: 0, y: 7.89), controlPoint2: CGPoint(x: 0.9, y: 7))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 3, y: 7))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 3, y: 5))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 5, y: 5))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 5, y: 7))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 13, y: 7))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 13, y: 5))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 15, y: 5))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 15, y: 7))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsscheduled.addCurveToPoint(CGPoint(x: 18, y: 9), controlPoint1: CGPoint(x: 17.11, y: 7), controlPoint2: CGPoint(x: 18, y: 7.89))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconsscheduled.closePath()
-        gridiconsscheduled.moveToPoint(CGPoint(x: 16, y: 11))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 2, y: 11))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsscheduled.addLineToPoint(CGPoint(x: 16, y: 11))
-        gridiconsscheduled.closePath()
-        gridiconsscheduled.moveToPoint(CGPoint(x: 16, y: 11))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 550)
+        gridiconsscheduled.move(to: CGPoint(x: 7.5, y: 21))
+        gridiconsscheduled.addLine(to: CGPoint(x: 3.79, y: 17.3))
+        gridiconsscheduled.addLine(to: CGPoint(x: 5.21, y: 15.88))
+        gridiconsscheduled.addLine(to: CGPoint(x: 7.5, y: 18.18))
+        gridiconsscheduled.addLine(to: CGPoint(x: 12.79, y: 12.89))
+        gridiconsscheduled.addLine(to: CGPoint(x: 14.21, y: 14.3))
+        gridiconsscheduled.addLine(to: CGPoint(x: 7.5, y: 21))
+        gridiconsscheduled.close()
+        gridiconsscheduled.move(to: CGPoint(x: 18, y: 9))
+        gridiconsscheduled.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsscheduled.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
+        gridiconsscheduled.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsscheduled.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsscheduled.addLine(to: CGPoint(x: 0, y: 9))
+        gridiconsscheduled.addCurve(to: CGPoint(x: 2, y: 7), controlPoint1: CGPoint(x: 0, y: 7.89), controlPoint2: CGPoint(x: 0.9, y: 7))
+        gridiconsscheduled.addLine(to: CGPoint(x: 3, y: 7))
+        gridiconsscheduled.addLine(to: CGPoint(x: 3, y: 5))
+        gridiconsscheduled.addLine(to: CGPoint(x: 5, y: 5))
+        gridiconsscheduled.addLine(to: CGPoint(x: 5, y: 7))
+        gridiconsscheduled.addLine(to: CGPoint(x: 13, y: 7))
+        gridiconsscheduled.addLine(to: CGPoint(x: 13, y: 5))
+        gridiconsscheduled.addLine(to: CGPoint(x: 15, y: 5))
+        gridiconsscheduled.addLine(to: CGPoint(x: 15, y: 7))
+        gridiconsscheduled.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsscheduled.addCurve(to: CGPoint(x: 18, y: 9), controlPoint1: CGPoint(x: 17.11, y: 7), controlPoint2: CGPoint(x: 18, y: 7.89))
+        gridiconsscheduled.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconsscheduled.close()
+        gridiconsscheduled.move(to: CGPoint(x: 16, y: 11))
+        gridiconsscheduled.addLine(to: CGPoint(x: 2, y: 11))
+        gridiconsscheduled.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsscheduled.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsscheduled.addLine(to: CGPoint(x: 16, y: 11))
+        gridiconsscheduled.close()
+        gridiconsscheduled.move(to: CGPoint(x: 16, y: 11))
+        context.saveGState()
+        context.translateBy(x: 806, y: 550)
         gridiconsscheduled.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsscheduled.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsrotate(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 21), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsrotate(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 21), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 21), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 21)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -553)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -553)
         
         /// gridicons-rotate
         let gridiconsrotate = UIBezierPath()
-        gridiconsrotate.moveToPoint(CGPoint(x: 14, y: 16))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 14, y: 22))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 12, y: 24), controlPoint1: CGPoint(x: 14, y: 23.11), controlPoint2: CGPoint(x: 13.11, y: 24))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 0, y: 14.9), controlPoint2: CGPoint(x: 0.9, y: 14))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 14, y: 16), controlPoint1: CGPoint(x: 13.11, y: 14), controlPoint2: CGPoint(x: 14, y: 14.9))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconsrotate.closePath()
-        gridiconsrotate.moveToPoint(CGPoint(x: 9.91, y: 4.91))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 7.83, y: 7))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 10, y: 7))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 18, y: 15), controlPoint1: CGPoint(x: 14.42, y: 7), controlPoint2: CGPoint(x: 18, y: 10.58))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 16, y: 15))
-        gridiconsrotate.addCurveToPoint(CGPoint(x: 10, y: 9), controlPoint1: CGPoint(x: 16, y: 11.69), controlPoint2: CGPoint(x: 13.31, y: 9))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 7.83, y: 9))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 9.91, y: 11.09))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 8.5, y: 12.5))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 8.5, y: 3.5))
-        gridiconsrotate.addLineToPoint(CGPoint(x: 9.91, y: 4.91))
-        gridiconsrotate.closePath()
-        gridiconsrotate.moveToPoint(CGPoint(x: 9.91, y: 4.91))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 550)
+        gridiconsrotate.move(to: CGPoint(x: 14, y: 16))
+        gridiconsrotate.addLine(to: CGPoint(x: 14, y: 22))
+        gridiconsrotate.addCurve(to: CGPoint(x: 12, y: 24), controlPoint1: CGPoint(x: 14, y: 23.11), controlPoint2: CGPoint(x: 13.11, y: 24))
+        gridiconsrotate.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsrotate.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsrotate.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsrotate.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 0, y: 14.9), controlPoint2: CGPoint(x: 0.9, y: 14))
+        gridiconsrotate.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsrotate.addCurve(to: CGPoint(x: 14, y: 16), controlPoint1: CGPoint(x: 13.11, y: 14), controlPoint2: CGPoint(x: 14, y: 14.9))
+        gridiconsrotate.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconsrotate.close()
+        gridiconsrotate.move(to: CGPoint(x: 9.91, y: 4.91))
+        gridiconsrotate.addLine(to: CGPoint(x: 7.83, y: 7))
+        gridiconsrotate.addLine(to: CGPoint(x: 10, y: 7))
+        gridiconsrotate.addCurve(to: CGPoint(x: 18, y: 15), controlPoint1: CGPoint(x: 14.42, y: 7), controlPoint2: CGPoint(x: 18, y: 10.58))
+        gridiconsrotate.addLine(to: CGPoint(x: 16, y: 15))
+        gridiconsrotate.addCurve(to: CGPoint(x: 10, y: 9), controlPoint1: CGPoint(x: 16, y: 11.69), controlPoint2: CGPoint(x: 13.31, y: 9))
+        gridiconsrotate.addLine(to: CGPoint(x: 7.83, y: 9))
+        gridiconsrotate.addLine(to: CGPoint(x: 9.91, y: 11.09))
+        gridiconsrotate.addLine(to: CGPoint(x: 8.5, y: 12.5))
+        gridiconsrotate.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsrotate.addLine(to: CGPoint(x: 8.5, y: 3.5))
+        gridiconsrotate.addLine(to: CGPoint(x: 9.91, y: 4.91))
+        gridiconsrotate.close()
+        gridiconsrotate.move(to: CGPoint(x: 9.91, y: 4.91))
+        context.saveGState()
+        context.translateBy(x: 772, y: 550)
         gridiconsrotate.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsrotate.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsreply(frame frame: CGRect = CGRect(x: 0, y: 0, width: 17, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsreply(frame: CGRect = CGRect(x: 0, y: 0, width: 17, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 17, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 17, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -524)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -524)
         
         /// gridicons-reply
         let gridiconsreply = UIBezierPath()
-        gridiconsreply.moveToPoint(CGPoint(x: 11, y: 12))
-        gridiconsreply.addLineToPoint(CGPoint(x: 3.83, y: 12))
-        gridiconsreply.addLineToPoint(CGPoint(x: 6.41, y: 9.41))
-        gridiconsreply.addLineToPoint(CGPoint(x: 5, y: 8))
-        gridiconsreply.addLineToPoint(CGPoint(x: 0, y: 13))
-        gridiconsreply.addLineToPoint(CGPoint(x: 5, y: 18))
-        gridiconsreply.addLineToPoint(CGPoint(x: 6.41, y: 16.59))
-        gridiconsreply.addLineToPoint(CGPoint(x: 3.83, y: 14))
-        gridiconsreply.addLineToPoint(CGPoint(x: 11, y: 14))
-        gridiconsreply.addCurveToPoint(CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 13.21, y: 14), controlPoint2: CGPoint(x: 15, y: 15.79))
-        gridiconsreply.addCurveToPoint(CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 15, y: 20.21), controlPoint2: CGPoint(x: 13.21, y: 22))
-        gridiconsreply.addLineToPoint(CGPoint(x: 9, y: 22))
-        gridiconsreply.addLineToPoint(CGPoint(x: 9, y: 24))
-        gridiconsreply.addLineToPoint(CGPoint(x: 11, y: 24))
-        gridiconsreply.addCurveToPoint(CGPoint(x: 17, y: 18), controlPoint1: CGPoint(x: 14.31, y: 24), controlPoint2: CGPoint(x: 17, y: 21.31))
-        gridiconsreply.addCurveToPoint(CGPoint(x: 11, y: 12), controlPoint1: CGPoint(x: 17, y: 14.69), controlPoint2: CGPoint(x: 14.31, y: 12))
-        gridiconsreply.addLineToPoint(CGPoint(x: 11, y: 12))
-        gridiconsreply.closePath()
-        gridiconsreply.moveToPoint(CGPoint(x: 11, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 516)
+        gridiconsreply.move(to: CGPoint(x: 11, y: 12))
+        gridiconsreply.addLine(to: CGPoint(x: 3.83, y: 12))
+        gridiconsreply.addLine(to: CGPoint(x: 6.41, y: 9.41))
+        gridiconsreply.addLine(to: CGPoint(x: 5, y: 8))
+        gridiconsreply.addLine(to: CGPoint(x: 0, y: 13))
+        gridiconsreply.addLine(to: CGPoint(x: 5, y: 18))
+        gridiconsreply.addLine(to: CGPoint(x: 6.41, y: 16.59))
+        gridiconsreply.addLine(to: CGPoint(x: 3.83, y: 14))
+        gridiconsreply.addLine(to: CGPoint(x: 11, y: 14))
+        gridiconsreply.addCurve(to: CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 13.21, y: 14), controlPoint2: CGPoint(x: 15, y: 15.79))
+        gridiconsreply.addCurve(to: CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 15, y: 20.21), controlPoint2: CGPoint(x: 13.21, y: 22))
+        gridiconsreply.addLine(to: CGPoint(x: 9, y: 22))
+        gridiconsreply.addLine(to: CGPoint(x: 9, y: 24))
+        gridiconsreply.addLine(to: CGPoint(x: 11, y: 24))
+        gridiconsreply.addCurve(to: CGPoint(x: 17, y: 18), controlPoint1: CGPoint(x: 14.31, y: 24), controlPoint2: CGPoint(x: 17, y: 21.31))
+        gridiconsreply.addCurve(to: CGPoint(x: 11, y: 12), controlPoint1: CGPoint(x: 17, y: 14.69), controlPoint2: CGPoint(x: 14.31, y: 12))
+        gridiconsreply.addLine(to: CGPoint(x: 11, y: 12))
+        gridiconsreply.close()
+        gridiconsreply.move(to: CGPoint(x: 11, y: 12))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 516)
         gridiconsreply.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsreply.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsrefresh(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsrefresh(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -520)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -520)
         
         /// gridicons-refresh
         let gridiconsrefresh = UIBezierPath()
-        gridiconsrefresh.moveToPoint(CGPoint(x: 13.91, y: 17))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 8, y: 22), controlPoint1: CGPoint(x: 13.43, y: 19.83), controlPoint2: CGPoint(x: 10.97, y: 22))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 2, y: 16), controlPoint1: CGPoint(x: 4.69, y: 22), controlPoint2: CGPoint(x: 2, y: 19.31))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 8, y: 10), controlPoint1: CGPoint(x: 2, y: 12.69), controlPoint2: CGPoint(x: 4.69, y: 10))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 10.17, y: 10))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 8.09, y: 12.09))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 9.5, y: 13.5))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 14, y: 9))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 9.5, y: 4.5))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 8.09, y: 5.91))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 10.17, y: 8))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 0, y: 16), controlPoint1: CGPoint(x: 3.58, y: 8), controlPoint2: CGPoint(x: 0, y: 11.58))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 8, y: 24), controlPoint1: CGPoint(x: 0, y: 20.42), controlPoint2: CGPoint(x: 3.58, y: 24))
-        gridiconsrefresh.addCurveToPoint(CGPoint(x: 15.93, y: 17), controlPoint1: CGPoint(x: 12.08, y: 24), controlPoint2: CGPoint(x: 15.44, y: 20.95))
-        gridiconsrefresh.addLineToPoint(CGPoint(x: 13.91, y: 17))
-        gridiconsrefresh.closePath()
-        gridiconsrefresh.moveToPoint(CGPoint(x: 13.91, y: 17))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 516)
+        gridiconsrefresh.move(to: CGPoint(x: 13.91, y: 17))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 8, y: 22), controlPoint1: CGPoint(x: 13.43, y: 19.83), controlPoint2: CGPoint(x: 10.97, y: 22))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 2, y: 16), controlPoint1: CGPoint(x: 4.69, y: 22), controlPoint2: CGPoint(x: 2, y: 19.31))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 8, y: 10), controlPoint1: CGPoint(x: 2, y: 12.69), controlPoint2: CGPoint(x: 4.69, y: 10))
+        gridiconsrefresh.addLine(to: CGPoint(x: 10.17, y: 10))
+        gridiconsrefresh.addLine(to: CGPoint(x: 8.09, y: 12.09))
+        gridiconsrefresh.addLine(to: CGPoint(x: 9.5, y: 13.5))
+        gridiconsrefresh.addLine(to: CGPoint(x: 14, y: 9))
+        gridiconsrefresh.addLine(to: CGPoint(x: 9.5, y: 4.5))
+        gridiconsrefresh.addLine(to: CGPoint(x: 8.09, y: 5.91))
+        gridiconsrefresh.addLine(to: CGPoint(x: 10.17, y: 8))
+        gridiconsrefresh.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 0, y: 16), controlPoint1: CGPoint(x: 3.58, y: 8), controlPoint2: CGPoint(x: 0, y: 11.58))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 8, y: 24), controlPoint1: CGPoint(x: 0, y: 20.42), controlPoint2: CGPoint(x: 3.58, y: 24))
+        gridiconsrefresh.addCurve(to: CGPoint(x: 15.93, y: 17), controlPoint1: CGPoint(x: 12.08, y: 24), controlPoint2: CGPoint(x: 15.44, y: 20.95))
+        gridiconsrefresh.addLine(to: CGPoint(x: 13.91, y: 17))
+        gridiconsrefresh.close()
+        gridiconsrefresh.move(to: CGPoint(x: 13.91, y: 17))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 516)
         gridiconsrefresh.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsrefresh.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsredo(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsredo(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -524)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -524)
         
         /// gridicons-redo
         let gridiconsredo = UIBezierPath()
-        gridiconsredo.moveToPoint(CGPoint(x: 13.9, y: 10.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 13.9, y: 13.81))
-        gridiconsredo.addLineToPoint(CGPoint(x: 10.24, y: 10.15))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 6, y: 8.39), controlPoint1: CGPoint(x: 9.07, y: 8.98), controlPoint2: CGPoint(x: 7.54, y: 8.39))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 1.76, y: 10.15), controlPoint1: CGPoint(x: 4.46, y: 8.39), controlPoint2: CGPoint(x: 2.93, y: 8.98))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 1.76, y: 18.64), controlPoint1: CGPoint(x: -0.59, y: 12.5), controlPoint2: CGPoint(x: -0.59, y: 16.29))
-        gridiconsredo.addLineToPoint(CGPoint(x: 7.12, y: 24))
-        gridiconsredo.addLineToPoint(CGPoint(x: 8.54, y: 22.59))
-        gridiconsredo.addLineToPoint(CGPoint(x: 3.17, y: 17.22))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 3.17, y: 11.57), controlPoint1: CGPoint(x: 1.61, y: 15.66), controlPoint2: CGPoint(x: 1.61, y: 13.13))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 6, y: 10.4), controlPoint1: CGPoint(x: 3.93, y: 10.81), controlPoint2: CGPoint(x: 4.93, y: 10.4))
-        gridiconsredo.addCurveToPoint(CGPoint(x: 8.83, y: 11.57), controlPoint1: CGPoint(x: 7.07, y: 10.4), controlPoint2: CGPoint(x: 8.07, y: 10.81))
-        gridiconsredo.addLineToPoint(CGPoint(x: 12.48, y: 15.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 8.9, y: 15.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 8.9, y: 17.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 15.9, y: 17.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 15.9, y: 10.22))
-        gridiconsredo.addLineToPoint(CGPoint(x: 13.9, y: 10.22))
-        gridiconsredo.closePath()
-        gridiconsredo.moveToPoint(CGPoint(x: 13.9, y: 10.22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 516)
+        gridiconsredo.move(to: CGPoint(x: 13.9, y: 10.22))
+        gridiconsredo.addLine(to: CGPoint(x: 13.9, y: 13.81))
+        gridiconsredo.addLine(to: CGPoint(x: 10.24, y: 10.15))
+        gridiconsredo.addCurve(to: CGPoint(x: 6, y: 8.39), controlPoint1: CGPoint(x: 9.07, y: 8.98), controlPoint2: CGPoint(x: 7.54, y: 8.39))
+        gridiconsredo.addCurve(to: CGPoint(x: 1.76, y: 10.15), controlPoint1: CGPoint(x: 4.46, y: 8.39), controlPoint2: CGPoint(x: 2.93, y: 8.98))
+        gridiconsredo.addCurve(to: CGPoint(x: 1.76, y: 18.64), controlPoint1: CGPoint(x: -0.59, y: 12.5), controlPoint2: CGPoint(x: -0.59, y: 16.29))
+        gridiconsredo.addLine(to: CGPoint(x: 7.12, y: 24))
+        gridiconsredo.addLine(to: CGPoint(x: 8.54, y: 22.59))
+        gridiconsredo.addLine(to: CGPoint(x: 3.17, y: 17.22))
+        gridiconsredo.addCurve(to: CGPoint(x: 3.17, y: 11.57), controlPoint1: CGPoint(x: 1.61, y: 15.66), controlPoint2: CGPoint(x: 1.61, y: 13.13))
+        gridiconsredo.addCurve(to: CGPoint(x: 6, y: 10.4), controlPoint1: CGPoint(x: 3.93, y: 10.81), controlPoint2: CGPoint(x: 4.93, y: 10.4))
+        gridiconsredo.addCurve(to: CGPoint(x: 8.83, y: 11.57), controlPoint1: CGPoint(x: 7.07, y: 10.4), controlPoint2: CGPoint(x: 8.07, y: 10.81))
+        gridiconsredo.addLine(to: CGPoint(x: 12.48, y: 15.22))
+        gridiconsredo.addLine(to: CGPoint(x: 8.9, y: 15.22))
+        gridiconsredo.addLine(to: CGPoint(x: 8.9, y: 17.22))
+        gridiconsredo.addLine(to: CGPoint(x: 15.9, y: 17.22))
+        gridiconsredo.addLine(to: CGPoint(x: 15.9, y: 10.22))
+        gridiconsredo.addLine(to: CGPoint(x: 13.9, y: 10.22))
+        gridiconsredo.close()
+        gridiconsredo.move(to: CGPoint(x: 13.9, y: 10.22))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 516)
         gridiconsredo.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsredo.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsreblog(frame frame: CGRect = CGRect(x: 0, y: 0, width: 23, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsreblog(frame: CGRect = CGRect(x: 0, y: 0, width: 23, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 23, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 23, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -524)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -524)
         
         /// gridicons-reblog
         let gridiconsreblog = UIBezierPath()
-        gridiconsreblog.moveToPoint(CGPoint(x: 21.59, y: 13.91))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 19.5, y: 11.83))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 19.5, y: 22))
-        gridiconsreblog.addCurveToPoint(CGPoint(x: 17.5, y: 24), controlPoint1: CGPoint(x: 19.5, y: 23.11), controlPoint2: CGPoint(x: 18.61, y: 24))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 10.5, y: 24))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 10.5, y: 22))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 17.5, y: 22))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 17.5, y: 11.83))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 15.41, y: 13.91))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 14, y: 12.5))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 18.5, y: 8))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 23, y: 12.5))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 21.59, y: 13.91))
-        gridiconsreblog.closePath()
-        gridiconsreblog.moveToPoint(CGPoint(x: 5.5, y: 20.17))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 5.5, y: 10))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 12.5, y: 10))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 12.5, y: 8))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 5.5, y: 8))
-        gridiconsreblog.addCurveToPoint(CGPoint(x: 3.5, y: 10), controlPoint1: CGPoint(x: 4.39, y: 8), controlPoint2: CGPoint(x: 3.5, y: 8.89))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 3.5, y: 20.17))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 1.41, y: 18.09))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 0, y: 19.5))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 4.5, y: 24))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 9, y: 19.5))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 7.59, y: 18.09))
-        gridiconsreblog.addLineToPoint(CGPoint(x: 5.5, y: 20.17))
-        gridiconsreblog.closePath()
-        gridiconsreblog.moveToPoint(CGPoint(x: 5.5, y: 20.17))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 516)
+        gridiconsreblog.move(to: CGPoint(x: 21.59, y: 13.91))
+        gridiconsreblog.addLine(to: CGPoint(x: 19.5, y: 11.83))
+        gridiconsreblog.addLine(to: CGPoint(x: 19.5, y: 22))
+        gridiconsreblog.addCurve(to: CGPoint(x: 17.5, y: 24), controlPoint1: CGPoint(x: 19.5, y: 23.11), controlPoint2: CGPoint(x: 18.61, y: 24))
+        gridiconsreblog.addLine(to: CGPoint(x: 10.5, y: 24))
+        gridiconsreblog.addLine(to: CGPoint(x: 10.5, y: 22))
+        gridiconsreblog.addLine(to: CGPoint(x: 17.5, y: 22))
+        gridiconsreblog.addLine(to: CGPoint(x: 17.5, y: 11.83))
+        gridiconsreblog.addLine(to: CGPoint(x: 15.41, y: 13.91))
+        gridiconsreblog.addLine(to: CGPoint(x: 14, y: 12.5))
+        gridiconsreblog.addLine(to: CGPoint(x: 18.5, y: 8))
+        gridiconsreblog.addLine(to: CGPoint(x: 23, y: 12.5))
+        gridiconsreblog.addLine(to: CGPoint(x: 21.59, y: 13.91))
+        gridiconsreblog.close()
+        gridiconsreblog.move(to: CGPoint(x: 5.5, y: 20.17))
+        gridiconsreblog.addLine(to: CGPoint(x: 5.5, y: 10))
+        gridiconsreblog.addLine(to: CGPoint(x: 12.5, y: 10))
+        gridiconsreblog.addLine(to: CGPoint(x: 12.5, y: 8))
+        gridiconsreblog.addLine(to: CGPoint(x: 5.5, y: 8))
+        gridiconsreblog.addCurve(to: CGPoint(x: 3.5, y: 10), controlPoint1: CGPoint(x: 4.39, y: 8), controlPoint2: CGPoint(x: 3.5, y: 8.89))
+        gridiconsreblog.addLine(to: CGPoint(x: 3.5, y: 20.17))
+        gridiconsreblog.addLine(to: CGPoint(x: 1.41, y: 18.09))
+        gridiconsreblog.addLine(to: CGPoint(x: 0, y: 19.5))
+        gridiconsreblog.addLine(to: CGPoint(x: 4.5, y: 24))
+        gridiconsreblog.addLine(to: CGPoint(x: 9, y: 19.5))
+        gridiconsreblog.addLine(to: CGPoint(x: 7.59, y: 18.09))
+        gridiconsreblog.addLine(to: CGPoint(x: 5.5, y: 20.17))
+        gridiconsreblog.close()
+        gridiconsreblog.move(to: CGPoint(x: 5.5, y: 20.17))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 516)
         gridiconsreblog.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsreblog.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsreader(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsreader(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -524)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -524)
         
         /// gridicons-reader
         let gridiconsreader = UIBezierPath()
-        gridiconsreader.moveToPoint(CGPoint(x: 0, y: 8))
-        gridiconsreader.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsreader.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsreader.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsreader.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.1, y: 24), controlPoint2: CGPoint(x: 18, y: 23.1))
-        gridiconsreader.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsreader.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 7, y: 19))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 19))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 18))
-        gridiconsreader.addLineToPoint(CGPoint(x: 7, y: 18))
-        gridiconsreader.addLineToPoint(CGPoint(x: 7, y: 19))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 9, y: 17))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 17))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 16))
-        gridiconsreader.addLineToPoint(CGPoint(x: 9, y: 16))
-        gridiconsreader.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 9, y: 15))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 15))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 14))
-        gridiconsreader.addLineToPoint(CGPoint(x: 9, y: 14))
-        gridiconsreader.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 16, y: 19))
-        gridiconsreader.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsreader.addLineToPoint(CGPoint(x: 11, y: 14))
-        gridiconsreader.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsreader.addLineToPoint(CGPoint(x: 16, y: 19))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 16, y: 12))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsreader.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsreader.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsreader.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsreader.closePath()
-        gridiconsreader.moveToPoint(CGPoint(x: 16, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 516)
+        gridiconsreader.move(to: CGPoint(x: 0, y: 8))
+        gridiconsreader.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsreader.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsreader.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsreader.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.1, y: 24), controlPoint2: CGPoint(x: 18, y: 23.1))
+        gridiconsreader.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsreader.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 7, y: 19))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 19))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 18))
+        gridiconsreader.addLine(to: CGPoint(x: 7, y: 18))
+        gridiconsreader.addLine(to: CGPoint(x: 7, y: 19))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 9, y: 17))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 17))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 16))
+        gridiconsreader.addLine(to: CGPoint(x: 9, y: 16))
+        gridiconsreader.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 9, y: 15))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 14))
+        gridiconsreader.addLine(to: CGPoint(x: 9, y: 14))
+        gridiconsreader.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 16, y: 19))
+        gridiconsreader.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsreader.addLine(to: CGPoint(x: 11, y: 14))
+        gridiconsreader.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsreader.addLine(to: CGPoint(x: 16, y: 19))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 16, y: 12))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsreader.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsreader.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsreader.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsreader.close()
+        gridiconsreader.move(to: CGPoint(x: 16, y: 12))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 516)
         gridiconsreader.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsreader.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsreaderfollowing(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsreaderfollowing(frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -521)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -521)
         
         /// gridicons-reader-following
         let gridiconsreaderfollowing = UIBezierPath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 21, y: 16.48))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.51, y: 24))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 10, y: 20.4))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 11.41, y: 19.01))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.52, y: 21.2))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 19.61, y: 15.11))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 21, y: 16.48))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 13.55, y: 18.34))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 18, y: 13.89))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 18, y: 5))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 0, y: 5))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsreaderfollowing.addCurveToPoint(CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 0, y: 20.1), controlPoint2: CGPoint(x: 0.9, y: 21))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6.54, y: 21))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 11.45, y: 16.17))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 13.55, y: 18.34))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 6, y: 16))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 16))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 15))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6, y: 15))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 6, y: 16))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 9, y: 14))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 14))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 13))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 14))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 9, y: 12))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 11))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 11))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 9, y: 12))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 16, y: 9))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 9))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsreaderfollowing.addLineToPoint(CGPoint(x: 16, y: 9))
-        gridiconsreaderfollowing.closePath()
-        gridiconsreaderfollowing.moveToPoint(CGPoint(x: 16, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 516)
+        gridiconsreaderfollowing.move(to: CGPoint(x: 21, y: 16.48))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 13.51, y: 24))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 10, y: 20.4))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 11.41, y: 19.01))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 13.52, y: 21.2))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 19.61, y: 15.11))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 21, y: 16.48))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 13.55, y: 18.34))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 18, y: 13.89))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 18, y: 5))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 0, y: 5))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsreaderfollowing.addCurve(to: CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 0, y: 20.1), controlPoint2: CGPoint(x: 0.9, y: 21))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 6.54, y: 21))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 11.45, y: 16.17))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 13.55, y: 18.34))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 6, y: 16))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 16))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 6, y: 15))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 6, y: 16))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 9, y: 14))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 14))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 13))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 9, y: 14))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 9, y: 12))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 11))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 9, y: 12))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 16, y: 9))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 9))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsreaderfollowing.addLine(to: CGPoint(x: 16, y: 9))
+        gridiconsreaderfollowing.close()
+        gridiconsreaderfollowing.move(to: CGPoint(x: 16, y: 9))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 516)
         gridiconsreaderfollowing.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsreaderfollowing.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsreaderfollow(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsreaderfollow(frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -521)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -521)
         
         /// gridicons-reader-follow
         let gridiconsreaderfollow = UIBezierPath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 21, y: 19))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 21, y: 21))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 21))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 21))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 13, y: 21))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 13, y: 19))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 19))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 19))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 21, y: 19))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 18, y: 5))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 14, y: 14))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 14, y: 17))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 11, y: 21))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 21))
-        gridiconsreaderfollow.addCurveToPoint(CGPoint(x: 0, y: 19), controlPoint1: CGPoint(x: 0.9, y: 21), controlPoint2: CGPoint(x: 0, y: 20.1))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 0, y: 5))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 18, y: 5))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 6, y: 16))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 6, y: 15))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 15))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 16))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 6, y: 16))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 9, y: 13))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 13))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 14))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 14))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 9, y: 11))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 11))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 12))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 9, y: 11))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 16, y: 7))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 2, y: 9))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 9))
-        gridiconsreaderfollow.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsreaderfollow.closePath()
-        gridiconsreaderfollow.moveToPoint(CGPoint(x: 16, y: 7))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 516)
+        gridiconsreaderfollow.move(to: CGPoint(x: 21, y: 19))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 21, y: 21))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 21))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 21))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 13, y: 21))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 13, y: 19))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 19))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 19))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 21, y: 19))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 18, y: 5))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 14, y: 14))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 14, y: 17))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 11, y: 21))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 21))
+        gridiconsreaderfollow.addCurve(to: CGPoint(x: 0, y: 19), controlPoint1: CGPoint(x: 0.9, y: 21), controlPoint2: CGPoint(x: 0, y: 20.1))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 0, y: 5))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 18, y: 5))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 6, y: 16))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 6, y: 15))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 16))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 6, y: 16))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 9, y: 13))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 13))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 14))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 9, y: 14))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 9, y: 11))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 11))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 9, y: 12))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 16, y: 7))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 2, y: 9))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 9))
+        gridiconsreaderfollow.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsreaderfollow.close()
+        gridiconsreaderfollow.move(to: CGPoint(x: 16, y: 7))
+        context.saveGState()
+        context.translateBy(x: 976, y: 516)
         gridiconsreaderfollow.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsreaderfollow.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsquote(frame frame: CGRect = CGRect(x: 0, y: 0, width: 17, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsquote(frame: CGRect = CGRect(x: 0, y: 0, width: 17, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 17, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 17, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -526)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -526)
         
         /// gridicons-quote
         let gridiconsquote = UIBezierPath()
-        gridiconsquote.moveToPoint(CGPoint(x: 7.51, y: 20.75))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 6.82, y: 18.54), controlPoint1: CGPoint(x: 7.51, y: 19.88), controlPoint2: CGPoint(x: 7.28, y: 19.14))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 5.49, y: 17.72), controlPoint1: CGPoint(x: 6.49, y: 18.13), controlPoint2: CGPoint(x: 6.05, y: 17.85))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 3.95, y: 17.7), controlPoint1: CGPoint(x: 4.94, y: 17.59), controlPoint2: CGPoint(x: 4.42, y: 17.59))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 4.71, y: 14.67), controlPoint1: CGPoint(x: 3.79, y: 16.75), controlPoint2: CGPoint(x: 4.05, y: 15.74))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 7.27, y: 12.27), controlPoint1: CGPoint(x: 5.37, y: 13.61), controlPoint2: CGPoint(x: 6.23, y: 12.81))
-        gridiconsquote.addLineToPoint(CGPoint(x: 5.69, y: 10))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 3.43, y: 11.5), controlPoint1: CGPoint(x: 4.89, y: 10.39), controlPoint2: CGPoint(x: 4.13, y: 10.89))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 1.53, y: 13.59), controlPoint1: CGPoint(x: 2.72, y: 12.11), controlPoint2: CGPoint(x: 2.09, y: 12.81))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 0.28, y: 16.29), controlPoint1: CGPoint(x: 0.97, y: 14.38), controlPoint2: CGPoint(x: 0.55, y: 15.27))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 0.06, y: 19.39), controlPoint1: CGPoint(x: 0.01, y: 17.3), controlPoint2: CGPoint(x: -0.07, y: 18.32))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 1.42, y: 22.74), controlPoint1: CGPoint(x: 0.23, y: 20.79), controlPoint2: CGPoint(x: 0.68, y: 21.91))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 4.16, y: 24), controlPoint1: CGPoint(x: 2.15, y: 23.58), controlPoint2: CGPoint(x: 3.07, y: 24))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 6.56, y: 23.12), controlPoint1: CGPoint(x: 5.13, y: 24), controlPoint2: CGPoint(x: 5.93, y: 23.71))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 7.5, y: 20.75), controlPoint1: CGPoint(x: 7.19, y: 22.55), controlPoint2: CGPoint(x: 7.5, y: 21.76))
-        gridiconsquote.addLineToPoint(CGPoint(x: 7.51, y: 20.76))
-        gridiconsquote.addLineToPoint(CGPoint(x: 7.51, y: 20.75))
-        gridiconsquote.closePath()
-        gridiconsquote.moveToPoint(CGPoint(x: 16.63, y: 20.75))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 15.94, y: 18.54), controlPoint1: CGPoint(x: 16.63, y: 19.88), controlPoint2: CGPoint(x: 16.4, y: 19.14))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 14.62, y: 17.72), controlPoint1: CGPoint(x: 15.62, y: 18.11), controlPoint2: CGPoint(x: 15.17, y: 17.84))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 13.08, y: 17.7), controlPoint1: CGPoint(x: 14.06, y: 17.59), controlPoint2: CGPoint(x: 13.54, y: 17.59))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 13.83, y: 14.68), controlPoint1: CGPoint(x: 12.92, y: 16.75), controlPoint2: CGPoint(x: 13.17, y: 15.75))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 16.38, y: 12.28), controlPoint1: CGPoint(x: 14.49, y: 13.62), controlPoint2: CGPoint(x: 15.34, y: 12.82))
-        gridiconsquote.addLineToPoint(CGPoint(x: 14.81, y: 10))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 12.55, y: 11.5), controlPoint1: CGPoint(x: 14.01, y: 10.39), controlPoint2: CGPoint(x: 13.25, y: 10.89))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 10.65, y: 13.59), controlPoint1: CGPoint(x: 11.84, y: 12.11), controlPoint2: CGPoint(x: 11.21, y: 12.81))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 9.41, y: 16.29), controlPoint1: CGPoint(x: 10.1, y: 14.38), controlPoint2: CGPoint(x: 9.68, y: 15.27))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 9.19, y: 19.39), controlPoint1: CGPoint(x: 9.14, y: 17.29), controlPoint2: CGPoint(x: 9.07, y: 18.32))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 10.55, y: 22.74), controlPoint1: CGPoint(x: 9.36, y: 20.79), controlPoint2: CGPoint(x: 9.81, y: 21.91))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 13.29, y: 23.99), controlPoint1: CGPoint(x: 11.28, y: 23.57), controlPoint2: CGPoint(x: 12.19, y: 23.99))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 15.69, y: 23.11), controlPoint1: CGPoint(x: 14.26, y: 23.99), controlPoint2: CGPoint(x: 15.06, y: 23.7))
-        gridiconsquote.addCurveToPoint(CGPoint(x: 16.63, y: 20.75), controlPoint1: CGPoint(x: 16.32, y: 22.54), controlPoint2: CGPoint(x: 16.63, y: 21.75))
-        gridiconsquote.addLineToPoint(CGPoint(x: 16.63, y: 20.76))
-        gridiconsquote.addLineToPoint(CGPoint(x: 16.63, y: 20.75))
-        gridiconsquote.closePath()
-        gridiconsquote.moveToPoint(CGPoint(x: 16.63, y: 20.75))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 516)
+        gridiconsquote.move(to: CGPoint(x: 7.51, y: 20.75))
+        gridiconsquote.addCurve(to: CGPoint(x: 6.82, y: 18.54), controlPoint1: CGPoint(x: 7.51, y: 19.88), controlPoint2: CGPoint(x: 7.28, y: 19.14))
+        gridiconsquote.addCurve(to: CGPoint(x: 5.49, y: 17.72), controlPoint1: CGPoint(x: 6.49, y: 18.13), controlPoint2: CGPoint(x: 6.05, y: 17.85))
+        gridiconsquote.addCurve(to: CGPoint(x: 3.95, y: 17.7), controlPoint1: CGPoint(x: 4.94, y: 17.59), controlPoint2: CGPoint(x: 4.42, y: 17.59))
+        gridiconsquote.addCurve(to: CGPoint(x: 4.71, y: 14.67), controlPoint1: CGPoint(x: 3.79, y: 16.75), controlPoint2: CGPoint(x: 4.05, y: 15.74))
+        gridiconsquote.addCurve(to: CGPoint(x: 7.27, y: 12.27), controlPoint1: CGPoint(x: 5.37, y: 13.61), controlPoint2: CGPoint(x: 6.23, y: 12.81))
+        gridiconsquote.addLine(to: CGPoint(x: 5.69, y: 10))
+        gridiconsquote.addCurve(to: CGPoint(x: 3.43, y: 11.5), controlPoint1: CGPoint(x: 4.89, y: 10.39), controlPoint2: CGPoint(x: 4.13, y: 10.89))
+        gridiconsquote.addCurve(to: CGPoint(x: 1.53, y: 13.59), controlPoint1: CGPoint(x: 2.72, y: 12.11), controlPoint2: CGPoint(x: 2.09, y: 12.81))
+        gridiconsquote.addCurve(to: CGPoint(x: 0.28, y: 16.29), controlPoint1: CGPoint(x: 0.97, y: 14.38), controlPoint2: CGPoint(x: 0.55, y: 15.27))
+        gridiconsquote.addCurve(to: CGPoint(x: 0.06, y: 19.39), controlPoint1: CGPoint(x: 0.01, y: 17.3), controlPoint2: CGPoint(x: -0.07, y: 18.32))
+        gridiconsquote.addCurve(to: CGPoint(x: 1.42, y: 22.74), controlPoint1: CGPoint(x: 0.23, y: 20.79), controlPoint2: CGPoint(x: 0.68, y: 21.91))
+        gridiconsquote.addCurve(to: CGPoint(x: 4.16, y: 24), controlPoint1: CGPoint(x: 2.15, y: 23.58), controlPoint2: CGPoint(x: 3.07, y: 24))
+        gridiconsquote.addCurve(to: CGPoint(x: 6.56, y: 23.12), controlPoint1: CGPoint(x: 5.13, y: 24), controlPoint2: CGPoint(x: 5.93, y: 23.71))
+        gridiconsquote.addCurve(to: CGPoint(x: 7.5, y: 20.75), controlPoint1: CGPoint(x: 7.19, y: 22.55), controlPoint2: CGPoint(x: 7.5, y: 21.76))
+        gridiconsquote.addLine(to: CGPoint(x: 7.51, y: 20.76))
+        gridiconsquote.addLine(to: CGPoint(x: 7.51, y: 20.75))
+        gridiconsquote.close()
+        gridiconsquote.move(to: CGPoint(x: 16.63, y: 20.75))
+        gridiconsquote.addCurve(to: CGPoint(x: 15.94, y: 18.54), controlPoint1: CGPoint(x: 16.63, y: 19.88), controlPoint2: CGPoint(x: 16.4, y: 19.14))
+        gridiconsquote.addCurve(to: CGPoint(x: 14.62, y: 17.72), controlPoint1: CGPoint(x: 15.62, y: 18.11), controlPoint2: CGPoint(x: 15.17, y: 17.84))
+        gridiconsquote.addCurve(to: CGPoint(x: 13.08, y: 17.7), controlPoint1: CGPoint(x: 14.06, y: 17.59), controlPoint2: CGPoint(x: 13.54, y: 17.59))
+        gridiconsquote.addCurve(to: CGPoint(x: 13.83, y: 14.68), controlPoint1: CGPoint(x: 12.92, y: 16.75), controlPoint2: CGPoint(x: 13.17, y: 15.75))
+        gridiconsquote.addCurve(to: CGPoint(x: 16.38, y: 12.28), controlPoint1: CGPoint(x: 14.49, y: 13.62), controlPoint2: CGPoint(x: 15.34, y: 12.82))
+        gridiconsquote.addLine(to: CGPoint(x: 14.81, y: 10))
+        gridiconsquote.addCurve(to: CGPoint(x: 12.55, y: 11.5), controlPoint1: CGPoint(x: 14.01, y: 10.39), controlPoint2: CGPoint(x: 13.25, y: 10.89))
+        gridiconsquote.addCurve(to: CGPoint(x: 10.65, y: 13.59), controlPoint1: CGPoint(x: 11.84, y: 12.11), controlPoint2: CGPoint(x: 11.21, y: 12.81))
+        gridiconsquote.addCurve(to: CGPoint(x: 9.41, y: 16.29), controlPoint1: CGPoint(x: 10.1, y: 14.38), controlPoint2: CGPoint(x: 9.68, y: 15.27))
+        gridiconsquote.addCurve(to: CGPoint(x: 9.19, y: 19.39), controlPoint1: CGPoint(x: 9.14, y: 17.29), controlPoint2: CGPoint(x: 9.07, y: 18.32))
+        gridiconsquote.addCurve(to: CGPoint(x: 10.55, y: 22.74), controlPoint1: CGPoint(x: 9.36, y: 20.79), controlPoint2: CGPoint(x: 9.81, y: 21.91))
+        gridiconsquote.addCurve(to: CGPoint(x: 13.29, y: 23.99), controlPoint1: CGPoint(x: 11.28, y: 23.57), controlPoint2: CGPoint(x: 12.19, y: 23.99))
+        gridiconsquote.addCurve(to: CGPoint(x: 15.69, y: 23.11), controlPoint1: CGPoint(x: 14.26, y: 23.99), controlPoint2: CGPoint(x: 15.06, y: 23.7))
+        gridiconsquote.addCurve(to: CGPoint(x: 16.63, y: 20.75), controlPoint1: CGPoint(x: 16.32, y: 22.54), controlPoint2: CGPoint(x: 16.63, y: 21.75))
+        gridiconsquote.addLine(to: CGPoint(x: 16.63, y: 20.76))
+        gridiconsquote.addLine(to: CGPoint(x: 16.63, y: 20.75))
+        gridiconsquote.close()
+        gridiconsquote.move(to: CGPoint(x: 16.63, y: 20.75))
+        context.saveGState()
+        context.translateBy(x: 942, y: 516)
         gridiconsquote.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsquote.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsprint(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsprint(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -521)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -521)
         
         /// gridicons-print
         let gridiconsprint = UIBezierPath()
-        gridiconsprint.moveToPoint(CGPoint(x: 7, y: 18))
-        gridiconsprint.addLineToPoint(CGPoint(x: 13, y: 18))
-        gridiconsprint.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconsprint.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconsprint.addLineToPoint(CGPoint(x: 7, y: 18))
-        gridiconsprint.closePath()
-        gridiconsprint.moveToPoint(CGPoint(x: 20, y: 19))
-        gridiconsprint.addLineToPoint(CGPoint(x: 17, y: 19))
-        gridiconsprint.addLineToPoint(CGPoint(x: 17, y: 22))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 17, y: 23.11), controlPoint2: CGPoint(x: 16.11, y: 24))
-        gridiconsprint.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 3, y: 22), controlPoint1: CGPoint(x: 3.9, y: 24), controlPoint2: CGPoint(x: 3, y: 23.11))
-        gridiconsprint.addLineToPoint(CGPoint(x: 3, y: 19))
-        gridiconsprint.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsprint.addLineToPoint(CGPoint(x: 0, y: 11))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 2, y: 9), controlPoint1: CGPoint(x: 0, y: 9.89), controlPoint2: CGPoint(x: 0.9, y: 9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 3, y: 9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 3, y: 7))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 5, y: 5), controlPoint1: CGPoint(x: 3, y: 5.9), controlPoint2: CGPoint(x: 3.9, y: 5))
-        gridiconsprint.addLineToPoint(CGPoint(x: 15, y: 5))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 17, y: 7), controlPoint1: CGPoint(x: 16.11, y: 5), controlPoint2: CGPoint(x: 17, y: 5.9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 17, y: 9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 20, y: 11), controlPoint1: CGPoint(x: 19.11, y: 9), controlPoint2: CGPoint(x: 20, y: 9.89))
-        gridiconsprint.addLineToPoint(CGPoint(x: 20, y: 19))
-        gridiconsprint.closePath()
-        gridiconsprint.moveToPoint(CGPoint(x: 5, y: 9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 15, y: 9))
-        gridiconsprint.addLineToPoint(CGPoint(x: 15, y: 7))
-        gridiconsprint.addLineToPoint(CGPoint(x: 5, y: 7))
-        gridiconsprint.addLineToPoint(CGPoint(x: 5, y: 9))
-        gridiconsprint.closePath()
-        gridiconsprint.moveToPoint(CGPoint(x: 15, y: 16))
-        gridiconsprint.addLineToPoint(CGPoint(x: 5, y: 16))
-        gridiconsprint.addLineToPoint(CGPoint(x: 5, y: 22))
-        gridiconsprint.addLineToPoint(CGPoint(x: 15, y: 22))
-        gridiconsprint.addLineToPoint(CGPoint(x: 15, y: 16))
-        gridiconsprint.closePath()
-        gridiconsprint.moveToPoint(CGPoint(x: 18, y: 12.5))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 16.5, y: 11), controlPoint1: CGPoint(x: 18, y: 11.67), controlPoint2: CGPoint(x: 17.33, y: 11))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 15, y: 12.5), controlPoint1: CGPoint(x: 15.67, y: 11), controlPoint2: CGPoint(x: 15, y: 11.67))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 16.5, y: 14), controlPoint1: CGPoint(x: 15, y: 13.33), controlPoint2: CGPoint(x: 15.67, y: 14))
-        gridiconsprint.addCurveToPoint(CGPoint(x: 18, y: 12.5), controlPoint1: CGPoint(x: 17.33, y: 14), controlPoint2: CGPoint(x: 18, y: 13.33))
-        gridiconsprint.addLineToPoint(CGPoint(x: 18, y: 12.5))
-        gridiconsprint.closePath()
-        gridiconsprint.moveToPoint(CGPoint(x: 18, y: 12.5))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 516)
+        gridiconsprint.move(to: CGPoint(x: 7, y: 18))
+        gridiconsprint.addLine(to: CGPoint(x: 13, y: 18))
+        gridiconsprint.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconsprint.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconsprint.addLine(to: CGPoint(x: 7, y: 18))
+        gridiconsprint.close()
+        gridiconsprint.move(to: CGPoint(x: 20, y: 19))
+        gridiconsprint.addLine(to: CGPoint(x: 17, y: 19))
+        gridiconsprint.addLine(to: CGPoint(x: 17, y: 22))
+        gridiconsprint.addCurve(to: CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 17, y: 23.11), controlPoint2: CGPoint(x: 16.11, y: 24))
+        gridiconsprint.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconsprint.addCurve(to: CGPoint(x: 3, y: 22), controlPoint1: CGPoint(x: 3.9, y: 24), controlPoint2: CGPoint(x: 3, y: 23.11))
+        gridiconsprint.addLine(to: CGPoint(x: 3, y: 19))
+        gridiconsprint.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsprint.addLine(to: CGPoint(x: 0, y: 11))
+        gridiconsprint.addCurve(to: CGPoint(x: 2, y: 9), controlPoint1: CGPoint(x: 0, y: 9.89), controlPoint2: CGPoint(x: 0.9, y: 9))
+        gridiconsprint.addLine(to: CGPoint(x: 3, y: 9))
+        gridiconsprint.addLine(to: CGPoint(x: 3, y: 7))
+        gridiconsprint.addCurve(to: CGPoint(x: 5, y: 5), controlPoint1: CGPoint(x: 3, y: 5.9), controlPoint2: CGPoint(x: 3.9, y: 5))
+        gridiconsprint.addLine(to: CGPoint(x: 15, y: 5))
+        gridiconsprint.addCurve(to: CGPoint(x: 17, y: 7), controlPoint1: CGPoint(x: 16.11, y: 5), controlPoint2: CGPoint(x: 17, y: 5.9))
+        gridiconsprint.addLine(to: CGPoint(x: 17, y: 9))
+        gridiconsprint.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconsprint.addCurve(to: CGPoint(x: 20, y: 11), controlPoint1: CGPoint(x: 19.11, y: 9), controlPoint2: CGPoint(x: 20, y: 9.89))
+        gridiconsprint.addLine(to: CGPoint(x: 20, y: 19))
+        gridiconsprint.close()
+        gridiconsprint.move(to: CGPoint(x: 5, y: 9))
+        gridiconsprint.addLine(to: CGPoint(x: 15, y: 9))
+        gridiconsprint.addLine(to: CGPoint(x: 15, y: 7))
+        gridiconsprint.addLine(to: CGPoint(x: 5, y: 7))
+        gridiconsprint.addLine(to: CGPoint(x: 5, y: 9))
+        gridiconsprint.close()
+        gridiconsprint.move(to: CGPoint(x: 15, y: 16))
+        gridiconsprint.addLine(to: CGPoint(x: 5, y: 16))
+        gridiconsprint.addLine(to: CGPoint(x: 5, y: 22))
+        gridiconsprint.addLine(to: CGPoint(x: 15, y: 22))
+        gridiconsprint.addLine(to: CGPoint(x: 15, y: 16))
+        gridiconsprint.close()
+        gridiconsprint.move(to: CGPoint(x: 18, y: 12.5))
+        gridiconsprint.addCurve(to: CGPoint(x: 16.5, y: 11), controlPoint1: CGPoint(x: 18, y: 11.67), controlPoint2: CGPoint(x: 17.33, y: 11))
+        gridiconsprint.addCurve(to: CGPoint(x: 15, y: 12.5), controlPoint1: CGPoint(x: 15.67, y: 11), controlPoint2: CGPoint(x: 15, y: 11.67))
+        gridiconsprint.addCurve(to: CGPoint(x: 16.5, y: 14), controlPoint1: CGPoint(x: 15, y: 13.33), controlPoint2: CGPoint(x: 15.67, y: 14))
+        gridiconsprint.addCurve(to: CGPoint(x: 18, y: 12.5), controlPoint1: CGPoint(x: 17.33, y: 14), controlPoint2: CGPoint(x: 18, y: 13.33))
+        gridiconsprint.addLine(to: CGPoint(x: 18, y: 12.5))
+        gridiconsprint.close()
+        gridiconsprint.move(to: CGPoint(x: 18, y: 12.5))
+        context.saveGState()
+        context.translateBy(x: 908, y: 516)
         gridiconsprint.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsprint.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsposts(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsposts(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -526)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -526)
         
         /// gridicons-posts
         let gridiconsposts = UIBezierPath()
-        gridiconsposts.moveToPoint(CGPoint(x: 13, y: 24))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsposts.addLineToPoint(CGPoint(x: 13, y: 22))
-        gridiconsposts.addLineToPoint(CGPoint(x: 13, y: 24))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 18, y: 14))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 0, y: 10))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsposts.addLineToPoint(CGPoint(x: 11, y: 12))
-        gridiconsposts.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 14, y: 10))
-        gridiconsposts.addLineToPoint(CGPoint(x: 14, y: 12))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsposts.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 8, y: 18))
-        gridiconsposts.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsposts.addLineToPoint(CGPoint(x: 18, y: 18))
-        gridiconsposts.addLineToPoint(CGPoint(x: 8, y: 18))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 0, y: 18))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsposts.addLineToPoint(CGPoint(x: 5, y: 20))
-        gridiconsposts.addLineToPoint(CGPoint(x: 5, y: 18))
-        gridiconsposts.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsposts.closePath()
-        gridiconsposts.moveToPoint(CGPoint(x: 0, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 516)
+        gridiconsposts.move(to: CGPoint(x: 13, y: 24))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsposts.addLine(to: CGPoint(x: 13, y: 22))
+        gridiconsposts.addLine(to: CGPoint(x: 13, y: 24))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 18, y: 14))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 0, y: 10))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsposts.addLine(to: CGPoint(x: 11, y: 12))
+        gridiconsposts.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 14, y: 10))
+        gridiconsposts.addLine(to: CGPoint(x: 14, y: 12))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsposts.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 8, y: 18))
+        gridiconsposts.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsposts.addLine(to: CGPoint(x: 18, y: 18))
+        gridiconsposts.addLine(to: CGPoint(x: 8, y: 18))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 0, y: 18))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsposts.addLine(to: CGPoint(x: 5, y: 20))
+        gridiconsposts.addLine(to: CGPoint(x: 5, y: 18))
+        gridiconsposts.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsposts.close()
+        gridiconsposts.move(to: CGPoint(x: 0, y: 18))
+        context.saveGState()
+        context.translateBy(x: 874, y: 516)
         gridiconsposts.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsposts.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconspopout(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconspopout(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -522)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -522)
         
         /// gridicons-popout
         let gridiconspopout = UIBezierPath()
-        gridiconspopout.moveToPoint(CGPoint(x: 3, y: 10))
-        gridiconspopout.addLineToPoint(CGPoint(x: 3, y: 8))
-        gridiconspopout.addCurveToPoint(CGPoint(x: 5, y: 6), controlPoint1: CGPoint(x: 3, y: 6.89), controlPoint2: CGPoint(x: 3.9, y: 6))
-        gridiconspopout.addLineToPoint(CGPoint(x: 16, y: 6))
-        gridiconspopout.addCurveToPoint(CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 17.11, y: 6), controlPoint2: CGPoint(x: 18, y: 6.89))
-        gridiconspopout.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconspopout.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
-        gridiconspopout.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconspopout.addCurveToPoint(CGPoint(x: 3, y: 22), controlPoint1: CGPoint(x: 3.9, y: 24), controlPoint2: CGPoint(x: 3, y: 23.11))
-        gridiconspopout.addLineToPoint(CGPoint(x: 3, y: 20))
-        gridiconspopout.addLineToPoint(CGPoint(x: 5, y: 20))
-        gridiconspopout.addLineToPoint(CGPoint(x: 5, y: 22))
-        gridiconspopout.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconspopout.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconspopout.addLineToPoint(CGPoint(x: 5, y: 8))
-        gridiconspopout.addLineToPoint(CGPoint(x: 5, y: 10))
-        gridiconspopout.addLineToPoint(CGPoint(x: 3, y: 10))
-        gridiconspopout.closePath()
-        gridiconspopout.moveToPoint(CGPoint(x: 8.5, y: 9.5))
-        gridiconspopout.addLineToPoint(CGPoint(x: 7.09, y: 10.91))
-        gridiconspopout.addLineToPoint(CGPoint(x: 10.17, y: 14))
-        gridiconspopout.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconspopout.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconspopout.addLineToPoint(CGPoint(x: 10.17, y: 16))
-        gridiconspopout.addLineToPoint(CGPoint(x: 7.09, y: 19.09))
-        gridiconspopout.addLineToPoint(CGPoint(x: 8.5, y: 20.5))
-        gridiconspopout.addLineToPoint(CGPoint(x: 14, y: 15))
-        gridiconspopout.addLineToPoint(CGPoint(x: 8.5, y: 9.5))
-        gridiconspopout.closePath()
-        gridiconspopout.moveToPoint(CGPoint(x: 8.5, y: 9.5))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 516)
+        gridiconspopout.move(to: CGPoint(x: 3, y: 10))
+        gridiconspopout.addLine(to: CGPoint(x: 3, y: 8))
+        gridiconspopout.addCurve(to: CGPoint(x: 5, y: 6), controlPoint1: CGPoint(x: 3, y: 6.89), controlPoint2: CGPoint(x: 3.9, y: 6))
+        gridiconspopout.addLine(to: CGPoint(x: 16, y: 6))
+        gridiconspopout.addCurve(to: CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 17.11, y: 6), controlPoint2: CGPoint(x: 18, y: 6.89))
+        gridiconspopout.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconspopout.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
+        gridiconspopout.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconspopout.addCurve(to: CGPoint(x: 3, y: 22), controlPoint1: CGPoint(x: 3.9, y: 24), controlPoint2: CGPoint(x: 3, y: 23.11))
+        gridiconspopout.addLine(to: CGPoint(x: 3, y: 20))
+        gridiconspopout.addLine(to: CGPoint(x: 5, y: 20))
+        gridiconspopout.addLine(to: CGPoint(x: 5, y: 22))
+        gridiconspopout.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconspopout.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconspopout.addLine(to: CGPoint(x: 5, y: 8))
+        gridiconspopout.addLine(to: CGPoint(x: 5, y: 10))
+        gridiconspopout.addLine(to: CGPoint(x: 3, y: 10))
+        gridiconspopout.close()
+        gridiconspopout.move(to: CGPoint(x: 8.5, y: 9.5))
+        gridiconspopout.addLine(to: CGPoint(x: 7.09, y: 10.91))
+        gridiconspopout.addLine(to: CGPoint(x: 10.17, y: 14))
+        gridiconspopout.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconspopout.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconspopout.addLine(to: CGPoint(x: 10.17, y: 16))
+        gridiconspopout.addLine(to: CGPoint(x: 7.09, y: 19.09))
+        gridiconspopout.addLine(to: CGPoint(x: 8.5, y: 20.5))
+        gridiconspopout.addLine(to: CGPoint(x: 14, y: 15))
+        gridiconspopout.addLine(to: CGPoint(x: 8.5, y: 9.5))
+        gridiconspopout.close()
+        gridiconspopout.move(to: CGPoint(x: 8.5, y: 9.5))
+        context.saveGState()
+        context.translateBy(x: 840, y: 516)
         gridiconspopout.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconspopout.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsplus(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsplus(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -522)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -522)
         
         /// gridicons-plus
         let gridiconsplus = UIBezierPath()
-        gridiconsplus.moveToPoint(CGPoint(x: 18, y: 16))
-        gridiconsplus.addLineToPoint(CGPoint(x: 10, y: 16))
-        gridiconsplus.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconsplus.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconsplus.addLineToPoint(CGPoint(x: 8, y: 16))
-        gridiconsplus.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsplus.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsplus.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconsplus.addLineToPoint(CGPoint(x: 8, y: 6))
-        gridiconsplus.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsplus.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsplus.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsplus.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconsplus.closePath()
-        gridiconsplus.moveToPoint(CGPoint(x: 18, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 516)
+        gridiconsplus.move(to: CGPoint(x: 18, y: 16))
+        gridiconsplus.addLine(to: CGPoint(x: 10, y: 16))
+        gridiconsplus.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconsplus.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconsplus.addLine(to: CGPoint(x: 8, y: 16))
+        gridiconsplus.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsplus.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsplus.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconsplus.addLine(to: CGPoint(x: 8, y: 6))
+        gridiconsplus.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsplus.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsplus.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsplus.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconsplus.close()
+        gridiconsplus.move(to: CGPoint(x: 18, y: 16))
+        context.saveGState()
+        context.translateBy(x: 806, y: 516)
         gridiconsplus.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsplus.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsplussmall(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 12), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsplussmall(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 12), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 12), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 12)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -528)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -528)
         
         /// gridicons-plus-small
         let gridiconsplussmall = UIBezierPath()
-        gridiconsplussmall.moveToPoint(CGPoint(x: 12, y: 17))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 7, y: 17))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 7, y: 12))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 5, y: 12))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 5, y: 17))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 5, y: 19))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 7, y: 19))
-        gridiconsplussmall.addLineToPoint(CGPoint(x: 12, y: 19))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 516)
+        gridiconsplussmall.move(to: CGPoint(x: 12, y: 17))
+        gridiconsplussmall.addLine(to: CGPoint(x: 7, y: 17))
+        gridiconsplussmall.addLine(to: CGPoint(x: 7, y: 12))
+        gridiconsplussmall.addLine(to: CGPoint(x: 5, y: 12))
+        gridiconsplussmall.addLine(to: CGPoint(x: 5, y: 17))
+        gridiconsplussmall.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsplussmall.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsplussmall.addLine(to: CGPoint(x: 5, y: 19))
+        gridiconsplussmall.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconsplussmall.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconsplussmall.addLine(to: CGPoint(x: 7, y: 19))
+        gridiconsplussmall.addLine(to: CGPoint(x: 12, y: 19))
+        context.saveGState()
+        context.translateBy(x: 772, y: 516)
         gridiconsplussmall.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsplussmall.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsplugins(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsplugins(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -486)
         
         /// gridicons-plugins
         let gridiconsplugins = UIBezierPath()
-        gridiconsplugins.moveToPoint(CGPoint(x: 11, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 11, y: 5))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 11, y: 4.45), controlPoint2: CGPoint(x: 10.55, y: 4))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 9, y: 5), controlPoint1: CGPoint(x: 9.45, y: 4), controlPoint2: CGPoint(x: 9, y: 4.45))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 9, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 5, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 5, y: 5))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 4, y: 4), controlPoint1: CGPoint(x: 5, y: 4.45), controlPoint2: CGPoint(x: 4.55, y: 4))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 3, y: 5), controlPoint1: CGPoint(x: 3.45, y: 4), controlPoint2: CGPoint(x: 3, y: 4.45))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 3, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 4, y: 20.32), controlPoint1: CGPoint(x: 0, y: 16.79), controlPoint2: CGPoint(x: 1.64, y: 19.19))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 4, y: 24))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 10, y: 20.32))
-        gridiconsplugins.addCurveToPoint(CGPoint(x: 14, y: 14), controlPoint1: CGPoint(x: 12.36, y: 19.19), controlPoint2: CGPoint(x: 14, y: 16.79))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconsplugins.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconsplugins.closePath()
-        gridiconsplugins.moveToPoint(CGPoint(x: 11, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 482)
+        gridiconsplugins.move(to: CGPoint(x: 11, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 11, y: 5))
+        gridiconsplugins.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 11, y: 4.45), controlPoint2: CGPoint(x: 10.55, y: 4))
+        gridiconsplugins.addCurve(to: CGPoint(x: 9, y: 5), controlPoint1: CGPoint(x: 9.45, y: 4), controlPoint2: CGPoint(x: 9, y: 4.45))
+        gridiconsplugins.addLine(to: CGPoint(x: 9, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 5, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 5, y: 5))
+        gridiconsplugins.addCurve(to: CGPoint(x: 4, y: 4), controlPoint1: CGPoint(x: 5, y: 4.45), controlPoint2: CGPoint(x: 4.55, y: 4))
+        gridiconsplugins.addCurve(to: CGPoint(x: 3, y: 5), controlPoint1: CGPoint(x: 3.45, y: 4), controlPoint2: CGPoint(x: 3, y: 4.45))
+        gridiconsplugins.addLine(to: CGPoint(x: 3, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsplugins.addCurve(to: CGPoint(x: 4, y: 20.32), controlPoint1: CGPoint(x: 0, y: 16.79), controlPoint2: CGPoint(x: 1.64, y: 19.19))
+        gridiconsplugins.addLine(to: CGPoint(x: 4, y: 24))
+        gridiconsplugins.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconsplugins.addLine(to: CGPoint(x: 10, y: 20.32))
+        gridiconsplugins.addCurve(to: CGPoint(x: 14, y: 14), controlPoint1: CGPoint(x: 12.36, y: 19.19), controlPoint2: CGPoint(x: 14, y: 16.79))
+        gridiconsplugins.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsplugins.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconsplugins.close()
+        gridiconsplugins.move(to: CGPoint(x: 11, y: 10))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 482)
         gridiconsplugins.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsplugins.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsphone(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsphone(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -486)
         
         /// gridicons-phone
         let gridiconsphone = UIBezierPath()
-        gridiconsphone.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsphone.addLineToPoint(CGPoint(x: 2, y: 4))
-        gridiconsphone.addCurveToPoint(CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
-        gridiconsphone.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsphone.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsphone.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconsphone.addCurveToPoint(CGPoint(x: 12, y: 22), controlPoint1: CGPoint(x: 11.11, y: 24), controlPoint2: CGPoint(x: 12, y: 23.11))
-        gridiconsphone.addLineToPoint(CGPoint(x: 12, y: 6))
-        gridiconsphone.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 12, y: 4.89), controlPoint2: CGPoint(x: 11.11, y: 4))
-        gridiconsphone.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsphone.closePath()
-        gridiconsphone.moveToPoint(CGPoint(x: 7, y: 23))
-        gridiconsphone.addLineToPoint(CGPoint(x: 5, y: 23))
-        gridiconsphone.addLineToPoint(CGPoint(x: 5, y: 22))
-        gridiconsphone.addLineToPoint(CGPoint(x: 7, y: 22))
-        gridiconsphone.addLineToPoint(CGPoint(x: 7, y: 23))
-        gridiconsphone.closePath()
-        gridiconsphone.moveToPoint(CGPoint(x: 10, y: 21))
-        gridiconsphone.addLineToPoint(CGPoint(x: 2, y: 21))
-        gridiconsphone.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconsphone.addLineToPoint(CGPoint(x: 10, y: 7))
-        gridiconsphone.addLineToPoint(CGPoint(x: 10, y: 21))
-        gridiconsphone.closePath()
-        gridiconsphone.moveToPoint(CGPoint(x: 10, y: 21))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 482)
+        gridiconsphone.move(to: CGPoint(x: 10, y: 4))
+        gridiconsphone.addLine(to: CGPoint(x: 2, y: 4))
+        gridiconsphone.addCurve(to: CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
+        gridiconsphone.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsphone.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsphone.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconsphone.addCurve(to: CGPoint(x: 12, y: 22), controlPoint1: CGPoint(x: 11.11, y: 24), controlPoint2: CGPoint(x: 12, y: 23.11))
+        gridiconsphone.addLine(to: CGPoint(x: 12, y: 6))
+        gridiconsphone.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 12, y: 4.89), controlPoint2: CGPoint(x: 11.11, y: 4))
+        gridiconsphone.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsphone.close()
+        gridiconsphone.move(to: CGPoint(x: 7, y: 23))
+        gridiconsphone.addLine(to: CGPoint(x: 5, y: 23))
+        gridiconsphone.addLine(to: CGPoint(x: 5, y: 22))
+        gridiconsphone.addLine(to: CGPoint(x: 7, y: 22))
+        gridiconsphone.addLine(to: CGPoint(x: 7, y: 23))
+        gridiconsphone.close()
+        gridiconsphone.move(to: CGPoint(x: 10, y: 21))
+        gridiconsphone.addLine(to: CGPoint(x: 2, y: 21))
+        gridiconsphone.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconsphone.addLine(to: CGPoint(x: 10, y: 7))
+        gridiconsphone.addLine(to: CGPoint(x: 10, y: 21))
+        gridiconsphone.close()
+        gridiconsphone.move(to: CGPoint(x: 10, y: 21))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 482)
         gridiconsphone.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsphone.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconspencil(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconspencil(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -487)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -487)
         
         /// gridicons-pencil
         let gridiconspencil = UIBezierPath()
-        gridiconspencil.moveToPoint(CGPoint(x: 10, y: 9))
-        gridiconspencil.addLineToPoint(CGPoint(x: 15, y: 14))
-        gridiconspencil.addLineToPoint(CGPoint(x: 5.49, y: 23.51))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 5.48, y: 21.02), controlPoint1: CGPoint(x: 4.8, y: 22.82), controlPoint2: CGPoint(x: 4.8, y: 21.72))
-        gridiconspencil.addLineToPoint(CGPoint(x: 5.48, y: 21.02))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 2.99, y: 21.01), controlPoint1: CGPoint(x: 4.79, y: 21.7), controlPoint2: CGPoint(x: 3.68, y: 21.69))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 2.96, y: 18.56), controlPoint1: CGPoint(x: 2.32, y: 20.33), controlPoint2: CGPoint(x: 2.31, y: 19.25))
-        gridiconspencil.addLineToPoint(CGPoint(x: 2.95, y: 18.55))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 0.49, y: 18.51), controlPoint1: CGPoint(x: 2.25, y: 19.2), controlPoint2: CGPoint(x: 1.17, y: 19.19))
-        gridiconspencil.addLineToPoint(CGPoint(x: 10, y: 9))
-        gridiconspencil.closePath()
-        gridiconspencil.moveToPoint(CGPoint(x: 17.59, y: 8.59))
-        gridiconspencil.addLineToPoint(CGPoint(x: 15.41, y: 6.41))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 12.59, y: 6.41), controlPoint1: CGPoint(x: 14.63, y: 5.63), controlPoint2: CGPoint(x: 13.37, y: 5.63))
-        gridiconspencil.addLineToPoint(CGPoint(x: 11, y: 8))
-        gridiconspencil.addLineToPoint(CGPoint(x: 16, y: 13))
-        gridiconspencil.addLineToPoint(CGPoint(x: 17.59, y: 11.41))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 17.59, y: 8.59), controlPoint1: CGPoint(x: 18.37, y: 10.63), controlPoint2: CGPoint(x: 18.37, y: 9.37))
-        gridiconspencil.addLineToPoint(CGPoint(x: 17.59, y: 8.59))
-        gridiconspencil.closePath()
-        gridiconspencil.moveToPoint(CGPoint(x: 0, y: 21))
-        gridiconspencil.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconspencil.addLineToPoint(CGPoint(x: 3, y: 24))
-        gridiconspencil.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 3, y: 22.34), controlPoint2: CGPoint(x: 1.66, y: 21))
-        gridiconspencil.addLineToPoint(CGPoint(x: 0, y: 21))
-        gridiconspencil.closePath()
-        gridiconspencil.moveToPoint(CGPoint(x: 0, y: 21))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 482)
+        gridiconspencil.move(to: CGPoint(x: 10, y: 9))
+        gridiconspencil.addLine(to: CGPoint(x: 15, y: 14))
+        gridiconspencil.addLine(to: CGPoint(x: 5.49, y: 23.51))
+        gridiconspencil.addCurve(to: CGPoint(x: 5.48, y: 21.02), controlPoint1: CGPoint(x: 4.8, y: 22.82), controlPoint2: CGPoint(x: 4.8, y: 21.72))
+        gridiconspencil.addLine(to: CGPoint(x: 5.48, y: 21.02))
+        gridiconspencil.addCurve(to: CGPoint(x: 2.99, y: 21.01), controlPoint1: CGPoint(x: 4.79, y: 21.7), controlPoint2: CGPoint(x: 3.68, y: 21.69))
+        gridiconspencil.addCurve(to: CGPoint(x: 2.96, y: 18.56), controlPoint1: CGPoint(x: 2.32, y: 20.33), controlPoint2: CGPoint(x: 2.31, y: 19.25))
+        gridiconspencil.addLine(to: CGPoint(x: 2.95, y: 18.55))
+        gridiconspencil.addCurve(to: CGPoint(x: 0.49, y: 18.51), controlPoint1: CGPoint(x: 2.25, y: 19.2), controlPoint2: CGPoint(x: 1.17, y: 19.19))
+        gridiconspencil.addLine(to: CGPoint(x: 10, y: 9))
+        gridiconspencil.close()
+        gridiconspencil.move(to: CGPoint(x: 17.59, y: 8.59))
+        gridiconspencil.addLine(to: CGPoint(x: 15.41, y: 6.41))
+        gridiconspencil.addCurve(to: CGPoint(x: 12.59, y: 6.41), controlPoint1: CGPoint(x: 14.63, y: 5.63), controlPoint2: CGPoint(x: 13.37, y: 5.63))
+        gridiconspencil.addLine(to: CGPoint(x: 11, y: 8))
+        gridiconspencil.addLine(to: CGPoint(x: 16, y: 13))
+        gridiconspencil.addLine(to: CGPoint(x: 17.59, y: 11.41))
+        gridiconspencil.addCurve(to: CGPoint(x: 17.59, y: 8.59), controlPoint1: CGPoint(x: 18.37, y: 10.63), controlPoint2: CGPoint(x: 18.37, y: 9.37))
+        gridiconspencil.addLine(to: CGPoint(x: 17.59, y: 8.59))
+        gridiconspencil.close()
+        gridiconspencil.move(to: CGPoint(x: 0, y: 21))
+        gridiconspencil.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconspencil.addLine(to: CGPoint(x: 3, y: 24))
+        gridiconspencil.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 3, y: 22.34), controlPoint2: CGPoint(x: 1.66, y: 21))
+        gridiconspencil.addLine(to: CGPoint(x: 0, y: 21))
+        gridiconspencil.close()
+        gridiconspencil.move(to: CGPoint(x: 0, y: 21))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 482)
         gridiconspencil.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconspencil.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconspages(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconspages(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -486)
         
         /// gridicons-pages
         let gridiconspages = UIBezierPath()
-        gridiconspages.moveToPoint(CGPoint(x: 12, y: 10))
-        gridiconspages.addLineToPoint(CGPoint(x: 4, y: 10))
-        gridiconspages.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconspages.addLineToPoint(CGPoint(x: 12, y: 8))
-        gridiconspages.addLineToPoint(CGPoint(x: 12, y: 10))
-        gridiconspages.closePath()
-        gridiconspages.moveToPoint(CGPoint(x: 12, y: 12))
-        gridiconspages.addLineToPoint(CGPoint(x: 4, y: 12))
-        gridiconspages.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconspages.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconspages.addLineToPoint(CGPoint(x: 12, y: 12))
-        gridiconspages.closePath()
-        gridiconspages.moveToPoint(CGPoint(x: 16, y: 6))
-        gridiconspages.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconspages.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconspages.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconspages.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconspages.addLineToPoint(CGPoint(x: 0, y: 6))
-        gridiconspages.addCurveToPoint(CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 0, y: 4.89), controlPoint2: CGPoint(x: 0.9, y: 4))
-        gridiconspages.addLineToPoint(CGPoint(x: 14, y: 4))
-        gridiconspages.addCurveToPoint(CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 15.11, y: 4), controlPoint2: CGPoint(x: 16, y: 4.89))
-        gridiconspages.addLineToPoint(CGPoint(x: 16, y: 6))
-        gridiconspages.closePath()
-        gridiconspages.moveToPoint(CGPoint(x: 14, y: 16))
-        gridiconspages.addLineToPoint(CGPoint(x: 14, y: 6))
-        gridiconspages.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconspages.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconspages.addLineToPoint(CGPoint(x: 8, y: 22))
-        gridiconspages.addLineToPoint(CGPoint(x: 8, y: 18))
-        gridiconspages.addCurveToPoint(CGPoint(x: 10, y: 16), controlPoint1: CGPoint(x: 8, y: 16.9), controlPoint2: CGPoint(x: 8.89, y: 16))
-        gridiconspages.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconspages.closePath()
-        gridiconspages.moveToPoint(CGPoint(x: 14, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 482)
+        gridiconspages.move(to: CGPoint(x: 12, y: 10))
+        gridiconspages.addLine(to: CGPoint(x: 4, y: 10))
+        gridiconspages.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconspages.addLine(to: CGPoint(x: 12, y: 8))
+        gridiconspages.addLine(to: CGPoint(x: 12, y: 10))
+        gridiconspages.close()
+        gridiconspages.move(to: CGPoint(x: 12, y: 12))
+        gridiconspages.addLine(to: CGPoint(x: 4, y: 12))
+        gridiconspages.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconspages.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconspages.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconspages.close()
+        gridiconspages.move(to: CGPoint(x: 16, y: 6))
+        gridiconspages.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconspages.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconspages.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconspages.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconspages.addLine(to: CGPoint(x: 0, y: 6))
+        gridiconspages.addCurve(to: CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 0, y: 4.89), controlPoint2: CGPoint(x: 0.9, y: 4))
+        gridiconspages.addLine(to: CGPoint(x: 14, y: 4))
+        gridiconspages.addCurve(to: CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 15.11, y: 4), controlPoint2: CGPoint(x: 16, y: 4.89))
+        gridiconspages.addLine(to: CGPoint(x: 16, y: 6))
+        gridiconspages.close()
+        gridiconspages.move(to: CGPoint(x: 14, y: 16))
+        gridiconspages.addLine(to: CGPoint(x: 14, y: 6))
+        gridiconspages.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconspages.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconspages.addLine(to: CGPoint(x: 8, y: 22))
+        gridiconspages.addLine(to: CGPoint(x: 8, y: 18))
+        gridiconspages.addCurve(to: CGPoint(x: 10, y: 16), controlPoint1: CGPoint(x: 8, y: 16.9), controlPoint2: CGPoint(x: 8.89, y: 16))
+        gridiconspages.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconspages.close()
+        gridiconspages.move(to: CGPoint(x: 14, y: 16))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 482)
         gridiconspages.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconspages.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsnotice(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsnotice(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -486)
         
         /// gridicons-notice
         let gridiconsnotice = UIBezierPath()
-        gridiconsnotice.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsnotice.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsnotice.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsnotice.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsnotice.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsnotice.closePath()
-        gridiconsnotice.moveToPoint(CGPoint(x: 11, y: 19))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsnotice.closePath()
-        gridiconsnotice.moveToPoint(CGPoint(x: 11, y: 15))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 8.5, y: 9))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 11.5, y: 9))
-        gridiconsnotice.addLineToPoint(CGPoint(x: 11, y: 15))
-        gridiconsnotice.closePath()
-        gridiconsnotice.moveToPoint(CGPoint(x: 11, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 482)
+        gridiconsnotice.move(to: CGPoint(x: 10, y: 4))
+        gridiconsnotice.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsnotice.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsnotice.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsnotice.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsnotice.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsnotice.close()
+        gridiconsnotice.move(to: CGPoint(x: 11, y: 19))
+        gridiconsnotice.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsnotice.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconsnotice.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconsnotice.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsnotice.close()
+        gridiconsnotice.move(to: CGPoint(x: 11, y: 15))
+        gridiconsnotice.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsnotice.addLine(to: CGPoint(x: 8.5, y: 9))
+        gridiconsnotice.addLine(to: CGPoint(x: 11.5, y: 9))
+        gridiconsnotice.addLine(to: CGPoint(x: 11, y: 15))
+        gridiconsnotice.close()
+        gridiconsnotice.move(to: CGPoint(x: 11, y: 15))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 482)
         gridiconsnotice.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsnotice.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsnoticeoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsnoticeoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -486)
         
         /// gridicons-notice-outline
         let gridiconsnoticeoutline = UIBezierPath()
-        gridiconsnoticeoutline.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsnoticeoutline.closePath()
-        gridiconsnoticeoutline.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsnoticeoutline.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsnoticeoutline.closePath()
-        gridiconsnoticeoutline.moveToPoint(CGPoint(x: 11, y: 17))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconsnoticeoutline.closePath()
-        gridiconsnoticeoutline.moveToPoint(CGPoint(x: 9, y: 15))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 11, y: 15))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 11.5, y: 9))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 8.5, y: 9))
-        gridiconsnoticeoutline.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsnoticeoutline.closePath()
-        gridiconsnoticeoutline.moveToPoint(CGPoint(x: 9, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 482)
+        gridiconsnoticeoutline.move(to: CGPoint(x: 10, y: 6))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsnoticeoutline.close()
+        gridiconsnoticeoutline.move(to: CGPoint(x: 10, y: 4))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsnoticeoutline.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsnoticeoutline.close()
+        gridiconsnoticeoutline.move(to: CGPoint(x: 11, y: 17))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconsnoticeoutline.close()
+        gridiconsnoticeoutline.move(to: CGPoint(x: 9, y: 15))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 11, y: 15))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 11.5, y: 9))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 8.5, y: 9))
+        gridiconsnoticeoutline.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsnoticeoutline.close()
+        gridiconsnoticeoutline.move(to: CGPoint(x: 9, y: 15))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 482)
         gridiconsnoticeoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsnoticeoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsnotvisible(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsnotvisible(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -487)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -487)
         
         /// gridicons-not-visible
         let gridiconsnotvisible = UIBezierPath()
-        gridiconsnotvisible.moveToPoint(CGPoint(x: 0, y: 14))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 11, y: 8), controlPoint1: CGPoint(x: 0, y: 14), controlPoint2: CGPoint(x: 4.19, y: 8))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 13.68, y: 8.32), controlPoint1: CGPoint(x: 11.95, y: 8), controlPoint2: CGPoint(x: 12.84, y: 8.12))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 7.36, y: 14.64))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 7, y: 13), controlPoint1: CGPoint(x: 7.13, y: 14.14), controlPoint2: CGPoint(x: 7, y: 13.59))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 7.88, y: 10.53), controlPoint1: CGPoint(x: 7, y: 12.06), controlPoint2: CGPoint(x: 7.34, y: 11.22))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 2.62, y: 14), controlPoint1: CGPoint(x: 5.48, y: 11.34), controlPoint2: CGPoint(x: 3.66, y: 12.92))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 5.6, y: 16.4), controlPoint1: CGPoint(x: 3.3, y: 14.71), controlPoint2: CGPoint(x: 4.32, y: 15.62))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 4.15, y: 17.85))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 1.5, y: 16.13), controlPoint2: CGPoint(x: 0, y: 14))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsnotvisible.closePath()
-        gridiconsnotvisible.moveToPoint(CGPoint(x: 22, y: 14))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 11, y: 20), controlPoint1: CGPoint(x: 22, y: 14), controlPoint2: CGPoint(x: 17.81, y: 20))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 8.32, y: 19.68), controlPoint1: CGPoint(x: 10.06, y: 20), controlPoint2: CGPoint(x: 9.16, y: 19.88))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 4, y: 24))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 2.5, y: 22.5))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 19.5, y: 5.5))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 21, y: 7))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 17.85, y: 10.15))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 22, y: 14), controlPoint1: CGPoint(x: 20.5, y: 11.87), controlPoint2: CGPoint(x: 22, y: 14))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 22, y: 14))
-        gridiconsnotvisible.closePath()
-        gridiconsnotvisible.moveToPoint(CGPoint(x: 19.39, y: 14.01))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 16.4, y: 11.61), controlPoint1: CGPoint(x: 18.71, y: 13.3), controlPoint2: CGPoint(x: 17.69, y: 12.38))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 15, y: 13))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 11, y: 17), controlPoint1: CGPoint(x: 15, y: 15.21), controlPoint2: CGPoint(x: 13.21, y: 17))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 10.06, y: 17.95))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 11, y: 18), controlPoint1: CGPoint(x: 10.36, y: 17.98), controlPoint2: CGPoint(x: 10.68, y: 18))
-        gridiconsnotvisible.addCurveToPoint(CGPoint(x: 19.39, y: 14.01), controlPoint1: CGPoint(x: 14.98, y: 18), controlPoint2: CGPoint(x: 17.94, y: 15.52))
-        gridiconsnotvisible.addLineToPoint(CGPoint(x: 19.39, y: 14.01))
-        gridiconsnotvisible.closePath()
-        gridiconsnotvisible.moveToPoint(CGPoint(x: 19.39, y: 14.01))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 482)
+        gridiconsnotvisible.move(to: CGPoint(x: 0, y: 14))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 11, y: 8), controlPoint1: CGPoint(x: 0, y: 14), controlPoint2: CGPoint(x: 4.19, y: 8))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 13.68, y: 8.32), controlPoint1: CGPoint(x: 11.95, y: 8), controlPoint2: CGPoint(x: 12.84, y: 8.12))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 7.36, y: 14.64))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 7, y: 13), controlPoint1: CGPoint(x: 7.13, y: 14.14), controlPoint2: CGPoint(x: 7, y: 13.59))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 7.88, y: 10.53), controlPoint1: CGPoint(x: 7, y: 12.06), controlPoint2: CGPoint(x: 7.34, y: 11.22))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 2.62, y: 14), controlPoint1: CGPoint(x: 5.48, y: 11.34), controlPoint2: CGPoint(x: 3.66, y: 12.92))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 5.6, y: 16.4), controlPoint1: CGPoint(x: 3.3, y: 14.71), controlPoint2: CGPoint(x: 4.32, y: 15.62))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 4.15, y: 17.85))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 1.5, y: 16.13), controlPoint2: CGPoint(x: 0, y: 14))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsnotvisible.close()
+        gridiconsnotvisible.move(to: CGPoint(x: 22, y: 14))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 11, y: 20), controlPoint1: CGPoint(x: 22, y: 14), controlPoint2: CGPoint(x: 17.81, y: 20))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 8.32, y: 19.68), controlPoint1: CGPoint(x: 10.06, y: 20), controlPoint2: CGPoint(x: 9.16, y: 19.88))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 4, y: 24))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 2.5, y: 22.5))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 19.5, y: 5.5))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 21, y: 7))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 17.85, y: 10.15))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 22, y: 14), controlPoint1: CGPoint(x: 20.5, y: 11.87), controlPoint2: CGPoint(x: 22, y: 14))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 22, y: 14))
+        gridiconsnotvisible.close()
+        gridiconsnotvisible.move(to: CGPoint(x: 19.39, y: 14.01))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 16.4, y: 11.61), controlPoint1: CGPoint(x: 18.71, y: 13.3), controlPoint2: CGPoint(x: 17.69, y: 12.38))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 15, y: 13))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 11, y: 17), controlPoint1: CGPoint(x: 15, y: 15.21), controlPoint2: CGPoint(x: 13.21, y: 17))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 10.06, y: 17.95))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 11, y: 18), controlPoint1: CGPoint(x: 10.36, y: 17.98), controlPoint2: CGPoint(x: 10.68, y: 18))
+        gridiconsnotvisible.addCurve(to: CGPoint(x: 19.39, y: 14.01), controlPoint1: CGPoint(x: 14.98, y: 18), controlPoint2: CGPoint(x: 17.94, y: 15.52))
+        gridiconsnotvisible.addLine(to: CGPoint(x: 19.39, y: 14.01))
+        gridiconsnotvisible.close()
+        gridiconsnotvisible.move(to: CGPoint(x: 19.39, y: 14.01))
+        context.saveGState()
+        context.translateBy(x: 976, y: 482)
         gridiconsnotvisible.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsnotvisible.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmysites(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmysites(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -486)
         
         /// gridicons-my-sites
         let gridiconsmysites = UIBezierPath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsmysites.closePath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 1.5, y: 14))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 2.23, y: 10.54), controlPoint1: CGPoint(x: 1.5, y: 12.77), controlPoint2: CGPoint(x: 1.77, y: 11.6))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 6.29, y: 21.65))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 1.5, y: 14), controlPoint1: CGPoint(x: 3.46, y: 20.27), controlPoint2: CGPoint(x: 1.5, y: 17.36))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 1.5, y: 14))
-        gridiconsmysites.closePath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 10, y: 22.5))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 7.6, y: 22.16), controlPoint1: CGPoint(x: 9.16, y: 22.5), controlPoint2: CGPoint(x: 8.36, y: 22.38))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 10.15, y: 14.75))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 12.77, y: 21.9))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 12.82, y: 22.02), controlPoint1: CGPoint(x: 12.78, y: 21.95), controlPoint2: CGPoint(x: 12.81, y: 21.98))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 10, y: 22.5), controlPoint1: CGPoint(x: 11.94, y: 22.33), controlPoint2: CGPoint(x: 10.99, y: 22.5))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 10, y: 22.5))
-        gridiconsmysites.closePath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 11.17, y: 10.02))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 12.15, y: 9.94), controlPoint1: CGPoint(x: 11.68, y: 9.99), controlPoint2: CGPoint(x: 12.15, y: 9.94))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 12.09, y: 9.23), controlPoint1: CGPoint(x: 12.6, y: 9.88), controlPoint2: CGPoint(x: 12.55, y: 9.21))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 9.82, y: 9.34), controlPoint1: CGPoint(x: 12.09, y: 9.23), controlPoint2: CGPoint(x: 10.72, y: 9.34))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 7.59, y: 9.24), controlPoint1: CGPoint(x: 8.99, y: 9.34), controlPoint2: CGPoint(x: 7.59, y: 9.24))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 7.53, y: 9.94), controlPoint1: CGPoint(x: 7.13, y: 9.21), controlPoint2: CGPoint(x: 7.07, y: 9.91))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 8.42, y: 10.02), controlPoint1: CGPoint(x: 7.53, y: 9.94), controlPoint2: CGPoint(x: 7.97, y: 9.99))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 9.75, y: 13.65))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 7.89, y: 19.23))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 4.79, y: 10.02))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 5.76, y: 9.94), controlPoint1: CGPoint(x: 5.3, y: 9.99), controlPoint2: CGPoint(x: 5.76, y: 9.94))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 5.71, y: 9.24), controlPoint1: CGPoint(x: 6.22, y: 9.89), controlPoint2: CGPoint(x: 6.16, y: 9.22))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 3.44, y: 9.35), controlPoint1: CGPoint(x: 5.71, y: 9.24), controlPoint2: CGPoint(x: 4.33, y: 9.35))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 2.9, y: 9.34), controlPoint1: CGPoint(x: 3.28, y: 9.35), controlPoint2: CGPoint(x: 3.09, y: 9.34))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 10, y: 5.5), controlPoint1: CGPoint(x: 4.42, y: 7.02), controlPoint2: CGPoint(x: 7.03, y: 5.5))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 15.74, y: 7.73), controlPoint1: CGPoint(x: 12.22, y: 5.5), controlPoint2: CGPoint(x: 14.23, y: 6.35))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 15.63, y: 7.72), controlPoint1: CGPoint(x: 15.7, y: 7.73), controlPoint2: CGPoint(x: 15.67, y: 7.72))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 14.2, y: 9.23), controlPoint1: CGPoint(x: 14.79, y: 7.72), controlPoint2: CGPoint(x: 14.2, y: 8.45))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 15.04, y: 11.23), controlPoint1: CGPoint(x: 14.2, y: 9.93), controlPoint2: CGPoint(x: 14.61, y: 10.53))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 15.74, y: 13.57), controlPoint1: CGPoint(x: 15.36, y: 11.79), controlPoint2: CGPoint(x: 15.74, y: 12.52))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 15.09, y: 16.32), controlPoint1: CGPoint(x: 15.74, y: 14.3), controlPoint2: CGPoint(x: 15.46, y: 15.14))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 14.25, y: 19.15))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 11.18, y: 10.01))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 11.17, y: 10.02))
-        gridiconsmysites.closePath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 14.27, y: 21.35))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 16.87, y: 13.84))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 17.52, y: 10.8), controlPoint1: CGPoint(x: 17.36, y: 12.63), controlPoint2: CGPoint(x: 17.52, y: 11.66))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 17.46, y: 9.92), controlPoint1: CGPoint(x: 17.52, y: 10.48), controlPoint2: CGPoint(x: 17.5, y: 10.2))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 18.5, y: 14), controlPoint1: CGPoint(x: 18.12, y: 11.13), controlPoint2: CGPoint(x: 18.5, y: 12.52))
-        gridiconsmysites.addCurveToPoint(CGPoint(x: 14.27, y: 21.35), controlPoint1: CGPoint(x: 18.5, y: 17.14), controlPoint2: CGPoint(x: 16.8, y: 19.88))
-        gridiconsmysites.addLineToPoint(CGPoint(x: 14.27, y: 21.35))
-        gridiconsmysites.closePath()
-        gridiconsmysites.moveToPoint(CGPoint(x: 14.27, y: 21.35))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 482)
+        gridiconsmysites.move(to: CGPoint(x: 10, y: 4))
+        gridiconsmysites.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsmysites.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsmysites.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsmysites.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsmysites.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsmysites.close()
+        gridiconsmysites.move(to: CGPoint(x: 1.5, y: 14))
+        gridiconsmysites.addCurve(to: CGPoint(x: 2.23, y: 10.54), controlPoint1: CGPoint(x: 1.5, y: 12.77), controlPoint2: CGPoint(x: 1.77, y: 11.6))
+        gridiconsmysites.addLine(to: CGPoint(x: 6.29, y: 21.65))
+        gridiconsmysites.addCurve(to: CGPoint(x: 1.5, y: 14), controlPoint1: CGPoint(x: 3.46, y: 20.27), controlPoint2: CGPoint(x: 1.5, y: 17.36))
+        gridiconsmysites.addLine(to: CGPoint(x: 1.5, y: 14))
+        gridiconsmysites.close()
+        gridiconsmysites.move(to: CGPoint(x: 10, y: 22.5))
+        gridiconsmysites.addCurve(to: CGPoint(x: 7.6, y: 22.16), controlPoint1: CGPoint(x: 9.16, y: 22.5), controlPoint2: CGPoint(x: 8.36, y: 22.38))
+        gridiconsmysites.addLine(to: CGPoint(x: 10.15, y: 14.75))
+        gridiconsmysites.addLine(to: CGPoint(x: 12.77, y: 21.9))
+        gridiconsmysites.addCurve(to: CGPoint(x: 12.82, y: 22.02), controlPoint1: CGPoint(x: 12.78, y: 21.95), controlPoint2: CGPoint(x: 12.81, y: 21.98))
+        gridiconsmysites.addCurve(to: CGPoint(x: 10, y: 22.5), controlPoint1: CGPoint(x: 11.94, y: 22.33), controlPoint2: CGPoint(x: 10.99, y: 22.5))
+        gridiconsmysites.addLine(to: CGPoint(x: 10, y: 22.5))
+        gridiconsmysites.close()
+        gridiconsmysites.move(to: CGPoint(x: 11.17, y: 10.02))
+        gridiconsmysites.addCurve(to: CGPoint(x: 12.15, y: 9.94), controlPoint1: CGPoint(x: 11.68, y: 9.99), controlPoint2: CGPoint(x: 12.15, y: 9.94))
+        gridiconsmysites.addCurve(to: CGPoint(x: 12.09, y: 9.23), controlPoint1: CGPoint(x: 12.6, y: 9.88), controlPoint2: CGPoint(x: 12.55, y: 9.21))
+        gridiconsmysites.addCurve(to: CGPoint(x: 9.82, y: 9.34), controlPoint1: CGPoint(x: 12.09, y: 9.23), controlPoint2: CGPoint(x: 10.72, y: 9.34))
+        gridiconsmysites.addCurve(to: CGPoint(x: 7.59, y: 9.24), controlPoint1: CGPoint(x: 8.99, y: 9.34), controlPoint2: CGPoint(x: 7.59, y: 9.24))
+        gridiconsmysites.addCurve(to: CGPoint(x: 7.53, y: 9.94), controlPoint1: CGPoint(x: 7.13, y: 9.21), controlPoint2: CGPoint(x: 7.07, y: 9.91))
+        gridiconsmysites.addCurve(to: CGPoint(x: 8.42, y: 10.02), controlPoint1: CGPoint(x: 7.53, y: 9.94), controlPoint2: CGPoint(x: 7.97, y: 9.99))
+        gridiconsmysites.addLine(to: CGPoint(x: 9.75, y: 13.65))
+        gridiconsmysites.addLine(to: CGPoint(x: 7.89, y: 19.23))
+        gridiconsmysites.addLine(to: CGPoint(x: 4.79, y: 10.02))
+        gridiconsmysites.addCurve(to: CGPoint(x: 5.76, y: 9.94), controlPoint1: CGPoint(x: 5.3, y: 9.99), controlPoint2: CGPoint(x: 5.76, y: 9.94))
+        gridiconsmysites.addCurve(to: CGPoint(x: 5.71, y: 9.24), controlPoint1: CGPoint(x: 6.22, y: 9.89), controlPoint2: CGPoint(x: 6.16, y: 9.22))
+        gridiconsmysites.addCurve(to: CGPoint(x: 3.44, y: 9.35), controlPoint1: CGPoint(x: 5.71, y: 9.24), controlPoint2: CGPoint(x: 4.33, y: 9.35))
+        gridiconsmysites.addCurve(to: CGPoint(x: 2.9, y: 9.34), controlPoint1: CGPoint(x: 3.28, y: 9.35), controlPoint2: CGPoint(x: 3.09, y: 9.34))
+        gridiconsmysites.addCurve(to: CGPoint(x: 10, y: 5.5), controlPoint1: CGPoint(x: 4.42, y: 7.02), controlPoint2: CGPoint(x: 7.03, y: 5.5))
+        gridiconsmysites.addCurve(to: CGPoint(x: 15.74, y: 7.73), controlPoint1: CGPoint(x: 12.22, y: 5.5), controlPoint2: CGPoint(x: 14.23, y: 6.35))
+        gridiconsmysites.addCurve(to: CGPoint(x: 15.63, y: 7.72), controlPoint1: CGPoint(x: 15.7, y: 7.73), controlPoint2: CGPoint(x: 15.67, y: 7.72))
+        gridiconsmysites.addCurve(to: CGPoint(x: 14.2, y: 9.23), controlPoint1: CGPoint(x: 14.79, y: 7.72), controlPoint2: CGPoint(x: 14.2, y: 8.45))
+        gridiconsmysites.addCurve(to: CGPoint(x: 15.04, y: 11.23), controlPoint1: CGPoint(x: 14.2, y: 9.93), controlPoint2: CGPoint(x: 14.61, y: 10.53))
+        gridiconsmysites.addCurve(to: CGPoint(x: 15.74, y: 13.57), controlPoint1: CGPoint(x: 15.36, y: 11.79), controlPoint2: CGPoint(x: 15.74, y: 12.52))
+        gridiconsmysites.addCurve(to: CGPoint(x: 15.09, y: 16.32), controlPoint1: CGPoint(x: 15.74, y: 14.3), controlPoint2: CGPoint(x: 15.46, y: 15.14))
+        gridiconsmysites.addLine(to: CGPoint(x: 14.25, y: 19.15))
+        gridiconsmysites.addLine(to: CGPoint(x: 11.18, y: 10.01))
+        gridiconsmysites.addLine(to: CGPoint(x: 11.17, y: 10.02))
+        gridiconsmysites.close()
+        gridiconsmysites.move(to: CGPoint(x: 14.27, y: 21.35))
+        gridiconsmysites.addLine(to: CGPoint(x: 16.87, y: 13.84))
+        gridiconsmysites.addCurve(to: CGPoint(x: 17.52, y: 10.8), controlPoint1: CGPoint(x: 17.36, y: 12.63), controlPoint2: CGPoint(x: 17.52, y: 11.66))
+        gridiconsmysites.addCurve(to: CGPoint(x: 17.46, y: 9.92), controlPoint1: CGPoint(x: 17.52, y: 10.48), controlPoint2: CGPoint(x: 17.5, y: 10.2))
+        gridiconsmysites.addCurve(to: CGPoint(x: 18.5, y: 14), controlPoint1: CGPoint(x: 18.12, y: 11.13), controlPoint2: CGPoint(x: 18.5, y: 12.52))
+        gridiconsmysites.addCurve(to: CGPoint(x: 14.27, y: 21.35), controlPoint1: CGPoint(x: 18.5, y: 17.14), controlPoint2: CGPoint(x: 16.8, y: 19.88))
+        gridiconsmysites.addLine(to: CGPoint(x: 14.27, y: 21.35))
+        gridiconsmysites.close()
+        gridiconsmysites.move(to: CGPoint(x: 14.27, y: 21.35))
+        context.saveGState()
+        context.translateBy(x: 942, y: 482)
         gridiconsmysites.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmysites.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmysiteshorizon(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmysiteshorizon(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -486)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -486)
         
         /// gridicons-my-sites-horizon
         let gridiconsmysiteshorizon = UIBezierPath()
-        gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 9.94, y: 15.93))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 10.7, y: 13.65))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 9.38, y: 10.02))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 8.49, y: 9.94), controlPoint1: CGPoint(x: 8.92, y: 9.99), controlPoint2: CGPoint(x: 8.49, y: 9.94))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 8.54, y: 9.24), controlPoint1: CGPoint(x: 8.03, y: 9.91), controlPoint2: CGPoint(x: 8.08, y: 9.21))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.78, y: 9.34), controlPoint1: CGPoint(x: 8.54, y: 9.24), controlPoint2: CGPoint(x: 9.95, y: 9.34))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 13.05, y: 9.24), controlPoint1: CGPoint(x: 11.67, y: 9.34), controlPoint2: CGPoint(x: 13.05, y: 9.24))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 13.1, y: 9.94), controlPoint1: CGPoint(x: 13.51, y: 9.21), controlPoint2: CGPoint(x: 13.56, y: 9.88))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 12.13, y: 10.02), controlPoint1: CGPoint(x: 13.1, y: 9.94), controlPoint2: CGPoint(x: 12.64, y: 9.99))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 14.14, y: 15.98))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 11.54, y: 15.93), controlPoint1: CGPoint(x: 13.26, y: 15.95), controlPoint2: CGPoint(x: 12.4, y: 15.93))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 11.11, y: 14.75))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 10.7, y: 15.92))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 9.94, y: 15.94), controlPoint1: CGPoint(x: 10.45, y: 15.93), controlPoint2: CGPoint(x: 10.2, y: 15.93))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 9.94, y: 15.93))
-        gridiconsmysiteshorizon.closePath()
-        gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 2.79, y: 16.32))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 2.46, y: 14), controlPoint1: CGPoint(x: 2.57, y: 15.59), controlPoint2: CGPoint(x: 2.46, y: 14.81))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 3.19, y: 10.54), controlPoint1: CGPoint(x: 2.46, y: 12.77), controlPoint2: CGPoint(x: 2.72, y: 11.6))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 5.23, y: 16.12))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 7.75, y: 15.98), controlPoint1: CGPoint(x: 6.08, y: 16.06), controlPoint2: CGPoint(x: 6.92, y: 16.02))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 5.75, y: 10.02))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 6.72, y: 9.94), controlPoint1: CGPoint(x: 6.26, y: 9.99), controlPoint2: CGPoint(x: 6.72, y: 9.94))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 6.67, y: 9.23), controlPoint1: CGPoint(x: 7.18, y: 9.88), controlPoint2: CGPoint(x: 7.13, y: 9.21))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 4.4, y: 9.34), controlPoint1: CGPoint(x: 6.67, y: 9.23), controlPoint2: CGPoint(x: 5.29, y: 9.34))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 3.86, y: 9.33), controlPoint1: CGPoint(x: 4.24, y: 9.34), controlPoint2: CGPoint(x: 4.05, y: 9.34))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.96, y: 5.5), controlPoint1: CGPoint(x: 5.38, y: 7.02), controlPoint2: CGPoint(x: 7.99, y: 5.5))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 16.7, y: 7.73), controlPoint1: CGPoint(x: 13.17, y: 5.5), controlPoint2: CGPoint(x: 15.18, y: 6.35))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 16.59, y: 7.72), controlPoint1: CGPoint(x: 16.66, y: 7.73), controlPoint2: CGPoint(x: 16.63, y: 7.72))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 15.16, y: 9.23), controlPoint1: CGPoint(x: 15.75, y: 7.72), controlPoint2: CGPoint(x: 15.16, y: 8.45))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 16, y: 11.23), controlPoint1: CGPoint(x: 15.16, y: 9.93), controlPoint2: CGPoint(x: 15.56, y: 10.53))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 16.7, y: 13.57), controlPoint1: CGPoint(x: 16.32, y: 11.79), controlPoint2: CGPoint(x: 16.7, y: 12.52))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 16.13, y: 16.08), controlPoint1: CGPoint(x: 16.7, y: 14.25), controlPoint2: CGPoint(x: 16.45, y: 15.04))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 17.03, y: 16.15), controlPoint1: CGPoint(x: 16.43, y: 16.1), controlPoint2: CGPoint(x: 16.73, y: 16.13))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 17.83, y: 13.84))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 18.48, y: 10.8), controlPoint1: CGPoint(x: 18.31, y: 12.63), controlPoint2: CGPoint(x: 18.48, y: 11.66))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 18.42, y: 9.92), controlPoint1: CGPoint(x: 18.48, y: 10.48), controlPoint2: CGPoint(x: 18.46, y: 10.2))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 19.46, y: 14), controlPoint1: CGPoint(x: 19.08, y: 11.13), controlPoint2: CGPoint(x: 19.46, y: 12.52))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 19.12, y: 16.32), controlPoint1: CGPoint(x: 19.46, y: 14.81), controlPoint2: CGPoint(x: 19.33, y: 15.58))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 20.63, y: 16.49), controlPoint1: CGPoint(x: 19.62, y: 16.37), controlPoint2: CGPoint(x: 20.13, y: 16.43))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 20.96, y: 14), controlPoint1: CGPoint(x: 20.83, y: 15.7), controlPoint2: CGPoint(x: 20.96, y: 14.86))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.96, y: 4), controlPoint1: CGPoint(x: 20.96, y: 8.48), controlPoint2: CGPoint(x: 16.48, y: 4))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 0.96, y: 14), controlPoint1: CGPoint(x: 5.43, y: 4), controlPoint2: CGPoint(x: 0.96, y: 8.48))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 1.29, y: 16.49), controlPoint1: CGPoint(x: 0.96, y: 14.86), controlPoint2: CGPoint(x: 1.08, y: 15.69))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 2.79, y: 16.32), controlPoint1: CGPoint(x: 1.79, y: 16.43), controlPoint2: CGPoint(x: 2.29, y: 16.37))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 2.79, y: 16.32))
-        gridiconsmysiteshorizon.closePath()
-        gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 17.42, y: 19.49))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.96, y: 22.5), controlPoint1: CGPoint(x: 15.63, y: 21.67), controlPoint2: CGPoint(x: 13.07, y: 22.5))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 4.49, y: 19.49), controlPoint1: CGPoint(x: 9.08, y: 22.5), controlPoint2: CGPoint(x: 6.41, y: 21.81))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 2.72, y: 19.65), controlPoint1: CGPoint(x: 3.91, y: 19.54), controlPoint2: CGPoint(x: 3.32, y: 19.59))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.96, y: 24), controlPoint1: CGPoint(x: 4.53, y: 22.27), controlPoint2: CGPoint(x: 7.54, y: 24))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 19.19, y: 19.65), controlPoint1: CGPoint(x: 14.38, y: 24), controlPoint2: CGPoint(x: 17.39, y: 22.27))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 17.42, y: 19.49), controlPoint1: CGPoint(x: 18.59, y: 19.59), controlPoint2: CGPoint(x: 18.01, y: 19.54))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 17.42, y: 19.49))
-        gridiconsmysiteshorizon.closePath()
-        gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 10.96, y: 17.01))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 0, y: 17.75), controlPoint1: CGPoint(x: 7.24, y: 17.01), controlPoint2: CGPoint(x: 3.59, y: 17.28))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 0.51, y: 18.99), controlPoint1: CGPoint(x: 0.18, y: 18.16), controlPoint2: CGPoint(x: 0.35, y: 18.57))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.96, y: 18.31), controlPoint1: CGPoint(x: 3.93, y: 18.56), controlPoint2: CGPoint(x: 7.42, y: 18.31))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 21.41, y: 18.99), controlPoint1: CGPoint(x: 14.5, y: 18.31), controlPoint2: CGPoint(x: 17.98, y: 18.56))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 21.92, y: 17.75), controlPoint1: CGPoint(x: 21.57, y: 18.57), controlPoint2: CGPoint(x: 21.74, y: 18.16))
-        gridiconsmysiteshorizon.addCurveToPoint(CGPoint(x: 10.97, y: 17.01), controlPoint1: CGPoint(x: 18.33, y: 17.28), controlPoint2: CGPoint(x: 14.68, y: 17.01))
-        gridiconsmysiteshorizon.addLineToPoint(CGPoint(x: 10.96, y: 17.01))
-        gridiconsmysiteshorizon.closePath()
-        gridiconsmysiteshorizon.moveToPoint(CGPoint(x: 10.96, y: 17.01))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 482)
+        gridiconsmysiteshorizon.move(to: CGPoint(x: 9.94, y: 15.93))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 10.7, y: 13.65))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 9.38, y: 10.02))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 8.49, y: 9.94), controlPoint1: CGPoint(x: 8.92, y: 9.99), controlPoint2: CGPoint(x: 8.49, y: 9.94))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 8.54, y: 9.24), controlPoint1: CGPoint(x: 8.03, y: 9.91), controlPoint2: CGPoint(x: 8.08, y: 9.21))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.78, y: 9.34), controlPoint1: CGPoint(x: 8.54, y: 9.24), controlPoint2: CGPoint(x: 9.95, y: 9.34))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 13.05, y: 9.24), controlPoint1: CGPoint(x: 11.67, y: 9.34), controlPoint2: CGPoint(x: 13.05, y: 9.24))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 13.1, y: 9.94), controlPoint1: CGPoint(x: 13.51, y: 9.21), controlPoint2: CGPoint(x: 13.56, y: 9.88))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 12.13, y: 10.02), controlPoint1: CGPoint(x: 13.1, y: 9.94), controlPoint2: CGPoint(x: 12.64, y: 9.99))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 14.14, y: 15.98))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 11.54, y: 15.93), controlPoint1: CGPoint(x: 13.26, y: 15.95), controlPoint2: CGPoint(x: 12.4, y: 15.93))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 11.11, y: 14.75))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 10.7, y: 15.92))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 9.94, y: 15.94), controlPoint1: CGPoint(x: 10.45, y: 15.93), controlPoint2: CGPoint(x: 10.2, y: 15.93))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 9.94, y: 15.93))
+        gridiconsmysiteshorizon.close()
+        gridiconsmysiteshorizon.move(to: CGPoint(x: 2.79, y: 16.32))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 2.46, y: 14), controlPoint1: CGPoint(x: 2.57, y: 15.59), controlPoint2: CGPoint(x: 2.46, y: 14.81))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 3.19, y: 10.54), controlPoint1: CGPoint(x: 2.46, y: 12.77), controlPoint2: CGPoint(x: 2.72, y: 11.6))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 5.23, y: 16.12))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 7.75, y: 15.98), controlPoint1: CGPoint(x: 6.08, y: 16.06), controlPoint2: CGPoint(x: 6.92, y: 16.02))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 5.75, y: 10.02))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 6.72, y: 9.94), controlPoint1: CGPoint(x: 6.26, y: 9.99), controlPoint2: CGPoint(x: 6.72, y: 9.94))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 6.67, y: 9.23), controlPoint1: CGPoint(x: 7.18, y: 9.88), controlPoint2: CGPoint(x: 7.13, y: 9.21))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 4.4, y: 9.34), controlPoint1: CGPoint(x: 6.67, y: 9.23), controlPoint2: CGPoint(x: 5.29, y: 9.34))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 3.86, y: 9.33), controlPoint1: CGPoint(x: 4.24, y: 9.34), controlPoint2: CGPoint(x: 4.05, y: 9.34))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.96, y: 5.5), controlPoint1: CGPoint(x: 5.38, y: 7.02), controlPoint2: CGPoint(x: 7.99, y: 5.5))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 16.7, y: 7.73), controlPoint1: CGPoint(x: 13.17, y: 5.5), controlPoint2: CGPoint(x: 15.18, y: 6.35))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 16.59, y: 7.72), controlPoint1: CGPoint(x: 16.66, y: 7.73), controlPoint2: CGPoint(x: 16.63, y: 7.72))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 15.16, y: 9.23), controlPoint1: CGPoint(x: 15.75, y: 7.72), controlPoint2: CGPoint(x: 15.16, y: 8.45))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 16, y: 11.23), controlPoint1: CGPoint(x: 15.16, y: 9.93), controlPoint2: CGPoint(x: 15.56, y: 10.53))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 16.7, y: 13.57), controlPoint1: CGPoint(x: 16.32, y: 11.79), controlPoint2: CGPoint(x: 16.7, y: 12.52))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 16.13, y: 16.08), controlPoint1: CGPoint(x: 16.7, y: 14.25), controlPoint2: CGPoint(x: 16.45, y: 15.04))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 17.03, y: 16.15), controlPoint1: CGPoint(x: 16.43, y: 16.1), controlPoint2: CGPoint(x: 16.73, y: 16.13))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 17.83, y: 13.84))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 18.48, y: 10.8), controlPoint1: CGPoint(x: 18.31, y: 12.63), controlPoint2: CGPoint(x: 18.48, y: 11.66))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 18.42, y: 9.92), controlPoint1: CGPoint(x: 18.48, y: 10.48), controlPoint2: CGPoint(x: 18.46, y: 10.2))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 19.46, y: 14), controlPoint1: CGPoint(x: 19.08, y: 11.13), controlPoint2: CGPoint(x: 19.46, y: 12.52))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 19.12, y: 16.32), controlPoint1: CGPoint(x: 19.46, y: 14.81), controlPoint2: CGPoint(x: 19.33, y: 15.58))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 20.63, y: 16.49), controlPoint1: CGPoint(x: 19.62, y: 16.37), controlPoint2: CGPoint(x: 20.13, y: 16.43))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 20.96, y: 14), controlPoint1: CGPoint(x: 20.83, y: 15.7), controlPoint2: CGPoint(x: 20.96, y: 14.86))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.96, y: 4), controlPoint1: CGPoint(x: 20.96, y: 8.48), controlPoint2: CGPoint(x: 16.48, y: 4))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 0.96, y: 14), controlPoint1: CGPoint(x: 5.43, y: 4), controlPoint2: CGPoint(x: 0.96, y: 8.48))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 1.29, y: 16.49), controlPoint1: CGPoint(x: 0.96, y: 14.86), controlPoint2: CGPoint(x: 1.08, y: 15.69))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 2.79, y: 16.32), controlPoint1: CGPoint(x: 1.79, y: 16.43), controlPoint2: CGPoint(x: 2.29, y: 16.37))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 2.79, y: 16.32))
+        gridiconsmysiteshorizon.close()
+        gridiconsmysiteshorizon.move(to: CGPoint(x: 17.42, y: 19.49))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.96, y: 22.5), controlPoint1: CGPoint(x: 15.63, y: 21.67), controlPoint2: CGPoint(x: 13.07, y: 22.5))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 4.49, y: 19.49), controlPoint1: CGPoint(x: 9.08, y: 22.5), controlPoint2: CGPoint(x: 6.41, y: 21.81))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 2.72, y: 19.65), controlPoint1: CGPoint(x: 3.91, y: 19.54), controlPoint2: CGPoint(x: 3.32, y: 19.59))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.96, y: 24), controlPoint1: CGPoint(x: 4.53, y: 22.27), controlPoint2: CGPoint(x: 7.54, y: 24))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 19.19, y: 19.65), controlPoint1: CGPoint(x: 14.38, y: 24), controlPoint2: CGPoint(x: 17.39, y: 22.27))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 17.42, y: 19.49), controlPoint1: CGPoint(x: 18.59, y: 19.59), controlPoint2: CGPoint(x: 18.01, y: 19.54))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 17.42, y: 19.49))
+        gridiconsmysiteshorizon.close()
+        gridiconsmysiteshorizon.move(to: CGPoint(x: 10.96, y: 17.01))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 0, y: 17.75), controlPoint1: CGPoint(x: 7.24, y: 17.01), controlPoint2: CGPoint(x: 3.59, y: 17.28))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 0.51, y: 18.99), controlPoint1: CGPoint(x: 0.18, y: 18.16), controlPoint2: CGPoint(x: 0.35, y: 18.57))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.96, y: 18.31), controlPoint1: CGPoint(x: 3.93, y: 18.56), controlPoint2: CGPoint(x: 7.42, y: 18.31))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 21.41, y: 18.99), controlPoint1: CGPoint(x: 14.5, y: 18.31), controlPoint2: CGPoint(x: 17.98, y: 18.56))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 21.92, y: 17.75), controlPoint1: CGPoint(x: 21.57, y: 18.57), controlPoint2: CGPoint(x: 21.74, y: 18.16))
+        gridiconsmysiteshorizon.addCurve(to: CGPoint(x: 10.97, y: 17.01), controlPoint1: CGPoint(x: 18.33, y: 17.28), controlPoint2: CGPoint(x: 14.68, y: 17.01))
+        gridiconsmysiteshorizon.addLine(to: CGPoint(x: 10.96, y: 17.01))
+        gridiconsmysiteshorizon.close()
+        gridiconsmysiteshorizon.move(to: CGPoint(x: 10.96, y: 17.01))
+        context.saveGState()
+        context.translateBy(x: 908, y: 482)
         gridiconsmysiteshorizon.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmysiteshorizon.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsminus(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 2), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsminus(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 2), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 2), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 2)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -504)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -504)
         
         /// gridicons-minus
         let gridiconsminus = UIBezierPath()
-        gridiconsminus.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsminus.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsminus.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsminus.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsminus.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsminus.closePath()
-        gridiconsminus.moveToPoint(CGPoint(x: 0, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 482)
+        gridiconsminus.move(to: CGPoint(x: 0, y: 24))
+        gridiconsminus.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsminus.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsminus.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsminus.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsminus.close()
+        gridiconsminus.move(to: CGPoint(x: 0, y: 24))
+        context.saveGState()
+        context.translateBy(x: 874, y: 482)
         gridiconsminus.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsminus.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsminussmall(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 2), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsminussmall(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 2), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 2), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 2)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -504)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -504)
         
         /// gridicons-minus-small
         let gridiconsminussmall = UIBezierPath()
-        gridiconsminussmall.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsminussmall.addLineToPoint(CGPoint(x: 12, y: 24))
-        gridiconsminussmall.addLineToPoint(CGPoint(x: 12, y: 22))
-        gridiconsminussmall.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsminussmall.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsminussmall.closePath()
-        gridiconsminussmall.moveToPoint(CGPoint(x: 0, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 482)
+        gridiconsminussmall.move(to: CGPoint(x: 0, y: 24))
+        gridiconsminussmall.addLine(to: CGPoint(x: 12, y: 24))
+        gridiconsminussmall.addLine(to: CGPoint(x: 12, y: 22))
+        gridiconsminussmall.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsminussmall.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsminussmall.close()
+        gridiconsminussmall.move(to: CGPoint(x: 0, y: 24))
+        context.saveGState()
+        context.translateBy(x: 840, y: 482)
         gridiconsminussmall.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsminussmall.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmicrophone(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmicrophone(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -490)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -490)
         
         /// gridicons-microphone
         let gridiconsmicrophone = UIBezierPath()
-        gridiconsmicrophone.moveToPoint(CGPoint(x: 6, y: 17))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 8, y: 15), controlPoint1: CGPoint(x: 7.1, y: 17), controlPoint2: CGPoint(x: 8, y: 16.11))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 8, y: 10))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 6, y: 8), controlPoint1: CGPoint(x: 8, y: 8.89), controlPoint2: CGPoint(x: 7.1, y: 8))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 4, y: 10), controlPoint1: CGPoint(x: 4.89, y: 8), controlPoint2: CGPoint(x: 4, y: 8.89))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 4, y: 15))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 6, y: 17), controlPoint1: CGPoint(x: 4, y: 16.11), controlPoint2: CGPoint(x: 4.89, y: 17))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 6, y: 17))
-        gridiconsmicrophone.closePath()
-        gridiconsmicrophone.moveToPoint(CGPoint(x: 10, y: 15))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 6, y: 19), controlPoint1: CGPoint(x: 10, y: 17.21), controlPoint2: CGPoint(x: 8.21, y: 19))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 2, y: 15), controlPoint1: CGPoint(x: 3.79, y: 19), controlPoint2: CGPoint(x: 2, y: 17.21))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 5, y: 20.91), controlPoint1: CGPoint(x: 0, y: 17.97), controlPoint2: CGPoint(x: 2.16, y: 20.43))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 7, y: 20.91))
-        gridiconsmicrophone.addCurveToPoint(CGPoint(x: 12, y: 15), controlPoint1: CGPoint(x: 9.84, y: 20.43), controlPoint2: CGPoint(x: 12, y: 17.97))
-        gridiconsmicrophone.addLineToPoint(CGPoint(x: 10, y: 15))
-        gridiconsmicrophone.closePath()
-        gridiconsmicrophone.moveToPoint(CGPoint(x: 10, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 482)
+        gridiconsmicrophone.move(to: CGPoint(x: 6, y: 17))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 8, y: 15), controlPoint1: CGPoint(x: 7.1, y: 17), controlPoint2: CGPoint(x: 8, y: 16.11))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 8, y: 10))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 6, y: 8), controlPoint1: CGPoint(x: 8, y: 8.89), controlPoint2: CGPoint(x: 7.1, y: 8))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 4, y: 10), controlPoint1: CGPoint(x: 4.89, y: 8), controlPoint2: CGPoint(x: 4, y: 8.89))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 4, y: 15))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 6, y: 17), controlPoint1: CGPoint(x: 4, y: 16.11), controlPoint2: CGPoint(x: 4.89, y: 17))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 6, y: 17))
+        gridiconsmicrophone.close()
+        gridiconsmicrophone.move(to: CGPoint(x: 10, y: 15))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 6, y: 19), controlPoint1: CGPoint(x: 10, y: 17.21), controlPoint2: CGPoint(x: 8.21, y: 19))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 2, y: 15), controlPoint1: CGPoint(x: 3.79, y: 19), controlPoint2: CGPoint(x: 2, y: 17.21))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 5, y: 20.91), controlPoint1: CGPoint(x: 0, y: 17.97), controlPoint2: CGPoint(x: 2.16, y: 20.43))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 7, y: 20.91))
+        gridiconsmicrophone.addCurve(to: CGPoint(x: 12, y: 15), controlPoint1: CGPoint(x: 9.84, y: 20.43), controlPoint2: CGPoint(x: 12, y: 17.97))
+        gridiconsmicrophone.addLine(to: CGPoint(x: 10, y: 15))
+        gridiconsmicrophone.close()
+        gridiconsmicrophone.move(to: CGPoint(x: 10, y: 15))
+        context.saveGState()
+        context.translateBy(x: 806, y: 482)
         gridiconsmicrophone.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmicrophone.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmenus(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmenus(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -491)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -491)
         
         /// gridicons-menus
         let gridiconsmenus = UIBezierPath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 5.5, y: 23.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 15.5, y: 23.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 15.5, y: 21.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 21.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 23.5))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 5.5, y: 17.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 11.5, y: 17.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 11.5, y: 15.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 15.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 17.5))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 5.5, y: 9.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 11.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 17.5, y: 11.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 17.5, y: 9.5))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 5.5, y: 9.5))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 1.5, y: 9))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 0, y: 10.5), controlPoint1: CGPoint(x: 0.67, y: 9), controlPoint2: CGPoint(x: 0, y: 9.67))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 12), controlPoint1: CGPoint(x: 0, y: 11.33), controlPoint2: CGPoint(x: 0.67, y: 12))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 3, y: 10.5), controlPoint1: CGPoint(x: 2.33, y: 12), controlPoint2: CGPoint(x: 3, y: 11.33))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 9), controlPoint1: CGPoint(x: 3, y: 9.67), controlPoint2: CGPoint(x: 2.33, y: 9))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 1.5, y: 9))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 1.5, y: 15))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 0, y: 16.5), controlPoint1: CGPoint(x: 0.67, y: 15), controlPoint2: CGPoint(x: 0, y: 15.67))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 18), controlPoint1: CGPoint(x: 0, y: 17.33), controlPoint2: CGPoint(x: 0.67, y: 18))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 3, y: 16.5), controlPoint1: CGPoint(x: 2.33, y: 18), controlPoint2: CGPoint(x: 3, y: 17.33))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 15), controlPoint1: CGPoint(x: 3, y: 15.67), controlPoint2: CGPoint(x: 2.33, y: 15))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 1.5, y: 15))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 1.5, y: 21))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 0, y: 22.5), controlPoint1: CGPoint(x: 0.67, y: 21), controlPoint2: CGPoint(x: 0, y: 21.67))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 24), controlPoint1: CGPoint(x: 0, y: 23.33), controlPoint2: CGPoint(x: 0.67, y: 24))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 3, y: 22.5), controlPoint1: CGPoint(x: 2.33, y: 24), controlPoint2: CGPoint(x: 3, y: 23.33))
-        gridiconsmenus.addCurveToPoint(CGPoint(x: 1.5, y: 21), controlPoint1: CGPoint(x: 3, y: 21.67), controlPoint2: CGPoint(x: 2.33, y: 21))
-        gridiconsmenus.addLineToPoint(CGPoint(x: 1.5, y: 21))
-        gridiconsmenus.closePath()
-        gridiconsmenus.moveToPoint(CGPoint(x: 1.5, y: 21))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 482)
+        gridiconsmenus.move(to: CGPoint(x: 5.5, y: 23.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 15.5, y: 23.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 15.5, y: 21.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 21.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 23.5))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 5.5, y: 17.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 11.5, y: 17.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 11.5, y: 15.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 15.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 17.5))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 5.5, y: 9.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 11.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 17.5, y: 11.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 17.5, y: 9.5))
+        gridiconsmenus.addLine(to: CGPoint(x: 5.5, y: 9.5))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 1.5, y: 9))
+        gridiconsmenus.addCurve(to: CGPoint(x: 0, y: 10.5), controlPoint1: CGPoint(x: 0.67, y: 9), controlPoint2: CGPoint(x: 0, y: 9.67))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 12), controlPoint1: CGPoint(x: 0, y: 11.33), controlPoint2: CGPoint(x: 0.67, y: 12))
+        gridiconsmenus.addCurve(to: CGPoint(x: 3, y: 10.5), controlPoint1: CGPoint(x: 2.33, y: 12), controlPoint2: CGPoint(x: 3, y: 11.33))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 9), controlPoint1: CGPoint(x: 3, y: 9.67), controlPoint2: CGPoint(x: 2.33, y: 9))
+        gridiconsmenus.addLine(to: CGPoint(x: 1.5, y: 9))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 1.5, y: 15))
+        gridiconsmenus.addCurve(to: CGPoint(x: 0, y: 16.5), controlPoint1: CGPoint(x: 0.67, y: 15), controlPoint2: CGPoint(x: 0, y: 15.67))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 18), controlPoint1: CGPoint(x: 0, y: 17.33), controlPoint2: CGPoint(x: 0.67, y: 18))
+        gridiconsmenus.addCurve(to: CGPoint(x: 3, y: 16.5), controlPoint1: CGPoint(x: 2.33, y: 18), controlPoint2: CGPoint(x: 3, y: 17.33))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 15), controlPoint1: CGPoint(x: 3, y: 15.67), controlPoint2: CGPoint(x: 2.33, y: 15))
+        gridiconsmenus.addLine(to: CGPoint(x: 1.5, y: 15))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 1.5, y: 21))
+        gridiconsmenus.addCurve(to: CGPoint(x: 0, y: 22.5), controlPoint1: CGPoint(x: 0.67, y: 21), controlPoint2: CGPoint(x: 0, y: 21.67))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 24), controlPoint1: CGPoint(x: 0, y: 23.33), controlPoint2: CGPoint(x: 0.67, y: 24))
+        gridiconsmenus.addCurve(to: CGPoint(x: 3, y: 22.5), controlPoint1: CGPoint(x: 2.33, y: 24), controlPoint2: CGPoint(x: 3, y: 23.33))
+        gridiconsmenus.addCurve(to: CGPoint(x: 1.5, y: 21), controlPoint1: CGPoint(x: 3, y: 21.67), controlPoint2: CGPoint(x: 2.33, y: 21))
+        gridiconsmenus.addLine(to: CGPoint(x: 1.5, y: 21))
+        gridiconsmenus.close()
+        gridiconsmenus.move(to: CGPoint(x: 1.5, y: 21))
+        context.saveGState()
+        context.translateBy(x: 772, y: 482)
         gridiconsmenus.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmenus.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmenu(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 12), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmenu(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 12), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 12), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 12)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -460)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -460)
         
         /// gridicons-menu
         let gridiconsmenu = UIBezierPath()
-        gridiconsmenu.moveToPoint(CGPoint(x: 18, y: 12))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsmenu.closePath()
-        gridiconsmenu.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsmenu.closePath()
-        gridiconsmenu.moveToPoint(CGPoint(x: 0, y: 19))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 19))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 18, y: 17))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsmenu.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsmenu.closePath()
-        gridiconsmenu.moveToPoint(CGPoint(x: 0, y: 19))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 448)
+        gridiconsmenu.move(to: CGPoint(x: 18, y: 12))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsmenu.close()
+        gridiconsmenu.move(to: CGPoint(x: 0, y: 24))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsmenu.close()
+        gridiconsmenu.move(to: CGPoint(x: 0, y: 19))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 19))
+        gridiconsmenu.addLine(to: CGPoint(x: 18, y: 17))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsmenu.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsmenu.close()
+        gridiconsmenu.move(to: CGPoint(x: 0, y: 19))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 448)
         gridiconsmenu.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmenu.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmention(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmention(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -452)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -452)
         
         /// gridicons-mention
         let gridiconsmention = UIBezierPath()
-        gridiconsmention.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsmention.addLineToPoint(CGPoint(x: 10, y: 22))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconsmention.addLineToPoint(CGPoint(x: 18, y: 14.5))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 16.5, y: 16), controlPoint1: CGPoint(x: 18, y: 15.33), controlPoint2: CGPoint(x: 17.33, y: 16))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 15, y: 14.5), controlPoint1: CGPoint(x: 15.67, y: 16), controlPoint2: CGPoint(x: 15, y: 15.33))
-        gridiconsmention.addLineToPoint(CGPoint(x: 15, y: 14))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 9), controlPoint1: CGPoint(x: 15, y: 11.24), controlPoint2: CGPoint(x: 12.76, y: 9))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 5, y: 14), controlPoint1: CGPoint(x: 7.24, y: 9), controlPoint2: CGPoint(x: 5, y: 11.24))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 19), controlPoint1: CGPoint(x: 5, y: 16.76), controlPoint2: CGPoint(x: 7.24, y: 19))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 14.01, y: 16.96), controlPoint1: CGPoint(x: 11.65, y: 19), controlPoint2: CGPoint(x: 13.1, y: 18.19))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 16.5, y: 18), controlPoint1: CGPoint(x: 14.65, y: 17.6), controlPoint2: CGPoint(x: 15.53, y: 18))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 20, y: 14.5), controlPoint1: CGPoint(x: 18.43, y: 18), controlPoint2: CGPoint(x: 20, y: 16.43))
-        gridiconsmention.addLineToPoint(CGPoint(x: 20, y: 14))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsmention.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsmention.closePath()
-        gridiconsmention.moveToPoint(CGPoint(x: 10, y: 17))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 7, y: 14), controlPoint1: CGPoint(x: 8.35, y: 17), controlPoint2: CGPoint(x: 7, y: 15.65))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 11), controlPoint1: CGPoint(x: 7, y: 12.35), controlPoint2: CGPoint(x: 8.35, y: 11))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 13, y: 14), controlPoint1: CGPoint(x: 11.65, y: 11), controlPoint2: CGPoint(x: 13, y: 12.35))
-        gridiconsmention.addCurveToPoint(CGPoint(x: 10, y: 17), controlPoint1: CGPoint(x: 13, y: 15.65), controlPoint2: CGPoint(x: 11.65, y: 17))
-        gridiconsmention.addLineToPoint(CGPoint(x: 10, y: 17))
-        gridiconsmention.closePath()
-        gridiconsmention.moveToPoint(CGPoint(x: 10, y: 17))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 448)
+        gridiconsmention.move(to: CGPoint(x: 10, y: 4))
+        gridiconsmention.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsmention.addLine(to: CGPoint(x: 10, y: 22))
+        gridiconsmention.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconsmention.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconsmention.addLine(to: CGPoint(x: 18, y: 14.5))
+        gridiconsmention.addCurve(to: CGPoint(x: 16.5, y: 16), controlPoint1: CGPoint(x: 18, y: 15.33), controlPoint2: CGPoint(x: 17.33, y: 16))
+        gridiconsmention.addCurve(to: CGPoint(x: 15, y: 14.5), controlPoint1: CGPoint(x: 15.67, y: 16), controlPoint2: CGPoint(x: 15, y: 15.33))
+        gridiconsmention.addLine(to: CGPoint(x: 15, y: 14))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 9), controlPoint1: CGPoint(x: 15, y: 11.24), controlPoint2: CGPoint(x: 12.76, y: 9))
+        gridiconsmention.addCurve(to: CGPoint(x: 5, y: 14), controlPoint1: CGPoint(x: 7.24, y: 9), controlPoint2: CGPoint(x: 5, y: 11.24))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 19), controlPoint1: CGPoint(x: 5, y: 16.76), controlPoint2: CGPoint(x: 7.24, y: 19))
+        gridiconsmention.addCurve(to: CGPoint(x: 14.01, y: 16.96), controlPoint1: CGPoint(x: 11.65, y: 19), controlPoint2: CGPoint(x: 13.1, y: 18.19))
+        gridiconsmention.addCurve(to: CGPoint(x: 16.5, y: 18), controlPoint1: CGPoint(x: 14.65, y: 17.6), controlPoint2: CGPoint(x: 15.53, y: 18))
+        gridiconsmention.addCurve(to: CGPoint(x: 20, y: 14.5), controlPoint1: CGPoint(x: 18.43, y: 18), controlPoint2: CGPoint(x: 20, y: 16.43))
+        gridiconsmention.addLine(to: CGPoint(x: 20, y: 14))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsmention.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsmention.close()
+        gridiconsmention.move(to: CGPoint(x: 10, y: 17))
+        gridiconsmention.addCurve(to: CGPoint(x: 7, y: 14), controlPoint1: CGPoint(x: 8.35, y: 17), controlPoint2: CGPoint(x: 7, y: 15.65))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 11), controlPoint1: CGPoint(x: 7, y: 12.35), controlPoint2: CGPoint(x: 8.35, y: 11))
+        gridiconsmention.addCurve(to: CGPoint(x: 13, y: 14), controlPoint1: CGPoint(x: 11.65, y: 11), controlPoint2: CGPoint(x: 13, y: 12.35))
+        gridiconsmention.addCurve(to: CGPoint(x: 10, y: 17), controlPoint1: CGPoint(x: 13, y: 15.65), controlPoint2: CGPoint(x: 11.65, y: 17))
+        gridiconsmention.addLine(to: CGPoint(x: 10, y: 17))
+        gridiconsmention.close()
+        gridiconsmention.move(to: CGPoint(x: 10, y: 17))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 448)
         gridiconsmention.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmention.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsmail(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsmail(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -456)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -456)
         
         /// gridicons-mail
         let gridiconsmail = UIBezierPath()
-        gridiconsmail.moveToPoint(CGPoint(x: 18, y: 8))
-        gridiconsmail.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsmail.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconsmail.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsmail.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsmail.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsmail.addCurveToPoint(CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
-        gridiconsmail.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconsmail.addCurveToPoint(CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
-        gridiconsmail.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsmail.closePath()
-        gridiconsmail.moveToPoint(CGPoint(x: 18, y: 12.23))
-        gridiconsmail.addLineToPoint(CGPoint(x: 10, y: 17.12))
-        gridiconsmail.addLineToPoint(CGPoint(x: 2, y: 12.23))
-        gridiconsmail.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsmail.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsmail.addLineToPoint(CGPoint(x: 18, y: 12.23))
-        gridiconsmail.closePath()
-        gridiconsmail.moveToPoint(CGPoint(x: 18, y: 12.23))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 448)
+        gridiconsmail.move(to: CGPoint(x: 18, y: 8))
+        gridiconsmail.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsmail.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconsmail.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsmail.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsmail.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsmail.addCurve(to: CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
+        gridiconsmail.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconsmail.addCurve(to: CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
+        gridiconsmail.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsmail.close()
+        gridiconsmail.move(to: CGPoint(x: 18, y: 12.23))
+        gridiconsmail.addLine(to: CGPoint(x: 10, y: 17.12))
+        gridiconsmail.addLine(to: CGPoint(x: 2, y: 12.23))
+        gridiconsmail.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsmail.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsmail.addLine(to: CGPoint(x: 18, y: 12.23))
+        gridiconsmail.close()
+        gridiconsmail.move(to: CGPoint(x: 18, y: 12.23))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 448)
         gridiconsmail.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsmail.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslock(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslock(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -452)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -452)
         
         /// gridicons-lock
         let gridiconslock = UIBezierPath()
-        gridiconslock.moveToPoint(CGPoint(x: 14, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 13, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 13, y: 9))
-        gridiconslock.addCurveToPoint(CGPoint(x: 8, y: 4), controlPoint1: CGPoint(x: 13, y: 6.24), controlPoint2: CGPoint(x: 10.76, y: 4))
-        gridiconslock.addCurveToPoint(CGPoint(x: 3, y: 9), controlPoint1: CGPoint(x: 5.24, y: 4), controlPoint2: CGPoint(x: 3, y: 6.24))
-        gridiconslock.addLineToPoint(CGPoint(x: 3, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconslock.addCurveToPoint(CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
-        gridiconslock.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconslock.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconslock.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconslock.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
-        gridiconslock.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconslock.addCurveToPoint(CGPoint(x: 14, y: 10), controlPoint1: CGPoint(x: 16, y: 10.9), controlPoint2: CGPoint(x: 15.11, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconslock.closePath()
-        gridiconslock.moveToPoint(CGPoint(x: 5, y: 9))
-        gridiconslock.addCurveToPoint(CGPoint(x: 8, y: 6), controlPoint1: CGPoint(x: 5, y: 7.35), controlPoint2: CGPoint(x: 6.35, y: 6))
-        gridiconslock.addCurveToPoint(CGPoint(x: 11, y: 9), controlPoint1: CGPoint(x: 9.65, y: 6), controlPoint2: CGPoint(x: 11, y: 7.35))
-        gridiconslock.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 5, y: 10))
-        gridiconslock.addLineToPoint(CGPoint(x: 5, y: 9))
-        gridiconslock.closePath()
-        gridiconslock.moveToPoint(CGPoint(x: 9, y: 17.72))
-        gridiconslock.addLineToPoint(CGPoint(x: 9, y: 20))
-        gridiconslock.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconslock.addLineToPoint(CGPoint(x: 7, y: 17.72))
-        gridiconslock.addCurveToPoint(CGPoint(x: 6, y: 16), controlPoint1: CGPoint(x: 6.41, y: 17.38), controlPoint2: CGPoint(x: 6, y: 16.74))
-        gridiconslock.addCurveToPoint(CGPoint(x: 8, y: 14), controlPoint1: CGPoint(x: 6, y: 14.9), controlPoint2: CGPoint(x: 6.89, y: 14))
-        gridiconslock.addCurveToPoint(CGPoint(x: 10, y: 16), controlPoint1: CGPoint(x: 9.11, y: 14), controlPoint2: CGPoint(x: 10, y: 14.9))
-        gridiconslock.addCurveToPoint(CGPoint(x: 9, y: 17.72), controlPoint1: CGPoint(x: 10, y: 16.74), controlPoint2: CGPoint(x: 9.59, y: 17.38))
-        gridiconslock.addLineToPoint(CGPoint(x: 9, y: 17.72))
-        gridiconslock.closePath()
-        gridiconslock.moveToPoint(CGPoint(x: 9, y: 17.72))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 448)
+        gridiconslock.move(to: CGPoint(x: 14, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 13, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 13, y: 9))
+        gridiconslock.addCurve(to: CGPoint(x: 8, y: 4), controlPoint1: CGPoint(x: 13, y: 6.24), controlPoint2: CGPoint(x: 10.76, y: 4))
+        gridiconslock.addCurve(to: CGPoint(x: 3, y: 9), controlPoint1: CGPoint(x: 5.24, y: 4), controlPoint2: CGPoint(x: 3, y: 6.24))
+        gridiconslock.addLine(to: CGPoint(x: 3, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconslock.addCurve(to: CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
+        gridiconslock.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconslock.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconslock.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconslock.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
+        gridiconslock.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconslock.addCurve(to: CGPoint(x: 14, y: 10), controlPoint1: CGPoint(x: 16, y: 10.9), controlPoint2: CGPoint(x: 15.11, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconslock.close()
+        gridiconslock.move(to: CGPoint(x: 5, y: 9))
+        gridiconslock.addCurve(to: CGPoint(x: 8, y: 6), controlPoint1: CGPoint(x: 5, y: 7.35), controlPoint2: CGPoint(x: 6.35, y: 6))
+        gridiconslock.addCurve(to: CGPoint(x: 11, y: 9), controlPoint1: CGPoint(x: 9.65, y: 6), controlPoint2: CGPoint(x: 11, y: 7.35))
+        gridiconslock.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 5, y: 10))
+        gridiconslock.addLine(to: CGPoint(x: 5, y: 9))
+        gridiconslock.close()
+        gridiconslock.move(to: CGPoint(x: 9, y: 17.72))
+        gridiconslock.addLine(to: CGPoint(x: 9, y: 20))
+        gridiconslock.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconslock.addLine(to: CGPoint(x: 7, y: 17.72))
+        gridiconslock.addCurve(to: CGPoint(x: 6, y: 16), controlPoint1: CGPoint(x: 6.41, y: 17.38), controlPoint2: CGPoint(x: 6, y: 16.74))
+        gridiconslock.addCurve(to: CGPoint(x: 8, y: 14), controlPoint1: CGPoint(x: 6, y: 14.9), controlPoint2: CGPoint(x: 6.89, y: 14))
+        gridiconslock.addCurve(to: CGPoint(x: 10, y: 16), controlPoint1: CGPoint(x: 9.11, y: 14), controlPoint2: CGPoint(x: 10, y: 14.9))
+        gridiconslock.addCurve(to: CGPoint(x: 9, y: 17.72), controlPoint1: CGPoint(x: 10, y: 16.74), controlPoint2: CGPoint(x: 9.59, y: 17.38))
+        gridiconslock.addLine(to: CGPoint(x: 9, y: 17.72))
+        gridiconslock.close()
+        gridiconslock.move(to: CGPoint(x: 9, y: 17.72))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 448)
         gridiconslock.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslock.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslocation(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslocation(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -452)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -452)
         
         /// gridicons-location
         let gridiconslocation = UIBezierPath()
-        gridiconslocation.moveToPoint(CGPoint(x: 14, y: 11))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 7, y: 4), controlPoint1: CGPoint(x: 14, y: 7.13), controlPoint2: CGPoint(x: 10.87, y: 4))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 0, y: 11), controlPoint1: CGPoint(x: 3.13, y: 4), controlPoint2: CGPoint(x: 0, y: 7.13))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 1.11, y: 14.77), controlPoint1: CGPoint(x: 0, y: 12.39), controlPoint2: CGPoint(x: 0.41, y: 13.68))
-        gridiconslocation.addLineToPoint(CGPoint(x: 1.1, y: 14.77))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 3.46, y: 18.46), controlPoint2: CGPoint(x: 7, y: 24))
-        gridiconslocation.addLineToPoint(CGPoint(x: 12.9, y: 14.77))
-        gridiconslocation.addLineToPoint(CGPoint(x: 12.9, y: 14.77))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 14, y: 11), controlPoint1: CGPoint(x: 13.59, y: 13.68), controlPoint2: CGPoint(x: 14, y: 12.39))
-        gridiconslocation.addLineToPoint(CGPoint(x: 14, y: 11))
-        gridiconslocation.closePath()
-        gridiconslocation.moveToPoint(CGPoint(x: 7, y: 14))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 4, y: 11), controlPoint1: CGPoint(x: 5.34, y: 14), controlPoint2: CGPoint(x: 4, y: 12.66))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 4, y: 9.34), controlPoint2: CGPoint(x: 5.34, y: 8))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 10, y: 11), controlPoint1: CGPoint(x: 8.66, y: 8), controlPoint2: CGPoint(x: 10, y: 9.34))
-        gridiconslocation.addCurveToPoint(CGPoint(x: 7, y: 14), controlPoint1: CGPoint(x: 10, y: 12.66), controlPoint2: CGPoint(x: 8.66, y: 14))
-        gridiconslocation.addLineToPoint(CGPoint(x: 7, y: 14))
-        gridiconslocation.closePath()
-        gridiconslocation.moveToPoint(CGPoint(x: 7, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 448)
+        gridiconslocation.move(to: CGPoint(x: 14, y: 11))
+        gridiconslocation.addCurve(to: CGPoint(x: 7, y: 4), controlPoint1: CGPoint(x: 14, y: 7.13), controlPoint2: CGPoint(x: 10.87, y: 4))
+        gridiconslocation.addCurve(to: CGPoint(x: 0, y: 11), controlPoint1: CGPoint(x: 3.13, y: 4), controlPoint2: CGPoint(x: 0, y: 7.13))
+        gridiconslocation.addCurve(to: CGPoint(x: 1.11, y: 14.77), controlPoint1: CGPoint(x: 0, y: 12.39), controlPoint2: CGPoint(x: 0.41, y: 13.68))
+        gridiconslocation.addLine(to: CGPoint(x: 1.1, y: 14.77))
+        gridiconslocation.addCurve(to: CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 3.46, y: 18.46), controlPoint2: CGPoint(x: 7, y: 24))
+        gridiconslocation.addLine(to: CGPoint(x: 12.9, y: 14.77))
+        gridiconslocation.addLine(to: CGPoint(x: 12.9, y: 14.77))
+        gridiconslocation.addCurve(to: CGPoint(x: 14, y: 11), controlPoint1: CGPoint(x: 13.59, y: 13.68), controlPoint2: CGPoint(x: 14, y: 12.39))
+        gridiconslocation.addLine(to: CGPoint(x: 14, y: 11))
+        gridiconslocation.close()
+        gridiconslocation.move(to: CGPoint(x: 7, y: 14))
+        gridiconslocation.addCurve(to: CGPoint(x: 4, y: 11), controlPoint1: CGPoint(x: 5.34, y: 14), controlPoint2: CGPoint(x: 4, y: 12.66))
+        gridiconslocation.addCurve(to: CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 4, y: 9.34), controlPoint2: CGPoint(x: 5.34, y: 8))
+        gridiconslocation.addCurve(to: CGPoint(x: 10, y: 11), controlPoint1: CGPoint(x: 8.66, y: 8), controlPoint2: CGPoint(x: 10, y: 9.34))
+        gridiconslocation.addCurve(to: CGPoint(x: 7, y: 14), controlPoint1: CGPoint(x: 10, y: 12.66), controlPoint2: CGPoint(x: 8.66, y: 14))
+        gridiconslocation.addLine(to: CGPoint(x: 7, y: 14))
+        gridiconslocation.close()
+        gridiconslocation.move(to: CGPoint(x: 7, y: 14))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 448)
         gridiconslocation.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslocation.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslistunordered(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslistunordered(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -457)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -457)
         
         /// gridicons-list-unordered
         let gridiconslistunordered = UIBezierPath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 5.5, y: 23.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 23.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 21.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 21.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 23.5))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 5.5, y: 17.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 17.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 15.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 15.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 17.5))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 5.5, y: 9.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 11.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 11.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 17.5, y: 9.5))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 5.5, y: 9.5))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 1.5, y: 9))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 0, y: 10.5), controlPoint1: CGPoint(x: 0.67, y: 9), controlPoint2: CGPoint(x: 0, y: 9.67))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 12), controlPoint1: CGPoint(x: 0, y: 11.33), controlPoint2: CGPoint(x: 0.67, y: 12))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 3, y: 10.5), controlPoint1: CGPoint(x: 2.33, y: 12), controlPoint2: CGPoint(x: 3, y: 11.33))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 9), controlPoint1: CGPoint(x: 3, y: 9.67), controlPoint2: CGPoint(x: 2.33, y: 9))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 1.5, y: 9))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 1.5, y: 15))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 0, y: 16.5), controlPoint1: CGPoint(x: 0.67, y: 15), controlPoint2: CGPoint(x: 0, y: 15.67))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 18), controlPoint1: CGPoint(x: 0, y: 17.33), controlPoint2: CGPoint(x: 0.67, y: 18))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 3, y: 16.5), controlPoint1: CGPoint(x: 2.33, y: 18), controlPoint2: CGPoint(x: 3, y: 17.33))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 15), controlPoint1: CGPoint(x: 3, y: 15.67), controlPoint2: CGPoint(x: 2.33, y: 15))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 1.5, y: 15))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 1.5, y: 21))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 0, y: 22.5), controlPoint1: CGPoint(x: 0.67, y: 21), controlPoint2: CGPoint(x: 0, y: 21.67))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 24), controlPoint1: CGPoint(x: 0, y: 23.33), controlPoint2: CGPoint(x: 0.67, y: 24))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 3, y: 22.5), controlPoint1: CGPoint(x: 2.33, y: 24), controlPoint2: CGPoint(x: 3, y: 23.33))
-        gridiconslistunordered.addCurveToPoint(CGPoint(x: 1.5, y: 21), controlPoint1: CGPoint(x: 3, y: 21.67), controlPoint2: CGPoint(x: 2.33, y: 21))
-        gridiconslistunordered.addLineToPoint(CGPoint(x: 1.5, y: 21))
-        gridiconslistunordered.closePath()
-        gridiconslistunordered.moveToPoint(CGPoint(x: 1.5, y: 21))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 448)
+        gridiconslistunordered.move(to: CGPoint(x: 5.5, y: 23.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 23.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 21.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 21.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 23.5))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 5.5, y: 17.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 17.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 15.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 15.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 17.5))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 5.5, y: 9.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 11.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 11.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 17.5, y: 9.5))
+        gridiconslistunordered.addLine(to: CGPoint(x: 5.5, y: 9.5))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 1.5, y: 9))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 0, y: 10.5), controlPoint1: CGPoint(x: 0.67, y: 9), controlPoint2: CGPoint(x: 0, y: 9.67))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 12), controlPoint1: CGPoint(x: 0, y: 11.33), controlPoint2: CGPoint(x: 0.67, y: 12))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 3, y: 10.5), controlPoint1: CGPoint(x: 2.33, y: 12), controlPoint2: CGPoint(x: 3, y: 11.33))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 9), controlPoint1: CGPoint(x: 3, y: 9.67), controlPoint2: CGPoint(x: 2.33, y: 9))
+        gridiconslistunordered.addLine(to: CGPoint(x: 1.5, y: 9))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 1.5, y: 15))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 0, y: 16.5), controlPoint1: CGPoint(x: 0.67, y: 15), controlPoint2: CGPoint(x: 0, y: 15.67))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 18), controlPoint1: CGPoint(x: 0, y: 17.33), controlPoint2: CGPoint(x: 0.67, y: 18))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 3, y: 16.5), controlPoint1: CGPoint(x: 2.33, y: 18), controlPoint2: CGPoint(x: 3, y: 17.33))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 15), controlPoint1: CGPoint(x: 3, y: 15.67), controlPoint2: CGPoint(x: 2.33, y: 15))
+        gridiconslistunordered.addLine(to: CGPoint(x: 1.5, y: 15))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 1.5, y: 21))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 0, y: 22.5), controlPoint1: CGPoint(x: 0.67, y: 21), controlPoint2: CGPoint(x: 0, y: 21.67))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 24), controlPoint1: CGPoint(x: 0, y: 23.33), controlPoint2: CGPoint(x: 0.67, y: 24))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 3, y: 22.5), controlPoint1: CGPoint(x: 2.33, y: 24), controlPoint2: CGPoint(x: 3, y: 23.33))
+        gridiconslistunordered.addCurve(to: CGPoint(x: 1.5, y: 21), controlPoint1: CGPoint(x: 3, y: 21.67), controlPoint2: CGPoint(x: 2.33, y: 21))
+        gridiconslistunordered.addLine(to: CGPoint(x: 1.5, y: 21))
+        gridiconslistunordered.close()
+        gridiconslistunordered.move(to: CGPoint(x: 1.5, y: 21))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 448)
         gridiconslistunordered.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslistunordered.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslistordered(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 17), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslistordered(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 17), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 17), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 17)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -455)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -455)
         
         /// gridicons-list-ordered
         let gridiconslistordered = UIBezierPath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 5.63, y: 22.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 22.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 20.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 20.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 22.93))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 5.63, y: 16.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 16.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 14.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 14.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 16.93))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 5.63, y: 8.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 10.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 10.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 18.63, y: 8.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 5.63, y: 8.93))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 1.2, y: 9.18))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.47, y: 8.91), controlPoint1: CGPoint(x: 1.31, y: 9.09), controlPoint2: CGPoint(x: 1.4, y: 9))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.45, y: 9.67), controlPoint1: CGPoint(x: 1.46, y: 9.14), controlPoint2: CGPoint(x: 1.45, y: 9.39))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.45, y: 11.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 2.63, y: 11.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 2.63, y: 7.65))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.59, y: 7.65))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.11, y: 8.84))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.72, y: 9.58))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.2, y: 9.18))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.2, y: 9.18))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 1.54, y: 16.95))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.46, y: 16.08), controlPoint1: CGPoint(x: 2.01, y: 16.52), controlPoint2: CGPoint(x: 2.32, y: 16.24))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.82, y: 15.65), controlPoint1: CGPoint(x: 2.61, y: 15.93), controlPoint2: CGPoint(x: 2.73, y: 15.79))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 3.01, y: 15.22), controlPoint1: CGPoint(x: 2.9, y: 15.51), controlPoint2: CGPoint(x: 2.97, y: 15.37))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 3.07, y: 14.76), controlPoint1: CGPoint(x: 3.06, y: 15.08), controlPoint2: CGPoint(x: 3.07, y: 14.93))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.9, y: 14.15), controlPoint1: CGPoint(x: 3.07, y: 14.53), controlPoint2: CGPoint(x: 3.02, y: 14.33))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.39, y: 13.73), controlPoint1: CGPoint(x: 2.77, y: 13.97), controlPoint2: CGPoint(x: 2.61, y: 13.83))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.65, y: 13.58), controlPoint1: CGPoint(x: 2.17, y: 13.63), controlPoint2: CGPoint(x: 1.92, y: 13.58))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.05, y: 13.65), controlPoint1: CGPoint(x: 1.43, y: 13.58), controlPoint2: CGPoint(x: 1.22, y: 13.61))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.56, y: 13.84), controlPoint1: CGPoint(x: 0.87, y: 13.7), controlPoint2: CGPoint(x: 0.71, y: 13.76))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0, y: 14.27), controlPoint1: CGPoint(x: 0.41, y: 13.93), controlPoint2: CGPoint(x: 0.22, y: 14.07))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.64, y: 15.01))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.11, y: 14.67), controlPoint1: CGPoint(x: 0.81, y: 14.86), controlPoint2: CGPoint(x: 0.97, y: 14.74))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.52, y: 14.55), controlPoint1: CGPoint(x: 1.24, y: 14.59), controlPoint2: CGPoint(x: 1.38, y: 14.55))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.82, y: 14.65), controlPoint1: CGPoint(x: 1.65, y: 14.55), controlPoint2: CGPoint(x: 1.75, y: 14.58))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.93, y: 14.91), controlPoint1: CGPoint(x: 1.9, y: 14.71), controlPoint2: CGPoint(x: 1.93, y: 14.8))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.88, y: 15.17), controlPoint1: CGPoint(x: 1.93, y: 15), controlPoint2: CGPoint(x: 1.91, y: 15.09))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.68, y: 15.47), controlPoint1: CGPoint(x: 1.84, y: 15.25), controlPoint2: CGPoint(x: 1.77, y: 15.35))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.1, y: 16.11), controlPoint1: CGPoint(x: 1.59, y: 15.58), controlPoint2: CGPoint(x: 1.4, y: 15.79))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.05, y: 17.17))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.05, y: 17.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 3.16, y: 17.93))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 3.16, y: 16.98))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.54, y: 16.98))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.54, y: 16.95))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1.54, y: 16.95))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 2.07, y: 21.7))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 2.07, y: 21.68))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.77, y: 21.26), controlPoint1: CGPoint(x: 2.37, y: 21.59), controlPoint2: CGPoint(x: 2.61, y: 21.45))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 3.01, y: 20.58), controlPoint1: CGPoint(x: 2.93, y: 21.07), controlPoint2: CGPoint(x: 3.01, y: 20.84))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.63, y: 19.85), controlPoint1: CGPoint(x: 3.01, y: 20.27), controlPoint2: CGPoint(x: 2.89, y: 20.03))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.59, y: 19.59), controlPoint1: CGPoint(x: 2.38, y: 19.68), controlPoint2: CGPoint(x: 2.03, y: 19.59))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.77, y: 19.69), controlPoint1: CGPoint(x: 1.28, y: 19.59), controlPoint2: CGPoint(x: 1.01, y: 19.62))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.08, y: 20.02), controlPoint1: CGPoint(x: 0.54, y: 19.75), controlPoint2: CGPoint(x: 0.31, y: 19.87))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.56, y: 20.8))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.41, y: 20.52), controlPoint1: CGPoint(x: 0.85, y: 20.61), controlPoint2: CGPoint(x: 1.13, y: 20.52))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.76, y: 20.61), controlPoint1: CGPoint(x: 1.56, y: 20.52), controlPoint2: CGPoint(x: 1.67, y: 20.55))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.89, y: 20.86), controlPoint1: CGPoint(x: 1.85, y: 20.66), controlPoint2: CGPoint(x: 1.89, y: 20.75))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.01, y: 21.31), controlPoint1: CGPoint(x: 1.89, y: 21.16), controlPoint2: CGPoint(x: 1.6, y: 21.31))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.74, y: 21.31))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.74, y: 22.18))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 1, y: 22.18))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.53, y: 22.23), controlPoint1: CGPoint(x: 1.22, y: 22.18), controlPoint2: CGPoint(x: 1.4, y: 22.2))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.82, y: 22.38), controlPoint1: CGPoint(x: 1.67, y: 22.26), controlPoint2: CGPoint(x: 1.77, y: 22.31))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.91, y: 22.65), controlPoint1: CGPoint(x: 1.88, y: 22.44), controlPoint2: CGPoint(x: 1.91, y: 22.53))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.74, y: 22.98), controlPoint1: CGPoint(x: 1.91, y: 22.8), controlPoint2: CGPoint(x: 1.86, y: 22.91))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.19, y: 23.09), controlPoint1: CGPoint(x: 1.63, y: 23.05), controlPoint2: CGPoint(x: 1.44, y: 23.09))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.65, y: 23.02), controlPoint1: CGPoint(x: 1.02, y: 23.09), controlPoint2: CGPoint(x: 0.84, y: 23.06))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.07, y: 22.81), controlPoint1: CGPoint(x: 0.45, y: 22.97), controlPoint2: CGPoint(x: 0.26, y: 22.9))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 0.07, y: 23.77))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 0.71, y: 23.95), controlPoint1: CGPoint(x: 0.3, y: 23.86), controlPoint2: CGPoint(x: 0.52, y: 23.91))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 1.35, y: 24), controlPoint1: CGPoint(x: 0.91, y: 23.98), controlPoint2: CGPoint(x: 1.12, y: 24))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.66, y: 23.66), controlPoint1: CGPoint(x: 1.91, y: 24), controlPoint2: CGPoint(x: 2.35, y: 23.89))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 3.14, y: 22.72), controlPoint1: CGPoint(x: 2.98, y: 23.43), controlPoint2: CGPoint(x: 3.14, y: 23.11))
-        gridiconslistordered.addCurveToPoint(CGPoint(x: 2.07, y: 21.7), controlPoint1: CGPoint(x: 3.14, y: 22.13), controlPoint2: CGPoint(x: 2.78, y: 21.79))
-        gridiconslistordered.addLineToPoint(CGPoint(x: 2.07, y: 21.7))
-        gridiconslistordered.closePath()
-        gridiconslistordered.moveToPoint(CGPoint(x: 2.07, y: 21.7))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 448)
+        gridiconslistordered.move(to: CGPoint(x: 5.63, y: 22.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 22.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 20.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 20.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 22.93))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 5.63, y: 16.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 16.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 14.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 14.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 16.93))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 5.63, y: 8.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 10.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 10.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 18.63, y: 8.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 5.63, y: 8.93))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 1.2, y: 9.18))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.47, y: 8.91), controlPoint1: CGPoint(x: 1.31, y: 9.09), controlPoint2: CGPoint(x: 1.4, y: 9))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.45, y: 9.67), controlPoint1: CGPoint(x: 1.46, y: 9.14), controlPoint2: CGPoint(x: 1.45, y: 9.39))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.45, y: 11.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 2.63, y: 11.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 2.63, y: 7.65))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.59, y: 7.65))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.11, y: 8.84))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.72, y: 9.58))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.2, y: 9.18))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.2, y: 9.18))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 1.54, y: 16.95))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.46, y: 16.08), controlPoint1: CGPoint(x: 2.01, y: 16.52), controlPoint2: CGPoint(x: 2.32, y: 16.24))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.82, y: 15.65), controlPoint1: CGPoint(x: 2.61, y: 15.93), controlPoint2: CGPoint(x: 2.73, y: 15.79))
+        gridiconslistordered.addCurve(to: CGPoint(x: 3.01, y: 15.22), controlPoint1: CGPoint(x: 2.9, y: 15.51), controlPoint2: CGPoint(x: 2.97, y: 15.37))
+        gridiconslistordered.addCurve(to: CGPoint(x: 3.07, y: 14.76), controlPoint1: CGPoint(x: 3.06, y: 15.08), controlPoint2: CGPoint(x: 3.07, y: 14.93))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.9, y: 14.15), controlPoint1: CGPoint(x: 3.07, y: 14.53), controlPoint2: CGPoint(x: 3.02, y: 14.33))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.39, y: 13.73), controlPoint1: CGPoint(x: 2.77, y: 13.97), controlPoint2: CGPoint(x: 2.61, y: 13.83))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.65, y: 13.58), controlPoint1: CGPoint(x: 2.17, y: 13.63), controlPoint2: CGPoint(x: 1.92, y: 13.58))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.05, y: 13.65), controlPoint1: CGPoint(x: 1.43, y: 13.58), controlPoint2: CGPoint(x: 1.22, y: 13.61))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.56, y: 13.84), controlPoint1: CGPoint(x: 0.87, y: 13.7), controlPoint2: CGPoint(x: 0.71, y: 13.76))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0, y: 14.27), controlPoint1: CGPoint(x: 0.41, y: 13.93), controlPoint2: CGPoint(x: 0.22, y: 14.07))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.64, y: 15.01))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.11, y: 14.67), controlPoint1: CGPoint(x: 0.81, y: 14.86), controlPoint2: CGPoint(x: 0.97, y: 14.74))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.52, y: 14.55), controlPoint1: CGPoint(x: 1.24, y: 14.59), controlPoint2: CGPoint(x: 1.38, y: 14.55))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.82, y: 14.65), controlPoint1: CGPoint(x: 1.65, y: 14.55), controlPoint2: CGPoint(x: 1.75, y: 14.58))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.93, y: 14.91), controlPoint1: CGPoint(x: 1.9, y: 14.71), controlPoint2: CGPoint(x: 1.93, y: 14.8))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.88, y: 15.17), controlPoint1: CGPoint(x: 1.93, y: 15), controlPoint2: CGPoint(x: 1.91, y: 15.09))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.68, y: 15.47), controlPoint1: CGPoint(x: 1.84, y: 15.25), controlPoint2: CGPoint(x: 1.77, y: 15.35))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.1, y: 16.11), controlPoint1: CGPoint(x: 1.59, y: 15.58), controlPoint2: CGPoint(x: 1.4, y: 15.79))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.05, y: 17.17))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.05, y: 17.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 3.16, y: 17.93))
+        gridiconslistordered.addLine(to: CGPoint(x: 3.16, y: 16.98))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.54, y: 16.98))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.54, y: 16.95))
+        gridiconslistordered.addLine(to: CGPoint(x: 1.54, y: 16.95))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 2.07, y: 21.7))
+        gridiconslistordered.addLine(to: CGPoint(x: 2.07, y: 21.68))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.77, y: 21.26), controlPoint1: CGPoint(x: 2.37, y: 21.59), controlPoint2: CGPoint(x: 2.61, y: 21.45))
+        gridiconslistordered.addCurve(to: CGPoint(x: 3.01, y: 20.58), controlPoint1: CGPoint(x: 2.93, y: 21.07), controlPoint2: CGPoint(x: 3.01, y: 20.84))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.63, y: 19.85), controlPoint1: CGPoint(x: 3.01, y: 20.27), controlPoint2: CGPoint(x: 2.89, y: 20.03))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.59, y: 19.59), controlPoint1: CGPoint(x: 2.38, y: 19.68), controlPoint2: CGPoint(x: 2.03, y: 19.59))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.77, y: 19.69), controlPoint1: CGPoint(x: 1.28, y: 19.59), controlPoint2: CGPoint(x: 1.01, y: 19.62))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.08, y: 20.02), controlPoint1: CGPoint(x: 0.54, y: 19.75), controlPoint2: CGPoint(x: 0.31, y: 19.87))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.56, y: 20.8))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.41, y: 20.52), controlPoint1: CGPoint(x: 0.85, y: 20.61), controlPoint2: CGPoint(x: 1.13, y: 20.52))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.76, y: 20.61), controlPoint1: CGPoint(x: 1.56, y: 20.52), controlPoint2: CGPoint(x: 1.67, y: 20.55))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.89, y: 20.86), controlPoint1: CGPoint(x: 1.85, y: 20.66), controlPoint2: CGPoint(x: 1.89, y: 20.75))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.01, y: 21.31), controlPoint1: CGPoint(x: 1.89, y: 21.16), controlPoint2: CGPoint(x: 1.6, y: 21.31))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.74, y: 21.31))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.74, y: 22.18))
+        gridiconslistordered.addLine(to: CGPoint(x: 1, y: 22.18))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.53, y: 22.23), controlPoint1: CGPoint(x: 1.22, y: 22.18), controlPoint2: CGPoint(x: 1.4, y: 22.2))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.82, y: 22.38), controlPoint1: CGPoint(x: 1.67, y: 22.26), controlPoint2: CGPoint(x: 1.77, y: 22.31))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.91, y: 22.65), controlPoint1: CGPoint(x: 1.88, y: 22.44), controlPoint2: CGPoint(x: 1.91, y: 22.53))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.74, y: 22.98), controlPoint1: CGPoint(x: 1.91, y: 22.8), controlPoint2: CGPoint(x: 1.86, y: 22.91))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.19, y: 23.09), controlPoint1: CGPoint(x: 1.63, y: 23.05), controlPoint2: CGPoint(x: 1.44, y: 23.09))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.65, y: 23.02), controlPoint1: CGPoint(x: 1.02, y: 23.09), controlPoint2: CGPoint(x: 0.84, y: 23.06))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.07, y: 22.81), controlPoint1: CGPoint(x: 0.45, y: 22.97), controlPoint2: CGPoint(x: 0.26, y: 22.9))
+        gridiconslistordered.addLine(to: CGPoint(x: 0.07, y: 23.77))
+        gridiconslistordered.addCurve(to: CGPoint(x: 0.71, y: 23.95), controlPoint1: CGPoint(x: 0.3, y: 23.86), controlPoint2: CGPoint(x: 0.52, y: 23.91))
+        gridiconslistordered.addCurve(to: CGPoint(x: 1.35, y: 24), controlPoint1: CGPoint(x: 0.91, y: 23.98), controlPoint2: CGPoint(x: 1.12, y: 24))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.66, y: 23.66), controlPoint1: CGPoint(x: 1.91, y: 24), controlPoint2: CGPoint(x: 2.35, y: 23.89))
+        gridiconslistordered.addCurve(to: CGPoint(x: 3.14, y: 22.72), controlPoint1: CGPoint(x: 2.98, y: 23.43), controlPoint2: CGPoint(x: 3.14, y: 23.11))
+        gridiconslistordered.addCurve(to: CGPoint(x: 2.07, y: 21.7), controlPoint1: CGPoint(x: 3.14, y: 22.13), controlPoint2: CGPoint(x: 2.78, y: 21.79))
+        gridiconslistordered.addLine(to: CGPoint(x: 2.07, y: 21.7))
+        gridiconslistordered.close()
+        gridiconslistordered.move(to: CGPoint(x: 2.07, y: 21.7))
+        context.saveGState()
+        context.translateBy(x: 976, y: 448)
         gridiconslistordered.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslistordered.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslistcheckmark(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslistcheckmark(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -454)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -454)
         
         /// gridicons-list-checkmark
         let gridiconslistcheckmark = UIBezierPath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 7, y: 19.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 24))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 0, y: 21.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 1.06, y: 20.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 21.88))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 5.94, y: 18.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7, y: 19.5))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 7.5, y: 9))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 11))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 11))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 9))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 9))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 7.5, y: 23))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 23))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 21))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 21))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 23))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 7.5, y: 17))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 17))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 18.5, y: 15))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 15))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7.5, y: 17))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 5.94, y: 12.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 15.88))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 1.06, y: 14.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 0, y: 15.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 18))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7, y: 13.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 5.94, y: 12.44))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 5.94, y: 6.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 9.88))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 1.06, y: 8.44))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 0, y: 9.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 2.5, y: 12))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 7, y: 7.5))
-        gridiconslistcheckmark.addLineToPoint(CGPoint(x: 5.94, y: 6.44))
-        gridiconslistcheckmark.closePath()
-        gridiconslistcheckmark.moveToPoint(CGPoint(x: 5.94, y: 6.44))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 448)
+        gridiconslistcheckmark.move(to: CGPoint(x: 7, y: 19.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 24))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 0, y: 21.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 1.06, y: 20.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 21.88))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 5.94, y: 18.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7, y: 19.5))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 7.5, y: 9))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 11))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 11))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 9))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 9))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 7.5, y: 23))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 23))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 21))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 21))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 23))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 7.5, y: 17))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 17))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 18.5, y: 15))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 15))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7.5, y: 17))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 5.94, y: 12.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 15.88))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 1.06, y: 14.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 0, y: 15.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 18))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7, y: 13.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 5.94, y: 12.44))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 5.94, y: 6.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 9.88))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 1.06, y: 8.44))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 0, y: 9.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 2.5, y: 12))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 7, y: 7.5))
+        gridiconslistcheckmark.addLine(to: CGPoint(x: 5.94, y: 6.44))
+        gridiconslistcheckmark.close()
+        gridiconslistcheckmark.move(to: CGPoint(x: 5.94, y: 6.44))
+        context.saveGState()
+        context.translateBy(x: 942, y: 448)
         gridiconslistcheckmark.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslistcheckmark.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslink(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 10), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslink(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 10), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 10), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 10)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -462)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -462)
         
         /// gridicons-link
         let gridiconslink = UIBezierPath()
-        gridiconslink.moveToPoint(CGPoint(x: 15, y: 20))
-        gridiconslink.addLineToPoint(CGPoint(x: 5, y: 20))
-        gridiconslink.addLineToPoint(CGPoint(x: 5, y: 18))
-        gridiconslink.addLineToPoint(CGPoint(x: 15, y: 18))
-        gridiconslink.addLineToPoint(CGPoint(x: 15, y: 20))
-        gridiconslink.closePath()
-        gridiconslink.moveToPoint(CGPoint(x: 16, y: 14))
-        gridiconslink.addLineToPoint(CGPoint(x: 15, y: 14))
-        gridiconslink.addCurveToPoint(CGPoint(x: 11.02, y: 16), controlPoint1: CGPoint(x: 13.37, y: 14), controlPoint2: CGPoint(x: 11.93, y: 14.79))
-        gridiconslink.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconslink.addCurveToPoint(CGPoint(x: 18, y: 18), controlPoint1: CGPoint(x: 17.1, y: 16), controlPoint2: CGPoint(x: 18, y: 16.9))
-        gridiconslink.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconslink.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 18, y: 21.1), controlPoint2: CGPoint(x: 17.1, y: 22))
-        gridiconslink.addLineToPoint(CGPoint(x: 11.02, y: 22))
-        gridiconslink.addCurveToPoint(CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 11.94, y: 23.21), controlPoint2: CGPoint(x: 13.37, y: 24))
-        gridiconslink.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconslink.addCurveToPoint(CGPoint(x: 20, y: 20), controlPoint1: CGPoint(x: 18.21, y: 24), controlPoint2: CGPoint(x: 20, y: 22.21))
-        gridiconslink.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconslink.addCurveToPoint(CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 20, y: 15.79), controlPoint2: CGPoint(x: 18.21, y: 14))
-        gridiconslink.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconslink.closePath()
-        gridiconslink.moveToPoint(CGPoint(x: 0, y: 18))
-        gridiconslink.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconslink.addCurveToPoint(CGPoint(x: 4, y: 24), controlPoint1: CGPoint(x: 0, y: 22.21), controlPoint2: CGPoint(x: 1.79, y: 24))
-        gridiconslink.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconslink.addCurveToPoint(CGPoint(x: 8.98, y: 22), controlPoint1: CGPoint(x: 6.63, y: 24), controlPoint2: CGPoint(x: 8.07, y: 23.21))
-        gridiconslink.addLineToPoint(CGPoint(x: 4, y: 22))
-        gridiconslink.addCurveToPoint(CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 2.9, y: 22), controlPoint2: CGPoint(x: 2, y: 21.1))
-        gridiconslink.addLineToPoint(CGPoint(x: 2, y: 18))
-        gridiconslink.addCurveToPoint(CGPoint(x: 4, y: 16), controlPoint1: CGPoint(x: 2, y: 16.9), controlPoint2: CGPoint(x: 2.9, y: 16))
-        gridiconslink.addLineToPoint(CGPoint(x: 8.98, y: 16))
-        gridiconslink.addCurveToPoint(CGPoint(x: 5, y: 14), controlPoint1: CGPoint(x: 8.07, y: 14.79), controlPoint2: CGPoint(x: 6.63, y: 14))
-        gridiconslink.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconslink.addCurveToPoint(CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 1.79, y: 14), controlPoint2: CGPoint(x: 0, y: 15.79))
-        gridiconslink.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconslink.closePath()
-        gridiconslink.moveToPoint(CGPoint(x: 0, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 448)
+        gridiconslink.move(to: CGPoint(x: 15, y: 20))
+        gridiconslink.addLine(to: CGPoint(x: 5, y: 20))
+        gridiconslink.addLine(to: CGPoint(x: 5, y: 18))
+        gridiconslink.addLine(to: CGPoint(x: 15, y: 18))
+        gridiconslink.addLine(to: CGPoint(x: 15, y: 20))
+        gridiconslink.close()
+        gridiconslink.move(to: CGPoint(x: 16, y: 14))
+        gridiconslink.addLine(to: CGPoint(x: 15, y: 14))
+        gridiconslink.addCurve(to: CGPoint(x: 11.02, y: 16), controlPoint1: CGPoint(x: 13.37, y: 14), controlPoint2: CGPoint(x: 11.93, y: 14.79))
+        gridiconslink.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconslink.addCurve(to: CGPoint(x: 18, y: 18), controlPoint1: CGPoint(x: 17.1, y: 16), controlPoint2: CGPoint(x: 18, y: 16.9))
+        gridiconslink.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconslink.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 18, y: 21.1), controlPoint2: CGPoint(x: 17.1, y: 22))
+        gridiconslink.addLine(to: CGPoint(x: 11.02, y: 22))
+        gridiconslink.addCurve(to: CGPoint(x: 15, y: 24), controlPoint1: CGPoint(x: 11.94, y: 23.21), controlPoint2: CGPoint(x: 13.37, y: 24))
+        gridiconslink.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconslink.addCurve(to: CGPoint(x: 20, y: 20), controlPoint1: CGPoint(x: 18.21, y: 24), controlPoint2: CGPoint(x: 20, y: 22.21))
+        gridiconslink.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconslink.addCurve(to: CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 20, y: 15.79), controlPoint2: CGPoint(x: 18.21, y: 14))
+        gridiconslink.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconslink.close()
+        gridiconslink.move(to: CGPoint(x: 0, y: 18))
+        gridiconslink.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconslink.addCurve(to: CGPoint(x: 4, y: 24), controlPoint1: CGPoint(x: 0, y: 22.21), controlPoint2: CGPoint(x: 1.79, y: 24))
+        gridiconslink.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconslink.addCurve(to: CGPoint(x: 8.98, y: 22), controlPoint1: CGPoint(x: 6.63, y: 24), controlPoint2: CGPoint(x: 8.07, y: 23.21))
+        gridiconslink.addLine(to: CGPoint(x: 4, y: 22))
+        gridiconslink.addCurve(to: CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 2.9, y: 22), controlPoint2: CGPoint(x: 2, y: 21.1))
+        gridiconslink.addLine(to: CGPoint(x: 2, y: 18))
+        gridiconslink.addCurve(to: CGPoint(x: 4, y: 16), controlPoint1: CGPoint(x: 2, y: 16.9), controlPoint2: CGPoint(x: 2.9, y: 16))
+        gridiconslink.addLine(to: CGPoint(x: 8.98, y: 16))
+        gridiconslink.addCurve(to: CGPoint(x: 5, y: 14), controlPoint1: CGPoint(x: 8.07, y: 14.79), controlPoint2: CGPoint(x: 6.63, y: 14))
+        gridiconslink.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconslink.addCurve(to: CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 1.79, y: 14), controlPoint2: CGPoint(x: 0, y: 15.79))
+        gridiconslink.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconslink.close()
+        gridiconslink.move(to: CGPoint(x: 0, y: 18))
+        context.saveGState()
+        context.translateBy(x: 908, y: 448)
         gridiconslink.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslink.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslinkbreak(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslinkbreak(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -453)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -453)
         
         /// gridicons-link-break
         let gridiconslinkbreak = UIBezierPath()
-        gridiconslinkbreak.moveToPoint(CGPoint(x: 8, y: 13))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 6, y: 15))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 5, y: 15))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 8, y: 13))
-        gridiconslinkbreak.closePath()
-        gridiconslinkbreak.moveToPoint(CGPoint(x: 17.64, y: 9.36))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 20, y: 7))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 18.5, y: 5.5))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 1.5, y: 22.5))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 3, y: 24))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 12, y: 15))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 15, y: 15))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 15, y: 13))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 14, y: 13))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 16, y: 11))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 18, y: 13), controlPoint1: CGPoint(x: 17.1, y: 11), controlPoint2: CGPoint(x: 18, y: 11.9))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 18, y: 15))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 16, y: 17), controlPoint1: CGPoint(x: 18, y: 16.1), controlPoint2: CGPoint(x: 17.1, y: 17))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 11.02, y: 17))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 15, y: 19), controlPoint1: CGPoint(x: 11.94, y: 18.21), controlPoint2: CGPoint(x: 13.37, y: 19))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 16, y: 19))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 20, y: 15), controlPoint1: CGPoint(x: 18.21, y: 19), controlPoint2: CGPoint(x: 20, y: 17.21))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 20, y: 13))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 17.64, y: 9.36), controlPoint1: CGPoint(x: 20, y: 11.38), controlPoint2: CGPoint(x: 19.03, y: 9.99))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 17.64, y: 9.36))
-        gridiconslinkbreak.closePath()
-        gridiconslinkbreak.moveToPoint(CGPoint(x: 2.36, y: 18.64))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 4, y: 17))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 2, y: 15), controlPoint1: CGPoint(x: 2.9, y: 17), controlPoint2: CGPoint(x: 2, y: 16.1))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 2, y: 13))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 4, y: 11), controlPoint1: CGPoint(x: 2, y: 11.9), controlPoint2: CGPoint(x: 2.9, y: 11))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 8.98, y: 11))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 5, y: 9), controlPoint1: CGPoint(x: 8.07, y: 9.79), controlPoint2: CGPoint(x: 6.63, y: 9))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 4, y: 9))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 1.79, y: 9), controlPoint2: CGPoint(x: 0, y: 10.79))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconslinkbreak.addCurveToPoint(CGPoint(x: 2.36, y: 18.64), controlPoint1: CGPoint(x: 0, y: 16.62), controlPoint2: CGPoint(x: 0.97, y: 18.01))
-        gridiconslinkbreak.addLineToPoint(CGPoint(x: 2.36, y: 18.64))
-        gridiconslinkbreak.closePath()
-        gridiconslinkbreak.moveToPoint(CGPoint(x: 2.36, y: 18.64))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 448)
+        gridiconslinkbreak.move(to: CGPoint(x: 8, y: 13))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 6, y: 15))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 5, y: 15))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 8, y: 13))
+        gridiconslinkbreak.close()
+        gridiconslinkbreak.move(to: CGPoint(x: 17.64, y: 9.36))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 20, y: 7))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 18.5, y: 5.5))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 1.5, y: 22.5))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 3, y: 24))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 12, y: 15))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 15, y: 15))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 15, y: 13))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 14, y: 13))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 16, y: 11))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 18, y: 13), controlPoint1: CGPoint(x: 17.1, y: 11), controlPoint2: CGPoint(x: 18, y: 11.9))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 18, y: 15))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 16, y: 17), controlPoint1: CGPoint(x: 18, y: 16.1), controlPoint2: CGPoint(x: 17.1, y: 17))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 11.02, y: 17))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 15, y: 19), controlPoint1: CGPoint(x: 11.94, y: 18.21), controlPoint2: CGPoint(x: 13.37, y: 19))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 16, y: 19))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 20, y: 15), controlPoint1: CGPoint(x: 18.21, y: 19), controlPoint2: CGPoint(x: 20, y: 17.21))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 20, y: 13))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 17.64, y: 9.36), controlPoint1: CGPoint(x: 20, y: 11.38), controlPoint2: CGPoint(x: 19.03, y: 9.99))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 17.64, y: 9.36))
+        gridiconslinkbreak.close()
+        gridiconslinkbreak.move(to: CGPoint(x: 2.36, y: 18.64))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 2, y: 15), controlPoint1: CGPoint(x: 2.9, y: 17), controlPoint2: CGPoint(x: 2, y: 16.1))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 2, y: 13))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 4, y: 11), controlPoint1: CGPoint(x: 2, y: 11.9), controlPoint2: CGPoint(x: 2.9, y: 11))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 8.98, y: 11))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 5, y: 9), controlPoint1: CGPoint(x: 8.07, y: 9.79), controlPoint2: CGPoint(x: 6.63, y: 9))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 4, y: 9))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 0, y: 13), controlPoint1: CGPoint(x: 1.79, y: 9), controlPoint2: CGPoint(x: 0, y: 10.79))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconslinkbreak.addCurve(to: CGPoint(x: 2.36, y: 18.64), controlPoint1: CGPoint(x: 0, y: 16.62), controlPoint2: CGPoint(x: 0.97, y: 18.01))
+        gridiconslinkbreak.addLine(to: CGPoint(x: 2.36, y: 18.64))
+        gridiconslinkbreak.close()
+        gridiconslinkbreak.move(to: CGPoint(x: 2.36, y: 18.64))
+        context.saveGState()
+        context.translateBy(x: 874, y: 448)
         gridiconslinkbreak.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslinkbreak.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslayout(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslayout(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -453)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -453)
         
         /// gridicons-layout
         let gridiconslayout = UIBezierPath()
-        gridiconslayout.moveToPoint(CGPoint(x: 5, y: 22))
-        gridiconslayout.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 0, y: 20), controlPoint1: CGPoint(x: 0.9, y: 22), controlPoint2: CGPoint(x: 0, y: 21.11))
-        gridiconslayout.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
-        gridiconslayout.addLineToPoint(CGPoint(x: 5, y: 6))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 6.1, y: 6), controlPoint2: CGPoint(x: 7, y: 6.89))
-        gridiconslayout.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 5, y: 22), controlPoint1: CGPoint(x: 7, y: 21.11), controlPoint2: CGPoint(x: 6.1, y: 22))
-        gridiconslayout.addLineToPoint(CGPoint(x: 5, y: 22))
-        gridiconslayout.closePath()
-        gridiconslayout.moveToPoint(CGPoint(x: 13, y: 12))
-        gridiconslayout.addLineToPoint(CGPoint(x: 17, y: 12))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 19, y: 10), controlPoint1: CGPoint(x: 18.11, y: 12), controlPoint2: CGPoint(x: 19, y: 11.11))
-        gridiconslayout.addLineToPoint(CGPoint(x: 19, y: 7))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 17, y: 5), controlPoint1: CGPoint(x: 19, y: 5.9), controlPoint2: CGPoint(x: 18.11, y: 5))
-        gridiconslayout.addLineToPoint(CGPoint(x: 13, y: 5))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 11, y: 7), controlPoint1: CGPoint(x: 11.9, y: 5), controlPoint2: CGPoint(x: 11, y: 5.9))
-        gridiconslayout.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 13, y: 12), controlPoint1: CGPoint(x: 11, y: 11.11), controlPoint2: CGPoint(x: 11.9, y: 12))
-        gridiconslayout.addLineToPoint(CGPoint(x: 13, y: 12))
-        gridiconslayout.closePath()
-        gridiconslayout.moveToPoint(CGPoint(x: 18, y: 22))
-        gridiconslayout.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 18, y: 14.9), controlPoint2: CGPoint(x: 17.11, y: 14))
-        gridiconslayout.addLineToPoint(CGPoint(x: 11, y: 14))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 9, y: 16), controlPoint1: CGPoint(x: 9.89, y: 14), controlPoint2: CGPoint(x: 9, y: 14.9))
-        gridiconslayout.addLineToPoint(CGPoint(x: 9, y: 22))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 9, y: 23.11), controlPoint2: CGPoint(x: 9.89, y: 24))
-        gridiconslayout.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconslayout.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconslayout.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconslayout.closePath()
-        gridiconslayout.moveToPoint(CGPoint(x: 18, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 448)
+        gridiconslayout.move(to: CGPoint(x: 5, y: 22))
+        gridiconslayout.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconslayout.addCurve(to: CGPoint(x: 0, y: 20), controlPoint1: CGPoint(x: 0.9, y: 22), controlPoint2: CGPoint(x: 0, y: 21.11))
+        gridiconslayout.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconslayout.addCurve(to: CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
+        gridiconslayout.addLine(to: CGPoint(x: 5, y: 6))
+        gridiconslayout.addCurve(to: CGPoint(x: 7, y: 8), controlPoint1: CGPoint(x: 6.1, y: 6), controlPoint2: CGPoint(x: 7, y: 6.89))
+        gridiconslayout.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconslayout.addCurve(to: CGPoint(x: 5, y: 22), controlPoint1: CGPoint(x: 7, y: 21.11), controlPoint2: CGPoint(x: 6.1, y: 22))
+        gridiconslayout.addLine(to: CGPoint(x: 5, y: 22))
+        gridiconslayout.close()
+        gridiconslayout.move(to: CGPoint(x: 13, y: 12))
+        gridiconslayout.addLine(to: CGPoint(x: 17, y: 12))
+        gridiconslayout.addCurve(to: CGPoint(x: 19, y: 10), controlPoint1: CGPoint(x: 18.11, y: 12), controlPoint2: CGPoint(x: 19, y: 11.11))
+        gridiconslayout.addLine(to: CGPoint(x: 19, y: 7))
+        gridiconslayout.addCurve(to: CGPoint(x: 17, y: 5), controlPoint1: CGPoint(x: 19, y: 5.9), controlPoint2: CGPoint(x: 18.11, y: 5))
+        gridiconslayout.addLine(to: CGPoint(x: 13, y: 5))
+        gridiconslayout.addCurve(to: CGPoint(x: 11, y: 7), controlPoint1: CGPoint(x: 11.9, y: 5), controlPoint2: CGPoint(x: 11, y: 5.9))
+        gridiconslayout.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconslayout.addCurve(to: CGPoint(x: 13, y: 12), controlPoint1: CGPoint(x: 11, y: 11.11), controlPoint2: CGPoint(x: 11.9, y: 12))
+        gridiconslayout.addLine(to: CGPoint(x: 13, y: 12))
+        gridiconslayout.close()
+        gridiconslayout.move(to: CGPoint(x: 18, y: 22))
+        gridiconslayout.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconslayout.addCurve(to: CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 18, y: 14.9), controlPoint2: CGPoint(x: 17.11, y: 14))
+        gridiconslayout.addLine(to: CGPoint(x: 11, y: 14))
+        gridiconslayout.addCurve(to: CGPoint(x: 9, y: 16), controlPoint1: CGPoint(x: 9.89, y: 14), controlPoint2: CGPoint(x: 9, y: 14.9))
+        gridiconslayout.addLine(to: CGPoint(x: 9, y: 22))
+        gridiconslayout.addCurve(to: CGPoint(x: 11, y: 24), controlPoint1: CGPoint(x: 9, y: 23.11), controlPoint2: CGPoint(x: 9.89, y: 24))
+        gridiconslayout.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconslayout.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconslayout.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconslayout.close()
+        gridiconslayout.move(to: CGPoint(x: 18, y: 22))
+        context.saveGState()
+        context.translateBy(x: 840, y: 448)
         gridiconslayout.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslayout.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconslayoutblocks(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 22), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconslayoutblocks(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 22), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 22), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 22)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -450)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -450)
         
         /// gridicons-layout-blocks
         let gridiconslayoutblocks = UIBezierPath()
-        gridiconslayoutblocks.moveToPoint(CGPoint(x: 20, y: 8))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 18, y: 4))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 16, y: 2), controlPoint1: CGPoint(x: 18, y: 2.9), controlPoint2: CGPoint(x: 17.11, y: 2))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 6, y: 2))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 4, y: 4), controlPoint1: CGPoint(x: 4.89, y: 2), controlPoint2: CGPoint(x: 4, y: 2.9))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 4, y: 6))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 0, y: 13.11), controlPoint2: CGPoint(x: 0.9, y: 14))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 4, y: 22))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 6, y: 24), controlPoint1: CGPoint(x: 4, y: 23.11), controlPoint2: CGPoint(x: 4.89, y: 24))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 20, y: 20))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 22, y: 18), controlPoint1: CGPoint(x: 21.11, y: 20), controlPoint2: CGPoint(x: 22, y: 19.11))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 22, y: 10))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 20, y: 8), controlPoint1: CGPoint(x: 22, y: 8.89), controlPoint2: CGPoint(x: 21.11, y: 8))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 20, y: 8))
-        gridiconslayoutblocks.closePath()
-        gridiconslayoutblocks.moveToPoint(CGPoint(x: 16, y: 22))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 6, y: 22))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 6, y: 14))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 10, y: 12), controlPoint1: CGPoint(x: 9.11, y: 14), controlPoint2: CGPoint(x: 10, y: 13.11))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 10, y: 8))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 8, y: 6), controlPoint1: CGPoint(x: 10, y: 6.89), controlPoint2: CGPoint(x: 9.11, y: 6))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 6, y: 6))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 6, y: 4))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 16, y: 4))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 14, y: 8))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 12, y: 10), controlPoint1: CGPoint(x: 12.9, y: 8), controlPoint2: CGPoint(x: 12, y: 8.89))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 12, y: 18))
-        gridiconslayoutblocks.addCurveToPoint(CGPoint(x: 14, y: 20), controlPoint1: CGPoint(x: 12, y: 19.11), controlPoint2: CGPoint(x: 12.9, y: 20))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconslayoutblocks.closePath()
-        gridiconslayoutblocks.moveToPoint(CGPoint(x: 20, y: 18))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 14, y: 18))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconslayoutblocks.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconslayoutblocks.closePath()
-        gridiconslayoutblocks.moveToPoint(CGPoint(x: 20, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 448)
+        gridiconslayoutblocks.move(to: CGPoint(x: 20, y: 8))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 18, y: 4))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 16, y: 2), controlPoint1: CGPoint(x: 18, y: 2.9), controlPoint2: CGPoint(x: 17.11, y: 2))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 6, y: 2))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 4, y: 4), controlPoint1: CGPoint(x: 4.89, y: 2), controlPoint2: CGPoint(x: 4, y: 2.9))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 4, y: 6))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 0, y: 13.11), controlPoint2: CGPoint(x: 0.9, y: 14))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 4, y: 22))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 6, y: 24), controlPoint1: CGPoint(x: 4, y: 23.11), controlPoint2: CGPoint(x: 4.89, y: 24))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 20, y: 20))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 22, y: 18), controlPoint1: CGPoint(x: 21.11, y: 20), controlPoint2: CGPoint(x: 22, y: 19.11))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 22, y: 10))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 20, y: 8), controlPoint1: CGPoint(x: 22, y: 8.89), controlPoint2: CGPoint(x: 21.11, y: 8))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 20, y: 8))
+        gridiconslayoutblocks.close()
+        gridiconslayoutblocks.move(to: CGPoint(x: 16, y: 22))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 6, y: 22))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 6, y: 14))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 10, y: 12), controlPoint1: CGPoint(x: 9.11, y: 14), controlPoint2: CGPoint(x: 10, y: 13.11))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 10, y: 8))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 8, y: 6), controlPoint1: CGPoint(x: 10, y: 6.89), controlPoint2: CGPoint(x: 9.11, y: 6))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 6, y: 6))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 6, y: 4))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 16, y: 4))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 12, y: 10), controlPoint1: CGPoint(x: 12.9, y: 8), controlPoint2: CGPoint(x: 12, y: 8.89))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 12, y: 18))
+        gridiconslayoutblocks.addCurve(to: CGPoint(x: 14, y: 20), controlPoint1: CGPoint(x: 12, y: 19.11), controlPoint2: CGPoint(x: 12.9, y: 20))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconslayoutblocks.close()
+        gridiconslayoutblocks.move(to: CGPoint(x: 20, y: 18))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 14, y: 18))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconslayoutblocks.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconslayoutblocks.close()
+        gridiconslayoutblocks.move(to: CGPoint(x: 20, y: 18))
+        context.saveGState()
+        context.translateBy(x: 806, y: 448)
         gridiconslayoutblocks.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconslayoutblocks.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsitalic(frame frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsitalic(frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 10, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -457)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -457)
         
         /// gridicons-italic
         let gridiconsitalic = UIBezierPath()
-        gridiconsitalic.moveToPoint(CGPoint(x: 3.2, y: 9))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 2.77, y: 11))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 4.27, y: 11))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 1.93, y: 22))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 0.43, y: 22))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 6.13, y: 24))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 6.56, y: 22))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 5.05, y: 22))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 7.4, y: 11))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 8.9, y: 11))
-        gridiconsitalic.addLineToPoint(CGPoint(x: 9.33, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 448)
+        gridiconsitalic.move(to: CGPoint(x: 3.2, y: 9))
+        gridiconsitalic.addLine(to: CGPoint(x: 2.77, y: 11))
+        gridiconsitalic.addLine(to: CGPoint(x: 4.27, y: 11))
+        gridiconsitalic.addLine(to: CGPoint(x: 1.93, y: 22))
+        gridiconsitalic.addLine(to: CGPoint(x: 0.43, y: 22))
+        gridiconsitalic.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsitalic.addLine(to: CGPoint(x: 6.13, y: 24))
+        gridiconsitalic.addLine(to: CGPoint(x: 6.56, y: 22))
+        gridiconsitalic.addLine(to: CGPoint(x: 5.05, y: 22))
+        gridiconsitalic.addLine(to: CGPoint(x: 7.4, y: 11))
+        gridiconsitalic.addLine(to: CGPoint(x: 8.9, y: 11))
+        gridiconsitalic.addLine(to: CGPoint(x: 9.33, y: 9))
+        context.saveGState()
+        context.translateBy(x: 772, y: 448)
         gridiconsitalic.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsitalic.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsinstitution(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsinstitution(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1176, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1176, y: -418)
         
         /// gridicons-institution
         let gridiconsinstitution = UIBezierPath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 0, y: 21))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 20, y: 21))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 20, y: 24))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 0, y: 21))
-        gridiconsinstitution.closePath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 20, y: 8))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinstitution.closePath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 15, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 18, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 15, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 15, y: 12))
-        gridiconsinstitution.closePath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 8.5, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 11.5, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 11.5, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 8.5, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 8.5, y: 12))
-        gridiconsinstitution.closePath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 2, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 5, y: 12))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 5, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 2, y: 19))
-        gridiconsinstitution.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsinstitution.closePath()
-        gridiconsinstitution.moveToPoint(CGPoint(x: 2, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1176, 414)
+        gridiconsinstitution.move(to: CGPoint(x: 0, y: 21))
+        gridiconsinstitution.addLine(to: CGPoint(x: 20, y: 21))
+        gridiconsinstitution.addLine(to: CGPoint(x: 20, y: 24))
+        gridiconsinstitution.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsinstitution.addLine(to: CGPoint(x: 0, y: 21))
+        gridiconsinstitution.close()
+        gridiconsinstitution.move(to: CGPoint(x: 10, y: 4))
+        gridiconsinstitution.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconsinstitution.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsinstitution.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconsinstitution.addLine(to: CGPoint(x: 20, y: 8))
+        gridiconsinstitution.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsinstitution.close()
+        gridiconsinstitution.move(to: CGPoint(x: 15, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 18, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 15, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 15, y: 12))
+        gridiconsinstitution.close()
+        gridiconsinstitution.move(to: CGPoint(x: 8.5, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 11.5, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 11.5, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 8.5, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 8.5, y: 12))
+        gridiconsinstitution.close()
+        gridiconsinstitution.move(to: CGPoint(x: 2, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 5, y: 12))
+        gridiconsinstitution.addLine(to: CGPoint(x: 5, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 2, y: 19))
+        gridiconsinstitution.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsinstitution.close()
+        gridiconsinstitution.move(to: CGPoint(x: 2, y: 12))
+        context.saveGState()
+        context.translateBy(x: 1176, y: 414)
         gridiconsinstitution.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsinstitution.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsink(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsink(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1142, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1142, y: -418)
         
         /// gridicons-ink
         let gridiconsink = UIBezierPath()
-        gridiconsink.moveToPoint(CGPoint(x: 0, y: 17))
-        gridiconsink.addCurveToPoint(CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 0, y: 20.87), controlPoint2: CGPoint(x: 3.13, y: 24))
-        gridiconsink.addCurveToPoint(CGPoint(x: 14, y: 17), controlPoint1: CGPoint(x: 10.87, y: 24), controlPoint2: CGPoint(x: 14, y: 20.87))
-        gridiconsink.addCurveToPoint(CGPoint(x: 12.9, y: 13.23), controlPoint1: CGPoint(x: 14, y: 15.61), controlPoint2: CGPoint(x: 13.59, y: 14.32))
-        gridiconsink.addLineToPoint(CGPoint(x: 12.9, y: 13.23))
-        gridiconsink.addLineToPoint(CGPoint(x: 7, y: 4))
-        gridiconsink.addLineToPoint(CGPoint(x: 1.1, y: 13.23))
-        gridiconsink.addLineToPoint(CGPoint(x: 1.11, y: 13.23))
-        gridiconsink.addCurveToPoint(CGPoint(x: 0, y: 17), controlPoint1: CGPoint(x: 0.41, y: 14.32), controlPoint2: CGPoint(x: 0, y: 15.61))
-        gridiconsink.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsink.closePath()
-        gridiconsink.moveToPoint(CGPoint(x: 0, y: 17))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1142, 414)
+        gridiconsink.move(to: CGPoint(x: 0, y: 17))
+        gridiconsink.addCurve(to: CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 0, y: 20.87), controlPoint2: CGPoint(x: 3.13, y: 24))
+        gridiconsink.addCurve(to: CGPoint(x: 14, y: 17), controlPoint1: CGPoint(x: 10.87, y: 24), controlPoint2: CGPoint(x: 14, y: 20.87))
+        gridiconsink.addCurve(to: CGPoint(x: 12.9, y: 13.23), controlPoint1: CGPoint(x: 14, y: 15.61), controlPoint2: CGPoint(x: 13.59, y: 14.32))
+        gridiconsink.addLine(to: CGPoint(x: 12.9, y: 13.23))
+        gridiconsink.addLine(to: CGPoint(x: 7, y: 4))
+        gridiconsink.addLine(to: CGPoint(x: 1.1, y: 13.23))
+        gridiconsink.addLine(to: CGPoint(x: 1.11, y: 13.23))
+        gridiconsink.addCurve(to: CGPoint(x: 0, y: 17), controlPoint1: CGPoint(x: 0.41, y: 14.32), controlPoint2: CGPoint(x: 0, y: 15.61))
+        gridiconsink.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsink.close()
+        gridiconsink.move(to: CGPoint(x: 0, y: 17))
+        context.saveGState()
+        context.translateBy(x: 1142, y: 414)
         gridiconsink.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsink.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsinfo(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsinfo(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1108, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1108, y: -418)
         
         /// gridicons-info
         let gridiconsinfo = UIBezierPath()
-        gridiconsinfo.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinfo.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsinfo.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsinfo.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsinfo.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinfo.closePath()
-        gridiconsinfo.moveToPoint(CGPoint(x: 11, y: 19))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 11, y: 13))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsinfo.closePath()
-        gridiconsinfo.moveToPoint(CGPoint(x: 11, y: 11))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 9, y: 11))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 11, y: 9))
-        gridiconsinfo.addLineToPoint(CGPoint(x: 11, y: 11))
-        gridiconsinfo.closePath()
-        gridiconsinfo.moveToPoint(CGPoint(x: 11, y: 11))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1108, 414)
+        gridiconsinfo.move(to: CGPoint(x: 10, y: 4))
+        gridiconsinfo.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsinfo.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsinfo.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsinfo.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsinfo.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsinfo.close()
+        gridiconsinfo.move(to: CGPoint(x: 11, y: 19))
+        gridiconsinfo.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsinfo.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsinfo.addLine(to: CGPoint(x: 11, y: 13))
+        gridiconsinfo.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsinfo.close()
+        gridiconsinfo.move(to: CGPoint(x: 11, y: 11))
+        gridiconsinfo.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsinfo.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconsinfo.addLine(to: CGPoint(x: 11, y: 9))
+        gridiconsinfo.addLine(to: CGPoint(x: 11, y: 11))
+        gridiconsinfo.close()
+        gridiconsinfo.move(to: CGPoint(x: 11, y: 11))
+        context.saveGState()
+        context.translateBy(x: 1108, y: 414)
         gridiconsinfo.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsinfo.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsinfooutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsinfooutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1074, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1074, y: -418)
         
         /// gridicons-info-outline
         let gridiconsinfooutline = UIBezierPath()
-        gridiconsinfooutline.moveToPoint(CGPoint(x: 11, y: 11))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 9, y: 11))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 11, y: 9))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 11, y: 11))
-        gridiconsinfooutline.closePath()
-        gridiconsinfooutline.moveToPoint(CGPoint(x: 11, y: 13))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 11, y: 13))
-        gridiconsinfooutline.closePath()
-        gridiconsinfooutline.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 6), controlPoint2: CGPoint(x: 2, y: 9.59))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 2, y: 18.41), controlPoint2: CGPoint(x: 5.59, y: 22))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 22), controlPoint2: CGPoint(x: 18, y: 18.41))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 18, y: 9.59), controlPoint2: CGPoint(x: 14.41, y: 6))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsinfooutline.closePath()
-        gridiconsinfooutline.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 4), controlPoint2: CGPoint(x: 20, y: 8.48))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 20, y: 19.52), controlPoint2: CGPoint(x: 15.52, y: 24))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 24), controlPoint2: CGPoint(x: 0, y: 19.52))
-        gridiconsinfooutline.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 0, y: 8.48), controlPoint2: CGPoint(x: 4.48, y: 4))
-        gridiconsinfooutline.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsinfooutline.closePath()
-        gridiconsinfooutline.moveToPoint(CGPoint(x: 10, y: 4))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1074, 414)
+        gridiconsinfooutline.move(to: CGPoint(x: 11, y: 11))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 11, y: 9))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 11, y: 11))
+        gridiconsinfooutline.close()
+        gridiconsinfooutline.move(to: CGPoint(x: 11, y: 13))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 11, y: 13))
+        gridiconsinfooutline.close()
+        gridiconsinfooutline.move(to: CGPoint(x: 10, y: 6))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 6), controlPoint2: CGPoint(x: 2, y: 9.59))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 2, y: 18.41), controlPoint2: CGPoint(x: 5.59, y: 22))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 22), controlPoint2: CGPoint(x: 18, y: 18.41))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 18, y: 9.59), controlPoint2: CGPoint(x: 14.41, y: 6))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsinfooutline.close()
+        gridiconsinfooutline.move(to: CGPoint(x: 10, y: 4))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 4), controlPoint2: CGPoint(x: 20, y: 8.48))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 20, y: 19.52), controlPoint2: CGPoint(x: 15.52, y: 24))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 24), controlPoint2: CGPoint(x: 0, y: 19.52))
+        gridiconsinfooutline.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 0, y: 8.48), controlPoint2: CGPoint(x: 4.48, y: 4))
+        gridiconsinfooutline.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsinfooutline.close()
+        gridiconsinfooutline.move(to: CGPoint(x: 10, y: 4))
+        context.saveGState()
+        context.translateBy(x: 1074, y: 414)
         gridiconsinfooutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsinfooutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsindentright(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsindentright(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1040, -422)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1040, y: -422)
         
         /// gridicons-indent-right
         let gridiconsindentright = UIBezierPath()
-        gridiconsindentright.moveToPoint(CGPoint(x: 2, y: 8))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsindentright.closePath()
-        gridiconsindentright.moveToPoint(CGPoint(x: 18, y: 17))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 7.83, y: 17))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 9.91, y: 19.09))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 8.5, y: 20.5))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 4, y: 16))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 8.5, y: 11.5))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 9.91, y: 12.91))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 7.83, y: 15))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 18, y: 15))
-        gridiconsindentright.addLineToPoint(CGPoint(x: 18, y: 17))
-        gridiconsindentright.closePath()
-        gridiconsindentright.moveToPoint(CGPoint(x: 18, y: 17))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1040, 414)
+        gridiconsindentright.move(to: CGPoint(x: 2, y: 8))
+        gridiconsindentright.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconsindentright.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsindentright.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsindentright.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsindentright.close()
+        gridiconsindentright.move(to: CGPoint(x: 18, y: 17))
+        gridiconsindentright.addLine(to: CGPoint(x: 7.83, y: 17))
+        gridiconsindentright.addLine(to: CGPoint(x: 9.91, y: 19.09))
+        gridiconsindentright.addLine(to: CGPoint(x: 8.5, y: 20.5))
+        gridiconsindentright.addLine(to: CGPoint(x: 4, y: 16))
+        gridiconsindentright.addLine(to: CGPoint(x: 8.5, y: 11.5))
+        gridiconsindentright.addLine(to: CGPoint(x: 9.91, y: 12.91))
+        gridiconsindentright.addLine(to: CGPoint(x: 7.83, y: 15))
+        gridiconsindentright.addLine(to: CGPoint(x: 18, y: 15))
+        gridiconsindentright.addLine(to: CGPoint(x: 18, y: 17))
+        gridiconsindentright.close()
+        gridiconsindentright.move(to: CGPoint(x: 18, y: 17))
+        context.saveGState()
+        context.translateBy(x: 1040, y: 414)
         gridiconsindentright.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsindentright.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsindentleft(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsindentleft(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1006, -422)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1006, y: -422)
         
         /// gridicons-indent-left
         let gridiconsindentleft = UIBezierPath()
-        gridiconsindentleft.moveToPoint(CGPoint(x: 16, y: 24))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsindentleft.closePath()
-        gridiconsindentleft.moveToPoint(CGPoint(x: 0, y: 15))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 10.17, y: 15))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 8.09, y: 12.91))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 9.5, y: 11.5))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 9.5, y: 20.5))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 8.09, y: 19.09))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 10.17, y: 17))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsindentleft.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsindentleft.closePath()
-        gridiconsindentleft.moveToPoint(CGPoint(x: 0, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1006, 414)
+        gridiconsindentleft.move(to: CGPoint(x: 16, y: 24))
+        gridiconsindentleft.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsindentleft.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsindentleft.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsindentleft.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsindentleft.close()
+        gridiconsindentleft.move(to: CGPoint(x: 0, y: 15))
+        gridiconsindentleft.addLine(to: CGPoint(x: 10.17, y: 15))
+        gridiconsindentleft.addLine(to: CGPoint(x: 8.09, y: 12.91))
+        gridiconsindentleft.addLine(to: CGPoint(x: 9.5, y: 11.5))
+        gridiconsindentleft.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconsindentleft.addLine(to: CGPoint(x: 9.5, y: 20.5))
+        gridiconsindentleft.addLine(to: CGPoint(x: 8.09, y: 19.09))
+        gridiconsindentleft.addLine(to: CGPoint(x: 10.17, y: 17))
+        gridiconsindentleft.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsindentleft.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsindentleft.close()
+        gridiconsindentleft.move(to: CGPoint(x: 0, y: 15))
+        context.saveGState()
+        context.translateBy(x: 1006, y: 414)
         gridiconsindentleft.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsindentleft.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsimage(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsimage(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -972, -422)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -972, y: -422)
         
         /// gridicons-image
         let gridiconsimage = UIBezierPath()
-        gridiconsimage.moveToPoint(CGPoint(x: 11, y: 13.5))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 12.5, y: 12), controlPoint1: CGPoint(x: 11, y: 12.67), controlPoint2: CGPoint(x: 11.67, y: 12))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 14, y: 13.5), controlPoint1: CGPoint(x: 13.33, y: 12), controlPoint2: CGPoint(x: 14, y: 12.67))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 12.5, y: 15), controlPoint1: CGPoint(x: 14, y: 14.33), controlPoint2: CGPoint(x: 13.33, y: 15))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 11, y: 13.5), controlPoint1: CGPoint(x: 11.67, y: 15), controlPoint2: CGPoint(x: 11, y: 14.33))
-        gridiconsimage.addLineToPoint(CGPoint(x: 11, y: 13.5))
-        gridiconsimage.closePath()
-        gridiconsimage.moveToPoint(CGPoint(x: 20, y: 10))
-        gridiconsimage.addLineToPoint(CGPoint(x: 20, y: 22))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.11), controlPoint2: CGPoint(x: 19.11, y: 24))
-        gridiconsimage.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsimage.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
-        gridiconsimage.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 19.11, y: 8), controlPoint2: CGPoint(x: 20, y: 8.89))
-        gridiconsimage.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconsimage.closePath()
-        gridiconsimage.moveToPoint(CGPoint(x: 18, y: 10))
-        gridiconsimage.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsimage.addLineToPoint(CGPoint(x: 2, y: 17.45))
-        gridiconsimage.addLineToPoint(CGPoint(x: 6, y: 13))
-        gridiconsimage.addLineToPoint(CGPoint(x: 11.9, y: 19.55))
-        gridiconsimage.addLineToPoint(CGPoint(x: 13.48, y: 17.7))
-        gridiconsimage.addCurveToPoint(CGPoint(x: 16.52, y: 17.7), controlPoint1: CGPoint(x: 14.28, y: 16.77), controlPoint2: CGPoint(x: 15.72, y: 16.77))
-        gridiconsimage.addLineToPoint(CGPoint(x: 18, y: 19.43))
-        gridiconsimage.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsimage.closePath()
-        gridiconsimage.moveToPoint(CGPoint(x: 18, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 972, 414)
+        gridiconsimage.move(to: CGPoint(x: 11, y: 13.5))
+        gridiconsimage.addCurve(to: CGPoint(x: 12.5, y: 12), controlPoint1: CGPoint(x: 11, y: 12.67), controlPoint2: CGPoint(x: 11.67, y: 12))
+        gridiconsimage.addCurve(to: CGPoint(x: 14, y: 13.5), controlPoint1: CGPoint(x: 13.33, y: 12), controlPoint2: CGPoint(x: 14, y: 12.67))
+        gridiconsimage.addCurve(to: CGPoint(x: 12.5, y: 15), controlPoint1: CGPoint(x: 14, y: 14.33), controlPoint2: CGPoint(x: 13.33, y: 15))
+        gridiconsimage.addCurve(to: CGPoint(x: 11, y: 13.5), controlPoint1: CGPoint(x: 11.67, y: 15), controlPoint2: CGPoint(x: 11, y: 14.33))
+        gridiconsimage.addLine(to: CGPoint(x: 11, y: 13.5))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 20, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 20, y: 22))
+        gridiconsimage.addCurve(to: CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.11), controlPoint2: CGPoint(x: 19.11, y: 24))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsimage.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsimage.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsimage.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
+        gridiconsimage.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsimage.addCurve(to: CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 19.11, y: 8), controlPoint2: CGPoint(x: 20, y: 8.89))
+        gridiconsimage.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 18, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 17.45))
+        gridiconsimage.addLine(to: CGPoint(x: 6, y: 13))
+        gridiconsimage.addLine(to: CGPoint(x: 11.9, y: 19.55))
+        gridiconsimage.addLine(to: CGPoint(x: 13.48, y: 17.7))
+        gridiconsimage.addCurve(to: CGPoint(x: 16.52, y: 17.7), controlPoint1: CGPoint(x: 14.28, y: 16.77), controlPoint2: CGPoint(x: 15.72, y: 16.77))
+        gridiconsimage.addLine(to: CGPoint(x: 18, y: 19.43))
+        gridiconsimage.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 18, y: 10))
+        context.saveGState()
+        context.translateBy(x: 972, y: 414)
         gridiconsimage.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsimage.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsimagemultiple(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsimagemultiple(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -938, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -938, y: -418)
         
         /// gridicons-image-multiple
         let gridiconsimagemultiple = UIBezierPath()
-        gridiconsimagemultiple.moveToPoint(CGPoint(x: 13, y: 9.5))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 14.5, y: 8), controlPoint1: CGPoint(x: 13, y: 8.67), controlPoint2: CGPoint(x: 13.67, y: 8))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 16, y: 9.5), controlPoint1: CGPoint(x: 15.33, y: 8), controlPoint2: CGPoint(x: 16, y: 8.67))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 14.5, y: 11), controlPoint1: CGPoint(x: 16, y: 10.33), controlPoint2: CGPoint(x: 15.33, y: 11))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 13, y: 9.5), controlPoint1: CGPoint(x: 13.67, y: 11), controlPoint2: CGPoint(x: 13, y: 10.33))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 13, y: 9.5))
-        gridiconsimagemultiple.closePath()
-        gridiconsimagemultiple.moveToPoint(CGPoint(x: 2, y: 22))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.11), controlPoint2: CGPoint(x: 15.11, y: 24))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsimagemultiple.closePath()
-        gridiconsimagemultiple.moveToPoint(CGPoint(x: 20, y: 6))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 18, y: 20), controlPoint1: CGPoint(x: 20, y: 19.11), controlPoint2: CGPoint(x: 19.11, y: 20))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 6, y: 20))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 4, y: 18), controlPoint1: CGPoint(x: 4.89, y: 20), controlPoint2: CGPoint(x: 4, y: 19.11))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 4, y: 6))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 6, y: 4), controlPoint1: CGPoint(x: 4, y: 4.89), controlPoint2: CGPoint(x: 4.89, y: 4))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 18, y: 4))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 20, y: 6), controlPoint1: CGPoint(x: 19.11, y: 4), controlPoint2: CGPoint(x: 20, y: 4.89))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 20, y: 6))
-        gridiconsimagemultiple.closePath()
-        gridiconsimagemultiple.moveToPoint(CGPoint(x: 6, y: 6))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 6, y: 12.33))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 13.86, y: 14.4))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 14.51, y: 13.66))
-        gridiconsimagemultiple.addCurveToPoint(CGPoint(x: 17.49, y: 13.66), controlPoint1: CGPoint(x: 15.31, y: 12.78), controlPoint2: CGPoint(x: 16.7, y: 12.78))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 18, y: 14.23))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 18, y: 6))
-        gridiconsimagemultiple.addLineToPoint(CGPoint(x: 6, y: 6))
-        gridiconsimagemultiple.closePath()
-        gridiconsimagemultiple.moveToPoint(CGPoint(x: 6, y: 6))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 938, 414)
+        gridiconsimagemultiple.move(to: CGPoint(x: 13, y: 9.5))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 14.5, y: 8), controlPoint1: CGPoint(x: 13, y: 8.67), controlPoint2: CGPoint(x: 13.67, y: 8))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 16, y: 9.5), controlPoint1: CGPoint(x: 15.33, y: 8), controlPoint2: CGPoint(x: 16, y: 8.67))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 14.5, y: 11), controlPoint1: CGPoint(x: 16, y: 10.33), controlPoint2: CGPoint(x: 15.33, y: 11))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 13, y: 9.5), controlPoint1: CGPoint(x: 13.67, y: 11), controlPoint2: CGPoint(x: 13, y: 10.33))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 13, y: 9.5))
+        gridiconsimagemultiple.close()
+        gridiconsimagemultiple.move(to: CGPoint(x: 2, y: 22))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.11), controlPoint2: CGPoint(x: 15.11, y: 24))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsimagemultiple.close()
+        gridiconsimagemultiple.move(to: CGPoint(x: 20, y: 6))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 18, y: 20), controlPoint1: CGPoint(x: 20, y: 19.11), controlPoint2: CGPoint(x: 19.11, y: 20))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 6, y: 20))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 4, y: 18), controlPoint1: CGPoint(x: 4.89, y: 20), controlPoint2: CGPoint(x: 4, y: 19.11))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 4, y: 6))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 6, y: 4), controlPoint1: CGPoint(x: 4, y: 4.89), controlPoint2: CGPoint(x: 4.89, y: 4))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 18, y: 4))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 20, y: 6), controlPoint1: CGPoint(x: 19.11, y: 4), controlPoint2: CGPoint(x: 20, y: 4.89))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 20, y: 6))
+        gridiconsimagemultiple.close()
+        gridiconsimagemultiple.move(to: CGPoint(x: 6, y: 6))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 6, y: 12.33))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 13.86, y: 14.4))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 14.51, y: 13.66))
+        gridiconsimagemultiple.addCurve(to: CGPoint(x: 17.49, y: 13.66), controlPoint1: CGPoint(x: 15.31, y: 12.78), controlPoint2: CGPoint(x: 16.7, y: 12.78))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 18, y: 14.23))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 18, y: 6))
+        gridiconsimagemultiple.addLine(to: CGPoint(x: 6, y: 6))
+        gridiconsimagemultiple.close()
+        gridiconsimagemultiple.move(to: CGPoint(x: 6, y: 6))
+        context.saveGState()
+        context.translateBy(x: 938, y: 414)
         gridiconsimagemultiple.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsimagemultiple.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconshouse(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconshouse(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -904, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -904, y: -418)
         
         /// gridicons-house
         let gridiconshouse = UIBezierPath()
-        gridiconshouse.moveToPoint(CGPoint(x: 20, y: 12))
-        gridiconshouse.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconshouse.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconshouse.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconshouse.addLineToPoint(CGPoint(x: 2, y: 14))
-        gridiconshouse.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconshouse.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconshouse.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconshouse.addCurveToPoint(CGPoint(x: 10, y: 17), controlPoint1: CGPoint(x: 7, y: 18.34), controlPoint2: CGPoint(x: 8.34, y: 17))
-        gridiconshouse.addCurveToPoint(CGPoint(x: 13, y: 20), controlPoint1: CGPoint(x: 11.66, y: 17), controlPoint2: CGPoint(x: 13, y: 18.34))
-        gridiconshouse.addLineToPoint(CGPoint(x: 13, y: 24))
-        gridiconshouse.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconshouse.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconshouse.addLineToPoint(CGPoint(x: 20, y: 14))
-        gridiconshouse.addLineToPoint(CGPoint(x: 20, y: 12))
-        gridiconshouse.closePath()
-        gridiconshouse.moveToPoint(CGPoint(x: 20, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 904, 414)
+        gridiconshouse.move(to: CGPoint(x: 20, y: 12))
+        gridiconshouse.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconshouse.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconshouse.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconshouse.addLine(to: CGPoint(x: 2, y: 14))
+        gridiconshouse.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconshouse.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconshouse.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconshouse.addCurve(to: CGPoint(x: 10, y: 17), controlPoint1: CGPoint(x: 7, y: 18.34), controlPoint2: CGPoint(x: 8.34, y: 17))
+        gridiconshouse.addCurve(to: CGPoint(x: 13, y: 20), controlPoint1: CGPoint(x: 11.66, y: 17), controlPoint2: CGPoint(x: 13, y: 18.34))
+        gridiconshouse.addLine(to: CGPoint(x: 13, y: 24))
+        gridiconshouse.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconshouse.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconshouse.addLine(to: CGPoint(x: 20, y: 14))
+        gridiconshouse.addLine(to: CGPoint(x: 20, y: 12))
+        gridiconshouse.close()
+        gridiconshouse.move(to: CGPoint(x: 20, y: 12))
+        context.saveGState()
+        context.translateBy(x: 904, y: 414)
         gridiconshouse.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconshouse.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconshistory(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconshistory(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -414)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -414)
         
         /// gridicons-history
         do {
-            CGContextSaveGState(context)
-            CGContextTranslateCTM(context, 874, 414)
+            context.saveGState()
+            context.translateBy(x: 874, y: 414)
             
             /// Fill 1
             let fill1 = UIBezierPath()
-            fill1.moveToPoint(CGPoint(x: 0.12, y: 11.53))
-            fill1.addCurveToPoint(CGPoint(x: 10, y: 20), controlPoint1: CGPoint(x: 0.86, y: 16.31), controlPoint2: CGPoint(x: 5.02, y: 20))
-            fill1.addCurveToPoint(CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 15.5, y: 20), controlPoint2: CGPoint(x: 20, y: 15.5))
-            fill1.addCurveToPoint(CGPoint(x: 10, y: 0), controlPoint1: CGPoint(x: 20, y: 4.5), controlPoint2: CGPoint(x: 15.5, y: 0))
-            fill1.addCurveToPoint(CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 6.7, y: 0), controlPoint2: CGPoint(x: 3.8, y: 1.6))
-            fill1.addLineToPoint(CGPoint(x: 2, y: 0))
-            fill1.addLineToPoint(CGPoint(x: 0, y: 0))
-            fill1.addLineToPoint(CGPoint(x: 0, y: 7))
-            fill1.addLineToPoint(CGPoint(x: 7, y: 7))
-            fill1.addLineToPoint(CGPoint(x: 7, y: 5))
-            fill1.addLineToPoint(CGPoint(x: 3.8, y: 5))
-            fill1.addCurveToPoint(CGPoint(x: 10, y: 2), controlPoint1: CGPoint(x: 5.2, y: 3.2), controlPoint2: CGPoint(x: 7.5, y: 2))
-            fill1.addCurveToPoint(CGPoint(x: 18, y: 10), controlPoint1: CGPoint(x: 14.4, y: 2), controlPoint2: CGPoint(x: 18, y: 5.6))
-            fill1.addCurveToPoint(CGPoint(x: 10, y: 18), controlPoint1: CGPoint(x: 18, y: 14.4), controlPoint2: CGPoint(x: 14.4, y: 18))
-            fill1.addCurveToPoint(CGPoint(x: 2.15, y: 11.52), controlPoint1: CGPoint(x: 6.12, y: 18), controlPoint2: CGPoint(x: 2.87, y: 15.2))
-            fill1.addLineToPoint(CGPoint(x: 0.12, y: 11.52))
-            fill1.addLineToPoint(CGPoint(x: 0.12, y: 11.53))
-            fill1.closePath()
-            fill1.moveToPoint(CGPoint(x: 0.12, y: 11.53))
-            CGContextSaveGState(context)
+            fill1.move(to: CGPoint(x: 0.12, y: 11.53))
+            fill1.addCurve(to: CGPoint(x: 10, y: 20), controlPoint1: CGPoint(x: 0.86, y: 16.31), controlPoint2: CGPoint(x: 5.02, y: 20))
+            fill1.addCurve(to: CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 15.5, y: 20), controlPoint2: CGPoint(x: 20, y: 15.5))
+            fill1.addCurve(to: CGPoint(x: 10, y: 0), controlPoint1: CGPoint(x: 20, y: 4.5), controlPoint2: CGPoint(x: 15.5, y: 0))
+            fill1.addCurve(to: CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 6.7, y: 0), controlPoint2: CGPoint(x: 3.8, y: 1.6))
+            fill1.addLine(to: CGPoint(x: 2, y: 0))
+            fill1.addLine(to: CGPoint(x: 0, y: 0))
+            fill1.addLine(to: CGPoint(x: 0, y: 7))
+            fill1.addLine(to: CGPoint(x: 7, y: 7))
+            fill1.addLine(to: CGPoint(x: 7, y: 5))
+            fill1.addLine(to: CGPoint(x: 3.8, y: 5))
+            fill1.addCurve(to: CGPoint(x: 10, y: 2), controlPoint1: CGPoint(x: 5.2, y: 3.2), controlPoint2: CGPoint(x: 7.5, y: 2))
+            fill1.addCurve(to: CGPoint(x: 18, y: 10), controlPoint1: CGPoint(x: 14.4, y: 2), controlPoint2: CGPoint(x: 18, y: 5.6))
+            fill1.addCurve(to: CGPoint(x: 10, y: 18), controlPoint1: CGPoint(x: 18, y: 14.4), controlPoint2: CGPoint(x: 14.4, y: 18))
+            fill1.addCurve(to: CGPoint(x: 2.15, y: 11.52), controlPoint1: CGPoint(x: 6.12, y: 18), controlPoint2: CGPoint(x: 2.87, y: 15.2))
+            fill1.addLine(to: CGPoint(x: 0.12, y: 11.52))
+            fill1.addLine(to: CGPoint(x: 0.12, y: 11.53))
+            fill1.close()
+            fill1.move(to: CGPoint(x: 0.12, y: 11.53))
+            context.saveGState()
             fill1.usesEvenOddFillRule = true
-            UIColor.blackColor().setFill()
+            UIColor.black.setFill()
             fill1.fill()
-            CGContextRestoreGState(context)
+            context.restoreGState()
             
             /// Fill 2
             let fill2 = UIBezierPath()
-            fill2.moveToPoint(CGPoint.zero)
-            fill2.addLineToPoint(CGPoint(x: 0, y: 5.3))
-            fill2.addLineToPoint(CGPoint(x: 3.2, y: 9.6))
-            fill2.addLineToPoint(CGPoint(x: 4.8, y: 8.4))
-            fill2.addLineToPoint(CGPoint(x: 2, y: 4.7))
-            fill2.addLineToPoint(CGPoint(x: 2, y: 0))
-            CGContextSaveGState(context)
-            CGContextTranslateCTM(context, 9, 5)
+            fill2.move(to: CGPoint.zero)
+            fill2.addLine(to: CGPoint(x: 0, y: 5.3))
+            fill2.addLine(to: CGPoint(x: 3.2, y: 9.6))
+            fill2.addLine(to: CGPoint(x: 4.8, y: 8.4))
+            fill2.addLine(to: CGPoint(x: 2, y: 4.7))
+            fill2.addLine(to: CGPoint(x: 2, y: 0))
+            context.saveGState()
+            context.translateBy(x: 9, y: 5)
             fill2.usesEvenOddFillRule = true
-            UIColor.blackColor().setFill()
+            UIColor.black.setFill()
             fill2.fill()
-            CGContextRestoreGState(context)
+            context.restoreGState()
             
-            CGContextRestoreGState(context)
+            context.restoreGState()
         }
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconshelp(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconshelp(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -418)
         
         /// gridicons-help
         let gridiconshelp = UIBezierPath()
-        gridiconshelp.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconshelp.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconshelp.closePath()
-        gridiconshelp.moveToPoint(CGPoint(x: 11, y: 19))
-        gridiconshelp.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconshelp.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconshelp.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconshelp.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconshelp.closePath()
-        gridiconshelp.moveToPoint(CGPoint(x: 13, y: 12.59))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 11.9, y: 13.62), controlPoint1: CGPoint(x: 12.77, y: 12.95), controlPoint2: CGPoint(x: 12.4, y: 13.29))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 11.09, y: 14.23), controlPoint1: CGPoint(x: 11.47, y: 13.9), controlPoint2: CGPoint(x: 11.2, y: 14.1))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.92, y: 14.69), controlPoint1: CGPoint(x: 10.98, y: 14.36), controlPoint2: CGPoint(x: 10.92, y: 14.51))
-        gridiconshelp.addLineToPoint(CGPoint(x: 10.92, y: 15))
-        gridiconshelp.addLineToPoint(CGPoint(x: 9.04, y: 15))
-        gridiconshelp.addLineToPoint(CGPoint(x: 9.04, y: 14.47))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 9.29, y: 13.46), controlPoint1: CGPoint(x: 9.04, y: 14.07), controlPoint2: CGPoint(x: 9.12, y: 13.73))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.16, y: 12.65), controlPoint1: CGPoint(x: 9.45, y: 13.18), controlPoint2: CGPoint(x: 9.74, y: 12.91))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.87, y: 12.08), controlPoint1: CGPoint(x: 10.49, y: 12.44), controlPoint2: CGPoint(x: 10.73, y: 12.25))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 11.09, y: 11.5), controlPoint1: CGPoint(x: 11.02, y: 11.91), controlPoint2: CGPoint(x: 11.09, y: 11.72))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.86, y: 11.09), controlPoint1: CGPoint(x: 11.09, y: 11.33), controlPoint2: CGPoint(x: 11.01, y: 11.2))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.25, y: 10.95), controlPoint1: CGPoint(x: 10.7, y: 10.99), controlPoint2: CGPoint(x: 10.5, y: 10.95))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 8.07, y: 11.6), controlPoint1: CGPoint(x: 9.63, y: 10.95), controlPoint2: CGPoint(x: 8.9, y: 11.16))
-        gridiconshelp.addLineToPoint(CGPoint(x: 7.22, y: 9.93))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 10.41, y: 9.06), controlPoint1: CGPoint(x: 8.24, y: 9.35), controlPoint2: CGPoint(x: 9.31, y: 9.06))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 12.56, y: 9.66), controlPoint1: CGPoint(x: 11.33, y: 9.06), controlPoint2: CGPoint(x: 12.04, y: 9.26))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 13.34, y: 11.3), controlPoint1: CGPoint(x: 13.08, y: 10.06), controlPoint2: CGPoint(x: 13.34, y: 10.61))
-        gridiconshelp.addCurveToPoint(CGPoint(x: 13, y: 12.59), controlPoint1: CGPoint(x: 13.34, y: 11.8), controlPoint2: CGPoint(x: 13.23, y: 12.23))
-        gridiconshelp.addLineToPoint(CGPoint(x: 13, y: 12.59))
-        gridiconshelp.closePath()
-        gridiconshelp.moveToPoint(CGPoint(x: 13, y: 12.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 414)
+        gridiconshelp.move(to: CGPoint(x: 10, y: 4))
+        gridiconshelp.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconshelp.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconshelp.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconshelp.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconshelp.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconshelp.close()
+        gridiconshelp.move(to: CGPoint(x: 11, y: 19))
+        gridiconshelp.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconshelp.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconshelp.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconshelp.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconshelp.close()
+        gridiconshelp.move(to: CGPoint(x: 13, y: 12.59))
+        gridiconshelp.addCurve(to: CGPoint(x: 11.9, y: 13.62), controlPoint1: CGPoint(x: 12.77, y: 12.95), controlPoint2: CGPoint(x: 12.4, y: 13.29))
+        gridiconshelp.addCurve(to: CGPoint(x: 11.09, y: 14.23), controlPoint1: CGPoint(x: 11.47, y: 13.9), controlPoint2: CGPoint(x: 11.2, y: 14.1))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.92, y: 14.69), controlPoint1: CGPoint(x: 10.98, y: 14.36), controlPoint2: CGPoint(x: 10.92, y: 14.51))
+        gridiconshelp.addLine(to: CGPoint(x: 10.92, y: 15))
+        gridiconshelp.addLine(to: CGPoint(x: 9.04, y: 15))
+        gridiconshelp.addLine(to: CGPoint(x: 9.04, y: 14.47))
+        gridiconshelp.addCurve(to: CGPoint(x: 9.29, y: 13.46), controlPoint1: CGPoint(x: 9.04, y: 14.07), controlPoint2: CGPoint(x: 9.12, y: 13.73))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.16, y: 12.65), controlPoint1: CGPoint(x: 9.45, y: 13.18), controlPoint2: CGPoint(x: 9.74, y: 12.91))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.87, y: 12.08), controlPoint1: CGPoint(x: 10.49, y: 12.44), controlPoint2: CGPoint(x: 10.73, y: 12.25))
+        gridiconshelp.addCurve(to: CGPoint(x: 11.09, y: 11.5), controlPoint1: CGPoint(x: 11.02, y: 11.91), controlPoint2: CGPoint(x: 11.09, y: 11.72))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.86, y: 11.09), controlPoint1: CGPoint(x: 11.09, y: 11.33), controlPoint2: CGPoint(x: 11.01, y: 11.2))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.25, y: 10.95), controlPoint1: CGPoint(x: 10.7, y: 10.99), controlPoint2: CGPoint(x: 10.5, y: 10.95))
+        gridiconshelp.addCurve(to: CGPoint(x: 8.07, y: 11.6), controlPoint1: CGPoint(x: 9.63, y: 10.95), controlPoint2: CGPoint(x: 8.9, y: 11.16))
+        gridiconshelp.addLine(to: CGPoint(x: 7.22, y: 9.93))
+        gridiconshelp.addCurve(to: CGPoint(x: 10.41, y: 9.06), controlPoint1: CGPoint(x: 8.24, y: 9.35), controlPoint2: CGPoint(x: 9.31, y: 9.06))
+        gridiconshelp.addCurve(to: CGPoint(x: 12.56, y: 9.66), controlPoint1: CGPoint(x: 11.33, y: 9.06), controlPoint2: CGPoint(x: 12.04, y: 9.26))
+        gridiconshelp.addCurve(to: CGPoint(x: 13.34, y: 11.3), controlPoint1: CGPoint(x: 13.08, y: 10.06), controlPoint2: CGPoint(x: 13.34, y: 10.61))
+        gridiconshelp.addCurve(to: CGPoint(x: 13, y: 12.59), controlPoint1: CGPoint(x: 13.34, y: 11.8), controlPoint2: CGPoint(x: 13.23, y: 12.23))
+        gridiconshelp.addLine(to: CGPoint(x: 13, y: 12.59))
+        gridiconshelp.close()
+        gridiconshelp.move(to: CGPoint(x: 13, y: 12.59))
+        context.saveGState()
+        context.translateBy(x: 840, y: 414)
         gridiconshelp.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconshelp.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconshelpoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconshelpoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -418)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -418)
         
         /// gridicons-help-outline
         let gridiconshelpoutline = UIBezierPath()
-        gridiconshelpoutline.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconshelpoutline.closePath()
-        gridiconshelpoutline.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconshelpoutline.closePath()
-        gridiconshelpoutline.moveToPoint(CGPoint(x: 11, y: 17))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 9, y: 17))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconshelpoutline.closePath()
-        gridiconshelpoutline.moveToPoint(CGPoint(x: 9.04, y: 15))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 9.04, y: 14.47))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 9.29, y: 13.46), controlPoint1: CGPoint(x: 9.04, y: 14.07), controlPoint2: CGPoint(x: 9.12, y: 13.73))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.16, y: 12.65), controlPoint1: CGPoint(x: 9.45, y: 13.18), controlPoint2: CGPoint(x: 9.74, y: 12.91))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.88, y: 12.08), controlPoint1: CGPoint(x: 10.49, y: 12.44), controlPoint2: CGPoint(x: 10.73, y: 12.25))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 11.09, y: 11.5), controlPoint1: CGPoint(x: 11.02, y: 11.91), controlPoint2: CGPoint(x: 11.09, y: 11.72))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.86, y: 11.09), controlPoint1: CGPoint(x: 11.09, y: 11.33), controlPoint2: CGPoint(x: 11.02, y: 11.2))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.25, y: 10.95), controlPoint1: CGPoint(x: 10.7, y: 10.99), controlPoint2: CGPoint(x: 10.5, y: 10.95))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 8.08, y: 11.6), controlPoint1: CGPoint(x: 9.63, y: 10.95), controlPoint2: CGPoint(x: 8.91, y: 11.16))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 7.23, y: 9.93))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.42, y: 9.06), controlPoint1: CGPoint(x: 8.25, y: 9.35), controlPoint2: CGPoint(x: 9.31, y: 9.06))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 12.57, y: 9.66), controlPoint1: CGPoint(x: 11.34, y: 9.06), controlPoint2: CGPoint(x: 12.05, y: 9.26))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 13.35, y: 11.3), controlPoint1: CGPoint(x: 13.09, y: 10.06), controlPoint2: CGPoint(x: 13.35, y: 10.61))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 13, y: 12.59), controlPoint1: CGPoint(x: 13.35, y: 11.8), controlPoint2: CGPoint(x: 13.23, y: 12.23))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 11.9, y: 13.62), controlPoint1: CGPoint(x: 12.77, y: 12.95), controlPoint2: CGPoint(x: 12.4, y: 13.29))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 11.09, y: 14.23), controlPoint1: CGPoint(x: 11.47, y: 13.9), controlPoint2: CGPoint(x: 11.2, y: 14.1))
-        gridiconshelpoutline.addCurveToPoint(CGPoint(x: 10.92, y: 14.68), controlPoint1: CGPoint(x: 10.98, y: 14.36), controlPoint2: CGPoint(x: 10.92, y: 14.51))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 10.92, y: 15))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 9.04, y: 15))
-        gridiconshelpoutline.addLineToPoint(CGPoint(x: 9.04, y: 15))
-        gridiconshelpoutline.closePath()
-        gridiconshelpoutline.moveToPoint(CGPoint(x: 9.04, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 414)
+        gridiconshelpoutline.move(to: CGPoint(x: 10, y: 6))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconshelpoutline.close()
+        gridiconshelpoutline.move(to: CGPoint(x: 10, y: 4))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconshelpoutline.close()
+        gridiconshelpoutline.move(to: CGPoint(x: 11, y: 17))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 9, y: 17))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconshelpoutline.close()
+        gridiconshelpoutline.move(to: CGPoint(x: 9.04, y: 15))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 9.04, y: 14.47))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 9.29, y: 13.46), controlPoint1: CGPoint(x: 9.04, y: 14.07), controlPoint2: CGPoint(x: 9.12, y: 13.73))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.16, y: 12.65), controlPoint1: CGPoint(x: 9.45, y: 13.18), controlPoint2: CGPoint(x: 9.74, y: 12.91))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.88, y: 12.08), controlPoint1: CGPoint(x: 10.49, y: 12.44), controlPoint2: CGPoint(x: 10.73, y: 12.25))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 11.09, y: 11.5), controlPoint1: CGPoint(x: 11.02, y: 11.91), controlPoint2: CGPoint(x: 11.09, y: 11.72))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.86, y: 11.09), controlPoint1: CGPoint(x: 11.09, y: 11.33), controlPoint2: CGPoint(x: 11.02, y: 11.2))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.25, y: 10.95), controlPoint1: CGPoint(x: 10.7, y: 10.99), controlPoint2: CGPoint(x: 10.5, y: 10.95))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 8.08, y: 11.6), controlPoint1: CGPoint(x: 9.63, y: 10.95), controlPoint2: CGPoint(x: 8.91, y: 11.16))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 7.23, y: 9.93))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.42, y: 9.06), controlPoint1: CGPoint(x: 8.25, y: 9.35), controlPoint2: CGPoint(x: 9.31, y: 9.06))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 12.57, y: 9.66), controlPoint1: CGPoint(x: 11.34, y: 9.06), controlPoint2: CGPoint(x: 12.05, y: 9.26))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 13.35, y: 11.3), controlPoint1: CGPoint(x: 13.09, y: 10.06), controlPoint2: CGPoint(x: 13.35, y: 10.61))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 13, y: 12.59), controlPoint1: CGPoint(x: 13.35, y: 11.8), controlPoint2: CGPoint(x: 13.23, y: 12.23))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 11.9, y: 13.62), controlPoint1: CGPoint(x: 12.77, y: 12.95), controlPoint2: CGPoint(x: 12.4, y: 13.29))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 11.09, y: 14.23), controlPoint1: CGPoint(x: 11.47, y: 13.9), controlPoint2: CGPoint(x: 11.2, y: 14.1))
+        gridiconshelpoutline.addCurve(to: CGPoint(x: 10.92, y: 14.68), controlPoint1: CGPoint(x: 10.98, y: 14.36), controlPoint2: CGPoint(x: 10.92, y: 14.51))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 10.92, y: 15))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 9.04, y: 15))
+        gridiconshelpoutline.addLine(to: CGPoint(x: 9.04, y: 15))
+        gridiconshelpoutline.close()
+        gridiconshelpoutline.move(to: CGPoint(x: 9.04, y: 15))
+        context.saveGState()
+        context.translateBy(x: 806, y: 414)
         gridiconshelpoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconshelpoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsheart(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsheart(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -419)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -419)
         
         /// gridicons-heart
         let gridiconsheart = UIBezierPath()
-        gridiconsheart.moveToPoint(CGPoint(x: 14.5, y: 5.65))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 10, y: 7.99), controlPoint1: CGPoint(x: 12.64, y: 5.65), controlPoint2: CGPoint(x: 11, y: 6.58))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 5.5, y: 5.65), controlPoint1: CGPoint(x: 9, y: 6.58), controlPoint2: CGPoint(x: 7.36, y: 5.65))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 0, y: 11.15), controlPoint1: CGPoint(x: 2.46, y: 5.65), controlPoint2: CGPoint(x: 0, y: 8.11))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 6.5, y: 21.59))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 20, y: 11.15), controlPoint1: CGPoint(x: 13.5, y: 21.59), controlPoint2: CGPoint(x: 20, y: 16.87))
-        gridiconsheart.addCurveToPoint(CGPoint(x: 14.5, y: 5.65), controlPoint1: CGPoint(x: 20, y: 8.11), controlPoint2: CGPoint(x: 17.54, y: 5.65))
-        gridiconsheart.addLineToPoint(CGPoint(x: 14.5, y: 5.65))
-        gridiconsheart.closePath()
-        gridiconsheart.moveToPoint(CGPoint(x: 14.5, y: 5.65))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 414)
+        gridiconsheart.move(to: CGPoint(x: 14.5, y: 5.65))
+        gridiconsheart.addCurve(to: CGPoint(x: 10, y: 7.99), controlPoint1: CGPoint(x: 12.64, y: 5.65), controlPoint2: CGPoint(x: 11, y: 6.58))
+        gridiconsheart.addCurve(to: CGPoint(x: 5.5, y: 5.65), controlPoint1: CGPoint(x: 9, y: 6.58), controlPoint2: CGPoint(x: 7.36, y: 5.65))
+        gridiconsheart.addCurve(to: CGPoint(x: 0, y: 11.15), controlPoint1: CGPoint(x: 2.46, y: 5.65), controlPoint2: CGPoint(x: 0, y: 8.11))
+        gridiconsheart.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 6.5, y: 21.59))
+        gridiconsheart.addCurve(to: CGPoint(x: 20, y: 11.15), controlPoint1: CGPoint(x: 13.5, y: 21.59), controlPoint2: CGPoint(x: 20, y: 16.87))
+        gridiconsheart.addCurve(to: CGPoint(x: 14.5, y: 5.65), controlPoint1: CGPoint(x: 20, y: 8.11), controlPoint2: CGPoint(x: 17.54, y: 5.65))
+        gridiconsheart.addLine(to: CGPoint(x: 14.5, y: 5.65))
+        gridiconsheart.close()
+        gridiconsheart.move(to: CGPoint(x: 14.5, y: 5.65))
+        context.saveGState()
+        context.translateBy(x: 772, y: 414)
         gridiconsheart.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsheart.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsheartoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsheartoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -385)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -385)
         
         /// gridicons-heart-outline
         let gridiconsheartoutline = UIBezierPath()
-        gridiconsheartoutline.moveToPoint(CGPoint(x: 14.5, y: 7.15))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 18.5, y: 11.15), controlPoint1: CGPoint(x: 16.71, y: 7.15), controlPoint2: CGPoint(x: 18.5, y: 8.94))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 10, y: 22.17), controlPoint1: CGPoint(x: 18.5, y: 15.82), controlPoint2: CGPoint(x: 12.96, y: 20.09))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 1.5, y: 11.15), controlPoint1: CGPoint(x: 7.04, y: 20.09), controlPoint2: CGPoint(x: 1.5, y: 15.82))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 5.5, y: 7.15), controlPoint1: CGPoint(x: 1.5, y: 8.94), controlPoint2: CGPoint(x: 3.29, y: 7.15))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 8.77, y: 8.86), controlPoint1: CGPoint(x: 6.8, y: 7.15), controlPoint2: CGPoint(x: 8.02, y: 7.79))
-        gridiconsheartoutline.addLineToPoint(CGPoint(x: 10, y: 10.6))
-        gridiconsheartoutline.addLineToPoint(CGPoint(x: 11.23, y: 8.86))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 14.5, y: 7.15), controlPoint1: CGPoint(x: 11.98, y: 7.79), controlPoint2: CGPoint(x: 13.2, y: 7.15))
-        gridiconsheartoutline.addLineToPoint(CGPoint(x: 14.5, y: 7.15))
-        gridiconsheartoutline.closePath()
-        gridiconsheartoutline.moveToPoint(CGPoint(x: 14.5, y: 5.65))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 10, y: 7.99), controlPoint1: CGPoint(x: 12.64, y: 5.65), controlPoint2: CGPoint(x: 11, y: 6.58))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 5.5, y: 5.65), controlPoint1: CGPoint(x: 9, y: 6.58), controlPoint2: CGPoint(x: 7.36, y: 5.65))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 0, y: 11.15), controlPoint1: CGPoint(x: 2.46, y: 5.65), controlPoint2: CGPoint(x: 0, y: 8.11))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 6.5, y: 21.59))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 20, y: 11.15), controlPoint1: CGPoint(x: 13.5, y: 21.59), controlPoint2: CGPoint(x: 20, y: 16.87))
-        gridiconsheartoutline.addCurveToPoint(CGPoint(x: 14.5, y: 5.65), controlPoint1: CGPoint(x: 20, y: 8.11), controlPoint2: CGPoint(x: 17.54, y: 5.65))
-        gridiconsheartoutline.addLineToPoint(CGPoint(x: 14.5, y: 5.65))
-        gridiconsheartoutline.closePath()
-        gridiconsheartoutline.moveToPoint(CGPoint(x: 14.5, y: 5.65))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 380)
+        gridiconsheartoutline.move(to: CGPoint(x: 14.5, y: 7.15))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 18.5, y: 11.15), controlPoint1: CGPoint(x: 16.71, y: 7.15), controlPoint2: CGPoint(x: 18.5, y: 8.94))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 10, y: 22.17), controlPoint1: CGPoint(x: 18.5, y: 15.82), controlPoint2: CGPoint(x: 12.96, y: 20.09))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 1.5, y: 11.15), controlPoint1: CGPoint(x: 7.04, y: 20.09), controlPoint2: CGPoint(x: 1.5, y: 15.82))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 5.5, y: 7.15), controlPoint1: CGPoint(x: 1.5, y: 8.94), controlPoint2: CGPoint(x: 3.29, y: 7.15))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 8.77, y: 8.86), controlPoint1: CGPoint(x: 6.8, y: 7.15), controlPoint2: CGPoint(x: 8.02, y: 7.79))
+        gridiconsheartoutline.addLine(to: CGPoint(x: 10, y: 10.6))
+        gridiconsheartoutline.addLine(to: CGPoint(x: 11.23, y: 8.86))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 14.5, y: 7.15), controlPoint1: CGPoint(x: 11.98, y: 7.79), controlPoint2: CGPoint(x: 13.2, y: 7.15))
+        gridiconsheartoutline.addLine(to: CGPoint(x: 14.5, y: 7.15))
+        gridiconsheartoutline.close()
+        gridiconsheartoutline.move(to: CGPoint(x: 14.5, y: 5.65))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 10, y: 7.99), controlPoint1: CGPoint(x: 12.64, y: 5.65), controlPoint2: CGPoint(x: 11, y: 6.58))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 5.5, y: 5.65), controlPoint1: CGPoint(x: 9, y: 6.58), controlPoint2: CGPoint(x: 7.36, y: 5.65))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 0, y: 11.15), controlPoint1: CGPoint(x: 2.46, y: 5.65), controlPoint2: CGPoint(x: 0, y: 8.11))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 16.87), controlPoint2: CGPoint(x: 6.5, y: 21.59))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 20, y: 11.15), controlPoint1: CGPoint(x: 13.5, y: 21.59), controlPoint2: CGPoint(x: 20, y: 16.87))
+        gridiconsheartoutline.addCurve(to: CGPoint(x: 14.5, y: 5.65), controlPoint1: CGPoint(x: 20, y: 8.11), controlPoint2: CGPoint(x: 17.54, y: 5.65))
+        gridiconsheartoutline.addLine(to: CGPoint(x: 14.5, y: 5.65))
+        gridiconsheartoutline.close()
+        gridiconsheartoutline.move(to: CGPoint(x: 14.5, y: 5.65))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 380)
         gridiconsheartoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsheartoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsheading(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsheading(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -389)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -389)
         
         /// gridicons-heading
         let gridiconsheading = UIBezierPath()
-        gridiconsheading.moveToPoint(CGPoint(x: 12, y: 24))
-        gridiconsheading.addLineToPoint(CGPoint(x: 9, y: 24))
-        gridiconsheading.addLineToPoint(CGPoint(x: 9, y: 18))
-        gridiconsheading.addLineToPoint(CGPoint(x: 3, y: 18))
-        gridiconsheading.addLineToPoint(CGPoint(x: 3, y: 24))
-        gridiconsheading.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsheading.addLineToPoint(CGPoint(x: 0, y: 9.01))
-        gridiconsheading.addLineToPoint(CGPoint(x: 3, y: 9.01))
-        gridiconsheading.addLineToPoint(CGPoint(x: 3, y: 15))
-        gridiconsheading.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsheading.addLineToPoint(CGPoint(x: 9, y: 9.01))
-        gridiconsheading.addLineToPoint(CGPoint(x: 12, y: 9.01))
-        gridiconsheading.addLineToPoint(CGPoint(x: 12, y: 24))
-        gridiconsheading.closePath()
-        gridiconsheading.moveToPoint(CGPoint(x: 12, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 380)
+        gridiconsheading.move(to: CGPoint(x: 12, y: 24))
+        gridiconsheading.addLine(to: CGPoint(x: 9, y: 24))
+        gridiconsheading.addLine(to: CGPoint(x: 9, y: 18))
+        gridiconsheading.addLine(to: CGPoint(x: 3, y: 18))
+        gridiconsheading.addLine(to: CGPoint(x: 3, y: 24))
+        gridiconsheading.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsheading.addLine(to: CGPoint(x: 0, y: 9.01))
+        gridiconsheading.addLine(to: CGPoint(x: 3, y: 9.01))
+        gridiconsheading.addLine(to: CGPoint(x: 3, y: 15))
+        gridiconsheading.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsheading.addLine(to: CGPoint(x: 9, y: 9.01))
+        gridiconsheading.addLine(to: CGPoint(x: 12, y: 9.01))
+        gridiconsheading.addLine(to: CGPoint(x: 12, y: 24))
+        gridiconsheading.close()
+        gridiconsheading.move(to: CGPoint(x: 12, y: 24))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 380)
         gridiconsheading.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsheading.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsgrid(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsgrid(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -388)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -388)
         
         /// gridicons-grid
         let gridiconsgrid = UIBezierPath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 4, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 12))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 10, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 8))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 16, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 8))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 4, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 10, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 16, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 4, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 10, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 6, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 10, y: 20))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 16, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 20))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 12, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsgrid.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconsgrid.closePath()
-        gridiconsgrid.moveToPoint(CGPoint(x: 16, y: 20))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 380)
+        gridiconsgrid.move(to: CGPoint(x: 4, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 12))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 10, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 8))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 16, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 8))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 4, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 10, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 16, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 4, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 10, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 6, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 10, y: 20))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 16, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 20))
+        gridiconsgrid.addLine(to: CGPoint(x: 12, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsgrid.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconsgrid.close()
+        gridiconsgrid.move(to: CGPoint(x: 16, y: 20))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 380)
         gridiconsgrid.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsgrid.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsglobe(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsglobe(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -384)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -384)
         
         /// gridicons-globe
         let gridiconsglobe = UIBezierPath()
-        gridiconsglobe.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsglobe.closePath()
-        gridiconsglobe.moveToPoint(CGPoint(x: 10, y: 22))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 13, y: 19))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 13, y: 17))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 11, y: 17))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 11, y: 16))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 10, y: 15))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 7, y: 15))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 7, y: 18))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 9, y: 20))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 9, y: 21.93))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.06, y: 21.44), controlPoint2: CGPoint(x: 2, y: 18.07))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 3, y: 15))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 5, y: 15))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 7, y: 13))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 10, y: 10))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 10, y: 8))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 7, y: 7))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 7, y: 6.59))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 7.93, y: 6.21), controlPoint2: CGPoint(x: 8.94, y: 6))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 13, y: 6.59), controlPoint1: CGPoint(x: 11.06, y: 6), controlPoint2: CGPoint(x: 12.07, y: 6.21))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 13, y: 8))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 12, y: 9))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 12, y: 11))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 13, y: 12))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 16.13, y: 8.87))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 17.73, y: 12), controlPoint1: CGPoint(x: 16.88, y: 9.77), controlPoint2: CGPoint(x: 17.43, y: 10.84))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 14, y: 14))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 15, y: 17))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 17, y: 17))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 17.29, y: 17.29))
-        gridiconsglobe.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 16.03, y: 20.06), controlPoint2: CGPoint(x: 13.24, y: 22))
-        gridiconsglobe.addLineToPoint(CGPoint(x: 10, y: 22))
-        gridiconsglobe.closePath()
-        gridiconsglobe.moveToPoint(CGPoint(x: 10, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 380)
+        gridiconsglobe.move(to: CGPoint(x: 10, y: 4))
+        gridiconsglobe.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsglobe.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsglobe.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsglobe.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsglobe.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsglobe.close()
+        gridiconsglobe.move(to: CGPoint(x: 10, y: 22))
+        gridiconsglobe.addLine(to: CGPoint(x: 13, y: 19))
+        gridiconsglobe.addLine(to: CGPoint(x: 13, y: 17))
+        gridiconsglobe.addLine(to: CGPoint(x: 11, y: 17))
+        gridiconsglobe.addLine(to: CGPoint(x: 11, y: 16))
+        gridiconsglobe.addLine(to: CGPoint(x: 10, y: 15))
+        gridiconsglobe.addLine(to: CGPoint(x: 7, y: 15))
+        gridiconsglobe.addLine(to: CGPoint(x: 7, y: 18))
+        gridiconsglobe.addLine(to: CGPoint(x: 9, y: 20))
+        gridiconsglobe.addLine(to: CGPoint(x: 9, y: 21.93))
+        gridiconsglobe.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.06, y: 21.44), controlPoint2: CGPoint(x: 2, y: 18.07))
+        gridiconsglobe.addLine(to: CGPoint(x: 3, y: 15))
+        gridiconsglobe.addLine(to: CGPoint(x: 5, y: 15))
+        gridiconsglobe.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconsglobe.addLine(to: CGPoint(x: 7, y: 13))
+        gridiconsglobe.addLine(to: CGPoint(x: 10, y: 10))
+        gridiconsglobe.addLine(to: CGPoint(x: 10, y: 8))
+        gridiconsglobe.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsglobe.addLine(to: CGPoint(x: 7, y: 7))
+        gridiconsglobe.addLine(to: CGPoint(x: 7, y: 6.59))
+        gridiconsglobe.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 7.93, y: 6.21), controlPoint2: CGPoint(x: 8.94, y: 6))
+        gridiconsglobe.addCurve(to: CGPoint(x: 13, y: 6.59), controlPoint1: CGPoint(x: 11.06, y: 6), controlPoint2: CGPoint(x: 12.07, y: 6.21))
+        gridiconsglobe.addLine(to: CGPoint(x: 13, y: 8))
+        gridiconsglobe.addLine(to: CGPoint(x: 12, y: 9))
+        gridiconsglobe.addLine(to: CGPoint(x: 12, y: 11))
+        gridiconsglobe.addLine(to: CGPoint(x: 13, y: 12))
+        gridiconsglobe.addLine(to: CGPoint(x: 16.13, y: 8.87))
+        gridiconsglobe.addCurve(to: CGPoint(x: 17.73, y: 12), controlPoint1: CGPoint(x: 16.88, y: 9.77), controlPoint2: CGPoint(x: 17.43, y: 10.84))
+        gridiconsglobe.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsglobe.addLine(to: CGPoint(x: 14, y: 14))
+        gridiconsglobe.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconsglobe.addLine(to: CGPoint(x: 15, y: 17))
+        gridiconsglobe.addLine(to: CGPoint(x: 17, y: 17))
+        gridiconsglobe.addLine(to: CGPoint(x: 17.29, y: 17.29))
+        gridiconsglobe.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 16.03, y: 20.06), controlPoint2: CGPoint(x: 13.24, y: 22))
+        gridiconsglobe.addLine(to: CGPoint(x: 10, y: 22))
+        gridiconsglobe.close()
+        gridiconsglobe.move(to: CGPoint(x: 10, y: 22))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 380)
         gridiconsglobe.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsglobe.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsfolder(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsfolder(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -390)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -390)
         
         /// gridicons-folder
         let gridiconsfolder = UIBezierPath()
-        gridiconsfolder.moveToPoint(CGPoint(x: 14, y: 24))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsfolder.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsfolder.addCurveToPoint(CGPoint(x: 2, y: 10), controlPoint1: CGPoint(x: 0, y: 10.9), controlPoint2: CGPoint(x: 0.9, y: 10))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 5, y: 10))
-        gridiconsfolder.addCurveToPoint(CGPoint(x: 7, y: 12), controlPoint1: CGPoint(x: 6.1, y: 10), controlPoint2: CGPoint(x: 7, y: 10.9))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 14, y: 12))
-        gridiconsfolder.addCurveToPoint(CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 15.1, y: 12), controlPoint2: CGPoint(x: 16, y: 12.9))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsfolder.addCurveToPoint(CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.1), controlPoint2: CGPoint(x: 15.1, y: 24))
-        gridiconsfolder.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsfolder.closePath()
-        gridiconsfolder.moveToPoint(CGPoint(x: 14, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 380)
+        gridiconsfolder.move(to: CGPoint(x: 14, y: 24))
+        gridiconsfolder.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsfolder.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
+        gridiconsfolder.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsfolder.addCurve(to: CGPoint(x: 2, y: 10), controlPoint1: CGPoint(x: 0, y: 10.9), controlPoint2: CGPoint(x: 0.9, y: 10))
+        gridiconsfolder.addLine(to: CGPoint(x: 5, y: 10))
+        gridiconsfolder.addCurve(to: CGPoint(x: 7, y: 12), controlPoint1: CGPoint(x: 6.1, y: 10), controlPoint2: CGPoint(x: 7, y: 10.9))
+        gridiconsfolder.addLine(to: CGPoint(x: 14, y: 12))
+        gridiconsfolder.addCurve(to: CGPoint(x: 16, y: 14), controlPoint1: CGPoint(x: 15.1, y: 12), controlPoint2: CGPoint(x: 16, y: 12.9))
+        gridiconsfolder.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsfolder.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.1), controlPoint2: CGPoint(x: 15.1, y: 24))
+        gridiconsfolder.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsfolder.close()
+        gridiconsfolder.move(to: CGPoint(x: 14, y: 24))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 380)
         gridiconsfolder.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsfolder.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsfoldermultiple(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsfoldermultiple(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -386)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -386)
         
         /// gridicons-folder-multiple
         let gridiconsfoldermultiple = UIBezierPath()
-        gridiconsfoldermultiple.moveToPoint(CGPoint(x: 2, y: 10))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsfoldermultiple.closePath()
-        gridiconsfoldermultiple.moveToPoint(CGPoint(x: 18, y: 20))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 6, y: 20))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 4, y: 18), controlPoint1: CGPoint(x: 4.89, y: 20), controlPoint2: CGPoint(x: 4, y: 19.11))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 6, y: 6), controlPoint1: CGPoint(x: 4, y: 6.89), controlPoint2: CGPoint(x: 4.89, y: 6))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 9, y: 6))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 11, y: 8), controlPoint1: CGPoint(x: 10.11, y: 6), controlPoint2: CGPoint(x: 11, y: 6.89))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 19.11, y: 8), controlPoint2: CGPoint(x: 20, y: 8.89))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconsfoldermultiple.addCurveToPoint(CGPoint(x: 18, y: 20), controlPoint1: CGPoint(x: 20, y: 19.11), controlPoint2: CGPoint(x: 19.11, y: 20))
-        gridiconsfoldermultiple.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsfoldermultiple.closePath()
-        gridiconsfoldermultiple.moveToPoint(CGPoint(x: 18, y: 20))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 380)
+        gridiconsfoldermultiple.move(to: CGPoint(x: 2, y: 10))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 0, y: 12), controlPoint1: CGPoint(x: 0.9, y: 10), controlPoint2: CGPoint(x: 0, y: 10.9))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.1), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsfoldermultiple.close()
+        gridiconsfoldermultiple.move(to: CGPoint(x: 18, y: 20))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 6, y: 20))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 4, y: 18), controlPoint1: CGPoint(x: 4.89, y: 20), controlPoint2: CGPoint(x: 4, y: 19.11))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 6, y: 6), controlPoint1: CGPoint(x: 4, y: 6.89), controlPoint2: CGPoint(x: 4.89, y: 6))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 9, y: 6))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 11, y: 8), controlPoint1: CGPoint(x: 10.11, y: 6), controlPoint2: CGPoint(x: 11, y: 6.89))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 19.11, y: 8), controlPoint2: CGPoint(x: 20, y: 8.89))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconsfoldermultiple.addCurve(to: CGPoint(x: 18, y: 20), controlPoint1: CGPoint(x: 20, y: 19.11), controlPoint2: CGPoint(x: 19.11, y: 20))
+        gridiconsfoldermultiple.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsfoldermultiple.close()
+        gridiconsfoldermultiple.move(to: CGPoint(x: 18, y: 20))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 380)
         gridiconsfoldermultiple.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsfoldermultiple.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsflipvertical(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 22), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsflipvertical(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 22), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 22), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 22)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -382)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -382)
         
         /// gridicons-flip-vertical
         let gridiconsflipvertical = UIBezierPath()
-        gridiconsflipvertical.moveToPoint(CGPoint(x: 14, y: 5))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 9, y: 5))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 9, y: 2))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 2))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 5))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 2, y: 5))
-        gridiconsflipvertical.addCurveToPoint(CGPoint(x: 0, y: 7), controlPoint1: CGPoint(x: 0.9, y: 5), controlPoint2: CGPoint(x: 0, y: 5.9))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 0, y: 19))
-        gridiconsflipvertical.addCurveToPoint(CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 0, y: 20.11), controlPoint2: CGPoint(x: 0.9, y: 21))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 21))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 9, y: 24))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 9, y: 21))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 14, y: 21))
-        gridiconsflipvertical.addCurveToPoint(CGPoint(x: 16, y: 19), controlPoint1: CGPoint(x: 15.11, y: 21), controlPoint2: CGPoint(x: 16, y: 20.11))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsflipvertical.addCurveToPoint(CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 14, y: 5))
-        gridiconsflipvertical.closePath()
-        gridiconsflipvertical.moveToPoint(CGPoint(x: 2, y: 19))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 7))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 7, y: 19))
-        gridiconsflipvertical.addLineToPoint(CGPoint(x: 2, y: 19))
-        gridiconsflipvertical.closePath()
-        gridiconsflipvertical.moveToPoint(CGPoint(x: 2, y: 19))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 380)
+        gridiconsflipvertical.move(to: CGPoint(x: 14, y: 5))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 9, y: 5))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 9, y: 2))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 2))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 5))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 2, y: 5))
+        gridiconsflipvertical.addCurve(to: CGPoint(x: 0, y: 7), controlPoint1: CGPoint(x: 0.9, y: 5), controlPoint2: CGPoint(x: 0, y: 5.9))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 0, y: 19))
+        gridiconsflipvertical.addCurve(to: CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 0, y: 20.11), controlPoint2: CGPoint(x: 0.9, y: 21))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 21))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 9, y: 24))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 9, y: 21))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 14, y: 21))
+        gridiconsflipvertical.addCurve(to: CGPoint(x: 16, y: 19), controlPoint1: CGPoint(x: 15.11, y: 21), controlPoint2: CGPoint(x: 16, y: 20.11))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsflipvertical.addCurve(to: CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 14, y: 5))
+        gridiconsflipvertical.close()
+        gridiconsflipvertical.move(to: CGPoint(x: 2, y: 19))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 7))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 7, y: 19))
+        gridiconsflipvertical.addLine(to: CGPoint(x: 2, y: 19))
+        gridiconsflipvertical.close()
+        gridiconsflipvertical.move(to: CGPoint(x: 2, y: 19))
+        context.saveGState()
+        context.translateBy(x: 976, y: 380)
         gridiconsflipvertical.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsflipvertical.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsfliphorizontal(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsfliphorizontal(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -388)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -388)
         
         /// gridicons-flip-horizontal
         let gridiconsfliphorizontal = UIBezierPath()
-        gridiconsfliphorizontal.moveToPoint(CGPoint(x: 19, y: 22))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 19, y: 17))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 22, y: 17))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 22, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 19, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 19, y: 10))
-        gridiconsfliphorizontal.addCurveToPoint(CGPoint(x: 17, y: 8), controlPoint1: CGPoint(x: 19, y: 8.89), controlPoint2: CGPoint(x: 18.11, y: 8))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 5, y: 8))
-        gridiconsfliphorizontal.addCurveToPoint(CGPoint(x: 3, y: 10), controlPoint1: CGPoint(x: 3.9, y: 8), controlPoint2: CGPoint(x: 3, y: 8.89))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 3, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 3, y: 17))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 3, y: 22))
-        gridiconsfliphorizontal.addCurveToPoint(CGPoint(x: 5, y: 24), controlPoint1: CGPoint(x: 3, y: 23.11), controlPoint2: CGPoint(x: 3.9, y: 24))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 17, y: 24))
-        gridiconsfliphorizontal.addCurveToPoint(CGPoint(x: 19, y: 22), controlPoint1: CGPoint(x: 18.11, y: 24), controlPoint2: CGPoint(x: 19, y: 23.11))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 19, y: 22))
-        gridiconsfliphorizontal.closePath()
-        gridiconsfliphorizontal.moveToPoint(CGPoint(x: 5, y: 10))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 17, y: 10))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 17, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 5, y: 15))
-        gridiconsfliphorizontal.addLineToPoint(CGPoint(x: 5, y: 10))
-        gridiconsfliphorizontal.closePath()
-        gridiconsfliphorizontal.moveToPoint(CGPoint(x: 5, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 380)
+        gridiconsfliphorizontal.move(to: CGPoint(x: 19, y: 22))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 19, y: 17))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 22, y: 17))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 22, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 19, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 19, y: 10))
+        gridiconsfliphorizontal.addCurve(to: CGPoint(x: 17, y: 8), controlPoint1: CGPoint(x: 19, y: 8.89), controlPoint2: CGPoint(x: 18.11, y: 8))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 5, y: 8))
+        gridiconsfliphorizontal.addCurve(to: CGPoint(x: 3, y: 10), controlPoint1: CGPoint(x: 3.9, y: 8), controlPoint2: CGPoint(x: 3, y: 8.89))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 3, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 3, y: 17))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 3, y: 22))
+        gridiconsfliphorizontal.addCurve(to: CGPoint(x: 5, y: 24), controlPoint1: CGPoint(x: 3, y: 23.11), controlPoint2: CGPoint(x: 3.9, y: 24))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 17, y: 24))
+        gridiconsfliphorizontal.addCurve(to: CGPoint(x: 19, y: 22), controlPoint1: CGPoint(x: 18.11, y: 24), controlPoint2: CGPoint(x: 19, y: 23.11))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 19, y: 22))
+        gridiconsfliphorizontal.close()
+        gridiconsfliphorizontal.move(to: CGPoint(x: 5, y: 10))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 17, y: 10))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 17, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 5, y: 15))
+        gridiconsfliphorizontal.addLine(to: CGPoint(x: 5, y: 10))
+        gridiconsfliphorizontal.close()
+        gridiconsfliphorizontal.move(to: CGPoint(x: 5, y: 10))
+        context.saveGState()
+        context.translateBy(x: 942, y: 380)
         gridiconsfliphorizontal.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsfliphorizontal.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsflag(frame frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 17), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsflag(frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 17), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 15, height: 17), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 17)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -387)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -387)
         
         /// gridicons-flag
         let gridiconsflag = UIBezierPath()
-        gridiconsflag.moveToPoint(CGPoint(x: 10, y: 9))
-        gridiconsflag.addCurveToPoint(CGPoint(x: 8, y: 7), controlPoint1: CGPoint(x: 10, y: 7.89), controlPoint2: CGPoint(x: 9.11, y: 7))
-        gridiconsflag.addLineToPoint(CGPoint(x: 0, y: 7))
-        gridiconsflag.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsflag.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsflag.addLineToPoint(CGPoint(x: 2, y: 17))
-        gridiconsflag.addLineToPoint(CGPoint(x: 7, y: 17))
-        gridiconsflag.addCurveToPoint(CGPoint(x: 9, y: 19), controlPoint1: CGPoint(x: 7, y: 18.11), controlPoint2: CGPoint(x: 7.89, y: 19))
-        gridiconsflag.addLineToPoint(CGPoint(x: 15, y: 19))
-        gridiconsflag.addLineToPoint(CGPoint(x: 15, y: 9))
-        gridiconsflag.addLineToPoint(CGPoint(x: 10, y: 9))
-        gridiconsflag.closePath()
-        gridiconsflag.moveToPoint(CGPoint(x: 10, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 380)
+        gridiconsflag.move(to: CGPoint(x: 10, y: 9))
+        gridiconsflag.addCurve(to: CGPoint(x: 8, y: 7), controlPoint1: CGPoint(x: 10, y: 7.89), controlPoint2: CGPoint(x: 9.11, y: 7))
+        gridiconsflag.addLine(to: CGPoint(x: 0, y: 7))
+        gridiconsflag.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsflag.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsflag.addLine(to: CGPoint(x: 2, y: 17))
+        gridiconsflag.addLine(to: CGPoint(x: 7, y: 17))
+        gridiconsflag.addCurve(to: CGPoint(x: 9, y: 19), controlPoint1: CGPoint(x: 7, y: 18.11), controlPoint2: CGPoint(x: 7.89, y: 19))
+        gridiconsflag.addLine(to: CGPoint(x: 15, y: 19))
+        gridiconsflag.addLine(to: CGPoint(x: 15, y: 9))
+        gridiconsflag.addLine(to: CGPoint(x: 10, y: 9))
+        gridiconsflag.close()
+        gridiconsflag.move(to: CGPoint(x: 10, y: 9))
+        context.saveGState()
+        context.translateBy(x: 908, y: 380)
         gridiconsflag.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsflag.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsexternal(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsexternal(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -386)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -386)
         
         /// gridicons-external
         let gridiconsexternal = UIBezierPath()
-        gridiconsexternal.moveToPoint(CGPoint(x: 16, y: 16))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsexternal.addCurveToPoint(CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.11), controlPoint2: CGPoint(x: 15.11, y: 24))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsexternal.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsexternal.addCurveToPoint(CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 8, y: 10))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 14, y: 22))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsexternal.closePath()
-        gridiconsexternal.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 10, y: 8))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 14.59, y: 8))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 6.79, y: 15.79))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 8.21, y: 17.21))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 16, y: 9.41))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 18, y: 6))
-        gridiconsexternal.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsexternal.closePath()
-        gridiconsexternal.moveToPoint(CGPoint(x: 10, y: 6))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 380)
+        gridiconsexternal.move(to: CGPoint(x: 16, y: 16))
+        gridiconsexternal.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsexternal.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.11), controlPoint2: CGPoint(x: 15.11, y: 24))
+        gridiconsexternal.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsexternal.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsexternal.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsexternal.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
+        gridiconsexternal.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsexternal.addLine(to: CGPoint(x: 8, y: 10))
+        gridiconsexternal.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsexternal.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsexternal.addLine(to: CGPoint(x: 14, y: 22))
+        gridiconsexternal.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconsexternal.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsexternal.close()
+        gridiconsexternal.move(to: CGPoint(x: 10, y: 6))
+        gridiconsexternal.addLine(to: CGPoint(x: 10, y: 8))
+        gridiconsexternal.addLine(to: CGPoint(x: 14.59, y: 8))
+        gridiconsexternal.addLine(to: CGPoint(x: 6.79, y: 15.79))
+        gridiconsexternal.addLine(to: CGPoint(x: 8.21, y: 17.21))
+        gridiconsexternal.addLine(to: CGPoint(x: 16, y: 9.41))
+        gridiconsexternal.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsexternal.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsexternal.addLine(to: CGPoint(x: 18, y: 6))
+        gridiconsexternal.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsexternal.close()
+        gridiconsexternal.move(to: CGPoint(x: 10, y: 6))
+        context.saveGState()
+        context.translateBy(x: 874, y: 380)
         gridiconsexternal.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsexternal.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsellipsis(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 4), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsellipsis(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 4), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 4), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 4)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -400)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -400)
         
         /// gridicons-ellipsis
         let gridiconsellipsis = UIBezierPath()
-        gridiconsellipsis.moveToPoint(CGPoint(x: 4, y: 22))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 4, y: 23.11), controlPoint2: CGPoint(x: 3.11, y: 24))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 0, y: 20.9), controlPoint2: CGPoint(x: 0.9, y: 20))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 4, y: 22), controlPoint1: CGPoint(x: 3.11, y: 20), controlPoint2: CGPoint(x: 4, y: 20.9))
-        gridiconsellipsis.addLineToPoint(CGPoint(x: 4, y: 22))
-        gridiconsellipsis.closePath()
-        gridiconsellipsis.moveToPoint(CGPoint(x: 16, y: 20))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 14, y: 22), controlPoint1: CGPoint(x: 14.9, y: 20), controlPoint2: CGPoint(x: 14, y: 20.9))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 14, y: 23.11), controlPoint2: CGPoint(x: 14.9, y: 24))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 16, y: 20), controlPoint1: CGPoint(x: 18, y: 20.9), controlPoint2: CGPoint(x: 17.11, y: 20))
-        gridiconsellipsis.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconsellipsis.closePath()
-        gridiconsellipsis.moveToPoint(CGPoint(x: 9, y: 20))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 7.89, y: 20), controlPoint2: CGPoint(x: 7, y: 20.9))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 9, y: 24), controlPoint1: CGPoint(x: 7, y: 23.11), controlPoint2: CGPoint(x: 7.89, y: 24))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 10.11, y: 24), controlPoint2: CGPoint(x: 11, y: 23.11))
-        gridiconsellipsis.addCurveToPoint(CGPoint(x: 9, y: 20), controlPoint1: CGPoint(x: 11, y: 20.9), controlPoint2: CGPoint(x: 10.11, y: 20))
-        gridiconsellipsis.addLineToPoint(CGPoint(x: 9, y: 20))
-        gridiconsellipsis.closePath()
-        gridiconsellipsis.moveToPoint(CGPoint(x: 9, y: 20))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 380)
+        gridiconsellipsis.move(to: CGPoint(x: 4, y: 22))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 4, y: 23.11), controlPoint2: CGPoint(x: 3.11, y: 24))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 0, y: 20.9), controlPoint2: CGPoint(x: 0.9, y: 20))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 4, y: 22), controlPoint1: CGPoint(x: 3.11, y: 20), controlPoint2: CGPoint(x: 4, y: 20.9))
+        gridiconsellipsis.addLine(to: CGPoint(x: 4, y: 22))
+        gridiconsellipsis.close()
+        gridiconsellipsis.move(to: CGPoint(x: 16, y: 20))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 14, y: 22), controlPoint1: CGPoint(x: 14.9, y: 20), controlPoint2: CGPoint(x: 14, y: 20.9))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 14, y: 23.11), controlPoint2: CGPoint(x: 14.9, y: 24))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 16, y: 20), controlPoint1: CGPoint(x: 18, y: 20.9), controlPoint2: CGPoint(x: 17.11, y: 20))
+        gridiconsellipsis.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconsellipsis.close()
+        gridiconsellipsis.move(to: CGPoint(x: 9, y: 20))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 7.89, y: 20), controlPoint2: CGPoint(x: 7, y: 20.9))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 9, y: 24), controlPoint1: CGPoint(x: 7, y: 23.11), controlPoint2: CGPoint(x: 7.89, y: 24))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 11, y: 22), controlPoint1: CGPoint(x: 10.11, y: 24), controlPoint2: CGPoint(x: 11, y: 23.11))
+        gridiconsellipsis.addCurve(to: CGPoint(x: 9, y: 20), controlPoint1: CGPoint(x: 11, y: 20.9), controlPoint2: CGPoint(x: 10.11, y: 20))
+        gridiconsellipsis.addLine(to: CGPoint(x: 9, y: 20))
+        gridiconsellipsis.close()
+        gridiconsellipsis.move(to: CGPoint(x: 9, y: 20))
+        context.saveGState()
+        context.translateBy(x: 840, y: 380)
         gridiconsellipsis.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsellipsis.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsdropdown(frame frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 5), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsdropdown(frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 5), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 10, height: 5), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 5)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -399)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -399)
         
         /// gridicons-dropdown
         let gridiconsdropdown = UIBezierPath()
-        gridiconsdropdown.moveToPoint(CGPoint(x: 0, y: 19))
-        gridiconsdropdown.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconsdropdown.addLineToPoint(CGPoint(x: 10, y: 19))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 380)
+        gridiconsdropdown.move(to: CGPoint(x: 0, y: 19))
+        gridiconsdropdown.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconsdropdown.addLine(to: CGPoint(x: 10, y: 19))
+        context.saveGState()
+        context.translateBy(x: 806, y: 380)
         gridiconsdropdown.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsdropdown.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsdomains(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsdomains(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -384)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -384)
         
         /// gridicons-domains
         let gridiconsdomains = UIBezierPath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 16.92, y: 10))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 13.7, y: 10))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 13.14, y: 6.65), controlPoint1: CGPoint(x: 13.52, y: 8.57), controlPoint2: CGPoint(x: 13.28, y: 7.35))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 16.92, y: 10), controlPoint1: CGPoint(x: 14.73, y: 7.33), controlPoint2: CGPoint(x: 16.05, y: 8.52))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 16.92, y: 10))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 11.02, y: 6.07))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 11.66, y: 10), controlPoint1: CGPoint(x: 11.08, y: 6.42), controlPoint2: CGPoint(x: 11.4, y: 8.11))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 8.34, y: 10))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 8.98, y: 6.07), controlPoint1: CGPoint(x: 8.6, y: 8.11), controlPoint2: CGPoint(x: 8.92, y: 6.43))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 9.32, y: 6.03), controlPoint2: CGPoint(x: 9.66, y: 6))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 11.02, y: 6.07), controlPoint1: CGPoint(x: 10.34, y: 6), controlPoint2: CGPoint(x: 10.68, y: 6.03))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 11.02, y: 6.07))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 12, y: 14))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 11.89, y: 16), controlPoint1: CGPoint(x: 12, y: 14.6), controlPoint2: CGPoint(x: 11.96, y: 15.29))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 8.11, y: 16))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 8, y: 14), controlPoint1: CGPoint(x: 8.04, y: 15.29), controlPoint2: CGPoint(x: 8, y: 14.6))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 8.11, y: 12), controlPoint1: CGPoint(x: 8, y: 13.4), controlPoint2: CGPoint(x: 8.04, y: 12.72))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 11.89, y: 12))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 12, y: 14), controlPoint1: CGPoint(x: 11.96, y: 12.72), controlPoint2: CGPoint(x: 12, y: 13.4))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 6.86, y: 6.65))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 6.3, y: 10), controlPoint1: CGPoint(x: 6.72, y: 7.35), controlPoint2: CGPoint(x: 6.48, y: 8.57))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 3.08, y: 10))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 6.86, y: 6.65), controlPoint1: CGPoint(x: 3.95, y: 8.51), controlPoint2: CGPoint(x: 5.27, y: 7.32))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 6.86, y: 6.65))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 2.26, y: 12))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 6.08, y: 12))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 6, y: 14), controlPoint1: CGPoint(x: 6.03, y: 12.67), controlPoint2: CGPoint(x: 6, y: 13.34))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 6.08, y: 16), controlPoint1: CGPoint(x: 6, y: 14.66), controlPoint2: CGPoint(x: 6.03, y: 15.33))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 2.26, y: 16))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 2.1, y: 15.36), controlPoint2: CGPoint(x: 2, y: 14.69))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 2.26, y: 12), controlPoint1: CGPoint(x: 2, y: 13.31), controlPoint2: CGPoint(x: 2.1, y: 12.64))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 2.26, y: 12))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 3.08, y: 18))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 6.3, y: 18))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 6.86, y: 21.36), controlPoint1: CGPoint(x: 6.48, y: 19.43), controlPoint2: CGPoint(x: 6.72, y: 20.65))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 3.08, y: 18), controlPoint1: CGPoint(x: 5.27, y: 20.67), controlPoint2: CGPoint(x: 3.95, y: 19.48))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 3.08, y: 18))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 8.98, y: 21.93))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 8.34, y: 18), controlPoint1: CGPoint(x: 8.92, y: 21.58), controlPoint2: CGPoint(x: 8.6, y: 19.89))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 11.66, y: 18))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 11.02, y: 21.93), controlPoint1: CGPoint(x: 11.4, y: 19.89), controlPoint2: CGPoint(x: 11.08, y: 21.57))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 10.68, y: 21.97), controlPoint2: CGPoint(x: 10.34, y: 22))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 8.98, y: 21.93), controlPoint1: CGPoint(x: 9.66, y: 22), controlPoint2: CGPoint(x: 9.32, y: 21.97))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 8.98, y: 21.93))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 13.14, y: 21.36))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 13.7, y: 18), controlPoint1: CGPoint(x: 13.28, y: 20.65), controlPoint2: CGPoint(x: 13.52, y: 19.43))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 16.92, y: 18))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 13.14, y: 21.36), controlPoint1: CGPoint(x: 16.06, y: 19.49), controlPoint2: CGPoint(x: 14.73, y: 20.68))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 13.14, y: 21.36))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 17.74, y: 16))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 13.92, y: 16))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 14, y: 14), controlPoint1: CGPoint(x: 13.97, y: 15.33), controlPoint2: CGPoint(x: 14, y: 14.66))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 13.92, y: 12), controlPoint1: CGPoint(x: 14, y: 13.34), controlPoint2: CGPoint(x: 13.97, y: 12.67))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 17.74, y: 12))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 17.91, y: 12.64), controlPoint2: CGPoint(x: 18, y: 13.31))
-        gridiconsdomains.addCurveToPoint(CGPoint(x: 17.74, y: 16), controlPoint1: CGPoint(x: 18, y: 14.69), controlPoint2: CGPoint(x: 17.91, y: 15.36))
-        gridiconsdomains.addLineToPoint(CGPoint(x: 17.74, y: 16))
-        gridiconsdomains.closePath()
-        gridiconsdomains.moveToPoint(CGPoint(x: 17.74, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 380)
+        gridiconsdomains.move(to: CGPoint(x: 10, y: 4))
+        gridiconsdomains.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsdomains.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsdomains.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsdomains.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsdomains.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 16.92, y: 10))
+        gridiconsdomains.addLine(to: CGPoint(x: 13.7, y: 10))
+        gridiconsdomains.addCurve(to: CGPoint(x: 13.14, y: 6.65), controlPoint1: CGPoint(x: 13.52, y: 8.57), controlPoint2: CGPoint(x: 13.28, y: 7.35))
+        gridiconsdomains.addCurve(to: CGPoint(x: 16.92, y: 10), controlPoint1: CGPoint(x: 14.73, y: 7.33), controlPoint2: CGPoint(x: 16.05, y: 8.52))
+        gridiconsdomains.addLine(to: CGPoint(x: 16.92, y: 10))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 11.02, y: 6.07))
+        gridiconsdomains.addCurve(to: CGPoint(x: 11.66, y: 10), controlPoint1: CGPoint(x: 11.08, y: 6.42), controlPoint2: CGPoint(x: 11.4, y: 8.11))
+        gridiconsdomains.addLine(to: CGPoint(x: 8.34, y: 10))
+        gridiconsdomains.addCurve(to: CGPoint(x: 8.98, y: 6.07), controlPoint1: CGPoint(x: 8.6, y: 8.11), controlPoint2: CGPoint(x: 8.92, y: 6.43))
+        gridiconsdomains.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 9.32, y: 6.03), controlPoint2: CGPoint(x: 9.66, y: 6))
+        gridiconsdomains.addCurve(to: CGPoint(x: 11.02, y: 6.07), controlPoint1: CGPoint(x: 10.34, y: 6), controlPoint2: CGPoint(x: 10.68, y: 6.03))
+        gridiconsdomains.addLine(to: CGPoint(x: 11.02, y: 6.07))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 12, y: 14))
+        gridiconsdomains.addCurve(to: CGPoint(x: 11.89, y: 16), controlPoint1: CGPoint(x: 12, y: 14.6), controlPoint2: CGPoint(x: 11.96, y: 15.29))
+        gridiconsdomains.addLine(to: CGPoint(x: 8.11, y: 16))
+        gridiconsdomains.addCurve(to: CGPoint(x: 8, y: 14), controlPoint1: CGPoint(x: 8.04, y: 15.29), controlPoint2: CGPoint(x: 8, y: 14.6))
+        gridiconsdomains.addCurve(to: CGPoint(x: 8.11, y: 12), controlPoint1: CGPoint(x: 8, y: 13.4), controlPoint2: CGPoint(x: 8.04, y: 12.72))
+        gridiconsdomains.addLine(to: CGPoint(x: 11.89, y: 12))
+        gridiconsdomains.addCurve(to: CGPoint(x: 12, y: 14), controlPoint1: CGPoint(x: 11.96, y: 12.72), controlPoint2: CGPoint(x: 12, y: 13.4))
+        gridiconsdomains.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 6.86, y: 6.65))
+        gridiconsdomains.addCurve(to: CGPoint(x: 6.3, y: 10), controlPoint1: CGPoint(x: 6.72, y: 7.35), controlPoint2: CGPoint(x: 6.48, y: 8.57))
+        gridiconsdomains.addLine(to: CGPoint(x: 3.08, y: 10))
+        gridiconsdomains.addCurve(to: CGPoint(x: 6.86, y: 6.65), controlPoint1: CGPoint(x: 3.95, y: 8.51), controlPoint2: CGPoint(x: 5.27, y: 7.32))
+        gridiconsdomains.addLine(to: CGPoint(x: 6.86, y: 6.65))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 2.26, y: 12))
+        gridiconsdomains.addLine(to: CGPoint(x: 6.08, y: 12))
+        gridiconsdomains.addCurve(to: CGPoint(x: 6, y: 14), controlPoint1: CGPoint(x: 6.03, y: 12.67), controlPoint2: CGPoint(x: 6, y: 13.34))
+        gridiconsdomains.addCurve(to: CGPoint(x: 6.08, y: 16), controlPoint1: CGPoint(x: 6, y: 14.66), controlPoint2: CGPoint(x: 6.03, y: 15.33))
+        gridiconsdomains.addLine(to: CGPoint(x: 2.26, y: 16))
+        gridiconsdomains.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 2.1, y: 15.36), controlPoint2: CGPoint(x: 2, y: 14.69))
+        gridiconsdomains.addCurve(to: CGPoint(x: 2.26, y: 12), controlPoint1: CGPoint(x: 2, y: 13.31), controlPoint2: CGPoint(x: 2.1, y: 12.64))
+        gridiconsdomains.addLine(to: CGPoint(x: 2.26, y: 12))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 3.08, y: 18))
+        gridiconsdomains.addLine(to: CGPoint(x: 6.3, y: 18))
+        gridiconsdomains.addCurve(to: CGPoint(x: 6.86, y: 21.36), controlPoint1: CGPoint(x: 6.48, y: 19.43), controlPoint2: CGPoint(x: 6.72, y: 20.65))
+        gridiconsdomains.addCurve(to: CGPoint(x: 3.08, y: 18), controlPoint1: CGPoint(x: 5.27, y: 20.67), controlPoint2: CGPoint(x: 3.95, y: 19.48))
+        gridiconsdomains.addLine(to: CGPoint(x: 3.08, y: 18))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 8.98, y: 21.93))
+        gridiconsdomains.addCurve(to: CGPoint(x: 8.34, y: 18), controlPoint1: CGPoint(x: 8.92, y: 21.58), controlPoint2: CGPoint(x: 8.6, y: 19.89))
+        gridiconsdomains.addLine(to: CGPoint(x: 11.66, y: 18))
+        gridiconsdomains.addCurve(to: CGPoint(x: 11.02, y: 21.93), controlPoint1: CGPoint(x: 11.4, y: 19.89), controlPoint2: CGPoint(x: 11.08, y: 21.57))
+        gridiconsdomains.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 10.68, y: 21.97), controlPoint2: CGPoint(x: 10.34, y: 22))
+        gridiconsdomains.addCurve(to: CGPoint(x: 8.98, y: 21.93), controlPoint1: CGPoint(x: 9.66, y: 22), controlPoint2: CGPoint(x: 9.32, y: 21.97))
+        gridiconsdomains.addLine(to: CGPoint(x: 8.98, y: 21.93))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 13.14, y: 21.36))
+        gridiconsdomains.addCurve(to: CGPoint(x: 13.7, y: 18), controlPoint1: CGPoint(x: 13.28, y: 20.65), controlPoint2: CGPoint(x: 13.52, y: 19.43))
+        gridiconsdomains.addLine(to: CGPoint(x: 16.92, y: 18))
+        gridiconsdomains.addCurve(to: CGPoint(x: 13.14, y: 21.36), controlPoint1: CGPoint(x: 16.06, y: 19.49), controlPoint2: CGPoint(x: 14.73, y: 20.68))
+        gridiconsdomains.addLine(to: CGPoint(x: 13.14, y: 21.36))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 17.74, y: 16))
+        gridiconsdomains.addLine(to: CGPoint(x: 13.92, y: 16))
+        gridiconsdomains.addCurve(to: CGPoint(x: 14, y: 14), controlPoint1: CGPoint(x: 13.97, y: 15.33), controlPoint2: CGPoint(x: 14, y: 14.66))
+        gridiconsdomains.addCurve(to: CGPoint(x: 13.92, y: 12), controlPoint1: CGPoint(x: 14, y: 13.34), controlPoint2: CGPoint(x: 13.97, y: 12.67))
+        gridiconsdomains.addLine(to: CGPoint(x: 17.74, y: 12))
+        gridiconsdomains.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 17.91, y: 12.64), controlPoint2: CGPoint(x: 18, y: 13.31))
+        gridiconsdomains.addCurve(to: CGPoint(x: 17.74, y: 16), controlPoint1: CGPoint(x: 18, y: 14.69), controlPoint2: CGPoint(x: 17.91, y: 15.36))
+        gridiconsdomains.addLine(to: CGPoint(x: 17.74, y: 16))
+        gridiconsdomains.close()
+        gridiconsdomains.move(to: CGPoint(x: 17.74, y: 16))
+        context.saveGState()
+        context.translateBy(x: 772, y: 380)
         gridiconsdomains.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsdomains.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscustomize(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscustomize(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -350)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -350)
         
         /// gridicons-customize
         let gridiconscustomize = UIBezierPath()
-        gridiconscustomize.moveToPoint(CGPoint(x: 0, y: 8))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 0, y: 6.5), controlPoint2: CGPoint(x: 0.78, y: 4.92))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 4, y: 6), controlPoint1: CGPoint(x: 2, y: 4.84), controlPoint2: CGPoint(x: 2.69, y: 6))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 7, y: 9), controlPoint1: CGPoint(x: 5.66, y: 6), controlPoint2: CGPoint(x: 7, y: 7.34))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 6.79, y: 10.09), controlPoint1: CGPoint(x: 7, y: 9.39), controlPoint2: CGPoint(x: 6.92, y: 9.75))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 8.98, y: 11.9), controlPoint1: CGPoint(x: 7.53, y: 10.68), controlPoint2: CGPoint(x: 8.27, y: 11.28))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 6.9, y: 13.98))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 5.09, y: 11.79), controlPoint1: CGPoint(x: 6.28, y: 13.27), controlPoint2: CGPoint(x: 5.68, y: 12.53))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 4, y: 12), controlPoint1: CGPoint(x: 4.75, y: 11.92), controlPoint2: CGPoint(x: 4.39, y: 12))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 1.79, y: 12), controlPoint2: CGPoint(x: 0, y: 10.21))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconscustomize.closePath()
-        gridiconscustomize.moveToPoint(CGPoint(x: 12.15, y: 14.85))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 13.49, y: 13.51))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 15.5, y: 14), controlPoint1: CGPoint(x: 14.1, y: 13.81), controlPoint2: CGPoint(x: 14.77, y: 14))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 20, y: 9.5), controlPoint1: CGPoint(x: 17.98, y: 14), controlPoint2: CGPoint(x: 20, y: 11.98))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 19.51, y: 7.49), controlPoint1: CGPoint(x: 20, y: 8.77), controlPoint2: CGPoint(x: 19.81, y: 8.1))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 16, y: 11))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 14, y: 9))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 17.51, y: 5.49))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 15.5, y: 5), controlPoint1: CGPoint(x: 16.9, y: 5.19), controlPoint2: CGPoint(x: 16.23, y: 5))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 11, y: 9.5), controlPoint1: CGPoint(x: 13.02, y: 5), controlPoint2: CGPoint(x: 11, y: 7.02))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 11.49, y: 11.51), controlPoint1: CGPoint(x: 11, y: 10.23), controlPoint2: CGPoint(x: 11.19, y: 10.9))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 1, y: 22))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 3, y: 24))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 9.85, y: 17.15))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 15.82, y: 22.6), controlPoint1: CGPoint(x: 11.73, y: 19.08), controlPoint2: CGPoint(x: 13.72, y: 20.91))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 17.25, y: 23.75))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 18.75, y: 22.25))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 17.6, y: 20.82))
-        gridiconscustomize.addCurveToPoint(CGPoint(x: 12.15, y: 14.85), controlPoint1: CGPoint(x: 15.91, y: 18.72), controlPoint2: CGPoint(x: 14.08, y: 16.73))
-        gridiconscustomize.addLineToPoint(CGPoint(x: 12.15, y: 14.85))
-        gridiconscustomize.closePath()
-        gridiconscustomize.moveToPoint(CGPoint(x: 12.15, y: 14.85))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 346)
+        gridiconscustomize.move(to: CGPoint(x: 0, y: 8))
+        gridiconscustomize.addCurve(to: CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 0, y: 6.5), controlPoint2: CGPoint(x: 0.78, y: 4.92))
+        gridiconscustomize.addCurve(to: CGPoint(x: 4, y: 6), controlPoint1: CGPoint(x: 2, y: 4.84), controlPoint2: CGPoint(x: 2.69, y: 6))
+        gridiconscustomize.addCurve(to: CGPoint(x: 7, y: 9), controlPoint1: CGPoint(x: 5.66, y: 6), controlPoint2: CGPoint(x: 7, y: 7.34))
+        gridiconscustomize.addCurve(to: CGPoint(x: 6.79, y: 10.09), controlPoint1: CGPoint(x: 7, y: 9.39), controlPoint2: CGPoint(x: 6.92, y: 9.75))
+        gridiconscustomize.addCurve(to: CGPoint(x: 8.98, y: 11.9), controlPoint1: CGPoint(x: 7.53, y: 10.68), controlPoint2: CGPoint(x: 8.27, y: 11.28))
+        gridiconscustomize.addLine(to: CGPoint(x: 6.9, y: 13.98))
+        gridiconscustomize.addCurve(to: CGPoint(x: 5.09, y: 11.79), controlPoint1: CGPoint(x: 6.28, y: 13.27), controlPoint2: CGPoint(x: 5.68, y: 12.53))
+        gridiconscustomize.addCurve(to: CGPoint(x: 4, y: 12), controlPoint1: CGPoint(x: 4.75, y: 11.92), controlPoint2: CGPoint(x: 4.39, y: 12))
+        gridiconscustomize.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 1.79, y: 12), controlPoint2: CGPoint(x: 0, y: 10.21))
+        gridiconscustomize.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconscustomize.close()
+        gridiconscustomize.move(to: CGPoint(x: 12.15, y: 14.85))
+        gridiconscustomize.addLine(to: CGPoint(x: 13.49, y: 13.51))
+        gridiconscustomize.addCurve(to: CGPoint(x: 15.5, y: 14), controlPoint1: CGPoint(x: 14.1, y: 13.81), controlPoint2: CGPoint(x: 14.77, y: 14))
+        gridiconscustomize.addCurve(to: CGPoint(x: 20, y: 9.5), controlPoint1: CGPoint(x: 17.98, y: 14), controlPoint2: CGPoint(x: 20, y: 11.98))
+        gridiconscustomize.addCurve(to: CGPoint(x: 19.51, y: 7.49), controlPoint1: CGPoint(x: 20, y: 8.77), controlPoint2: CGPoint(x: 19.81, y: 8.1))
+        gridiconscustomize.addLine(to: CGPoint(x: 16, y: 11))
+        gridiconscustomize.addLine(to: CGPoint(x: 14, y: 9))
+        gridiconscustomize.addLine(to: CGPoint(x: 17.51, y: 5.49))
+        gridiconscustomize.addCurve(to: CGPoint(x: 15.5, y: 5), controlPoint1: CGPoint(x: 16.9, y: 5.19), controlPoint2: CGPoint(x: 16.23, y: 5))
+        gridiconscustomize.addCurve(to: CGPoint(x: 11, y: 9.5), controlPoint1: CGPoint(x: 13.02, y: 5), controlPoint2: CGPoint(x: 11, y: 7.02))
+        gridiconscustomize.addCurve(to: CGPoint(x: 11.49, y: 11.51), controlPoint1: CGPoint(x: 11, y: 10.23), controlPoint2: CGPoint(x: 11.19, y: 10.9))
+        gridiconscustomize.addLine(to: CGPoint(x: 1, y: 22))
+        gridiconscustomize.addLine(to: CGPoint(x: 3, y: 24))
+        gridiconscustomize.addLine(to: CGPoint(x: 9.85, y: 17.15))
+        gridiconscustomize.addCurve(to: CGPoint(x: 15.82, y: 22.6), controlPoint1: CGPoint(x: 11.73, y: 19.08), controlPoint2: CGPoint(x: 13.72, y: 20.91))
+        gridiconscustomize.addLine(to: CGPoint(x: 17.25, y: 23.75))
+        gridiconscustomize.addLine(to: CGPoint(x: 18.75, y: 22.25))
+        gridiconscustomize.addLine(to: CGPoint(x: 17.6, y: 20.82))
+        gridiconscustomize.addCurve(to: CGPoint(x: 12.15, y: 14.85), controlPoint1: CGPoint(x: 15.91, y: 18.72), controlPoint2: CGPoint(x: 14.08, y: 16.73))
+        gridiconscustomize.addLine(to: CGPoint(x: 12.15, y: 14.85))
+        gridiconscustomize.close()
+        gridiconscustomize.move(to: CGPoint(x: 12.15, y: 14.85))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 346)
         gridiconscustomize.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscustomize.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscustomposttype(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscustomposttype(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -352)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -352)
         
         /// gridicons-custom-post-type
         let gridiconscustomposttype = UIBezierPath()
-        gridiconscustomposttype.moveToPoint(CGPoint(x: 16, y: 6))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 16, y: 6))
-        gridiconscustomposttype.closePath()
-        gridiconscustomposttype.moveToPoint(CGPoint(x: 3, y: 9))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 8, y: 9))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 3, y: 14))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 3, y: 9))
-        gridiconscustomposttype.closePath()
-        gridiconscustomposttype.moveToPoint(CGPoint(x: 7.5, y: 22))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 5, y: 19.5), controlPoint1: CGPoint(x: 6.12, y: 22), controlPoint2: CGPoint(x: 5, y: 20.88))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 7.5, y: 17), controlPoint1: CGPoint(x: 5, y: 18.12), controlPoint2: CGPoint(x: 6.12, y: 17))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 10, y: 19.5), controlPoint1: CGPoint(x: 8.88, y: 17), controlPoint2: CGPoint(x: 10, y: 18.12))
-        gridiconscustomposttype.addCurveToPoint(CGPoint(x: 7.5, y: 22), controlPoint1: CGPoint(x: 10, y: 20.88), controlPoint2: CGPoint(x: 8.88, y: 22))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 7.5, y: 22))
-        gridiconscustomposttype.closePath()
-        gridiconscustomposttype.moveToPoint(CGPoint(x: 10.5, y: 16))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 13.5, y: 11))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 16.5, y: 16))
-        gridiconscustomposttype.addLineToPoint(CGPoint(x: 10.5, y: 16))
-        gridiconscustomposttype.closePath()
-        gridiconscustomposttype.moveToPoint(CGPoint(x: 10.5, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 346)
+        gridiconscustomposttype.move(to: CGPoint(x: 16, y: 6))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 16, y: 6))
+        gridiconscustomposttype.close()
+        gridiconscustomposttype.move(to: CGPoint(x: 3, y: 9))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 8, y: 9))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 3, y: 14))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 3, y: 9))
+        gridiconscustomposttype.close()
+        gridiconscustomposttype.move(to: CGPoint(x: 7.5, y: 22))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 5, y: 19.5), controlPoint1: CGPoint(x: 6.12, y: 22), controlPoint2: CGPoint(x: 5, y: 20.88))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 7.5, y: 17), controlPoint1: CGPoint(x: 5, y: 18.12), controlPoint2: CGPoint(x: 6.12, y: 17))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 10, y: 19.5), controlPoint1: CGPoint(x: 8.88, y: 17), controlPoint2: CGPoint(x: 10, y: 18.12))
+        gridiconscustomposttype.addCurve(to: CGPoint(x: 7.5, y: 22), controlPoint1: CGPoint(x: 10, y: 20.88), controlPoint2: CGPoint(x: 8.88, y: 22))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 7.5, y: 22))
+        gridiconscustomposttype.close()
+        gridiconscustomposttype.move(to: CGPoint(x: 10.5, y: 16))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 13.5, y: 11))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 16.5, y: 16))
+        gridiconscustomposttype.addLine(to: CGPoint(x: 10.5, y: 16))
+        gridiconscustomposttype.close()
+        gridiconscustomposttype.move(to: CGPoint(x: 10.5, y: 16))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 346)
         gridiconscustomposttype.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscustomposttype.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscross(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscross(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -354)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -354)
         
         /// gridicons-cross
         let gridiconscross = UIBezierPath()
-        gridiconscross.moveToPoint(CGPoint(x: 14.14, y: 24))
-        gridiconscross.addLineToPoint(CGPoint(x: 7.78, y: 17.63))
-        gridiconscross.addLineToPoint(CGPoint(x: 1.42, y: 24))
-        gridiconscross.addLineToPoint(CGPoint(x: 0, y: 22.58))
-        gridiconscross.addLineToPoint(CGPoint(x: 6.37, y: 16.22))
-        gridiconscross.addLineToPoint(CGPoint(x: 0, y: 9.86))
-        gridiconscross.addLineToPoint(CGPoint(x: 1.42, y: 8.44))
-        gridiconscross.addLineToPoint(CGPoint(x: 7.78, y: 14.81))
-        gridiconscross.addLineToPoint(CGPoint(x: 14.14, y: 8.45))
-        gridiconscross.addLineToPoint(CGPoint(x: 15.55, y: 9.86))
-        gridiconscross.addLineToPoint(CGPoint(x: 9.19, y: 16.22))
-        gridiconscross.addLineToPoint(CGPoint(x: 15.55, y: 22.58))
-        gridiconscross.addLineToPoint(CGPoint(x: 14.14, y: 24))
-        gridiconscross.closePath()
-        gridiconscross.moveToPoint(CGPoint(x: 14.14, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 346)
+        gridiconscross.move(to: CGPoint(x: 14.14, y: 24))
+        gridiconscross.addLine(to: CGPoint(x: 7.78, y: 17.63))
+        gridiconscross.addLine(to: CGPoint(x: 1.42, y: 24))
+        gridiconscross.addLine(to: CGPoint(x: 0, y: 22.58))
+        gridiconscross.addLine(to: CGPoint(x: 6.37, y: 16.22))
+        gridiconscross.addLine(to: CGPoint(x: 0, y: 9.86))
+        gridiconscross.addLine(to: CGPoint(x: 1.42, y: 8.44))
+        gridiconscross.addLine(to: CGPoint(x: 7.78, y: 14.81))
+        gridiconscross.addLine(to: CGPoint(x: 14.14, y: 8.45))
+        gridiconscross.addLine(to: CGPoint(x: 15.55, y: 9.86))
+        gridiconscross.addLine(to: CGPoint(x: 9.19, y: 16.22))
+        gridiconscross.addLine(to: CGPoint(x: 15.55, y: 22.58))
+        gridiconscross.addLine(to: CGPoint(x: 14.14, y: 24))
+        gridiconscross.close()
+        gridiconscross.move(to: CGPoint(x: 14.14, y: 24))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 346)
         gridiconscross.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscross.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscrosssmall(frame frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 12), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscrosssmall(frame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 12), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 12, height: 12), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 12, height: resizedFrame.height / 12)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -358)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -358)
         
         /// gridicons-cross-small
         let gridiconscrosssmall = UIBezierPath()
-        gridiconscrosssmall.moveToPoint(CGPoint(x: 11.41, y: 14))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 10, y: 12.59))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 5.71, y: 16.88))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 1.41, y: 12.59))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 4.3, y: 18.29))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 0, y: 22.59))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 1.41, y: 24))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 5.71, y: 19.7))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 11.41, y: 22.59))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 7.12, y: 18.29))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 11.41, y: 14))
-        gridiconscrosssmall.addLineToPoint(CGPoint(x: 11.41, y: 14))
-        gridiconscrosssmall.closePath()
-        gridiconscrosssmall.moveToPoint(CGPoint(x: 11.41, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 346)
+        gridiconscrosssmall.move(to: CGPoint(x: 11.41, y: 14))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 10, y: 12.59))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 5.71, y: 16.88))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 1.41, y: 12.59))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 4.3, y: 18.29))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 0, y: 22.59))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 1.41, y: 24))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 5.71, y: 19.7))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 11.41, y: 22.59))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 7.12, y: 18.29))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 11.41, y: 14))
+        gridiconscrosssmall.addLine(to: CGPoint(x: 11.41, y: 14))
+        gridiconscrosssmall.close()
+        gridiconscrosssmall.move(to: CGPoint(x: 11.41, y: 14))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 346)
         gridiconscrosssmall.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscrosssmall.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscrop(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscrop(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -350)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -350)
         
         /// gridicons-crop
         let gridiconscrop = UIBezierPath()
-        gridiconscrop.moveToPoint(CGPoint(x: 20, y: 18))
-        gridiconscrop.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconscrop.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconscrop.addCurveToPoint(CGPoint(x: 14, y: 8), controlPoint1: CGPoint(x: 16, y: 8.89), controlPoint2: CGPoint(x: 15.11, y: 8))
-        gridiconscrop.addLineToPoint(CGPoint(x: 6, y: 8))
-        gridiconscrop.addLineToPoint(CGPoint(x: 6, y: 4))
-        gridiconscrop.addLineToPoint(CGPoint(x: 4, y: 4))
-        gridiconscrop.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconscrop.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconscrop.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconscrop.addLineToPoint(CGPoint(x: 4, y: 10))
-        gridiconscrop.addLineToPoint(CGPoint(x: 4, y: 18))
-        gridiconscrop.addCurveToPoint(CGPoint(x: 6, y: 20), controlPoint1: CGPoint(x: 4, y: 19.11), controlPoint2: CGPoint(x: 4.89, y: 20))
-        gridiconscrop.addLineToPoint(CGPoint(x: 14, y: 20))
-        gridiconscrop.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconscrop.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconscrop.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconscrop.addLineToPoint(CGPoint(x: 20, y: 20))
-        gridiconscrop.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconscrop.closePath()
-        gridiconscrop.moveToPoint(CGPoint(x: 6, y: 18))
-        gridiconscrop.addLineToPoint(CGPoint(x: 6, y: 10))
-        gridiconscrop.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconscrop.addLineToPoint(CGPoint(x: 14, y: 18))
-        gridiconscrop.addLineToPoint(CGPoint(x: 6, y: 18))
-        gridiconscrop.closePath()
-        gridiconscrop.moveToPoint(CGPoint(x: 6, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 346)
+        gridiconscrop.move(to: CGPoint(x: 20, y: 18))
+        gridiconscrop.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconscrop.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconscrop.addCurve(to: CGPoint(x: 14, y: 8), controlPoint1: CGPoint(x: 16, y: 8.89), controlPoint2: CGPoint(x: 15.11, y: 8))
+        gridiconscrop.addLine(to: CGPoint(x: 6, y: 8))
+        gridiconscrop.addLine(to: CGPoint(x: 6, y: 4))
+        gridiconscrop.addLine(to: CGPoint(x: 4, y: 4))
+        gridiconscrop.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconscrop.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconscrop.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconscrop.addLine(to: CGPoint(x: 4, y: 10))
+        gridiconscrop.addLine(to: CGPoint(x: 4, y: 18))
+        gridiconscrop.addCurve(to: CGPoint(x: 6, y: 20), controlPoint1: CGPoint(x: 4, y: 19.11), controlPoint2: CGPoint(x: 4.89, y: 20))
+        gridiconscrop.addLine(to: CGPoint(x: 14, y: 20))
+        gridiconscrop.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconscrop.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconscrop.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconscrop.addLine(to: CGPoint(x: 20, y: 20))
+        gridiconscrop.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconscrop.close()
+        gridiconscrop.move(to: CGPoint(x: 6, y: 18))
+        gridiconscrop.addLine(to: CGPoint(x: 6, y: 10))
+        gridiconscrop.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconscrop.addLine(to: CGPoint(x: 14, y: 18))
+        gridiconscrop.addLine(to: CGPoint(x: 6, y: 18))
+        gridiconscrop.close()
+        gridiconscrop.move(to: CGPoint(x: 6, y: 18))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 346)
         gridiconscrop.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscrop.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscreditcard(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscreditcard(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -354)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -354)
         
         /// gridicons-credit-card
         let gridiconscreditcard = UIBezierPath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 18, y: 8))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconscreditcard.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconscreditcard.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconscreditcard.addCurveToPoint(CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 20, y: 10))
-        gridiconscreditcard.addCurveToPoint(CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconscreditcard.closePath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 18, y: 10))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconscreditcard.closePath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 2, y: 22))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 2, y: 16))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconscreditcard.closePath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 4, y: 18))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 11, y: 18))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 11, y: 20))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 4, y: 18))
-        gridiconscreditcard.closePath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 13, y: 18))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconscreditcard.addLineToPoint(CGPoint(x: 13, y: 18))
-        gridiconscreditcard.closePath()
-        gridiconscreditcard.moveToPoint(CGPoint(x: 13, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 346)
+        gridiconscreditcard.move(to: CGPoint(x: 18, y: 8))
+        gridiconscreditcard.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconscreditcard.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconscreditcard.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconscreditcard.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconscreditcard.addCurve(to: CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
+        gridiconscreditcard.addLine(to: CGPoint(x: 20, y: 10))
+        gridiconscreditcard.addCurve(to: CGPoint(x: 18, y: 8), controlPoint1: CGPoint(x: 20, y: 8.89), controlPoint2: CGPoint(x: 19.11, y: 8))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconscreditcard.close()
+        gridiconscreditcard.move(to: CGPoint(x: 18, y: 10))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconscreditcard.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconscreditcard.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconscreditcard.close()
+        gridiconscreditcard.move(to: CGPoint(x: 2, y: 22))
+        gridiconscreditcard.addLine(to: CGPoint(x: 2, y: 16))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconscreditcard.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconscreditcard.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconscreditcard.close()
+        gridiconscreditcard.move(to: CGPoint(x: 4, y: 18))
+        gridiconscreditcard.addLine(to: CGPoint(x: 11, y: 18))
+        gridiconscreditcard.addLine(to: CGPoint(x: 11, y: 20))
+        gridiconscreditcard.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconscreditcard.addLine(to: CGPoint(x: 4, y: 18))
+        gridiconscreditcard.close()
+        gridiconscreditcard.move(to: CGPoint(x: 13, y: 18))
+        gridiconscreditcard.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconscreditcard.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconscreditcard.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconscreditcard.addLine(to: CGPoint(x: 13, y: 18))
+        gridiconscreditcard.close()
+        gridiconscreditcard.move(to: CGPoint(x: 13, y: 18))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 346)
         gridiconscreditcard.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscreditcard.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscreate(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscreate(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -352)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -352)
         
         /// gridicons-create
         let gridiconscreate = UIBezierPath()
-        gridiconscreate.moveToPoint(CGPoint(x: 18, y: 14))
-        gridiconscreate.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconscreate.addCurveToPoint(CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
-        gridiconscreate.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconscreate.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconscreate.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconscreate.addCurveToPoint(CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
-        gridiconscreate.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconscreate.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconscreate.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconscreate.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconscreate.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconscreate.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconscreate.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconscreate.closePath()
-        gridiconscreate.moveToPoint(CGPoint(x: 4, y: 20))
-        gridiconscreate.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconscreate.addLineToPoint(CGPoint(x: 14.5, y: 12.5))
-        gridiconscreate.addLineToPoint(CGPoint(x: 11.5, y: 9.5))
-        gridiconscreate.addLineToPoint(CGPoint(x: 4, y: 17))
-        gridiconscreate.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconscreate.closePath()
-        gridiconscreate.moveToPoint(CGPoint(x: 13.94, y: 7.06))
-        gridiconscreate.addLineToPoint(CGPoint(x: 12.5, y: 8.5))
-        gridiconscreate.addLineToPoint(CGPoint(x: 15.5, y: 11.5))
-        gridiconscreate.addLineToPoint(CGPoint(x: 16.94, y: 10.06))
-        gridiconscreate.addCurveToPoint(CGPoint(x: 16.94, y: 7.94), controlPoint1: CGPoint(x: 17.53, y: 9.47), controlPoint2: CGPoint(x: 17.53, y: 8.52))
-        gridiconscreate.addLineToPoint(CGPoint(x: 16.06, y: 7.06))
-        gridiconscreate.addCurveToPoint(CGPoint(x: 13.94, y: 7.06), controlPoint1: CGPoint(x: 15.48, y: 6.47), controlPoint2: CGPoint(x: 14.53, y: 6.47))
-        gridiconscreate.addLineToPoint(CGPoint(x: 13.94, y: 7.06))
-        gridiconscreate.closePath()
-        gridiconscreate.moveToPoint(CGPoint(x: 13.94, y: 7.06))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 346)
+        gridiconscreate.move(to: CGPoint(x: 18, y: 14))
+        gridiconscreate.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconscreate.addCurve(to: CGPoint(x: 16, y: 24), controlPoint1: CGPoint(x: 18, y: 23.11), controlPoint2: CGPoint(x: 17.11, y: 24))
+        gridiconscreate.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconscreate.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconscreate.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconscreate.addCurve(to: CGPoint(x: 2, y: 6), controlPoint1: CGPoint(x: 0, y: 6.89), controlPoint2: CGPoint(x: 0.9, y: 6))
+        gridiconscreate.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconscreate.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconscreate.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconscreate.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconscreate.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconscreate.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconscreate.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconscreate.close()
+        gridiconscreate.move(to: CGPoint(x: 4, y: 20))
+        gridiconscreate.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconscreate.addLine(to: CGPoint(x: 14.5, y: 12.5))
+        gridiconscreate.addLine(to: CGPoint(x: 11.5, y: 9.5))
+        gridiconscreate.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconscreate.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconscreate.close()
+        gridiconscreate.move(to: CGPoint(x: 13.94, y: 7.06))
+        gridiconscreate.addLine(to: CGPoint(x: 12.5, y: 8.5))
+        gridiconscreate.addLine(to: CGPoint(x: 15.5, y: 11.5))
+        gridiconscreate.addLine(to: CGPoint(x: 16.94, y: 10.06))
+        gridiconscreate.addCurve(to: CGPoint(x: 16.94, y: 7.94), controlPoint1: CGPoint(x: 17.53, y: 9.47), controlPoint2: CGPoint(x: 17.53, y: 8.52))
+        gridiconscreate.addLine(to: CGPoint(x: 16.06, y: 7.06))
+        gridiconscreate.addCurve(to: CGPoint(x: 13.94, y: 7.06), controlPoint1: CGPoint(x: 15.48, y: 6.47), controlPoint2: CGPoint(x: 14.53, y: 6.47))
+        gridiconscreate.addLine(to: CGPoint(x: 13.94, y: 7.06))
+        gridiconscreate.close()
+        gridiconscreate.move(to: CGPoint(x: 13.94, y: 7.06))
+        context.saveGState()
+        context.translateBy(x: 976, y: 346)
         gridiconscreate.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscreate.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscomputer(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscomputer(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -350)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -350)
         
         /// gridicons-computer
         let gridiconscomputer = UIBezierPath()
-        gridiconscomputer.moveToPoint(CGPoint(x: 18, y: 4))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 2, y: 4))
-        gridiconscomputer.addCurveToPoint(CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconscomputer.addCurveToPoint(CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 0, y: 19.11), controlPoint2: CGPoint(x: 0.9, y: 20))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 8, y: 22))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 5, y: 22))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 5, y: 24))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 15, y: 24))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 15, y: 22))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 12, y: 22))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 12, y: 20))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconscomputer.addCurveToPoint(CGPoint(x: 20, y: 18), controlPoint1: CGPoint(x: 19.11, y: 20), controlPoint2: CGPoint(x: 20, y: 19.11))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 20, y: 6))
-        gridiconscomputer.addCurveToPoint(CGPoint(x: 18, y: 4), controlPoint1: CGPoint(x: 20, y: 4.89), controlPoint2: CGPoint(x: 19.11, y: 4))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 18, y: 4))
-        gridiconscomputer.closePath()
-        gridiconscomputer.moveToPoint(CGPoint(x: 18, y: 18))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 2, y: 18))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 18, y: 6))
-        gridiconscomputer.addLineToPoint(CGPoint(x: 18, y: 18))
-        gridiconscomputer.closePath()
-        gridiconscomputer.moveToPoint(CGPoint(x: 18, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 346)
+        gridiconscomputer.move(to: CGPoint(x: 18, y: 4))
+        gridiconscomputer.addLine(to: CGPoint(x: 2, y: 4))
+        gridiconscomputer.addCurve(to: CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
+        gridiconscomputer.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconscomputer.addCurve(to: CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 0, y: 19.11), controlPoint2: CGPoint(x: 0.9, y: 20))
+        gridiconscomputer.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconscomputer.addLine(to: CGPoint(x: 8, y: 22))
+        gridiconscomputer.addLine(to: CGPoint(x: 5, y: 22))
+        gridiconscomputer.addLine(to: CGPoint(x: 5, y: 24))
+        gridiconscomputer.addLine(to: CGPoint(x: 15, y: 24))
+        gridiconscomputer.addLine(to: CGPoint(x: 15, y: 22))
+        gridiconscomputer.addLine(to: CGPoint(x: 12, y: 22))
+        gridiconscomputer.addLine(to: CGPoint(x: 12, y: 20))
+        gridiconscomputer.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconscomputer.addCurve(to: CGPoint(x: 20, y: 18), controlPoint1: CGPoint(x: 19.11, y: 20), controlPoint2: CGPoint(x: 20, y: 19.11))
+        gridiconscomputer.addLine(to: CGPoint(x: 20, y: 6))
+        gridiconscomputer.addCurve(to: CGPoint(x: 18, y: 4), controlPoint1: CGPoint(x: 20, y: 4.89), controlPoint2: CGPoint(x: 19.11, y: 4))
+        gridiconscomputer.addLine(to: CGPoint(x: 18, y: 4))
+        gridiconscomputer.close()
+        gridiconscomputer.move(to: CGPoint(x: 18, y: 18))
+        gridiconscomputer.addLine(to: CGPoint(x: 2, y: 18))
+        gridiconscomputer.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconscomputer.addLine(to: CGPoint(x: 18, y: 6))
+        gridiconscomputer.addLine(to: CGPoint(x: 18, y: 18))
+        gridiconscomputer.close()
+        gridiconscomputer.move(to: CGPoint(x: 18, y: 18))
+        context.saveGState()
+        context.translateBy(x: 942, y: 346)
         gridiconscomputer.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscomputer.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscomment(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscomment(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -352)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -352)
         
         /// gridicons-comment
         let gridiconscomment = UIBezierPath()
-        gridiconscomment.moveToPoint(CGPoint(x: 0, y: 8))
-        gridiconscomment.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconscomment.addCurveToPoint(CGPoint(x: 2, y: 19), controlPoint1: CGPoint(x: 0, y: 18.11), controlPoint2: CGPoint(x: 0.9, y: 19))
-        gridiconscomment.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconscomment.addLineToPoint(CGPoint(x: 11, y: 24))
-        gridiconscomment.addLineToPoint(CGPoint(x: 16.32, y: 20.2))
-        gridiconscomment.addCurveToPoint(CGPoint(x: 18, y: 16.94), controlPoint1: CGPoint(x: 17.38, y: 19.45), controlPoint2: CGPoint(x: 18, y: 18.23))
-        gridiconscomment.addLineToPoint(CGPoint(x: 18, y: 8))
-        gridiconscomment.addCurveToPoint(CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
-        gridiconscomment.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconscomment.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconscomment.addLineToPoint(CGPoint(x: 0, y: 8))
-        gridiconscomment.closePath()
-        gridiconscomment.moveToPoint(CGPoint(x: 0, y: 8))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 346)
+        gridiconscomment.move(to: CGPoint(x: 0, y: 8))
+        gridiconscomment.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconscomment.addCurve(to: CGPoint(x: 2, y: 19), controlPoint1: CGPoint(x: 0, y: 18.11), controlPoint2: CGPoint(x: 0.9, y: 19))
+        gridiconscomment.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconscomment.addLine(to: CGPoint(x: 11, y: 24))
+        gridiconscomment.addLine(to: CGPoint(x: 16.32, y: 20.2))
+        gridiconscomment.addCurve(to: CGPoint(x: 18, y: 16.94), controlPoint1: CGPoint(x: 17.38, y: 19.45), controlPoint2: CGPoint(x: 18, y: 18.23))
+        gridiconscomment.addLine(to: CGPoint(x: 18, y: 8))
+        gridiconscomment.addCurve(to: CGPoint(x: 16, y: 6), controlPoint1: CGPoint(x: 18, y: 6.89), controlPoint2: CGPoint(x: 17.11, y: 6))
+        gridiconscomment.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconscomment.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconscomment.addLine(to: CGPoint(x: 0, y: 8))
+        gridiconscomment.close()
+        gridiconscomment.move(to: CGPoint(x: 0, y: 8))
+        context.saveGState()
+        context.translateBy(x: 908, y: 346)
         gridiconscomment.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscomment.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscog(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscog(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -350)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -350)
         
         /// gridicons-cog
         let gridiconscog = UIBezierPath()
-        gridiconscog.moveToPoint(CGPoint(x: 17.66, y: 14))
-        gridiconscog.addCurveToPoint(CGPoint(x: 17.48, y: 12.34), controlPoint1: CGPoint(x: 17.66, y: 13.43), controlPoint2: CGPoint(x: 17.6, y: 12.88))
-        gridiconscog.addLineToPoint(CGPoint(x: 19.32, y: 10.73))
-        gridiconscog.addLineToPoint(CGPoint(x: 17.32, y: 7.27))
-        gridiconscog.addLineToPoint(CGPoint(x: 15, y: 8.05))
-        gridiconscog.addCurveToPoint(CGPoint(x: 12.14, y: 6.4), controlPoint1: CGPoint(x: 14.18, y: 7.32), controlPoint2: CGPoint(x: 13.22, y: 6.74))
-        gridiconscog.addLineToPoint(CGPoint(x: 11.66, y: 4))
-        gridiconscog.addLineToPoint(CGPoint(x: 7.66, y: 4))
-        gridiconscog.addLineToPoint(CGPoint(x: 7.18, y: 6.4))
-        gridiconscog.addCurveToPoint(CGPoint(x: 4.32, y: 8.05), controlPoint1: CGPoint(x: 6.11, y: 6.75), controlPoint2: CGPoint(x: 5.14, y: 7.32))
-        gridiconscog.addLineToPoint(CGPoint(x: 2, y: 7.27))
-        gridiconscog.addLineToPoint(CGPoint(x: 0, y: 10.73))
-        gridiconscog.addLineToPoint(CGPoint(x: 1.84, y: 12.35))
-        gridiconscog.addCurveToPoint(CGPoint(x: 1.66, y: 14), controlPoint1: CGPoint(x: 1.72, y: 12.88), controlPoint2: CGPoint(x: 1.66, y: 13.43))
-        gridiconscog.addCurveToPoint(CGPoint(x: 1.84, y: 15.66), controlPoint1: CGPoint(x: 1.66, y: 14.57), controlPoint2: CGPoint(x: 1.72, y: 15.12))
-        gridiconscog.addLineToPoint(CGPoint(x: 0, y: 17.27))
-        gridiconscog.addLineToPoint(CGPoint(x: 2, y: 20.73))
-        gridiconscog.addLineToPoint(CGPoint(x: 4.32, y: 19.95))
-        gridiconscog.addCurveToPoint(CGPoint(x: 7.18, y: 21.61), controlPoint1: CGPoint(x: 5.14, y: 20.68), controlPoint2: CGPoint(x: 6.1, y: 21.26))
-        gridiconscog.addLineToPoint(CGPoint(x: 7.66, y: 24))
-        gridiconscog.addLineToPoint(CGPoint(x: 11.66, y: 24))
-        gridiconscog.addLineToPoint(CGPoint(x: 12.14, y: 21.61))
-        gridiconscog.addCurveToPoint(CGPoint(x: 15, y: 19.95), controlPoint1: CGPoint(x: 13.21, y: 21.25), controlPoint2: CGPoint(x: 14.18, y: 20.68))
-        gridiconscog.addLineToPoint(CGPoint(x: 17.32, y: 20.73))
-        gridiconscog.addLineToPoint(CGPoint(x: 19.32, y: 17.27))
-        gridiconscog.addLineToPoint(CGPoint(x: 17.48, y: 15.66))
-        gridiconscog.addCurveToPoint(CGPoint(x: 17.66, y: 14), controlPoint1: CGPoint(x: 17.6, y: 15.12), controlPoint2: CGPoint(x: 17.66, y: 14.57))
-        gridiconscog.addLineToPoint(CGPoint(x: 17.66, y: 14))
-        gridiconscog.closePath()
-        gridiconscog.moveToPoint(CGPoint(x: 9.66, y: 18))
-        gridiconscog.addCurveToPoint(CGPoint(x: 5.66, y: 14), controlPoint1: CGPoint(x: 7.45, y: 18), controlPoint2: CGPoint(x: 5.66, y: 16.21))
-        gridiconscog.addCurveToPoint(CGPoint(x: 9.66, y: 10), controlPoint1: CGPoint(x: 5.66, y: 11.79), controlPoint2: CGPoint(x: 7.45, y: 10))
-        gridiconscog.addCurveToPoint(CGPoint(x: 13.66, y: 14), controlPoint1: CGPoint(x: 11.87, y: 10), controlPoint2: CGPoint(x: 13.66, y: 11.79))
-        gridiconscog.addCurveToPoint(CGPoint(x: 9.66, y: 18), controlPoint1: CGPoint(x: 13.66, y: 16.21), controlPoint2: CGPoint(x: 11.87, y: 18))
-        gridiconscog.addLineToPoint(CGPoint(x: 9.66, y: 18))
-        gridiconscog.closePath()
-        gridiconscog.moveToPoint(CGPoint(x: 9.66, y: 18))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 346)
+        gridiconscog.move(to: CGPoint(x: 17.66, y: 14))
+        gridiconscog.addCurve(to: CGPoint(x: 17.48, y: 12.34), controlPoint1: CGPoint(x: 17.66, y: 13.43), controlPoint2: CGPoint(x: 17.6, y: 12.88))
+        gridiconscog.addLine(to: CGPoint(x: 19.32, y: 10.73))
+        gridiconscog.addLine(to: CGPoint(x: 17.32, y: 7.27))
+        gridiconscog.addLine(to: CGPoint(x: 15, y: 8.05))
+        gridiconscog.addCurve(to: CGPoint(x: 12.14, y: 6.4), controlPoint1: CGPoint(x: 14.18, y: 7.32), controlPoint2: CGPoint(x: 13.22, y: 6.74))
+        gridiconscog.addLine(to: CGPoint(x: 11.66, y: 4))
+        gridiconscog.addLine(to: CGPoint(x: 7.66, y: 4))
+        gridiconscog.addLine(to: CGPoint(x: 7.18, y: 6.4))
+        gridiconscog.addCurve(to: CGPoint(x: 4.32, y: 8.05), controlPoint1: CGPoint(x: 6.11, y: 6.75), controlPoint2: CGPoint(x: 5.14, y: 7.32))
+        gridiconscog.addLine(to: CGPoint(x: 2, y: 7.27))
+        gridiconscog.addLine(to: CGPoint(x: 0, y: 10.73))
+        gridiconscog.addLine(to: CGPoint(x: 1.84, y: 12.35))
+        gridiconscog.addCurve(to: CGPoint(x: 1.66, y: 14), controlPoint1: CGPoint(x: 1.72, y: 12.88), controlPoint2: CGPoint(x: 1.66, y: 13.43))
+        gridiconscog.addCurve(to: CGPoint(x: 1.84, y: 15.66), controlPoint1: CGPoint(x: 1.66, y: 14.57), controlPoint2: CGPoint(x: 1.72, y: 15.12))
+        gridiconscog.addLine(to: CGPoint(x: 0, y: 17.27))
+        gridiconscog.addLine(to: CGPoint(x: 2, y: 20.73))
+        gridiconscog.addLine(to: CGPoint(x: 4.32, y: 19.95))
+        gridiconscog.addCurve(to: CGPoint(x: 7.18, y: 21.61), controlPoint1: CGPoint(x: 5.14, y: 20.68), controlPoint2: CGPoint(x: 6.1, y: 21.26))
+        gridiconscog.addLine(to: CGPoint(x: 7.66, y: 24))
+        gridiconscog.addLine(to: CGPoint(x: 11.66, y: 24))
+        gridiconscog.addLine(to: CGPoint(x: 12.14, y: 21.61))
+        gridiconscog.addCurve(to: CGPoint(x: 15, y: 19.95), controlPoint1: CGPoint(x: 13.21, y: 21.25), controlPoint2: CGPoint(x: 14.18, y: 20.68))
+        gridiconscog.addLine(to: CGPoint(x: 17.32, y: 20.73))
+        gridiconscog.addLine(to: CGPoint(x: 19.32, y: 17.27))
+        gridiconscog.addLine(to: CGPoint(x: 17.48, y: 15.66))
+        gridiconscog.addCurve(to: CGPoint(x: 17.66, y: 14), controlPoint1: CGPoint(x: 17.6, y: 15.12), controlPoint2: CGPoint(x: 17.66, y: 14.57))
+        gridiconscog.addLine(to: CGPoint(x: 17.66, y: 14))
+        gridiconscog.close()
+        gridiconscog.move(to: CGPoint(x: 9.66, y: 18))
+        gridiconscog.addCurve(to: CGPoint(x: 5.66, y: 14), controlPoint1: CGPoint(x: 7.45, y: 18), controlPoint2: CGPoint(x: 5.66, y: 16.21))
+        gridiconscog.addCurve(to: CGPoint(x: 9.66, y: 10), controlPoint1: CGPoint(x: 5.66, y: 11.79), controlPoint2: CGPoint(x: 7.45, y: 10))
+        gridiconscog.addCurve(to: CGPoint(x: 13.66, y: 14), controlPoint1: CGPoint(x: 11.87, y: 10), controlPoint2: CGPoint(x: 13.66, y: 11.79))
+        gridiconscog.addCurve(to: CGPoint(x: 9.66, y: 18), controlPoint1: CGPoint(x: 13.66, y: 16.21), controlPoint2: CGPoint(x: 11.87, y: 18))
+        gridiconscog.addLine(to: CGPoint(x: 9.66, y: 18))
+        gridiconscog.close()
+        gridiconscog.move(to: CGPoint(x: 9.66, y: 18))
+        context.saveGState()
+        context.translateBy(x: 874, y: 346)
         gridiconscog.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscog.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscode(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 12), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscode(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 12), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 12), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 12)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -358)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -358)
         
         /// gridicons-code
         let gridiconscode = UIBezierPath()
-        gridiconscode.moveToPoint(CGPoint(x: 2.83, y: 18))
-        gridiconscode.addLineToPoint(CGPoint(x: 7.41, y: 22.59))
-        gridiconscode.addLineToPoint(CGPoint(x: 6, y: 24))
-        gridiconscode.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconscode.addLineToPoint(CGPoint(x: 6, y: 12))
-        gridiconscode.addLineToPoint(CGPoint(x: 7.41, y: 13.41))
-        gridiconscode.addLineToPoint(CGPoint(x: 2.83, y: 18))
-        gridiconscode.closePath()
-        gridiconscode.moveToPoint(CGPoint(x: 12.59, y: 22.59))
-        gridiconscode.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconscode.addLineToPoint(CGPoint(x: 20, y: 18))
-        gridiconscode.addLineToPoint(CGPoint(x: 14, y: 12))
-        gridiconscode.addLineToPoint(CGPoint(x: 12.59, y: 13.41))
-        gridiconscode.addLineToPoint(CGPoint(x: 17.17, y: 18))
-        gridiconscode.addLineToPoint(CGPoint(x: 12.59, y: 22.59))
-        gridiconscode.addLineToPoint(CGPoint(x: 12.59, y: 22.59))
-        gridiconscode.closePath()
-        gridiconscode.moveToPoint(CGPoint(x: 12.59, y: 22.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 346)
+        gridiconscode.move(to: CGPoint(x: 2.83, y: 18))
+        gridiconscode.addLine(to: CGPoint(x: 7.41, y: 22.59))
+        gridiconscode.addLine(to: CGPoint(x: 6, y: 24))
+        gridiconscode.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconscode.addLine(to: CGPoint(x: 6, y: 12))
+        gridiconscode.addLine(to: CGPoint(x: 7.41, y: 13.41))
+        gridiconscode.addLine(to: CGPoint(x: 2.83, y: 18))
+        gridiconscode.close()
+        gridiconscode.move(to: CGPoint(x: 12.59, y: 22.59))
+        gridiconscode.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconscode.addLine(to: CGPoint(x: 20, y: 18))
+        gridiconscode.addLine(to: CGPoint(x: 14, y: 12))
+        gridiconscode.addLine(to: CGPoint(x: 12.59, y: 13.41))
+        gridiconscode.addLine(to: CGPoint(x: 17.17, y: 18))
+        gridiconscode.addLine(to: CGPoint(x: 12.59, y: 22.59))
+        gridiconscode.addLine(to: CGPoint(x: 12.59, y: 22.59))
+        gridiconscode.close()
+        gridiconscode.move(to: CGPoint(x: 12.59, y: 22.59))
+        context.saveGState()
+        context.translateBy(x: 840, y: 346)
         gridiconscode.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscode.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscloud(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscloud(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -355)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -355)
         
         /// gridicons-cloud
         let gridiconscloud = UIBezierPath()
-        gridiconscloud.moveToPoint(CGPoint(x: 17, y: 15))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
-        gridiconscloud.addLineToPoint(CGPoint(x: 19.97, y: 24))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
-        gridiconscloud.addCurveToPoint(CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
-        gridiconscloud.addLineToPoint(CGPoint(x: 17, y: 15))
-        gridiconscloud.closePath()
-        gridiconscloud.moveToPoint(CGPoint(x: 17, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 346)
+        gridiconscloud.move(to: CGPoint(x: 17, y: 15))
+        gridiconscloud.addCurve(to: CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
+        gridiconscloud.addCurve(to: CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
+        gridiconscloud.addCurve(to: CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
+        gridiconscloud.addCurve(to: CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
+        gridiconscloud.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
+        gridiconscloud.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
+        gridiconscloud.addCurve(to: CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
+        gridiconscloud.addLine(to: CGPoint(x: 19.97, y: 24))
+        gridiconscloud.addCurve(to: CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
+        gridiconscloud.addCurve(to: CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
+        gridiconscloud.addLine(to: CGPoint(x: 17, y: 15))
+        gridiconscloud.close()
+        gridiconscloud.move(to: CGPoint(x: 17, y: 15))
+        context.saveGState()
+        context.translateBy(x: 806, y: 346)
         gridiconscloud.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscloud.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscloudupload(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscloudupload(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -355)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -355)
         
         /// gridicons-cloud-upload
         let gridiconscloudupload = UIBezierPath()
-        gridiconscloudupload.moveToPoint(CGPoint(x: 17, y: 15))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 19.97, y: 24))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
-        gridiconscloudupload.addCurveToPoint(CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 17, y: 15))
-        gridiconscloudupload.closePath()
-        gridiconscloudupload.moveToPoint(CGPoint(x: 12, y: 19))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 12, y: 22))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 10, y: 22))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 10, y: 19))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 7, y: 19))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 11, y: 14))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 15, y: 19))
-        gridiconscloudupload.addLineToPoint(CGPoint(x: 12, y: 19))
-        gridiconscloudupload.closePath()
-        gridiconscloudupload.moveToPoint(CGPoint(x: 12, y: 19))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 346)
+        gridiconscloudupload.move(to: CGPoint(x: 17, y: 15))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
+        gridiconscloudupload.addLine(to: CGPoint(x: 19.97, y: 24))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
+        gridiconscloudupload.addCurve(to: CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
+        gridiconscloudupload.addLine(to: CGPoint(x: 17, y: 15))
+        gridiconscloudupload.close()
+        gridiconscloudupload.move(to: CGPoint(x: 12, y: 19))
+        gridiconscloudupload.addLine(to: CGPoint(x: 12, y: 22))
+        gridiconscloudupload.addLine(to: CGPoint(x: 10, y: 22))
+        gridiconscloudupload.addLine(to: CGPoint(x: 10, y: 19))
+        gridiconscloudupload.addLine(to: CGPoint(x: 7, y: 19))
+        gridiconscloudupload.addLine(to: CGPoint(x: 11, y: 14))
+        gridiconscloudupload.addLine(to: CGPoint(x: 15, y: 19))
+        gridiconscloudupload.addLine(to: CGPoint(x: 12, y: 19))
+        gridiconscloudupload.close()
+        gridiconscloudupload.move(to: CGPoint(x: 12, y: 19))
+        context.saveGState()
+        context.translateBy(x: 772, y: 346)
         gridiconscloudupload.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscloudupload.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscloudoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscloudoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -321)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -321)
         
         /// gridicons-cloud-outline
         let gridiconscloudoutline = UIBezierPath()
-        gridiconscloudoutline.moveToPoint(CGPoint(x: 10.5, y: 11))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 14.98, y: 15.15), controlPoint1: CGPoint(x: 12.84, y: 11), controlPoint2: CGPoint(x: 14.81, y: 12.82))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 15.12, y: 17.01))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 16.99, y: 17))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 17.08, y: 17))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 20, y: 20), controlPoint1: CGPoint(x: 18.7, y: 17.04), controlPoint2: CGPoint(x: 20, y: 18.37))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 19.22, y: 22), controlPoint1: CGPoint(x: 20, y: 20.75), controlPoint2: CGPoint(x: 19.72, y: 21.45))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 2.28, y: 22))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 2.13, y: 21.74), controlPoint2: CGPoint(x: 2, y: 21.41))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 3.91, y: 19), controlPoint1: CGPoint(x: 2, y: 19.93), controlPoint2: CGPoint(x: 2.85, y: 19.05))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 4.09, y: 19.02), controlPoint1: CGPoint(x: 3.97, y: 19.01), controlPoint2: CGPoint(x: 4.03, y: 19.02))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 6.75, y: 19.15))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 6.13, y: 16.56))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 6, y: 15.5), controlPoint1: CGPoint(x: 6.04, y: 16.19), controlPoint2: CGPoint(x: 6, y: 15.84))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 10.5, y: 11), controlPoint1: CGPoint(x: 6, y: 13.02), controlPoint2: CGPoint(x: 8.02, y: 11))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 10.5, y: 11))
-        gridiconscloudoutline.closePath()
-        gridiconscloudoutline.moveToPoint(CGPoint(x: 10.5, y: 9))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 19.97, y: 24))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 16.98, y: 15))
-        gridiconscloudoutline.addCurveToPoint(CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
-        gridiconscloudoutline.addLineToPoint(CGPoint(x: 10.5, y: 9))
-        gridiconscloudoutline.closePath()
-        gridiconscloudoutline.moveToPoint(CGPoint(x: 10.5, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 312)
+        gridiconscloudoutline.move(to: CGPoint(x: 10.5, y: 11))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 14.98, y: 15.15), controlPoint1: CGPoint(x: 12.84, y: 11), controlPoint2: CGPoint(x: 14.81, y: 12.82))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 15.12, y: 17.01))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 16.99, y: 17))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 17.08, y: 17))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 20, y: 20), controlPoint1: CGPoint(x: 18.7, y: 17.04), controlPoint2: CGPoint(x: 20, y: 18.37))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 19.22, y: 22), controlPoint1: CGPoint(x: 20, y: 20.75), controlPoint2: CGPoint(x: 19.72, y: 21.45))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 2.28, y: 22))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 2, y: 21), controlPoint1: CGPoint(x: 2.13, y: 21.74), controlPoint2: CGPoint(x: 2, y: 21.41))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 3.91, y: 19), controlPoint1: CGPoint(x: 2, y: 19.93), controlPoint2: CGPoint(x: 2.85, y: 19.05))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 4.09, y: 19.02), controlPoint1: CGPoint(x: 3.97, y: 19.01), controlPoint2: CGPoint(x: 4.03, y: 19.02))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 6.75, y: 19.15))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 6.13, y: 16.56))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 6, y: 15.5), controlPoint1: CGPoint(x: 6.04, y: 16.19), controlPoint2: CGPoint(x: 6, y: 15.84))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 10.5, y: 11), controlPoint1: CGPoint(x: 6, y: 13.02), controlPoint2: CGPoint(x: 8.02, y: 11))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 10.5, y: 11))
+        gridiconscloudoutline.close()
+        gridiconscloudoutline.move(to: CGPoint(x: 10.5, y: 9))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 19.97, y: 24))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 16.98, y: 15))
+        gridiconscloudoutline.addCurve(to: CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
+        gridiconscloudoutline.addLine(to: CGPoint(x: 10.5, y: 9))
+        gridiconscloudoutline.close()
+        gridiconscloudoutline.move(to: CGPoint(x: 10.5, y: 9))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 312)
         gridiconscloudoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscloudoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsclouddownload(frame frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsclouddownload(frame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 22, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -321)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -321)
         
         /// gridicons-cloud-download
         let gridiconsclouddownload = UIBezierPath()
-        gridiconsclouddownload.moveToPoint(CGPoint(x: 17, y: 15))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 19.97, y: 24))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
-        gridiconsclouddownload.addCurveToPoint(CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 17, y: 15))
-        gridiconsclouddownload.closePath()
-        gridiconsclouddownload.moveToPoint(CGPoint(x: 11, y: 22))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 7, y: 17))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 10, y: 17))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 12, y: 17))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 15, y: 17))
-        gridiconsclouddownload.addLineToPoint(CGPoint(x: 11, y: 22))
-        gridiconsclouddownload.closePath()
-        gridiconsclouddownload.moveToPoint(CGPoint(x: 11, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 312)
+        gridiconsclouddownload.move(to: CGPoint(x: 17, y: 15))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 16.98, y: 15), controlPoint1: CGPoint(x: 16.99, y: 15), controlPoint2: CGPoint(x: 16.98, y: 15))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 10.5, y: 9), controlPoint1: CGPoint(x: 16.72, y: 11.65), controlPoint2: CGPoint(x: 13.92, y: 9))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 4, y: 15.5), controlPoint1: CGPoint(x: 6.91, y: 9), controlPoint2: CGPoint(x: 4, y: 11.91))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 4.19, y: 17.02), controlPoint1: CGPoint(x: 4, y: 16.02), controlPoint2: CGPoint(x: 4.07, y: 16.53))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 4, y: 17), controlPoint1: CGPoint(x: 4.12, y: 17.02), controlPoint2: CGPoint(x: 4.06, y: 17))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.79, y: 17), controlPoint2: CGPoint(x: 0, y: 18.79))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 1.38, y: 24), controlPoint1: CGPoint(x: 0, y: 22.2), controlPoint2: CGPoint(x: 0.54, y: 23.27))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 19.97, y: 24))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 22, y: 20), controlPoint1: CGPoint(x: 21.2, y: 23.09), controlPoint2: CGPoint(x: 22, y: 21.65))
+        gridiconsclouddownload.addCurve(to: CGPoint(x: 17, y: 15), controlPoint1: CGPoint(x: 22, y: 17.24), controlPoint2: CGPoint(x: 19.76, y: 15))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 17, y: 15))
+        gridiconsclouddownload.close()
+        gridiconsclouddownload.move(to: CGPoint(x: 11, y: 22))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 7, y: 17))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 10, y: 17))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 12, y: 17))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 15, y: 17))
+        gridiconsclouddownload.addLine(to: CGPoint(x: 11, y: 22))
+        gridiconsclouddownload.close()
+        gridiconsclouddownload.move(to: CGPoint(x: 11, y: 22))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 312)
         gridiconsclouddownload.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsclouddownload.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsclipboard(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsclipboard(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -316)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -316)
         
         /// gridicons-clipboard
         let gridiconsclipboard = UIBezierPath()
-        gridiconsclipboard.moveToPoint(CGPoint(x: 12, y: 20))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 20))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 18))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 18))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 20))
-        gridiconsclipboard.closePath()
-        gridiconsclipboard.moveToPoint(CGPoint(x: 12, y: 14))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 16))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 16))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsclipboard.closePath()
-        gridiconsclipboard.moveToPoint(CGPoint(x: 14, y: 5))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 5))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 14, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 14, y: 22))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 5))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 2, y: 5))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 0, y: 7), controlPoint1: CGPoint(x: 0.9, y: 5), controlPoint2: CGPoint(x: 0, y: 5.9))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 14, y: 5))
-        gridiconsclipboard.closePath()
-        gridiconsclipboard.moveToPoint(CGPoint(x: 10, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 8, y: 4), controlPoint1: CGPoint(x: 10, y: 4.89), controlPoint2: CGPoint(x: 9.11, y: 4))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 6, y: 6), controlPoint1: CGPoint(x: 6.89, y: 4), controlPoint2: CGPoint(x: 6, y: 4.89))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 6, y: 7))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 4, y: 9), controlPoint1: CGPoint(x: 4.89, y: 7), controlPoint2: CGPoint(x: 4, y: 7.89))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 4, y: 10))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 10))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 12, y: 9))
-        gridiconsclipboard.addCurveToPoint(CGPoint(x: 10, y: 7), controlPoint1: CGPoint(x: 12, y: 7.89), controlPoint2: CGPoint(x: 11.11, y: 7))
-        gridiconsclipboard.addLineToPoint(CGPoint(x: 10, y: 7))
-        gridiconsclipboard.closePath()
-        gridiconsclipboard.moveToPoint(CGPoint(x: 10, y: 7))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 312)
+        gridiconsclipboard.move(to: CGPoint(x: 12, y: 20))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 18))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 18))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 20))
+        gridiconsclipboard.close()
+        gridiconsclipboard.move(to: CGPoint(x: 12, y: 14))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 16))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 16))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsclipboard.close()
+        gridiconsclipboard.move(to: CGPoint(x: 14, y: 5))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 5))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 14, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 14, y: 22))
+        gridiconsclipboard.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsclipboard.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 5))
+        gridiconsclipboard.addLine(to: CGPoint(x: 2, y: 5))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 0, y: 7), controlPoint1: CGPoint(x: 0.9, y: 5), controlPoint2: CGPoint(x: 0, y: 5.9))
+        gridiconsclipboard.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsclipboard.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
+        gridiconsclipboard.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
+        gridiconsclipboard.addLine(to: CGPoint(x: 14, y: 5))
+        gridiconsclipboard.close()
+        gridiconsclipboard.move(to: CGPoint(x: 10, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 8, y: 4), controlPoint1: CGPoint(x: 10, y: 4.89), controlPoint2: CGPoint(x: 9.11, y: 4))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 6, y: 6), controlPoint1: CGPoint(x: 6.89, y: 4), controlPoint2: CGPoint(x: 6, y: 4.89))
+        gridiconsclipboard.addLine(to: CGPoint(x: 6, y: 7))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 4, y: 9), controlPoint1: CGPoint(x: 4.89, y: 7), controlPoint2: CGPoint(x: 4, y: 7.89))
+        gridiconsclipboard.addLine(to: CGPoint(x: 4, y: 10))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 10))
+        gridiconsclipboard.addLine(to: CGPoint(x: 12, y: 9))
+        gridiconsclipboard.addCurve(to: CGPoint(x: 10, y: 7), controlPoint1: CGPoint(x: 12, y: 7.89), controlPoint2: CGPoint(x: 11.11, y: 7))
+        gridiconsclipboard.addLine(to: CGPoint(x: 10, y: 7))
+        gridiconsclipboard.close()
+        gridiconsclipboard.move(to: CGPoint(x: 10, y: 7))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 312)
         gridiconsclipboard.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsclipboard.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsclearformatting(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsclearformatting(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -317)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -317)
         
         /// gridicons-clear-formatting
         let gridiconsclearformatting = UIBezierPath()
-        gridiconsclearformatting.moveToPoint(CGPoint(x: 7.34, y: 12.16))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 2.73, y: 16.77))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 6.5, y: 6))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 10.5, y: 6))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 11.28, y: 8.22))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 9.13, y: 10.37))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 8.5, y: 8.27))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 7.33, y: 12.16))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 7.34, y: 12.16))
-        gridiconsclearformatting.closePath()
-        gridiconsclearformatting.moveToPoint(CGPoint(x: 12.83, y: 12.67))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 15.74, y: 21))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 12.32, y: 21))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 11.27, y: 17.5))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 8, y: 17.5))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 1.5, y: 24))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 0, y: 22.5))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 17, y: 5.5))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 18.5, y: 7))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 12.83, y: 12.67))
-        gridiconsclearformatting.closePath()
-        gridiconsclearformatting.moveToPoint(CGPoint(x: 10.52, y: 14.98))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 10.49, y: 15.01))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 10.52, y: 15))
-        gridiconsclearformatting.addLineToPoint(CGPoint(x: 10.52, y: 14.98))
-        gridiconsclearformatting.closePath()
-        gridiconsclearformatting.moveToPoint(CGPoint(x: 10.52, y: 14.98))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 312)
+        gridiconsclearformatting.move(to: CGPoint(x: 7.34, y: 12.16))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 2.73, y: 16.77))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 6.5, y: 6))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 10.5, y: 6))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 11.28, y: 8.22))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 9.13, y: 10.37))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 8.5, y: 8.27))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 7.33, y: 12.16))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 7.34, y: 12.16))
+        gridiconsclearformatting.close()
+        gridiconsclearformatting.move(to: CGPoint(x: 12.83, y: 12.67))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 15.74, y: 21))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 12.32, y: 21))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 11.27, y: 17.5))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 8, y: 17.5))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 1.5, y: 24))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 0, y: 22.5))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 17, y: 5.5))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 18.5, y: 7))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 12.83, y: 12.67))
+        gridiconsclearformatting.close()
+        gridiconsclearformatting.move(to: CGPoint(x: 10.52, y: 14.98))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 10.49, y: 15.01))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 10.52, y: 15))
+        gridiconsclearformatting.addLine(to: CGPoint(x: 10.52, y: 14.98))
+        gridiconsclearformatting.close()
+        gridiconsclearformatting.move(to: CGPoint(x: 10.52, y: 14.98))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 312)
         gridiconsclearformatting.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsclearformatting.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconschevronup(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 10), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconschevronup(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 10), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 10), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 10)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -326)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -326)
         
         /// gridicons-chevron-up
         let gridiconschevronup = UIBezierPath()
-        gridiconschevronup.moveToPoint(CGPoint(x: 0, y: 22.59))
-        gridiconschevronup.addLineToPoint(CGPoint(x: 8, y: 14.59))
-        gridiconschevronup.addLineToPoint(CGPoint(x: 16, y: 22.59))
-        gridiconschevronup.addLineToPoint(CGPoint(x: 14.59, y: 24))
-        gridiconschevronup.addLineToPoint(CGPoint(x: 8, y: 17.41))
-        gridiconschevronup.addLineToPoint(CGPoint(x: 1.41, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 312)
+        gridiconschevronup.move(to: CGPoint(x: 0, y: 22.59))
+        gridiconschevronup.addLine(to: CGPoint(x: 8, y: 14.59))
+        gridiconschevronup.addLine(to: CGPoint(x: 16, y: 22.59))
+        gridiconschevronup.addLine(to: CGPoint(x: 14.59, y: 24))
+        gridiconschevronup.addLine(to: CGPoint(x: 8, y: 17.41))
+        gridiconschevronup.addLine(to: CGPoint(x: 1.41, y: 24))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 312)
         gridiconschevronup.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconschevronup.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconschevronright(frame frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconschevronright(frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 10, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -320)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -320)
         
         /// gridicons-chevron-right
         let gridiconschevronright = UIBezierPath()
-        gridiconschevronright.moveToPoint(CGPoint(x: 1.41, y: 24))
-        gridiconschevronright.addLineToPoint(CGPoint(x: 9.41, y: 16))
-        gridiconschevronright.addLineToPoint(CGPoint(x: 1.41, y: 8))
-        gridiconschevronright.addLineToPoint(CGPoint(x: 0, y: 9.41))
-        gridiconschevronright.addLineToPoint(CGPoint(x: 6.59, y: 16))
-        gridiconschevronright.addLineToPoint(CGPoint(x: 0, y: 22.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 312)
+        gridiconschevronright.move(to: CGPoint(x: 1.41, y: 24))
+        gridiconschevronright.addLine(to: CGPoint(x: 9.41, y: 16))
+        gridiconschevronright.addLine(to: CGPoint(x: 1.41, y: 8))
+        gridiconschevronright.addLine(to: CGPoint(x: 0, y: 9.41))
+        gridiconschevronright.addLine(to: CGPoint(x: 6.59, y: 16))
+        gridiconschevronright.addLine(to: CGPoint(x: 0, y: 22.59))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 312)
         gridiconschevronright.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconschevronright.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconschevronleft(frame frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconschevronleft(frame: CGRect = CGRect(x: 0, y: 0, width: 10, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 10, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 10, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -320)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -320)
         
         /// gridicons-chevron-left
         let gridiconschevronleft = UIBezierPath()
-        gridiconschevronleft.moveToPoint(CGPoint(x: 8, y: 24))
-        gridiconschevronleft.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconschevronleft.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconschevronleft.addLineToPoint(CGPoint(x: 9.41, y: 9.41))
-        gridiconschevronleft.addLineToPoint(CGPoint(x: 2.83, y: 16))
-        gridiconschevronleft.addLineToPoint(CGPoint(x: 9.41, y: 22.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 312)
+        gridiconschevronleft.move(to: CGPoint(x: 8, y: 24))
+        gridiconschevronleft.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconschevronleft.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconschevronleft.addLine(to: CGPoint(x: 9.41, y: 9.41))
+        gridiconschevronleft.addLine(to: CGPoint(x: 2.83, y: 16))
+        gridiconschevronleft.addLine(to: CGPoint(x: 9.41, y: 22.59))
+        context.saveGState()
+        context.translateBy(x: 976, y: 312)
         gridiconschevronleft.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconschevronleft.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconschevrondown(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 10), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconschevrondown(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 10), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 10), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 10)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -326)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -326)
         
         /// gridicons-chevron-down
         let gridiconschevrondown = UIBezierPath()
-        gridiconschevrondown.moveToPoint(CGPoint(x: 16, y: 16))
-        gridiconschevrondown.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconschevrondown.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconschevrondown.addLineToPoint(CGPoint(x: 1.41, y: 14.59))
-        gridiconschevrondown.addLineToPoint(CGPoint(x: 8, y: 21.17))
-        gridiconschevrondown.addLineToPoint(CGPoint(x: 14.59, y: 14.59))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 312)
+        gridiconschevrondown.move(to: CGPoint(x: 16, y: 16))
+        gridiconschevrondown.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconschevrondown.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconschevrondown.addLine(to: CGPoint(x: 1.41, y: 14.59))
+        gridiconschevrondown.addLine(to: CGPoint(x: 8, y: 21.17))
+        gridiconschevrondown.addLine(to: CGPoint(x: 14.59, y: 14.59))
+        context.saveGState()
+        context.translateBy(x: 942, y: 312)
         gridiconschevrondown.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconschevrondown.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscheckmark(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscheckmark(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -321)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -321)
         
         /// gridicons-checkmark
         let gridiconscheckmark = UIBezierPath()
-        gridiconscheckmark.moveToPoint(CGPoint(x: 6.71, y: 24))
-        gridiconscheckmark.addLineToPoint(CGPoint(x: 0, y: 17.29))
-        gridiconscheckmark.addLineToPoint(CGPoint(x: 1.41, y: 15.88))
-        gridiconscheckmark.addLineToPoint(CGPoint(x: 6.71, y: 21.17))
-        gridiconscheckmark.addLineToPoint(CGPoint(x: 18, y: 9.88))
-        gridiconscheckmark.addLineToPoint(CGPoint(x: 19.41, y: 11.29))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 312)
+        gridiconscheckmark.move(to: CGPoint(x: 6.71, y: 24))
+        gridiconscheckmark.addLine(to: CGPoint(x: 0, y: 17.29))
+        gridiconscheckmark.addLine(to: CGPoint(x: 1.41, y: 15.88))
+        gridiconscheckmark.addLine(to: CGPoint(x: 6.71, y: 21.17))
+        gridiconscheckmark.addLine(to: CGPoint(x: 18, y: 9.88))
+        gridiconscheckmark.addLine(to: CGPoint(x: 19.41, y: 11.29))
+        context.saveGState()
+        context.translateBy(x: 908, y: 312)
         gridiconscheckmark.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscheckmark.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscheckmarkcircle(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscheckmarkcircle(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -316)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -316)
         
         /// gridicons-checkmark-circle
         let gridiconscheckmarkcircle = UIBezierPath()
-        gridiconscheckmarkcircle.moveToPoint(CGPoint(x: 9, y: 19.77))
-        gridiconscheckmarkcircle.addLineToPoint(CGPoint(x: 4.12, y: 14.89))
-        gridiconscheckmarkcircle.addLineToPoint(CGPoint(x: 5.89, y: 13.12))
-        gridiconscheckmarkcircle.addLineToPoint(CGPoint(x: 9, y: 16.23))
-        gridiconscheckmarkcircle.addLineToPoint(CGPoint(x: 17.66, y: 7.57))
-        gridiconscheckmarkcircle.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 15.82, y: 5.39), controlPoint2: CGPoint(x: 13.07, y: 4))
-        gridiconscheckmarkcircle.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconscheckmarkcircle.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconscheckmarkcircle.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconscheckmarkcircle.addCurveToPoint(CGPoint(x: 19.04, y: 9.73), controlPoint1: CGPoint(x: 20, y: 12.47), controlPoint2: CGPoint(x: 19.65, y: 11.03))
-        gridiconscheckmarkcircle.addLineToPoint(CGPoint(x: 9, y: 19.77))
-        gridiconscheckmarkcircle.closePath()
-        gridiconscheckmarkcircle.moveToPoint(CGPoint(x: 9, y: 19.77))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 312)
+        gridiconscheckmarkcircle.move(to: CGPoint(x: 9, y: 19.77))
+        gridiconscheckmarkcircle.addLine(to: CGPoint(x: 4.12, y: 14.89))
+        gridiconscheckmarkcircle.addLine(to: CGPoint(x: 5.89, y: 13.12))
+        gridiconscheckmarkcircle.addLine(to: CGPoint(x: 9, y: 16.23))
+        gridiconscheckmarkcircle.addLine(to: CGPoint(x: 17.66, y: 7.57))
+        gridiconscheckmarkcircle.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 15.82, y: 5.39), controlPoint2: CGPoint(x: 13.07, y: 4))
+        gridiconscheckmarkcircle.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconscheckmarkcircle.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconscheckmarkcircle.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconscheckmarkcircle.addCurve(to: CGPoint(x: 19.04, y: 9.73), controlPoint1: CGPoint(x: 20, y: 12.47), controlPoint2: CGPoint(x: 19.65, y: 11.03))
+        gridiconscheckmarkcircle.addLine(to: CGPoint(x: 9, y: 19.77))
+        gridiconscheckmarkcircle.close()
+        gridiconscheckmarkcircle.move(to: CGPoint(x: 9, y: 19.77))
+        context.saveGState()
+        context.translateBy(x: 874, y: 312)
         gridiconscheckmarkcircle.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscheckmarkcircle.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscart(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscart(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -316)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -316)
         
         /// gridicons-cart
         let gridiconscart = UIBezierPath()
-        gridiconscart.moveToPoint(CGPoint(x: 6, y: 22))
-        gridiconscart.addCurveToPoint(CGPoint(x: 4, y: 24), controlPoint1: CGPoint(x: 6, y: 23.1), controlPoint2: CGPoint(x: 5.1, y: 24))
-        gridiconscart.addCurveToPoint(CGPoint(x: 2.01, y: 22), controlPoint1: CGPoint(x: 2.9, y: 24), controlPoint2: CGPoint(x: 2.01, y: 23.1))
-        gridiconscart.addCurveToPoint(CGPoint(x: 4, y: 20), controlPoint1: CGPoint(x: 2.01, y: 20.9), controlPoint2: CGPoint(x: 2.9, y: 20))
-        gridiconscart.addCurveToPoint(CGPoint(x: 6, y: 22), controlPoint1: CGPoint(x: 5.1, y: 20), controlPoint2: CGPoint(x: 6, y: 20.9))
-        gridiconscart.addLineToPoint(CGPoint(x: 6, y: 22))
-        gridiconscart.closePath()
-        gridiconscart.moveToPoint(CGPoint(x: 14, y: 20))
-        gridiconscart.addCurveToPoint(CGPoint(x: 12.01, y: 22), controlPoint1: CGPoint(x: 12.9, y: 20), controlPoint2: CGPoint(x: 12.01, y: 20.9))
-        gridiconscart.addCurveToPoint(CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 12.01, y: 23.1), controlPoint2: CGPoint(x: 12.9, y: 24))
-        gridiconscart.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.1, y: 24), controlPoint2: CGPoint(x: 16, y: 23.1))
-        gridiconscart.addCurveToPoint(CGPoint(x: 14, y: 20), controlPoint1: CGPoint(x: 16, y: 20.9), controlPoint2: CGPoint(x: 15.1, y: 20))
-        gridiconscart.addLineToPoint(CGPoint(x: 14, y: 20))
-        gridiconscart.closePath()
-        gridiconscart.moveToPoint(CGPoint(x: 14.4, y: 15))
-        gridiconscart.addCurveToPoint(CGPoint(x: 16.35, y: 13.43), controlPoint1: CGPoint(x: 15.33, y: 15), controlPoint2: CGPoint(x: 16.15, y: 14.35))
-        gridiconscart.addLineToPoint(CGPoint(x: 18, y: 7))
-        gridiconscart.addLineToPoint(CGPoint(x: 4, y: 7))
-        gridiconscart.addLineToPoint(CGPoint(x: 4, y: 6))
-        gridiconscart.addCurveToPoint(CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 4, y: 4.89), controlPoint2: CGPoint(x: 3.11, y: 4))
-        gridiconscart.addLineToPoint(CGPoint(x: 0, y: 4))
-        gridiconscart.addLineToPoint(CGPoint(x: 0, y: 6))
-        gridiconscart.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconscart.addLineToPoint(CGPoint(x: 2, y: 17))
-        gridiconscart.addCurveToPoint(CGPoint(x: 4, y: 19), controlPoint1: CGPoint(x: 2, y: 18.11), controlPoint2: CGPoint(x: 2.9, y: 19))
-        gridiconscart.addLineToPoint(CGPoint(x: 16, y: 19))
-        gridiconscart.addCurveToPoint(CGPoint(x: 14, y: 17), controlPoint1: CGPoint(x: 16, y: 17.9), controlPoint2: CGPoint(x: 15.11, y: 17))
-        gridiconscart.addLineToPoint(CGPoint(x: 4, y: 17))
-        gridiconscart.addLineToPoint(CGPoint(x: 4, y: 15))
-        gridiconscart.addLineToPoint(CGPoint(x: 14.4, y: 15))
-        gridiconscart.closePath()
-        gridiconscart.moveToPoint(CGPoint(x: 14.4, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 312)
+        gridiconscart.move(to: CGPoint(x: 6, y: 22))
+        gridiconscart.addCurve(to: CGPoint(x: 4, y: 24), controlPoint1: CGPoint(x: 6, y: 23.1), controlPoint2: CGPoint(x: 5.1, y: 24))
+        gridiconscart.addCurve(to: CGPoint(x: 2.01, y: 22), controlPoint1: CGPoint(x: 2.9, y: 24), controlPoint2: CGPoint(x: 2.01, y: 23.1))
+        gridiconscart.addCurve(to: CGPoint(x: 4, y: 20), controlPoint1: CGPoint(x: 2.01, y: 20.9), controlPoint2: CGPoint(x: 2.9, y: 20))
+        gridiconscart.addCurve(to: CGPoint(x: 6, y: 22), controlPoint1: CGPoint(x: 5.1, y: 20), controlPoint2: CGPoint(x: 6, y: 20.9))
+        gridiconscart.addLine(to: CGPoint(x: 6, y: 22))
+        gridiconscart.close()
+        gridiconscart.move(to: CGPoint(x: 14, y: 20))
+        gridiconscart.addCurve(to: CGPoint(x: 12.01, y: 22), controlPoint1: CGPoint(x: 12.9, y: 20), controlPoint2: CGPoint(x: 12.01, y: 20.9))
+        gridiconscart.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 12.01, y: 23.1), controlPoint2: CGPoint(x: 12.9, y: 24))
+        gridiconscart.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.1, y: 24), controlPoint2: CGPoint(x: 16, y: 23.1))
+        gridiconscart.addCurve(to: CGPoint(x: 14, y: 20), controlPoint1: CGPoint(x: 16, y: 20.9), controlPoint2: CGPoint(x: 15.1, y: 20))
+        gridiconscart.addLine(to: CGPoint(x: 14, y: 20))
+        gridiconscart.close()
+        gridiconscart.move(to: CGPoint(x: 14.4, y: 15))
+        gridiconscart.addCurve(to: CGPoint(x: 16.35, y: 13.43), controlPoint1: CGPoint(x: 15.33, y: 15), controlPoint2: CGPoint(x: 16.15, y: 14.35))
+        gridiconscart.addLine(to: CGPoint(x: 18, y: 7))
+        gridiconscart.addLine(to: CGPoint(x: 4, y: 7))
+        gridiconscart.addLine(to: CGPoint(x: 4, y: 6))
+        gridiconscart.addCurve(to: CGPoint(x: 2, y: 4), controlPoint1: CGPoint(x: 4, y: 4.89), controlPoint2: CGPoint(x: 3.11, y: 4))
+        gridiconscart.addLine(to: CGPoint(x: 0, y: 4))
+        gridiconscart.addLine(to: CGPoint(x: 0, y: 6))
+        gridiconscart.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconscart.addLine(to: CGPoint(x: 2, y: 17))
+        gridiconscart.addCurve(to: CGPoint(x: 4, y: 19), controlPoint1: CGPoint(x: 2, y: 18.11), controlPoint2: CGPoint(x: 2.9, y: 19))
+        gridiconscart.addLine(to: CGPoint(x: 16, y: 19))
+        gridiconscart.addCurve(to: CGPoint(x: 14, y: 17), controlPoint1: CGPoint(x: 16, y: 17.9), controlPoint2: CGPoint(x: 15.11, y: 17))
+        gridiconscart.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconscart.addLine(to: CGPoint(x: 4, y: 15))
+        gridiconscart.addLine(to: CGPoint(x: 14.4, y: 15))
+        gridiconscart.close()
+        gridiconscart.move(to: CGPoint(x: 14.4, y: 15))
+        context.saveGState()
+        context.translateBy(x: 840, y: 312)
         gridiconscart.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscart.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscaption(frame frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscaption(frame: CGRect = CGRect(x: 0, y: 0, width: 21, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 21, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 21, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -320)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -320)
         
         /// gridicons-caption
         let gridiconscaption = UIBezierPath()
-        gridiconscaption.moveToPoint(CGPoint(x: 18, y: 19))
-        gridiconscaption.addLineToPoint(CGPoint(x: 20, y: 17))
-        gridiconscaption.addLineToPoint(CGPoint(x: 20, y: 22))
-        gridiconscaption.addCurveToPoint(CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.11), controlPoint2: CGPoint(x: 19.11, y: 24))
-        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconscaption.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
-        gridiconscaption.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconscaption.addCurveToPoint(CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
-        gridiconscaption.addLineToPoint(CGPoint(x: 15, y: 8))
-        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 10))
-        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconscaption.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconscaption.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconscaption.addLineToPoint(CGPoint(x: 18, y: 19))
-        gridiconscaption.closePath()
-        gridiconscaption.moveToPoint(CGPoint(x: 20.44, y: 10.44))
-        gridiconscaption.addLineToPoint(CGPoint(x: 19.56, y: 9.56))
-        gridiconscaption.addCurveToPoint(CGPoint(x: 17.44, y: 9.56), controlPoint1: CGPoint(x: 18.98, y: 8.98), controlPoint2: CGPoint(x: 18.03, y: 8.98))
-        gridiconscaption.addLineToPoint(CGPoint(x: 10, y: 17))
-        gridiconscaption.addLineToPoint(CGPoint(x: 10, y: 19))
-        gridiconscaption.addLineToPoint(CGPoint(x: 4, y: 19))
-        gridiconscaption.addLineToPoint(CGPoint(x: 4, y: 21))
-        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 21))
-        gridiconscaption.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconscaption.addLineToPoint(CGPoint(x: 20.44, y: 12.56))
-        gridiconscaption.addCurveToPoint(CGPoint(x: 20.44, y: 10.44), controlPoint1: CGPoint(x: 21.03, y: 11.97), controlPoint2: CGPoint(x: 21.03, y: 11.02))
-        gridiconscaption.addLineToPoint(CGPoint(x: 20.44, y: 10.44))
-        gridiconscaption.closePath()
-        gridiconscaption.moveToPoint(CGPoint(x: 20.44, y: 10.44))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 312)
+        gridiconscaption.move(to: CGPoint(x: 18, y: 19))
+        gridiconscaption.addLine(to: CGPoint(x: 20, y: 17))
+        gridiconscaption.addLine(to: CGPoint(x: 20, y: 22))
+        gridiconscaption.addCurve(to: CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.11), controlPoint2: CGPoint(x: 19.11, y: 24))
+        gridiconscaption.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconscaption.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconscaption.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconscaption.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.89), controlPoint2: CGPoint(x: 0.9, y: 8))
+        gridiconscaption.addLine(to: CGPoint(x: 15, y: 8))
+        gridiconscaption.addLine(to: CGPoint(x: 13, y: 10))
+        gridiconscaption.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconscaption.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconscaption.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconscaption.addLine(to: CGPoint(x: 18, y: 19))
+        gridiconscaption.close()
+        gridiconscaption.move(to: CGPoint(x: 20.44, y: 10.44))
+        gridiconscaption.addLine(to: CGPoint(x: 19.56, y: 9.56))
+        gridiconscaption.addCurve(to: CGPoint(x: 17.44, y: 9.56), controlPoint1: CGPoint(x: 18.98, y: 8.98), controlPoint2: CGPoint(x: 18.03, y: 8.98))
+        gridiconscaption.addLine(to: CGPoint(x: 10, y: 17))
+        gridiconscaption.addLine(to: CGPoint(x: 10, y: 19))
+        gridiconscaption.addLine(to: CGPoint(x: 4, y: 19))
+        gridiconscaption.addLine(to: CGPoint(x: 4, y: 21))
+        gridiconscaption.addLine(to: CGPoint(x: 13, y: 21))
+        gridiconscaption.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconscaption.addLine(to: CGPoint(x: 20.44, y: 12.56))
+        gridiconscaption.addCurve(to: CGPoint(x: 20.44, y: 10.44), controlPoint1: CGPoint(x: 21.03, y: 11.97), controlPoint2: CGPoint(x: 21.03, y: 11.02))
+        gridiconscaption.addLine(to: CGPoint(x: 20.44, y: 10.44))
+        gridiconscaption.close()
+        gridiconscaption.move(to: CGPoint(x: 20.44, y: 10.44))
+        context.saveGState()
+        context.translateBy(x: 806, y: 312)
         gridiconscaption.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscaption.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscamera(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 17), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscamera(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 17), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 17), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 17)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -319)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -319)
         
         /// gridicons-camera
         let gridiconscamera = UIBezierPath()
-        gridiconscamera.moveToPoint(CGPoint(x: 15, y: 16))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 12, y: 19), controlPoint1: CGPoint(x: 15, y: 17.7), controlPoint2: CGPoint(x: 13.7, y: 19))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 9, y: 16), controlPoint1: CGPoint(x: 10.3, y: 19), controlPoint2: CGPoint(x: 9, y: 17.7))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 12, y: 13), controlPoint1: CGPoint(x: 9, y: 14.3), controlPoint2: CGPoint(x: 10.3, y: 13))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 15, y: 16), controlPoint1: CGPoint(x: 13.7, y: 13), controlPoint2: CGPoint(x: 15, y: 14.3))
-        gridiconscamera.addLineToPoint(CGPoint(x: 15, y: 16))
-        gridiconscamera.closePath()
-        gridiconscamera.moveToPoint(CGPoint(x: 20, y: 11))
-        gridiconscamera.addLineToPoint(CGPoint(x: 20, y: 22))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.1), controlPoint2: CGPoint(x: 19.1, y: 24))
-        gridiconscamera.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
-        gridiconscamera.addLineToPoint(CGPoint(x: 0, y: 11))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 2, y: 9), controlPoint1: CGPoint(x: 0, y: 9.9), controlPoint2: CGPoint(x: 0.9, y: 9))
-        gridiconscamera.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconscamera.addLineToPoint(CGPoint(x: 6, y: 8))
-        gridiconscamera.addLineToPoint(CGPoint(x: 6, y: 9))
-        gridiconscamera.addLineToPoint(CGPoint(x: 8, y: 9))
-        gridiconscamera.addLineToPoint(CGPoint(x: 9, y: 7))
-        gridiconscamera.addLineToPoint(CGPoint(x: 15, y: 7))
-        gridiconscamera.addLineToPoint(CGPoint(x: 16, y: 9))
-        gridiconscamera.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 20, y: 11), controlPoint1: CGPoint(x: 19.1, y: 9), controlPoint2: CGPoint(x: 20, y: 9.9))
-        gridiconscamera.addLineToPoint(CGPoint(x: 20, y: 11))
-        gridiconscamera.closePath()
-        gridiconscamera.moveToPoint(CGPoint(x: 5.5, y: 13))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 4, y: 11.5), controlPoint1: CGPoint(x: 5.5, y: 12.2), controlPoint2: CGPoint(x: 4.8, y: 11.5))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 2.5, y: 13), controlPoint1: CGPoint(x: 3.2, y: 11.5), controlPoint2: CGPoint(x: 2.5, y: 12.2))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 4, y: 14.5), controlPoint1: CGPoint(x: 2.5, y: 13.8), controlPoint2: CGPoint(x: 3.2, y: 14.5))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 5.5, y: 13), controlPoint1: CGPoint(x: 4.8, y: 14.5), controlPoint2: CGPoint(x: 5.5, y: 13.8))
-        gridiconscamera.addLineToPoint(CGPoint(x: 5.5, y: 13))
-        gridiconscamera.closePath()
-        gridiconscamera.moveToPoint(CGPoint(x: 17, y: 16))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 12, y: 11), controlPoint1: CGPoint(x: 17, y: 13.2), controlPoint2: CGPoint(x: 14.8, y: 11))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 7, y: 16), controlPoint1: CGPoint(x: 9.2, y: 11), controlPoint2: CGPoint(x: 7, y: 13.2))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 7, y: 18.8), controlPoint2: CGPoint(x: 9.2, y: 21))
-        gridiconscamera.addCurveToPoint(CGPoint(x: 17, y: 16), controlPoint1: CGPoint(x: 14.8, y: 21), controlPoint2: CGPoint(x: 17, y: 18.8))
-        gridiconscamera.addLineToPoint(CGPoint(x: 17, y: 16))
-        gridiconscamera.closePath()
-        gridiconscamera.moveToPoint(CGPoint(x: 17, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 312)
+        gridiconscamera.move(to: CGPoint(x: 15, y: 16))
+        gridiconscamera.addCurve(to: CGPoint(x: 12, y: 19), controlPoint1: CGPoint(x: 15, y: 17.7), controlPoint2: CGPoint(x: 13.7, y: 19))
+        gridiconscamera.addCurve(to: CGPoint(x: 9, y: 16), controlPoint1: CGPoint(x: 10.3, y: 19), controlPoint2: CGPoint(x: 9, y: 17.7))
+        gridiconscamera.addCurve(to: CGPoint(x: 12, y: 13), controlPoint1: CGPoint(x: 9, y: 14.3), controlPoint2: CGPoint(x: 10.3, y: 13))
+        gridiconscamera.addCurve(to: CGPoint(x: 15, y: 16), controlPoint1: CGPoint(x: 13.7, y: 13), controlPoint2: CGPoint(x: 15, y: 14.3))
+        gridiconscamera.addLine(to: CGPoint(x: 15, y: 16))
+        gridiconscamera.close()
+        gridiconscamera.move(to: CGPoint(x: 20, y: 11))
+        gridiconscamera.addLine(to: CGPoint(x: 20, y: 22))
+        gridiconscamera.addCurve(to: CGPoint(x: 18, y: 24), controlPoint1: CGPoint(x: 20, y: 23.1), controlPoint2: CGPoint(x: 19.1, y: 24))
+        gridiconscamera.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconscamera.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.9, y: 24), controlPoint2: CGPoint(x: 0, y: 23.1))
+        gridiconscamera.addLine(to: CGPoint(x: 0, y: 11))
+        gridiconscamera.addCurve(to: CGPoint(x: 2, y: 9), controlPoint1: CGPoint(x: 0, y: 9.9), controlPoint2: CGPoint(x: 0.9, y: 9))
+        gridiconscamera.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconscamera.addLine(to: CGPoint(x: 6, y: 8))
+        gridiconscamera.addLine(to: CGPoint(x: 6, y: 9))
+        gridiconscamera.addLine(to: CGPoint(x: 8, y: 9))
+        gridiconscamera.addLine(to: CGPoint(x: 9, y: 7))
+        gridiconscamera.addLine(to: CGPoint(x: 15, y: 7))
+        gridiconscamera.addLine(to: CGPoint(x: 16, y: 9))
+        gridiconscamera.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconscamera.addCurve(to: CGPoint(x: 20, y: 11), controlPoint1: CGPoint(x: 19.1, y: 9), controlPoint2: CGPoint(x: 20, y: 9.9))
+        gridiconscamera.addLine(to: CGPoint(x: 20, y: 11))
+        gridiconscamera.close()
+        gridiconscamera.move(to: CGPoint(x: 5.5, y: 13))
+        gridiconscamera.addCurve(to: CGPoint(x: 4, y: 11.5), controlPoint1: CGPoint(x: 5.5, y: 12.2), controlPoint2: CGPoint(x: 4.8, y: 11.5))
+        gridiconscamera.addCurve(to: CGPoint(x: 2.5, y: 13), controlPoint1: CGPoint(x: 3.2, y: 11.5), controlPoint2: CGPoint(x: 2.5, y: 12.2))
+        gridiconscamera.addCurve(to: CGPoint(x: 4, y: 14.5), controlPoint1: CGPoint(x: 2.5, y: 13.8), controlPoint2: CGPoint(x: 3.2, y: 14.5))
+        gridiconscamera.addCurve(to: CGPoint(x: 5.5, y: 13), controlPoint1: CGPoint(x: 4.8, y: 14.5), controlPoint2: CGPoint(x: 5.5, y: 13.8))
+        gridiconscamera.addLine(to: CGPoint(x: 5.5, y: 13))
+        gridiconscamera.close()
+        gridiconscamera.move(to: CGPoint(x: 17, y: 16))
+        gridiconscamera.addCurve(to: CGPoint(x: 12, y: 11), controlPoint1: CGPoint(x: 17, y: 13.2), controlPoint2: CGPoint(x: 14.8, y: 11))
+        gridiconscamera.addCurve(to: CGPoint(x: 7, y: 16), controlPoint1: CGPoint(x: 9.2, y: 11), controlPoint2: CGPoint(x: 7, y: 13.2))
+        gridiconscamera.addCurve(to: CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 7, y: 18.8), controlPoint2: CGPoint(x: 9.2, y: 21))
+        gridiconscamera.addCurve(to: CGPoint(x: 17, y: 16), controlPoint1: CGPoint(x: 14.8, y: 21), controlPoint2: CGPoint(x: 17, y: 18.8))
+        gridiconscamera.addLine(to: CGPoint(x: 17, y: 16))
+        gridiconscamera.close()
+        gridiconscamera.move(to: CGPoint(x: 17, y: 16))
+        context.saveGState()
+        context.translateBy(x: 772, y: 312)
         gridiconscamera.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscamera.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconscalendar(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconscalendar(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -283)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -283)
         
         /// gridicons-calendar
         let gridiconscalendar = UIBezierPath()
-        gridiconscalendar.moveToPoint(CGPoint(x: 16, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 15, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 15, y: 5))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 13, y: 5))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 13, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 5, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 5, y: 5))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 3, y: 5))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 3, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 2, y: 7))
-        gridiconscalendar.addCurveToPoint(CGPoint(x: 0, y: 9), controlPoint1: CGPoint(x: 0.9, y: 7), controlPoint2: CGPoint(x: 0, y: 7.89))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconscalendar.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconscalendar.addCurveToPoint(CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconscalendar.addCurveToPoint(CGPoint(x: 16, y: 7), controlPoint1: CGPoint(x: 18, y: 7.89), controlPoint2: CGPoint(x: 17.11, y: 7))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconscalendar.closePath()
-        gridiconscalendar.moveToPoint(CGPoint(x: 16, y: 22))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 2, y: 11))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 16, y: 11))
-        gridiconscalendar.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconscalendar.closePath()
-        gridiconscalendar.moveToPoint(CGPoint(x: 16, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 278)
+        gridiconscalendar.move(to: CGPoint(x: 16, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 15, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 15, y: 5))
+        gridiconscalendar.addLine(to: CGPoint(x: 13, y: 5))
+        gridiconscalendar.addLine(to: CGPoint(x: 13, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 5, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 5, y: 5))
+        gridiconscalendar.addLine(to: CGPoint(x: 3, y: 5))
+        gridiconscalendar.addLine(to: CGPoint(x: 3, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 2, y: 7))
+        gridiconscalendar.addCurve(to: CGPoint(x: 0, y: 9), controlPoint1: CGPoint(x: 0.9, y: 7), controlPoint2: CGPoint(x: 0, y: 7.89))
+        gridiconscalendar.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconscalendar.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconscalendar.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconscalendar.addCurve(to: CGPoint(x: 18, y: 22), controlPoint1: CGPoint(x: 17.11, y: 24), controlPoint2: CGPoint(x: 18, y: 23.11))
+        gridiconscalendar.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconscalendar.addCurve(to: CGPoint(x: 16, y: 7), controlPoint1: CGPoint(x: 18, y: 7.89), controlPoint2: CGPoint(x: 17.11, y: 7))
+        gridiconscalendar.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconscalendar.close()
+        gridiconscalendar.move(to: CGPoint(x: 16, y: 22))
+        gridiconscalendar.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconscalendar.addLine(to: CGPoint(x: 2, y: 11))
+        gridiconscalendar.addLine(to: CGPoint(x: 16, y: 11))
+        gridiconscalendar.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconscalendar.close()
+        gridiconscalendar.move(to: CGPoint(x: 16, y: 22))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 278)
         gridiconscalendar.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconscalendar.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbriefcase(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbriefcase(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -283)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -283)
         
         /// gridicons-briefcase
         let gridiconsbriefcase = UIBezierPath()
-        gridiconsbriefcase.moveToPoint(CGPoint(x: 12, y: 18))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 8, y: 18))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 8, y: 16))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 20, y: 16))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 12, y: 16))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 12, y: 18))
-        gridiconsbriefcase.closePath()
-        gridiconsbriefcase.moveToPoint(CGPoint(x: 18, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 16, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 16, y: 7))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 6, y: 5))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 4, y: 7), controlPoint1: CGPoint(x: 4.89, y: 5), controlPoint2: CGPoint(x: 4, y: 5.9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 4, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 2, y: 9))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 0, y: 11), controlPoint1: CGPoint(x: 0.9, y: 9), controlPoint2: CGPoint(x: 0, y: 9.89))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 20, y: 15))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 20, y: 11))
-        gridiconsbriefcase.addCurveToPoint(CGPoint(x: 18, y: 9), controlPoint1: CGPoint(x: 20, y: 9.89), controlPoint2: CGPoint(x: 19.11, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 18, y: 9))
-        gridiconsbriefcase.closePath()
-        gridiconsbriefcase.moveToPoint(CGPoint(x: 14, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 6, y: 9))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 6, y: 7))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 14, y: 7))
-        gridiconsbriefcase.addLineToPoint(CGPoint(x: 14, y: 9))
-        gridiconsbriefcase.closePath()
-        gridiconsbriefcase.moveToPoint(CGPoint(x: 14, y: 9))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 278)
+        gridiconsbriefcase.move(to: CGPoint(x: 12, y: 18))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 8, y: 18))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 8, y: 16))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 20, y: 22), controlPoint1: CGPoint(x: 19.11, y: 24), controlPoint2: CGPoint(x: 20, y: 23.11))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 20, y: 16))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 12, y: 16))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 12, y: 18))
+        gridiconsbriefcase.close()
+        gridiconsbriefcase.move(to: CGPoint(x: 18, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 16, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 16, y: 7))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 14, y: 5), controlPoint1: CGPoint(x: 16, y: 5.9), controlPoint2: CGPoint(x: 15.11, y: 5))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 6, y: 5))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 4, y: 7), controlPoint1: CGPoint(x: 4.89, y: 5), controlPoint2: CGPoint(x: 4, y: 5.9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 4, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 2, y: 9))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 0, y: 11), controlPoint1: CGPoint(x: 0.9, y: 9), controlPoint2: CGPoint(x: 0, y: 9.89))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 20, y: 15))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 20, y: 11))
+        gridiconsbriefcase.addCurve(to: CGPoint(x: 18, y: 9), controlPoint1: CGPoint(x: 20, y: 9.89), controlPoint2: CGPoint(x: 19.11, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 18, y: 9))
+        gridiconsbriefcase.close()
+        gridiconsbriefcase.move(to: CGPoint(x: 14, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 6, y: 9))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 6, y: 7))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 14, y: 7))
+        gridiconsbriefcase.addLine(to: CGPoint(x: 14, y: 9))
+        gridiconsbriefcase.close()
+        gridiconsbriefcase.move(to: CGPoint(x: 14, y: 9))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 278)
         gridiconsbriefcase.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbriefcase.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbookmark(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbookmark(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -284)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -284)
         
         /// gridicons-bookmark
         let gridiconsbookmark = UIBezierPath()
-        gridiconsbookmark.moveToPoint(CGPoint(x: 12, y: 6))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconsbookmark.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 14, y: 8))
-        gridiconsbookmark.addCurveToPoint(CGPoint(x: 12, y: 6), controlPoint1: CGPoint(x: 14, y: 6.89), controlPoint2: CGPoint(x: 13.11, y: 6))
-        gridiconsbookmark.addLineToPoint(CGPoint(x: 12, y: 6))
-        gridiconsbookmark.closePath()
-        gridiconsbookmark.moveToPoint(CGPoint(x: 12, y: 6))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 278)
+        gridiconsbookmark.move(to: CGPoint(x: 12, y: 6))
+        gridiconsbookmark.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconsbookmark.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconsbookmark.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsbookmark.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconsbookmark.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsbookmark.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconsbookmark.addCurve(to: CGPoint(x: 12, y: 6), controlPoint1: CGPoint(x: 14, y: 6.89), controlPoint2: CGPoint(x: 13.11, y: 6))
+        gridiconsbookmark.addLine(to: CGPoint(x: 12, y: 6))
+        gridiconsbookmark.close()
+        gridiconsbookmark.move(to: CGPoint(x: 12, y: 6))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 278)
         gridiconsbookmark.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbookmark.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbookmarkoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbookmarkoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -284)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -284)
         
         /// gridicons-bookmark-outline
         let gridiconsbookmarkoutline = UIBezierPath()
-        gridiconsbookmarkoutline.moveToPoint(CGPoint(x: 12, y: 8))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 12, y: 20.56))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 7, y: 17.7))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 2, y: 20.56))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 12, y: 8))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 12, y: 8))
-        gridiconsbookmarkoutline.closePath()
-        gridiconsbookmarkoutline.moveToPoint(CGPoint(x: 12, y: 6))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconsbookmarkoutline.addCurveToPoint(CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 7, y: 20))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 14, y: 8))
-        gridiconsbookmarkoutline.addCurveToPoint(CGPoint(x: 12, y: 6), controlPoint1: CGPoint(x: 14, y: 6.89), controlPoint2: CGPoint(x: 13.11, y: 6))
-        gridiconsbookmarkoutline.addLineToPoint(CGPoint(x: 12, y: 6))
-        gridiconsbookmarkoutline.closePath()
-        gridiconsbookmarkoutline.moveToPoint(CGPoint(x: 12, y: 6))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 278)
+        gridiconsbookmarkoutline.move(to: CGPoint(x: 12, y: 8))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 12, y: 20.56))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 7, y: 17.7))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 2, y: 20.56))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 12, y: 8))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 12, y: 8))
+        gridiconsbookmarkoutline.close()
+        gridiconsbookmarkoutline.move(to: CGPoint(x: 12, y: 6))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconsbookmarkoutline.addCurve(to: CGPoint(x: 0, y: 8), controlPoint1: CGPoint(x: 0.9, y: 6), controlPoint2: CGPoint(x: 0, y: 6.89))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 7, y: 20))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconsbookmarkoutline.addCurve(to: CGPoint(x: 12, y: 6), controlPoint1: CGPoint(x: 14, y: 6.89), controlPoint2: CGPoint(x: 13.11, y: 6))
+        gridiconsbookmarkoutline.addLine(to: CGPoint(x: 12, y: 6))
+        gridiconsbookmarkoutline.close()
+        gridiconsbookmarkoutline.move(to: CGPoint(x: 12, y: 6))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 278)
         gridiconsbookmarkoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbookmarkoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbook(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbook(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -284)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -284)
         
         /// gridicons-book
         let gridiconsbook = UIBezierPath()
-        gridiconsbook.moveToPoint(CGPoint(x: 0, y: 6))
-        gridiconsbook.addLineToPoint(CGPoint(x: 2, y: 6))
-        gridiconsbook.addLineToPoint(CGPoint(x: 2, y: 24))
-        gridiconsbook.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsbook.addLineToPoint(CGPoint(x: 0, y: 6))
-        gridiconsbook.closePath()
-        gridiconsbook.moveToPoint(CGPoint(x: 14, y: 6))
-        gridiconsbook.addLineToPoint(CGPoint(x: 3, y: 6))
-        gridiconsbook.addLineToPoint(CGPoint(x: 3, y: 24))
-        gridiconsbook.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsbook.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.1, y: 24), controlPoint2: CGPoint(x: 16, y: 23.1))
-        gridiconsbook.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsbook.addCurveToPoint(CGPoint(x: 14, y: 6), controlPoint1: CGPoint(x: 16, y: 6.9), controlPoint2: CGPoint(x: 15.1, y: 6))
-        gridiconsbook.addLineToPoint(CGPoint(x: 14, y: 6))
-        gridiconsbook.closePath()
-        gridiconsbook.moveToPoint(CGPoint(x: 12, y: 12))
-        gridiconsbook.addLineToPoint(CGPoint(x: 6, y: 12))
-        gridiconsbook.addLineToPoint(CGPoint(x: 6, y: 11))
-        gridiconsbook.addLineToPoint(CGPoint(x: 12, y: 11))
-        gridiconsbook.addLineToPoint(CGPoint(x: 12, y: 12))
-        gridiconsbook.closePath()
-        gridiconsbook.moveToPoint(CGPoint(x: 12, y: 10))
-        gridiconsbook.addLineToPoint(CGPoint(x: 6, y: 10))
-        gridiconsbook.addLineToPoint(CGPoint(x: 6, y: 9))
-        gridiconsbook.addLineToPoint(CGPoint(x: 12, y: 9))
-        gridiconsbook.addLineToPoint(CGPoint(x: 12, y: 10))
-        gridiconsbook.closePath()
-        gridiconsbook.moveToPoint(CGPoint(x: 12, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 278)
+        gridiconsbook.move(to: CGPoint(x: 0, y: 6))
+        gridiconsbook.addLine(to: CGPoint(x: 2, y: 6))
+        gridiconsbook.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsbook.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsbook.addLine(to: CGPoint(x: 0, y: 6))
+        gridiconsbook.close()
+        gridiconsbook.move(to: CGPoint(x: 14, y: 6))
+        gridiconsbook.addLine(to: CGPoint(x: 3, y: 6))
+        gridiconsbook.addLine(to: CGPoint(x: 3, y: 24))
+        gridiconsbook.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsbook.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.1, y: 24), controlPoint2: CGPoint(x: 16, y: 23.1))
+        gridiconsbook.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsbook.addCurve(to: CGPoint(x: 14, y: 6), controlPoint1: CGPoint(x: 16, y: 6.9), controlPoint2: CGPoint(x: 15.1, y: 6))
+        gridiconsbook.addLine(to: CGPoint(x: 14, y: 6))
+        gridiconsbook.close()
+        gridiconsbook.move(to: CGPoint(x: 12, y: 12))
+        gridiconsbook.addLine(to: CGPoint(x: 6, y: 12))
+        gridiconsbook.addLine(to: CGPoint(x: 6, y: 11))
+        gridiconsbook.addLine(to: CGPoint(x: 12, y: 11))
+        gridiconsbook.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconsbook.close()
+        gridiconsbook.move(to: CGPoint(x: 12, y: 10))
+        gridiconsbook.addLine(to: CGPoint(x: 6, y: 10))
+        gridiconsbook.addLine(to: CGPoint(x: 6, y: 9))
+        gridiconsbook.addLine(to: CGPoint(x: 12, y: 9))
+        gridiconsbook.addLine(to: CGPoint(x: 12, y: 10))
+        gridiconsbook.close()
+        gridiconsbook.move(to: CGPoint(x: 12, y: 10))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 278)
         gridiconsbook.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbook.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbold(frame frame: CGRect = CGRect(x: 0, y: 0, width: 11, height: 15), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbold(frame: CGRect = CGRect(x: 0, y: 0, width: 11, height: 15), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 11, height: 15), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 11, height: resizedFrame.height / 15)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -287)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -287)
         
         /// gridicons-bold
         let gridiconsbold = UIBezierPath()
-        gridiconsbold.moveToPoint(CGPoint(x: 0, y: 9.01))
-        gridiconsbold.addLineToPoint(CGPoint(x: 4.55, y: 9.01))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 9.18, y: 9.92), controlPoint1: CGPoint(x: 6.67, y: 9.01), controlPoint2: CGPoint(x: 8.22, y: 9.31))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 10.62, y: 12.81), controlPoint1: CGPoint(x: 10.14, y: 10.52), controlPoint2: CGPoint(x: 10.62, y: 11.48))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 9.99, y: 15.01), controlPoint1: CGPoint(x: 10.62, y: 13.7), controlPoint2: CGPoint(x: 10.41, y: 14.43))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 8.31, y: 16.04), controlPoint1: CGPoint(x: 9.57, y: 15.58), controlPoint2: CGPoint(x: 9.01, y: 15.93))
-        gridiconsbold.addLineToPoint(CGPoint(x: 8.31, y: 16.15))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 10.37, y: 17.34), controlPoint1: CGPoint(x: 9.26, y: 16.36), controlPoint2: CGPoint(x: 9.95, y: 16.75))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 11, y: 19.65), controlPoint1: CGPoint(x: 10.79, y: 17.91), controlPoint2: CGPoint(x: 11, y: 18.69))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 9.52, y: 22.85), controlPoint1: CGPoint(x: 11, y: 21.02), controlPoint2: CGPoint(x: 10.51, y: 22.09))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 5.49, y: 24), controlPoint1: CGPoint(x: 8.53, y: 23.62), controlPoint2: CGPoint(x: 7.19, y: 24))
-        gridiconsbold.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsbold.addLineToPoint(CGPoint(x: 0, y: 9.01))
-        gridiconsbold.closePath()
-        gridiconsbold.moveToPoint(CGPoint(x: 3, y: 14.95))
-        gridiconsbold.addLineToPoint(CGPoint(x: 5.03, y: 14.95))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 6.9, y: 14.55), controlPoint1: CGPoint(x: 5.89, y: 14.95), controlPoint2: CGPoint(x: 6.51, y: 14.82))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 7.48, y: 13.23), controlPoint1: CGPoint(x: 7.29, y: 14.29), controlPoint2: CGPoint(x: 7.48, y: 13.84))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 6.85, y: 11.99), controlPoint1: CGPoint(x: 7.48, y: 12.65), controlPoint2: CGPoint(x: 7.27, y: 12.24))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 4.85, y: 11.62), controlPoint1: CGPoint(x: 6.43, y: 11.74), controlPoint2: CGPoint(x: 5.76, y: 11.62))
-        gridiconsbold.addLineToPoint(CGPoint(x: 3, y: 11.62))
-        gridiconsbold.addLineToPoint(CGPoint(x: 3, y: 14.95))
-        gridiconsbold.closePath()
-        gridiconsbold.moveToPoint(CGPoint(x: 3, y: 17.47))
-        gridiconsbold.addLineToPoint(CGPoint(x: 3, y: 21.38))
-        gridiconsbold.addLineToPoint(CGPoint(x: 5.25, y: 21.38))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 7.2, y: 20.88), controlPoint1: CGPoint(x: 6.13, y: 21.38), controlPoint2: CGPoint(x: 6.77, y: 21.21))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 7.82, y: 19.34), controlPoint1: CGPoint(x: 7.61, y: 20.54), controlPoint2: CGPoint(x: 7.82, y: 20.03))
-        gridiconsbold.addCurveToPoint(CGPoint(x: 5.15, y: 17.47), controlPoint1: CGPoint(x: 7.82, y: 18.09), controlPoint2: CGPoint(x: 6.93, y: 17.47))
-        gridiconsbold.addLineToPoint(CGPoint(x: 3, y: 17.47))
-        gridiconsbold.closePath()
-        gridiconsbold.moveToPoint(CGPoint(x: 3, y: 17.47))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 278)
+        gridiconsbold.move(to: CGPoint(x: 0, y: 9.01))
+        gridiconsbold.addLine(to: CGPoint(x: 4.55, y: 9.01))
+        gridiconsbold.addCurve(to: CGPoint(x: 9.18, y: 9.92), controlPoint1: CGPoint(x: 6.67, y: 9.01), controlPoint2: CGPoint(x: 8.22, y: 9.31))
+        gridiconsbold.addCurve(to: CGPoint(x: 10.62, y: 12.81), controlPoint1: CGPoint(x: 10.14, y: 10.52), controlPoint2: CGPoint(x: 10.62, y: 11.48))
+        gridiconsbold.addCurve(to: CGPoint(x: 9.99, y: 15.01), controlPoint1: CGPoint(x: 10.62, y: 13.7), controlPoint2: CGPoint(x: 10.41, y: 14.43))
+        gridiconsbold.addCurve(to: CGPoint(x: 8.31, y: 16.04), controlPoint1: CGPoint(x: 9.57, y: 15.58), controlPoint2: CGPoint(x: 9.01, y: 15.93))
+        gridiconsbold.addLine(to: CGPoint(x: 8.31, y: 16.15))
+        gridiconsbold.addCurve(to: CGPoint(x: 10.37, y: 17.34), controlPoint1: CGPoint(x: 9.26, y: 16.36), controlPoint2: CGPoint(x: 9.95, y: 16.75))
+        gridiconsbold.addCurve(to: CGPoint(x: 11, y: 19.65), controlPoint1: CGPoint(x: 10.79, y: 17.91), controlPoint2: CGPoint(x: 11, y: 18.69))
+        gridiconsbold.addCurve(to: CGPoint(x: 9.52, y: 22.85), controlPoint1: CGPoint(x: 11, y: 21.02), controlPoint2: CGPoint(x: 10.51, y: 22.09))
+        gridiconsbold.addCurve(to: CGPoint(x: 5.49, y: 24), controlPoint1: CGPoint(x: 8.53, y: 23.62), controlPoint2: CGPoint(x: 7.19, y: 24))
+        gridiconsbold.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsbold.addLine(to: CGPoint(x: 0, y: 9.01))
+        gridiconsbold.close()
+        gridiconsbold.move(to: CGPoint(x: 3, y: 14.95))
+        gridiconsbold.addLine(to: CGPoint(x: 5.03, y: 14.95))
+        gridiconsbold.addCurve(to: CGPoint(x: 6.9, y: 14.55), controlPoint1: CGPoint(x: 5.89, y: 14.95), controlPoint2: CGPoint(x: 6.51, y: 14.82))
+        gridiconsbold.addCurve(to: CGPoint(x: 7.48, y: 13.23), controlPoint1: CGPoint(x: 7.29, y: 14.29), controlPoint2: CGPoint(x: 7.48, y: 13.84))
+        gridiconsbold.addCurve(to: CGPoint(x: 6.85, y: 11.99), controlPoint1: CGPoint(x: 7.48, y: 12.65), controlPoint2: CGPoint(x: 7.27, y: 12.24))
+        gridiconsbold.addCurve(to: CGPoint(x: 4.85, y: 11.62), controlPoint1: CGPoint(x: 6.43, y: 11.74), controlPoint2: CGPoint(x: 5.76, y: 11.62))
+        gridiconsbold.addLine(to: CGPoint(x: 3, y: 11.62))
+        gridiconsbold.addLine(to: CGPoint(x: 3, y: 14.95))
+        gridiconsbold.close()
+        gridiconsbold.move(to: CGPoint(x: 3, y: 17.47))
+        gridiconsbold.addLine(to: CGPoint(x: 3, y: 21.38))
+        gridiconsbold.addLine(to: CGPoint(x: 5.25, y: 21.38))
+        gridiconsbold.addCurve(to: CGPoint(x: 7.2, y: 20.88), controlPoint1: CGPoint(x: 6.13, y: 21.38), controlPoint2: CGPoint(x: 6.77, y: 21.21))
+        gridiconsbold.addCurve(to: CGPoint(x: 7.82, y: 19.34), controlPoint1: CGPoint(x: 7.61, y: 20.54), controlPoint2: CGPoint(x: 7.82, y: 20.03))
+        gridiconsbold.addCurve(to: CGPoint(x: 5.15, y: 17.47), controlPoint1: CGPoint(x: 7.82, y: 18.09), controlPoint2: CGPoint(x: 6.93, y: 17.47))
+        gridiconsbold.addLine(to: CGPoint(x: 3, y: 17.47))
+        gridiconsbold.close()
+        gridiconsbold.move(to: CGPoint(x: 3, y: 17.47))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 278)
         gridiconsbold.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbold.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsblock(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsblock(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -282)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -282)
         
         /// gridicons-block
         let gridiconsblock = UIBezierPath()
-        gridiconsblock.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsblock.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsblock.closePath()
-        gridiconsblock.moveToPoint(CGPoint(x: 2, y: 14))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.58), controlPoint2: CGPoint(x: 5.58, y: 6))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 14.9, y: 7.69), controlPoint1: CGPoint(x: 11.85, y: 6), controlPoint2: CGPoint(x: 13.55, y: 6.63))
-        gridiconsblock.addLineToPoint(CGPoint(x: 3.69, y: 18.9))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 2.63, y: 17.55), controlPoint2: CGPoint(x: 2, y: 15.85))
-        gridiconsblock.addLineToPoint(CGPoint(x: 2, y: 14))
-        gridiconsblock.closePath()
-        gridiconsblock.moveToPoint(CGPoint(x: 10, y: 22))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 5.1, y: 20.31), controlPoint1: CGPoint(x: 8.15, y: 22), controlPoint2: CGPoint(x: 6.45, y: 21.37))
-        gridiconsblock.addLineToPoint(CGPoint(x: 16.31, y: 9.1))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 17.37, y: 10.45), controlPoint2: CGPoint(x: 18, y: 12.15))
-        gridiconsblock.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.42), controlPoint2: CGPoint(x: 14.42, y: 22))
-        gridiconsblock.addLineToPoint(CGPoint(x: 10, y: 22))
-        gridiconsblock.closePath()
-        gridiconsblock.moveToPoint(CGPoint(x: 10, y: 22))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 278)
+        gridiconsblock.move(to: CGPoint(x: 10, y: 4))
+        gridiconsblock.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsblock.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsblock.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsblock.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsblock.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsblock.close()
+        gridiconsblock.move(to: CGPoint(x: 2, y: 14))
+        gridiconsblock.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.58), controlPoint2: CGPoint(x: 5.58, y: 6))
+        gridiconsblock.addCurve(to: CGPoint(x: 14.9, y: 7.69), controlPoint1: CGPoint(x: 11.85, y: 6), controlPoint2: CGPoint(x: 13.55, y: 6.63))
+        gridiconsblock.addLine(to: CGPoint(x: 3.69, y: 18.9))
+        gridiconsblock.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 2.63, y: 17.55), controlPoint2: CGPoint(x: 2, y: 15.85))
+        gridiconsblock.addLine(to: CGPoint(x: 2, y: 14))
+        gridiconsblock.close()
+        gridiconsblock.move(to: CGPoint(x: 10, y: 22))
+        gridiconsblock.addCurve(to: CGPoint(x: 5.1, y: 20.31), controlPoint1: CGPoint(x: 8.15, y: 22), controlPoint2: CGPoint(x: 6.45, y: 21.37))
+        gridiconsblock.addLine(to: CGPoint(x: 16.31, y: 9.1))
+        gridiconsblock.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 17.37, y: 10.45), controlPoint2: CGPoint(x: 18, y: 12.15))
+        gridiconsblock.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.42), controlPoint2: CGPoint(x: 14.42, y: 22))
+        gridiconsblock.addLine(to: CGPoint(x: 10, y: 22))
+        gridiconsblock.close()
+        gridiconsblock.move(to: CGPoint(x: 10, y: 22))
+        context.saveGState()
+        context.translateBy(x: 976, y: 278)
         gridiconsblock.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsblock.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsbell(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsbell(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 18)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -284)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -284)
         
         /// gridicons-bell
         let gridiconsbell = UIBezierPath()
-        gridiconsbell.moveToPoint(CGPoint(x: 3.14, y: 17.97))
-        gridiconsbell.addLineToPoint(CGPoint(x: 5.97, y: 20.8))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 4.55, y: 21.38), controlPoint1: CGPoint(x: 5.6, y: 21.16), controlPoint2: CGPoint(x: 5.1, y: 21.38))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 2.56, y: 19.38), controlPoint1: CGPoint(x: 3.45, y: 21.38), controlPoint2: CGPoint(x: 2.56, y: 20.49))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 3.14, y: 17.97), controlPoint1: CGPoint(x: 2.56, y: 18.83), controlPoint2: CGPoint(x: 2.78, y: 18.33))
-        gridiconsbell.addLineToPoint(CGPoint(x: 3.14, y: 17.97))
-        gridiconsbell.closePath()
-        gridiconsbell.moveToPoint(CGPoint(x: 12.01, y: 23.29))
-        gridiconsbell.addLineToPoint(CGPoint(x: 11.3, y: 24))
-        gridiconsbell.addLineToPoint(CGPoint(x: 0, y: 12.7))
-        gridiconsbell.addLineToPoint(CGPoint(x: 0.71, y: 11.99))
-        gridiconsbell.addLineToPoint(CGPoint(x: 1.81, y: 12.15))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 3.89, y: 11.64), controlPoint1: CGPoint(x: 2.56, y: 12.26), controlPoint2: CGPoint(x: 3.5, y: 12.03))
-        gridiconsbell.addLineToPoint(CGPoint(x: 7.77, y: 7.75))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 16.25, y: 7.75), controlPoint1: CGPoint(x: 10.11, y: 5.41), controlPoint2: CGPoint(x: 13.91, y: 5.41))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 16.25, y: 16.23), controlPoint1: CGPoint(x: 18.59, y: 10.09), controlPoint2: CGPoint(x: 18.59, y: 13.89))
-        gridiconsbell.addLineToPoint(CGPoint(x: 12.36, y: 20.12))
-        gridiconsbell.addCurveToPoint(CGPoint(x: 11.85, y: 22.2), controlPoint1: CGPoint(x: 11.98, y: 20.5), controlPoint2: CGPoint(x: 11.75, y: 21.44))
-        gridiconsbell.addLineToPoint(CGPoint(x: 12.01, y: 23.3))
-        gridiconsbell.addLineToPoint(CGPoint(x: 12.01, y: 23.29))
-        gridiconsbell.closePath()
-        gridiconsbell.moveToPoint(CGPoint(x: 12.01, y: 23.29))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 278)
+        gridiconsbell.move(to: CGPoint(x: 3.14, y: 17.97))
+        gridiconsbell.addLine(to: CGPoint(x: 5.97, y: 20.8))
+        gridiconsbell.addCurve(to: CGPoint(x: 4.55, y: 21.38), controlPoint1: CGPoint(x: 5.6, y: 21.16), controlPoint2: CGPoint(x: 5.1, y: 21.38))
+        gridiconsbell.addCurve(to: CGPoint(x: 2.56, y: 19.38), controlPoint1: CGPoint(x: 3.45, y: 21.38), controlPoint2: CGPoint(x: 2.56, y: 20.49))
+        gridiconsbell.addCurve(to: CGPoint(x: 3.14, y: 17.97), controlPoint1: CGPoint(x: 2.56, y: 18.83), controlPoint2: CGPoint(x: 2.78, y: 18.33))
+        gridiconsbell.addLine(to: CGPoint(x: 3.14, y: 17.97))
+        gridiconsbell.close()
+        gridiconsbell.move(to: CGPoint(x: 12.01, y: 23.29))
+        gridiconsbell.addLine(to: CGPoint(x: 11.3, y: 24))
+        gridiconsbell.addLine(to: CGPoint(x: 0, y: 12.7))
+        gridiconsbell.addLine(to: CGPoint(x: 0.71, y: 11.99))
+        gridiconsbell.addLine(to: CGPoint(x: 1.81, y: 12.15))
+        gridiconsbell.addCurve(to: CGPoint(x: 3.89, y: 11.64), controlPoint1: CGPoint(x: 2.56, y: 12.26), controlPoint2: CGPoint(x: 3.5, y: 12.03))
+        gridiconsbell.addLine(to: CGPoint(x: 7.77, y: 7.75))
+        gridiconsbell.addCurve(to: CGPoint(x: 16.25, y: 7.75), controlPoint1: CGPoint(x: 10.11, y: 5.41), controlPoint2: CGPoint(x: 13.91, y: 5.41))
+        gridiconsbell.addCurve(to: CGPoint(x: 16.25, y: 16.23), controlPoint1: CGPoint(x: 18.59, y: 10.09), controlPoint2: CGPoint(x: 18.59, y: 13.89))
+        gridiconsbell.addLine(to: CGPoint(x: 12.36, y: 20.12))
+        gridiconsbell.addCurve(to: CGPoint(x: 11.85, y: 22.2), controlPoint1: CGPoint(x: 11.98, y: 20.5), controlPoint2: CGPoint(x: 11.75, y: 21.44))
+        gridiconsbell.addLine(to: CGPoint(x: 12.01, y: 23.3))
+        gridiconsbell.addLine(to: CGPoint(x: 12.01, y: 23.29))
+        gridiconsbell.close()
+        gridiconsbell.move(to: CGPoint(x: 12.01, y: 23.29))
+        context.saveGState()
+        context.translateBy(x: 942, y: 278)
         gridiconsbell.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsbell.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsaudio(frame frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsaudio(frame: CGRect = CGRect(x: 0, y: 0, width: 15, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 15, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 15, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -286)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -286)
         
         /// gridicons-audio
         let gridiconsaudio = UIBezierPath()
-        gridiconsaudio.moveToPoint(CGPoint(x: 4, y: 8))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 4, y: 18.18))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 3, y: 18), controlPoint1: CGPoint(x: 3.69, y: 18.07), controlPoint2: CGPoint(x: 3.35, y: 18))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.34, y: 18), controlPoint2: CGPoint(x: 0, y: 19.34))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 3, y: 24), controlPoint1: CGPoint(x: 0, y: 22.66), controlPoint2: CGPoint(x: 1.34, y: 24))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 6, y: 21), controlPoint1: CGPoint(x: 4.66, y: 24), controlPoint2: CGPoint(x: 6, y: 22.66))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 6, y: 11))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 13, y: 11))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 13, y: 15.18))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 12, y: 15), controlPoint1: CGPoint(x: 12.69, y: 15.07), controlPoint2: CGPoint(x: 12.35, y: 15))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 9, y: 18), controlPoint1: CGPoint(x: 10.34, y: 15), controlPoint2: CGPoint(x: 9, y: 16.34))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 9, y: 19.66), controlPoint2: CGPoint(x: 10.34, y: 21))
-        gridiconsaudio.addCurveToPoint(CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 13.66, y: 21), controlPoint2: CGPoint(x: 15, y: 19.66))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 15, y: 8))
-        gridiconsaudio.addLineToPoint(CGPoint(x: 4, y: 8))
-        gridiconsaudio.closePath()
-        gridiconsaudio.moveToPoint(CGPoint(x: 4, y: 8))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 278)
+        gridiconsaudio.move(to: CGPoint(x: 4, y: 8))
+        gridiconsaudio.addLine(to: CGPoint(x: 4, y: 18.18))
+        gridiconsaudio.addCurve(to: CGPoint(x: 3, y: 18), controlPoint1: CGPoint(x: 3.69, y: 18.07), controlPoint2: CGPoint(x: 3.35, y: 18))
+        gridiconsaudio.addCurve(to: CGPoint(x: 0, y: 21), controlPoint1: CGPoint(x: 1.34, y: 18), controlPoint2: CGPoint(x: 0, y: 19.34))
+        gridiconsaudio.addCurve(to: CGPoint(x: 3, y: 24), controlPoint1: CGPoint(x: 0, y: 22.66), controlPoint2: CGPoint(x: 1.34, y: 24))
+        gridiconsaudio.addCurve(to: CGPoint(x: 6, y: 21), controlPoint1: CGPoint(x: 4.66, y: 24), controlPoint2: CGPoint(x: 6, y: 22.66))
+        gridiconsaudio.addLine(to: CGPoint(x: 6, y: 11))
+        gridiconsaudio.addLine(to: CGPoint(x: 13, y: 11))
+        gridiconsaudio.addLine(to: CGPoint(x: 13, y: 15.18))
+        gridiconsaudio.addCurve(to: CGPoint(x: 12, y: 15), controlPoint1: CGPoint(x: 12.69, y: 15.07), controlPoint2: CGPoint(x: 12.35, y: 15))
+        gridiconsaudio.addCurve(to: CGPoint(x: 9, y: 18), controlPoint1: CGPoint(x: 10.34, y: 15), controlPoint2: CGPoint(x: 9, y: 16.34))
+        gridiconsaudio.addCurve(to: CGPoint(x: 12, y: 21), controlPoint1: CGPoint(x: 9, y: 19.66), controlPoint2: CGPoint(x: 10.34, y: 21))
+        gridiconsaudio.addCurve(to: CGPoint(x: 15, y: 18), controlPoint1: CGPoint(x: 13.66, y: 21), controlPoint2: CGPoint(x: 15, y: 19.66))
+        gridiconsaudio.addLine(to: CGPoint(x: 15, y: 8))
+        gridiconsaudio.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsaudio.close()
+        gridiconsaudio.move(to: CGPoint(x: 4, y: 8))
+        context.saveGState()
+        context.translateBy(x: 908, y: 278)
         gridiconsaudio.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsaudio.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsattachment(frame frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 22), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsattachment(frame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 22), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 22), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 14, height: resizedFrame.height / 22)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -280)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -280)
         
         /// gridicons-attachment
         let gridiconsattachment = UIBezierPath()
-        gridiconsattachment.moveToPoint(CGPoint(x: 9, y: 2))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 4, y: 7), controlPoint1: CGPoint(x: 6.24, y: 2), controlPoint2: CGPoint(x: 4, y: 4.24))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 4, y: 17))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 7, y: 20), controlPoint1: CGPoint(x: 4, y: 18.66), controlPoint2: CGPoint(x: 5.34, y: 20))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 9.99, y: 17), controlPoint1: CGPoint(x: 8.66, y: 20), controlPoint2: CGPoint(x: 9.99, y: 18.66))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 9.99, y: 7))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 8, y: 7))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 8, y: 17))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 7, y: 18), controlPoint1: CGPoint(x: 8, y: 17.56), controlPoint2: CGPoint(x: 7.56, y: 18))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 6, y: 17), controlPoint1: CGPoint(x: 6.45, y: 18), controlPoint2: CGPoint(x: 6, y: 17.56))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 6, y: 7))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 9, y: 4), controlPoint1: CGPoint(x: 6, y: 5.34), controlPoint2: CGPoint(x: 7.34, y: 4))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 12, y: 7), controlPoint1: CGPoint(x: 10.66, y: 4), controlPoint2: CGPoint(x: 12, y: 5.34))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 12, y: 17.13))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 12, y: 19.89), controlPoint2: CGPoint(x: 9.76, y: 22))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 2, y: 17), controlPoint1: CGPoint(x: 4.24, y: 22), controlPoint2: CGPoint(x: 2, y: 19.76))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 2, y: 12))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 0, y: 20.87), controlPoint2: CGPoint(x: 3.13, y: 24))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 13.99, y: 17), controlPoint1: CGPoint(x: 10.87, y: 24), controlPoint2: CGPoint(x: 13.99, y: 20.87))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 13.99, y: 7))
-        gridiconsattachment.addCurveToPoint(CGPoint(x: 9, y: 2), controlPoint1: CGPoint(x: 13.99, y: 4.24), controlPoint2: CGPoint(x: 11.76, y: 2))
-        gridiconsattachment.addLineToPoint(CGPoint(x: 9, y: 2))
-        gridiconsattachment.closePath()
-        gridiconsattachment.moveToPoint(CGPoint(x: 9, y: 2))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 278)
+        gridiconsattachment.move(to: CGPoint(x: 9, y: 2))
+        gridiconsattachment.addCurve(to: CGPoint(x: 4, y: 7), controlPoint1: CGPoint(x: 6.24, y: 2), controlPoint2: CGPoint(x: 4, y: 4.24))
+        gridiconsattachment.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconsattachment.addCurve(to: CGPoint(x: 7, y: 20), controlPoint1: CGPoint(x: 4, y: 18.66), controlPoint2: CGPoint(x: 5.34, y: 20))
+        gridiconsattachment.addCurve(to: CGPoint(x: 9.99, y: 17), controlPoint1: CGPoint(x: 8.66, y: 20), controlPoint2: CGPoint(x: 9.99, y: 18.66))
+        gridiconsattachment.addLine(to: CGPoint(x: 9.99, y: 7))
+        gridiconsattachment.addLine(to: CGPoint(x: 8, y: 7))
+        gridiconsattachment.addLine(to: CGPoint(x: 8, y: 17))
+        gridiconsattachment.addCurve(to: CGPoint(x: 7, y: 18), controlPoint1: CGPoint(x: 8, y: 17.56), controlPoint2: CGPoint(x: 7.56, y: 18))
+        gridiconsattachment.addCurve(to: CGPoint(x: 6, y: 17), controlPoint1: CGPoint(x: 6.45, y: 18), controlPoint2: CGPoint(x: 6, y: 17.56))
+        gridiconsattachment.addLine(to: CGPoint(x: 6, y: 7))
+        gridiconsattachment.addCurve(to: CGPoint(x: 9, y: 4), controlPoint1: CGPoint(x: 6, y: 5.34), controlPoint2: CGPoint(x: 7.34, y: 4))
+        gridiconsattachment.addCurve(to: CGPoint(x: 12, y: 7), controlPoint1: CGPoint(x: 10.66, y: 4), controlPoint2: CGPoint(x: 12, y: 5.34))
+        gridiconsattachment.addLine(to: CGPoint(x: 12, y: 17.13))
+        gridiconsattachment.addCurve(to: CGPoint(x: 7, y: 22), controlPoint1: CGPoint(x: 12, y: 19.89), controlPoint2: CGPoint(x: 9.76, y: 22))
+        gridiconsattachment.addCurve(to: CGPoint(x: 2, y: 17), controlPoint1: CGPoint(x: 4.24, y: 22), controlPoint2: CGPoint(x: 2, y: 19.76))
+        gridiconsattachment.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsattachment.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsattachment.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsattachment.addCurve(to: CGPoint(x: 7, y: 24), controlPoint1: CGPoint(x: 0, y: 20.87), controlPoint2: CGPoint(x: 3.13, y: 24))
+        gridiconsattachment.addCurve(to: CGPoint(x: 13.99, y: 17), controlPoint1: CGPoint(x: 10.87, y: 24), controlPoint2: CGPoint(x: 13.99, y: 20.87))
+        gridiconsattachment.addLine(to: CGPoint(x: 13.99, y: 7))
+        gridiconsattachment.addCurve(to: CGPoint(x: 9, y: 2), controlPoint1: CGPoint(x: 13.99, y: 4.24), controlPoint2: CGPoint(x: 11.76, y: 2))
+        gridiconsattachment.addLine(to: CGPoint(x: 9, y: 2))
+        gridiconsattachment.close()
+        gridiconsattachment.move(to: CGPoint(x: 9, y: 2))
+        context.saveGState()
+        context.translateBy(x: 874, y: 278)
         gridiconsattachment.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsattachment.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsaside(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsaside(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -286)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -286)
         
         /// gridicons-aside
         let gridiconsaside = UIBezierPath()
-        gridiconsaside.moveToPoint(CGPoint(x: 10, y: 24))
-        gridiconsaside.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconsaside.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsaside.addCurveToPoint(CGPoint(x: 14, y: 8), controlPoint1: CGPoint(x: 16, y: 8.89), controlPoint2: CGPoint(x: 15.11, y: 8))
-        gridiconsaside.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsaside.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconsaside.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsaside.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsaside.addLineToPoint(CGPoint(x: 10, y: 24))
-        gridiconsaside.closePath()
-        gridiconsaside.moveToPoint(CGPoint(x: 2, y: 10))
-        gridiconsaside.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconsaside.addLineToPoint(CGPoint(x: 14, y: 16))
-        gridiconsaside.addLineToPoint(CGPoint(x: 10, y: 16))
-        gridiconsaside.addCurveToPoint(CGPoint(x: 8, y: 18), controlPoint1: CGPoint(x: 8.89, y: 16), controlPoint2: CGPoint(x: 8, y: 16.9))
-        gridiconsaside.addLineToPoint(CGPoint(x: 8, y: 22))
-        gridiconsaside.addLineToPoint(CGPoint(x: 2, y: 22))
-        gridiconsaside.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsaside.closePath()
-        gridiconsaside.moveToPoint(CGPoint(x: 12, y: 14))
-        gridiconsaside.addLineToPoint(CGPoint(x: 4, y: 14))
-        gridiconsaside.addLineToPoint(CGPoint(x: 4, y: 12))
-        gridiconsaside.addLineToPoint(CGPoint(x: 12, y: 12))
-        gridiconsaside.addLineToPoint(CGPoint(x: 12, y: 14))
-        gridiconsaside.closePath()
-        gridiconsaside.moveToPoint(CGPoint(x: 12, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 278)
+        gridiconsaside.move(to: CGPoint(x: 10, y: 24))
+        gridiconsaside.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconsaside.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsaside.addCurve(to: CGPoint(x: 14, y: 8), controlPoint1: CGPoint(x: 16, y: 8.89), controlPoint2: CGPoint(x: 15.11, y: 8))
+        gridiconsaside.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsaside.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconsaside.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsaside.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsaside.addLine(to: CGPoint(x: 10, y: 24))
+        gridiconsaside.close()
+        gridiconsaside.move(to: CGPoint(x: 2, y: 10))
+        gridiconsaside.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsaside.addLine(to: CGPoint(x: 14, y: 16))
+        gridiconsaside.addLine(to: CGPoint(x: 10, y: 16))
+        gridiconsaside.addCurve(to: CGPoint(x: 8, y: 18), controlPoint1: CGPoint(x: 8.89, y: 16), controlPoint2: CGPoint(x: 8, y: 16.9))
+        gridiconsaside.addLine(to: CGPoint(x: 8, y: 22))
+        gridiconsaside.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsaside.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsaside.close()
+        gridiconsaside.move(to: CGPoint(x: 12, y: 14))
+        gridiconsaside.addLine(to: CGPoint(x: 4, y: 14))
+        gridiconsaside.addLine(to: CGPoint(x: 4, y: 12))
+        gridiconsaside.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconsaside.addLine(to: CGPoint(x: 12, y: 14))
+        gridiconsaside.close()
+        gridiconsaside.move(to: CGPoint(x: 12, y: 14))
+        context.saveGState()
+        context.translateBy(x: 840, y: 278)
         gridiconsaside.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsaside.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsarrowup(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsarrowup(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -286)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -286)
         
         /// gridicons-arrow-up
         let gridiconsarrowup = UIBezierPath()
-        gridiconsarrowup.moveToPoint(CGPoint(x: 9, y: 24))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 9, y: 11.83))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 14.59, y: 17.42))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 1.41, y: 17.41))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 7, y: 11.83))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 7, y: 24))
-        gridiconsarrowup.addLineToPoint(CGPoint(x: 9, y: 24))
-        gridiconsarrowup.closePath()
-        gridiconsarrowup.moveToPoint(CGPoint(x: 9, y: 24))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 278)
+        gridiconsarrowup.move(to: CGPoint(x: 9, y: 24))
+        gridiconsarrowup.addLine(to: CGPoint(x: 9, y: 11.83))
+        gridiconsarrowup.addLine(to: CGPoint(x: 14.59, y: 17.42))
+        gridiconsarrowup.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsarrowup.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsarrowup.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsarrowup.addLine(to: CGPoint(x: 1.41, y: 17.41))
+        gridiconsarrowup.addLine(to: CGPoint(x: 7, y: 11.83))
+        gridiconsarrowup.addLine(to: CGPoint(x: 7, y: 24))
+        gridiconsarrowup.addLine(to: CGPoint(x: 9, y: 24))
+        gridiconsarrowup.close()
+        gridiconsarrowup.move(to: CGPoint(x: 9, y: 24))
+        context.saveGState()
+        context.translateBy(x: 806, y: 278)
         gridiconsarrowup.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsarrowup.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsarrowright(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsarrowright(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -286)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -286)
         
         /// gridicons-arrow-right
         let gridiconsarrowright = UIBezierPath()
-        gridiconsarrowright.moveToPoint(CGPoint(x: 8, y: 8))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 6.59, y: 9.41))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 12.17, y: 15))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 0, y: 15))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 0, y: 17))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 12.17, y: 17))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 6.59, y: 22.59))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsarrowright.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsarrowright.closePath()
-        gridiconsarrowright.moveToPoint(CGPoint(x: 8, y: 8))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 278)
+        gridiconsarrowright.move(to: CGPoint(x: 8, y: 8))
+        gridiconsarrowright.addLine(to: CGPoint(x: 6.59, y: 9.41))
+        gridiconsarrowright.addLine(to: CGPoint(x: 12.17, y: 15))
+        gridiconsarrowright.addLine(to: CGPoint(x: 0, y: 15))
+        gridiconsarrowright.addLine(to: CGPoint(x: 0, y: 17))
+        gridiconsarrowright.addLine(to: CGPoint(x: 12.17, y: 17))
+        gridiconsarrowright.addLine(to: CGPoint(x: 6.59, y: 22.59))
+        gridiconsarrowright.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconsarrowright.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsarrowright.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsarrowright.close()
+        gridiconsarrowright.move(to: CGPoint(x: 8, y: 8))
+        context.saveGState()
+        context.translateBy(x: 772, y: 278)
         gridiconsarrowright.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsarrowright.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsarrowleft(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsarrowleft(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1180, -252)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1180, y: -252)
         
         /// gridicons-arrow-left
         let gridiconsarrowleft = UIBezierPath()
-        gridiconsarrowleft.moveToPoint(CGPoint(x: 16, y: 15))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 3.83, y: 15))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 9.42, y: 9.41))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 8, y: 8))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 9.41, y: 22.59))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 3.83, y: 17))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 16, y: 17))
-        gridiconsarrowleft.addLineToPoint(CGPoint(x: 16, y: 15))
-        gridiconsarrowleft.closePath()
-        gridiconsarrowleft.moveToPoint(CGPoint(x: 16, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1180, 244)
+        gridiconsarrowleft.move(to: CGPoint(x: 16, y: 15))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 3.83, y: 15))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 9.42, y: 9.41))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 8, y: 8))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 9.41, y: 22.59))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 3.83, y: 17))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 16, y: 17))
+        gridiconsarrowleft.addLine(to: CGPoint(x: 16, y: 15))
+        gridiconsarrowleft.close()
+        gridiconsarrowleft.move(to: CGPoint(x: 16, y: 15))
+        context.saveGState()
+        context.translateBy(x: 1180, y: 244)
         gridiconsarrowleft.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsarrowleft.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsarrowdown(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsarrowdown(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 16)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1146, -252)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1146, y: -252)
         
         /// gridicons-arrow-down
         let gridiconsarrowdown = UIBezierPath()
-        gridiconsarrowdown.moveToPoint(CGPoint(x: 7, y: 8))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 7, y: 20.17))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 1.41, y: 14.58))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 8, y: 24))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 14.59, y: 14.59))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 9, y: 20.17))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 9, y: 8))
-        gridiconsarrowdown.addLineToPoint(CGPoint(x: 7, y: 8))
-        gridiconsarrowdown.closePath()
-        gridiconsarrowdown.moveToPoint(CGPoint(x: 7, y: 8))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1146, 244)
+        gridiconsarrowdown.move(to: CGPoint(x: 7, y: 8))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 7, y: 20.17))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 1.41, y: 14.58))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 8, y: 24))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 14.59, y: 14.59))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 9, y: 20.17))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 9, y: 8))
+        gridiconsarrowdown.addLine(to: CGPoint(x: 7, y: 8))
+        gridiconsarrowdown.close()
+        gridiconsarrowdown.move(to: CGPoint(x: 7, y: 8))
+        context.saveGState()
+        context.translateBy(x: 1146, y: 244)
         gridiconsarrowdown.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsarrowdown.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignright(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignright(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1112, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1112, y: -254)
         
         /// gridicons-align-right
         let gridiconsalignright = UIBezierPath()
-        gridiconsalignright.moveToPoint(CGPoint(x: 16, y: 22))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsalignright.closePath()
-        gridiconsalignright.moveToPoint(CGPoint(x: 6, y: 20))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 6, y: 18))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 6, y: 20))
-        gridiconsalignright.closePath()
-        gridiconsalignright.moveToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignright.closePath()
-        gridiconsalignright.moveToPoint(CGPoint(x: 6, y: 12))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 6, y: 10))
-        gridiconsalignright.addLineToPoint(CGPoint(x: 6, y: 12))
-        gridiconsalignright.closePath()
-        gridiconsalignright.moveToPoint(CGPoint(x: 6, y: 12))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1112, 244)
+        gridiconsalignright.move(to: CGPoint(x: 16, y: 22))
+        gridiconsalignright.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignright.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsalignright.close()
+        gridiconsalignright.move(to: CGPoint(x: 6, y: 20))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconsalignright.addLine(to: CGPoint(x: 6, y: 18))
+        gridiconsalignright.addLine(to: CGPoint(x: 6, y: 20))
+        gridiconsalignright.close()
+        gridiconsalignright.move(to: CGPoint(x: 0, y: 14))
+        gridiconsalignright.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsalignright.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignright.close()
+        gridiconsalignright.move(to: CGPoint(x: 6, y: 12))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsalignright.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsalignright.addLine(to: CGPoint(x: 6, y: 10))
+        gridiconsalignright.addLine(to: CGPoint(x: 6, y: 12))
+        gridiconsalignright.close()
+        gridiconsalignright.move(to: CGPoint(x: 6, y: 12))
+        context.saveGState()
+        context.translateBy(x: 1112, y: 244)
         gridiconsalignright.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignright.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignleft(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignleft(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1078, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1078, y: -254)
         
         /// gridicons-align-left
         let gridiconsalignleft = UIBezierPath()
-        gridiconsalignleft.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignleft.closePath()
-        gridiconsalignleft.moveToPoint(CGPoint(x: 10, y: 18))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 10, y: 20))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 10, y: 18))
-        gridiconsalignleft.closePath()
-        gridiconsalignleft.moveToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignleft.closePath()
-        gridiconsalignleft.moveToPoint(CGPoint(x: 10, y: 10))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 10, y: 12))
-        gridiconsalignleft.addLineToPoint(CGPoint(x: 10, y: 10))
-        gridiconsalignleft.closePath()
-        gridiconsalignleft.moveToPoint(CGPoint(x: 10, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1078, 244)
+        gridiconsalignleft.move(to: CGPoint(x: 0, y: 24))
+        gridiconsalignleft.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsalignleft.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignleft.close()
+        gridiconsalignleft.move(to: CGPoint(x: 10, y: 18))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsalignleft.addLine(to: CGPoint(x: 10, y: 20))
+        gridiconsalignleft.addLine(to: CGPoint(x: 10, y: 18))
+        gridiconsalignleft.close()
+        gridiconsalignleft.move(to: CGPoint(x: 0, y: 14))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsalignleft.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsalignleft.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignleft.close()
+        gridiconsalignleft.move(to: CGPoint(x: 10, y: 10))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignleft.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignleft.addLine(to: CGPoint(x: 10, y: 12))
+        gridiconsalignleft.addLine(to: CGPoint(x: 10, y: 10))
+        gridiconsalignleft.close()
+        gridiconsalignleft.move(to: CGPoint(x: 10, y: 10))
+        context.saveGState()
+        context.translateBy(x: 1078, y: 244)
         gridiconsalignleft.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignleft.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignjustify(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignjustify(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1044, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1044, y: -254)
         
         /// gridicons-align-justify
         let gridiconsalignjustify = UIBezierPath()
-        gridiconsalignjustify.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignjustify.closePath()
-        gridiconsalignjustify.moveToPoint(CGPoint(x: 16, y: 18))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 20))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 18))
-        gridiconsalignjustify.closePath()
-        gridiconsalignjustify.moveToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignjustify.closePath()
-        gridiconsalignjustify.moveToPoint(CGPoint(x: 16, y: 10))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 12))
-        gridiconsalignjustify.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsalignjustify.closePath()
-        gridiconsalignjustify.moveToPoint(CGPoint(x: 16, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1044, 244)
+        gridiconsalignjustify.move(to: CGPoint(x: 0, y: 24))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignjustify.close()
+        gridiconsalignjustify.move(to: CGPoint(x: 16, y: 18))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 20))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 18))
+        gridiconsalignjustify.close()
+        gridiconsalignjustify.move(to: CGPoint(x: 0, y: 14))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignjustify.close()
+        gridiconsalignjustify.move(to: CGPoint(x: 16, y: 10))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 12))
+        gridiconsalignjustify.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsalignjustify.close()
+        gridiconsalignjustify.move(to: CGPoint(x: 16, y: 10))
+        context.saveGState()
+        context.translateBy(x: 1044, y: 244)
         gridiconsalignjustify.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignjustify.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignimageright(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignimageright(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -1010, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -1010, y: -254)
         
         /// gridicons-align-image-right
         let gridiconsalignimageright = UIBezierPath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimageright.closePath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimageright.closePath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 18, y: 14))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 10, y: 20))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsalignimageright.closePath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 8, y: 18))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 18))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 8, y: 18))
-        gridiconsalignimageright.closePath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 8, y: 14))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 8, y: 16))
-        gridiconsalignimageright.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconsalignimageright.closePath()
-        gridiconsalignimageright.moveToPoint(CGPoint(x: 8, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 1010, 244)
+        gridiconsalignimageright.move(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimageright.close()
+        gridiconsalignimageright.move(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimageright.close()
+        gridiconsalignimageright.move(to: CGPoint(x: 18, y: 14))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 10, y: 20))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsalignimageright.close()
+        gridiconsalignimageright.move(to: CGPoint(x: 8, y: 18))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 18))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 8, y: 18))
+        gridiconsalignimageright.close()
+        gridiconsalignimageright.move(to: CGPoint(x: 8, y: 14))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 8, y: 16))
+        gridiconsalignimageright.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconsalignimageright.close()
+        gridiconsalignimageright.move(to: CGPoint(x: 8, y: 14))
+        context.saveGState()
+        context.translateBy(x: 1010, y: 244)
         gridiconsalignimageright.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignimageright.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignimagenone(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignimagenone(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -976, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -976, y: -254)
         
         /// gridicons-align-image-none
         let gridiconsalignimagenone = UIBezierPath()
-        gridiconsalignimagenone.moveToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimagenone.closePath()
-        gridiconsalignimagenone.moveToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimagenone.closePath()
-        gridiconsalignimagenone.moveToPoint(CGPoint(x: 8, y: 14))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconsalignimagenone.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconsalignimagenone.closePath()
-        gridiconsalignimagenone.moveToPoint(CGPoint(x: 8, y: 14))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 976, 244)
+        gridiconsalignimagenone.move(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimagenone.close()
+        gridiconsalignimagenone.move(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimagenone.close()
+        gridiconsalignimagenone.move(to: CGPoint(x: 8, y: 14))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconsalignimagenone.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconsalignimagenone.close()
+        gridiconsalignimagenone.move(to: CGPoint(x: 8, y: 14))
+        context.saveGState()
+        context.translateBy(x: 976, y: 244)
         gridiconsalignimagenone.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignimagenone.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignimageleft(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignimageleft(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -942, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -942, y: -254)
         
         /// gridicons-align-image-left
         let gridiconsalignimageleft = UIBezierPath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimageleft.closePath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimageleft.closePath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 8, y: 20))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 8, y: 14))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 0, y: 20))
-        gridiconsalignimageleft.closePath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 10, y: 20))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 20))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 18))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 10, y: 18))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 10, y: 20))
-        gridiconsalignimageleft.closePath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 10, y: 16))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 16))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 18, y: 14))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 10, y: 14))
-        gridiconsalignimageleft.addLineToPoint(CGPoint(x: 10, y: 16))
-        gridiconsalignimageleft.closePath()
-        gridiconsalignimageleft.moveToPoint(CGPoint(x: 10, y: 16))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 942, 244)
+        gridiconsalignimageleft.move(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimageleft.close()
+        gridiconsalignimageleft.move(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimageleft.close()
+        gridiconsalignimageleft.move(to: CGPoint(x: 0, y: 20))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 8, y: 20))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 8, y: 14))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 0, y: 20))
+        gridiconsalignimageleft.close()
+        gridiconsalignimageleft.move(to: CGPoint(x: 10, y: 20))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 20))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 18))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 10, y: 18))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 10, y: 20))
+        gridiconsalignimageleft.close()
+        gridiconsalignimageleft.move(to: CGPoint(x: 10, y: 16))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 16))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 18, y: 14))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 10, y: 14))
+        gridiconsalignimageleft.addLine(to: CGPoint(x: 10, y: 16))
+        gridiconsalignimageleft.close()
+        gridiconsalignimageleft.move(to: CGPoint(x: 10, y: 16))
+        context.saveGState()
+        context.translateBy(x: 942, y: 244)
         gridiconsalignimageleft.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignimageleft.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsalignimagecenter(frame frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsalignimagecenter(frame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 18, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -908, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -908, y: -254)
         
         /// gridicons-align-image-center
         let gridiconsalignimagecenter = UIBezierPath()
-        gridiconsalignimagecenter.moveToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 18, y: 10))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 18, y: 12))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 0, y: 12))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 0, y: 10))
-        gridiconsalignimagecenter.closePath()
-        gridiconsalignimagecenter.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 18, y: 24))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 18, y: 22))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsalignimagecenter.closePath()
-        gridiconsalignimagecenter.moveToPoint(CGPoint(x: 5, y: 20))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 13, y: 14))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 5, y: 14))
-        gridiconsalignimagecenter.addLineToPoint(CGPoint(x: 5, y: 20))
-        gridiconsalignimagecenter.closePath()
-        gridiconsalignimagecenter.moveToPoint(CGPoint(x: 5, y: 20))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 908, 244)
+        gridiconsalignimagecenter.move(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 18, y: 10))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 18, y: 12))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 0, y: 12))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsalignimagecenter.close()
+        gridiconsalignimagecenter.move(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 18, y: 24))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 18, y: 22))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsalignimagecenter.close()
+        gridiconsalignimagecenter.move(to: CGPoint(x: 5, y: 20))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 13, y: 14))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 5, y: 14))
+        gridiconsalignimagecenter.addLine(to: CGPoint(x: 5, y: 20))
+        gridiconsalignimagecenter.close()
+        gridiconsalignimagecenter.move(to: CGPoint(x: 5, y: 20))
+        context.saveGState()
+        context.translateBy(x: 908, y: 244)
         gridiconsalignimagecenter.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsalignimagecenter.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsaligncenter(frame frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsaligncenter(frame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 14), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 16, height: resizedFrame.height / 14)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -874, -254)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -874, y: -254)
         
         /// gridicons-align-center
         let gridiconsaligncenter = UIBezierPath()
-        gridiconsaligncenter.moveToPoint(CGPoint(x: 0, y: 24))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 16, y: 24))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 16, y: 22))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 0, y: 24))
-        gridiconsaligncenter.closePath()
-        gridiconsaligncenter.moveToPoint(CGPoint(x: 13, y: 18))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 3, y: 18))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 3, y: 20))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 13, y: 20))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 13, y: 18))
-        gridiconsaligncenter.closePath()
-        gridiconsaligncenter.moveToPoint(CGPoint(x: 0, y: 14))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 0, y: 16))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 16, y: 16))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 16, y: 14))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 0, y: 14))
-        gridiconsaligncenter.closePath()
-        gridiconsaligncenter.moveToPoint(CGPoint(x: 13, y: 10))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 3, y: 10))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 3, y: 12))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 13, y: 12))
-        gridiconsaligncenter.addLineToPoint(CGPoint(x: 13, y: 10))
-        gridiconsaligncenter.closePath()
-        gridiconsaligncenter.moveToPoint(CGPoint(x: 13, y: 10))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 874, 244)
+        gridiconsaligncenter.move(to: CGPoint(x: 0, y: 24))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 16, y: 24))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 0, y: 24))
+        gridiconsaligncenter.close()
+        gridiconsaligncenter.move(to: CGPoint(x: 13, y: 18))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 3, y: 18))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 3, y: 20))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 13, y: 20))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 13, y: 18))
+        gridiconsaligncenter.close()
+        gridiconsaligncenter.move(to: CGPoint(x: 0, y: 14))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 0, y: 16))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 16, y: 16))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 16, y: 14))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 0, y: 14))
+        gridiconsaligncenter.close()
+        gridiconsaligncenter.move(to: CGPoint(x: 13, y: 10))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 3, y: 10))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 3, y: 12))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 13, y: 12))
+        gridiconsaligncenter.addLine(to: CGPoint(x: 13, y: 10))
+        gridiconsaligncenter.close()
+        gridiconsaligncenter.move(to: CGPoint(x: 13, y: 10))
+        context.saveGState()
+        context.translateBy(x: 874, y: 244)
         gridiconsaligncenter.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsaligncenter.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsadd(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsadd(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -840, -248)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -840, y: -248)
         
         /// gridicons-add
         let gridiconsadd = UIBezierPath()
-        gridiconsadd.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsadd.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsadd.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsadd.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsadd.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsadd.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsadd.closePath()
-        gridiconsadd.moveToPoint(CGPoint(x: 15, y: 15))
-        gridiconsadd.addLineToPoint(CGPoint(x: 11, y: 15))
-        gridiconsadd.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsadd.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsadd.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsadd.addLineToPoint(CGPoint(x: 5, y: 15))
-        gridiconsadd.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconsadd.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsadd.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconsadd.addLineToPoint(CGPoint(x: 11, y: 9))
-        gridiconsadd.addLineToPoint(CGPoint(x: 11, y: 13))
-        gridiconsadd.addLineToPoint(CGPoint(x: 15, y: 13))
-        gridiconsadd.addLineToPoint(CGPoint(x: 15, y: 15))
-        gridiconsadd.closePath()
-        gridiconsadd.moveToPoint(CGPoint(x: 15, y: 15))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 840, 244)
+        gridiconsadd.move(to: CGPoint(x: 10, y: 4))
+        gridiconsadd.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsadd.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsadd.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsadd.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsadd.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsadd.close()
+        gridiconsadd.move(to: CGPoint(x: 15, y: 15))
+        gridiconsadd.addLine(to: CGPoint(x: 11, y: 15))
+        gridiconsadd.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsadd.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsadd.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsadd.addLine(to: CGPoint(x: 5, y: 15))
+        gridiconsadd.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconsadd.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsadd.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconsadd.addLine(to: CGPoint(x: 11, y: 9))
+        gridiconsadd.addLine(to: CGPoint(x: 11, y: 13))
+        gridiconsadd.addLine(to: CGPoint(x: 15, y: 13))
+        gridiconsadd.addLine(to: CGPoint(x: 15, y: 15))
+        gridiconsadd.close()
+        gridiconsadd.move(to: CGPoint(x: 15, y: 15))
+        context.saveGState()
+        context.translateBy(x: 840, y: 244)
         gridiconsadd.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsadd.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsaddoutline(frame frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsaddoutline(frame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 20, height: resizedFrame.height / 20)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -806, -248)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -806, y: -248)
         
         /// gridicons-add-outline
         let gridiconsaddoutline = UIBezierPath()
-        gridiconsaddoutline.moveToPoint(CGPoint(x: 10, y: 6))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 10, y: 6))
-        gridiconsaddoutline.closePath()
-        gridiconsaddoutline.moveToPoint(CGPoint(x: 10, y: 4))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
-        gridiconsaddoutline.addCurveToPoint(CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 10, y: 4))
-        gridiconsaddoutline.closePath()
-        gridiconsaddoutline.moveToPoint(CGPoint(x: 15, y: 13))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 11, y: 13))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 11, y: 9))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 9, y: 9))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 9, y: 13))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 5, y: 15))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 9, y: 15))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 9, y: 19))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 11, y: 19))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 11, y: 15))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 15, y: 15))
-        gridiconsaddoutline.addLineToPoint(CGPoint(x: 15, y: 13))
-        gridiconsaddoutline.closePath()
-        gridiconsaddoutline.moveToPoint(CGPoint(x: 15, y: 13))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 806, 244)
+        gridiconsaddoutline.move(to: CGPoint(x: 10, y: 6))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 18, y: 14), controlPoint1: CGPoint(x: 14.41, y: 6), controlPoint2: CGPoint(x: 18, y: 9.59))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 10, y: 22), controlPoint1: CGPoint(x: 18, y: 18.41), controlPoint2: CGPoint(x: 14.41, y: 22))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 2, y: 14), controlPoint1: CGPoint(x: 5.59, y: 22), controlPoint2: CGPoint(x: 2, y: 18.41))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 10, y: 6), controlPoint1: CGPoint(x: 2, y: 9.59), controlPoint2: CGPoint(x: 5.59, y: 6))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 10, y: 6))
+        gridiconsaddoutline.close()
+        gridiconsaddoutline.move(to: CGPoint(x: 10, y: 4))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 4.48, y: 4), controlPoint2: CGPoint(x: 0, y: 8.48))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 10, y: 24), controlPoint1: CGPoint(x: 0, y: 19.52), controlPoint2: CGPoint(x: 4.48, y: 24))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 15.52, y: 24), controlPoint2: CGPoint(x: 20, y: 19.52))
+        gridiconsaddoutline.addCurve(to: CGPoint(x: 10, y: 4), controlPoint1: CGPoint(x: 20, y: 8.48), controlPoint2: CGPoint(x: 15.52, y: 4))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 10, y: 4))
+        gridiconsaddoutline.close()
+        gridiconsaddoutline.move(to: CGPoint(x: 15, y: 13))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 11, y: 13))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 11, y: 9))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 9, y: 9))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 9, y: 13))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 5, y: 15))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 9, y: 15))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 9, y: 19))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 11, y: 19))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 11, y: 15))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 15, y: 15))
+        gridiconsaddoutline.addLine(to: CGPoint(x: 15, y: 13))
+        gridiconsaddoutline.close()
+        gridiconsaddoutline.move(to: CGPoint(x: 15, y: 13))
+        context.saveGState()
+        context.translateBy(x: 806, y: 244)
         gridiconsaddoutline.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsaddoutline.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
-    class func drawGridiconsaddimage(frame frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) {
+    class func drawGridiconsaddimage(frame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize To Frame
-        CGContextSaveGState(context)
+        context.saveGState()
         let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: frame)
-        CGContextTranslateCTM(context, resizedFrame.minX, resizedFrame.minY)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
         let resizedScale = CGSize(width: resizedFrame.width / 19, height: resizedFrame.height / 19)
-        CGContextScaleCTM(context, resizedScale.width, resizedScale.height)
-        CGContextTranslateCTM(context, -772, -249)
+        context.scaleBy(x: resizedScale.width, y: resizedScale.height)
+        context.translateBy(x: -772, y: -249)
         
         /// gridicons-add-image
         let gridiconsaddimage = UIBezierPath()
-        gridiconsaddimage.moveToPoint(CGPoint(x: 19, y: 8))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 19, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 16, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 16, y: 13))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 13))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 11, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 11, y: 8))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 8))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 5))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 16, y: 5))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 16, y: 8))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 19, y: 8))
-        gridiconsaddimage.closePath()
-        gridiconsaddimage.moveToPoint(CGPoint(x: 10.5, y: 15))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 12, y: 13.5), controlPoint1: CGPoint(x: 11.33, y: 15), controlPoint2: CGPoint(x: 12, y: 14.33))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 10.5, y: 12), controlPoint1: CGPoint(x: 12, y: 12.67), controlPoint2: CGPoint(x: 11.33, y: 12))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 9, y: 13.5), controlPoint1: CGPoint(x: 9.67, y: 12), controlPoint2: CGPoint(x: 9, y: 12.67))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 10.5, y: 15), controlPoint1: CGPoint(x: 9, y: 14.33), controlPoint2: CGPoint(x: 9.67, y: 15))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 10.5, y: 15))
-        gridiconsaddimage.closePath()
-        gridiconsaddimage.moveToPoint(CGPoint(x: 14, y: 18.23))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 13.49, y: 17.66))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 10.51, y: 17.66), controlPoint1: CGPoint(x: 12.7, y: 16.78), controlPoint2: CGPoint(x: 11.31, y: 16.78))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 9.86, y: 18.4))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 5, y: 13))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 2, y: 16.33))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 2, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 9, y: 10))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 9, y: 8))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 2, y: 8))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 0, y: 22))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 24))
-        gridiconsaddimage.addCurveToPoint(CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 16, y: 15))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 15))
-        gridiconsaddimage.addLineToPoint(CGPoint(x: 14, y: 18.23))
-        gridiconsaddimage.closePath()
-        gridiconsaddimage.moveToPoint(CGPoint(x: 14, y: 18.23))
-        CGContextSaveGState(context)
-        CGContextTranslateCTM(context, 772, 244)
+        gridiconsaddimage.move(to: CGPoint(x: 19, y: 8))
+        gridiconsaddimage.addLine(to: CGPoint(x: 19, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 16, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 16, y: 13))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 13))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 11, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 11, y: 8))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 5))
+        gridiconsaddimage.addLine(to: CGPoint(x: 16, y: 5))
+        gridiconsaddimage.addLine(to: CGPoint(x: 16, y: 8))
+        gridiconsaddimage.addLine(to: CGPoint(x: 19, y: 8))
+        gridiconsaddimage.close()
+        gridiconsaddimage.move(to: CGPoint(x: 10.5, y: 15))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 12, y: 13.5), controlPoint1: CGPoint(x: 11.33, y: 15), controlPoint2: CGPoint(x: 12, y: 14.33))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 10.5, y: 12), controlPoint1: CGPoint(x: 12, y: 12.67), controlPoint2: CGPoint(x: 11.33, y: 12))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 9, y: 13.5), controlPoint1: CGPoint(x: 9.67, y: 12), controlPoint2: CGPoint(x: 9, y: 12.67))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 10.5, y: 15), controlPoint1: CGPoint(x: 9, y: 14.33), controlPoint2: CGPoint(x: 9.67, y: 15))
+        gridiconsaddimage.addLine(to: CGPoint(x: 10.5, y: 15))
+        gridiconsaddimage.close()
+        gridiconsaddimage.move(to: CGPoint(x: 14, y: 18.23))
+        gridiconsaddimage.addLine(to: CGPoint(x: 13.49, y: 17.66))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 10.51, y: 17.66), controlPoint1: CGPoint(x: 12.7, y: 16.78), controlPoint2: CGPoint(x: 11.31, y: 16.78))
+        gridiconsaddimage.addLine(to: CGPoint(x: 9.86, y: 18.4))
+        gridiconsaddimage.addLine(to: CGPoint(x: 5, y: 13))
+        gridiconsaddimage.addLine(to: CGPoint(x: 2, y: 16.33))
+        gridiconsaddimage.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 9, y: 10))
+        gridiconsaddimage.addLine(to: CGPoint(x: 9, y: 8))
+        gridiconsaddimage.addLine(to: CGPoint(x: 2, y: 8))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 0.9, y: 8), controlPoint2: CGPoint(x: 0, y: 8.89))
+        gridiconsaddimage.addLine(to: CGPoint(x: 0, y: 22))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 2, y: 24), controlPoint1: CGPoint(x: 0, y: 23.11), controlPoint2: CGPoint(x: 0.9, y: 24))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 24))
+        gridiconsaddimage.addCurve(to: CGPoint(x: 16, y: 22), controlPoint1: CGPoint(x: 15.11, y: 24), controlPoint2: CGPoint(x: 16, y: 23.11))
+        gridiconsaddimage.addLine(to: CGPoint(x: 16, y: 15))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 15))
+        gridiconsaddimage.addLine(to: CGPoint(x: 14, y: 18.23))
+        gridiconsaddimage.close()
+        gridiconsaddimage.move(to: CGPoint(x: 14, y: 18.23))
+        context.saveGState()
+        context.translateBy(x: 772, y: 244)
         gridiconsaddimage.usesEvenOddFillRule = true
-        UIColor.blackColor().setFill()
+        UIColor.black.setFill()
         gridiconsaddimage.fill()
-        CGContextRestoreGState(context)
+        context.restoreGState()
         
-        CGContextRestoreGState(context)
+        context.restoreGState()
     }
     
     
@@ -7588,7 +7588,7 @@ class GridiconsGenerated: NSObject {
     
     /// Page 1
     
-    class func imageOfGridiconsvisible(size size: CGSize = CGSize(width: 22, height: 12), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsvisible(size: CGSize = CGSize(width: 22, height: 12), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7599,7 +7599,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsvideo(size size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsvideo(size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7610,7 +7610,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsvideocamera(size size: CGSize = CGSize(width: 20, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsvideocamera(size: CGSize = CGSize(width: 20, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7621,7 +7621,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsuser(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsuser(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7632,7 +7632,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsusercircle(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsusercircle(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7643,7 +7643,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsundo(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsundo(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7654,7 +7654,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsunderline(size size: CGSize = CGSize(width: 16, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsunderline(size: CGSize = CGSize(width: 16, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7665,7 +7665,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstypes(size size: CGSize = CGSize(width: 21, height: 21), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstypes(size: CGSize = CGSize(width: 21, height: 21), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7676,7 +7676,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstrophy(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstrophy(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7687,7 +7687,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstrash(size size: CGSize = CGSize(width: 14, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstrash(size: CGSize = CGSize(width: 14, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7698,7 +7698,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstime(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstime(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7709,7 +7709,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsthumbsup(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsthumbsup(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7720,7 +7720,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsthemes(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsthemes(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7731,7 +7731,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstextcolor(size size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstextcolor(size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7742,7 +7742,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstag(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstag(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7753,7 +7753,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconstablet(size size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconstablet(size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7764,7 +7764,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconssync(size size: CGSize = CGSize(width: 23, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconssync(size: CGSize = CGSize(width: 23, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7775,7 +7775,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstrikethrough(size size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstrikethrough(size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7786,7 +7786,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstatus(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstatus(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7797,7 +7797,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstats(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstats(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7808,7 +7808,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstatsalt(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstatsalt(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7819,7 +7819,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstar(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstar(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7830,7 +7830,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsstaroutline(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsstaroutline(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7841,7 +7841,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsspecialcharacter(size size: CGSize = CGSize(width: 15, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsspecialcharacter(size: CGSize = CGSize(width: 15, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7852,7 +7852,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsspeaker(size size: CGSize = CGSize(width: 20, height: 17), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsspeaker(size: CGSize = CGSize(width: 20, height: 17), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7863,7 +7863,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsspam(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsspam(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7874,7 +7874,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconssignout(size size: CGSize = CGSize(width: 21, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconssignout(size: CGSize = CGSize(width: 21, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7885,7 +7885,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsshare(size size: CGSize = CGSize(width: 18, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsshare(size: CGSize = CGSize(width: 18, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7896,7 +7896,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsshareios(size size: CGSize = CGSize(width: 18, height: 21), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsshareios(size: CGSize = CGSize(width: 18, height: 21), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7907,7 +7907,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconssearch(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconssearch(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7918,7 +7918,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsscheduled(size size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsscheduled(size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7929,7 +7929,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsrotate(size size: CGSize = CGSize(width: 18, height: 21), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsrotate(size: CGSize = CGSize(width: 18, height: 21), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7940,7 +7940,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsreply(size size: CGSize = CGSize(width: 17, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsreply(size: CGSize = CGSize(width: 17, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7951,7 +7951,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsrefresh(size size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsrefresh(size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7962,7 +7962,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsredo(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsredo(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7973,7 +7973,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsreblog(size size: CGSize = CGSize(width: 23, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsreblog(size: CGSize = CGSize(width: 23, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7984,7 +7984,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsreader(size size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsreader(size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -7995,7 +7995,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsreaderfollowing(size size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsreaderfollowing(size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8006,7 +8006,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsreaderfollow(size size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsreaderfollow(size: CGSize = CGSize(width: 21, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8017,7 +8017,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsquote(size size: CGSize = CGSize(width: 17, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsquote(size: CGSize = CGSize(width: 17, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8028,7 +8028,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsprint(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsprint(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8039,7 +8039,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsposts(size size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsposts(size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8050,7 +8050,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconspopout(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconspopout(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8061,7 +8061,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsplus(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsplus(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8072,7 +8072,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsplussmall(size size: CGSize = CGSize(width: 12, height: 12), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsplussmall(size: CGSize = CGSize(width: 12, height: 12), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8083,7 +8083,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsplugins(size size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsplugins(size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8094,7 +8094,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsphone(size size: CGSize = CGSize(width: 12, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsphone(size: CGSize = CGSize(width: 12, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8105,7 +8105,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconspencil(size size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconspencil(size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8116,7 +8116,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconspages(size size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconspages(size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8127,7 +8127,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsnotice(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsnotice(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8138,7 +8138,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsnoticeoutline(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsnoticeoutline(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8149,7 +8149,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsnotvisible(size size: CGSize = CGSize(width: 22, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsnotvisible(size: CGSize = CGSize(width: 22, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8160,7 +8160,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmysites(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmysites(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8171,7 +8171,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmysiteshorizon(size size: CGSize = CGSize(width: 22, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmysiteshorizon(size: CGSize = CGSize(width: 22, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8182,7 +8182,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsminus(size size: CGSize = CGSize(width: 18, height: 2), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsminus(size: CGSize = CGSize(width: 18, height: 2), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8193,7 +8193,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsminussmall(size size: CGSize = CGSize(width: 12, height: 2), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsminussmall(size: CGSize = CGSize(width: 12, height: 2), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8204,7 +8204,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmicrophone(size size: CGSize = CGSize(width: 12, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmicrophone(size: CGSize = CGSize(width: 12, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8215,7 +8215,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmenus(size size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmenus(size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8226,7 +8226,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmenu(size size: CGSize = CGSize(width: 18, height: 12), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmenu(size: CGSize = CGSize(width: 18, height: 12), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8237,7 +8237,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmention(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmention(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8248,7 +8248,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsmail(size size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsmail(size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8259,7 +8259,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslock(size size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslock(size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8270,7 +8270,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslocation(size size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslocation(size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8281,7 +8281,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslistunordered(size size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslistunordered(size: CGSize = CGSize(width: 18, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8292,7 +8292,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslistordered(size size: CGSize = CGSize(width: 19, height: 17), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslistordered(size: CGSize = CGSize(width: 19, height: 17), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8303,7 +8303,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslistcheckmark(size size: CGSize = CGSize(width: 19, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslistcheckmark(size: CGSize = CGSize(width: 19, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8314,7 +8314,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslink(size size: CGSize = CGSize(width: 20, height: 10), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslink(size: CGSize = CGSize(width: 20, height: 10), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8325,7 +8325,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslinkbreak(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslinkbreak(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8336,7 +8336,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslayout(size size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslayout(size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8347,7 +8347,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconslayoutblocks(size size: CGSize = CGSize(width: 22, height: 22), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconslayoutblocks(size: CGSize = CGSize(width: 22, height: 22), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8358,7 +8358,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsitalic(size size: CGSize = CGSize(width: 10, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsitalic(size: CGSize = CGSize(width: 10, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8369,7 +8369,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsinstitution(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsinstitution(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8380,7 +8380,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsink(size size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsink(size: CGSize = CGSize(width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8391,7 +8391,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsinfo(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsinfo(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8402,7 +8402,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsinfooutline(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsinfooutline(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8413,7 +8413,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsindentright(size size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsindentright(size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8424,7 +8424,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsindentleft(size size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsindentleft(size: CGSize = CGSize(width: 18, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8435,7 +8435,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsimage(size size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsimage(size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8446,7 +8446,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsimagemultiple(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsimagemultiple(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8457,7 +8457,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconshouse(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconshouse(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8468,7 +8468,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconshistory(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconshistory(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8479,7 +8479,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconshelp(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconshelp(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8490,7 +8490,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconshelpoutline(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconshelpoutline(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8501,7 +8501,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsheart(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsheart(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8512,7 +8512,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsheartoutline(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsheartoutline(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8523,7 +8523,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsheading(size size: CGSize = CGSize(width: 12, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsheading(size: CGSize = CGSize(width: 12, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8534,7 +8534,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsgrid(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsgrid(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8545,7 +8545,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsglobe(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsglobe(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8556,7 +8556,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsfolder(size size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsfolder(size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8567,7 +8567,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsfoldermultiple(size size: CGSize = CGSize(width: 20, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsfoldermultiple(size: CGSize = CGSize(width: 20, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8578,7 +8578,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsflipvertical(size size: CGSize = CGSize(width: 16, height: 22), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsflipvertical(size: CGSize = CGSize(width: 16, height: 22), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8589,7 +8589,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsfliphorizontal(size size: CGSize = CGSize(width: 22, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsfliphorizontal(size: CGSize = CGSize(width: 22, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8600,7 +8600,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsflag(size size: CGSize = CGSize(width: 15, height: 17), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsflag(size: CGSize = CGSize(width: 15, height: 17), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8611,7 +8611,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsexternal(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsexternal(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8622,7 +8622,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsellipsis(size size: CGSize = CGSize(width: 18, height: 4), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsellipsis(size: CGSize = CGSize(width: 18, height: 4), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8633,7 +8633,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsdropdown(size size: CGSize = CGSize(width: 10, height: 5), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsdropdown(size: CGSize = CGSize(width: 10, height: 5), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8644,7 +8644,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsdomains(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsdomains(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8655,7 +8655,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscustomize(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscustomize(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8666,7 +8666,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscustomposttype(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscustomposttype(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8677,7 +8677,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscross(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscross(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8688,7 +8688,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscrosssmall(size size: CGSize = CGSize(width: 12, height: 12), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscrosssmall(size: CGSize = CGSize(width: 12, height: 12), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8699,7 +8699,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscrop(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscrop(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8710,7 +8710,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscreditcard(size size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscreditcard(size: CGSize = CGSize(width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8721,7 +8721,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscreate(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscreate(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8732,7 +8732,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscomputer(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscomputer(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8743,7 +8743,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscomment(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscomment(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8754,7 +8754,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscog(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscog(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8765,7 +8765,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscode(size size: CGSize = CGSize(width: 20, height: 12), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscode(size: CGSize = CGSize(width: 20, height: 12), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8776,7 +8776,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscloud(size size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscloud(size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8787,7 +8787,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscloudupload(size size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscloudupload(size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8798,7 +8798,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscloudoutline(size size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscloudoutline(size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8809,7 +8809,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsclouddownload(size size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsclouddownload(size: CGSize = CGSize(width: 22, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8820,7 +8820,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsclipboard(size size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsclipboard(size: CGSize = CGSize(width: 16, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8831,7 +8831,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsclearformatting(size size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsclearformatting(size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8842,7 +8842,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconschevronup(size size: CGSize = CGSize(width: 16, height: 10), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconschevronup(size: CGSize = CGSize(width: 16, height: 10), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8853,7 +8853,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconschevronright(size size: CGSize = CGSize(width: 10, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconschevronright(size: CGSize = CGSize(width: 10, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8864,7 +8864,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconschevronleft(size size: CGSize = CGSize(width: 10, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconschevronleft(size: CGSize = CGSize(width: 10, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8875,7 +8875,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconschevrondown(size size: CGSize = CGSize(width: 16, height: 10), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconschevrondown(size: CGSize = CGSize(width: 16, height: 10), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8886,7 +8886,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscheckmark(size size: CGSize = CGSize(width: 20, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscheckmark(size: CGSize = CGSize(width: 20, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8897,7 +8897,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscheckmarkcircle(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscheckmarkcircle(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8908,7 +8908,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscart(size size: CGSize = CGSize(width: 18, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscart(size: CGSize = CGSize(width: 18, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8919,7 +8919,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscaption(size size: CGSize = CGSize(width: 21, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscaption(size: CGSize = CGSize(width: 21, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8930,7 +8930,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscamera(size size: CGSize = CGSize(width: 20, height: 17), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscamera(size: CGSize = CGSize(width: 20, height: 17), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8941,7 +8941,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconscalendar(size size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconscalendar(size: CGSize = CGSize(width: 18, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8952,7 +8952,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbriefcase(size size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbriefcase(size: CGSize = CGSize(width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8963,7 +8963,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbookmark(size size: CGSize = CGSize(width: 14, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbookmark(size: CGSize = CGSize(width: 14, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8974,7 +8974,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbookmarkoutline(size size: CGSize = CGSize(width: 14, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbookmarkoutline(size: CGSize = CGSize(width: 14, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8985,7 +8985,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbook(size size: CGSize = CGSize(width: 16, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbook(size: CGSize = CGSize(width: 16, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -8996,7 +8996,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbold(size size: CGSize = CGSize(width: 11, height: 15), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbold(size: CGSize = CGSize(width: 11, height: 15), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9007,7 +9007,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsblock(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsblock(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9018,7 +9018,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsbell(size size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsbell(size: CGSize = CGSize(width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9029,7 +9029,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsaudio(size size: CGSize = CGSize(width: 15, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsaudio(size: CGSize = CGSize(width: 15, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9040,7 +9040,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsattachment(size size: CGSize = CGSize(width: 14, height: 22), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsattachment(size: CGSize = CGSize(width: 14, height: 22), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9051,7 +9051,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsaside(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsaside(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9062,7 +9062,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsarrowup(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsarrowup(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9073,7 +9073,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsarrowright(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsarrowright(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9084,7 +9084,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsarrowleft(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsarrowleft(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9095,7 +9095,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsarrowdown(size size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsarrowdown(size: CGSize = CGSize(width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9106,7 +9106,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignright(size size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignright(size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9117,7 +9117,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignleft(size size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignleft(size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9128,7 +9128,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignjustify(size size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignjustify(size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9139,7 +9139,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignimageright(size size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignimageright(size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9150,7 +9150,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignimagenone(size size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignimagenone(size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9161,7 +9161,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignimageleft(size size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignimageleft(size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9172,7 +9172,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsalignimagecenter(size size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsalignimagecenter(size: CGSize = CGSize(width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9183,7 +9183,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsaligncenter(size size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsaligncenter(size: CGSize = CGSize(width: 16, height: 14), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9194,7 +9194,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsadd(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsadd(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9205,7 +9205,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsaddoutline(size size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsaddoutline(size: CGSize = CGSize(width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9216,7 +9216,7 @@ class GridiconsGenerated: NSObject {
         return image
     }
     
-    class func imageOfGridiconsaddimage(size size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .AspectFit) -> UIImage {
+    class func imageOfGridiconsaddimage(size: CGSize = CGSize(width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) -> UIImage {
         var image: UIImage
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0)
@@ -9231,12 +9231,12 @@ class GridiconsGenerated: NSObject {
     //MARK: - Resizing Behavior
     
     enum ResizingBehavior {
-        case AspectFit /// The content is proportionally resized to fit into the target rectangle.
-        case AspectFill /// The content is proportionally resized to completely fill the target rectangle.
-        case Stretch /// The content is stretched to match the entire target rectangle.
-        case Center /// The content is centered in the target rectangle, but it is NOT resized.
+        case aspectFit /// The content is proportionally resized to fit into the target rectangle.
+        case aspectFill /// The content is proportionally resized to completely fill the target rectangle.
+        case stretch /// The content is stretched to match the entire target rectangle.
+        case center /// The content is centered in the target rectangle, but it is NOT resized.
         
-        func apply(rect rect: CGRect, target: CGRect) -> CGRect {
+        func apply(rect: CGRect, target: CGRect) -> CGRect {
             let defaultRect = CGRect(x: 0, y: 0, width: 24.0, height: 24.0)
             
             if rect == target || target == CGRect.zero {
@@ -9250,15 +9250,15 @@ class GridiconsGenerated: NSObject {
             scales.height = abs(target.height / defaultRect.height)
             
             switch self {
-            case .AspectFit:
+            case .aspectFit:
                 scales.width = min(scales.width, scales.height)
                 scales.height = scales.width
-            case .AspectFill:
+            case .aspectFill:
                 scales.width = max(scales.width, scales.height)
                 scales.height = scales.width
-            case .Stretch:
+            case .stretch:
                 break
-            case .Center:
+            case .center:
                 scales.width = 1
                 scales.height = 1
             }
