@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://twitter.com/WordPressiOS"
 
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/Automattic/Gridicons-iOS.git", :tag => "0.4" }
+  s.source       = { :git => "https://github.com/Automattic/Gridicons-iOS.git", :tag => s.version.to_s }
 
   s.source_files  = "Gridicons/Gridicons/**/*.swift"
   s.requires_arc = true
