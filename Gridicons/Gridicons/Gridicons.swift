@@ -3,10 +3,11 @@ import Foundation
 @objc
 public enum GridiconType: Int {
     case visible
-    case video
     case videoCamera
-    case user
+    case video
     case userCircle
+    case userAdd
+    case user
     case undo
     case underline
     case types
@@ -21,43 +22,54 @@ public enum GridiconType: Int {
     case sync
     case strikethrough
     case status
-    case stats
     case statsAlt
-    case star
+    case stats
     case starOutline
+    case star
     case specialCharacter
     case speaker
     case spam
     case signOut
-    case share
+    case shipping
     case shareIOS
+    case share
     case search
     case scheduled
     case rotate
+    case resize
     case reply
+    case refund
     case refresh
     case redo
     case reblog
     case readerFollowing
     case readerFollow
     case reader
+    case readMore
     case quote
+    case productVirtual
+    case productExternal
+    case productDownloadable
+    case product
     case print
     case posts
     case popout
-    case plus
     case plusSmall
+    case plus
     case plugins
     case phone
     case pencil
+    case pause
     case pages
-    case notice
+    case offline
     case noticeOutline
+    case notice
     case notVisible
-    case mySites
     case mySitesHorizon
-    case minus
+    case mySites
+    case money
     case minusSmall
+    case minus
     case microphone
     case menus
     case menu
@@ -68,67 +80,74 @@ public enum GridiconType: Int {
     case listUnordered
     case listOrdered
     case listCheckmark
-    case link
     case linkBreak
-    case layout
+    case link
     case layoutBlocks
+    case layout
     case italic
     case institution
     case ink
-    case info
     case infoOutline
+    case info
     case indentRight
     case indentLeft
-    case image
     case imageMultiple
+    case image
     case house
     case history
-    case help
     case helpOutline
-    case heart
+    case help
     case heartOutline
+    case heart
     case heading
     case grid
     case globe
-    case folder
+    case fullscreenExit
+    case fullscreen
     case folderMultiple
+    case folder
     case flipVertical
     case flipHorizontal
     case flag
+    case filter
     case external
+    case ellipsisCircle
     case ellipsis
     case dropdown
     case domains
     case customize
     case customPostType
-    case cross
     case crossSmall
+    case crossCircle
+    case cross
     case crop
     case creditCard
     case create
+    case coupon
     case computer
     case comment
     case cog
     case code
-    case cloud
     case cloudUpload
     case cloudOutline
     case cloudDownload
+    case cloud
     case clipboard
     case clearFormatting
     case chevronUp
     case chevronRight
     case chevronLeft
     case chevronDown
-    case checkmark
     case checkmarkCircle
+    case checkmark
+    case chat
     case cart
     case caption
     case camera
     case calendar
     case briefcase
-    case bookmark
     case bookmarkOutline
+    case bookmark
     case book
     case bold
     case block
@@ -148,15 +167,13 @@ public enum GridiconType: Int {
     case alignImageLeft
     case alignImageCenter
     case alignCenter
-    case add
     case addOutline
     case addImage
+    case add
 }
 
 public final class Gridicon: NSObject {
     public static let defaultSize = CGSize(width: 24.0, height: 24.0)
-    
-    fileprivate static let resizingBehavior = GridiconsGenerated.ResizingBehavior.aspectFit
 
     fileprivate static let cache = NSCache<AnyObject, AnyObject>()
     static func clearCache() {
@@ -189,303 +206,341 @@ public final class Gridicon: NSObject {
     fileprivate static func generateIconOfType(_ type: GridiconType, withSize size: CGSize) -> UIImage {
         switch type {
         case .visible:
-            return GridiconsGenerated.imageOfGridiconsvisible(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsvisible(size: size)
         case .video:
-            return GridiconsGenerated.imageOfGridiconsvideo(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsvideo(size: size)
         case .videoCamera:
-            return GridiconsGenerated.imageOfGridiconsvideocamera(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsvideocamera(size: size)
         case .user:
-            return GridiconsGenerated.imageOfGridiconsuser(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsuser(size: size)
+        case .userAdd:
+            return GridiconsGenerated.imageOfGridiconsuseradd(size: size)
         case .userCircle:
-            return GridiconsGenerated.imageOfGridiconsusercircle(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsusercircle(size: size)
         case .undo:
-            return GridiconsGenerated.imageOfGridiconsundo(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsundo(size: size)
         case .underline:
-            return GridiconsGenerated.imageOfGridiconsunderline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsunderline(size: size)
         case .types:
-            return GridiconsGenerated.imageOfGridiconstypes(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstypes(size: size)
         case .trophy:
-            return GridiconsGenerated.imageOfGridiconstrophy(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstrophy(size: size)
         case .trash:
-            return GridiconsGenerated.imageOfGridiconstrash(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstrash(size: size)
         case .time:
-            return GridiconsGenerated.imageOfGridiconstime(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstime(size: size)
         case .thumbsUp:
-            return GridiconsGenerated.imageOfGridiconsthumbsup(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsthumbsup(size: size)
         case .themes:
-            return GridiconsGenerated.imageOfGridiconsthemes(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsthemes(size: size)
         case .textColor:
-            return GridiconsGenerated.imageOfGridiconstextcolor(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstextcolor(size: size)
         case .tag:
-            return GridiconsGenerated.imageOfGridiconstag(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstag(size: size)
         case .tablet:
-            return GridiconsGenerated.imageOfGridiconstablet(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconstablet(size: size)
         case .sync:
-            return GridiconsGenerated.imageOfGridiconssync(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconssync(size: size)
         case .strikethrough:
-            return GridiconsGenerated.imageOfGridiconsstrikethrough(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstrikethrough(size: size)
         case .status:
-            return GridiconsGenerated.imageOfGridiconsstatus(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstatus(size: size)
         case .stats:
-            return GridiconsGenerated.imageOfGridiconsstats(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstats(size: size)
         case .statsAlt:
-            return GridiconsGenerated.imageOfGridiconsstatsalt(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstatsalt(size: size)
         case .star:
-            return GridiconsGenerated.imageOfGridiconsstar(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstar(size: size)
         case .starOutline:
-            return GridiconsGenerated.imageOfGridiconsstaroutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsstaroutline(size: size)
         case .specialCharacter:
-            return GridiconsGenerated.imageOfGridiconsspecialcharacter(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsspecialcharacter(size: size)
         case .speaker:
-            return GridiconsGenerated.imageOfGridiconsspeaker(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsspeaker(size: size)
         case .spam:
-            return GridiconsGenerated.imageOfGridiconsspam(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsspam(size: size)
         case .signOut:
-            return GridiconsGenerated.imageOfGridiconssignout(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconssignout(size: size)
+        case .shipping:
+            return GridiconsGenerated.imageOfGridiconsshipping(size: size)
         case .share:
-            return GridiconsGenerated.imageOfGridiconsshare(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsshare(size: size)
         case .shareIOS:
-            return GridiconsGenerated.imageOfGridiconsshareios(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsshareios(size: size)
         case .search:
-            return GridiconsGenerated.imageOfGridiconssearch(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconssearch(size: size)
         case .scheduled:
-            return GridiconsGenerated.imageOfGridiconsscheduled(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsscheduled(size: size)
         case .rotate:
-            return GridiconsGenerated.imageOfGridiconsrotate(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsrotate(size: size)
+        case .resize:
+            return GridiconsGenerated.imageOfGridiconsresize(size: size)
         case .reply:
-            return GridiconsGenerated.imageOfGridiconsreply(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsreply(size: size)
+        case .refund:
+            return GridiconsGenerated.imageOfGridiconsrefund(size: size)
         case .refresh:
-            return GridiconsGenerated.imageOfGridiconsrefresh(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsrefresh(size: size)
         case .redo:
-            return GridiconsGenerated.imageOfGridiconsredo(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsredo(size: size)
         case .reblog:
-            return GridiconsGenerated.imageOfGridiconsreblog(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsreblog(size: size)
+        case .readMore:
+            return GridiconsGenerated.imageOfGridiconsreadmore(size: size)
         case .readerFollowing:
-            return GridiconsGenerated.imageOfGridiconsreaderfollowing(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsreaderfollowing(size: size)
         case .readerFollow:
-            return GridiconsGenerated.imageOfGridiconsreaderfollow(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsreaderfollow(size: size)
         case .reader:
-            return GridiconsGenerated.imageOfGridiconsreader(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsreader(size: size)
         case .quote:
-            return GridiconsGenerated.imageOfGridiconsquote(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsquote(size: size)
         case .print:
-            return GridiconsGenerated.imageOfGridiconsprint(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsprint(size: size)
+        case .product:
+            return GridiconsGenerated.imageOfGridiconsproduct(size: size)
+        case .productDownloadable:
+            return GridiconsGenerated.imageOfGridiconsproductdownloadable(size: size)
+        case .productExternal:
+            return GridiconsGenerated.imageOfGridiconsproductexternal(size: size)
+        case .productVirtual:
+            return GridiconsGenerated.imageOfGridiconsproductvirtual(size: size)
         case .posts:
-            return GridiconsGenerated.imageOfGridiconsposts(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsposts(size: size)
         case .popout:
-            return GridiconsGenerated.imageOfGridiconspopout(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconspopout(size: size)
         case .plus:
-            return GridiconsGenerated.imageOfGridiconsplus(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsplus(size: size)
         case .plusSmall:
-            return GridiconsGenerated.imageOfGridiconsplussmall(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsplussmall(size: size)
         case .plugins:
-            return GridiconsGenerated.imageOfGridiconsplugins(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsplugins(size: size)
         case .phone:
-            return GridiconsGenerated.imageOfGridiconsphone(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsphone(size: size)
         case .pencil:
-            return GridiconsGenerated.imageOfGridiconspencil(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconspencil(size: size)
+        case .pause:
+            return GridiconsGenerated.imageOfGridiconspause(size: size)
         case .pages:
-            return GridiconsGenerated.imageOfGridiconspages(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconspages(size: size)
+        case .offline:
+            return GridiconsGenerated.imageOfGridiconsoffline(size: size)
         case .notice:
-            return GridiconsGenerated.imageOfGridiconsnotice(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsnotice(size: size)
         case .noticeOutline:
-            return GridiconsGenerated.imageOfGridiconsnoticeoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsnoticeoutline(size: size)
         case .notVisible:
-            return GridiconsGenerated.imageOfGridiconsnotvisible(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsnotvisible(size: size)
         case .mySites:
-            return GridiconsGenerated.imageOfGridiconsmysites(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmysites(size: size)
         case .mySitesHorizon:
-            return GridiconsGenerated.imageOfGridiconsmysiteshorizon(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmysiteshorizon(size: size)
+        case .money:
+            return GridiconsGenerated.imageOfGridiconsmoney(size: size)
         case .minus:
-            return GridiconsGenerated.imageOfGridiconsminus(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsminus(size: size)
         case .minusSmall:
-            return GridiconsGenerated.imageOfGridiconsminussmall(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsminussmall(size: size)
         case .microphone:
-            return GridiconsGenerated.imageOfGridiconsmicrophone(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmicrophone(size: size)
         case .menus:
-            return GridiconsGenerated.imageOfGridiconsmenus(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmenus(size: size)
         case .menu:
-            return GridiconsGenerated.imageOfGridiconsmenu(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmenu(size: size)
         case .mention:
-            return GridiconsGenerated.imageOfGridiconsmention(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmention(size: size)
         case .mail:
-            return GridiconsGenerated.imageOfGridiconsmail(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsmail(size: size)
         case .lock:
-            return GridiconsGenerated.imageOfGridiconslock(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslock(size: size)
         case .location:
-            return GridiconsGenerated.imageOfGridiconslocation(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslocation(size: size)
         case .listUnordered:
-            return GridiconsGenerated.imageOfGridiconslistunordered(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslistunordered(size: size)
         case .listOrdered:
-            return GridiconsGenerated.imageOfGridiconslistordered(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslistordered(size: size)
         case .listCheckmark:
-            return GridiconsGenerated.imageOfGridiconslistcheckmark(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslistcheckmark(size: size)
         case .link:
-            return GridiconsGenerated.imageOfGridiconslink(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslink(size: size)
         case .linkBreak:
-            return GridiconsGenerated.imageOfGridiconslinkbreak(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslinkbreak(size: size)
         case .layout:
-            return GridiconsGenerated.imageOfGridiconslayout(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslayout(size: size)
         case .layoutBlocks:
-            return GridiconsGenerated.imageOfGridiconslayoutblocks(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconslayoutblocks(size: size)
         case .italic:
-            return GridiconsGenerated.imageOfGridiconsitalic(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsitalic(size: size)
         case .institution:
-            return GridiconsGenerated.imageOfGridiconsinstitution(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsinstitution(size: size)
         case .ink:
-            return GridiconsGenerated.imageOfGridiconsink(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsink(size: size)
         case .info:
-            return GridiconsGenerated.imageOfGridiconsinfo(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsinfo(size: size)
         case .infoOutline:
-            return GridiconsGenerated.imageOfGridiconsinfooutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsinfooutline(size: size)
         case .indentRight:
-            return GridiconsGenerated.imageOfGridiconsindentright(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsindentright(size: size)
         case .indentLeft:
-            return GridiconsGenerated.imageOfGridiconsindentleft(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsindentleft(size: size)
         case .image:
-            return GridiconsGenerated.imageOfGridiconsimage(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsimage(size: size)
         case .imageMultiple:
-            return GridiconsGenerated.imageOfGridiconsimagemultiple(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsimagemultiple(size: size)
         case .house:
-            return GridiconsGenerated.imageOfGridiconshouse(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconshouse(size: size)
         case .history:
-            return GridiconsGenerated.imageOfGridiconshistory(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconshistory(size: size)
         case .help:
-            return GridiconsGenerated.imageOfGridiconshelp(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconshelp(size: size)
         case .helpOutline:
-            return GridiconsGenerated.imageOfGridiconshelpoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconshelpoutline(size: size)
         case .heart:
-            return GridiconsGenerated.imageOfGridiconsheart(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsheart(size: size)
         case .heartOutline:
-            return GridiconsGenerated.imageOfGridiconsheartoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsheartoutline(size: size)
         case .heading:
-            return GridiconsGenerated.imageOfGridiconsheading(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsheading(size: size)
         case .grid:
-            return GridiconsGenerated.imageOfGridiconsgrid(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsgrid(size: size)
         case .globe:
-            return GridiconsGenerated.imageOfGridiconsglobe(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsglobe(size: size)
+        case .fullscreen:
+            return GridiconsGenerated.imageOfGridiconsfullscreen(size: size)
+        case .fullscreenExit:
+            return GridiconsGenerated.imageOfGridiconsfullscreenexit(size: size)
         case .folder:
-            return GridiconsGenerated.imageOfGridiconsfolder(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsfolder(size: size)
         case .folderMultiple:
-            return GridiconsGenerated.imageOfGridiconsfoldermultiple(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsfoldermultiple(size: size)
         case .flipVertical:
-            return GridiconsGenerated.imageOfGridiconsflipvertical(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsflipvertical(size: size)
         case .flipHorizontal:
-            return GridiconsGenerated.imageOfGridiconsfliphorizontal(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsfliphorizontal(size: size)
         case .flag:
-            return GridiconsGenerated.imageOfGridiconsflag(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsflag(size: size)
+        case .filter:
+            return GridiconsGenerated.imageOfGridiconsfilter(size: size)
         case .external:
-            return GridiconsGenerated.imageOfGridiconsexternal(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsexternal(size: size)
         case .ellipsis:
-            return GridiconsGenerated.imageOfGridiconsellipsis(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsellipsis(size: size)
+        case .ellipsisCircle:
+            return GridiconsGenerated.imageOfGridiconsellipsiscircle(size: size)
         case .dropdown:
-            return GridiconsGenerated.imageOfGridiconsdropdown(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsdropdown(size: size)
         case .domains:
-            return GridiconsGenerated.imageOfGridiconsdomains(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsdomains(size: size)
         case .customize:
-            return GridiconsGenerated.imageOfGridiconscustomize(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscustomize(size: size)
         case .customPostType:
-            return GridiconsGenerated.imageOfGridiconscustomposttype(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscustomposttype(size: size)
         case .cross:
-            return GridiconsGenerated.imageOfGridiconscross(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscross(size: size)
+        case .crossCircle:
+            return GridiconsGenerated.imageOfGridiconscrosscircle(size: size)
         case .crossSmall:
-            return GridiconsGenerated.imageOfGridiconscrosssmall(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscrosssmall(size: size)
         case .crop:
-            return GridiconsGenerated.imageOfGridiconscrop(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscrop(size: size)
         case .creditCard:
-            return GridiconsGenerated.imageOfGridiconscreditcard(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscreditcard(size: size)
         case .create:
-            return GridiconsGenerated.imageOfGridiconscreate(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscreate(size: size)
+        case .coupon:
+            return GridiconsGenerated.imageOfGridiconscoupon(size: size)
         case .computer:
-            return GridiconsGenerated.imageOfGridiconscomputer(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscomputer(size: size)
         case .comment:
-            return GridiconsGenerated.imageOfGridiconscomment(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscomment(size: size)
         case .cog:
-            return GridiconsGenerated.imageOfGridiconscog(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscog(size: size)
         case .code:
-            return GridiconsGenerated.imageOfGridiconscode(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscode(size: size)
         case .cloud:
-            return GridiconsGenerated.imageOfGridiconscloud(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscloud(size: size)
         case .cloudUpload:
-            return GridiconsGenerated.imageOfGridiconscloudupload(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscloudupload(size: size)
         case .cloudOutline:
-            return GridiconsGenerated.imageOfGridiconscloudoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscloudoutline(size: size)
         case .cloudDownload:
-            return GridiconsGenerated.imageOfGridiconsclouddownload(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsclouddownload(size: size)
         case .clipboard:
-            return GridiconsGenerated.imageOfGridiconsclipboard(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsclipboard(size: size)
         case .clearFormatting:
-            return GridiconsGenerated.imageOfGridiconsclearformatting(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsclearformatting(size: size)
         case .chevronUp:
-            return GridiconsGenerated.imageOfGridiconschevronup(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconschevronup(size: size)
         case .chevronRight:
-            return GridiconsGenerated.imageOfGridiconschevronright(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconschevronright(size: size)
         case .chevronLeft:
-            return GridiconsGenerated.imageOfGridiconschevronleft(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconschevronleft(size: size)
         case .chevronDown:
-            return GridiconsGenerated.imageOfGridiconschevrondown(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconschevrondown(size: size)
         case .checkmark:
-            return GridiconsGenerated.imageOfGridiconscheckmark(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscheckmark(size: size)
         case .checkmarkCircle:
-            return GridiconsGenerated.imageOfGridiconscheckmarkcircle(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscheckmarkcircle(size: size)
+        case .chat:
+            return GridiconsGenerated.imageOfGridiconschat(size: size)
         case .cart:
-            return GridiconsGenerated.imageOfGridiconscart(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscart(size: size)
         case .caption:
-            return GridiconsGenerated.imageOfGridiconscaption(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscaption(size: size)
         case .camera:
-            return GridiconsGenerated.imageOfGridiconscamera(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscamera(size: size)
         case .calendar:
-            return GridiconsGenerated.imageOfGridiconscalendar(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconscalendar(size: size)
         case .briefcase:
-            return GridiconsGenerated.imageOfGridiconsbriefcase(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbriefcase(size: size)
         case .bookmark:
-            return GridiconsGenerated.imageOfGridiconsbookmark(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbookmark(size: size)
         case .bookmarkOutline:
-            return GridiconsGenerated.imageOfGridiconsbookmarkoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbookmarkoutline(size: size)
         case .book:
-            return GridiconsGenerated.imageOfGridiconsbook(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbook(size: size)
         case .bold:
-            return GridiconsGenerated.imageOfGridiconsbold(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbold(size: size)
         case .block:
-            return GridiconsGenerated.imageOfGridiconsblock(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsblock(size: size)
         case .bell:
-            return GridiconsGenerated.imageOfGridiconsbell(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsbell(size: size)
         case .audio:
-            return GridiconsGenerated.imageOfGridiconsaudio(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsaudio(size: size)
         case .attachment:
-            return GridiconsGenerated.imageOfGridiconsattachment(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsattachment(size: size)
         case .aside:
-            return GridiconsGenerated.imageOfGridiconsaside(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsaside(size: size)
         case .arrowUp:
-            return GridiconsGenerated.imageOfGridiconsarrowup(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsarrowup(size: size)
         case .arrowRight:
-            return GridiconsGenerated.imageOfGridiconsarrowright(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsarrowright(size: size)
         case .arrowLeft:
-            return GridiconsGenerated.imageOfGridiconsarrowleft(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsarrowleft(size: size)
         case .arrowDown:
-            return GridiconsGenerated.imageOfGridiconsarrowdown(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsarrowdown(size: size)
         case .alignRight:
-            return GridiconsGenerated.imageOfGridiconsalignright(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignright(size: size)
         case .alignLeft:
-            return GridiconsGenerated.imageOfGridiconsalignleft(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignleft(size: size)
         case .alignJustify:
-            return GridiconsGenerated.imageOfGridiconsalignjustify(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignjustify(size: size)
         case .alignImageRight:
-            return GridiconsGenerated.imageOfGridiconsalignimageright(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignimageright(size: size)
         case .alignImageNone:
-            return GridiconsGenerated.imageOfGridiconsalignimagenone(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignimagenone(size: size)
         case .alignImageLeft:
-            return GridiconsGenerated.imageOfGridiconsalignimageleft(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignimageleft(size: size)
         case .alignImageCenter:
-            return GridiconsGenerated.imageOfGridiconsalignimagecenter(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsalignimagecenter(size: size)
         case .alignCenter:
-            return GridiconsGenerated.imageOfGridiconsaligncenter(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsaligncenter(size: size)
         case .add:
-            return GridiconsGenerated.imageOfGridiconsadd(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsadd(size: size)
         case .addOutline:
-            return GridiconsGenerated.imageOfGridiconsaddoutline(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsaddoutline(size: size)
         case .addImage:
-            return GridiconsGenerated.imageOfGridiconsaddimage(size: size, resizing: resizingBehavior)
+            return GridiconsGenerated.imageOfGridiconsaddimage(size: size)
         }
     }
 }
