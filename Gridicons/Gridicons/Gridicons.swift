@@ -65,6 +65,7 @@ public enum GridiconType: Int {
     case noticeOutline
     case notice
     case notVisible
+    case nextPage
     case mySitesHorizon
     case mySites
     case money
@@ -331,6 +332,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsnoticeoutline(size: size)
         case .notVisible:
             return GridiconsGenerated.imageOfGridiconsnotvisible(size: size)
+        case .nextPage:
+            return GridiconsGenerated.imageOfGridiconsnextpage(size: size)
         case .mySites:
             return GridiconsGenerated.imageOfGridiconsmysites(size: size)
         case .mySitesHorizon:

@@ -4355,7 +4355,71 @@ class GridiconsGenerated: NSObject {
         
         context.restoreGState()
     }
-    
+
+    class func drawGridiconsnextpage(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 20)
+        context.translateBy(x: -2, y: -2)
+
+        /// next-page
+        do {
+            context.saveGState()
+            context.translateBy(x: 2, y: 2)
+
+            /// Shape
+            let shape = UIBezierPath()
+            shape.move(to: CGPoint(x: 16, y: 6))
+            shape.addLine(to: CGPoint(x: 8, y: 6))
+            shape.addLine(to: CGPoint(x: 8, y: 4))
+            shape.addLine(to: CGPoint(x: 16, y: 4))
+            shape.addLine(to: CGPoint(x: 16, y: 6))
+            shape.close()
+            shape.move(to: CGPoint(x: 20, y: 2))
+            shape.addLine(to: CGPoint(x: 20, y: 10))
+            shape.addLine(to: CGPoint(x: 14, y: 16))
+            shape.addLine(to: CGPoint(x: 6, y: 16))
+            shape.addCurve(to: CGPoint(x: 4, y: 14), controlPoint1: CGPoint(x: 4.89, y: 16), controlPoint2: CGPoint(x: 4, y: 15.11))
+            shape.addLine(to: CGPoint(x: 4, y: 2))
+            shape.addCurve(to: CGPoint(x: 6, y: 0), controlPoint1: CGPoint(x: 4, y: 0.9), controlPoint2: CGPoint(x: 4.89, y: 0))
+            shape.addLine(to: CGPoint(x: 18, y: 0))
+            shape.addCurve(to: CGPoint(x: 20, y: 2), controlPoint1: CGPoint(x: 19.11, y: 0), controlPoint2: CGPoint(x: 20, y: 0.9))
+            shape.close()
+            shape.move(to: CGPoint(x: 18, y: 2))
+            shape.addLine(to: CGPoint(x: 6, y: 2))
+            shape.addLine(to: CGPoint(x: 6, y: 14))
+            shape.addLine(to: CGPoint(x: 12, y: 14))
+            shape.addLine(to: CGPoint(x: 12, y: 10))
+            shape.addCurve(to: CGPoint(x: 14, y: 8), controlPoint1: CGPoint(x: 12, y: 8.89), controlPoint2: CGPoint(x: 12.9, y: 8))
+            shape.addLine(to: CGPoint(x: 18, y: 8))
+            shape.addLine(to: CGPoint(x: 18, y: 2))
+            shape.close()
+            shape.move(to: CGPoint(x: 2, y: 4))
+            shape.addCurve(to: CGPoint(x: 0, y: 6), controlPoint1: CGPoint(x: 0.9, y: 4), controlPoint2: CGPoint(x: 0, y: 4.89))
+            shape.addLine(to: CGPoint(x: 0, y: 18))
+            shape.addCurve(to: CGPoint(x: 2, y: 20), controlPoint1: CGPoint(x: 0, y: 19.1), controlPoint2: CGPoint(x: 0.9, y: 20))
+            shape.addLine(to: CGPoint(x: 14, y: 20))
+            shape.addCurve(to: CGPoint(x: 16, y: 18), controlPoint1: CGPoint(x: 15.11, y: 20), controlPoint2: CGPoint(x: 16, y: 19.11))
+            shape.addLine(to: CGPoint(x: 2, y: 18))
+            shape.addLine(to: CGPoint(x: 2, y: 4))
+            shape.close()
+            shape.move(to: CGPoint(x: 2, y: 4))
+            context.saveGState()
+            UIColor.black.setFill()
+            shape.fill()
+            context.restoreGState()
+
+            context.restoreGState()
+        }
+
+        context.restoreGState()
+    }
+
     class func drawGridiconsmysites(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
@@ -12071,7 +12135,18 @@ class GridiconsGenerated: NSObject {
         
         return image
     }
-    
+
+    class func imageOfGridiconsnextpage(size: CGSize) -> UIImage {
+        var image: UIImage
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsnextpage(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
     class func imageOfGridiconsmysites(size: CGSize) -> UIImage {
         var image: UIImage
 
