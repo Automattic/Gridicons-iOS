@@ -100,6 +100,12 @@ public enum GridiconType: Int {
     case help
     case heartOutline
     case heart
+    case headingH6
+    case headingH5
+    case headingH4
+    case headingH3
+    case headingH2
+    case headingH1
     case heading
     case grid
     case globe
@@ -402,6 +408,18 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsheart(size: size)
         case .heartOutline:
             return GridiconsGenerated.imageOfGridiconsheartoutline(size: size)
+        case .headingH6:
+            return GridiconsGenerated.imageOfGridiconsheadingH6(size: size)
+        case .headingH5:
+            return GridiconsGenerated.imageOfGridiconsheadingH5(size: size)
+        case .headingH4:
+            return GridiconsGenerated.imageOfGridiconsheadingH4(size: size)
+        case .headingH3:
+            return GridiconsGenerated.imageOfGridiconsheadingH3(size: size)
+        case .headingH2:
+            return GridiconsGenerated.imageOfGridiconsheadingH2(size: size)
+        case .headingH1:
+            return GridiconsGenerated.imageOfGridiconsheadingH1(size: size)
         case .heading:
             return GridiconsGenerated.imageOfGridiconsheading(size: size)
         case .grid:
