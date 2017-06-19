@@ -9241,59 +9241,55 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
-    class func drawGridiconscode(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 12), resizing: ResizingBehavior = .aspectFit) {
+    class func drawGridiconscode(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 22, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         /// Resize to Target Frame
         context.saveGState()
-        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 12), target: targetFrame)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 22, height: 20), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
-        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 12)
-        context.translateBy(x: -1047, y: -269)
-        
+        context.scaleBy(x: resizedFrame.width / 22, y: resizedFrame.height / 20)
+        context.translateBy(x: -1, y: -2)
+
         /// gridicons-code
         do {
             context.saveGState()
-            context.translateBy(x: 1047, y: 269)
-            
-            /// code
-            do {
-                context.saveGState()
-                
-                /// Shape
-                let shape = UIBezierPath()
-                shape.move(to: CGPoint(x: 2.83, y: 6))
-                shape.addLine(to: CGPoint(x: 7.41, y: 10.59))
-                shape.addLine(to: CGPoint(x: 6, y: 12))
-                shape.addLine(to: CGPoint(x: 0, y: 6))
-                shape.addLine(to: CGPoint(x: 6, y: 0))
-                shape.addLine(to: CGPoint(x: 7.41, y: 1.41))
-                shape.addLine(to: CGPoint(x: 2.83, y: 6))
-                shape.addLine(to: CGPoint(x: 2.83, y: 6))
-                shape.close()
-                shape.move(to: CGPoint(x: 12.59, y: 10.59))
-                shape.addLine(to: CGPoint(x: 14, y: 12))
-                shape.addLine(to: CGPoint(x: 20, y: 6))
-                shape.addLine(to: CGPoint(x: 14, y: 0))
-                shape.addLine(to: CGPoint(x: 12.59, y: 1.41))
-                shape.addLine(to: CGPoint(x: 17.17, y: 6))
-                shape.addLine(to: CGPoint(x: 12.59, y: 10.59))
-                shape.addLine(to: CGPoint(x: 12.59, y: 10.59))
-                shape.close()
-                shape.move(to: CGPoint(x: 12.59, y: 10.59))
-                context.saveGState()
-                shape.usesEvenOddFillRule = true
-                UIColor.black.setFill()
-                shape.fill()
-                context.restoreGState()
-                
-                context.restoreGState()
-            }
-            
+
+            /// Shape
+            let shape = UIBezierPath()
+            shape.move(to: CGPoint(x: 22, y: 9.92))
+            shape.addLine(to: CGPoint(x: 16.55, y: 16.42))
+            shape.addLine(to: CGPoint(x: 15, y: 15.13))
+            shape.addLine(to: CGPoint(x: 19.39, y: 9.92))
+            shape.addLine(to: CGPoint(x: 15, y: 4.71))
+            shape.addLine(to: CGPoint(x: 16.55, y: 3.42))
+            shape.addLine(to: CGPoint(x: 22, y: 9.92))
+            shape.close()
+            shape.move(to: CGPoint(x: 7, y: 4.71))
+            shape.addLine(to: CGPoint(x: 5.45, y: 3.42))
+            shape.addLine(to: CGPoint(x: 0, y: 9.92))
+            shape.addLine(to: CGPoint(x: 5.45, y: 16.42))
+            shape.addLine(to: CGPoint(x: 7, y: 15.13))
+            shape.addLine(to: CGPoint(x: 2.61, y: 9.92))
+            shape.addLine(to: CGPoint(x: 7, y: 4.71))
+            shape.close()
+            shape.move(to: CGPoint(x: 7.45, y: 19.32))
+            shape.addLine(to: CGPoint(x: 9.38, y: 19.84))
+            shape.addLine(to: CGPoint(x: 14.55, y: 0.52))
+            shape.addLine(to: CGPoint(x: 12.62, y: 0))
+            shape.addLine(to: CGPoint(x: 7.45, y: 19.32))
+            shape.close()
+            shape.move(to: CGPoint(x: 7.45, y: 19.32))
+            context.saveGState()
+            context.translateBy(x: 1, y: 2.08)
+            UIColor.black.setFill()
+            shape.fill()
+            context.restoreGState()
+
             context.restoreGState()
         }
-        
+
         context.restoreGState()
     }
     
