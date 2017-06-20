@@ -2984,76 +2984,84 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
-    class func drawGridiconsreadmore(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 14), resizing: ResizingBehavior = .aspectFit) {
+    class func drawGridiconsreadmore(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         /// Resize to Target Frame
         context.saveGState()
-        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 14), target: targetFrame)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
-        context.scaleBy(x: resizedFrame.width / 18, y: resizedFrame.height / 14)
-        context.translateBy(x: -1157, y: -455)
-        
+        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 20)
+        context.translateBy(x: -494, y: -359)
+
         /// gridicons-read-more
         do {
             context.saveGState()
-            context.translateBy(x: 1157, y: 455)
-            
-            /// Layer_1
+            context.translateBy(x: 492, y: 357)
+
+            /// Group
             do {
                 context.saveGState()
-                
+
                 /// Shape
                 let shape = UIBezierPath()
-                shape.move(to: CGPoint.zero)
-                shape.addLine(to: CGPoint(x: 18, y: 0))
-                shape.addLine(to: CGPoint(x: 18, y: 4))
-                shape.addLine(to: CGPoint(x: 0, y: 4))
-                shape.addLine(to: CGPoint.zero)
-                shape.addLine(to: CGPoint.zero)
+                shape.move(to: CGPoint(x: 7, y: 10))
+                shape.addLine(to: CGPoint(x: 13, y: 10))
+                shape.addLine(to: CGPoint(x: 13, y: 8))
+                shape.addLine(to: CGPoint(x: 7, y: 8))
+                shape.addLine(to: CGPoint(x: 7, y: 10))
                 shape.close()
-                shape.move(to: CGPoint(x: 0, y: 14))
-                shape.addLine(to: CGPoint(x: 18, y: 14))
-                shape.addLine(to: CGPoint(x: 18, y: 10))
+                shape.move(to: CGPoint(x: 0, y: 10))
+                shape.addLine(to: CGPoint(x: 5, y: 10))
+                shape.addLine(to: CGPoint(x: 5, y: 8))
+                shape.addLine(to: CGPoint(x: 0, y: 8))
                 shape.addLine(to: CGPoint(x: 0, y: 10))
-                shape.addLine(to: CGPoint(x: 0, y: 14))
-                shape.addLine(to: CGPoint(x: 0, y: 14))
                 shape.close()
-                shape.move(to: CGPoint(x: 6, y: 8))
-                shape.addLine(to: CGPoint(x: 12, y: 8))
-                shape.addLine(to: CGPoint(x: 12, y: 6))
-                shape.addLine(to: CGPoint(x: 6, y: 6))
-                shape.addLine(to: CGPoint(x: 6, y: 8))
-                shape.addLine(to: CGPoint(x: 6, y: 8))
+                shape.move(to: CGPoint(x: 15, y: 10))
+                shape.addLine(to: CGPoint(x: 20, y: 10))
+                shape.addLine(to: CGPoint(x: 20, y: 8))
+                shape.addLine(to: CGPoint(x: 15, y: 8))
+                shape.addLine(to: CGPoint(x: 15, y: 10))
                 shape.close()
-                shape.move(to: CGPoint(x: 0, y: 8))
-                shape.addLine(to: CGPoint(x: 4, y: 8))
-                shape.addLine(to: CGPoint(x: 4, y: 6))
-                shape.addLine(to: CGPoint(x: 0, y: 6))
-                shape.addLine(to: CGPoint(x: 0, y: 8))
-                shape.addLine(to: CGPoint(x: 0, y: 8))
+                shape.move(to: CGPoint(x: 18, y: 12))
+                shape.addLine(to: CGPoint(x: 18, y: 14))
+                shape.addLine(to: CGPoint(x: 12, y: 20))
+                shape.addLine(to: CGPoint(x: 4, y: 20))
+                shape.addCurve(to: CGPoint(x: 2, y: 18), controlPoint1: CGPoint(x: 2.9, y: 20), controlPoint2: CGPoint(x: 2, y: 19.1))
+                shape.addLine(to: CGPoint(x: 2, y: 12))
+                shape.addLine(to: CGPoint(x: 4, y: 12))
+                shape.addLine(to: CGPoint(x: 4, y: 18))
+                shape.addLine(to: CGPoint(x: 10, y: 18))
+                shape.addLine(to: CGPoint(x: 10, y: 14))
+                shape.addCurve(to: CGPoint(x: 12, y: 12), controlPoint1: CGPoint(x: 10, y: 12.9), controlPoint2: CGPoint(x: 10.9, y: 12))
+                shape.addLine(to: CGPoint(x: 18, y: 12))
                 shape.close()
-                shape.move(to: CGPoint(x: 14, y: 8))
-                shape.addLine(to: CGPoint(x: 18, y: 8))
+                shape.move(to: CGPoint(x: 2, y: 6))
+                shape.addLine(to: CGPoint(x: 2, y: 2))
+                shape.addCurve(to: CGPoint(x: 4, y: 0), controlPoint1: CGPoint(x: 2, y: 0.9), controlPoint2: CGPoint(x: 2.9, y: 0))
+                shape.addLine(to: CGPoint(x: 16, y: 0))
+                shape.addCurve(to: CGPoint(x: 18, y: 2), controlPoint1: CGPoint(x: 17.1, y: 0), controlPoint2: CGPoint(x: 18, y: 0.9))
                 shape.addLine(to: CGPoint(x: 18, y: 6))
-                shape.addLine(to: CGPoint(x: 14, y: 6))
-                shape.addLine(to: CGPoint(x: 14, y: 8))
-                shape.addLine(to: CGPoint(x: 14, y: 8))
+                shape.addLine(to: CGPoint(x: 16, y: 6))
+                shape.addLine(to: CGPoint(x: 16, y: 2))
+                shape.addLine(to: CGPoint(x: 4, y: 2))
+                shape.addLine(to: CGPoint(x: 4, y: 6))
+                shape.addLine(to: CGPoint(x: 2, y: 6))
                 shape.close()
-                shape.move(to: CGPoint(x: 14, y: 8))
+                shape.move(to: CGPoint(x: 2, y: 6))
                 context.saveGState()
-                shape.usesEvenOddFillRule = true
+                context.translateBy(x: 2, y: 2)
                 UIColor.black.setFill()
                 shape.fill()
                 context.restoreGState()
-                
+
                 context.restoreGState()
             }
-            
+
             context.restoreGState()
         }
-        
+
         context.restoreGState()
     }
     
