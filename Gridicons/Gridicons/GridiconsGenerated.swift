@@ -3850,6 +3850,49 @@ class GridiconsGenerated: NSObject {
         
         context.restoreGState()
     }
+
+    class func drawGridiconsplay(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 20), resizing: ResizingBehavior = .aspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 20), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 20)
+        context.translateBy(x: -535, y: -425)
+
+        /// gridicons-play
+        do {
+            context.saveGState()
+            context.translateBy(x: 533, y: 423)
+
+            /// Shape
+            let shape = UIBezierPath()
+            shape.move(to: CGPoint(x: 10, y: 0))
+            shape.addCurve(to: CGPoint(x: 0, y: 10), controlPoint1: CGPoint(x: 4.48, y: 0), controlPoint2: CGPoint(x: 0, y: 4.48))
+            shape.addCurve(to: CGPoint(x: 10, y: 20), controlPoint1: CGPoint(x: 0, y: 15.52), controlPoint2: CGPoint(x: 4.48, y: 20))
+            shape.addCurve(to: CGPoint(x: 20, y: 10), controlPoint1: CGPoint(x: 15.52, y: 20), controlPoint2: CGPoint(x: 20, y: 15.52))
+            shape.addCurve(to: CGPoint(x: 17.07, y: 2.93), controlPoint1: CGPoint(x: 20, y: 7.35), controlPoint2: CGPoint(x: 18.95, y: 4.8))
+            shape.addCurve(to: CGPoint(x: 10, y: 0), controlPoint1: CGPoint(x: 15.2, y: 1.05), controlPoint2: CGPoint(x: 12.65, y: 0))
+            shape.close()
+            shape.move(to: CGPoint(x: 8, y: 14.5))
+            shape.addLine(to: CGPoint(x: 8, y: 5.5))
+            shape.addLine(to: CGPoint(x: 14, y: 10))
+            shape.addLine(to: CGPoint(x: 8, y: 14.5))
+            shape.close()
+            shape.move(to: CGPoint(x: 8, y: 14.5))
+            context.saveGState()
+            context.translateBy(x: 2, y: 2)
+            UIColor.black.setFill()
+            shape.fill()
+            context.restoreGState()
+
+            context.restoreGState()
+        }
+
+        context.restoreGState()
+    }
     
     class func drawGridiconsphone(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 12, height: 20), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
@@ -12523,7 +12566,18 @@ class GridiconsGenerated: NSObject {
         
         return image
     }
-    
+
+    class func imageOfGridiconsplay(size: CGSize) -> UIImage {
+        var image: UIImage
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsplay(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
     class func imageOfGridiconsphone(size: CGSize) -> UIImage {
         var image: UIImage
 
