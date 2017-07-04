@@ -153,6 +153,7 @@ public enum GridiconType: Int {
     case caption
     case camera
     case calendar
+    case bug
     case briefcase
     case bookmarkOutline
     case bookmark
@@ -515,6 +516,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconscamera(size: size)
         case .calendar:
             return GridiconsGenerated.imageOfGridiconscalendar(size: size)
+        case .bug:
+            return GridiconsGenerated.imageOfGridiconsbug(size: size)
         case .briefcase:
             return GridiconsGenerated.imageOfGridiconsbriefcase(size: size)
         case .bookmark:
