@@ -10383,6 +10383,85 @@ class GridiconsGenerated: NSObject {
         
         context.restoreGState()
     }
+
+    class func drawGridiconsbug(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 19), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 19)
+        context.translateBy(x: -176, y: -177)
+
+        /// gridicons-bug
+        do {
+            context.saveGState()
+            context.translateBy(x: 174, y: 175)
+
+            /// Shape
+            let shape = UIBezierPath()
+            shape.move(to: CGPoint(x: 16, y: 12))
+            shape.addLine(to: CGPoint(x: 20, y: 12))
+            shape.addLine(to: CGPoint(x: 20, y: 10))
+            shape.addLine(to: CGPoint(x: 16, y: 10))
+            shape.addLine(to: CGPoint(x: 16, y: 8))
+            shape.addLine(to: CGPoint(x: 17, y: 8))
+            shape.addCurve(to: CGPoint(x: 19, y: 6), controlPoint1: CGPoint(x: 18.1, y: 8), controlPoint2: CGPoint(x: 19, y: 7.1))
+            shape.addLine(to: CGPoint(x: 19, y: 4))
+            shape.addLine(to: CGPoint(x: 17, y: 4))
+            shape.addLine(to: CGPoint(x: 17, y: 6))
+            shape.addLine(to: CGPoint(x: 3, y: 6))
+            shape.addLine(to: CGPoint(x: 3, y: 4))
+            shape.addLine(to: CGPoint(x: 1, y: 4))
+            shape.addLine(to: CGPoint(x: 1, y: 6))
+            shape.addCurve(to: CGPoint(x: 3, y: 8), controlPoint1: CGPoint(x: 1, y: 7.1), controlPoint2: CGPoint(x: 1.9, y: 8))
+            shape.addLine(to: CGPoint(x: 4, y: 8))
+            shape.addLine(to: CGPoint(x: 4, y: 10))
+            shape.addLine(to: CGPoint(x: 0, y: 10))
+            shape.addLine(to: CGPoint(x: 0, y: 12))
+            shape.addLine(to: CGPoint(x: 4, y: 12))
+            shape.addLine(to: CGPoint(x: 4, y: 13))
+            shape.addCurve(to: CGPoint(x: 4.09, y: 14), controlPoint1: CGPoint(x: 4, y: 13.34), controlPoint2: CGPoint(x: 4.03, y: 13.67))
+            shape.addLine(to: CGPoint(x: 3, y: 14))
+            shape.addCurve(to: CGPoint(x: 1, y: 16), controlPoint1: CGPoint(x: 1.9, y: 14), controlPoint2: CGPoint(x: 1, y: 14.9))
+            shape.addLine(to: CGPoint(x: 1, y: 18))
+            shape.addLine(to: CGPoint(x: 3, y: 18))
+            shape.addLine(to: CGPoint(x: 3, y: 16))
+            shape.addLine(to: CGPoint(x: 4.81, y: 16))
+            shape.addCurve(to: CGPoint(x: 9, y: 18.91), controlPoint1: CGPoint(x: 5.7, y: 17.55), controlPoint2: CGPoint(x: 7.24, y: 18.61))
+            shape.addLine(to: CGPoint(x: 9, y: 8))
+            shape.addLine(to: CGPoint(x: 11, y: 8))
+            shape.addLine(to: CGPoint(x: 11, y: 18.91))
+            shape.addCurve(to: CGPoint(x: 15.19, y: 16), controlPoint1: CGPoint(x: 12.76, y: 18.61), controlPoint2: CGPoint(x: 14.3, y: 17.55))
+            shape.addLine(to: CGPoint(x: 17, y: 16))
+            shape.addLine(to: CGPoint(x: 17, y: 18))
+            shape.addLine(to: CGPoint(x: 19, y: 18))
+            shape.addLine(to: CGPoint(x: 19, y: 16))
+            shape.addCurve(to: CGPoint(x: 17, y: 14), controlPoint1: CGPoint(x: 19, y: 14.9), controlPoint2: CGPoint(x: 18.1, y: 14))
+            shape.addLine(to: CGPoint(x: 15.91, y: 14))
+            shape.addCurve(to: CGPoint(x: 16, y: 13), controlPoint1: CGPoint(x: 15.97, y: 13.67), controlPoint2: CGPoint(x: 16, y: 13.34))
+            shape.addLine(to: CGPoint(x: 16, y: 12))
+            shape.close()
+            shape.move(to: CGPoint(x: 10, y: 0))
+            shape.addCurve(to: CGPoint(x: 6, y: 4), controlPoint1: CGPoint(x: 7.79, y: 0), controlPoint2: CGPoint(x: 6, y: 1.79))
+            shape.addLine(to: CGPoint(x: 14, y: 4))
+            shape.addCurve(to: CGPoint(x: 10, y: 0), controlPoint1: CGPoint(x: 14, y: 1.79), controlPoint2: CGPoint(x: 12.21, y: 0))
+            shape.addLine(to: CGPoint(x: 10, y: 0))
+            shape.close()
+            shape.move(to: CGPoint(x: 10, y: 0))
+            context.saveGState()
+            context.translateBy(x: 2, y: 2)
+            UIColor.black.setFill()
+            shape.fill()
+            context.restoreGState()
+
+            context.restoreGState()
+        }
+        
+        context.restoreGState()
+    }
     
     class func drawGridiconsbriefcase(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
@@ -13622,7 +13701,18 @@ class GridiconsGenerated: NSObject {
         
         return image
     }
-    
+
+    class func imageOfGridiconsbug(size: CGSize) -> UIImage {
+        var image: UIImage
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsbug(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
     class func imageOfGridiconsbriefcase(size: CGSize) -> UIImage {
         var image: UIImage
 
