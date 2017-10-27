@@ -3,6 +3,7 @@ import Foundation
 @objc
 public enum GridiconType: Int {
     case visible
+    case videoRemove
     case videoCamera
     case video
     case userCircle
@@ -93,6 +94,7 @@ public enum GridiconType: Int {
     case info
     case indentRight
     case indentLeft
+    case imageRemove
     case imageMultiple
     case image
     case house
@@ -220,6 +222,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsvideo(size: size)
         case .videoCamera:
             return GridiconsGenerated.imageOfGridiconsvideocamera(size: size)
+        case .videoRemove:
+            return GridiconsGenerated.imageOfGridiconsvideoremove(size: size)
         case .user:
             return GridiconsGenerated.imageOfGridiconsuser(size: size)
         case .userAdd:
@@ -400,6 +404,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsimage(size: size)
         case .imageMultiple:
             return GridiconsGenerated.imageOfGridiconsimagemultiple(size: size)
+        case .imageRemove:
+            return GridiconsGenerated.imageOfGridiconsimageremove(size: size)
         case .house:
             return GridiconsGenerated.imageOfGridiconshouse(size: size)
         case .history:
