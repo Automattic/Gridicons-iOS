@@ -67,98 +67,155 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
-    class func drawGridiconsvideo(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
+    class func drawGridiconsvideoremove(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         /// Resize to Target Frame
         context.saveGState()
-        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: targetFrame)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
-        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 16)
-        context.translateBy(x: -1236, y: -545)
-        
+        context.scaleBy(x: resizedFrame.width / 19, y: resizedFrame.height / 19)
+        context.translateBy(x: -290, y: -432)
+
+        /// gridicons-video-remove
+        let gridiconsvideoremove = UIBezierPath()
+        gridiconsvideoremove.move(to: CGPoint(x: 16, y: 6.58))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 17.17, y: 5.42))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 18.58, y: 6.83))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 16.58, y: 8.83))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 16.58, y: 19.99))
+        gridiconsvideoremove.addCurve(to: CGPoint(x: 14.58, y: 21.99), controlPoint1: CGPoint(x: 16.58, y: 21.1), controlPoint2: CGPoint(x: 15.69, y: 21.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 19.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 19.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 21.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 3.42, y: 21.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 1.41, y: 24))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 0, y: 22.59))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 1.17, y: 21.41))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 1.16, y: 21.4))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.58, y: 17.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 7.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 15.99, y: 6.57))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 16, y: 6.58))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 12.42, y: 12.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 12.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 10.83))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.42, y: 12.99))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 12.58, y: 10))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.59, y: 9.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 9.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 10))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 2.58, y: 17.16))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 0.58, y: 19.16))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 0.58, y: 7.99))
+        gridiconsvideoremove.addCurve(to: CGPoint(x: 2.58, y: 5.99), controlPoint1: CGPoint(x: 0.58, y: 6.89), controlPoint2: CGPoint(x: 1.48, y: 5.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 2.58, y: 7.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.58, y: 7.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.58, y: 5.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 13.75, y: 5.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.75, y: 14.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 2.58, y: 14.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 2.58, y: 17.16))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 2.58, y: 9.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 2.58, y: 12.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.58, y: 12.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 4.58, y: 9.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 2.58, y: 9.99))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 14.58, y: 17.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 14.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 14.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 12.58, y: 17.99))
+        gridiconsvideoremove.addLine(to: CGPoint(x: 14.58, y: 17.99))
+        gridiconsvideoremove.close()
+        gridiconsvideoremove.move(to: CGPoint(x: 14.58, y: 17.99))
+        context.saveGState()
+        context.translateBy(x: 290, y: 427)
+        gridiconsvideoremove.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        gridiconsvideoremove.fill()
+        context.restoreGState()
+
+        context.restoreGState()
+    }
+
+    class func drawGridiconsvideo(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 16, y: resizedFrame.height / 16)
+        context.translateBy(x: -324, y: -435)
+
         /// gridicons-video
-        do {
-            context.saveGState()
-            context.translateBy(x: 1236, y: 545)
-            
-            /// video
-            do {
-                context.saveGState()
-                
-                /// Shape
-                let shape = UIBezierPath()
-                shape.move(to: CGPoint(x: 18, y: 0))
-                shape.addLine(to: CGPoint(x: 18, y: 2))
-                shape.addLine(to: CGPoint(x: 16, y: 2))
-                shape.addLine(to: CGPoint(x: 16, y: 0))
-                shape.addLine(to: CGPoint(x: 4, y: 0))
-                shape.addLine(to: CGPoint(x: 4, y: 2))
-                shape.addLine(to: CGPoint(x: 2, y: 2))
-                shape.addLine(to: CGPoint(x: 2, y: 0))
-                shape.addCurve(to: CGPoint(x: 0, y: 2), controlPoint1: CGPoint(x: 0.9, y: 0), controlPoint2: CGPoint(x: 0, y: 0.9))
-                shape.addLine(to: CGPoint(x: 0, y: 14))
-                shape.addCurve(to: CGPoint(x: 2, y: 16), controlPoint1: CGPoint(x: 0, y: 15.11), controlPoint2: CGPoint(x: 0.9, y: 16))
-                shape.addLine(to: CGPoint(x: 2, y: 14))
-                shape.addLine(to: CGPoint(x: 4, y: 14))
-                shape.addLine(to: CGPoint(x: 4, y: 16))
-                shape.addLine(to: CGPoint(x: 16, y: 16))
-                shape.addLine(to: CGPoint(x: 16, y: 14))
-                shape.addLine(to: CGPoint(x: 18, y: 14))
-                shape.addLine(to: CGPoint(x: 18, y: 16))
-                shape.addCurve(to: CGPoint(x: 20, y: 14), controlPoint1: CGPoint(x: 19.11, y: 16), controlPoint2: CGPoint(x: 20, y: 15.11))
-                shape.addLine(to: CGPoint(x: 20, y: 2))
-                shape.addCurve(to: CGPoint(x: 18, y: 0), controlPoint1: CGPoint(x: 20, y: 0.9), controlPoint2: CGPoint(x: 19.11, y: 0))
-                shape.addLine(to: CGPoint(x: 18, y: 0))
-                shape.close()
-                shape.move(to: CGPoint(x: 4, y: 12))
-                shape.addLine(to: CGPoint(x: 2, y: 12))
-                shape.addLine(to: CGPoint(x: 2, y: 9))
-                shape.addLine(to: CGPoint(x: 4, y: 9))
-                shape.addLine(to: CGPoint(x: 4, y: 12))
-                shape.addLine(to: CGPoint(x: 4, y: 12))
-                shape.close()
-                shape.move(to: CGPoint(x: 4, y: 7))
-                shape.addLine(to: CGPoint(x: 2, y: 7))
-                shape.addLine(to: CGPoint(x: 2, y: 4))
-                shape.addLine(to: CGPoint(x: 4, y: 4))
-                shape.addLine(to: CGPoint(x: 4, y: 7))
-                shape.addLine(to: CGPoint(x: 4, y: 7))
-                shape.close()
-                shape.move(to: CGPoint(x: 8, y: 11))
-                shape.addLine(to: CGPoint(x: 8, y: 5))
-                shape.addLine(to: CGPoint(x: 12.5, y: 8))
-                shape.addLine(to: CGPoint(x: 8, y: 11))
-                shape.addLine(to: CGPoint(x: 8, y: 11))
-                shape.close()
-                shape.move(to: CGPoint(x: 18, y: 12))
-                shape.addLine(to: CGPoint(x: 16, y: 12))
-                shape.addLine(to: CGPoint(x: 16, y: 9))
-                shape.addLine(to: CGPoint(x: 18, y: 9))
-                shape.addLine(to: CGPoint(x: 18, y: 12))
-                shape.addLine(to: CGPoint(x: 18, y: 12))
-                shape.close()
-                shape.move(to: CGPoint(x: 18, y: 7))
-                shape.addLine(to: CGPoint(x: 16, y: 7))
-                shape.addLine(to: CGPoint(x: 16, y: 4))
-                shape.addLine(to: CGPoint(x: 18, y: 4))
-                shape.addLine(to: CGPoint(x: 18, y: 7))
-                shape.addLine(to: CGPoint(x: 18, y: 7))
-                shape.close()
-                shape.move(to: CGPoint(x: 18, y: 7))
-                context.saveGState()
-                shape.usesEvenOddFillRule = true
-                UIColor.black.setFill()
-                shape.fill()
-                context.restoreGState()
-                
-                context.restoreGState()
-            }
-            
-            context.restoreGState()
-        }
-        
+        let gridiconsvideo = UIBezierPath()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconsvideo.addCurve(to: CGPoint(x: 16, y: 10), controlPoint1: CGPoint(x: 15.1, y: 8), controlPoint2: CGPoint(x: 16, y: 8.9))
+        gridiconsvideo.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsvideo.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.1), controlPoint2: CGPoint(x: 15.1, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 24))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 22))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsvideo.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.89, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsvideo.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsvideo.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.9), controlPoint2: CGPoint(x: 0.89, y: 8))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 10))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 8))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 6, y: 19))
+        gridiconsvideo.addLine(to: CGPoint(x: 10.5, y: 16))
+        gridiconsvideo.addLine(to: CGPoint(x: 6, y: 13))
+        gridiconsvideo.addLine(to: CGPoint(x: 6, y: 19))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 14, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 20))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 14, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 12, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 14, y: 15))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 17))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 20))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 20))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 12))
+        gridiconsvideo.addLine(to: CGPoint(x: 2, y: 15))
+        gridiconsvideo.addLine(to: CGPoint(x: 4, y: 15))
+        gridiconsvideo.close()
+        gridiconsvideo.move(to: CGPoint(x: 4, y: 15))
+        context.saveGState()
+        context.translateBy(x: 324, y: 427)
+        gridiconsvideo.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        gridiconsvideo.fill()
+        context.restoreGState()
+
         context.restoreGState()
     }
     
@@ -6327,70 +6384,108 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
-    class func drawGridiconsimage(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 20, height: 16), resizing: ResizingBehavior = .aspectFit) {
+    class func drawGridiconsimage(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 16, height: 16), resizing: ResizingBehavior = .aspectFit) {
         /// General Declarations
         let context = UIGraphicsGetCurrentContext()!
-        
+
         /// Resize to Target Frame
         context.saveGState()
-        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 20, height: 16), target: targetFrame)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 16, height: 16), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
-        context.scaleBy(x: resizedFrame.width / 20, y: resizedFrame.height / 16)
-        context.translateBy(x: -951, y: -363)
-        
+        context.scaleBy(x: resizedFrame.width / 16, y: resizedFrame.height / 16)
+        context.translateBy(x: -324, y: -401)
+
         /// gridicons-image
-        do {
-            context.saveGState()
-            context.translateBy(x: 951, y: 363)
-            
-            /// image
-            do {
-                context.saveGState()
-                
-                /// Shape
-                let shape = UIBezierPath()
-                shape.move(to: CGPoint(x: 11, y: 5.5))
-                shape.addCurve(to: CGPoint(x: 12.5, y: 4), controlPoint1: CGPoint(x: 11, y: 4.67), controlPoint2: CGPoint(x: 11.67, y: 4))
-                shape.addCurve(to: CGPoint(x: 14, y: 5.5), controlPoint1: CGPoint(x: 13.33, y: 4), controlPoint2: CGPoint(x: 14, y: 4.67))
-                shape.addCurve(to: CGPoint(x: 12.5, y: 7), controlPoint1: CGPoint(x: 14, y: 6.33), controlPoint2: CGPoint(x: 13.33, y: 7))
-                shape.addCurve(to: CGPoint(x: 11, y: 5.5), controlPoint1: CGPoint(x: 11.67, y: 7), controlPoint2: CGPoint(x: 11, y: 6.33))
-                shape.addLine(to: CGPoint(x: 11, y: 5.5))
-                shape.close()
-                shape.move(to: CGPoint(x: 20, y: 2))
-                shape.addLine(to: CGPoint(x: 20, y: 14))
-                shape.addCurve(to: CGPoint(x: 18, y: 16), controlPoint1: CGPoint(x: 20, y: 15.11), controlPoint2: CGPoint(x: 19.11, y: 16))
-                shape.addLine(to: CGPoint(x: 2, y: 16))
-                shape.addCurve(to: CGPoint(x: 0, y: 14), controlPoint1: CGPoint(x: 0.9, y: 16), controlPoint2: CGPoint(x: 0, y: 15.11))
-                shape.addLine(to: CGPoint(x: 0, y: 2))
-                shape.addCurve(to: CGPoint(x: 2, y: 0), controlPoint1: CGPoint(x: 0, y: 0.9), controlPoint2: CGPoint(x: 0.9, y: 0))
-                shape.addLine(to: CGPoint(x: 18, y: 0))
-                shape.addCurve(to: CGPoint(x: 20, y: 2), controlPoint1: CGPoint(x: 19.11, y: 0), controlPoint2: CGPoint(x: 20, y: 0.9))
-                shape.addLine(to: CGPoint(x: 20, y: 2))
-                shape.close()
-                shape.move(to: CGPoint(x: 18, y: 2))
-                shape.addLine(to: CGPoint(x: 2, y: 2))
-                shape.addLine(to: CGPoint(x: 2, y: 9.44))
-                shape.addLine(to: CGPoint(x: 6, y: 5))
-                shape.addLine(to: CGPoint(x: 11.9, y: 11.55))
-                shape.addLine(to: CGPoint(x: 13.48, y: 9.7))
-                shape.addCurve(to: CGPoint(x: 16.52, y: 9.7), controlPoint1: CGPoint(x: 14.28, y: 8.77), controlPoint2: CGPoint(x: 15.72, y: 8.77))
-                shape.addLine(to: CGPoint(x: 18, y: 11.43))
-                shape.addLine(to: CGPoint(x: 18, y: 2))
-                shape.addLine(to: CGPoint(x: 18, y: 2))
-                shape.close()
-                shape.move(to: CGPoint(x: 18, y: 2))
-                context.saveGState()
-                shape.usesEvenOddFillRule = true
-                UIColor.black.setFill()
-                shape.fill()
-                context.restoreGState()
-                
-                context.restoreGState()
-            }
-            
-            context.restoreGState()
-        }
-        
+        let gridiconsimage = UIBezierPath()
+        gridiconsimage.move(to: CGPoint(x: 16, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 16, y: 22))
+        gridiconsimage.addCurve(to: CGPoint(x: 14, y: 24), controlPoint1: CGPoint(x: 16, y: 23.11), controlPoint2: CGPoint(x: 15.1, y: 24))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 24))
+        gridiconsimage.addCurve(to: CGPoint(x: 0, y: 22), controlPoint1: CGPoint(x: 0.89, y: 24), controlPoint2: CGPoint(x: 0, y: 23.11))
+        gridiconsimage.addLine(to: CGPoint(x: 0, y: 10))
+        gridiconsimage.addCurve(to: CGPoint(x: 2, y: 8), controlPoint1: CGPoint(x: 0, y: 8.9), controlPoint2: CGPoint(x: 0.89, y: 8))
+        gridiconsimage.addLine(to: CGPoint(x: 14, y: 8))
+        gridiconsimage.addCurve(to: CGPoint(x: 16, y: 10), controlPoint1: CGPoint(x: 15.1, y: 8), controlPoint2: CGPoint(x: 16, y: 8.9))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 14, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 10))
+        gridiconsimage.addLine(to: CGPoint(x: 2, y: 16.38))
+        gridiconsimage.addLine(to: CGPoint(x: 4.19, y: 14.19))
+        gridiconsimage.addLine(to: CGPoint(x: 9.42, y: 19.42))
+        gridiconsimage.addLine(to: CGPoint(x: 10.42, y: 18.42))
+        gridiconsimage.addCurve(to: CGPoint(x: 12.53, y: 18.53), controlPoint1: CGPoint(x: 11.05, y: 17.92), controlPoint2: CGPoint(x: 11.96, y: 17.96))
+        gridiconsimage.addLine(to: CGPoint(x: 14, y: 20))
+        gridiconsimage.addLine(to: CGPoint(x: 14, y: 10))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 9, y: 13.5))
+        gridiconsimage.addCurve(to: CGPoint(x: 10.5, y: 12), controlPoint1: CGPoint(x: 9, y: 12.67), controlPoint2: CGPoint(x: 9.67, y: 12))
+        gridiconsimage.addCurve(to: CGPoint(x: 12, y: 13.5), controlPoint1: CGPoint(x: 11.33, y: 12), controlPoint2: CGPoint(x: 12, y: 12.67))
+        gridiconsimage.addCurve(to: CGPoint(x: 10.5, y: 15), controlPoint1: CGPoint(x: 12, y: 14.33), controlPoint2: CGPoint(x: 11.33, y: 15))
+        gridiconsimage.addCurve(to: CGPoint(x: 9, y: 13.5), controlPoint1: CGPoint(x: 9.67, y: 15), controlPoint2: CGPoint(x: 9, y: 14.33))
+        gridiconsimage.close()
+        gridiconsimage.move(to: CGPoint(x: 9, y: 13.5))
+        context.saveGState()
+        context.translateBy(x: 324, y: 393)
+        gridiconsimage.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        gridiconsimage.fill()
+        context.restoreGState()
+
+        context.restoreGState()
+    }
+
+    class func drawGridiconsimageremove(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 19, height: 19), resizing: ResizingBehavior = .aspectFit) {
+        /// General Declarations
+        let context = UIGraphicsGetCurrentContext()!
+
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 19, height: 19), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 19, y: resizedFrame.height / 19)
+        context.translateBy(x: -290, y: -398)
+
+        /// gridicons-image-remove
+        let gridiconsimageremove = UIBezierPath()
+        gridiconsimageremove.move(to: CGPoint(x: 17.17, y: 0))
+        gridiconsimageremove.addLine(to: CGPoint(x: 18.58, y: 1.41))
+        gridiconsimageremove.addLine(to: CGPoint(x: 16.58, y: 3.42))
+        gridiconsimageremove.addLine(to: CGPoint(x: 16.58, y: 14.58))
+        gridiconsimageremove.addCurve(to: CGPoint(x: 14.58, y: 16.58), controlPoint1: CGPoint(x: 16.58, y: 15.68), controlPoint2: CGPoint(x: 15.69, y: 16.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 3.42, y: 16.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 1.41, y: 18.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 0, y: 17.17))
+        gridiconsimageremove.addLine(to: CGPoint(x: 17.17, y: 0))
+        gridiconsimageremove.addLine(to: CGPoint(x: 17.17, y: 0))
+        gridiconsimageremove.close()
+        gridiconsimageremove.move(to: CGPoint(x: 9, y: 11))
+        gridiconsimageremove.addLine(to: CGPoint(x: 10, y: 12))
+        gridiconsimageremove.addLine(to: CGPoint(x: 11, y: 11))
+        gridiconsimageremove.addCurve(to: CGPoint(x: 13.11, y: 11.11), controlPoint1: CGPoint(x: 11.63, y: 10.49), controlPoint2: CGPoint(x: 12.54, y: 10.54))
+        gridiconsimageremove.addLine(to: CGPoint(x: 14.58, y: 12.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 14.58, y: 5.42))
+        gridiconsimageremove.addLine(to: CGPoint(x: 9, y: 11))
+        gridiconsimageremove.close()
+        gridiconsimageremove.move(to: CGPoint(x: 11.74, y: 2.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 2.58, y: 2.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 2.58, y: 8.96))
+        gridiconsimageremove.addLine(to: CGPoint(x: 4.77, y: 6.77))
+        gridiconsimageremove.addLine(to: CGPoint(x: 6.16, y: 8.16))
+        gridiconsimageremove.addLine(to: CGPoint(x: 0.58, y: 13.74))
+        gridiconsimageremove.addLine(to: CGPoint(x: 0.58, y: 2.58))
+        gridiconsimageremove.addCurve(to: CGPoint(x: 2.58, y: 0.58), controlPoint1: CGPoint(x: 0.58, y: 1.47), controlPoint2: CGPoint(x: 1.48, y: 0.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 13.74, y: 0.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 11.74, y: 2.58))
+        gridiconsimageremove.addLine(to: CGPoint(x: 11.74, y: 2.58))
+        gridiconsimageremove.close()
+        gridiconsimageremove.move(to: CGPoint(x: 11.74, y: 2.58))
+        context.saveGState()
+        context.translateBy(x: 290, y: 398.42)
+        gridiconsimageremove.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        gridiconsimageremove.fill()
+        context.restoreGState()
+
         context.restoreGState()
     }
     
@@ -12062,7 +12157,18 @@ class GridiconsGenerated: NSObject {
         
         return image
     }
-    
+
+    class func imageOfGridiconsvideoremove(size: CGSize) -> UIImage {
+        var image: UIImage
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsvideoremove(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+
     class func imageOfGridiconsvideocamera(size: CGSize) -> UIImage {
         var image: UIImage
 
@@ -13050,6 +13156,17 @@ class GridiconsGenerated: NSObject {
         image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
+        return image
+    }
+
+    class func imageOfGridiconsimageremove(size: CGSize) -> UIImage {
+        var image: UIImage
+
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconsimageremove(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+
         return image
     }
     
