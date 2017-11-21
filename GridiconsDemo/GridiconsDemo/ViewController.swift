@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         return types
     }()
     
-    var iconSize = CGSize(width: 24.0, height: 24.0)
+    @objc var iconSize = CGSize(width: 24.0, height: 24.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
