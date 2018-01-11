@@ -59,6 +59,7 @@ public enum GridiconType: Int {
     case plus
     case plugins
     case play
+    case plans
     case phone
     case pencil
     case pause
@@ -332,6 +333,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsplugins(size: size)
         case .play:
             return GridiconsGenerated.imageOfGridiconsplay(size: size)
+        case .plans:
+            return GridiconsGenerated.imageOfGridiconsplans(size: size)
         case .phone:
             return GridiconsGenerated.imageOfGridiconsphone(size: size)
         case .pencil:
