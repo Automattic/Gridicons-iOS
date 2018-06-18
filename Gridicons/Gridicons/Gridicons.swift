@@ -84,6 +84,7 @@ public enum GridiconType: Int {
     case location
     case listUnordered
     case listOrdered
+    case listOrderedRTL
     case listCheckmark
     case linkBreak
     case link
@@ -384,6 +385,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconslistunordered(size: size)
         case .listOrdered:
             return GridiconsGenerated.imageOfGridiconslistordered(size: size)
+        case .listOrderedRTL:
+            return GridiconsGenerated.imageOfGridiconslistorderedrtl(size: size)
         case .listCheckmark:
             return GridiconsGenerated.imageOfGridiconslistcheckmark(size: size)
         case .link:
