@@ -59,6 +59,7 @@ public enum GridiconType: Int {
     case plus
     case plugins
     case play
+    case plans
     case phone
     case pencil
     case pause
@@ -70,6 +71,7 @@ public enum GridiconType: Int {
     case nextPage
     case mySitesHorizon
     case mySites
+    case multipleUsers
     case money
     case minusSmall
     case minus
@@ -82,6 +84,7 @@ public enum GridiconType: Int {
     case location
     case listUnordered
     case listOrdered
+    case listOrderedRTL
     case listCheckmark
     case linkBreak
     case link
@@ -332,6 +335,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsplugins(size: size)
         case .play:
             return GridiconsGenerated.imageOfGridiconsplay(size: size)
+        case .plans:
+            return GridiconsGenerated.imageOfGridiconsplans(size: size)
         case .phone:
             return GridiconsGenerated.imageOfGridiconsphone(size: size)
         case .pencil:
@@ -354,6 +359,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsmysites(size: size)
         case .mySitesHorizon:
             return GridiconsGenerated.imageOfGridiconsmysiteshorizon(size: size)
+        case .multipleUsers:
+            return GridiconsGenerated.imageOfGridiconsmultipleusers(size: size)
         case .money:
             return GridiconsGenerated.imageOfGridiconsmoney(size: size)
         case .minus:
@@ -378,6 +385,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconslistunordered(size: size)
         case .listOrdered:
             return GridiconsGenerated.imageOfGridiconslistordered(size: size)
+        case .listOrderedRTL:
+            return GridiconsGenerated.imageOfGridiconslistorderedrtl(size: size)
         case .listCheckmark:
             return GridiconsGenerated.imageOfGridiconslistcheckmark(size: size)
         case .link:
