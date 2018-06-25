@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Gridicons"
-  s.version      = "0.15"
+  s.version      = "0.16"
   s.summary      = "Gridicons is a tiny framework which generates Gridicon images at any resolution."
 
   s.homepage     = "http://apps.wordpress.com"
