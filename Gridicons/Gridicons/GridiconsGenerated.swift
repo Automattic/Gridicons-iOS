@@ -12370,6 +12370,44 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
+    class func drawGridiconspin(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
+        
+        let context = UIGraphicsGetCurrentContext()!
+        
+        /// Resize to Target Frame
+        context.saveGState()
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: targetFrame)
+        context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
+        context.scaleBy(x: resizedFrame.width / 18, y: resizedFrame.height / 18)
+        
+        /// gridicons-pin
+        let bezierPath = UIBezierPath()
+        bezierPath.move(to: CGPoint(x: 5.55, y: 7.98))
+        bezierPath.addLine(to: CGPoint(x: 9.98, y: 3.58))
+        bezierPath.addCurve(to: CGPoint(x: 9.98, y: 0.72), controlPoint1: CGPoint(x: 9.15, y: 2.76), controlPoint2: CGPoint(x: 9.15, y: 1.53))
+        bezierPath.addLine(to: CGPoint(x: 10.7, y: 0))
+        bezierPath.addLine(to: CGPoint(x: 18, y: 7.26))
+        bezierPath.addLine(to: CGPoint(x: 17.28, y: 7.87))
+        bezierPath.addCurve(to: CGPoint(x: 14.4, y: 7.87), controlPoint1: CGPoint(x: 16.46, y: 8.69), controlPoint2: CGPoint(x: 15.22, y: 8.69))
+        bezierPath.addLine(to: CGPoint(x: 9.98, y: 12.27))
+        bezierPath.addCurve(to: CGPoint(x: 9.36, y: 17.28), controlPoint1: CGPoint(x: 10.9, y: 13.81), controlPoint2: CGPoint(x: 10.7, y: 15.85))
+        bezierPath.addLine(to: CGPoint(x: 5.76, y: 13.7))
+        bezierPath.addLine(to: CGPoint(x: 2.88, y: 16.57))
+        bezierPath.addCurve(to: CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 1.85, y: 17.39), controlPoint2: CGPoint(x: 0.82, y: 17.8))
+        bezierPath.addCurve(to: CGPoint(x: 1.44, y: 15.14), controlPoint1: CGPoint(x: 0.21, y: 17.08), controlPoint2: CGPoint(x: 0.72, y: 16.16))
+        bezierPath.addLine(to: CGPoint(x: 4.32, y: 12.27))
+        bezierPath.addLine(to: CGPoint(x: 0.72, y: 8.69))
+        bezierPath.addCurve(to: CGPoint(x: 5.55, y: 7.98), controlPoint1: CGPoint(x: 1.85, y: 7.26), controlPoint2: CGPoint(x: 3.91, y: 7.06))
+        bezierPath.close()
+        context.saveGState()
+        bezierPath.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        bezierPath.fill()
+        context.restoreGState()
+        
+        context.restoreGState()
+    }
+    
     
     //MARK: - Canvas Images
     
@@ -14374,6 +14412,17 @@ class GridiconsGenerated: NSObject {
         image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
 
+        return image
+    }
+    
+    class func imageOfGridiconspin(size: CGSize) -> UIImage {
+        var image: UIImage
+        
+        UIGraphicsBeginImageContextWithOptions(size, false, 0)
+        GridiconsGenerated.drawGridiconspin(frame: CGRect(origin: CGPoint.zero, size: size))
+        image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
         return image
     }
     
