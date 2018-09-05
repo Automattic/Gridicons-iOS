@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://apps.wordpress.com"
   s.license      = { :type => "GPLv2" }
-  s.author       = { "James Frost" => "james.frost@automattic.com" }
+  s.author       = { "Automattic" => "mobile@automattic.com" }
   s.social_media_url   = "http://twitter.com/WordPressiOS"
 
   s.platform     = :ios, "9.0"
