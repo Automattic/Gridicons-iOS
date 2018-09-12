@@ -12370,34 +12370,36 @@ class GridiconsGenerated: NSObject {
         context.restoreGState()
     }
     
-    class func drawGridiconspin(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 18, height: 18), resizing: ResizingBehavior = .aspectFit) {
+    class func drawGridiconspin(frame targetFrame: CGRect = CGRect(x: 0, y: 0, width: 14, height: 20), resizing: ResizingBehavior = .aspectFit) {
         
         let context = UIGraphicsGetCurrentContext()!
         
         /// Resize to Target Frame
         context.saveGState()
-        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 18, height: 18), target: targetFrame)
+        let resizedFrame = resizing.apply(rect: CGRect(x: 0, y: 0, width: 14, height: 20), target: targetFrame)
         context.translateBy(x: resizedFrame.minX, y: resizedFrame.minY)
-        context.scaleBy(x: resizedFrame.width / 18, y: resizedFrame.height / 18)
+        context.scaleBy(x: resizedFrame.width / 14, y: resizedFrame.height / 20)
         
         /// gridicons-pin
         let bezierPath = UIBezierPath()
-        bezierPath.move(to: CGPoint(x: 5.55, y: 7.98))
-        bezierPath.addLine(to: CGPoint(x: 9.98, y: 3.58))
-        bezierPath.addCurve(to: CGPoint(x: 9.98, y: 0.72), controlPoint1: CGPoint(x: 9.15, y: 2.76), controlPoint2: CGPoint(x: 9.15, y: 1.53))
-        bezierPath.addLine(to: CGPoint(x: 10.7, y: 0))
-        bezierPath.addLine(to: CGPoint(x: 18, y: 7.26))
-        bezierPath.addLine(to: CGPoint(x: 17.28, y: 7.87))
-        bezierPath.addCurve(to: CGPoint(x: 14.4, y: 7.87), controlPoint1: CGPoint(x: 16.46, y: 8.69), controlPoint2: CGPoint(x: 15.22, y: 8.69))
-        bezierPath.addLine(to: CGPoint(x: 9.98, y: 12.27))
-        bezierPath.addCurve(to: CGPoint(x: 9.36, y: 17.28), controlPoint1: CGPoint(x: 10.9, y: 13.81), controlPoint2: CGPoint(x: 10.7, y: 15.85))
-        bezierPath.addLine(to: CGPoint(x: 5.76, y: 13.7))
-        bezierPath.addLine(to: CGPoint(x: 2.88, y: 16.57))
-        bezierPath.addCurve(to: CGPoint(x: 0, y: 18), controlPoint1: CGPoint(x: 1.85, y: 17.39), controlPoint2: CGPoint(x: 0.82, y: 17.8))
-        bezierPath.addCurve(to: CGPoint(x: 1.44, y: 15.14), controlPoint1: CGPoint(x: 0.21, y: 17.08), controlPoint2: CGPoint(x: 0.72, y: 16.16))
-        bezierPath.addLine(to: CGPoint(x: 4.32, y: 12.27))
-        bezierPath.addLine(to: CGPoint(x: 0.72, y: 8.69))
-        bezierPath.addCurve(to: CGPoint(x: 5.55, y: 7.98), controlPoint1: CGPoint(x: 1.85, y: 7.26), controlPoint2: CGPoint(x: 3.91, y: 7.06))
+        bezierPath.move(to: CGPoint(x: 14, y: 15))
+        bezierPath.addCurve(to: CGPoint(x: 11, y: 10.08), controlPoint1: CGPoint(x: 14, y: 12.96), controlPoint2: CGPoint(x: 12.81, y: 11.16))
+        bezierPath.addLine(to: CGPoint(x: 11, y: 3))
+        bezierPath.addLine(to: CGPoint(x: 11.5, y: 3))
+        bezierPath.addCurve(to: CGPoint(x: 13, y: 1.5), controlPoint1: CGPoint(x: 12.33, y: 3), controlPoint2: CGPoint(x: 13, y: 2.33))
+        bezierPath.addCurve(to: CGPoint(x: 11.5, y: 0), controlPoint1: CGPoint(x: 13, y: 0.67), controlPoint2: CGPoint(x: 12.33, y: 0))
+        bezierPath.addLine(to: CGPoint(x: 2.5, y: 0))
+        bezierPath.addCurve(to: CGPoint(x: 1, y: 1.5), controlPoint1: CGPoint(x: 1.67, y: 0), controlPoint2: CGPoint(x: 1, y: 0.67))
+        bezierPath.addCurve(to: CGPoint(x: 2.5, y: 3), controlPoint1: CGPoint(x: 1, y: 2.33), controlPoint2: CGPoint(x: 1.67, y: 3))
+        bezierPath.addLine(to: CGPoint(x: 3, y: 3))
+        bezierPath.addLine(to: CGPoint(x: 3, y: 10.08))
+        bezierPath.addCurve(to: CGPoint(x: 0, y: 15), controlPoint1: CGPoint(x: 1.19, y: 11.16), controlPoint2: CGPoint(x: 0, y: 12.96))
+        bezierPath.addLine(to: CGPoint(x: 6, y: 15))
+        bezierPath.addLine(to: CGPoint(x: 6, y: 19))
+        bezierPath.addCurve(to: CGPoint(x: 7, y: 20), controlPoint1: CGPoint(x: 6, y: 19.55), controlPoint2: CGPoint(x: 6.45, y: 20))
+        bezierPath.addCurve(to: CGPoint(x: 8, y: 19), controlPoint1: CGPoint(x: 7.55, y: 20), controlPoint2: CGPoint(x: 8, y: 19.55))
+        bezierPath.addLine(to: CGPoint(x: 8, y: 15))
+        bezierPath.addLine(to: CGPoint(x: 14, y: 15))
         bezierPath.close()
         context.saveGState()
         bezierPath.usesEvenOddFillRule = true
