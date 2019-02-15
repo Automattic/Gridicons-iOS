@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/Automattic/Gridicons-iOS.svg?branch=develop)](https://travis-ci.org/Automattic/Gridicons-iOS)
+[![CircleCI](https://circleci.com/gh/Automattic/Gridicons-iOS.svg?style=svg)](https://circleci.com/gh/Automattic/Gridicons-iOS)
 [![Version](https://img.shields.io/cocoapods/v/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
 [![License](https://img.shields.io/cocoapods/l/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
 [![Platform](https://img.shields.io/cocoapods/p/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
