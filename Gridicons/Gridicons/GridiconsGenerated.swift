@@ -12480,27 +12480,10 @@ class GridiconsGenerated: NSObject {
             shape.addLine(to: CGPoint(x: 11, y: 11))
             shape.close()
 
-            /// Shape (Outline Mask)
             context.saveGState()
-            shape.addClip()
-
-            /// Rectangle
-            let rectangle = UIBezierPath()
-            rectangle.move(to: CGPoint.zero)
-            rectangle.addLine(to: CGPoint(x: 24, y: 0))
-            rectangle.addLine(to: CGPoint(x: 24, y: 24))
-            rectangle.addLine(to: CGPoint(x: 0, y: 24))
-            rectangle.addLine(to: CGPoint.zero)
-            rectangle.close()
-            context.saveGState()
-            context.translateBy(x: -2, y: -1)
-            UIColor(hue: 0.583, saturation: 0.09, brightness: 0.698, alpha: 1).setFill()
-            rectangle.fill()
-            context.restoreGState()
-
-            context.restoreGState()
-            // End Shape (Outline Mask)
-
+            shape.usesEvenOddFillRule = true
+            UIColor.black.setFill()
+            shape.fill()
             context.restoreGState()
         }
 
