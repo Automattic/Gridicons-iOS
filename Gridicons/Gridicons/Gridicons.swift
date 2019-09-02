@@ -116,6 +116,7 @@ public enum GridiconType: Int {
     case heading
     case grid
     case globe
+    case gift
     case fullscreenExit
     case fullscreen
     case folderMultiple
@@ -450,6 +451,8 @@ public final class Gridicon: NSObject {
             return GridiconsGenerated.imageOfGridiconsgrid(size: size)
         case .globe:
             return GridiconsGenerated.imageOfGridiconsglobe(size: size)
+        case .gift:
+            return GridiconsGenerated.imageOfGridiconsgift(size: size)
         case .fullscreen:
             return GridiconsGenerated.imageOfGridiconsfullscreen(size: size)
         case .fullscreenExit:
