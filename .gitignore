@@ -28,3 +28,6 @@ xcuserdata/
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
+
+# Bundler
+vendor/
