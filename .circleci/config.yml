@@ -2,19 +2,47 @@ version: 2.1
 
 orbs:
   # This uses the iOS Orb located at https://github.com/wordpress-mobile/circleci-orbs
-  ios: wordpress-mobile/ios@0.0.22
+  ios: wordpress-mobile/ios@0.0.32
+
+commands:
+  load-chruby:
+    steps:
+      - run:
+          name: Load chruby
+          command: |
+            # Force chruby to load to work around CircleCI Xcode 11 image issue
+            echo 'source /usr/local/opt/chruby/share/chruby/chruby.sh && chruby 2.5.5' >> $BASH_ENV
+
+jobs:
+  test-pod:
+    executor:
+      name: ios/default
+      xcode-version: "11.0.0"
+    steps:
+      - checkout
+      - load-chruby
+      - ios/test:
+          workspace: Gridicons.xcworkspace
+          scheme: Gridicons
+          device: iPhone 11
+          xcode-version: "11.0.0"
+          ios-version: "13"
+          bundle-install: false
+          pod-install: false
+  validate-pod:
+    executor:
+      name: ios/default
+      xcode-version: "11.0.0"
+    steps:
+      - ios/validate-podspec:
+          name: Validate Podspec
+          podspec-path: Gridicons.podspec
 
 workflows:
   test_and_validate:
     jobs:
-      - ios/test:
-          name: Test
-          workspace: Gridicons.xcworkspace
-          scheme: Gridicons
-          device: iPhone XS
-          ios-version: "12.1"
-          bundle-install: false
-          pod-install: false
-      - ios/validate-podspec:
-          name: Validate Podspec
-          podspec-path: Gridicons.podspec
+      - test-pod:
+        name: "Test"
+      - validate-pod:
+        name: "Validate Podspec"
+
