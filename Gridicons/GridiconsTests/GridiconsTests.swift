@@ -57,4 +57,14 @@ class GridiconsTests: XCTestCase {
             let _ = iconTypes.map { Gridicon.iconOfType($0) }
         }
     }
+
+    func testAllIconsCanBeLoaded() {
+        var iconTypes = [GridiconType]()
+        while let type = GridiconType(rawValue: iconTypes.count) {
+            iconTypes.append(type)
+        }
+
+        // An error will be thrown if instantiating an icon fails
+        iconTypes.forEach({ let _ = Gridicon.iconOfType($0) })
+    }
 }
