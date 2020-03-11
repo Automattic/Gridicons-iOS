@@ -1,9 +1,6 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
 
-
-
-// swiftlint:disable file_length identifier_name line_length nesting type_body_length type_name
 @objc
 public enum GridiconType: Int {
     case addImage
@@ -410,13 +407,17 @@ extension GridiconType {
 
   var icon: UIImage {
     let bundle = Bundle(for: BundleToken.self)
-    let image = UIImage(named: name, in: bundle, compatibleWith: nil)
+
+    guard let url = bundle.url(forResource: "Gridicons", withExtension: "bundle"),
+        let assetBundle = Bundle(url: url) else {
+            fatalError("Unable to load Gridicons assets")
+    }
+
+    let image = UIImage(named: name, in: assetBundle, compatibleWith: nil)
     guard let result = image else { fatalError("Unable to load image named \(name).") }
     return result
   }
 }
-
-// swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
 private final class BundleToken {}
 

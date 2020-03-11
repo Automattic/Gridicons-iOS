@@ -35,6 +35,7 @@
 		17A824B81CB27802004771DB /* GridiconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridiconsTests.swift; sourceTree = "<group>"; };
 		17A824BA1CB27802004771DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17EB89C924198366009565C7 /* Gridicons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gridicons.xcassets; sourceTree = "<group>"; };
+		17EB89CB24199235009565C7 /* Gridicons.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gridicons.stencil; path = ../../Gridicons.stencil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				1704C1FB1CAF08EF00F991DE /* Gridicons.h */,
 				1704C2051CAF0ABF00F991DE /* Gridicons.swift */,
 				1704C2031CAF090400F991DE /* GridiconsGenerated.swift */,
+				17EB89CB24199235009565C7 /* Gridicons.stencil */,
 				1704C1FD1CAF08EF00F991DE /* Info.plist */,
 				17EB89C924198366009565C7 /* Gridicons.xcassets */,
 			);
@@ -280,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

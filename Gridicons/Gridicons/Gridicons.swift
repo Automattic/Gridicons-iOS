@@ -13,6 +13,7 @@ public final class Gridicon: NSObject {
 
     /// - returns: A template image of the specified Gridicon type, at the default size.
     ///
+    @objc
     public static func iconOfType(_ type: GridiconType) -> UIImage {
         return iconOfType(type, withSize: defaultSize)
     }
@@ -20,6 +21,7 @@ public final class Gridicon: NSObject {
     // These are two separate methods (rather than one method with a default argument) because Obj-C
 
     /// - returns: A template image of the specified Gridicon type, at the specified size.
+    @objc
     public static func iconOfType(_ type: GridiconType, withSize size: CGSize) -> UIImage {
         if let icon = cachedIconOfType(type, withSize: size) {
             return icon
