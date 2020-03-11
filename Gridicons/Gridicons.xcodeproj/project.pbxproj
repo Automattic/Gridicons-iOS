@@ -12,6 +12,7 @@
 		1704C2061CAF0ABF00F991DE /* Gridicons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1704C2051CAF0ABF00F991DE /* Gridicons.swift */; };
 		17A824B91CB27802004771DB /* GridiconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A824B81CB27802004771DB /* GridiconsTests.swift */; };
 		17A824BB1CB27802004771DB /* Gridicons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1704C1F81CAF08EF00F991DE /* Gridicons.framework */; };
+		17EB89CA24198366009565C7 /* Gridicons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17EB89C924198366009565C7 /* Gridicons.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		17A824B61CB27802004771DB /* GridiconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridiconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A824B81CB27802004771DB /* GridiconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridiconsTests.swift; sourceTree = "<group>"; };
 		17A824BA1CB27802004771DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17EB89C924198366009565C7 /* Gridicons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Gridicons.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				1704C2051CAF0ABF00F991DE /* Gridicons.swift */,
 				1704C2031CAF090400F991DE /* GridiconsGenerated.swift */,
 				1704C1FD1CAF08EF00F991DE /* Info.plist */,
+				17EB89C924198366009565C7 /* Gridicons.xcassets */,
 			);
 			path = Gridicons;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EB89CA24198366009565C7 /* Gridicons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +358,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gridicons/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.Gridicons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +380,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Gridicons/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.Gridicons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = GridiconsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = GridiconsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
