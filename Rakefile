@@ -1,4 +1,4 @@
-SWIFTGEN_VERSION="5.1.1"
+SWIFTGEN_VERSION="6.1.0"
 
 require 'fileutils'
 require 'tmpdir'
