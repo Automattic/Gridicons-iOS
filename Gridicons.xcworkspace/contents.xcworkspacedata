@@ -4,7 +4,4 @@
    <FileRef
       location = "group:Gridicons/Gridicons.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:GridiconsDemo/GridiconsDemo.xcodeproj">
-   </FileRef>
 </Workspace>
