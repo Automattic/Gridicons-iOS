@@ -12,7 +12,6 @@
 		1704C2191CAF0D7E00F991DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C2171CAF0D7E00F991DE /* Main.storyboard */; };
 		1704C21B1CAF0D7E00F991DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21A1CAF0D7E00F991DE /* Assets.xcassets */; };
 		1704C21E1CAF0D7E00F991DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21C1CAF0D7E00F991DE /* LaunchScreen.storyboard */; };
-		B995416948DE3E1C1FA8C52A /* Pods_GridiconsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8C6CDC6DF8803274EF3B18 /* Pods_GridiconsDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,9 +35,6 @@
 		1704C21A1CAF0D7E00F991DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1704C21D1CAF0D7E00F991DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1704C21F1CAF0D7E00F991DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A11E8105A8DBFDEA86932603 /* Pods-GridiconsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridiconsDemo.release.xcconfig"; path = "../GridiconsDemo/Pods/Target Support Files/Pods-GridiconsDemo/Pods-GridiconsDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BD8C6CDC6DF8803274EF3B18 /* Pods_GridiconsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GridiconsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F57A7DB97A0D6F2D10486E10 /* Pods-GridiconsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GridiconsDemo.debug.xcconfig"; path = "../GridiconsDemo/Pods/Target Support Files/Pods-GridiconsDemo/Pods-GridiconsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B995416948DE3E1C1FA8C52A /* Pods_GridiconsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +53,6 @@
 			children = (
 				1704C2121CAF0D7E00F991DE /* GridiconsDemo */,
 				1704C2111CAF0D7E00F991DE /* Products */,
-				2B0C64A00A42FE2900D2461A /* Pods */,
-				36F9A0419071CA447C704B27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,24 +77,6 @@
 			path = GridiconsDemo;
 			sourceTree = "<group>";
 		};
-		2B0C64A00A42FE2900D2461A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F57A7DB97A0D6F2D10486E10 /* Pods-GridiconsDemo.debug.xcconfig */,
-				A11E8105A8DBFDEA86932603 /* Pods-GridiconsDemo.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		36F9A0419071CA447C704B27 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BD8C6CDC6DF8803274EF3B18 /* Pods_GridiconsDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,12 +84,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1704C2221CAF0D7E00F991DE /* Build configuration list for PBXNativeTarget "GridiconsDemo" */;
 			buildPhases = (
-				88A209BD23754BD841E7E4A3 /* [CP] Check Pods Manifest.lock */,
 				1704C20C1CAF0D7E00F991DE /* Sources */,
 				1704C20D1CAF0D7E00F991DE /* Frameworks */,
 				1704C20E1CAF0D7E00F991DE /* Resources */,
 				17A824C61CB2865E004771DB /* Embed Frameworks */,
-				218FA7DBF6151F22AD105AD1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,49 +144,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		218FA7DBF6151F22AD105AD1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GridiconsDemo/Pods-GridiconsDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Gridicons/Gridicons.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gridicons.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GridiconsDemo/Pods-GridiconsDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88A209BD23754BD841E7E4A3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GridiconsDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1704C20C1CAF0D7E00F991DE /* Sources */ = {
@@ -359,7 +289,6 @@
 		};
 		1704C2231CAF0D7E00F991DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F57A7DB97A0D6F2D10486E10 /* Pods-GridiconsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GridiconsDemo/Info.plist;
@@ -373,7 +302,6 @@
 		};
 		1704C2241CAF0D7E00F991DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A11E8105A8DBFDEA86932603 /* Pods-GridiconsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GridiconsDemo/Info.plist;

@@ -1,9 +1,0 @@
-project 'GridiconsDemo.xcodeproj'
-
-platform :ios, '10.0'
-
-target 'GridiconsDemo' do
-  use_frameworks!
-
-  pod 'Gridicons', :path => '../'
-end
