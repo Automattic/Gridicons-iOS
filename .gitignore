@@ -20,6 +20,8 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
+Pods/
+vendor/
 
 ## Obj-C/Swift specific
 *.hmap
@@ -30,4 +32,3 @@ timeline.xctimeline
 playground.xcworkspace
 
 # Bundler
-vendor/
