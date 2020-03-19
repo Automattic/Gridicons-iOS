@@ -23,11 +23,15 @@ First, import the framework:
 
 Getting a `UIImage` of a Gridicon is as simple as:
 
-`let icon = Gridicon.iconOfType(.pages)`
+`let icon = UIImage.gridicon(.pages)`
+
+With type inference, this can be shortened further:
+
+`icon = .gridicon(.pages)`
 
 You can optionally specify a size (default is 24 x 24):
 
-`let icon = Gridicon.iconOfType(.pages, withSize: CGSize(width: 100, height: 100))`
+`let icon = UIImage.gridicon(.pages, size: CGSize(width: 100, height: 100))`
 
 The images that the framework produces use the `AlwaysTemplate` rendering mode, so you can tint them however you like.
 

@@ -69,7 +69,7 @@ extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
         
-        cell.imageView.image = Gridicon.iconOfType(iconTypes[indexPath.row], withSize: iconSize)
+        cell.imageView.image = .gridicon(iconTypes[indexPath.row], size: iconSize)
         
         return cell
     }
