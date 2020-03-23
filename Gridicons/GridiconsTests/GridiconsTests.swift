@@ -17,29 +17,29 @@ class GridiconsTests: XCTestCase {
     }
     
     func testIconsAreCached() {
-        let icon = Gridicon.iconOfType(.addImage)
-        let icon2 = Gridicon.iconOfType(.addImage)
+        let icon: UIImage = .gridicon(.addImage)
+        let icon2: UIImage = .gridicon(.addImage)
         
         XCTAssertEqual(icon, icon2)
         
         Gridicon.clearCache()
-        let icon3 = Gridicon.iconOfType(.addImage)
+        let icon3: UIImage = .gridicon(.addImage)
         
         XCTAssertNotEqual(icon2, icon3)
     }
     
     func testIconsAreTheCorrectSize() {
-        let icon = Gridicon.iconOfType(.domains)
+        let icon: UIImage = .gridicon(.domains)
         XCTAssertEqual(icon.size, Gridicon.defaultSize)
         
         let size = CGSize(width: 250, height: 250)
-        let icon2 = Gridicon.iconOfType(.userCircle, withSize: size)
+        let icon2: UIImage = .gridicon(.userCircle, size: size)
         XCTAssertEqual(icon2.size, size)
     }
     
     func testSingleIconGenerationPerformance() {
         self.measure {
-            let _ = Gridicon.iconOfType(.pages)
+            let _ = UIImage.gridicon(.pages)
         }
     }
     
@@ -54,7 +54,17 @@ class GridiconsTests: XCTestCase {
         }()
         
         self.measure {
-            let _ = iconTypes.map { Gridicon.iconOfType($0) }
+            let _ = iconTypes.map { UIImage.gridicon($0) }
         }
+    }
+
+    func testAllIconsCanBeLoaded() {
+        var iconTypes = [GridiconType]()
+        while let type = GridiconType(rawValue: iconTypes.count) {
+            iconTypes.append(type)
+        }
+
+        // An error will be thrown if instantiating an icon fails
+        iconTypes.forEach({ let _ = UIImage.gridicon($0) })
     }
 }

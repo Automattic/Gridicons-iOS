@@ -1,3 +1,4 @@
 source 'https://rubygems.org' do
-  gem 'cocoapods', '1.5.3'
+  gem 'rake', '~> 13'
+  gem 'cocoapods', '~> 1.8.0'
 end

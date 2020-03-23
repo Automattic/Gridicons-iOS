@@ -1,0 +1,54 @@
+// Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
+{% if catalogs %}
+{% set enumName %}{{param.enumName|default:"GridiconType"}}{% endset %}
+
+{% macro enumBlock assets sp %}
+{{sp}}  {% call casesBlock assets sp %}
+{% endmacro %}
+{% macro casesBlock assets sp %}
+{{sp}}  {% for asset in assets %}
+{{sp}}  {% if asset.type == "image" %}
+{{sp}}  case {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|replace:"Ios","iOS"|escapeReservedKeywords}}
+{{sp}}  {% endif %}
+{{sp}}  {% endfor %}
+{% endmacro %}
+{% macro assetNamesBlock assets sp %}
+{{sp}}  {% for asset in assets %}
+{{sp}}  {% if asset.type == "image" %}
+{{sp}}  case .{{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|replace:"Ios","iOS"|escapeReservedKeywords}}: return "{{asset.name}}"
+{{sp}}  {% endif %}
+{{sp}}  {% endfor %}
+{% endmacro %}
+
+@objc
+public enum {{enumName}}: Int {
+    {% call enumBlock catalogs.first.assets "  " %}
+}
+
+extension {{enumName}} {
+  var name: String {
+    switch self {
+        {% call assetNamesBlock catalogs.first.assets "  " %}
+    }
+  }
+
+  var icon: UIImage {
+    var bundle = Bundle(for: BundleToken.self)
+
+    if let url = bundle.url(forResource: "Gridicons", withExtension: "bundle"),
+        let assetBundle = Bundle(url: url) {
+        // When loaded through CocoaPods, assets reside in a separate resource bundle
+        bundle = assetBundle
+    }
+
+    let image = UIImage(named: name, in: bundle, compatibleWith: nil)
+    guard let result = image else { fatalError("Unable to load image named \(name).") }
+    return result
+  }
+}
+
+private final class BundleToken {}
+
+{% else %}
+// No assets found
+{% endif %}
