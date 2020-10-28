@@ -178,6 +178,7 @@ public enum GridiconType: Int {
     case statsUp
     case stats
     case status
+    case story
     case strikethrough
     case sync
     case tablet
@@ -380,6 +381,7 @@ extension GridiconType {
     case .statsUp: return "stats-up"
     case .stats: return "stats"
     case .status: return "status"
+    case .story: return "story"
     case .strikethrough: return "strikethrough"
     case .sync: return "sync"
     case .tablet: return "tablet"
