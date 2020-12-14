@@ -126,6 +126,7 @@ public enum GridiconType: Int {
     case noticeOutline
     case notice
     case offline
+    case p2
     case pages
     case pause
     case pencil
@@ -329,6 +330,7 @@ extension GridiconType {
     case .noticeOutline: return "notice-outline"
     case .notice: return "notice"
     case .offline: return "offline"
+    case .p2: return "p2"
     case .pages: return "pages"
     case .pause: return "pause"
     case .pencil: return "pencil"
