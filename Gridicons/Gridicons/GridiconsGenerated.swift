@@ -152,6 +152,7 @@ public enum GridiconType: Int {
     case readerFollowing
     case reader
     case reblog
+    case recent
     case redo
     case refresh
     case refund
@@ -189,6 +190,7 @@ public enum GridiconType: Int {
     case thumbsUp
     case time
     case trash
+    case trending
     case trophy
     case types
     case underline
@@ -356,6 +358,7 @@ extension GridiconType {
     case .readerFollowing: return "reader-following"
     case .reader: return "reader"
     case .reblog: return "reblog"
+    case .recent: return "recent"
     case .redo: return "redo"
     case .refresh: return "refresh"
     case .refund: return "refund"
@@ -393,6 +396,7 @@ extension GridiconType {
     case .thumbsUp: return "thumbs-up"
     case .time: return "time"
     case .trash: return "trash"
+    case .trending: return "trending"
     case .trophy: return "trophy"
     case .types: return "types"
     case .underline: return "underline"
