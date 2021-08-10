@@ -3,6 +3,7 @@
 # Xcode
 
 ## Build generated
+.build
 build/
 DerivedData/
 
@@ -31,4 +32,7 @@ vendor/
 timeline.xctimeline
 playground.xcworkspace
 
-# Bundler
+# Fastlane
+fastlane/report.xml
+fastlane/test_output
+fastlane/README.md
