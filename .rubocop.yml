@@ -1,0 +1,18 @@
+# Opt in to new cops by default
+AllCops:
+  NewCops: enable
+
+# Allow the Podspec filename to match the project
+Naming/FileName:
+  Exclude:
+    - 'Gridicons.podspec'
+
+# Override the maximum block length (some pods have long definitions)
+Metrics/BlockLength:
+  Max: 256
+
+# Override the maximum line length
+Layout/LineLength:
+  Max: 160
+
+require: rubocop-rake
