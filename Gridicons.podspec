@@ -1,26 +1,28 @@
-Pod::Spec.new do |s|
-  s.name          = "Gridicons"
-  s.version       = "1.1.0"
+# frozen_string_literal: true
 
-  s.summary       = "Gridicons is a tiny framework which generates Gridicon images at any resolution."
+Pod::Spec.new do |s|
+  s.name          = 'Gridicons'
+  s.version       = '1.1.0'
+
+  s.summary       = 'Gridicons is a tiny framework which generates Gridicon images at any resolution.'
   s.description   = <<-DESC
                     This framework contains a pack of icons – mainly ones used in the WordPress apps –
                     that can be reused and scaled at any resolution.
-                  DESC
+  DESC
 
-  s.homepage      = "https://github.com/Automattic/Gridicons-iOS"
-  s.license       = { :type => "GPLv2", :file => "LICENSE.md" }
-  s.author        = { "Automattic" => "mobile@automattic.com" }
-  s.social_media_url = "https://twitter.com/automattic"
+  s.homepage      = 'https://github.com/Automattic/Gridicons-iOS'
+  s.license       = { type: 'GPLv2', file: 'LICENSE.md' }
+  s.author        = { 'Automattic' => 'mobile@automattic.com' }
+  s.social_media_url = 'https://twitter.com/automattic'
 
-  s.platform      = :ios, "11.0"
+  s.platform      = :ios, '11.0'
   s.swift_version = '5.0'
 
-  s.source        = { :git => "https://github.com/Automattic/Gridicons-iOS.git", :tag => s.version.to_s }
-  s.source_files  = "Gridicons/Gridicons/**/*.swift"
+  s.source        = { git: 'https://github.com/Automattic/Gridicons-iOS.git', tag: s.version.to_s }
+  s.source_files  = 'Gridicons/Gridicons/**/*.swift'
   s.resource_bundles = {
-    'Gridicons': [
-      'Gridicons/Gridicons/*.{xcassets}',
+    Gridicons: [
+      'Gridicons/Gridicons/*.{xcassets}'
     ]
   }
 end
