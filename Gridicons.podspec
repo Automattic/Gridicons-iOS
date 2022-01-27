@@ -25,4 +25,5 @@ Pod::Spec.new do |s|
       'Gridicons/Gridicons/*.{xcassets}'
     ]
   }
+  s.resources = 'Gridicons/Gridicons/*.{xcassets}'
 end
