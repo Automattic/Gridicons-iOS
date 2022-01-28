@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name          = 'Gridicons'
-  s.version       = '1.1.0'
+  s.version       = '1.2.0'
 
   s.summary       = 'Gridicons is a tiny framework which generates Gridicon images at any resolution.'
   s.description   = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source        = { git: 'https://github.com/Automattic/Gridicons-iOS.git', tag: s.version.to_s }
   s.source_files  = 'Gridicons/Gridicons/**/*.swift'
   s.resource_bundles = {
-    Gridicons: [
+    GridiconsAssets: [
       'Gridicons/Gridicons/*.{xcassets}'
     ]
   }
