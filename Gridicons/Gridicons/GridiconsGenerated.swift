@@ -412,7 +412,7 @@ extension GridiconType {
   var icon: UIImage {
     var bundle = Bundle(for: BundleToken.self)
 
-    if let url = bundle.url(forResource: "Gridicons", withExtension: "bundle"),
+    if let url = bundle.url(forResource: "GridiconsAssets", withExtension: "bundle"),
         let assetBundle = Bundle(url: url) {
         // When loaded through CocoaPods, assets reside in a separate resource bundle
         bundle = assetBundle
