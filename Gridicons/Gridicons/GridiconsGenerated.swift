@@ -1,5 +1,6 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
 
+import UIKit
 
 @objc
 public enum GridiconType: Int {
@@ -410,6 +411,9 @@ extension GridiconType {
   }
 
   var icon: UIImage {
+#if SWIFT_PACKAGE
+    let bundle = Bundle.module
+#else
     var bundle = Bundle(for: BundleToken.self)
 
     if let url = bundle.url(forResource: "GridiconsAssets", withExtension: "bundle"),
@@ -417,6 +421,7 @@ extension GridiconType {
         // When loaded through CocoaPods, assets reside in a separate resource bundle
         bundle = assetBundle
     }
+#endif
 
     let image = UIImage(named: name, in: bundle, compatibleWith: nil)
     guard let result = image else { fatalError("Unable to load image named \(name).") }
