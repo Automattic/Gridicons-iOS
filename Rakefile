@@ -62,7 +62,7 @@ end
 
 def swiftgen(args)
   args = [swiftgen_bin] + args
-  sh(["#{args.join(' ')} > Gridicons/Gridicons/GridiconsGenerated.swift"])
+  sh("#{args.join(' ')} > Gridicons/Gridicons/GridiconsGenerated.swift")
 end
 
 def swiftgen_bin
