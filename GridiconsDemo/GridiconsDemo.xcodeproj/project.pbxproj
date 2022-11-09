@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		1704C2191CAF0D7E00F991DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C2171CAF0D7E00F991DE /* Main.storyboard */; };
 		1704C21B1CAF0D7E00F991DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21A1CAF0D7E00F991DE /* Assets.xcassets */; };
 		1704C21E1CAF0D7E00F991DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1704C21C1CAF0D7E00F991DE /* LaunchScreen.storyboard */; };
+		4A877B6D2912536900E6C032 /* Gridicons in Frameworks */ = {isa = PBXBuildFile; productRef = 4A877B6C2912536900E6C032 /* Gridicons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		1704C21A1CAF0D7E00F991DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1704C21D1CAF0D7E00F991DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1704C21F1CAF0D7E00F991DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A877B6A2912535E00E6C032 /* Gridicons-iOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Gridicons-iOS"; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A877B6D2912536900E6C032 /* Gridicons in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +54,10 @@
 		1704C2071CAF0D7E00F991DE = {
 			isa = PBXGroup;
 			children = (
+				4A877B692912535E00E6C032 /* Packages */,
 				1704C2121CAF0D7E00F991DE /* GridiconsDemo */,
 				1704C2111CAF0D7E00F991DE /* Products */,
+				4A877B6B2912536900E6C032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +82,21 @@
 			path = GridiconsDemo;
 			sourceTree = "<group>";
 		};
+		4A877B692912535E00E6C032 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				4A877B6A2912535E00E6C032 /* Gridicons-iOS */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		4A877B6B2912536900E6C032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +114,9 @@
 			dependencies = (
 			);
 			name = GridiconsDemo;
+			packageProductDependencies = (
+				4A877B6C2912536900E6C032 /* Gridicons */,
+			);
 			productName = GridiconsDemo;
 			productReference = 1704C2101CAF0D7E00F991DE /* GridiconsDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -282,7 +305,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -295,7 +319,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GridiconsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -308,7 +335,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GridiconsDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.automattic.GridiconsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -337,6 +367,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A877B6C2912536900E6C032 /* Gridicons */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Gridicons;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1704C2081CAF0D7E00F991DE /* Project object */;
 }

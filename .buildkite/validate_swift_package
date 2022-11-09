@@ -1,0 +1,11 @@
+#!/bin/bash -eu
+#
+# Any arguments passed to this script will be passed through to `fastlane`.
+# If no argument is passed, the `test` lane will be called by default.
+
+echo "--- :rubygems: Setting up Gems"
+install_gems
+
+echo "--- :test_tube: Building and testing the Swift Package"
+
+bundle exec fastlane "${@:-test}"

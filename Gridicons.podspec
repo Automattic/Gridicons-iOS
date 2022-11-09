@@ -25,4 +25,8 @@ Pod::Spec.new do |s|
       'Gridicons/Gridicons/*.{xcassets}'
     ]
   }
+
+  s.test_spec do |test|
+    test.source_files = ['Gridicons/GridiconsTests/**/*.{swift}']
+  end
 end
