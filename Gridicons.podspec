@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
 
   s.source        = { git: 'https://github.com/Automattic/Gridicons-iOS.git', tag: s.version.to_s }
-  s.source_files  = 'Gridicons/Gridicons/**/*.swift'
+  s.source_files  = 'Sources/Gridicons/**/*.swift'
   s.resource_bundles = {
     GridiconsAssets: [
-      'Gridicons/Gridicons/*.{xcassets}'
+      'Sources/Gridicons/Resources/*.{xcassets}'
     ]
   }
 
   s.test_spec do |test|
-    test.source_files = ['Gridicons/GridiconsTests/**/*.{swift}']
+    test.source_files = ['Tests/GridiconsTests/**/*.{swift}']
   end
 end

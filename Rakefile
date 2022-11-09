@@ -52,7 +52,7 @@ CLOBBER << 'vendor'
 
 desc 'Regenerates the master Gridicon enum from PDF assets'
 task gen: %w[dependencies:gen:check] do
-  swiftgen %w[xcassets -p Gridicons.stencil Gridicons/Gridicons/Gridicons.xcassets]
+  swiftgen %w[xcassets -p Gridicons.stencil Sources/Gridicons/Resources/Gridicons.xcassets]
   puts 'Done!'
 end
 
@@ -62,7 +62,7 @@ end
 
 def swiftgen(args)
   args = [swiftgen_bin] + args
-  sh("#{args.join(' ')} > Gridicons/Gridicons/GridiconsGenerated.swift")
+  sh("#{args.join(' ')} > Sources/Gridicons/GridiconsGenerated.swift")
 end
 
 def swiftgen_bin

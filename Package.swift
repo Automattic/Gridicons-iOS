@@ -13,19 +13,10 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(
-            name: "Gridicons",
-            path: "Gridicons/Gridicons",
-            sources: ["Gridicons.swift", "GridiconsGenerated.swift"],
-            resources: [
-                .process("Gridicons.xcassets")
-            ]
-        ),
+        .target(name: "Gridicons"),
         .testTarget(
             name: "GridiconsTests",
-            dependencies: [.target(name: "Gridicons")],
-            path: "Gridicons/GridiconsTests",
-            sources: ["GridiconsTests.swift"]
+            dependencies: [.target(name: "Gridicons")]
         )
     ]
 )
