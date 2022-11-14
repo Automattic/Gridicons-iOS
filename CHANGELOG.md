@@ -47,3 +47,4 @@ _None._
 ### Internal Changes
 
 - Add this changelog file. [#70]
+- Reorganise the repo to use SPM's folder structure. [#72]
