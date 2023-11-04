@@ -8,7 +8,7 @@ platform :ios do
     run_tests(
       package_path: '.',
       scheme: 'Gridicons',
-      devices: ['iPhone 14'],
+      devices: ['iPhone 15'],
       deployment_target_version: '14.5',
       prelaunch_simulator: true,
       buildlog_path: File.join(__dir__, '.build', 'logs'),
