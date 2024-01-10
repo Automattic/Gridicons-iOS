@@ -36,7 +36,7 @@ namespace :dependencies do
           sh "unzip -q #{zipfile} -d #{zipdir}"
           Dir.chdir(zipdir) do
             puts "Copying SwiftGen #{SWIFTGEN_VERSION} into #{swiftgen_path}"
-            FileUtils.remove_entry_secure(swiftgen_path) if Dir.exist?(swiftgen_path)
+            FileUtils.rm_f(swiftgen_path)
             FileUtils.mkdir_p(swiftgen_path.to_s)
             FileUtils.cp_r("#{zipdir}/lib", swiftgen_path.to_s)
             FileUtils.cp_r("#{zipdir}/bin", swiftgen_path.to_s)
