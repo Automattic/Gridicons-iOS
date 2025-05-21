@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 import UIKit
 
 public extension UIImage {
@@ -22,6 +23,15 @@ public extension UIImage {
         Gridicon.cache.setObject(icon, forKey: "\(type.rawValue)-\(size.width)-\(size.height)" as AnyObject)
 
         return icon
+    }
+}
+
+@available(iOS 13.0, *)
+public extension Image {
+    /// - returns: A SwiftUI image of the specified Gridicon type.
+    ///
+    static func gridicon(_ type: GridiconType) -> Image {
+        return type.image
     }
 }
 

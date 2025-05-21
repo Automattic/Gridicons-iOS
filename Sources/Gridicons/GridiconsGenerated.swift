@@ -1,4 +1,5 @@
 // Generated using SwiftGen, by O.Halligon — https://github.com/SwiftGen/SwiftGen
+import SwiftUI
 import UIKit
 
 
@@ -412,6 +413,19 @@ extension GridiconType {
   }
 
   var icon: UIImage {
+    let image = UIImage(named: name, in: bundle(), compatibleWith: nil)
+    guard let result = image else { fatalError("Unable to load image named \(name).") }
+    return result
+  }
+
+  @available(iOS 13.0, *)
+  var image: Image {
+      Image(name, bundle: bundle())
+  }
+}
+
+private extension GridiconType {
+  func bundle() -> Bundle {
 #if SWIFT_PACKAGE
     let bundle = Bundle.module
 #else
@@ -423,10 +437,7 @@ extension GridiconType {
         bundle = assetBundle
     }
 #endif
-
-    let image = UIImage(named: name, in: bundle, compatibleWith: nil)
-    guard let result = image else { fatalError("Unable to load image named \(name).") }
-    return result
+    return bundle
   }
 }
 
