@@ -420,7 +420,7 @@ extension GridiconType {
 
   @available(iOS 13.0, *)
   var image: Image {
-      Image(name, bundle: bundle())
+    Image(name, bundle: bundle())
   }
 }
 
