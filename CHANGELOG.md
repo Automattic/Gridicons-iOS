@@ -39,6 +39,7 @@ _None._
 ### New Features
 
 * Add Swift Package Manager support. [#71]
+* Add SwiftUI Image support. [#82]
 
 ### Bug Fixes
 
