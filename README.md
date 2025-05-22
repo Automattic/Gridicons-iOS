@@ -52,6 +52,14 @@ struct ContentView: View {
 
 The SwiftUI `Image` type also supports the template rendering mode, so you can tint it using the `foregroundStyle` modifier.
 
+## Development
+
+For code changes in `GridiconsGenerated.swift`:
+
+* Edit the `Gridicons.stencil` file to modify the template
+* If you haven't already, run `rake dependencies` to install SwiftGen
+* Run `rake gen` to regenerate the `GridiconsGenerated.swift` file
+
 ## Adding new icons
 
 To add new icons as they're added to the [Gridicons icon set](https://github.com/automattic/gridicons), complete the following steps:
