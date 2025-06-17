@@ -2,7 +2,7 @@
 ---
 
 env:
-  IMAGE_ID: xcode-15.0.1
+  IMAGE_ID: xcode-16.4
 
 common_params:
   plugins: &common_plugins
