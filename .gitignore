@@ -21,7 +21,6 @@ xcuserdata/
 ## Other
 *.moved-aside
 *.xcuserstate
-Pods/
 vendor/
 
 ## Obj-C/Swift specific

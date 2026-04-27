@@ -1,18 +1,17 @@
-[![Version](https://img.shields.io/cocoapods/v/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
-[![License](https://img.shields.io/cocoapods/l/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
-[![Platform](https://img.shields.io/cocoapods/p/Gridicons.svg?style=flat)](http://cocoadocs.org/docsets/Gridicons)
-
 # Gridicons iOS
 
 Gridicons-iOS is a small framework which produces images of the [Gridicons icon set](https://github.com/automattic/gridicons).
 
-The framework can be installed either via CocoaPods:
+## Installation
 
-`pod 'Gridicons', :podspec => 'https://raw.github.com/Automattic/Gridicons-iOS/develop/Gridicons.podspec'`
+The framework is distributed via [Swift Package Manager](https://www.swift.org/package-manager/).
+Add it as a dependency in your `Package.swift`:
 
-or Carthage:
+```swift
+.package(url: "https://github.com/Automattic/Gridicons-iOS.git", from: "1.3.0")
+```
 
-`github 'Automattic/Gridicons-iOS'`
+Or, in Xcode, choose **File → Add Package Dependencies…** and enter `https://github.com/Automattic/Gridicons-iOS.git`.
 
 ## Usage
 
@@ -72,11 +71,11 @@ To add new icons as they're added to the [Gridicons icon set](https://github.com
    * Scales -> Single Scale
 * If you haven't already, run `rake dependencies` to install SwiftGen
 * Run `rake gen` to regenerate the `GridiconsGenerated.swift` file
-* Commit your changes and release a new pod version.
+* Commit your changes and release a new version.
 
 ## Updating existing icons
 
-If you need to update a existing icon, update the PDF in the asset catalog with the new version and release a new pod version.
+If you need to update a existing icon, update the PDF in the asset catalog with the new version and release a new version.
 
 ## License
 

@@ -34,7 +34,7 @@ _None._
 
 ### Breaking Changes
 
-_None._
+* Drop CocoaPods support. The framework is now distributed via Swift Package Manager only. Consumers still on CocoaPods should pin to the last Pod-published tag, `1.3.0-beta.1`.
 
 ### New Features
 

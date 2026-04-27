@@ -56,7 +56,7 @@ private extension GridiconType {
 
     if let url = bundle.url(forResource: "GridiconsAssets", withExtension: "bundle"),
         let assetBundle = Bundle(url: url) {
-        // When loaded through CocoaPods, assets reside in a separate resource bundle
+        // When integrated outside Swift Package Manager, assets may reside in a separate resource bundle
         bundle = assetBundle
     }
 #endif
