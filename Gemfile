@@ -2,7 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'fastlane', '~> 2.189'
+gem 'fastlane', '~> 2.236'
 gem 'rake', '~> 13'
-gem 'rubocop', '~> 1.18'
-gem 'rubocop-rake', '~> 0.6.0'
+gem 'rubocop', '~> 1.88'
+gem 'rubocop-rake', '~> 0.7.1'
