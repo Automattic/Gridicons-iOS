@@ -5,7 +5,7 @@ agents:
   queue: mac
 
 env:
-  IMAGE_ID: xcode-16.4
+  IMAGE_ID: xcode-26.6
 
 common_params:
   plugins: &common_plugins
