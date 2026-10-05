@@ -290,4 +290,4 @@ DEPENDENCIES
   rubocop-rake (~> 0.7.1)
 
 BUNDLED WITH
-   2.4.22
+  4.0.22
