@@ -9,7 +9,6 @@ platform :ios do
       package_path: '.',
       scheme: 'Gridicons',
       devices: ['iPhone 17'],
-      deployment_target_version: '14.5',
       prelaunch_simulator: true,
       buildlog_path: File.join(__dir__, '.build', 'logs'),
       derived_data_path: File.join(__dir__, '.build', 'derived-data')
